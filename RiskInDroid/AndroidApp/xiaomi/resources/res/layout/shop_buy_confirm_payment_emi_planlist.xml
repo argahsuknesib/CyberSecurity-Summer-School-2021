@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/confirm_payment_outermargin" android:layout_marginRight="@dimen/confirm_payment_outermargin" android:layout_marginBottom="25dp">
+    <RelativeLayout android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/title_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_confirm_EMI_tip2"/>
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/orange_red" android:id="@+id/tv_month_special" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/confirm_payment_outermargin">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="10dp" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/buy_confirm_EMI_col1" android:layout_weight="1"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="10dp" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/buy_confirm_EMI_col2" android:layout_weight="1"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="10dp" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/buy_confirm_EMI_col3" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.mi.global.shop.widget.NoScrollListView android:id="@+id/plan_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:cacheColorHint="#00000000" android:divider="@color/white" android:dividerHeight="@dimen/confirm_payment_vertical_spacing"/>
+</LinearLayout>

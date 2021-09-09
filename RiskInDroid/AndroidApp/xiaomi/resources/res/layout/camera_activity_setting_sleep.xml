@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_status" android:layout_marginTop="@dimen/title_margin_top" item:item_title="@string/main_power_off" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_auto_timer" android:layout_marginTop="@dimen/title_margin_top" item:item_title="@string/auto_sleep" item:item_type="1" style="@style/setting_item"/>
+</LinearLayout>

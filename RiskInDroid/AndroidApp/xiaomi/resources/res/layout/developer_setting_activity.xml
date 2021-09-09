@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/av_setting" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音视频设置" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/account_env" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击切换账号环境(会自动kill App，手动打开即可)" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/account_env_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前账号环境： unknow"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/sip" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sip" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_remote_debug" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/remote_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/yp_shop_token_remove" android:background="@drawable/mj_common_white_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除商城token" android:lines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable Log" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/cbx_disable_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用preview AppConfig" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/app_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强制使用 spec 卡片" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/app_spec_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模拟401换token失败（401时不再换token，直接失败）" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/fail_401_refresh_token" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用stg 运营位环境，重新打开app" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/operation_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/developer_rn_branch" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_rn_branch" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/developer_rn_branch_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="记录RN插件启动时间" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/cbx_trace_rn_plugin_launch_perf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/export_rn_plugin_launch_perf_record" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导出RN插件启动时间记录" android:lines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/developer_weex_branch" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_weex_branch" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/developer_weex_branch_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/developer_weex_time" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_weex_detect_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/developer_weex_time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/developer_page_mode" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_page_mode" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/developer_page_mode_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商城调试模式" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/remote_debug_shop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/push_id" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_centerVertical="true" android:layout_marginStart="20dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_push_id" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/push_id_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/fcm_token" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_centerVertical="true" android:layout_marginStart="20dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取fcm token" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/fcm_token_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/plugin_device" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_plugin_device_info" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/plugin_package_installed" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_plugin_package_info_installed" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/plugin_package_downloaded" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_plugin_package_info_downloaded" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/shop_api_test" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/url_test" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击输入url地址" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/scan_code_btn" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开扫码界面" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/operation_jump" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳转到指定url的运营位" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/oauth_login" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OAuth登录" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/record_audio" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音上传" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否在debug下做升级校验" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/update_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/layout_hide_device_entrance" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否开启无设备开发模式" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/hide_device_entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/mi_sip_server_env_liv" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/mi_sip_selected_server_env" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关闭RN插件，仅使用旧插件" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/use_old_plugin_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/rn_package_setting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RN设备插件调试设置" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/misc_setting" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他设置" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/test_recommend_scene" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地理围栏log" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/test_miui_geofence" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MIUI地理围栏" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/test_miui_geofence_zat" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MIUI地理围栏ZAT" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/module_manager_list" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编译隔离组件列表" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/plugin_dns_hook_test" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试插件dns hook功能" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

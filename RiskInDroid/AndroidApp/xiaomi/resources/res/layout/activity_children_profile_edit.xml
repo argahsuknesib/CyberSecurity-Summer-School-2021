@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_right_button_text="@string/common_save" app:tb_title="@string/setting_children_profile_edit"/>
+    <TextView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/setting_children_profile_edit_hint" android:layout_marginStart="15dp" style="@style/App.Widget.ListView.Item.Title"/>
+    <View android:layout_marginRight="15dp" android:layout_marginStart="15dp" style="@style/App.Divider.Horizontal"/>
+    <com.xiaomi.mico.common.widget.TitleDesAndMore android:id="@+id/name" android:background="@drawable/bg_list_item" android:layout_width="match_parent" android:layout_height="54dp" app:mc_description="@string/setting_not_set" app:mc_showMore="true" app:mc_title="@string/child_profile_nickname"/>
+    <com.xiaomi.mico.common.widget.TitleDesAndMore android:id="@+id/gender" android:background="@drawable/bg_list_item" android:layout_width="match_parent" android:layout_height="54dp" app:mc_description="@string/common_male" app:mc_showMore="true" app:mc_title="@string/child_profile_gender"/>
+    <com.xiaomi.mico.common.widget.TitleDesAndMore android:id="@+id/birthday" android:background="@drawable/bg_list_item" android:layout_width="match_parent" android:layout_height="54dp" app:mc_description="@string/setting_not_set" app:mc_showMore="true" app:mc_title="@string/child_profile_birth"/>
+</LinearLayout>

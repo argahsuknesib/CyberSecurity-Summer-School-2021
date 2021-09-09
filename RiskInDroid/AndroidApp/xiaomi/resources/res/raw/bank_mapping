@@ -1,0 +1,161 @@
+{
+  "failure": false,
+  "data": {
+    "enabledOptions": "cc,dc,nb,mw,sc",
+    "bankMappingMerchant": {
+      "netBankingMappings": [
+        "ZAAKPAY:SBI|State Bank of India|7",
+        "ZAAKPAY:ICICI|ICICI Bank|7",
+        "ZAAKPAY:HDF|HDFC Bank|7",
+        "ZAAKPAY:Axis|Axis Bank|7",
+        "ZAAKPAY:ALB|Allahabad Bank|7",
+        "ZAAKPAY:ADB|Andhra Bank|7",
+        "ZAAKPAY:BBK|Bank of Bahrain and Kuwait|7",
+        "ZAAKPAY:BBC|Bank of Baroda - Corporate Banking|7",
+        "ZAAKPAY:BBR|Bank of Baroda - Retail Banking|7",
+        "ZAAKPAY:BOI|Bank of India|7",
+        "ZAAKPAY:BOM|Bank of Maharashtra|7",
+        "ZAAKPAY:CNB|Canara Bank|7",
+        "ZAAKPAY:CSB|Catholic Syrian Bank|7",
+        "ZAAKPAY:CBI|Central Bank of India|7",
+        "ZAAKPAY:CUB|City Union Bank|7",
+        "ZAAKPAY:CRP|Corporation Bank|7",
+        "ZAAKPAY:DEN|Dena Bank|7",
+        "ZAAKPAY:DBK|Deutsche Bank|7",
+        "ZAAKPAY:DCB|Development Credit Bank|7",
+        "ZAAKPAY:DLB|Dhanlakshmi Bank|7",
+        "ZAAKPAY:FBK|Federal Bank|7",
+        "ZAAKPAY:IDB|IDBI Bank|7",
+        "ZAAKPAY:INB|Indian Bank|7",
+        "ZAAKPAY:IOB|Indian Overseas Bank|7",
+        "ZAAKPAY:IDS|IndusInd Bank|7",
+        "ZAAKPAY:ING|ING Vysya Bank|7",
+        "ZAAKPAY:KBL|Karnataka Bank Ltd|7",
+        "ZAAKPAY:KVB|Karur Vysya Bank|7",
+        "ZAAKPAY:162|Kotak Bank|7",
+        "ZAAKPAY:LVC|Laxmi Vilas Bank - Corporate Net Banking|7",
+        "ZAAKPAY:LVR|Laxmi Vilas Bank - Retail Net Banking|7",
+        "ZAAKPAY:OBC|Oriental Bank of Commerce|7",
+        "ZAAKPAY:CPN|Punjab National Bank - Corporate Banking|7",
+        "ZAAKPAY:PNB|Punjab National Bank - Retail Banking|7",
+        "ZAAKPAY:RTN|Ratnakar Bank|7",
+        "ZAAKPAY:SVC|Shamrao Vitthal Co-operative Bank|7",
+        "ZAAKPAY:SIB|South Indian Bank|7",
+        "ZAAKPAY:SBH|State Bank of Hyderabad|7",
+        "ZAAKPAY:SBM|State Bank of Mysore|7",
+        "ZAAKPAY:SBP|State Bank of Patiala|7",
+        "ZAAKPAY:SBT|State Bank of Travancore|7",
+        "ZAAKPAY:SYD|Syndicate Bank|7",
+        "ZAAKPAY:TMB|Tamilnad Mercantile Bank Ltd.|7",
+        "ZAAKPAY:UCO|UCO Bank|7",
+        "ZAAKPAY:UBI|Union Bank of India|7",
+        "ZAAKPAY:UNI|United Bank of India|7",
+        "ZAAKPAY:VJB|Vijaya Bank|7",
+        "ZAAKPAY:YBK|Yes Bank Ltd|7"
+      ],
+      "creditCardMappings": [
+        "ZAAKPAY:zaakpay|-|7"
+      ],
+      "debitCardMappings": [
+        "ZAAKPAY:ZAAKPAY|Visa / Visa Electron Debit Card|7",
+        "ZAAKPAY:ZAAKPAY|Mastercard Debit Card|7"
+      ],
+      "gatewayUrls": [
+        {
+          "id": 4,
+          "url": "http://205.147.110.196:8080/transactD?v=5"
+        },
+        {
+          "id": 7,
+          "url": "https://api.zaakpay.com/transactD?v=5"
+        },
+        {
+          "id": 5,
+          "url": "https://www.ccavenue.com/servlet/new_txn.PaymentIntegration"
+        },
+        {
+          "id": 6,
+          "url": "https://www.ccavenue.com/shopzone/cc_details.jsp"
+        }
+      ],
+      "memberIdList": [
+        "zaakpay:c4010ec85c7c4a3481965b226efc99cc|ccavenue:M_bpsingh_7827"
+      ],
+      "keyList": [
+        {"merchantId":"c4010ec85c7c4a3481965b226efc99cc",
+               "keyId":"aYIPdpjbsbydGiD",
+               "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlJeu5/ZEUnROKZXTudHMnhOLk2mu0lnZ6I7oTyJlNqD77+lf43UEgOsZt36Sd7uqx24iKOI4chmrMswKT1ObaClxm57i9DehcVhr+0DI/K6gSMG5kr2FgLn8KK6Q49db07X0MNjtWfz3LQVEr4hOvuHB2N5UYybyFJjWzZ3rMoUE2uja5GOFHOOp0wPQhfvtHIHN/2pFOb7Pymk0oAl3ACawTrLc2g1WEWfGbpsS6SQsqo+5R80yoNqO54DBIBnEFnRA2L+tIkbkm2LI/uMlc1NG58wqeUcIC0t/yJTgZfa2PK8ctLjaBVHJ7K/VDlQBrpL+zsE/unJWDUqz9G4x5QIDAQAB"
+               }
+      ]
+    },
+    "bankMappingMobikwik": {
+      "netBankingMappings": [
+        "ZAAKPAY:ICICI|ICICI Bank|7",
+        "ZAAKPAY:HDF|HDFC Bank|7",
+        "CCAVE:CBIBAN_N|CitiBank|5",
+        "ZAAKPAY:Axis|Axis Bank|7",
+        "ZAAKPAY:ALB|Allahabad Bank|7",
+        "ZAAKPAY:ADB|Andhra Bank|7",
+        "CCAVE:INB_N|Indian Bank|5",
+        "CCAVE:NPNB_N|Punjab National Bank - Retail Banking|5",
+        "CCAVE:SCB_N|Standard Chartered Bank|5",
+        "CCAVE:SBJ_N|State Bank of Bikaner & Jaipur|5",
+        "CCAVE:SBH_N|State Bank of Hyderabad|5",
+        "CCAVE:SBT_N|State Bank of Travancore|5"
+      ],
+      "creditCardMappings": [
+        "ZAAKPAY|-|7"
+      ],
+      "debitCardMappings": [
+        "ZAAKPAY|Visa / Visa Electron Debit Card|7",
+        "ZAAKPAY|Mastercard Debit Card|7",
+        "ZAAKPAY|Diners / Discover Debit Card|7"
+      ],
+      "gatewayUrls": [
+        {
+          "id": 4,
+          "url": "http://205.147.110.196:8080/transactD?v=5"
+        },
+        {
+          "id": 7,
+          "url": "https://api.zaakpay.com/transactD?v=5"
+        },
+        {
+          "id": 5,
+          "url": "https://www.ccavenue.com/servlet/new_txn.PaymentIntegration"
+        },
+        {
+          "id": 6,
+          "url": "https://www.ccavenue.com/shopzone/cc_details.jsp"
+        }
+      ],
+      "memberIdList": [
+        "ZAAKPAY:0:499:c4010ec85c7c4a3481965b226efc99cc",
+        "ZAAKPAY:500:4999:c4010ec85c7c4a3481965b226efc99cc",
+        "ZAAKPAY:5000:-:51828142ef12498a9eb700271f1d5f98",
+        "CCAVE:-:-:M_bpsingh_7827"
+      ],
+      "keyList": [
+       {"merchantId":"c4010ec85c7c4a3481965b226efc99cc",
+       "keyId":"aYIPdpjbsbydGiD",
+       "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlJeu5/ZEUnROKZXTudHMnhOLk2mu0lnZ6I7oTyJlNqD77+lf43UEgOsZt36Sd7uqx24iKOI4chmrMswKT1ObaClxm57i9DehcVhr+0DI/K6gSMG5kr2FgLn8KK6Q49db07X0MNjtWfz3LQVEr4hOvuHB2N5UYybyFJjWzZ3rMoUE2uja5GOFHOOp0wPQhfvtHIHN/2pFOb7Pymk0oAl3ACawTrLc2g1WEWfGbpsS6SQsqo+5R80yoNqO54DBIBnEFnRA2L+tIkbkm2LI/uMlc1NG58wqeUcIC0t/yJTgZfa2PK8ctLjaBVHJ7K/VDlQBrpL+zsE/unJWDUqz9G4x5QIDAQAB"
+       },
+        {
+          "merchantId": "cd1fac2c28f24378972bfa496d0bca2a",
+          "keyId": "La774UgnasoGb0Z",
+          "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3C4YeklopbmcMJYEBpm/97l1MCv4xhM3oLoyVZeNvDbwSam+FsOo08UgWDreg3+Pcc0IGsEqO3gY4gjgqI1vSBSAYhJyUpM7I4KIxk3bRKVAODzxHnpH5NM2mPRCyUglPsHeyyqkMp7QyUDxRF9KHemkrsuK06KD2qbSdeelC+871ncjxeSBFFJ6cWoUwKv1NbhwhVUS16kI6Tn+WldrutK5wZVT6x94V7VAU4rms8P4lgXyNFQftWmNEY95RT4p+ZNQlkQmPMfEsndEnzQDOXZ4oKWkFqxLPhO2yYfk3LJko3q4yYnQojVJvbBa+xEwp6GCIBaNzoTawg57DanbWQIDAQAB"
+        },
+        {
+          "merchantId": "fb8f5ea52cee42a988c7a1345506cd06",
+          "keyId": "Mp7iKfMoyWkY3d5",
+          "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApG2AGk/6b0l9Adzss/HFmxKtUF5J5Ne8oCN0IjcMIxM9udUaDRxGt6irsmO6eo7AAWpciKTBRngxruiSJrN6nK7b01FjNu62/VuNyXYAl0xPmHP3PH9NNm8a5OdFqIvTe/n0trhS0OmU/m7qmVNNNVZr3kVkWURmVQQD4Ii5IB77yiuFyPrcRgc6X2ILZ/I5XvL/YWyiF/N5RLrExTfCnbTggDwYNi02nIvjWU2DOjYNdyh73PxPobLZPj6NoOBgq3taVrmbjzyZpIhmO1alwDhPW+EVaQ5LNFm0AaNmH1h33Qof5nKD7N0uTbbCSVjLMK1AaOP1yLknbU6qcSvzHQIDAQAB"
+        }
+      ],
+      "mbkKey": {
+        "keyId": "ZWZn59oEwfvQsbt",
+        "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsH2Oyz8FNu1WRV8xjMjfUpxlnQQi2rK89+KvBDNtkiZi95yJKkemA8f7EkpbQQyxdEVCyn5BMc8oscOgsyFoESA7Lyrprv6S7syHRdAumL/jGbeKg3CLydnIxN4vjxcQ6mRwCXYjlbL/2rGTwRHc3ROkO/JEiA13L3jTuXJqvUQSZ/J94H0WejW8Y2RtCqXi2sGsp2/tuqnblud63K99NI5YJekskr/MBoMItT/AbZSaHVyRCsQhAotDh3f93KkDYSapA1UlFu0vsvbpatjON3pkqu+4+yRlQs41fysrwz3fLQOO4MGhx6OSQFM9v9itRgEfx8KD28Wg7QOrpM28yQIDAQAB"
+      }
+    }
+  },
+  "description": "bank mapping received."
+}

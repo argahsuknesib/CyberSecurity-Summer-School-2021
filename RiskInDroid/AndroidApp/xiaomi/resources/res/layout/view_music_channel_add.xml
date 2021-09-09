@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/mico_bg_playerlist_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/music_item_header_height">
+        <TextView android:textSize="@dimen/content_text_size" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_channel_add" android:layout_marginStart="27dp"/>
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_green_normal" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/music_channel_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_channel_new" android:layout_marginEnd="27dp"/>
+        <View android:layout_gravity="bottom" android:layout_marginLeft="27dp" android:layout_marginRight="27dp" style="@style/App.Divider.Horizontal"/>
+    </FrameLayout>
+    <com.xiaomi.mico.common.recyclerview.LimitHeightRecyclerView android:id="@+id/linear_recycle_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager" app:mc_maxHeight="260dp"/>
+</LinearLayout>

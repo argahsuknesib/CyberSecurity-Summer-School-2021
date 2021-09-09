@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="110dp" android:layout_below="@+id/title_bar">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_bind_sc_login" android:importantForAccessibility="no"/>
+        <TextView android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginRight="80dp" android:text="@string/sc_scan_help"/>
+    </LinearLayout>
+    <Button android:textSize="13sp" android:textColor="@color/mj_color_white" android:id="@+id/common_btn" android:background="@drawable/sc_scan_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="26dp" android:layout_marginRight="26dp" android:layout_marginBottom="26dp" android:text="@string/sc_scan_btn_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

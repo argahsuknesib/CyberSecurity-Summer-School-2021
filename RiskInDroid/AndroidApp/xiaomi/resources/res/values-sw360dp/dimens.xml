@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="choose_category_device_item_width">155dp</dimen>
+    <dimen name="choose_device_common_item_text_height">16dp</dimen>
+    <dimen name="choose_device_common_item_text_width">24dp</dimen>
+    <dimen name="choose_device_common_item_width">100dp</dimen>
+    <dimen name="choose_device_common_list_item_text_width">90dp</dimen>
+    <dimen name="choose_device_item_text_margin_top">3dp</dimen>
+    <dimen name="choose_device_list_common_item_circle_radius">47dp</dimen>
+    <dimen name="choose_device_list_common_item_img_height">52dp</dimen>
+    <dimen name="choose_device_list_common_text_size">9sp</dimen>
+    <dimen name="choose_device_list_item_height">62dp</dimen>
+    <dimen name="choose_device_list_item_img_height">38dp</dimen>
+    <dimen name="choose_device_list_item_img_margin_left">14dp</dimen>
+    <dimen name="choose_device_list_item_text_margin_left">66dp</dimen>
+    <dimen name="choose_device_list_item_text_size">14sp</dimen>
+    <dimen name="choose_device_list_item_text_width">80dp</dimen>
+    <dimen name="choose_device_scan_item_text_width">31dp</dimen>
+    <dimen name="choose_device_scan_list_item_height">134dp</dimen>
+    <dimen name="choose_device_scan_list_item_img_height">70dp</dimen>
+    <dimen name="choose_device_scan_list_item_text_height">21dp</dimen>
+    <dimen name="choose_device_scan_list_item_text_size">12sp</dimen>
+    <dimen name="choose_device_scan_list_item_text_width">120dp</dimen>
+    <dimen name="choose_device_scan_list_item_vertical_margin">10dp</dimen>
+    <dimen name="choose_list_item_margin_top">11dp</dimen>
+    <dimen name="choose_scan_device_item_width">155dp</dimen>
+</resources>

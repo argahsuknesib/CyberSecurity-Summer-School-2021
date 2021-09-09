@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_gray" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.CustomTextView android:textSize="15sp" android:textColor="#424242" android:gravity="center" android:id="@+id/coupon_range" android:background="@drawable/shop_unuse_coupon_bg" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/user_coupon_notuse"/>
+</LinearLayout>

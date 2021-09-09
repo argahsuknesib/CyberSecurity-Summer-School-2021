@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnablePreviewInEditMode="true">
+        <include layout="@layout/view_linear_recycler_view"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/tv_intelligent_footer" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

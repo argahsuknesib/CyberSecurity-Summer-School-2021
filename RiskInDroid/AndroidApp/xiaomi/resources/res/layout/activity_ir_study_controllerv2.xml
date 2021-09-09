@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/ir_imi_progress" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/ivProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true" android:contentDescription="@string/common_device_loading"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ir_study_controller_tip_root" android:background="@color/mj_color_separator" android:padding="@dimen/ir_main_arrow_margin_right" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="16dp" android:text="@string/ir_study_tips_text" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/ir_study_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/ir_study_default_empty" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_default_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ir_study_default_bg" android:layout_centerInParent="true" android:importantForAccessibility="no"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/iv_default_icon" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:id="@+id/ir_main_device_list_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/ir_divider_height"/>
+    <Button android:textSize="@dimen/text_size_42" android:textColor="@color/mj_color_white" android:layout_gravity="center" android:id="@+id/ir_study_add_other" android:background="@drawable/com_btn_bg_shape" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_40" android:text="@string/ir_study_add_btn_text"/>
+</LinearLayout>

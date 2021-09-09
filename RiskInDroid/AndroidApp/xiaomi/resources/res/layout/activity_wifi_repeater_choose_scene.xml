@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/img_device_icon" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginTop="15dp" android:layout_below="@+id/txt_wps_desc" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="18sp" android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:id="@+id/txt_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_txt_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="74dp" android:text="@string/wps_choose_connect_type"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp">
+        <TextView android:textSize="16sp" android:textColor="@color/mj_color_black" android:id="@+id/txt_set_new_device" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:text="@string/wps_set_new_device" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/img_set_device" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:src="@drawable/mj_green_right_arrow" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp">
+        <TextView android:textSize="16sp" android:textColor="@color/mj_color_black" android:id="@+id/txt_set_init_device" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:text="@string/wps_set_init_device" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/img_set_init_device" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:src="@drawable/mj_green_right_arrow" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="25dp" android:layout_marginRight="25dp" android:text="@string/wps_bind_init_device_tips"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="13dp" android:textColor="#fff" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/next_btn" android:layout_width="match_parent" android:layout_height="42.6dp" android:layout_marginLeft="27dp" android:layout_marginRight="27dp" android:layout_marginBottom="27dp" android:text="@string/next_button" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:layout_marginStart="17dp" android:layout_marginEnd="27dp" style="@style/ConfirmNormalBtn"/>
+    </RelativeLayout>
+</LinearLayout>

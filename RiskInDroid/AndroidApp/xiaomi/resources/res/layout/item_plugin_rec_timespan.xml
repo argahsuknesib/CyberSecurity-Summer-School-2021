@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/divider" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="50dp">
+        <View android:layout_gravity="bottom" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="15dp" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="32dp" android:text="@string/scene_exe_time" android:layout_marginStart="@dimen/listitem_2_padding_right" android:layout_marginEnd="8dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/mj_color_gray_light" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="32dp" android:layout_marginEnd="42dp"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/go_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/listitem_2_padding_right" android:src="@drawable/um_arrow" android:layout_marginEnd="@dimen/listitem_2_padding_right"/>
+        <View android:layout_gravity="bottom" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </FrameLayout>
+</LinearLayout>

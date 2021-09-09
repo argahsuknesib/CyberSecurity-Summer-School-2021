@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/img_fl" android:layout_width="38dp" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/tab_img" android:layout_width="38dp" android:layout_height="38dp" android:scaleType="centerInside" android:contentDescription="@null"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/red_dot_iv" android:visibility="invisible" android:layout_width="@dimen/red_dot_size" android:layout_height="@dimen/red_dot_size" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:src="@drawable/dot_red" android:scaleType="fitXY" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <TextView android:textSize="10sp" android:textColor="@color/indicator_text" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7dp" android:layout_marginBottom="2dp" android:maxLines="1" android:singleLine="true" android:layout_below="@+id/img_fl" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

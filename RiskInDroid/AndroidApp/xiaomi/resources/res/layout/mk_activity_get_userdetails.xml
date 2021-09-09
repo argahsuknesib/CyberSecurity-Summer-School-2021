@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mk_uic_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header_id" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mk_header"/>
+    <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_margin="0dp" style="@style/new_layout_container">
+            <LinearLayout android:orientation="vertical" android:layout_margin="0dp" android:layout_marginBottom="12dp" style="@style/white_container">
+                <TextView android:layout_height="wrap_content" android:text="Please Enter Details" style="@style/textBlueHeading"/>
+                <TextView android:gravity="center_horizontal" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fields_margin_top" android:text="Your email id and mobile number are required to proceed further." style="@style/text"/>
+                <EditText android:id="@+id/editEmail" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fields_margin_top" android:hint="Your Email Id" android:selectAllOnFocus="true" android:inputType="textEmailAddress" style="@style/wallet_textbox"/>
+                <EditText android:id="@+id/editPhone" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fields_margin_top" android:hint="Your Mobile No." android:selectAllOnFocus="true" android:maxLength="10" android:inputType="number" style="@style/wallet_textbox"/>
+            </LinearLayout>
+            <Button android:id="@+id/btnGetDetailsOk" android:layout_marginBottom="24dp" android:text="Continue" style="@style/new_button"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

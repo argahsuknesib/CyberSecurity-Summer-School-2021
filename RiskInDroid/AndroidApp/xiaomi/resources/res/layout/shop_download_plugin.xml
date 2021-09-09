@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/loading" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.PercentageRing android:id="@+id/percentage_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" app:antiRingColor="#efeff4" app:circleBackground="#ffffff" app:radius1="80" app:ringColor="#ff4a00" app:textColor="#000000"/>
+</LinearLayout>

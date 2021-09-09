@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sd_room_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" app:actualImageScaleType="7" app:placeholderImage="@drawable/style_1_favorites" app:placeholderImageScaleType="7" app:roundedCornerRadius="16dp" app:viewAspectRatio="0.55"/>
+    <TextView android:textSize="14dp" android:textColor="@color/mj_color_gray_heavier" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_room_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

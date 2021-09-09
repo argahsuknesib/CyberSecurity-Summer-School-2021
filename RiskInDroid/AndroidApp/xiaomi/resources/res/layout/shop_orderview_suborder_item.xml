@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:layout_gravity="fill_vertical" android:id="@+id/suborder_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_suborderid"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:id="@+id/suborder_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <com.mi.global.shop.widget.CustomButtonView android:textColor="@color/orange_red" android:layout_gravity="center_vertical" android:id="@+id/btn_track" android:background="@drawable/shop_order_detail_button_orangeborder" android:layout_width="90dp" android:layout_height="30dp" android:text="@string/orderdetail_track"/>
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.mi.global.shop.widget.NoScrollListView android:id="@+id/suborder_items" android:paddingLeft="15dp" android:paddingRight="15dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/divider_color" android:dividerHeight="1dp"/>
+</LinearLayout>

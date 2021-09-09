@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.shop.imageselector.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#343535" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.CustomTextView android:textSize="14sp" android:textColor="#cdcece" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_mis_tip_take_photo" android:drawableTop="@drawable/shop_camera" android:drawablePadding="10dp"/>
+</com.mi.global.shop.imageselector.view.SquareFrameLayout>

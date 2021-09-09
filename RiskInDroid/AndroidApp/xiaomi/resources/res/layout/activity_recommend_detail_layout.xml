@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <RelativeLayout android:id="@+id/recommend_detail_rl" android:layout_width="match_parent" android:layout_height="230dp">
+        <VideoView android:id="@+id/recommend_detail_video_view" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/mask_view" android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="230dp" android:alpha="0"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/recommend_detail_place_hold" android:visibility="gone" android:layout_width="match_parent" android:layout_height="230dp" android:src="@drawable/default_bg_signin_nor"/>
+    </RelativeLayout>
+    <com.xiaomi.smarthome.scene.view.HomeSceneScrollView android:id="@+id/home_scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="230dp">
+                <include layout="@layout/common_list_space_empty"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_vertical" android:id="@+id/hand_tv" android:background="@color/mj_color_white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/smarthome_scene_create_if" android:drawableLeft="@drawable/smarthome_scene_create_if_icon" android:drawablePadding="5dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.33dp" android:layout_alignParentBottom="true"/>
+                <com.xiaomi.smarthome.scene.view.ExpandableListViewWithScrollView android:id="@+id/auto_scene_condition_expand_list_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/mj_color_black_00_transparent" android:divider="@color/mj_color_black_00_transparent"/>
+                <include layout="@layout/common_list_space_empty"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_vertical" android:background="@color/mj_color_white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/smarthome_scene_create_then" android:drawableLeft="@drawable/smarthome_scene_create_then_icon" android:drawablePadding="5dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.33dp" android:layout_alignParentBottom="true"/>
+                <com.xiaomi.smarthome.scene.view.ExpandableListViewWithScrollView android:id="@+id/auto_scene_action_expand_list_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/mj_color_black_00_transparent" android:divider="@color/mj_color_black_00_transparent"/>
+                <View android:layout_width="match_parent" android:layout_height="100dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.xiaomi.smarthome.scene.view.HomeSceneScrollView>
+    <FrameLayout android:id="@+id/title_bar" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/module_a_3_return_btn" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/mj_common_title_bar_return" android:scaleType="center" android:contentDescription="@string/action_back"/>
+        <TextView android:textSize="@dimen/mj_title_bar_text_size" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/module_a_3_return_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_return_area_size" android:layout_marginRight="@dimen/titlebar_return_area_size" android:maxLines="1"/>
+    </FrameLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title_bar_item" android:background="@color/mj_color_background" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="47dp" android:text="" android:layout_below="@+id/title_bar" android:alpha="0" android:paddingStart="13dp"/>
+    <LinearLayout android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/recommend_start_btn" android:background="@drawable/recommend_start_btn_selector_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="24dp" android:text="@string/smarthome_scene_start" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+    </LinearLayout>
+</RelativeLayout>

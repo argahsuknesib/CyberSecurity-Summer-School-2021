@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp">
+    <ImageView android:id="@+id/album_image" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginLeft="10dp" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/ht_black" android:id="@+id/album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/album_image" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/album_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/ht_black_60_transparent" android:id="@+id/album_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/album_arrow" android:layout_centerVertical="true"/>
+    <View android:background="@color/ht_black_15" android:layout_marginRight="10dp" android:layout_alignLeft="@+id/album_name" android:layout_alignParentBottom="true" style="@style/ht_horizontal_line_black"/>
+</RelativeLayout>

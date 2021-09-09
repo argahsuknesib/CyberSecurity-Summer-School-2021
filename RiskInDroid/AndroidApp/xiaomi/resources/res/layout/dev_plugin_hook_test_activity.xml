@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/mj_color_black" android:id="@+id/dns_hook_status" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:textIsSelectable="true"/>
+            <EditText android:id="@+id/url_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:text="https://" android:inputType="textWebEditText"/>
+            <Button android:layout_gravity="center" android:id="@+id/connect_test" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="30dp" android:text="测试连接"/>
+            <TextView android:textColor="@color/mj_color_black" android:id="@+id/result_tv" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="30dp" android:textIsSelectable="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/itemRoot" android:paddingTop="@dimen/size_14dp" android:layout_width="@dimen/size_186dp" android:layout_height="@dimen/size_75dp" android:paddingStart="@dimen/size_7dp" android:paddingEnd="@dimen/size_7dp">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_single_episode_purchase_price_item_selected" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_size_16sp" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/tvEpisodeCount" android:paddingTop="@dimen/size_9dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/tvPrice" android:paddingTop="@dimen/size_1dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

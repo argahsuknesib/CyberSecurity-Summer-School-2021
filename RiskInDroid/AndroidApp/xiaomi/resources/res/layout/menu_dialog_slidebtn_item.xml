@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/class_b_to_white_color" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="@dimen/alertdialog_item_height" android:singleLine="true"/>
+    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/slide_btn" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

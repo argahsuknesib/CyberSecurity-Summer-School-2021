@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/size_27dp" android:paddingEnd="@dimen/size_27dp">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/mico_color_8C93B0" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="34dp" android:text="@string/common_search_hot"/>
+    <com.xiaomi.mico.common.widget.FluidLayout android:id="@+id/search_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+</LinearLayout>

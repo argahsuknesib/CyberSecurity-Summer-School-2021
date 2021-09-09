@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_3_title_bar_return_more"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:paddingTop="7dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <TextView android:id="@+id/txt_fast_connect_define" android:text="@string/faq_what_is_fast_connect" style="@style/fast_connect_item_text"/>
+        <TextView android:id="@+id/txt_unregister_fast_connect" android:text="@string/faq_unregister_fast_connect" style="@style/fast_connect_item_text"/>
+    </LinearLayout>
+</RelativeLayout>

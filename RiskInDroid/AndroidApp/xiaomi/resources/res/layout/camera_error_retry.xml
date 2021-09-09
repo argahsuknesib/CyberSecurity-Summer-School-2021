@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/retry_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_state_offline"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/error_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/offline_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_white_100_transparent" android:id="@+id/retry_tv" android:background="@drawable/selector_camera_offline_retry_btn" android:paddingTop="4dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/offline_retry_connect" android:paddingStart="17dp" android:paddingEnd="17dp" android:layout_marginEnd="15dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_white_100_transparent" android:id="@+id/see_help" android:background="@drawable/selector_camera_offline_retry_btn" android:paddingTop="4dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/offline_see_help" android:paddingStart="17dp" android:paddingEnd="17dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

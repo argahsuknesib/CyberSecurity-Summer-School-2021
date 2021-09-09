@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/ir_study_text_btn" android:background="@drawable/extra_key_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/ir_match_edit_height" android:text="@string/ir_light_power_off" android:lines="1"/>

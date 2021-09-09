@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="102dp" android:layout_height="102dp" android:layout_marginBottom="12dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/patchwall_item_image" android:layout_width="102dp" android:layout_height="102dp" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_qq_item_mask" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/play_button" android:background="@drawable/icon_player_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_marginStart="12dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/song_one_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/minimal_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/song_one_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/song_two_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/minimal_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/song_two_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/song_three_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/minimal_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/song_three_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

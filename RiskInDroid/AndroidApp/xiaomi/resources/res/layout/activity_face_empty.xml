@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/include_face_common_title_bar"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/face_empty" android:importantForAccessibility="no"/>
+        <TextView android:textSize="15sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_face"/>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_face_tips" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+    </LinearLayout>
+    <Button android:textSize="13sp" android:textColor="@color/camera_white" android:id="@+id/btn_album" android:background="@drawable/face_empty_add_btn" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/select_dialog_album" android:layout_alignParentBottom="true" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+    <Button android:textSize="13sp" android:textColor="@color/camera_white" android:id="@+id/btn_camera" android:background="@drawable/face_empty_add_btn" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/select_dialog_camera" android:layout_above="@+id/btn_album" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+</RelativeLayout>

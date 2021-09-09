@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/room_drop_menu_text_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/flow_text" android:background="@drawable/room_drop_menu_bg_selector" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:singleLine="true"/>

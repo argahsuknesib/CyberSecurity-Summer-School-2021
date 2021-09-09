@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="16dp" android:src="@drawable/shop_notice_gray_icon"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#b0b0b0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="14dp" android:text="@string/user_address_notice"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_name" android:focusable="true" android:focusableInTouchMode="true" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_name" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.CustomEditTextView android:id="@+id/user_address_nameinput" android:hint="@string/user_address_namehint" android:maxLength="30" android:inputType="textPersonName" android:imeOptions="actionNext" style="@style/EditAddressEditView"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_pincode" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_pincode" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.CustomEditTextView android:id="@+id/user_address_pincodeinput" android:hint="@string/user_address_pincodehint" android:maxLength="6" android:inputType="number" android:imeOptions="actionNext" style="@style/EditAddressEditView"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_small" android:textColor="@color/red" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/user_address_pincodewarning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/user_address_pincodewarning"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_address" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_address" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.CustomEditTextView android:id="@+id/user_address_addressinput" android:hint="@string/user_address_addresshint" android:maxLength="150" android:inputType="textMultiLine" android:imeOptions="actionNext" style="@style/EditAddressEditView"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_landmark" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_landmark" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.CustomEditTextView android:id="@+id/user_address_landmarkinput" android:hint="@string/user_address_landmarkhint" android:maxLength="60" android:inputType="textNoSuggestions" android:imeOptions="actionNext" style="@style/EditAddressEditView"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_city" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_city" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.CustomEditTextView android:id="@+id/user_address_cityinput" android:hint="@string/user_address_cityhint" android:maxLength="60" android:inputType="textNoSuggestions" android:imeOptions="actionNext" style="@style/EditAddressEditView"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_state" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_state" style="@style/EditAddressTextView"/>
+            <Spinner android:id="@+id/user_address_statespinner" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:prompt="@string/user_address_statehint" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_email" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_email" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.CustomEditTextView android:id="@+id/user_address_emailinput" android:hint="@string/user_address_emailhint" android:maxLength="200" android:inputType="textNoSuggestions" android:imeOptions="actionNext" style="@style/EditAddressEditView"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_address_phone" android:layout_marginTop="1dp" style="@style/EditAddressLinearLayout">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_phone" android:layout_centerVertical="true" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.PhoneNumberEdit android:id="@+id/user_address_phoneinput" android:hint="@string/user_address_phonehint" android:maxLength="10" android:inputType="phone" style="@style/EditAddressEditView"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/default_address" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp">
+            <com.mi.global.shop.widget.CustomTextView android:text="@string/user_address_default" android:layout_centerVertical="true" style="@style/EditAddressTextView"/>
+            <com.mi.global.shop.widget.SlidingButton android:id="@+id/user_address_default_switch" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/shop_multiple_choice" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <com.mi.global.shop.widget.CustomButtonView android:textSize="15sp" android:textColor="@drawable/shop_address_save_text_color" android:id="@+id/user_address_save" android:background="@color/white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="15dp" android:text="@string/user_address_save"/>
+        <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</ScrollView>

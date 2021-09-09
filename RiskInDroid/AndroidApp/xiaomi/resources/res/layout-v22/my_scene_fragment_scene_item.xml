@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/sort_action_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/card_layout" android:background="@color/mj_color_dialog_bg_nor" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/scene_name_ll" android:paddingTop="20dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/tv_scene_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_marginEnd="40dp"/>
+            <TextView android:textSize="11sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/new_tag" android:background="@drawable/device_status_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="19dp" android:layout_marginLeft="15dp" android:text="NEW" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/scene_list_item_padding_left" android:paddingRight="@dimen/scene_list_item_padding_right" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentLeft="true" android:paddingStart="@dimen/scene_list_item_padding_left" android:paddingEnd="@dimen/scene_list_item_padding_right" android:layout_alignParentStart="true" app:layout_constraintTop_toBottomOf="@+id/scene_name_ll">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="56dp" android:layout_height="56dp">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon_condition" android:layout_width="56dp" android:layout_height="56dp"/>
+                    <ImageView android:id="@+id/icon_condition_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_all_more_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:importantForAccessibility="no"/>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon_placehold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_all_link_icon" android:importantForAccessibility="no"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/action_ll" android:layout_width="wrap_content" android:layout_height="56dp">
+                    <include layout="@layout/scene_action_icon_item"/>
+                    <include layout="@layout/scene_action_icon_item"/>
+                    <include layout="@layout/scene_action_icon_item"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/scene_new_more_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_new_more_icon" android:importantForAccessibility="no"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/scene_right_container" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/selector_common_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/execute_tv" android:background="@drawable/scene_item_execute_btn_selector" android:padding="7dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:maxWidth="72dp" android:minWidth="60dp" android:text="@string/scene_execute" android:singleLine="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:gravity="center" android:layout_gravity="center" android:id="@+id/open_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ckb_edit_selected" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="22dp" android:layout_height="22dp" android:button="@drawable/checkbox_layout" android:forceDarkAllowed="false"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/right_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_list_main_next" android:importantForAccessibility="no"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

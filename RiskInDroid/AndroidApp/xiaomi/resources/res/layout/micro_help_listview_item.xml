@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/mi_brain_help_item_simple_iv" android:layout_width="56dp" android:layout_height="56dp"/>
+        <TextView android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:id="@+id/name_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="空气净化器"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_white_60_transparent" android:id="@+id/mi_brain_help_dec_tv" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/ll" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_toEndOf="@+id/ll"/>
+    <View android:background="@color/mj_color_white_30_transparent" android:layout_width="match_parent" android:layout_height="0.33dp"/>
+</RelativeLayout>

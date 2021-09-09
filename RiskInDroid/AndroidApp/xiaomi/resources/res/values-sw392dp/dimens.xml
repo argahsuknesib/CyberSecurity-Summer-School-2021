@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ht_camera_button_height">52dp</dimen>
+    <dimen name="ht_camera_button_margin">52dp</dimen>
+    <dimen name="ht_camera_button_width">52dp</dimen>
+    <dimen name="ht_flash_container_size">52dp</dimen>
+    <dimen name="ht_ic_back_marginleft">16dp</dimen>
+    <dimen name="ht_ic_back_marginright">16dp</dimen>
+    <dimen name="ht_idcard_noting_text_size">14sp</dimen>
+    <dimen name="ht_idcard_view_marginBottom">20dp</dimen>
+    <dimen name="ht_iv_return_size">44dp</dimen>
+    <dimen name="ht_take_photo_button_center_size">62dp</dimen>
+    <dimen name="ht_take_photo_button_size">80dp</dimen>
+    <dimen name="ht_title_height">58dp</dimen>
+    <dimen name="ht_titlebar_height">56dp</dimen>
+</resources>

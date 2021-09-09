@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/condition_title" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginTop="18dp" android:layout_marginBottom="8dp" android:text="@string/scene_add_condition" android:layout_marginStart="23dp"/>
+    <View android:id="@+id/view_tag" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.4dp" android:layout_marginLeft="23dp" android:layout_marginRight="23dp" android:layout_marginStart="23dp" android:layout_marginEnd="23dp"/>
+    <ListView android:id="@+id/content_list_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_weight="1" android:fastScrollEnabled="true"/>
+</LinearLayout>

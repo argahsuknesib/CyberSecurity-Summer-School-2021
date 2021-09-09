@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启全量日志" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_full_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="以下设置是否生效（关闭则全部恢复默认）" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_av_setting_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强制软件解码" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_soft_decoder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存视频原始流" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_save_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存app到设备音频流" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_save_app_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RN使用统一播放器" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_rn_ijk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内置摄像头使用统一播放器" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_camera_ijk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="云存使用统一播放器" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_cloud_ijk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫一扫强制CameraAPI1" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_force_camera_api1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支持超分" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_super_resolution_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

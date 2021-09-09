@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rlTitleBar" layout="@layout/cs_view_cloud_video_header"/>
+    <RelativeLayout android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlTitleBar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llStatus" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlStatus1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp">
+                <ImageView android:id="@+id/ivIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_crown" android:layout_centerVertical="true"/>
+                <TextView android:textColor="@color/mj_color_white" android:id="@+id/tvStatus" android:background="@drawable/cs_setting_buy_bg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/cs_service_not_use" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tvStatus" android:layout_toRightOf="@+id/ivIcon" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="@color/mj_color_black" android:id="@+id/tvTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/mj_color_black_40_transparent" android:id="@+id/tvSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/cs_default_deivce_name"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:id="@+id/viewDivider" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:layout_below="@+id/rlStatus1"/>
+            <RelativeLayout android:id="@+id/rlStatus2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp">
+                    <TextView android:textColor="@color/mj_color_black_45_transparent" android:id="@+id/tvUsageTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_service_used_time"/>
+                    <TextView android:textColor="@color/mj_color_black" android:layout_gravity="center" android:id="@+id/tvUsageDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tvUsageTitle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80dp" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/mj_color_black_45_transparent" android:id="@+id/tvStorageTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_total_video_storage"/>
+                    <TextView android:layout_gravity="center" android:id="@+id/tvStorageDesc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:id="@+id/viewDivider2" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_below="@+id/rlStatus2"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rlOperation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_40_transparent" android:id="@+id/tvDurationHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:layout_marginBottom="5dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/tvBuy" android:background="@drawable/cs_setting_buy_bg" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="@string/cs_buy_service" android:layout_below="@+id/tvDurationHint"/>
+        </RelativeLayout>
+        <ScrollView android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/llStatus">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rlCloudService" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/viewCloudService" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.2dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                        <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:id="@+id/tvCloudServiceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:text="@string/cs_service" android:layout_below="@+id/viewCloudService"/>
+                        <TextView android:textSize="12sp" android:id="@+id/tvCloudServiceDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:text="@string/cs_service_desc" android:layout_below="@+id/tvCloudServiceTitle"/>
+                    </LinearLayout>
+                    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sbCloudVideoService" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:button="@drawable/cs_setting_service_switch" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlDownloadVideo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlCloudService">
+                    <View android:id="@+id/viewDownloadVideo" android:background="@color/mj_color_black_10_transparent" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_marginLeft="20dp"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:id="@+id/tvDownloadVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/cs_download_videos" android:layout_below="@+id/viewDownloadVideo"/>
+                    <TextView android:textSize="12sp" android:id="@+id/tvArrowDownloadVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:drawableRight="@drawable/std_list_main_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlCloudServiceEULA" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlDownloadVideo">
+                    <View android:id="@+id/viewCloudServiceEULA" android:background="@color/mj_color_black_10_transparent" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_marginLeft="20dp"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:id="@+id/tvCloudServiceEULA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/cs_service_eula" android:layout_below="@+id/viewCloudServiceEULA"/>
+                    <TextView android:textSize="12sp" android:id="@+id/tvArrowCloudServiceEULA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:drawableRight="@drawable/std_list_main_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/viewScrollBottom" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_below="@+id/rlCloudServiceEULA"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

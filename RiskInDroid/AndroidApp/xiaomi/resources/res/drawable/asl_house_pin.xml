@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/house_inactive" android:drawable="@drawable/std_tab_icon_my_device_normal" app:state_house_inactive="true"/>
+    <item android:id="@+id/pin" android:drawable="@drawable/device_icon_pin_active_webp" app:state_pin="true"/>
+    <item android:id="@+id/house" android:drawable="@drawable/std_tab_icon_my_device_selected"/>
+</selector>

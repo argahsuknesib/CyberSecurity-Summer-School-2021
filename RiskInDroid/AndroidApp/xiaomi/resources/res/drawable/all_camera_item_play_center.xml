@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/all_camera_item_play_center_pres"/>
+    <item android:drawable="@drawable/all_camera_item_play_center_nor"/>
+</selector>

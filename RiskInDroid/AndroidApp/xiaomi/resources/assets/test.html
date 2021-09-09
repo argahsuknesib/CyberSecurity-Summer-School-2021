@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="content-type">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<style>
+#container{
+	position:absolute;
+	left:10%;
+	top:30%;
+	width:80%;
+	min-width:280px;
+	text-align:center;
+}
+#container input{
+	min-width:50px;
+	min-height:50px;
+	font-weight:bold;
+}
+#rst{
+	color:green;
+	margin-top:15px;
+}
+</style>
+<title>开关控制demo</title>
+</head>
+<body>
+<div id="container">
+<h3>开关控制Demo</h3>
+<input type="button" value="开" onclick="plug('on')" />
+<input type="button" value="关" onclick="plug('off')" />
+<div id="status"></div>
+<div id="rst"></div>
+</div>
+
+<script type="text/javascript">
+//rpc方法，与Android交互
+//替换RPC_FUNCTION为真实方法
+function rpc(method,params,id){
+	var rpc_json = {"method":method,"params":params}
+	if(id > 0){
+		rpc_json.id = id;
+	}
+	return rpc_function(JSON.stringify(rpc_json));
+}
+
+function rpc_function(json){
+	window.rpcObject.rpcCall(json);
+}
+
+function rpc_return(json){
+	document.getElementById("rst").innerHTML = "执行结果:"+json;
+}
+
+function rpc_status(json){
+	document.getElementById("status").innerHTML = "当前状态:"+json;
+}
+
+//开关方法
+function plug(onoff){
+	document.getElementById("rst").innerHTML = "执行中。。。";
+	switch(onoff){
+		case "on":
+			var ret = rpc("set_on",[],1);
+			break;
+		case "off":
+			var ret = rpc("set_off",[],1);
+			break;
+		default :
+			return false;
+	}
+	
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm" item:item_title="@string/housekeeping" item:item_type="2" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_time" item:item_select="true" item:item_title="@string/alarm_time" item:item_type="1" style="@style/setting_item"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/alarm_open_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_level" android:layout_marginTop="@dimen/title_margin_top" item:item_select="true" item:item_title="@string/setting_alarm_area" item:item_type="1" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_push_time" item:item_subtitle="@string/settings_alarm_push_time_sub" item:item_title="@string/settings_alarm_push_time" item:item_type="1" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_move" android:visibility="gone" item:item_subtitle="@string/settings_alarm_move_title" item:item_title="@string/settings_alarm_move" item:item_type="2" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_push" item:item_subtitle="@string/settings_alarm_push_title" item:item_title="@string/settings_alarm_push" item:item_type="2" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_human_only" android:visibility="gone" item:item_subtitle="@string/settings_alarm_human_only_desc" item:item_title="@string/settings_alarm_human_only_title" item:item_type="2" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_event_type" android:visibility="gone" item:item_subtitle="@string/event_type_push_sub_title" item:item_title="@string/event_type_push_title" item:item_type="1" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_idm_cast_screen" android:visibility="gone" item:item_subtitle="@string/event_type_idm_cast_screen_sub" item:item_title="@string/event_type_idm_cast_screen" item:item_type="1" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_wx_push" android:visibility="gone" item:item_title="@string/alarm_wx_push" item:item_type="2" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/daily_story" android:visibility="gone" android:layout_marginTop="@dimen/title_margin_top" item:item_title="@string/daily_story" item:item_type="1" style="@style/setting_item"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/alarm_ai_open_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_alarm_long_time" android:layout_marginTop="@dimen/title_margin_top" item:item_select="true" item:item_title="@string/settings_alarm_long_time" item:item_type="1" style="@style/setting_item"/>
+                <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_baby_sleep" android:visibility="gone" item:item_select="true" item:item_title="@string/settings_alarm_baby_sleep" item:item_type="1" style="@style/setting_item"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

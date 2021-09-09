@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_ll" android:layout_width="match_parent" android:layout_height="@dimen/size_80dp" android:maxHeight="@dimen/size_80dp" android:minHeight="@dimen/size_80dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/stereo_item_icon" android:layout_width="@dimen/size_30dp" android:layout_height="@dimen/size_50dp" android:scaleType="centerInside" android:layout_marginStart="@dimen/setting_icon_margin"/>
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_gray_heavier" android:layout_gravity="center_vertical" android:id="@+id/stereo_item_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/setting_icon_margin" android:layout_marginEnd="@dimen/setting_icon_margin"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/stereo_item_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_more" android:layout_marginEnd="@dimen/setting_icon_margin"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/passport_divider"/>
+</LinearLayout>

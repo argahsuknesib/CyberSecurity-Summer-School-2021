@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="60dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_centerVertical="true" app:placeholderImage="@drawable/default_icon_user240_nor" app:roundAsCircle="true"/>
+    <FrameLayout android:id="@+id/btn_share_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_content_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_content_margin_right" android:layout_alignParentEnd="true">
+        <ImageView android:id="@+id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:importantForAccessibility="no"/>
+        <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ckb_edit_selected" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/list_icon_selector"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="67dp" android:layout_toRightOf="@+id/icon" android:layout_centerInParent="true" android:layout_marginStart="14dp" android:layout_marginEnd="67dp" android:layout_toEndOf="@+id/icon">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+    </LinearLayout>
+</RelativeLayout>

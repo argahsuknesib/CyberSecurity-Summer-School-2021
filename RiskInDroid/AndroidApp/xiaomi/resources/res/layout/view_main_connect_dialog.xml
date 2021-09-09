@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/dialog_main_connect_bg" android:layout_width="match_parent" android:layout_height="357dp">
+    <TextView android:textSize="16.7sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="73.7dp" android:text="@string/wifi_scan_new_device_title"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/sdv_device_picture" android:layout_width="160dp" android:layout_height="160dp" android:scaleType="centerInside" app:failureImage="@drawable/mj_webp_list_delete_nor"/>
+    <TextView android:textSize="15.3sp" android:textColor="#b3000000" android:gravity="center" android:id="@+id/tv_device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Device&apos;s Name"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="23.3dp" android:weightSum="2">
+        <TextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/ignore" android:background="@drawable/dialog_main_connect_sub_bg" android:layout_width="0dp" android:layout_height="46.7dp" android:text="@string/ignore" android:layout_weight="1" android:layout_marginStart="26.7dp" android:layout_marginEnd="6.65dp"/>
+        <TextView android:textColor="@color/mj_color_highlight_blue_text_color" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/add_begin" android:background="@drawable/dialog_main_connect_sub_bg" android:layout_width="0dp" android:layout_height="46.7dp" android:text="@string/add_begin" android:layout_weight="1" android:layout_marginStart="6.65dp" android:layout_marginEnd="26.7dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/listitem_home_productbigview_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding12">
+        <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t16" android:textColor="@android:color/black" android:id="@+id/listitem_home_productbigview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t14" android:textColor="@color/orange_deep" android:id="@+id/listitem_home_productbigview_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t12" android:textColor="#ff9a9a9a" android:ellipsize="end" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/listitem_home_productbigview_desc" android:paddingLeft="@dimen/padding12" android:paddingRight="@dimen/padding12" android:paddingBottom="@dimen/padding12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding8" android:minHeight="14dp" android:maxLines="3" android:shadowColor="@color/t_grey_buttonicon" android:lineSpacingExtra="2dp"/>
+    <View android:background="#fff5f5f5" android:layout_width="match_parent" android:layout_height="4dp"/>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/player_list_item" android:layout_width="match_parent" android:layout_height="@dimen/player_music_item_height" android:paddingStart="@dimen/size_27dp" android:paddingEnd="@dimen/size_27dp" style="@style/App.Widget.ListView.Item.dialog">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/size_3dp" android:layout_weight="1">
+        <TextView android:textStyle="bold" android:id="@+id/music_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/App.Widget.ListView.Item.Title"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:ellipsize="end" android:id="@+id/music_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/size_3dp" style="@style/App.Widget.ListView.Item.Description"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/music_item_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_playing" android:layout_marginEnd="3dp"/>
+</LinearLayout>

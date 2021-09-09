@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/mj_rs_common_white_list_padding" android:layout_width="match_parent" android:layout_height="@dimen/listitem_7_height" android:minHeight="@dimen/listitem_7_height">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_green_right_arrow_icon" android:importantForAccessibility="no"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/room_icon" android:background="@drawable/shape_bg_room_icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_toRightOf="@+id/delete_btn" android:layout_centerVertical="true" android:layout_toEndOf="@+id/delete_btn" fresco:placeholderImage="@drawable/default_1_normal" fresco:roundAsCircle="false"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavier" android:layout_gravity="center_vertical" android:id="@+id/room_name" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/divide_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:importantForAccessibility="no"/>
+</RelativeLayout>

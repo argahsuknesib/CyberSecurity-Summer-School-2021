@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_transparent_black"/>
+    <include layout="@layout/camera_list_line"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemViewMultiLine android:id="@+id/settting_item_area_change" item:item_select="true" item:item_title="@string/event_type_obj_motion_push" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemViewMultiLine android:id="@+id/settting_item_people" item:item_select="true" item:item_title="@string/event_type_people_motion_push" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemViewMultiLine android:id="@+id/settting_item_baby_cry" item:item_select="true" item:item_title="@string/event_type_baby_cry_push" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemViewMultiLine android:id="@+id/settting_item_auto" item:item_select="true" item:item_title="@string/event_type_ai_push" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemViewMultiLine android:id="@+id/setting_item_pet" item:item_select="true" item:item_title="@string/event_type_pet_push" item:item_type="2" style="@style/setting_item"/>
+</LinearLayout>

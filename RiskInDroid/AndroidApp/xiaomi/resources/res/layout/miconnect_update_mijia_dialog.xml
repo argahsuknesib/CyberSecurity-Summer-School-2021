@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/miconnect_common_title"/>
+    <ImageView android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="160dp" android:src="@drawable/mijia_install_icon" android:importantForAccessibility="no"/>
+    <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black_70_transparent" android:gravity="center_horizontal" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="63.3dp" android:text="@string/miconnect_update_mijia_app_content" android:paddingStart="40dp" android:paddingEnd="40dp"/>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

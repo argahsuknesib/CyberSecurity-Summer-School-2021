@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/panic_buy_tab_button_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/home_text_color_black_a" android:gravity="center" android:id="@+id/tab_active_start_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="10:00"/>
+        <TextView android:textSize="@dimen/home_text_size_h1" android:textColor="@color/home_text_color_black_c" android:gravity="center" android:id="@+id/tab_active_remind" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="热卖中" android:layout_below="@+id/tab_active_start_time"/>
+    </RelativeLayout>
+</RelativeLayout>

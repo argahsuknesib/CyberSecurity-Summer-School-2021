@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="48dp" android:layout_height="48dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon_sdv" android:layout_width="48dp" android:layout_height="48dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" fresco:actualImageScaleType="2" fresco:fadeDuration="200" fresco:placeholderImage="@drawable/device_list_phone_no"/>
+</RelativeLayout>

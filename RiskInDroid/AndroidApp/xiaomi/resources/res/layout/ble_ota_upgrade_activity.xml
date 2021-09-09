@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="10sp" android:textColor="@color/mj_color_black" android:id="@+id/txt_debug" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/img_status_icon" android:layout_width="270dp" android:layout_height="270dp" android:layout_marginTop="65dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/txt_update_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp"/>
+                <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_horizontal" android:id="@+id/txt_update_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="2dp" android:layout_marginRight="30dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_normal" android:gravity="left" android:id="@+id/txt_update_desc" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="35dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="12sp" android:textColor="@color/mj_color_white" android:id="@+id/btn_bottom" android:background="@drawable/ble_ota_btn_selector" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:minHeight="0dp" android:text="@string/camera_settings_camera_update" android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

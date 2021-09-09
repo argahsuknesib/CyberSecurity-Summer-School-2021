@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" tb:tb_bg="@color/mj_color_black_00_transparent" tb:tb_has_back="true" tb:tb_left_icon="@drawable/mico_icon_arrow_down"/>
+    <RelativeLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/player_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/player_bottom_view" android:overScrollMode="never"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/player_bottom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include android:id="@+id/player_control_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mico_view_music_control_bar_v2"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/player_control_multi_room" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_17dp" android:text="@string/multi_room_entry" android:drawableLeft="@drawable/mico_icon_bottom_multidevice" android:drawablePadding="@dimen/size_6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

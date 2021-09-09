@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd_card_hint_desc" android:layout_centerInParent="true"/>
+    <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/sd_card_hint_title" android:drawableTop="@drawable/camera_no_sdcard" android:drawablePadding="20dp" android:layout_above="@+id/tvDesc" android:layout_centerHorizontal="true"/>
+    <TextView android:id="@+id/tvIKnow" android:background="@drawable/camera_sd_card_hint_btn_bg" android:paddingLeft="50dp" android:paddingTop="10dp" android:paddingRight="50dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/mj_i_know" android:layout_below="@+id/tvDesc" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

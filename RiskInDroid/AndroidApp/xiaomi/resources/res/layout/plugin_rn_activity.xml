@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/fl_root" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_loading" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3">
+        <include layout="@layout/mj_module_a_3_title_bar_return"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="10dp"/>
+        <com.xiaomi.smarthome.library.common.widget.LoadingView android:layout_width="wrap_content" android:layout_height="5dp" android:layout_marginTop="144dp" app:color_end="@color/mj_color_black_30_transparent" app:color_start="@color/mj_color_black_10_transparent" app:dot_count="3" app:dot_distance="4dp" app:dot_size="5dp" app:time_interval="300"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tv_plugin_download_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text=""/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.framework.plugin.rn.view.FpsMemoryView android:gravity="right" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/fps_memory_view" android:background="#a4141823" android:paddingLeft="4dp" android:visibility="gone" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_margin="4dp"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xiaomi.smarthome.framework.plugin.rn.view.DraggingButton android:textSize="15sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/drag_button_dev_setting" android:background="@drawable/rn_drag_button_bg" android:padding="10dp" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="20dp" android:text="Reload\10 JS "/>
+</FrameLayout>

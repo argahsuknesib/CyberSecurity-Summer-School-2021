@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sd_room_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="15dp" android:layout_marginStart="12dp" app:actualImageScaleType="7" app:placeholderImage="@drawable/style_1_favorites" app:placeholderImageScaleType="7" app:roundedCornerRadius="16dp" app:viewAspectRatio="0.55"/>
+</FrameLayout>

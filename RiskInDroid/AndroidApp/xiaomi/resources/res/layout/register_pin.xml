@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" style="@style/cb_linear_layout">
+    <View android:background="@color/cb_border" style="@style/cb_horizontal_line"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" style="@style/cb_linear_layout">
+        <LinearLayout android:layout_height="30dp" style="@style/cb_linear_layout">
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_marginTop="@dimen/cb_eight" android:layout_marginBottom="@dimen/cb_eighteen" android:drawableTop="@drawable/slider" style="@style/cb_text_view"/>
+        </LinearLayout>
+        <TextView android:textSize="18sp" android:textColor="@color/cb_dark_grey" android:gravity="center" android:layout_width="match_parent" android:layout_marginBottom="@dimen/cb_sixteen" android:text="@string/cb_card_not_registered_with_pin" android:fontFamily="sans-serif-light" style="@style/cb_text_view"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/cb_eight" android:paddingRight="@dimen/cb_eight" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cb_thirtysix" style="@style/cb_linear_layout">
+            <Button android:textSize="17sp" android:id="@+id/pin" android:background="@drawable/approve_otp_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cb_eight" android:text="@string/cb_register_for_pin" android:layout_weight="1" style="@style/cb_approve_otp"/>
+            <Button android:textSize="17sp" android:id="@+id/otp" android:background="@drawable/approve_otp_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cb_eight" android:text="@string/cb_use_sms_otp" android:layout_weight="1" style="@style/cb_approve_otp"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/rectangle_box" android:layout_height="wrap_content" style="@style/cb_relative_layout">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@null" android:layout_height="30dp" android:layout_alignParentLeft="true" style="@style/cb_linear_layout">
+                <TextView android:textSize="@dimen/cb_twelveScaled" android:textStyle="bold" android:textColor="@color/cb_textColor" android:gravity="center_vertical" android:background="@null" android:layout_height="30dp" android:layout_marginLeft="5dp" android:drawableRight="@drawable/trusticon" android:drawablePadding="@dimen/cb_four" style="@style/cb_text_view"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/cb_textColor" android:gravity="center_vertical" android:background="@null" android:layout_height="30dp" android:layout_marginLeft="@dimen/cb_four" android:text="@string/cb_powered_by" android:drawablePadding="@dimen/cb_four" style="@style/cb_text_view"/>
+                <TextView android:textSize="@dimen/cb_twelveScaled" android:textStyle="bold" android:textColor="@color/cb_textColor" android:gravity="center" android:background="@null" android:layout_height="20dp" android:layout_marginLeft="@dimen/cb_four" android:drawableLeft="@drawable/logo_payu" android:drawablePadding="@dimen/cb_four" style="@style/cb_text_view"/>
+            </LinearLayout>
+            <LinearLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_alignParentRight="true" style="@style/cb_linear_layout">
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/bank_logo" android:background="@null" android:paddingRight="5dp" android:contentDescription="@string/cb_bank_logo" style="@style/cb_image_view"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.mico.common.widget.RatioBanner android:id="@+id/music_section_banner" android:layout_width="match_parent" android:layout_height="wrap_content" app:delay_time="3000" app:image_scale_type="3" app:indicator_drawable_selected="@drawable/icon_alarm_bannar_dot_hightlight" app:indicator_drawable_unselected="@drawable/icon_alarm_bannar_dot_normal" app:indicator_height="@dimen/dot_size" app:indicator_margin="4dp" app:indicator_width="@dimen/dot_size" app:is_auto_play="true" app:mc_ratio="2.6562" app:scroll_time="2000"/>
+</RelativeLayout>

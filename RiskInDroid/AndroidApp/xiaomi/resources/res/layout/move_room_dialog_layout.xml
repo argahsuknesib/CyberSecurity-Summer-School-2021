@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/add_room" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/listitem_7_height" layout="@layout/move_room_dialog_item"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/recycler_view_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/most_used_divider" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

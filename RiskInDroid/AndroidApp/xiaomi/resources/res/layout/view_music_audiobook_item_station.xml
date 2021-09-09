@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="72dp" android:paddingEnd="20dp" style="@style/App.Widget.ListView.Item">
+    <RelativeLayout android:layout_width="44dp" android:layout_height="match_parent">
+        <ImageView android:id="@+id/music_item_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/icon_playing" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:maxLines="1" android:maxLength="5" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/music_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2" style="@style/App.Widget.ListView.Item.Title"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/up_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <View android:background="@color/mj_color_gray_lighter" android:layout_width="1dp" android:layout_height="10dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/music_duration" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/free_trial_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/mj_color_green_normal" android:background="@drawable/mico_smarthome_alpha10_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/station_audition" android:drawableLeft="@drawable/mico_icon_music_free_tasting" android:drawablePadding="6dp" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivLock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_lock_icon"/>
+</LinearLayout>

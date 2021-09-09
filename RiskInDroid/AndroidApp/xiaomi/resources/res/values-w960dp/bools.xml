@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="flexible_detect_id_w780">false</bool>
+    <bool name="flexible_detect_id_w960">true</bool>
+</resources>

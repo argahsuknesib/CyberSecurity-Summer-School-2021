@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/confirm_payment_outermargin" android:layout_marginRight="@dimen/confirm_payment_outermargin" android:layout_marginBottom="25dp">
+    <RelativeLayout android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/title_text_color" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/buy_confirm_EMI_tip1"/>
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/orange_red" android:id="@+id/tv_bank_special" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="10dp">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="15dp" android:textColor="@color/pay_content_color" android:id="@+id/tv_bfl_less_than_min" android:background="@color/bfl_less_than_min_tips_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.mi.global.shop.widget.NoScrollGridView android:id="@+id/bank_grid_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:horizontalSpacing="@dimen/confirm_payment_margin" android:verticalSpacing="@dimen/confirm_payment_margin" android:numColumns="2"/>
+    </LinearLayout>
+</LinearLayout>

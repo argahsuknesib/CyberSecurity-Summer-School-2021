@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/new_msg_tip_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentTop="true">
+    <RelativeLayout android:id="@+id/new_msg_tip" android:background="@drawable/rectangle_23_radius_btn_dark1a" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_centerInParent="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/message_icon_top_nor"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_message_icon_color_green" android:id="@+id/new_msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_center_setting_title" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

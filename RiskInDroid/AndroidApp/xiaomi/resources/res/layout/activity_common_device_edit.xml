@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.miui.AutoMaskLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/al_root" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_size_3" android:textColor="@color/mj_color_white" android:gravity="center_vertical" android:id="@+id/back" android:paddingLeft="14dp" android:paddingTop="4dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_common_activity_title" android:drawableLeft="@drawable/btn_common_back_white" android:drawablePadding="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:background="@drawable/rounded_transparent_bg" android:paddingLeft="13.33dp" android:paddingRight="7.33dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</com.xiaomi.smarthome.miui.AutoMaskLinearLayout>

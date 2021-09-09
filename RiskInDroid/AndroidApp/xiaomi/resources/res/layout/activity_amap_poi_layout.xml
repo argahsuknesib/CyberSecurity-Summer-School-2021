@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/search_places" android:background="@drawable/bg_10_bgcolor_white_stroke_green" android:layout_width="0dp" android:layout_height="48dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/search_places_image_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_input_search" android:layout_centerVertical="true" android:contentDescription="@string/timezone_activity_search" android:layout_marginStart="10dp"/>
+            <EditText android:textSize="16dp" android:textColor="@color/mj_color_black" android:textColorHint="@color/mj_color_black_30_transparent" android:ellipsize="middle" android:id="@+id/search_et" android:background="@color/mj_color_black_00_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/search_loc" android:singleLine="true" android:layout_centerVertical="true" android:paddingStart="40dp" android:paddingEnd="45dp"/>
+            <ImageView android:id="@+id/img_search_content_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_edit_clear_content" android:layout_centerVertical="true" android:contentDescription="@string/timezone_activity_search" android:layout_marginEnd="12dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center_vertical" android:id="@+id/cancel" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sh_common_cancel" android:layout_marginStart="2dp" android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+    <ListView android:id="@+id/lv_data" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+</LinearLayout>

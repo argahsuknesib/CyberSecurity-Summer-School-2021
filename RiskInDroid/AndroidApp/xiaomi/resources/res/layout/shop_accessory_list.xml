@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:id="@+id/empty_view" android:background="@color/home_empty_title_view" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <FrameLayout android:id="@+id/accessory_list_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/accessory_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="0"/>
+        <com.mi.global.shop.widget.CustomRecyclerView android:layout_gravity="bottom" android:id="@+id/accessory_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp"/>
+    </FrameLayout>
+</LinearLayout>

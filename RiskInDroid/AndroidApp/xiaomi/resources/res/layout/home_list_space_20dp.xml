@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/list_space" android:clickable="false" android:layout_width="match_parent" android:layout_height="20dp" android:layout_below="@+id/ll_content">
+    <View android:id="@+id/divider_item" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_centerVertical="true" android:layout_marginStart="27dp" android:layout_marginEnd="27dp"/>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

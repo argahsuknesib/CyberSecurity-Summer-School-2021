@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <include android:id="@+id/head_profile_category" layout="@layout/account_category_item_layout"/>
+                <include android:id="@+id/head_container" layout="@layout/account_item_layout"/>
+                <include android:id="@+id/uid_container" layout="@layout/account_item_layout"/>
+                <include android:id="@+id/name_container" layout="@layout/account_item_layout"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+                    <View android:layout_gravity="center" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="27dp" android:layout_marginRight="27dp"/>
+                </FrameLayout>
+                <include android:id="@+id/account_binding_category" layout="@layout/account_category_item_layout"/>
+                <include android:id="@+id/wx_account_binding_container" layout="@layout/account_binding_item_layout"/>
+                <include android:id="@+id/fb_account_binding_container" layout="@layout/account_binding_item_layout"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+                    <View android:layout_gravity="center" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="27dp" android:layout_marginRight="27dp"/>
+                </FrameLayout>
+                <include android:id="@+id/account_security_category" layout="@layout/account_category_item_layout"/>
+                <include android:id="@+id/phone_container" android:visibility="invisible" layout="@layout/account_item_layout"/>
+                <include android:id="@+id/email_container" android:visibility="invisible" layout="@layout/account_item_layout"/>
+                <include android:id="@+id/pwd_container" layout="@layout/account_item_layout"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="40dp">
+                    <View android:layout_gravity="center" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="27dp" android:layout_marginRight="27dp"/>
+                </FrameLayout>
+                <include android:id="@+id/account_vip_category" layout="@layout/account_category_item_layout"/>
+                <include android:id="@+id/vip_level_container" layout="@layout/item_vip_level"/>
+                <include android:id="@+id/vip_achievement_container" layout="@layout/item_vip_achievements"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/font_size_14sp" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/login_system_account_login_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="27dp" android:text="@string/login_system_login" style="@style/DeniedNormalGrayBtn"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_3_title_bar_return_manager"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_common"/>
+    <RelativeLayout android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tips">
+            <com.xiaomi.smarthome.library.common.widget.PullDownDragListView android:scrollbarStyle="insideOverlay" android:id="@+id/list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+            <include android:visibility="gone" layout="@layout/common_white_empty_view_pullrefresh_new"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_green_normal" android:id="@+id/tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/std_list_margin_top_content_replenish" android:layout_marginBottom="20dp" android:text="@string/mini_program_tip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <include layout="@layout/common_white_empty_view_new"/>
+        <RelativeLayout android:id="@+id/bottom_delete_bar" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_black_50_transparent" android:gravity="center" android:id="@+id/delete_msg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/program_unauth" android:drawableTop="@drawable/delete_button" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" android:thicknessRatio="6">
+            <corners android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+            <solid android:color="@color/mj_color_shallow_sleep_bar_bg_select"/>
+        </shape>
+    </item>
+</layer-list>

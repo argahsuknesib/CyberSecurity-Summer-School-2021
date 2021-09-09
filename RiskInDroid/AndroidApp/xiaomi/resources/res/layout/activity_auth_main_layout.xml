@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <com.xiaomi.smarthome.lite.scene.HomeSceneScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:paddingStart="17dp" android:paddingEnd="17dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/app_icon" android:layout_width="54dp" android:layout_height="54dp"/>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="10dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textColor="@color/mj_color_gray_light" android:id="@+id/app_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="29dp">
+                <TextView android:textColor="@color/mj_color_gray_light" android:id="@+id/auth_desc" android:paddingLeft="@dimen/auth_padding" android:paddingRight="@dimen/auth_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_will_get_permission" android:paddingStart="@dimen/auth_padding" android:paddingEnd="@dimen/auth_padding"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:paddingTop="@dimen/auth_padding" android:paddingRight="@dimen/auth_padding" android:paddingBottom="@dimen/auth_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/auth_padding">
+                    <TextView android:textColor="@color/mj_color_gray_light" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="17dp" android:text="@string/auth_select_all" android:layout_marginStart="17dp"/>
+                    <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ckb_select_all" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginRight="3dp" android:button="@drawable/checkbox_layout" android:layout_centerVertical="true" android:layout_marginStart="11dp" android:layout_marginEnd="3dp"/>
+                </LinearLayout>
+                <View android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.33dp"/>
+                <com.xiaomi.smarthome.library.common.widget.ListViewWithFixedHeight android:id="@+id/auto_lv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RelativeLayout android:paddingLeft="@dimen/auth_padding" android:paddingRight="@dimen/auth_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:paddingStart="@dimen/auth_padding" android:paddingEnd="@dimen/auth_padding">
+                    <TextView android:textColor="@drawable/auth_main_agree_btn_text_selector" android:gravity="center" android:id="@+id/auth_agree" android:background="@drawable/auth_main_agree_btn_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/auth_big_button_height" android:text="@string/agree" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    <TextView android:textColor="@drawable/auth_main_cancel_btn_text_selector" android:gravity="center" android:id="@+id/auth_cancel" android:background="@drawable/auth_main_cancel_btn_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/auth_big_button_height" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:text="@string/sh_common_cancel" android:layout_below="@+id/auth_agree"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.xiaomi.smarthome.lite.scene.HomeSceneScrollView>
+</LinearLayout>

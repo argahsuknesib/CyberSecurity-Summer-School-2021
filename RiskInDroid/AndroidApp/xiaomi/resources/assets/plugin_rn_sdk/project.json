@@ -1,0 +1,9 @@
+{
+"name":"miot",
+"version":"1.0.58",
+"platform":"android",
+"is_sdk_bundle":true,
+"sdk_api_level": 10058,
+"min_native_api_level": 10058,
+"build_time": 1628665895000
+}

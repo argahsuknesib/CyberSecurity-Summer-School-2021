@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/include_face_common_title_bar"/>
+        <FrameLayout android:id="@+id/videoViewParent" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/event_operation_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/event_operation_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        </RelativeLayout>
+        <TextView android:textColor="#8c93b0" android:id="@+id/tv_day" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tv_feedback" android:overScrollMode="never"/>
+            <TextView android:textSize="11sp" android:textColor="@color/mj_color_black_60_transparent" android:id="@+id/tv_feedback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/face_match_error" android:layout_alignParentBottom="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tvDownloadHint" android:background="#32bac0" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cs_download_hint"/>
+</FrameLayout>

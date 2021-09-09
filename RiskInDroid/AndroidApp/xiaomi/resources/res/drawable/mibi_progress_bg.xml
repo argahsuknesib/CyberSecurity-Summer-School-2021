@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="@dimen/mibi_progress_view_radius"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mibi_line_color"/>
+            <corners android:radius="@dimen/mibi_progress_view_radius"/>
+        </shape>
+    </item>
+</transition>

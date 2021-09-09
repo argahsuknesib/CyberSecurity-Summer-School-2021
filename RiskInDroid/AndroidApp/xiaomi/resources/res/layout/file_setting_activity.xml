@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:gravity="bottom" android:background="@color/mj_color_white" android:paddingLeft="@dimen/item_margin" android:paddingBottom="13dp" android:text="@string/setting_sdcard" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_sdcard_record" item:item_icon="@drawable/camera_setting_record_icon" item:item_line_margin="0dp" item:item_title="@string/setting_record_model" item:item_type="1" style="@style/setting_item"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_sdcard" item:item_icon="@drawable/camera_setting_sdcard_icon" item:item_info="@string/sd_card_status0" item:item_line_margin="0dp" item:item_title="@string/setttings_sdcard_title" item:item_type="1" style="@style/setting_item"/>
+        <View android:id="@+id/settings_sdcard_view" android:layout_width="wrap_content" android:layout_height="@dimen/setting_height_item"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:gravity="bottom" android:background="@color/mj_color_white" android:paddingLeft="@dimen/item_margin" android:paddingBottom="13dp" android:text="@string/setting_nas_title" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_smb_backup" item:item_icon="@drawable/camera_setting_smb_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setttings_route_backup_title" item:item_type="1" style="@style/setting_item"/>
+</LinearLayout>

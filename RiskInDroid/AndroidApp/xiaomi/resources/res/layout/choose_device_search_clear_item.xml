@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="70dp">
+    <TextView android:textSize="14sp" android:id="@+id/search_history_clear_btn" android:visibility="visible" android:layout_width="278dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/device_choose_search_clear_history" android:layout_below="@+id/device_grid_list" android:layout_marginStart="27dp"/>
+</FrameLayout>

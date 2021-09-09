@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progress_progress" android:layout_width="30dp" android:layout_height="30dp" android:indeterminate="true" style="@style/mj_page_circle_loading_progress"/>
+            <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/mj_color_black_30_transparent" android:layout_gravity="center_horizontal" android:id="@+id/progress_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/mj_refreshing_no_point"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

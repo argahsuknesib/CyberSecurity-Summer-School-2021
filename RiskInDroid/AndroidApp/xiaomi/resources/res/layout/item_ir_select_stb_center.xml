@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/margin_18" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/ir_select_brand_index_item_width">
+        <TextView android:textSize="@dimen/ir_font_size_normal" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/ir_select_stb_brand_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ir_select_brand_text_margin_left"/>
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/ir_main_device_list_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/ir_divider_height"/>
+</LinearLayout>

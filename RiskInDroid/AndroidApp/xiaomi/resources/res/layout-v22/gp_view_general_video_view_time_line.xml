@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:layout_gravity="center" android:id="@+id/pause_view" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="64dp" android:layout_height="64dp" android:button="@drawable/camera_icon_center_play_checkbox"/>
+    <FrameLayout android:id="@+id/error_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/land_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/flTopCtrlLandscape" android:background="@drawable/camera_title_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="15dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_tittlebar_white_normal"/>
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/cdcToggleAudio_land" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/home_icon_toggle_audio_new" android:layout_marginEnd="7dp"/>
+                <ImageView android:id="@+id/tvsMultiSpeed_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playback_icon_1x" android:layout_marginEnd="7dp" android:forceDarkAllowed="false"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llRightCtrlLandscape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="130dp" android:layout_below="@+id/flTopCtrlLandscape" android:layout_alignParentBottom="true" android:layout_marginEnd="22dp" android:layout_alignParentEnd="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="10">
+                <ImageView android:layout_gravity="center" android:id="@+id/ivCameraShot_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_toggle_short3_new"/>
+            </FrameLayout>
+            <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="10">
+                <CheckBox android:layout_gravity="center" android:id="@+id/cdcCameraRecord_land" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/home_icon_toggle_record3_new"/>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/time_line_land" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/bottom_ctrl_ll" android:background="@drawable/camera_title_background_bottom" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center_horizontal" android:id="@+id/ivCameraShot" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/camera_icon_shot_new" android:layout_weight="1"/>
+        <FrameLayout android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.xiaomi.smarthome.camera.view.widget.CenterDrawableCheckBox android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/cdcCameraRecord" android:background="@drawable/home_icon_camera_record_playback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null"/>
+        </FrameLayout>
+        <ImageView android:gravity="center_horizontal" android:id="@+id/tvsMultiSpeed" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/playback_icon_1x" android:layout_weight="1"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.xiaomi.smarthome.camera.view.widget.CenterDrawableCheckBox android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/cdcToggleAudio" android:background="@drawable/home_icon_toggle_audio_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null"/>
+        </FrameLayout>
+        <ImageView android:gravity="center_horizontal" android:id="@+id/ivFullScreen" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/home_icon_fullscreen_big_new" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:layout_gravity="start" android:visibility="gone" android:layout_width="100dp" android:layout_height="60dp" android:layout_marginTop="20dp" android:layout_marginStart="15dp" app:cardCornerRadius="5dp" app:cardElevation="0dp">
+        <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/ivImage" android:background="@color/camera_white" android:padding="1.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:riv_corner_radius="5dp"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/camera_main_view" android:paddingBottom="5.33dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="6dp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/miot_device_item_bg" android:padding="1px" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/camera_image_view" android:layout_width="match_parent" android:layout_height="79dp" android:src="@drawable/camera_card_setting_default" android:scaleType="centerCrop" app:riv_corner_radius_bottom_left="4dp" app:riv_corner_radius_top_left="4dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:layout_width="match_parent" android:layout_height="79dp" android:src="#ffffffff" android:scaleType="fitXY" app:riv_corner_radius_bottom_right="4dp" app:riv_corner_radius_top_right="4dp"/>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/device_main_view" android:layout_width="match_parent" android:layout_height="79dp">
+                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_90_transparent" android:id="@+id/device_name" android:layout_width="132dp" android:layout_height="wrap_content" android:layout_marginLeft="12.67dp" android:layout_marginTop="10.67dp" android:singleLine="true" android:includeFontPadding="false"/>
+                <TextView android:textSize="@dimen/font_size_10sp" android:textColor="#80000000" android:id="@+id/all_camera_size" android:layout_width="84dp" android:layout_height="wrap_content" android:layout_marginLeft="12.67dp" android:layout_marginBottom="9dp" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentBottom="true"/>
+                <FrameLayout android:id="@+id/alert_container" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@+id/device_controller" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/camera_card_icon_alarm"/>
+                </FrameLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

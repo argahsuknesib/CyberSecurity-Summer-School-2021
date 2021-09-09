@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <RelativeLayout android:id="@+id/list_title" android:layout_width="match_parent" android:layout_height="47dp">
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="20dp" android:text="@string/choose_gateway_device" android:layout_marginStart="17dp"/>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:id="@+id/list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        <ScrollView android:id="@+id/sv_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="23dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_no_gateway_tips"/>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_gateway_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

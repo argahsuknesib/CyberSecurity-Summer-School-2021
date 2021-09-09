@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<splits>
+    <module name="">
+        <language>
+            <entry key="be" split=""/>
+            <entry key="bg" split=""/>
+            <entry key="bo" split=""/>
+            <entry key="ca" split=""/>
+            <entry key="cs" split=""/>
+            <entry key="da" split=""/>
+            <entry key="de" split=""/>
+            <entry key="el" split=""/>
+            <entry key="en" split=""/>
+            <entry key="es" split=""/>
+            <entry key="et" split=""/>
+            <entry key="fi" split=""/>
+            <entry key="fo" split=""/>
+            <entry key="fr" split=""/>
+            <entry key="ga" split=""/>
+            <entry key="hr" split=""/>
+            <entry key="hu" split=""/>
+            <entry key="in" split=""/>
+            <entry key="is" split=""/>
+            <entry key="it" split=""/>
+            <entry key="ja" split=""/>
+            <entry key="kl" split=""/>
+            <entry key="ko" split=""/>
+            <entry key="lt" split=""/>
+            <entry key="lv" split=""/>
+            <entry key="mk" split=""/>
+            <entry key="mt" split=""/>
+            <entry key="nb" split=""/>
+            <entry key="nl" split=""/>
+            <entry key="nn" split=""/>
+            <entry key="no" split=""/>
+            <entry key="pl" split=""/>
+            <entry key="pt" split=""/>
+            <entry key="ro" split=""/>
+            <entry key="ru" split=""/>
+            <entry key="sk" split=""/>
+            <entry key="sl" split=""/>
+            <entry key="sq" split=""/>
+            <entry key="sr" split=""/>
+            <entry key="sv" split=""/>
+            <entry key="th" split=""/>
+            <entry key="tr" split=""/>
+            <entry key="uk" split=""/>
+            <entry key="vi" split=""/>
+            <entry key="zh" split=""/>
+        </language>
+    </module>
+</splits>

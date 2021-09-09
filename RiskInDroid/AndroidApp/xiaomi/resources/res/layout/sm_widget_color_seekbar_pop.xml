@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_pop_bg" android:background="@drawable/color_seekbar_pop_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="58dp" android:layout_alignLeft="@+id/img_pop_bg" android:layout_alignRight="@+id/img_pop_bg" android:layout_alignStart="@+id/img_pop_bg" android:layout_alignEnd="@+id/img_pop_bg">
+        <TextView android:textSize="18sp" android:textColor="@color/mj_color_black" android:id="@+id/txt_pop_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/img_pop_inner" android:padding="1dp" android:visibility="gone" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/color_seekbar_inner" android:layout_centerInParent="true" android:importantForAccessibility="no"/>
+    </RelativeLayout>
+</RelativeLayout>

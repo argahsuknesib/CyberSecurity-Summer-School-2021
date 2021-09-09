@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buy_empty_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/mi_buy_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76dp" android:src="@drawable/mi_buy_icon" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+    <TextView android:textSize="@dimen/font_size_3" android:textColor="#696969" android:gravity="center" android:id="@+id/no_device_text" android:paddingLeft="42dp" android:paddingRight="42dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44dp" android:text="@string/smarthome_no_device" android:maxLines="2" android:layout_below="@+id/mi_buy_icon" android:paddingStart="42dp" android:paddingEnd="42dp"/>
+    <Button android:textSize="@dimen/font_size_3" android:textColor="#ffffff" android:id="@+id/btn_see_now" android:background="@drawable/common_button_highlight" android:layout_width="181dp" android:layout_height="44dp" android:layout_marginTop="70dp" android:text="@string/smarthome_see_now" android:layout_below="@+id/no_device_text" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

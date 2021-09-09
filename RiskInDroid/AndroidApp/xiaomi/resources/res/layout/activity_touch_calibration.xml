@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.cashify.otex.widget.CalibrationView android:id="@+id/touchCalibrationView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="@dimen/dimen_200" android:layout_height="@dimen/dimen_32" android:layout_marginBottom="@dimen/dimen_48" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/otexColorWhite" android:gravity="center" android:id="@+id/test_touch_sub_title" android:background="@drawable/toast_background" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/touch_calibration_sub_title" style="@style/TextAppearance.RobotoRegular.Medium"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/touchTimer" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/TextAppearance.RobotoRegular.Large"/>
+    </FrameLayout>
+</RelativeLayout>

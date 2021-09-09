@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/feed_back_title_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/common_list_space_empty"/>
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:ellipsize="end" android:id="@+id/feedback_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginTop="23dp" android:layout_marginRight="23dp" android:layout_marginStart="23dp" android:layout_marginEnd="23dp"/>
+            <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="@color/mj_color_gray_normal" android:id="@+id/feedback_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginTop="@dimen/txt_padding_4" android:layout_marginStart="23dp"/>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="23dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/feedback_reply_container" android:background="@color/mj_color_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/common_list_space_empty"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+                    <ImageView android:id="@+id/iv_feedback_smart_home_icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="23dp" android:src="@drawable/std_help_icon_appexperience" android:scaleType="fitXY" android:layout_centerVertical="true" android:importantForAccessibility="no"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_toRightOf="@+id/iv_feedback_smart_home_icon" android:layout_centerVertical="true" android:layout_marginStart="9dp" android:layout_toEndOf="@+id/iv_feedback_smart_home_icon">
+                        <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mi_smart_home_cs"/>
+                        <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="@color/mj_color_gray_normal" android:id="@+id/feedback_reply_time" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+                <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="@color/mj_color_gray_normal" android:id="@+id/feedback_reply_content" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/std_list_content_margin_left" android:layout_marginTop="@dimen/std_list_margin_top_content_replenish" android:layout_marginRight="22dp" android:layout_marginBottom="23dp" android:layout_marginStart="@dimen/std_list_content_margin_left" android:layout_marginEnd="22dp"/>
+            </LinearLayout>
+            <include layout="@layout/common_list_space_empty"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_reply_container" android:layout_width="match_parent" android:layout_height="250dp" android:layout_marginBottom="@dimen/font_size_23sp">
+                <ImageView android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_help_icon_waiting" android:importantForAccessibility="no"/>
+                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_50_transparent" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/feedback_already_submit"/>
+                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_50_transparent" android:padding="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/feedback_waitting"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

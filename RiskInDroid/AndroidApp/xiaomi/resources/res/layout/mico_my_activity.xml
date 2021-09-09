@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/common_title_bar_height">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/title_bar_left_icon" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_common_title_bar_return" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/size_18dp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/title_bar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="我的内容" android:singleLine="true"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/linear_recycle_view" android:background="@color/mj_color_white" android:paddingTop="21dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/size_4dp" android:layout_marginRight="@dimen/size_4dp" android:layout_below="@+id/title_bar" app:layoutManager="LinearLayoutManager"/>
+</RelativeLayout>

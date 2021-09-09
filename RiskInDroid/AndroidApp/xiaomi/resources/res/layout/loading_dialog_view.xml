@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/dialog_view" android:background="@drawable/dialog_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiasuhuei321.loadingdialog.view.LVCircularRing android:id="@+id/lv_circularring" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp"/>
+    <com.xiasuhuei321.loadingdialog.view.LoadCircleView android:id="@+id/lcv_circleload" android:visibility="visible" android:layout_width="50dp" android:layout_height="50dp"/>
+    <com.xiasuhuei321.loadingdialog.view.RightDiaView android:id="@+id/rdv_right" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp"/>
+    <com.xiasuhuei321.loadingdialog.view.WrongDiaView android:id="@+id/wv_wrong" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp"/>
+    <TextView android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+</LinearLayout>

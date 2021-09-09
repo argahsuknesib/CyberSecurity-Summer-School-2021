@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout android:id="@+id/pull_down_refresh" android:layout_width="match_parent" android:layout_height="match_parent" cube_ptr:ptr_duration_to_close="300" cube_ptr:ptr_duration_to_close_header="500" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance="1.7">
+        <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+        <com.xiaomi.smarthome.library.common.widget.SM1LayerListView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout>
+    <include android:id="@+id/empty_all_page" layout="@layout/common_white_empty_view_third_account"/>
+</LinearLayout>

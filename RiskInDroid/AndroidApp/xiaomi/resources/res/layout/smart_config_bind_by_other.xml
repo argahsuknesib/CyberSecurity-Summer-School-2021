@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smart_config_top_padding">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kuailian_failed_icon" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black_90_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="26.77dp" android:layout_marginRight="20dp" android:text="@string/have_bind_by_other" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_30_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="6dp" android:layout_marginRight="20dp" android:text="@string/need_unbind_by_other" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_button" android:gravity="center" android:id="@+id/ok_btn" android:background="@drawable/common_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="20dp" android:text="@string/ok_button" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

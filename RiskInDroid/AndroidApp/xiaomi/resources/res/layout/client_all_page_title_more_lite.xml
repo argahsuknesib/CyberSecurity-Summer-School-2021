@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/module_more_btn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/module_a_2_return_more_more_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_titlebar_main_add_white"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/new_message_tag" android:visibility="invisible" android:layout_width="@dimen/red_dot_size" android:layout_height="@dimen/red_dot_size" android:src="@drawable/dot_red"/>
+</FrameLayout>

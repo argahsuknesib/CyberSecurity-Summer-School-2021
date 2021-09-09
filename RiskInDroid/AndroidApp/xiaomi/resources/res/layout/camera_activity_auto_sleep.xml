@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_start" item:item_title="@string/main_power_off" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_end" item:item_title="@string/main_power_off" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_times" item:item_title="@string/main_power_off" item:item_type="2" style="@style/setting_item"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/view_tp_on" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#afafaf" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_auto_on_time"/>
+                <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/tp_timer_on" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="13dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/view_tp_off" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#afafaf" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_auto_off_time"/>
+                <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/tp_timer_off" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="13dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

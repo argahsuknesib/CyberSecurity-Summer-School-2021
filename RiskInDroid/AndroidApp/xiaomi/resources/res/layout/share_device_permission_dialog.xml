@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.SingleCheckLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/mj_color_dialog_bg_nor" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/select_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:src="@drawable/mj_lib_btn_icon_selected" android:importantForAccessibility="no"/>
+            <TextView android:textSize="@dimen/font_size_16sp" android:textColor="@color/mj_color_black" android:id="@+id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toRightOf="@+id/select_icon"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="2" android:layout_below="@+id/text1" android:layout_alignLeft="@+id/text1"/>
+        </RelativeLayout>
+    </FrameLayout>
+</com.xiaomi.smarthome.library.common.widget.SingleCheckLinearLayout>

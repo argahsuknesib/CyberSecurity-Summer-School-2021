@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <ImageButton android:id="@+id/btn_go_back" android:background="@drawable/hs_common_btn_back_white_nor" android:layout_width="28dp" android:layout_height="28dp"/>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+    <View android:layout_width="28dp" android:layout_height="28dp"/>
+</LinearLayout>

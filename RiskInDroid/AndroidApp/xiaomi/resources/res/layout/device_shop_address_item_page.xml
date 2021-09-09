@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginRight="42dp" android:layout_marginStart="23dp" android:layout_marginEnd="42dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/addr_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/addr_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="" android:layout_toRightOf="@+id/addr_receiver" android:layout_marginStart="14dp" android:layout_toEndOf="@+id/addr_receiver"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/addr_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="" android:lineSpacingExtra="2dp"/>
+        <TextView android:textSize="@dimen/font_size_5" android:textColor="@color/mj_color_gray_normal" android:id="@+id/addr_zipcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginBottom="14dp" android:text=""/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23dp" android:src="@drawable/um_arrow" android:importantForAccessibility="no" android:layout_marginEnd="23dp"/>
+    <View android:layout_gravity="bottom" android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="23dp" android:layout_marginRight="23dp" android:layout_marginStart="23dp" android:layout_marginEnd="23dp"/>
+</FrameLayout>

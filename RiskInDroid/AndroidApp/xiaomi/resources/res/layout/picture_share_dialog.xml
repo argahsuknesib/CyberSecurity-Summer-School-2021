@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/international_share_container" android:background="@color/mj_color_white" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/facebook_share" android:text="@string/smarthome_share_facebook" android:drawableTop="@drawable/share_facebook" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/line_share" android:text="@string/smarthome_share_line" android:drawableTop="@drawable/share_line" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/whatsapp_share" android:text="@string/smarthome_share_whatsapp" android:drawableTop="@drawable/share_whatsapp" style="@style/BaseShareItem"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/share_btn_container" android:background="@color/mj_color_white" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/wx_share" android:text="@string/smarthome_share_wecaht" android:drawableTop="@drawable/std_shop_details_share_icon_wxhy" style="@style/BaseShareItem"/>
+        <TextView android:id="@+id/friends_share" android:text="@string/smarthome_share_wxcircle" android:drawableTop="@drawable/std_shop_details_share_icon_pyq" style="@style/BaseShareItem"/>
+        <TextView android:id="@+id/weibo_share" android:text="@string/smarthome_share_sinaweibo" android:drawableTop="@drawable/std_shop_details_share_icon_xlwb" style="@style/BaseShareItem"/>
+    </LinearLayout>
+</LinearLayout>

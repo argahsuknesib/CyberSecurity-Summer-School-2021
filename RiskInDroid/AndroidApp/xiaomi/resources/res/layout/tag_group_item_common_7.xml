@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="56dp">
+    <TextView android:textSize="@dimen/font_size_30sp" android:textColor="#000000" android:gravity="center_vertical" android:id="@+id/title_left" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_centerVertical="true" android:layout_marginStart="25dp"/>
+    <View android:id="@+id/bottom_divider" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

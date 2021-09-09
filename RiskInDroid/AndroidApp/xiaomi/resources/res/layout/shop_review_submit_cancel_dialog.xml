@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shop_custom_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_title_color" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:layout_marginRight="30dp" android:text="@string/review_submit_finish_hint" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_gray" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="20dp" android:layout_marginRight="5dp" android:layout_marginBottom="8dp">
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/orange_red" android:id="@+id/btn_cancel" android:background="@color/white" android:layout_width="100dp" android:layout_height="50dp" android:text="@string/review_submit_continue" android:layout_weight="1"/>
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="13dp" android:textColor="@color/orange_red" android:id="@+id/btn_leave" android:background="@color/white" android:layout_width="100dp" android:layout_height="50dp" android:layout_marginLeft="0.5dp" android:text="@string/review_submit_discard" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

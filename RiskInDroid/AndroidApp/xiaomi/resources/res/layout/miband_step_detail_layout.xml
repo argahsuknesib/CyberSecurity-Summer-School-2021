@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_step_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/miband_detail_title_bar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/mj_color_step_background_color" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout style="@style/sport_liner_container_style">
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/day_total_distance_text_id" android:text="@string/day_total_distance_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/day_total_distance_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/day_total_distance_id" style="@style/sport_detail_number_style"/>
+                <TextView android:id="@+id/day_total_distance_symbol" android:text="@string/symbol_kilometer" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/day_total_step_text_id" android:text="@string/day_total_step_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/day_total_step_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/day_total_step_id" style="@style/sport_detail_number_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/day_total_calorie_text_id" android:text="@string/day_total_calorie_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/day_total_calorie_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/day_total_calorie_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_kilo_calorie" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout style="@style/sport_liner_container_style">
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/walk_distance_text_id" android:text="@string/day_walk_distance_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/walk_distance_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/walk_distance_id" style="@style/sport_detail_number_style"/>
+                <TextView android:id="@+id/walk_distance_symbol" android:text="@string/symbol_kilometer" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/walk_time_text_id" android:text="@string/day_walk_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/walk_time_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/walk_time_hour_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_hour" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/walk_time_minute_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_minute" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/walk_calorie_text_id" android:text="@string/day_walk_calorie_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/walk_calorie_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/walk_calorie_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_kilo_calorie" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout style="@style/sport_liner_container_style">
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/run_distance_text_id" android:text="@string/day_run_distance_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/run_distance_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/run_distance_id" style="@style/sport_detail_number_style"/>
+                <TextView android:id="@+id/run_distance_symbol" android:text="@string/symbol_kilometer" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/run_time_text_id" android:text="@string/day_run_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/run_time_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/run_time_hour_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_hour" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/run_time_minute_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_minute" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/run_calorie_text_id" android:text="@string/day_run_calorie_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:layout_below="@+id/run_calorie_text_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/run_calorie_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_kilo_calorie" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

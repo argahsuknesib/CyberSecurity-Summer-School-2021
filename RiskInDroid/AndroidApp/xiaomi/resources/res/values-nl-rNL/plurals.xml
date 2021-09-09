@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="one">Voeg tot %1d acties toe</item>
+        <item quantity="other">Voeg tot %1d acties toe</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="one">Gemiddelde gegevens van %s apparaat in de buurt</item>
+        <item quantity="other">Gemiddelde gegevens van %s apparaten in de buurt</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="one">%d uur</item>
+        <item quantity="other">%d uur</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="one">%1$s apparaat toegevoegd</item>
+        <item quantity="other">%1$s apparaten toegevoegd</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="one">%1$d apparaat</item>
+        <item quantity="other">%1$d apparaten</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="one">%1$d apparaat</item>
+        <item quantity="other">%1$d apparaten</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="one">%d slimme camera</item>
+        <item quantity="other">%d slimme camera&apos;s</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="one">%d minuut</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="one">Cumulatief gebruik: %d dag,</item>
+        <item quantity="other">Cumulatief gebruik: %d dagen,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="one">Verwijder %1$s geselecteerd bericht?</item>
+        <item quantity="other">Verwijder %1$s geselecteerde berichten?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="one">Het %1$s geselecteerde record verwijderen?</item>
+        <item quantity="other">De %1$s geselecteerde records verwijderen?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="one">%d nieuw slim apparaat, tik om in te stellen</item>
+        <item quantity="other">%d nieuwe slimme apparaten, tik om in te stellen</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="one">%1$s apparaat is niet aan een ruimte toegewezen</item>
+        <item quantity="other">%1$s apparaten zijn niet aan een ruimte toegewezen</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="one">Het %1$s geselecteerde apparaat verwijderen?</item>
+        <item quantity="other">De %1$s geselecteerde apparaten verwijderen?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="one">Wil je de geselecteerde scène uit je favorieten verwijderen?</item>
+        <item quantity="other">Wil je %1$d geselecteerde scènes uit je favorieten verwijderen?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="one">%1$s m</item>
+        <item quantity="other">%1$s m</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="one">Houd apparaten vast om items te herschikken, en %d apparaat hierboven wordt weergegeven op de kaart</item>
+        <item quantity="other">Houd apparaten vast om items te herschikken, en %d apparaten hierboven wordt weergegeven op de kaart</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="one">%1$d apparaat geselecteerd</item>
+        <item quantity="other">%1$d apparaten geselecteerd</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="one">%1$s item geselecteerd</item>
+        <item quantity="other">%1$s items geselecteerd</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="one">Geselecteerde scènes:%1$d</item>
+        <item quantity="other">Geselecteerde scènes:%1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="one">%1$s%2$s</item>
+        <item quantity="other">%1$s%2$setc.</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="one">%d gedeeld slim apparaat</item>
+        <item quantity="other">%d gedeelde slimme apparaten</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="one">%s gedeeld apparaat</item>
+        <item quantity="other">%s gedeelde apparaten</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="one">Contactinformatie mag maximaal %1$d teken bevatten</item>
+        <item quantity="other">Contactinformatie mag maximaal %1$d tekens bevatten</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="one">Feedbackbeschrijving mag maximaal %1$d tekens bevatten</item>
+        <item quantity="other">Feedbackbeschrijving mag maximaal %1$d tekens bevatten</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="one">%1$s firmware-update in afwachting</item>
+        <item quantity="other">%1$s firmware-updates in afwachting</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="one">%1$s firmware-update voltooid</item>
+        <item quantity="other">%1$s firmware-updates voltooid</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="one">De cloudopslagservice vervalt na %1$d dag en klikt op Vernieuwing.</item>
+        <item quantity="other">De cloudopslagservice verloopt over %1$d dagen. Klik op Vernieuwing.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="one">%1$s woning</item>
+        <item quantity="other">%1$s woningen</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="one">%1$s apparaat</item>
+        <item quantity="other">%1$s apparaten</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="one">%1$s ruimte</item>
+        <item quantity="other">%1$s ruimtes</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="one">%d afstandsbediening</item>
+        <item quantity="other">%d afstandsbedieningen</item>
+    </plurals>
+    <plurals name="ir_device_count_2">
+        <item quantity="one">Apparaat</item>
+        <item quantity="other">Apparaten</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="one">%d apparaat verbonden</item>
+        <item quantity="other">%d apparaten verbonden</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="one">%d slim apparaat gevonden, tik om te voltooien</item>
+        <item quantity="other">%d slimme apparaten gevonden, tik om te voltooien</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="one">Een lampengroep kan uit %1$s lamp bestaan</item>
+        <item quantity="other">Een lampengroep kan uit maximaal %1$s lampen bestaan</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="one">%d plug-inupdate beschikbaar</item>
+        <item quantity="other">%d plug-inupdates beschikbaar</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="one">%d uur</item>
+        <item quantity="other">%d uur</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="one">%1$d beschikbaar apparaat in de buurt</item>
+        <item quantity="other">%1$d beschikbare apparaten in de buurt</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="one">%d apparaat online</item>
+        <item quantity="other">%d apparaten online</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="one">%1$s apparaatplug-in in totaal</item>
+        <item quantity="other">%1$s apparsaatplug-in in totaal</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="one">U hebt %d nieuw bericht ontvangen</item>
+        <item quantity="other">U hebt %d nieuwe berichten ontvangen</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="one">Knop %d</item>
+        <item quantity="other">Knop %d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="one">%1$d apparaat toegevoegd</item>
+        <item quantity="other">%1$d apparaten toegevoegd</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="one">AIoT-router heeft %1$d apparaat gevonden</item>
+        <item quantity="other">AIoT-router heeft %1$d apparaten gevonden</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="one">Mi-router heeft %1$d apparaat gevonden</item>
+        <item quantity="other">Mi-router heeft %1$d apparaten gevonden</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="one">%1$s Mi AI speaker</item>
+        <item quantity="other">%1$s Mi AI speakers</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="one">De geselecteerde slimme scène verwijderen?</item>
+        <item quantity="other">De %1$s geselecteerde slimme scènes verwijderen?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="one">Wordt over %d dag ingeschakeld</item>
+        <item quantity="other">Wordt over %d dagen ingeschakeld</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="one">Begint over %d uur</item>
+        <item quantity="other">Begint over %d uur</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="one">%1$s item geselecteerd</item>
+        <item quantity="other">%1$s items geselecteerd</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="one">%1$d slim apparaat</item>
+        <item quantity="other">%1$d slimme apparaten</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="one">%1$s (%2$d apparaat)</item>
+        <item quantity="other">%1$s en overige apparaten (%2$d apparaten)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="one">Gedeeld met %1$s en %2$d andere persoon</item>
+        <item quantity="other">Gedeeld met %1$s en %2$d andere personen</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="one">In %d min</item>
+        <item quantity="other">In %d min</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="one">%d seconde later</item>
+        <item quantity="other">%d seconden later</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="one">%d apparaat inbegrepen</item>
+        <item quantity="other">%d apparaten inbegrepen</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="one">%d apparaat geselecteerd</item>
+        <item quantity="other">%d apparaten geselecteerd</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="one">%d camera</item>
+        <item quantity="other">%d camera&apos;s</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="one">Downloaden…%1$d</item>
+        <item quantity="other">Downloaden…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="one">Elk apparaat kan tot %1$s spraakbijnaam.</item>
+        <item quantity="other">Elk apparaat kan tot %1$s spraakbijnaam hebben.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="one">%1$d %2$s gevonden, tik om snel een verbinding te maken</item>
+        <item quantity="other">%1$d %2$ss gevonden, tik om snel een verbinding te maken</item>
+    </plurals>
+</resources>

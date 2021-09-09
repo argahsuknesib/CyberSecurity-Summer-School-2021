@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/list_item_container_style">
+    <ImageView android:id="@+id/iv_device_icon" android:background="@drawable/yeelight_online" style="@style/list_item_two_line_icon_style"/>
+    <TextView android:id="@+id/tv_device_title" android:visibility="visible" android:text="@string/yeelight_device_name" android:layout_toRightOf="@+id/iv_device_icon" style="@style/list_item_title_style"/>
+    <TextView android:id="@+id/tv_device_detail" android:visibility="gone" android:layout_toRightOf="@+id/iv_device_icon" android:layout_below="@+id/tv_device_title" style="@style/list_item_detail_style"/>
+    <TextView android:textSize="@dimen/font_size_6" android:textColor="#378ed3" android:layout_gravity="center" android:id="@+id/btn_go_shop" android:background="@drawable/go_shop_button" android:padding="1dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:layout_alignParentBottom="true" style="@style/list_item_divider"/>
+</RelativeLayout>

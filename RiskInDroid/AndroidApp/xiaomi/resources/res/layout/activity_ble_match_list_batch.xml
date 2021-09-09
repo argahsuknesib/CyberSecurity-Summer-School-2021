@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_righticon"/>
+    <ScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/next" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/category" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:text="@string/nearby_device" android:layout_marginStart="24dp"/>
+                <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_marginStart="24dp"/>
+                <com.xiaomi.smarthome.library.common.widget.ExpandListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/next" android:background="@drawable/selector_ble_mesh_button" android:visibility="visible" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/next_step" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

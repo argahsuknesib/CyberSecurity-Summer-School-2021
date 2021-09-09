@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/base_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:visibility="gone" layout="@layout/shop_buy_confirm_payment_cod_phone"/>
+    <include android:visibility="gone" layout="@layout/shop_buy_confirm_payment_cod_pic"/>
+    <include layout="@layout/shop_buy_confirm_payment_cod_verify"/>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/title_text_color" android:gravity="start" android:id="@+id/buy_confirm_cod_not_support" android:background="@color/base_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="25dp" android:text="@string/buy_confirm_COD_notsupport"/>
+</LinearLayout>

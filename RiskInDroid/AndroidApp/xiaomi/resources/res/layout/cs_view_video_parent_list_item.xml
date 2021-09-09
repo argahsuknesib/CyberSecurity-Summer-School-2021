@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:id="@+id/rlItemContainer" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp">
+    <View android:id="@+id/viewDivider" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.2dp"/>
+    <TextView android:textSize="20sp" android:textColor="@color/mj_color_black" android:gravity="left" android:id="@+id/tvTitle" android:paddingTop="3dp" android:paddingRight="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/viewDivider"/>
+</RelativeLayout>

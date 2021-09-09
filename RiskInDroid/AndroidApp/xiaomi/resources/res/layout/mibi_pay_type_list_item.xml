@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mibi.sdk.pay.ui.PayListItem xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/arrow" android:background="@drawable/mibi_radio_light" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <View android:id="@+id/divider" android:background="@color/mibi_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/mibi_divider"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mibi_pay_list_item_margin_vertical" android:layout_marginBottom="@dimen/mibi_pay_list_item_margin_vertical">
+            <ImageView android:id="@+id/icon" android:layout_width="@dimen/mibi_pay_list_item_icon_width" android:layout_height="@dimen/mibi_pay_list_item_icon_height" android:layout_marginRight="10dp" android:scaleType="centerCrop"/>
+            <TextView android:textAppearance="@style/Mibi.TextAppearance.General" android:textColor="@color/mibi_list_text_single_choice" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/label" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textAppearance="@style/Mibi.TextAppearance.Gray" android:textColor="@color/mibi_list_text_single_choice" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sub_label" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.mibi.sdk.pay.ui.PayListItem>

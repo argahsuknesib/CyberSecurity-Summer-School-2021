@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/head_container" android:background="@drawable/ripple_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+    <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:src="@drawable/device_shop_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:visibility="gone" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="13dp" android:src="@drawable/login_profile_picture_loading" android:scaleType="fitXY" android:layout_toLeftOf="@+id/arrow" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginRight="13dp" android:layout_toLeftOf="@+id/icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layoutDirection="ltr">
+        <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/label_name" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:singleLine="true"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

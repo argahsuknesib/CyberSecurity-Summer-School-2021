@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar_container" layout="@layout/include_face_select_title_bar"/>
+    <TextView android:textSize="12dp" android:textColor="#ff8c93b0" android:gravity="center" android:paddingTop="16dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="41dp" android:text="@string/capturing_object" android:paddingStart="24dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="26dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="40dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/family_daily_story" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="50dp" android:layout_height="50dp">
+                <ImageView android:id="@+id/iv_family_selected" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/circle_bg_ff32bac0"/>
+                <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/daily_story_family" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/icon_face_manager_unknown" android:scaleType="centerCrop" android:layout_centerInParent="true" android:importantForAccessibility="no" app:riv_corner_radius="200dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/family"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/pet_daily_story" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37dp">
+            <RelativeLayout android:layout_width="50dp" android:layout_height="50dp">
+                <ImageView android:id="@+id/iv_pet_selected" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/circle_bg_ff32bac0"/>
+                <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/daily_story_pet" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/icon_pet_unknown" android:scaleType="centerCrop" android:layout_centerInParent="true" android:importantForAccessibility="no" app:riv_corner_radius="200dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/pet"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_daily_story_closed_tip" android:background="@drawable/bg_round_corner_12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="95dp" android:layout_marginTop="25dp" android:layout_marginStart="14dp" android:layout_marginEnd="14dp">
+        <TextView android:textSize="13sp" android:layout_gravity="center" android:layout_width="190dp" android:layout_height="wrap_content" android:text="@string/daily_story_close_tips"/>
+        <TextView android:textColor="#ff32bac0" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_turn_on_daily_story" android:background="@drawable/bg_round_corner_17dp" android:layout_width="80dp" android:layout_height="34dp" android:text="@string/auto_discovery_setting_now" android:layout_marginStart="32dp"/>
+    </LinearLayout>
+    <View android:layout_gravity="center" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="20dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rv_daily_story_list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        <RelativeLayout android:id="@+id/ll_empty_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/empty_content_family" android:layout_width="360dp" android:layout_height="360dp" android:layout_marginTop="-150dp" android:src="@drawable/daily_story_empty" android:scaleType="fitXY" android:importantForAccessibility="no"/>
+                <TextView android:textSize="15sp" android:textColor="@color/camera_black" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-75dp" android:text="@string/daily_story_empty_content_tips1" android:lineSpacingMultiplier="1.2"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="#ff999999" android:gravity="center" android:id="@+id/tv_empty_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:hint="@string/daily_story_empty_content_tips2" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

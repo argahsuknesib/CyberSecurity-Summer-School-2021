@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="13sp" android:textColor="@color/camera_white" android:gravity="center" android:background="@drawable/time_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="31dp" android:layout_marginTop="10dp" android:text="@string/direction_end" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout1" android:paddingTop="10.5dp" android:paddingBottom="12.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivSelectIcon" android:visibility="invisible" android:layout_width="6dp" android:layout_height="10dp" android:layout_marginLeft="18dp" android:layout_marginRight="14dp" android:src="@drawable/mj_lib_btn_icon_selected"/>
+        <TextView android:textSize="15dp" android:textColor="#ff32bac0" android:ellipsize="end" android:id="@+id/tvRecordModeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_record_model_always" android:maxLines="2"/>
+    </LinearLayout>
+    <TextView android:textSize="12dp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvRecordModeDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38dp" android:layout_marginTop="1dp" android:text="@string/setting_record_model_always_title" android:maxLines="2"/>
+</LinearLayout>

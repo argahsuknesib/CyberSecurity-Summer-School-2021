@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar_container" layout="@layout/include_face_select_title_bar"/>
+    <RelativeLayout android:gravity="center_vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/figure_cover_face" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/camera_face_manager_small_unknown" android:scaleType="centerCrop" android:layout_marginEnd="15dp" app:riv_corner_radius="100dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_60_transparent" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_edit_mark" android:paddingLeft="14dp" android:paddingTop="5dp" android:paddingRight="14dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="5dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_edit_mark" android:layout_toEndOf="@+id/figure_cover_face">
+            <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_figure_name" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="none"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_60_transparent" android:id="@+id/tv_statues" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_marginRight="24dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycle_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rl_empty_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_video"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_alarm_event"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical" android:height="@dimen/passport_vertical_divider_height">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/miui_divider" android:width="@dimen/miui_divider"/>
+            <solid android:color="@color/miui_divider_line"/>
+        </shape>
+    </item>
+</layer-list>

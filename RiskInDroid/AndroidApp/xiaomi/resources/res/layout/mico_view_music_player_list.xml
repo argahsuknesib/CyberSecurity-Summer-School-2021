@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.music.player.PlayerList xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/mico_bg_playerlist_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.mico.music.OpenQQMusicVIPView android:id="@+id/openVipView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/fl_playlist" android:layout_width="match_parent" android:layout_height="432dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/linear_recycle_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+        <com.xiasuhuei321.loadingdialog.view.LoadCircleView android:layout_gravity="center" android:id="@+id/player_control_bat_list_loading" android:layout_width="70dp" android:layout_height="70dp"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_size_16sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavy" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_close" android:background="@drawable/mico_playerlist_cancel_btn_bg_selecter" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="@dimen/margin_14dp" android:layout_marginBottom="@dimen/size_27dp" android:text="@string/common_close" android:layout_marginStart="@dimen/size_27dp" android:layout_marginEnd="@dimen/size_27dp"/>
+</com.xiaomi.mico.music.player.PlayerList>

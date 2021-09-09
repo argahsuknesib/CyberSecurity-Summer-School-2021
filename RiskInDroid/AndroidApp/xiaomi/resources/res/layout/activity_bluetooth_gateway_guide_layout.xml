@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.library.common.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/indicator_container" android:layout_width="wrap_content" android:layout_height="5dp" android:layout_marginBottom="45dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/first_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@drawable/ble_gateway_guide_choose_shape" android:layout_width="30dp" android:layout_height="5dp"/>
+            <View android:background="@drawable/ble_gateway_guide_unchoose_shape" android:layout_width="13dp" android:layout_height="5dp" android:layout_marginLeft="6dp"/>
+            <View android:background="@drawable/ble_gateway_guide_unchoose_shape" android:layout_width="13dp" android:layout_height="5dp" android:layout_marginLeft="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/second_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/ble_gateway_guide_unchoose_shape" android:layout_width="13dp" android:layout_height="5dp" android:importantForAccessibility="no"/>
+            <ImageView android:background="@drawable/ble_gateway_guide_choose_shape" android:layout_width="30dp" android:layout_height="5dp" android:layout_marginLeft="6dp" android:importantForAccessibility="no"/>
+            <View android:background="@drawable/ble_gateway_guide_unchoose_shape" android:layout_width="13dp" android:layout_height="5dp" android:layout_marginLeft="6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

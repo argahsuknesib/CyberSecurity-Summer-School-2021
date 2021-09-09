@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_black_00_transparent" android:layout_width="match_parent" android:layout_height="619dp">
+    <include layout="@layout/miconnect_common_title"/>
+    <RelativeLayout android:background="@color/mj_color_white" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/icon_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+        <ImageView android:id="@+id/mj_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="90dp" android:src="@drawable/miconnect_ble_loading" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+        <FrameLayout android:id="@+id/retry_layout" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="83.5dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/retry" android:background="@drawable/miconnect_common_bottom_bg" android:layout_width="match_parent" android:layout_height="@dimen/common_bottom_height" android:layout_marginTop="13.5dp" android:text="@string/miui_connect_retry" android:layout_marginStart="27dp" android:layout_marginEnd="27dp"/>
+        </FrameLayout>
+        <ProgressBar android:id="@+id/pbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

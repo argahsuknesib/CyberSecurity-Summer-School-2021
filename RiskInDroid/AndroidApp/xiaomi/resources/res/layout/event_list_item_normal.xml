@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/event_list_item_bg" android:layout_width="match_parent" android:layout_height="88dp">
+    <RelativeLayout android:id="@+id/rl_right_function" android:padding="1.5dp" android:layout_width="120dp" android:layout_height="70dp" android:layout_marginTop="9dp" android:layout_marginRight="20dp" android:layout_marginBottom="9dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/crv_event_image" android:background="@drawable/event_list_item_img_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:riv_corner_radius="4dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_toStartOf="@+id/rl_right_function">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_event_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:34:27"/>
+            <View android:id="@+id/v_divider_line" android:background="@color/mj_color_separator" android:layout_width="0.5dp" android:layout_height="14dp" android:layout_marginLeft="4dp"/>
+            <ImageView android:id="@+id/iv_event_type_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/icon_event_type_ring"/>
+            <ImageView android:id="@+id/iv_event_type_pepole" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/icon_event_type_people_run"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="#99000000" android:ellipsize="end" android:id="@+id/tv_event_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="2" android:layout_below="@+id/ll_1" android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

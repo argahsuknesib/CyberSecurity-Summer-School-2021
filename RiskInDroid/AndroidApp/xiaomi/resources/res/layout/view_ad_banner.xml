@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/pager_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/dots_parent" android:layout_width="wrap_content" android:layout_height="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/single_image" android:background="@drawable/banner_ad_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:importantForAccessibility="no"/>
+        <ImageView android:id="@+id/ad_banner_close" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="13dp" android:src="@drawable/ad_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="13dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</FrameLayout>

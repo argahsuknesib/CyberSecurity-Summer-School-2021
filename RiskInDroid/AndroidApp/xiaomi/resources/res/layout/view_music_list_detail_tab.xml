@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xiaomi.mico.music.OpenQQMusicVIPView android:id="@+id/openVipViews" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <RelativeLayout android:id="@+id/play_all_contain" android:layout_width="match_parent" android:layout_height="@dimen/music_item_header_height" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/openVipViews">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/music_play_all_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_play_all_selecter" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_marginEnd="11dp"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/mj_color_black" android:id="@+id/music_play_all_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_play_all" android:layout_centerVertical="true" android:layout_toEndOf="@+id/music_play_all_icon"/>
+            <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/music_play_all_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_5dp" android:layout_toEndOf="@+id/music_play_all_play"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/music_list_sort" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_sort_rank" android:layout_centerVertical="true" android:paddingStart="0dp" android:paddingEnd="@dimen/margin_10dp" android:layout_marginStart="@dimen/margin_13dp" android:layout_marginEnd="@dimen/margin_3dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@+id/tab_layout_contain" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/music_item_header_height">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_selected_state_of_detai_tab" android:gravity="center" android:id="@+id/button_introduction" android:layout_width="106dp" android:layout_height="match_parent" android:text="@string/music_introduction" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_selected_state_of_detai_tab" android:gravity="center" android:id="@+id/button_content" android:layout_width="106dp" android:layout_height="match_parent" android:text="@string/music_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" style="@style/App.Divider.Horizontal"/>
+    </FrameLayout>
+</FrameLayout>

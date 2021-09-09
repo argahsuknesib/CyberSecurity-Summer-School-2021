@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.shop.widget.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/text_size_normal" android:textColor="@color/light_black" android:gravity="left|center_vertical|center_horizontal|center" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>

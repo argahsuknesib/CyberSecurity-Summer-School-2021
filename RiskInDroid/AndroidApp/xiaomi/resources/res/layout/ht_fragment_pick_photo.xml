@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/photo_recycler_view" android:background="@color/ht_white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/album_containter" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:id="@+id/layout_noting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:gravity="center_horizontal" android:id="@+id/iv_noting_photo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/not_found_document"/>
+        <TextView android:textSize="@dimen/ht_idcard_noting_text_size" android:textColor="@color/ht_noting_text" android:gravity="center_horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ht_idcard_view_marginBottom" android:text="@string/ht_no_photo_sub" android:layout_below="@+id/iv_noting_photo"/>
+    </RelativeLayout>
+</LinearLayout>

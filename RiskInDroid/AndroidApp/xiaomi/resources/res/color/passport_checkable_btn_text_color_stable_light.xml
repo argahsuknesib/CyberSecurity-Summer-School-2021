@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="@color/passport_disabled_text_light"/>
+    <item android:state_pressed="true" android:color="@color/passport_check_box_text_color"/>
+    <item android:state_checked="true" android:color="@color/passport_check_box_text_color"/>
+    <item android:state_selected="true" android:color="@color/passport_check_box_text_color"/>
+    <item android:color="@color/passport_check_box_text_color" android:state_activated="true"/>
+    <item android:color="@color/passport_check_box_text_color"/>
+</selector>

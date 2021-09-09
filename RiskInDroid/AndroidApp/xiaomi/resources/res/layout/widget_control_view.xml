@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/control_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/partical_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xiaomi.smarthome.newui.card.profile.TouchView android:id="@+id/control_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/control_top_colorsunshine" android:paddingLeft="25dp" android:paddingRight="25dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp">
+        <ImageView android:id="@+id/control_colorpointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/color_point" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/control_colorpicker" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:src="@drawable/color_picker" android:scaleType="fitXY" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/control_top_flow" android:paddingLeft="25dp" android:paddingRight="25dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/tortoise" android:contentDescription="@string/app_name"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/control_top_flow_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/control_top_flow_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:src="@drawable/color_point" android:contentDescription="@string/app_name"/>
+                <SeekBar android:id="@+id/control_top_flow_seekbar" android:layout_width="match_parent" android:layout_height="2dp" android:progressDrawable="@drawable/seekbar_drawable_white" android:thumb="@null"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/rabbit" android:contentDescription="@string/app_name"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/control_button_top" android:background="@drawable/widget_control_view_top_btn_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="70dp" android:minWidth="100dp" android:text="@string/setting" android:layout_centerHorizontal="true"/>
+    <com.xiaomi.smarthome.newui.card.BrightIndicateView android:id="@+id/control_bright_indicate" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <FrameLayout android:id="@+id/control_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/control_guide_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+</RelativeLayout>

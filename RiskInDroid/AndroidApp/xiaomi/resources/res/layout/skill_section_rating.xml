@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="10dp" android:paddingStart="12dp" android:paddingEnd="12dp">
+    <TextView android:textSize="@dimen/major_text_size" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="36dp" android:text="@string/skill_intro_section_rating"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.github.ornolfr.ratingview.RatingView android:id="@+id/rating_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawable_empty="@drawable/skill_star_uncheck" app:drawable_filled="@drawable/skill_star_check" app:drawable_half="@drawable/skill_start_check_half" app:drawable_size="20dp" app:is_indicator="true" app:max_count="5" app:rating="3.5"/>
+        <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/rating_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_lighter" android:layout_gravity="center_vertical" android:id="@+id/setting_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skill_intro_section_do_rating" android:layout_marginEnd="@dimen/setting_icon_margin"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/setting_item_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_more" android:layout_marginEnd="@dimen/setting_icon_margin"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="#ff0000" android:gravity="center" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="5dp" android:text="(SmartHome) 请不要在App启动之后立即发送网络请求" android:includeFontPadding="false"/>
+            <TextView android:textColor="#c0000000" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:includeFontPadding="false" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

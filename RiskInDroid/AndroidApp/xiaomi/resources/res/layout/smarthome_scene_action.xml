@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/scene_pull_select_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tips_content" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <TextView android:textSize="40dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/choose_action_title_top" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="72dp" android:text="@string/choose_action_activity_title_top"/>
+        <View android:background="@color/mj_color_black_15_transparent" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tips_content">
+        <ListView android:scrollbarStyle="insideOverlay" android:id="@+id/content_list_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:indicatorRight="15dp" android:divider="@null" android:layout_below="@+id/title_bar"/>
+    </LinearLayout>
+    <View android:id="@+id/gray_layout" android:background="@color/mj_color_black_30_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+    <include android:visibility="gone" android:layout_toRightOf="@+id/gray_layout" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/gray_layout" layout="@layout/buy_empty_view"/>
+</RelativeLayout>

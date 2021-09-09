@@ -1,0 +1,30 @@
+package com.mibi.sdk.task.handler;
+
+import android.content.Context;
+import android.os.Bundle;
+import com.mibi.sdk.common.exception.AccountChangedException;
+import com.mibi.sdk.common.exception.AccountException;
+import com.mibi.sdk.task.handler.ExceptionDispatcher;
+import com.xiaomi.smarthome.R;
+
+public class AccountChangedExceptionHandler implements ExceptionDispatcher.ExceptionHandler {
+    private Context mContext;
+
+    public AccountChangedExceptionHandler(Context context) {
+        this.mContext = context;
+    }
+
+    public Class<? extends Throwable> registeredException() {
+        return AccountChangedException.class;
+    }
+
+    public boolean handle(Throwable th, Bundle bundle, ExceptionDispatcher exceptionDispatcher) {
+        if (!bundle.containsKey("errcode")) {
+            bundle.putInt("errcode", 10);
+        }
+        if (!bundle.containsKey("errDesc")) {
+            bundle.putString("errDesc", this.mContext.getString(R.string.mibi_error_account_changed_summary));
+        }
+        return exceptionDispatcher.dispatchAs(th, bundle, AccountException.class);
+    }
+}

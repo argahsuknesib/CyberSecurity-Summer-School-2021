@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/irv2_controller_vol_add" android:background="@android:color/transparent" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_up_down_height" android:src="@drawable/irv2_controller_volume_add"/>
+        <ImageButton android:id="@+id/irv2_controller_vol_minus" android:background="@android:color/transparent" android:paddingBottom="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_up_down_height" android:src="@drawable/irv2_controller_volume_minus"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/irv2_controller_volume_text"/>
+</FrameLayout>

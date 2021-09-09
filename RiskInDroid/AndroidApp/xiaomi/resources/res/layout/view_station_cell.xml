@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/patchwall_item_image" android:layout_width="@dimen/music_cover_size_84" android:layout_height="@dimen/music_cover_size_84"/>
+    <ImageView android:id="@+id/play_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/icon_play_music_btn" android:scaleType="center"/>
+    <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/patchwall_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="" android:layout_below="@+id/patchwall_item_image" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

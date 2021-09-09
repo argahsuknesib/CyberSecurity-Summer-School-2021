@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/mibi_text_color_white"/>
+    <corners android:radius="@dimen/mibi_dialog_bg_radius"/>
+</shape>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" style="@style/cb_relative_layout">
+    <com.payu.custombrowser.custombar.DotsProgressBar android:id="@+id/dotsProgressBar" android:background="@color/cb_background" android:paddingTop="@dimen/cb_twelve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

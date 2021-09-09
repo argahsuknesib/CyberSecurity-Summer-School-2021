@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="92dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/poster_iv" android:layout_width="match_parent" android:layout_height="92dp"/>
+    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/progress_tv" android:background="@drawable/tv_item_progress_bg" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="24dp" android:singleLine="true" android:layout_alignBottom="@+id/poster_iv"/>
+    <com.xiaomi.smarthome.uwb.tv.widget.TvItemTitleView android:textSize="13sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true" android:layout_below="@+id/poster_iv"/>
+</RelativeLayout>

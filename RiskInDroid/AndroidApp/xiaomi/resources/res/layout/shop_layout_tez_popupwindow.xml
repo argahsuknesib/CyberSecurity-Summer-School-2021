@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.mi.global.shop.widget.NoScrollListView android:id="@+id/lv_select_list" android:background="@drawable/shop_bg_tez_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null"/>
+</LinearLayout>

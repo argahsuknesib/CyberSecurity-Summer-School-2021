@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/hs_mask_bottom" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <ImageButton android:id="@+id/btn_play_stop" android:background="@drawable/replay_btn_play_white_nor" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginEnd="5dp"/>
+    <TextView android:textSize="13sp" android:textColor="@android:color/white" android:id="@+id/tv_video_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+    <SeekBar android:id="@+id/sb_video_progress" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/hs_seek_bar_progress" android:thumb="@drawable/hs_seek_bar_thumb" android:layout_weight="1"/>
+    <TextView android:textSize="13sp" android:textColor="@android:color/white" android:id="@+id/tv_video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+    <ImageButton android:id="@+id/btn_full_video_voice" android:background="@drawable/preview_btn_voiceoff_white_nor" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginStart="18dp"/>
+    <ImageButton android:id="@+id/btn_full_screenshot" android:background="@drawable/preview_btn_screenshot_white_nor" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginStart="18dp"/>
+    <Button android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_play_speed" android:background="@drawable/hs_speed_replay_bg" android:layout_width="33dp" android:layout_height="25dp" android:layout_marginStart="15dp"/>
+    <ImageButton android:id="@+id/btn_full_screen" android:background="@drawable/preview_btn_fullscreen_white_nor" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginStart="18dp"/>
+</LinearLayout>

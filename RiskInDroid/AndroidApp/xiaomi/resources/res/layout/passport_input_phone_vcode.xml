@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/LoginRegLayoutPadding">
+    <TextView android:id="@+id/sms_send_notice" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.AppCompat.Medium"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passport_title_content_margin_v">
+        <EditText android:id="@+id/ev_verify_code" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/passport_input_vcode_hint" android:singleLine="true" android:digits="1234567890" android:layout_weight="1" android:inputType="number" style="@style/Widget.AppCompat.EditText"/>
+        <TextView android:textSize="12dp" android:textColor="@color/miui_action_bar_title_text_color_light" android:gravity="center" android:id="@+id/get_vcode_notice" android:background="@drawable/passport_group_single_item_normal_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/passport_get_verify_code" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <com.xiaomi.passport.ui.settings.CaptchaView android:id="@+id/captcha_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.67dp"/>
+    <CheckBox android:id="@+id/trust_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/passport_trust_device"/>
+    <Button android:id="@+id/btn_verify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passport_reg_content_bottom_margin" android:text="@string/passport_verify" style="@style/ButtonHighlight"/>
+</LinearLayout>

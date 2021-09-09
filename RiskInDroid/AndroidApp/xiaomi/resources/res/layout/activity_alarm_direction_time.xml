@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_bar_black"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/time_all_day" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="#cc000000" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_all_day" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#7d000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_all_day_title"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/icon_all_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_chack" android:contentDescription="@string/scene_has_selected"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/time_day" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="#cc000000" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_day" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#7d000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_day_title"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/icon_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_chack" android:contentDescription="@string/scene_has_selected"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/time_night" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="#cc000000" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_night" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#7d000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_night_title"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/icon_night" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_chack" android:contentDescription="@string/scene_has_selected"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/time_custom" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_custom" android:lines="1"/>
+                <TextView android:textSize="10sp" android:textColor="#999999" android:id="@+id/time_custom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_custom_title"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/icon_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_chack" android:contentDescription="@string/scene_has_selected"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/title_cancel_color" android:gravity="center" android:background="@drawable/camera_time_btn__selector" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginRight="23dp" android:layout_marginBottom="29dp" android:text="@string/next"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_promote_icon" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="15dp"/>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="11dp" android:textColor="@color/orange_red" android:id="@+id/tv_promote_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:layout_weight="1"/>
+    <ImageView android:id="@+id/iv_activity_arrow" android:visibility="gone" android:layout_width="7dp" android:layout_height="12dp" android:layout_marginRight="15dp" android:src="@drawable/shop_arrow_right_orange" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+</LinearLayout>

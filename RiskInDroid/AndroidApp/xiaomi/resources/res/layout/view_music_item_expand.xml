@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/music_item_expand" android:background="@drawable/bg_list_selector" android:layout_width="match_parent" android:layout_height="@dimen/music_item_header_height">
+    <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_expand_more_song" android:drawablePadding="@dimen/common_icon_margin" android:drawableStart="@drawable/icon_dropdown_2"/>
+</FrameLayout>

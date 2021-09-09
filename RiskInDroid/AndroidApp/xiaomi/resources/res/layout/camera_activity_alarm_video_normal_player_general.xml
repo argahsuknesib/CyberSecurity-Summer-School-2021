@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/include_face_common_title_bar"/>
+        <FrameLayout android:id="@+id/videoViewParent" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_white" android:layout_gravity="right" android:id="@+id/tvCloudStorageHint" android:background="@drawable/camera_icon_alarm_2_cs_bg" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:paddingStart="6dp" android:paddingEnd="6dp"/>
+        </FrameLayout>
+        <View android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_video_list_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49dp">
+                <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/tv_cur_day" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/today" android:layout_centerVertical="true"/>
+                        <ImageView android:id="@+id/iv_next_day" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_select_down" android:scaleType="center" android:layout_toRightOf="@+id/tv_cur_day" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/ll_all_record" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_weight="1" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/tv_all_record" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/event_type_all"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_more_record" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_select_down"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.xiaomi.smarthome.camera.view.recycle.RecyclerViewRefreshLayoutEx android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_event_list" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                </com.xiaomi.smarthome.camera.view.recycle.RecyclerViewRefreshLayoutEx>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_empty_content" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="15sp" android:textColor="#ff000000" android:id="@+id/tv_request_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/alarm_empty"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_calendar_bg" android:background="#7f000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/calendar_area" android:background="@color/mj_color_white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.xiaomi.smarthome.camera.view.calendar.YdCatCalendarView android:id="@+id/custom_calendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+                        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/see_all_video" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/all_video"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/event_type_recycler" android:background="@color/mj_color_white" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/ivLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tvDownloadHint" android:background="#32bac0" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cs_download_hint"/>
+    <include android:id="@+id/loading_area" android:visibility="gone" layout="@layout/camera_loading_layout"/>
+</FrameLayout>

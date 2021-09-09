@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/App.Widget.ListView.Item.Title"/>
+        <TextView android:ellipsize="end" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/App.Widget.ListView.Item.Description"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_more"/>
+</LinearLayout>

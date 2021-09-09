@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15dp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@+id/tv_custom_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:maxLines="1"/>
+    <TextView android:textSize="12sp" android:textColor="#afafaf" android:ellipsize="end" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@+id/tv_timer_off_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    <View android:background="@color/mj_color_black_15_transparent" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="22dp"/>
+    <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/tp_timer_off" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="13dp"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_calendar" android:background="@color/mj_color_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="#000" android:gravity="center" android:id="@+id/tv_calendar" android:background="@color/mj_color_white" android:paddingLeft="16dp" android:paddingRight="16dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="35dp" android:text="2018-06" android:layout_centerInParent="true" android:overScrollMode="never"/>
+            <RelativeLayout android:layout_width="35dp" android:layout_height="35dp" android:layout_toLeftOf="@+id/tv_calendar">
+                <net.qiujuer.genius.ui.widget.Button android:id="@+id/btn_calendar_left_page" android:layout_width="match_parent" android:layout_height="match_parent" app:gTouchCornerRadius="17.5dp"/>
+                <ImageView android:id="@+id/iv_arrow_left" android:background="@drawable/icon_arrow_left" android:layout_width="wrap_content" android:layout_height="15sp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="35dp" android:layout_height="35dp" android:layout_toRightOf="@+id/tv_calendar">
+                <net.qiujuer.genius.ui.widget.Button android:id="@+id/btn_calendar_right_page" android:layout_width="match_parent" android:layout_height="match_parent" app:gTouchCornerRadius="17.5dp"/>
+                <ImageView android:id="@+id/iv_arrow_right" android:background="@drawable/icon_arrow_right_alpha" android:layout_width="wrap_content" android:layout_height="15sp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="35dp">
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sun" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Mon" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Tue" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Wed" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Thu" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Fri" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Sat" android:layout_weight="1"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/customRecycler_calendar" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </LinearLayout>
+</LinearLayout>

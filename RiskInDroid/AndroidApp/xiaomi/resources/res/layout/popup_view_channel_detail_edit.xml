@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.common.widget.ChannelDetailEditPopupView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:background="@drawable/icon_edit_top_triangle" android:layout_width="15dp" android:layout_height="6dp" android:layout_marginEnd="8dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_edit_channel_detail" android:layout_width="110dp" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:id="@+id/add_song" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/music_channel_add_song" android:drawableLeft="@drawable/icon_edit_add_song" android:drawablePadding="7dp" android:layout_marginStart="13dp"/>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:id="@+id/in_edit" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/mico_editor" android:drawableLeft="@drawable/icon_edit_in_edit" android:drawablePadding="7dp" android:layout_marginStart="13dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_of_remane_and_delete" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:id="@+id/edit_rename" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/music_channel_rename" android:drawableLeft="@drawable/icon_edit_rename_channel" android:drawablePadding="7dp" android:layout_marginStart="13dp"/>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:id="@+id/edit_delete" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/music_channel_delete" android:drawableLeft="@drawable/icon_edit_delete_song" android:drawablePadding="7dp" android:layout_marginStart="13dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.xiaomi.mico.common.widget.ChannelDetailEditPopupView>

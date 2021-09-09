@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.shop.imageselector.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.imageselector.view.SquaredSimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="6" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+    <View android:id="@+id/mask" android:background="#88000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/checkmark" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shop_image_select_state"/>
+</com.mi.global.shop.imageselector.view.SquareFrameLayout>

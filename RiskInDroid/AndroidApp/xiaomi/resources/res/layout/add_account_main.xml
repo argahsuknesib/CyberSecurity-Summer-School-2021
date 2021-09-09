@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/appbar_layout_with_country_name"/>
+    <include layout="@layout/add_account_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

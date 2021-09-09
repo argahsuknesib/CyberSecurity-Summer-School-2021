@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/zxing_title_bar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:id="@+id/preview_view_group" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaomi.qrcode2.ViewfinderView android:id="@+id/viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scan_wrap_text_margin_top">
+            <TextView android:textSize="13dp" android:textColor="#66ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_tip"/>
+            <TextView android:textSize="13dp" android:textColor="#e3bc9a" android:gravity="center" android:id="@+id/scan_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@string/select_from_gallary"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

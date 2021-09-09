@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.uwb.mico.UwbMicoProgressBar xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <SeekBar android:id="@+id/player_control_bar_progress_seek" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:maxHeight="4dp" android:progressDrawable="@drawable/uwb_mico_player_progress_seek_bar" android:minHeight="4dp" android:thumb="@drawable/uwb_mico_shape_bg_seek_bar_thumb1" android:thumbOffset="0dp" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+    <RelativeLayout android:id="@+id/progress_start_end_time" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/player_control_bar_progress_seek" android:layout_marginStart="18dp" android:layout_marginEnd="18dp">
+        <TextView android:textSize="14dp" android:textColor="@color/mj_color_black_40_transparent" android:id="@+id/player_control_bar_init_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+        <TextView android:textSize="14dp" android:textColor="@color/mj_color_black_40_transparent" android:id="@+id/player_control_bar_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</com.xiaomi.smarthome.uwb.mico.UwbMicoProgressBar>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tb="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" tb:tb_bg="@color/mj_color_white" tb:tb_left_icon="@drawable/mj_common_title_bar_return" tb:tb_title="@string/music_my_favourite" tb:tb_title_color="@color/mj_color_black"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/favourite_tab_layout" android:background="@color/mj_color_white" android:layout_width="218dp" android:layout_height="45dp" tb:tabGravity="0" tb:tabIndicatorHeight="0dp" tb:tabSelectedTextColor="@color/mj_color_green_normal" style="@style/App.TabLayout"/>
+        <com.xiaomi.mico.common.widget.PagingViewPager android:id="@+id/favourite_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp"/>
+            <TextView android:textSize="15dp" android:textColor="#666666" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/disclaim_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/one_time_password_copy_share_suggestion" android:maxLines="4" android:lineSpacingExtra="4dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp"/>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/remember_container" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="25dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp">
+                <CheckBox android:id="@+id/remember" android:background="@drawable/onetime_check_icon" android:layout_width="@dimen/size_20dp" android:layout_height="@dimen/size_20dp" android:checked="false" android:button="@null" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14dp" android:textColor="#999999" android:id="@+id/remember_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/do_not_remind" android:layout_toRightOf="@+id/remember" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:background="@color/mj_color_black_00_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp">
+            <Button android:textSize="13dp" android:textColor="#32bac0" android:gravity="center" android:id="@+id/ok" android:background="@drawable/dialog_connect_success_btn_bg" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/confirm" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

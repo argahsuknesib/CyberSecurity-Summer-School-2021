@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no"/>
+    <View android:id="@+id/divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerVertical="true" android:layout_marginStart="17dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="@dimen/std_list_padding_right" android:layout_toLeftOf="@+id/arrow" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/device_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/room_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="46dp" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="45dp" android:insetRight="27dp">
+    <shape android:shape="line">
+        <stroke android:color="#e6e6e6" android:dashWidth="3dp" android:dashGap="3dp"/>
+    </shape>
+</inset>

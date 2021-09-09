@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_bar_choose_connect_device"/>
+    <FrameLayout android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+    <FrameLayout android:id="@+id/layout_search_container" android:background="@color/mj_color_white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/search_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:id="@+id/search_history_tv" android:visibility="invisible" android:layout_width="278dp" android:layout_height="wrap_content" android:text="@string/device_choose_search_history" android:layout_marginStart="27dp"/>
+            <com.xiaomi.smarthome.device.choosedevice.FitLineLinearLayout android:id="@+id/fit_line_layout_history_text" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginStart="27dp" android:layout_marginEnd="27dp" app:grivate="1" app:horizontal_Space="12dp" app:isFull="false" app:vertical_Space="10dp"/>
+            <ListView android:id="@+id/device_grid_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/no_search_results" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:src="@drawable/choose_device_search_no_result" android:importantForAccessibility="no"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/device_choose_search_no_result" android:textAlignment="center"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

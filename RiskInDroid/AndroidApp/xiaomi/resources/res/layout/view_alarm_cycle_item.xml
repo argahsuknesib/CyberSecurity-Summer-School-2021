@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="51dp">
+    <ImageView android:id="@+id/alarm_cycle_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alarm_ring_selected" android:layout_centerVertical="true" android:layout_marginStart="12dp"/>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/mj_color_black" android:id="@+id/alarm_cycle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/alarm_cycle_selected"/>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/mj_color_gray_normal" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_toStartOf="@+id/more"/>
+    <ImageView android:id="@+id/more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="13dp"/>
+    <View android:id="@+id/divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

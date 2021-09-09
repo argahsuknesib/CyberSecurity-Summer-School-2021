@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/layout_aspect" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.miio.camera.face.widget.CameraSurfaceView android:id="@+id/camera_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/iv_take_ed_photo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.xiaomi.smarthome.miio.camera.face.widget.CameraCircleView android:id="@+id/mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/icon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:src="@drawable/icon_face_cancle" android:tint="@color/mj_color_black"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/btn_take" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_take_photo" android:drawableTop="@drawable/camera_take"/>
+        <Button android:id="@+id/btn_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换相机"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/camera_white" android:gravity="center" android:id="@+id/tv_confirm" android:background="@drawable/bg_wide_button_normal_shape" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="30dp" android:text="@string/confirm" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

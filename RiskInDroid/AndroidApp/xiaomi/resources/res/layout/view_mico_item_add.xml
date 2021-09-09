@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/mico_add" android:layout_width="match_parent" android:layout_height="42dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/mico_item_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_add_mico"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mico_main_add_mico" android:maxLines="1" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</LinearLayout>

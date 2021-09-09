@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+    <ImageView android:id="@+id/ivHeaderLeftBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:src="@drawable/std_tittlebar_main_device_back_black" android:tint="@color/mj_color_black" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/tvTitleBarTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/ivHeaderRightEdit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/title_edit_drawable" android:tint="@color/mj_color_black"/>
+        <ImageView android:id="@+id/ivHeaderRightSetting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cs_icon_setting_selector" android:tint="@color/mj_color_black"/>
+        <TextView android:textSize="16sp" android:layout_gravity="center_vertical" android:id="@+id/tvRightMore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:id="@+id/viewDivider3" android:background="@color/mj_color_black_06_transparent" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_marginTop="20dp" android:layout_below="@+id/ivHeaderLeftBack"/>
+</RelativeLayout>

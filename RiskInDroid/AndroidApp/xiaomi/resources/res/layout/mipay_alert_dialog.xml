@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" style="@style/MipayPub.TextAppearance.AlertDialog.Title"/>
+    <TextView android:id="@+id/message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:layout_marginTop="23dp" android:layout_marginRight="37dp" android:layout_marginBottom="15dp" style="@style/MipayPub.TextAppearance.AlertDialog.Message"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="@style/MipayPub.Widget.ButtonBar">
+        <com.mibi.sdk.widget.GroupButton android:gravity="center" android:id="@+id/button1" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/MipayPub.Widget.Button.Dialog"/>
+        <com.mibi.sdk.widget.GroupButton android:gravity="center" android:id="@+id/button2" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/MipayPub.Widget.Button.Dialog"/>
+    </LinearLayout>
+</LinearLayout>

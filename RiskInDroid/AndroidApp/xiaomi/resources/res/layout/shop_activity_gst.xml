@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_gst_edt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15sp" android:textColor="@color/discover_title_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="20dp" android:text="@string/gst_enter"/>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/shop_bg_gst_edittext" android:layout_width="266dp" android:layout_height="42dp" android:layout_marginBottom="42dp">
+            <com.mi.global.shop.widget.CustomEditTextView android:textSize="17sp" android:textColor="@color/order_grey" android:gravity="left" android:layout_gravity="center" android:id="@+id/bg_gst" android:background="@android:color/transparent" android:paddingTop="9dp" android:paddingBottom="10.5dp" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <com.mi.global.shop.widget.XEditText android:textSize="17sp" android:textColor="@color/gst_text_color" android:gravity="left" android:layout_gravity="center" android:id="@+id/ed_gst" android:background="@android:color/transparent" android:paddingTop="9dp" android:paddingBottom="10.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ " android:layout_alignLeft="@+id/bg_gst" android:layout_alignTop="@+id/bg_gst" android:layout_alignRight="@+id/bg_gst" android:layout_alignBottom="@+id/bg_gst"/>
+        </RelativeLayout>
+        <View android:id="@+id/v_divider" android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp" android:layout_below="@+id/rl_delivery_select"/>
+    </LinearLayout>
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_gst_edt">
+        <TextView android:textSize="12sp" android:textColor="@color/gst_text_color" android:id="@+id/tv_gat_explain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/gst_explain"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_below="@+id/tv_gat_explain">
+            <Button android:textSize="12sp" android:textColor="@color/orange_red" android:gravity="center" android:id="@+id/bt_gst_cancel" android:background="@drawable/shop_gst_cancelbtn" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginRight="7.5dp" android:text="@string/gst_no_confirm" android:layout_weight="1"/>
+            <Button android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bt_gst" android:background="@color/order_grey" android:clickable="false" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="7.5dp" android:text="@string/gst_confirm" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/loading" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

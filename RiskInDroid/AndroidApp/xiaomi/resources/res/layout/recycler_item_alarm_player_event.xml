@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_play" android:visibility="invisible" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/camera_icon_alarm_player_mini_play"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="17:30:30"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:id="@+id/tv_event" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_60_transparent" android:id="@+id/tv_btn" android:background="@drawable/bg_black15_corner4" android:paddingLeft="7dp" android:paddingTop="3dp" android:paddingRight="7dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/add_notes"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp"/>
+    <View android:id="@+id/divider_line_full" android:background="@color/mj_color_separator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

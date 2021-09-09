@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ble_guide_content_description">
+        <item>現在最初のページを表示しています</item>
+        <item>現在2番目のページを表示しています</item>
+        <item>現在3番目のページを表示しています</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>配偶者</item>
+        <item>父</item>
+        <item>母</item>
+        <item>息子</item>
+        <item>娘</item>
+        <item>同居人</item>
+        <item>その他</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>温度 </item>
+        <item>湿度 </item>
+        <item>空気質 </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>温度</item>
+        <item>湿度</item>
+        <item>空気質</item>
+    </array>
+    <array name="month">
+        <item>1 月</item>
+        <item>2 月</item>
+        <item>3 月</item>
+        <item>4 月</item>
+        <item>5 月</item>
+        <item>6 月</item>
+        <item>7 月</item>
+        <item>8 月</item>
+        <item>9 月</item>
+        <item>10 月</item>
+        <item>11 月</item>
+        <item>12 月</item>
+    </array>
+    <array name="multikey_keyname_double">
+        <item>左ボタン</item>
+        <item>右ボタン</item>
+    </array>
+    <array name="multikey_keyname_three">
+        <item>左ボタン</item>
+        <item>真ん中ボタン</item>
+        <item>右ボタン</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>リビングルーム</item>
+        <item>寝室</item>
+        <item>主寝室</item>
+        <item>キッチン</item>
+        <item>ダイニング</item>
+        <item>バスルーム</item>
+        <item>子供部屋</item>
+        <item>オフィス</item>
+        <item>書斎</item>
+        <item>バルコニー</item>
+        <item>仕事部屋</item>
+        <item>バスルーム</item>
+        <item>バックヤード</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>「北京」</item>
+        <item>「ソウル｣</item>
+        <item>「東京｣</item>
+        <item>「ニューヨーク」</item>
+        <item>「デンバー」</item>
+        <item>「コスタリカ」</item>
+        <item>「シカゴ」</item>
+        <item>「メキシコシティ―」</item>
+        <item>「リジャナ」</item>
+        <item>「ロサンゼルス」</item>
+        <item>「マジュロ」</item>
+        <item>「ミッドウェー島」</item>
+        <item>「ホノルル」</item>
+        <item>「アンカレッジ」</item>
+        <item>「ティファナ」</item>
+        <item>「フェニックス」</item>
+        <item>「チワワ」</item>
+        <item>「ボゴタ」</item>
+        <item>「カラカス」</item>
+        <item>「バルバトス」</item>
+        <item>「マナウス」</item>
+        <item>「セントジョン」</item>
+        <item>「サンチアゴ」</item>
+        <item>「ブエノスアイレス」</item>
+        <item>「ヌーク」</item>
+        <item>「モンテビデオ」</item>
+        <item>「サンパウロ」</item>
+        <item>「サウスジョージア」</item>
+        <item>「アゾレス諸島」</item>
+        <item>「カボベルデ」</item>
+        <item>「カサブランカ」</item>
+        <item>「ロンドン」</item>
+        <item>「アムステルダム」</item>
+        <item>「ベオグラード」</item>
+        <item>「ブリュッセル」</item>
+        <item>「サラエボ」</item>
+        <item>「ブラザビル」</item>
+        <item>「ウィントフック」</item>
+        <item>「アンマン」</item>
+        <item>「アテネ」</item>
+        <item>「ベイルート」</item>
+        <item>「カイロ」</item>
+        <item>「ヘルシンキ」</item>
+        <item>「エルサレム」</item>
+        <item>「ハラーレ」</item>
+        <item>「ミンスク」</item>
+        <item>「バグダッド」</item>
+        <item>「モスクワ」</item>
+        <item>「クウェート」</item>
+        <item>「ナイロビ」</item>
+        <item>「テヘラン」</item>
+        <item>「バクー」</item>
+        <item>「トビリシ」</item>
+        <item>「エレバン」</item>
+        <item>「ドバイ」</item>
+        <item>「カブール」</item>
+        <item>「カラチ」</item>
+        <item>「ウラル」</item>
+        <item>「エカテリンブルク」</item>
+        <item>「カルカッタ」</item>
+        <item>「コロンボ」</item>
+        <item>「カトマンズ」</item>
+        <item>「アルアマタ」</item>
+        <item>「ヤンゴン」</item>
+        <item>「クラスノヤルスク」</item>
+        <item>「バンコク」</item>
+        <item>「イルクーツク」</item>
+        <item>「クアラルンプール」</item>
+        <item>「パース」</item>
+        <item>「ヤクーツク」</item>
+        <item>「ダーウィン」</item>
+        <item>「ブリスベン」</item>
+        <item>「ウラジオストク」</item>
+        <item>「グアム島」</item>
+        <item>「アデレード」</item>
+        <item>「ホバート」</item>
+        <item>「シドニー」</item>
+        <item>「マガダン」</item>
+        <item>「オークランド」</item>
+        <item>「フィジー」</item>
+        <item>「トンガタプ」</item>
+    </array>
+    <array name="weekday">
+        <item>日曜日</item>
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>月</item>
+        <item>火</item>
+        <item>水</item>
+        <item>木</item>
+        <item>金</item>
+        <item>土</item>
+        <item>日</item>
+    </array>
+    <array name="weekday_short">
+        <item>日</item>
+        <item>月</item>
+        <item>火</item>
+        <item>水</item>
+        <item>木</item>
+        <item>金</item>
+        <item>土</item>
+    </array>
+</resources>

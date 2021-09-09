@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView style="@style/ListItem.Group.Title">
+        <View style="@style/ListItem.Divider"/>
+        <TextView android:text="@string/device_more_security_pw_title" style="@style/ListItem.Title.ContentTitle"/>
+        <View android:layout_alignParentBottom="true" style="@style/ListItem.Divider"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_open_password" style="@style/ListItem.Group.Content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:text="@string/device_more_security_pw_open_main" style="@style/ListItem.Title.ListItemMainTitle"/>
+            <TextView android:text="@string/device_more_security_pw_open_sub" style="@style/ListItem.Title.ListItemSubTitle"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+        <View android:layout_alignParentBottom="true" style="@style/ListItem.Divider"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_close_password" style="@style/ListItem.Group.Content">
+        <TextView android:text="@string/device_more_security_pw_close" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+        <ImageView android:src="@drawable/um_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" style="@style/ListItem.Title.ListItemSubTitle"/>
+        <View android:layout_alignParentBottom="true" style="@style/ListItem.Divider"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_change_password" style="@style/ListItem.Group.Content">
+        <TextView android:id="@+id/xiaomi_sm_change_password_title" android:text="@string/device_more_security_pw_change" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_show_secure_pin" android:visibility="gone" style="@style/ListItem.Group.Content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:text="@string/ble_secure_pin_code" style="@style/ListItem.Title.ListItemMainTitle"/>
+            <TextView android:text="@string/ble_secure_pin_setting_view_device" style="@style/ListItem.Title.ListItemSubTitle"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/xiaomi_sm_show_secure_pin_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <View android:layout_alignParentBottom="true" style="@style/ListItem.Divider"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_change_secure_pin" android:visibility="gone" style="@style/ListItem.Group.Content">
+        <TextView android:id="@+id/xiaomi_sm_change_secure_pin_title" android:text="@string/ble_secure_change_pin_code" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_fingerprint_title" style="@style/ListItem.Group.Title">
+        <View style="@style/ListItem.Divider"/>
+        <TextView android:text="@string/device_more_security_fingerprint_title" style="@style/ListItem.Title.ContentTitle"/>
+        <View android:layout_alignParentBottom="true" style="@style/ListItem.Divider"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/xiaomi_sm_fingerprint_setting" style="@style/ListItem.Group.Content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toStartOf="@+id/xiaomi_sm_fingerprint_setting_switch">
+            <TextView android:text="@string/device_more_security_fingerprint_main" style="@style/ListItem.Title.ListItemMainTitle"/>
+            <TextView android:text="@string/device_more_security_fingerprint_sub" android:maxLines="2" android:singleLine="false" style="@style/ListItem.Title.ListItemSubTitle"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/xiaomi_sm_fingerprint_setting_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <View style="@style/ListItem.Divider"/>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/device_morsecurity_clear_hint"/>
+</LinearLayout>

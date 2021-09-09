@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/home_select_container" android:layout_width="match_parent" android:layout_height="162dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center" android:layout_width="match_parent" android:layout_height="62dp" android:text="@string/mj_select_home_for_sync"/>
+            <com.xiaomi.smarthome.library.common.widget.ExpandListView android:id="@+id/home_select_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+            <Button android:textSize="16sp" android:textColor="@color/mj_color_black_100_transparent" android:layout_gravity="center" android:id="@+id/cancel_btn" android:background="@drawable/rectangle_23_radius_btn" android:layout_width="306dp" android:layout_height="46dp" android:layout_marginTop="16dp" android:layout_marginBottom="27dp" android:text="@string/sh_common_cancel"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

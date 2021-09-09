@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="405dp">
+                <VideoView android:layout_gravity="center_horizontal" android:id="@+id/video_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+            </FrameLayout>
+            <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/std_list_right_icon_padding_left_3" android:layout_marginRight="@dimen/std_list_right_icon_padding_left_3"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/device_card_shortcut" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/std_list_right_icon_padding_left_3" android:layout_marginTop="@dimen/std_list_space_margin_top" android:layout_marginRight="@dimen/std_list_right_icon_padding_left_3" android:layout_below="@+id/title_bar">
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_card_shortcut_title" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/device_card_shortcut_btn" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/std_list_right_icon_padding_left_3" android:layout_marginTop="@dimen/std_paragraph_spacing" android:layout_marginRight="@dimen/std_list_right_icon_padding_left_3"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="@dimen/tag_margin_top" android:layout_marginRight="@dimen/page_margin_right" android:text="@string/device_card_shortcut_hint"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

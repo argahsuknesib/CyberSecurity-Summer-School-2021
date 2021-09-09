@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_title_bar" layout="@layout/hs_common_black_title"/>
+    <FrameLayout android:id="@+id/fl_display_container" android:background="@android:color/black" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/layout_assistant" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/layout_title_bar">
+        <com.xiaovv.player.HSVideoView android:layout_gravity="center" android:id="@+id/hs_video_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_time_osd" android:background="@drawable/hs_10_radius_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:paddingStart="5dp" android:paddingEnd="5dp" android:layout_marginEnd="10dp"/>
+        <include android:layout_gravity="bottom" android:id="@+id/layout_pano_mode_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_pano_mode_selector"/>
+        <include android:layout_gravity="end" android:id="@+id/layout_pano_fix_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/layout_pano_fix_selector"/>
+        <ImageButton android:layout_gravity="center" android:id="@+id/btn_restore_play" android:background="@drawable/news_btn_replay_nor" android:visibility="gone" android:layout_width="75dp" android:layout_height="75dp"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/tv_error_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pb_loading_view" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:indeterminateDrawable="@drawable/hs_loading_view"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_bottom_menu" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginBottom="20dp" app:layout_constraintBottom_toBottomOf="0">
+        <ImageButton android:id="@+id/btn_video_voice" android:background="@drawable/preview_btn_voiceoff_white_nor" android:layout_width="35dp" android:layout_height="35dp"/>
+        <ImageButton android:id="@+id/btn_screenshot" android:background="@drawable/preview_btn_screenshot_white_nor" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginStart="60dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_assistant" android:layout_width="match_parent" android:layout_height="70dp" app:layout_constraintBottom_toTopOf="@+id/layout_bottom_menu"/>
+    <include android:id="@+id/layout_video_progress" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/layout_bottom_menu" layout="@layout/layout_hs_video_progress"/>
+    <LinearLayout android:gravity="center" android:id="@+id/layout_screenshot_tips" android:background="@drawable/hs_5_radius_bg" android:padding="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="@+id/fl_display_container" app:layout_constraintStart_toStartOf="@+id/fl_display_container">
+        <ImageButton android:id="@+id/btn_screenshot_tips" android:background="@null" android:layout_width="104dp" android:layout_height="65dp" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

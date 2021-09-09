@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="70dp" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/product_image" android:layout_width="50dp" android:layout_height="57dp" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="11sp" android:textColor="#2e2323" android:id="@+id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:singleLine="true"/>
+</LinearLayout>

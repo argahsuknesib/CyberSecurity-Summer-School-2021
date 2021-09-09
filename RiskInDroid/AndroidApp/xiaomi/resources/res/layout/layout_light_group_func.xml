@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/light_group_func" android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="12sp" android:textColor="@color/light_group_func_text_selector" android:gravity="center_vertical" android:id="@+id/icon_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/light_group_func_on" android:singleLine="true" android:drawablePadding="10dp" android:drawableStart="@drawable/light_group_func_toggle_selector" android:layout_marginStart="26dp"/>
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/light_group_func_text_selector" android:gravity="center_vertical" android:id="@+id/icon_bright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/light_group_func_brightness" android:singleLine="true" android:drawablePadding="10dp" android:drawableStart="@drawable/light_group_func_bright_selector"/>
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/light_group_func_text_selector" android:gravity="center_vertical" android:id="@+id/icon_color_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/light_group_func_color_temperature" android:singleLine="true" android:drawablePadding="10dp" android:drawableStart="@drawable/light_group_func_color_temp_selector"/>
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/light_group_func_text_selector" android:gravity="center_vertical" android:id="@+id/icon_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/light_group_func_color" android:singleLine="true" android:drawablePadding="10dp" android:drawableStart="@drawable/light_group_func_color_selector" android:layout_marginEnd="26dp"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="@dimen/common_list_space_empty_height"/>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include android:id="@+id/light_group_func_title" layout="@layout/tag_group_item_common_6"/>
+</LinearLayout>

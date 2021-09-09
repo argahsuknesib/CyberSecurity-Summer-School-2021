@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/module_a_3_title_bar_return_manager"/>
+    <com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout android:id="@+id/pull_down_refresh" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/title_bar">
+        <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp"/>
+        <com.xiaomi.smarthome.library.common.widget.SM1LayerRecycleView android:id="@+id/recycler" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

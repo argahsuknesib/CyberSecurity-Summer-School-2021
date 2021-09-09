@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="choose_category_device_item_width">170dp</dimen>
+    <dimen name="choose_device_common_item_width">110dp</dimen>
+    <dimen name="choose_scan_device_item_width">170dp</dimen>
+</resources>

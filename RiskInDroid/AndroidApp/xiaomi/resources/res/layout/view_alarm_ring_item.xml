@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="51dp">
+    <ImageView android:id="@+id/alarm_ring_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alarm_ring_selected" android:layout_centerVertical="true" android:layout_marginStart="12dp"/>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/orange_tab_text_color" android:ellipsize="end" android:id="@+id/alarm_ring_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/alarm_ring_selected"/>
+    <View android:id="@+id/divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

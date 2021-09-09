@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/group_rn_container" android:background="@drawable/main_grid_common_card_bg_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.newui.widget.CardLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:max_radius="16dp">
+        <RelativeLayout android:id="@+id/rl_rn_debug" android:background="@drawable/selector_setting_main_page_item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开发者选项" android:drawablePadding="16dp" android:layout_centerVertical="true" android:drawableStart="@drawable/std_person_center_icon_rn_debug" android:layout_marginStart="20dp" android:layout_marginEnd="@dimen/size_52dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/tv_rn_debug_left_info_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="55dp" android:layout_alignParentEnd="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="24dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </com.xiaomi.smarthome.newui.widget.CardLinearLayout>
+</FrameLayout>

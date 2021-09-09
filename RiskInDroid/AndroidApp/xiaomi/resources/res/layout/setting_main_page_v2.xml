@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.library.common.widget.LimitedFrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lf_group" android:layout_width="match_parent" android:layout_height="match_parent" app:Max_Width="1040dp">
+        <ViewStub android:id="@+id/setting_main_page_content_view_stub" android:layout="@layout/setting_main_page_content_v2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaomi.smarthome.library.common.widget.LimitedFrameLayout>
+</LinearLayout>

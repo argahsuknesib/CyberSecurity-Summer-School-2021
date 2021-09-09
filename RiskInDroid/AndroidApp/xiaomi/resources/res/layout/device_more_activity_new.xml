@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/device_more_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/device_more" android:background="@color/mj_color_dialog_bg_nor" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/cancel" android:background="@drawable/std_tittlebar_main_device_back2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:contentDescription="@string/mj_close" android:layout_marginEnd="15dp"/>
+        <View android:background="@drawable/mj_rs_std_list_background_line" android:layout_width="match_parent" android:layout_height="2px"/>
+        <ListView android:id="@+id/select_dialog_listview" android:scrollbars="vertical" android:layoutAnimation="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@null" android:divider="@drawable/mj_rs_std_list_background_line" android:dividerHeight="2px" android:overScrollMode="ifContentScrolls"/>
+        <View android:background="@drawable/mj_rs_std_list_background_line" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+    <View android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_below="@+id/body22"/>
+</LinearLayout>

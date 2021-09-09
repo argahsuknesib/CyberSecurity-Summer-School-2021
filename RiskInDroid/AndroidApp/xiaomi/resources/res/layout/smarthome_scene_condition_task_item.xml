@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/task_layout" android:background="@color/mj_color_white" android:paddingLeft="23dp" android:paddingRight="23dp" android:layout_width="match_parent" android:layout_height="66dp" android:minHeight="66dp" android:paddingStart="23dp" android:paddingEnd="23dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/image_container" android:layout_width="wrap_content" android:layout_height="66dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon_top_line" android:layout_width="1dp" android:layout_height="12dp" android:src="#f3f3f3"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/device_list_phone_no" android:scaleType="fitXY"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon_bottom_line" android:layout_width="1dp" android:layout_height="12dp" android:src="#f3f3f3"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/right_btn" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingStart="10dp" android:layout_alignParentEnd="true">
+            <TextView android:textSize="12dp" android:textColor="@color/mj_color_black_40_transparent" android:gravity="center" android:id="@+id/offline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_scene_client_offline" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="@dimen/font_size_5" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/buy_button" android:background="@drawable/scene_goto_shopbtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/go_to_buy"/>
+            <ImageView android:id="@+id/anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/right_btn" android:layout_toRightOf="@+id/image_container" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toStartOf="@+id/right_btn" android:layout_toEndOf="@+id/image_container">
+            <TextView android:textSize="@dimen/font_size_4" android:textColor="#444444" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/scene_add_text_sub" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/bottom_line" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/mj_color_black_10_transparent" android:layout_alignLeft="@+id/title_container" android:layout_alignParentBottom="true" android:layout_alignStart="@+id/title_container"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/delay_timer_layout" android:paddingLeft="23dp" android:paddingRight="23dp" android:layout_width="match_parent" android:layout_height="39dp" android:paddingStart="23dp" android:paddingEnd="23dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/delay_time_icon_container" android:layout_width="42dp" android:layout_height="39dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/delay_top_line" android:layout_width="1dp" android:layout_height="9.5dp" android:src="#f3f3f3"/>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="20dp" android:src="@drawable/std_sence_btn_delay_pressed" android:scaleType="centerInside"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/delay_bottom_line" android:layout_width="1dp" android:layout_height="9.5dp" android:src="#f3f3f3"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_class_text_28" android:id="@+id/delay_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_toRightOf="@+id/delay_time_icon_container" android:layout_centerVertical="true" android:layout_marginStart="17dp" android:layout_toEndOf="@+id/delay_time_icon_container"/>
+        <ImageView android:id="@+id/delay_time_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="4dp" android:src="#f3f3f3" android:layout_toRightOf="@+id/delay_time_text" android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/delay_time_text"/>
+    </RelativeLayout>
+</FrameLayout>

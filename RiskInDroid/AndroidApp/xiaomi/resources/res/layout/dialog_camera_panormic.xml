@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/dialog_panormic" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/mj_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="24dp" android:layout_marginRight="12dp" android:text="@string/panorama_dialog_title"/>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_gray_heavy" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/panorama_dialog_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="42dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/camera_panormic_360"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/panorama_text_360"/>
+            <TextView android:textSize="@dimen/font_size_10sp" android:textColor="@color/mj_color_gray_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/panorama_degree_360"/>
+            <ImageView android:id="@+id/btn1" android:padding="16dp" android:layout_width="54dp" android:layout_height="54dp" android:src="@drawable/dialog_camera_panoram_angle_selector" android:layout_centerInParent="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/camera_panormic_270"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/panorama_text_270"/>
+            <TextView android:textSize="@dimen/font_size_10sp" android:textColor="@color/mj_color_gray_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/panorama_degree_270"/>
+            <ImageView android:id="@+id/btn2" android:padding="16dp" android:layout_width="54dp" android:layout_height="54dp" android:src="@drawable/dialog_camera_panoram_angle_selector" android:layout_centerInParent="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/camera_panormic_180"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/panorama_text_180"/>
+            <TextView android:textSize="@dimen/font_size_10sp" android:textColor="@color/mj_color_gray_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/panorama_degree_180"/>
+            <ImageView android:id="@+id/btn3" android:padding="16dp" android:layout_width="54dp" android:layout_height="54dp" android:src="@drawable/dialog_camera_panoram_angle_selector" android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/cancel" android:background="@drawable/dialog_camera_btn_grey" android:layout_width="147dp" android:layout_height="48dp" android:text="@string/panorama_btn_cancel" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_green_normal" android:id="@+id/agree" android:background="@drawable/dialog_camera_btn_grey" android:layout_width="147dp" android:layout_height="48dp" android:text="@string/panorama_btn_ok" android:layout_alignParentRight="true" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</LinearLayout>

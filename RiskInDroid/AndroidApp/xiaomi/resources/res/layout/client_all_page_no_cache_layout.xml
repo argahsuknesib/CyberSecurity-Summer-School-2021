@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/header_view_offline_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/no_login_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_90_transparent" android:gravity="center" android:id="@+id/no_login_tv" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/login_at_once" android:includeFontPadding="false" android:drawablePadding="10dp" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ble_guide_content_description">
+        <item>หน้าแรก</item>
+        <item>หน้าที่สอง</item>
+        <item>หน้าที่สาม</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>ม.ค.</item>
+        <item>ก.พ.</item>
+        <item>มี.ค.</item>
+        <item>เม.ย.</item>
+        <item>พ.ค.</item>
+        <item>มิ.ย.</item>
+        <item>ก.ค.</item>
+        <item>ส.ค.</item>
+        <item>ก.ย.</item>
+        <item>ต.ค.</item>
+        <item>พ.ย.</item>
+        <item>ธ.ค.</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>คู่สมรส</item>
+        <item>พ่อ</item>
+        <item>แม่</item>
+        <item>ลูกชาย</item>
+        <item>ลูกสาว</item>
+        <item>เพื่อนร่วมห้อง</item>
+        <item>อื่นๆ</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>อุณหภูมิ </item>
+        <item>ความชื้น </item>
+        <item>AQI </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>อุณหภูมิ</item>
+        <item>ความชื้น</item>
+        <item>คุณภาพอากาศ</item>
+    </array>
+    <array name="month">
+        <item>ม.ค.</item>
+        <item>ก.พ.</item>
+        <item>มี.ค.</item>
+        <item>เม.ย.</item>
+        <item>พ.ค.</item>
+        <item>มิ.ย.</item>
+        <item>ก.ค.</item>
+        <item>ส.ค.</item>
+        <item>ก.ย.</item>
+        <item>ต.ค.</item>
+        <item>พ.ย.</item>
+        <item>ธ.ค.</item>
+    </array>
+    <array name="multikey_keyname_double">
+        <item>สวิตช์ด้านซ้าย</item>
+        <item>สวิตช์ด้านขวา</item>
+    </array>
+    <array name="multikey_keyname_three">
+        <item>สวิตช์ด้านซ้าย</item>
+        <item>สวิตช์กลาง</item>
+        <item>สวิตช์ด้านขวา</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>ห้องนั่งเล่น</item>
+        <item>ห้องนอน</item>
+        <item>ห้องนอนใหญ่</item>
+        <item>ห้องครัว</item>
+        <item>ห้องอาหาร</item>
+        <item>ห้องน้ำ</item>
+        <item>ห้องเด็ก</item>
+        <item>สำนักงาน</item>
+        <item>ห้องอ่านหนังสือ</item>
+        <item>ระเบียง</item>
+        <item>ห้องทำงาน</item>
+        <item>ห้องอาบน้ำ</item>
+        <item>สนามหลังบ้าน</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>“ปักกิ่ง”</item>
+        <item>โซล”</item>
+        <item>โตเกียว”</item>
+        <item>นิวยอร์ก”</item>
+        <item>เดนเวอร์”</item>
+        <item>คอสตาริก้า”</item>
+        <item>ชิคาโก”</item>
+        <item>เม็กซิโก”</item>
+        <item>เรจิน่า”</item>
+        <item>ลอสแอนเจลิส”</item>
+        <item>มาจูโร”</item>
+        <item>มิดเวย์”</item>
+        <item>โฮโนลูลู”</item>
+        <item>แองเคอเรจ”</item>
+        <item>ติฮัวนา”</item>
+        <item>ฟินิกซ์”</item>
+        <item>ชิวาวา”</item>
+        <item>โบโกตา”</item>
+        <item>การากัส”</item>
+        <item>บาร์เบโดส”</item>
+        <item>มาเนาส์”</item>
+        <item>เซนต์จอห์น”</item>
+        <item>ซานดิเอโก”</item>
+        <item>บัวโนสไอเรส”</item>
+        <item>กอตต์เตา”</item>
+        <item>มอนเตวิเดโอ”</item>
+        <item>เซาเปาลู”</item>
+        <item>จอร์เจียใต้”</item>
+        <item>เกาะอัสซีเรีย”</item>
+        <item>เคปเวิร์ด”</item>
+        <item>คาซาบลังก้า”</item>
+        <item>ลอนดอน”</item>
+        <item>อัมสเตอร์ดัม”</item>
+        <item>นครเบลเกรด”</item>
+        <item>บรัสเซลส์”</item>
+        <item>ซาราเจโว”</item>
+        <item>บราซซาวิ”</item>
+        <item>วินด์ฮุก”</item>
+        <item>อัมมาน”</item>
+        <item>เอเธนส์”</item>
+        <item>เบรุต”</item>
+        <item>ไคโร”</item>
+        <item>เฮลซิงกิ”</item>
+        <item>เยรูซาเล็ม”</item>
+        <item>ฮาราเร”</item>
+        <item>มินสค์”</item>
+        <item>แบกแดด”</item>
+        <item>มอสโก”</item>
+        <item>คูเวต”</item>
+        <item>ไนโรบี”</item>
+        <item>เตหะราน”</item>
+        <item>บากู”</item>
+        <item>ทบิลิซี”</item>
+        <item>เยเรวาน”</item>
+        <item>ดูไบ”</item>
+        <item>คาบูล”</item>
+        <item>การาจี”</item>
+        <item>อูราล”</item>
+        <item>Yekaterinburg”</item>
+        <item>กัลกัต”</item>
+        <item>โคลัมโบ”</item>
+        <item>ฐมาณฑุ”</item>
+        <item>อัลมาตี”</item>
+        <item>ย่างกุ้ง”</item>
+        <item>ครัสโนยาสค์”</item>
+        <item>กรุงเทพมหานคร”</item>
+        <item>อีร์คุตส”</item>
+        <item>กัวลาลัมเปอร์”</item>
+        <item>เพิร์ธ”</item>
+        <item>ยาคุตสค์”</item>
+        <item>ดาร์วิน”</item>
+        <item>บริสเบน”</item>
+        <item>วลาดิวอสต็อก”</item>
+        <item>เกาะกวม”</item>
+        <item>แอดิเลด”</item>
+        <item>โฮบาร์ต”</item>
+        <item>ซิดนีย์”</item>
+        <item>มากาดาน”</item>
+        <item>โอ๊คแลนด์”</item>
+        <item>ฟิจิ”</item>
+        <item>ตาปู”</item>
+    </array>
+    <array name="weekday">
+        <item>อาทิตย์</item>
+        <item>จันทร์</item>
+        <item>อังคาร</item>
+        <item>พุธ</item>
+        <item>พฤหัสฯ</item>
+        <item>ศุกร์</item>
+        <item>เสาร์</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>จ.</item>
+        <item>อ.</item>
+        <item>พ.</item>
+        <item>พฤ.</item>
+        <item>ศ.</item>
+        <item>ส.</item>
+        <item>อา.</item>
+    </array>
+    <array name="weekday_short">
+        <item>อา.</item>
+        <item>จ.</item>
+        <item>อ.</item>
+        <item>พ.</item>
+        <item>พฤ.</item>
+        <item>ศ.</item>
+        <item>ส.</item>
+    </array>
+</resources>

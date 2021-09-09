@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#ececec" android:endColor="#f9f9f9" android:angle="45"/>
+            <size android:height="92dp" android:width="92dp"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/tv_default_poster" android:antialias="true" android:filter="true" android:dither="true" android:tileMode="disabled"/>
+    </item>
+</layer-list>

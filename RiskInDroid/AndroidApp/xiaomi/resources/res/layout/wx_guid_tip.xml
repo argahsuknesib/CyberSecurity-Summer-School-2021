@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="288dp" android:layout_height="369dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="182dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/guid_wx_qcord" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="30dp" android:scaleType="fitXY" android:importantForAccessibility="no"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_normal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxWidth="240dp" android:text="@string/wx_push_3"/>
+        <TextView android:textSize="10dp" android:textColor="@color/mj_color_gray_normal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:text="@string/wx_push_4"/>
+    </LinearLayout>
+    <View android:background="@drawable/wx_push_line" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp" android:layout_marginBottom="18dp" android:layerType="software"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="75dp">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wx_push_1" android:contentDescription="@null"/>
+        <TextView android:textSize="10dp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="40dp" android:layout_height="wrap_content" android:text="@string/wx_push_1"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:src="@drawable/wx_push_2" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/wx_guid_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:src="@drawable/wx_push_3" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <TextView android:textSize="10dp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/wx_push_2"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/wx_push_ok" android:background="@drawable/camera_btn_guid_bg" android:layout_width="240dp" android:layout_height="34dp" android:layout_marginTop="28dp">
+        <TextView android:textColor="@color/mj_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wx_push_ok"/>
+    </LinearLayout>
+</LinearLayout>

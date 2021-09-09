@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <com.xiaomi.qrcode.camera.CameraTextureView android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaomi.qrcode.ViewfinderView android:id="@+id/viewfinder_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4" android:layout_below="@+id/title_bar">
+        <FrameLayout android:id="@+id/fl_scan_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_horizontal" android:id="@+id/scan_line" android:background="@color/mj_color_text_blue_bg" android:visibility="visible" android:layout_width="194dp" android:layout_height="1.33dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true"/>
+        </FrameLayout>
+        <TextView android:textSize="14.7sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_20dp" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/size_20dp" android:text="@string/device_choose_scan_qr_hint" android:layout_below="@+id/fl_scan_line" android:layout_centerHorizontal="true"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/mannual_add_device_btn" android:background="@drawable/mj_scan_mannual_add_button_bg" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginTop="20dp" android:text="@string/device_choose_scan_no_qr_hint" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        <RelativeLayout android:id="@+id/bottom_menu_layout" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="60dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="match_parent" android:layout_marginStart="70dp" android:layout_alignParentStart="true">
+                <com.xiaomi.smarthome.feedback.view.ScanDeviceImagePickerPreview android:layout_gravity="center_horizontal" android:id="@+id/image_pick_preview" android:background="@drawable/mj_scan_photo" android:layout_width="60dp" android:layout_height="60dp"/>
+                <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="24dp" android:text="@string/album"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="match_parent" android:layout_marginEnd="70dp" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/torch_img" android:background="@drawable/mj_scan_torch_closed" android:layout_width="60dp" android:layout_height="60dp"/>
+                <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="24dp" android:text="@string/device_choose_scan_torch"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.7sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/add_manully" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/add_device_manually" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

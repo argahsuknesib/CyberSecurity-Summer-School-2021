@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <in.srain.cube.views.ptr.PtrFrameLayout android:id="@+id/pull_to_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+        <ExpandableListView android:scrollbarStyle="insideOverlay" android:id="@+id/log_list" android:background="@color/mj_color_white" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/mj_color_black_00_transparent" android:cacheColorHint="@color/mj_color_black_00_transparent" android:divider="@color/mj_color_black_00_transparent"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/common_white_empty_view" android:background="@color/mj_color_white" android:paddingTop="126dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_other_home" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/font_size_3" android:textColor="@color/mj_color_black_30_transparent" android:id="@+id/common_white_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/common_white_empty_text_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/del_iv" android:visibility="gone" android:layout_width="41dp" android:layout_height="41dp" android:layout_marginRight="24dp" android:layout_marginBottom="36dp" android:src="@drawable/scene_log_del_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/delete" android:layout_marginEnd="24dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

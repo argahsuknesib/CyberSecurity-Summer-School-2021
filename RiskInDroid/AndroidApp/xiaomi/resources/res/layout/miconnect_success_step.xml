@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/miconnect_common_title"/>
+    <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="276.5938dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/icon_view" android:layout_width="213.33dp" android:layout_height="213.33dp" android:scaleType="centerCrop" app:failureImage="@drawable/miconnect_launcher_src" app:placeholderImage="@drawable/miconnect_launcher_src"/>
+            <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black_70_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.3dp" android:text="@string/miconnect_check_device_in_mijia"/>
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

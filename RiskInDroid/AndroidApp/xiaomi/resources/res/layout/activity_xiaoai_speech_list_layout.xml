@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.smarthome.ui.DeviceBigHeaderView android:id="@+id/device_big_header_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/home_room_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/std_list_padding_left" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/std_list_padding_right" android:singleLine="true" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/multi_xiaoai_tips_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/std_list_padding_left" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/std_list_padding_right" android:text="@string/multi_xiaoai_tips" android:singleLine="true" android:layout_centerHorizontal="true"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

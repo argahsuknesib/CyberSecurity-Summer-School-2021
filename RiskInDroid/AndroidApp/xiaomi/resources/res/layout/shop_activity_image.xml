@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.BaseViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/footer" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <ImageView android:id="@+id/check_mark" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/shop_image_select_state" android:layout_centerVertical="true"/>
+        <com.mi.global.shop.widget.CustomButtonView android:textSize="15sp" android:textColor="@drawable/shop_image_confirm_text_color" android:id="@+id/commit" android:background="@null" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:minWidth="1dp" android:minHeight="1dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

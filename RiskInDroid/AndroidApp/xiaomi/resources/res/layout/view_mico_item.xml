@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mico_item" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="72dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/mico_item_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_device_selected" android:layout_marginStart="10dp" android:layout_marginEnd="11dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/mico_item_sound" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginEnd="17dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/mico_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="270dp" android:singleLine="true"/>
+                <TextView android:textSize="12dp" android:textColor="@color/mj_color_orange_normal" android:layout_gravity="center" android:id="@+id/mico_item_offline" android:paddingLeft="8dp" android:paddingTop="1dp" android:paddingRight="8dp" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="12dp" android:text="@string/offline_device" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="center" android:id="@+id/room_name_off" android:paddingTop="0dp" android:paddingBottom="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="center" android:id="@+id/room_name_on" android:paddingTop="0dp" android:paddingBottom="0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="客厅" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/mico_item_playstatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_playing_enable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="27dp"/>
+</RelativeLayout>

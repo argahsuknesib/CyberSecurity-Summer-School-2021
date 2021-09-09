@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_top" android:layout_width="match_parent" android:layout_height="21dp" android:layout_marginLeft="15dp" android:layout_marginRight="5dp">
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="17dp" android:textColor="#ff222222" android:gravity="center" android:id="@+id/countdown_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FLASH SALE" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="12dp" android:textColor="#ffb0b0b0" android:gravity="center" android:id="@+id/countdown_txt" android:layout_width="wrap_content" android:layout_height="21dp" android:text="@string/count_down_txt"/>
+        <com.xiaomi.shopviews.adapter.countdown.CountdownView android:layout_gravity="center_horizontal" android:id="@+id/cv_countdownView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="4dp" app:isHideTimeBackground="false" app:isShowHour="true" app:isShowMinute="true" app:isShowSecond="true" app:isShowTimeBgBorder="true" app:timeBgBorderColor="#e8e8e8" app:timeBgBorderSize="0dp" app:timeBgColor="#f7f7f7" app:timeBgSize="21dp" app:timeTextColor="#ff424242" app:timeTextSize="12sp"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/remind_group" android:paddingLeft="6dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="31dp" android:layout_height="match_parent">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/remind_btn" android:layout_width="15dp" android:layout_height="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/layout_top"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

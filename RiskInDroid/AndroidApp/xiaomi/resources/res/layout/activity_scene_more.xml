@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_more_grey"/>
+    <include layout="@layout/common_list_space_empty"/>
+    <include android:id="@+id/view_rename" layout="@layout/std_list_one_content"/>
+    <include android:id="@+id/view_execute_result_notify" layout="@layout/std_list_one_content"/>
+    <include android:id="@+id/view_execute_location" layout="@layout/std_list_one_content"/>
+    <include android:id="@+id/view_add_to_home" layout="@layout/std_list_one_content"/>
+    <include android:id="@+id/view_delete_scene" layout="@layout/std_list_one_content"/>
+</LinearLayout>

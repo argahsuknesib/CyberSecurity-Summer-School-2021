@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:background="@drawable/bg_23_white" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20dp" android:paddingEnd="17dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/idm_device_icon" android:layout_width="50dp" android:layout_height="30dp" android:src="@drawable/set_bg_02_visual_nor" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+    <CheckBox android:id="@+id/idm_device_check_box" android:background="@drawable/single_checkbox_layout" android:focusable="false" android:clickable="false" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="15dp" android:button="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/idm_device_check_box" android:layout_toRightOf="@+id/idm_device_icon" android:layout_centerVertical="true" android:layout_marginStart="13dp">
+        <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/mj_color_black_80_transparent" android:ellipsize="end" android:id="@+id/settings_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/settings_item_subtitle_text_size" android:textColor="@color/mj_color_black_49_transparent" android:ellipsize="end" android:id="@+id/settings_item_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

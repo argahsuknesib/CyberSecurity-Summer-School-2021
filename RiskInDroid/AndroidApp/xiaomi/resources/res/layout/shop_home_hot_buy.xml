@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:id="@+id/list_driver" android:background="@color/home_empty_title_view" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <RelativeLayout android:id="@+id/hot_buy_content" android:layout_width="match_parent" android:layout_height="150dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/hot_buy_image" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginLeft="26dp" android:layout_centerVertical="true" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="25dp" android:layout_toRightOf="@+id/hot_buy_image" android:layout_centerVertical="true">
+            <com.mi.global.shop.widget.EasyTextView android:textSize="23sp" android:textColor="#443b37" android:id="@+id/hot_buy_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.mi.global.shop.widget.EasyTextView android:textSize="12sp" android:textColor="#888888" android:id="@+id/hot_buy_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="3"/>
+            <com.mi.global.shop.widget.EasyTextView android:textSize="12sp" android:textColor="#ff6700" android:id="@+id/hot_buy_prize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/driver" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <FrameLayout android:id="@+id/hot_buy_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/hot_buy_text" android:background="#ff6700" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:minWidth="100dp" android:text="LEARN MORE" android:singleLine="true"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/hot_buy_image_btn" android:background="@android:color/transparent" android:layout_width="100dp" android:layout_height="25dp" fresco:actualImageScaleType="0"/>
+        </FrameLayout>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#ff6700" android:id="@+id/hot_buy_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:singleLine="true" android:layout_toLeftOf="@+id/hot_buy_btn_layout" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

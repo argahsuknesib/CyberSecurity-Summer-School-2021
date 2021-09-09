@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/step_icon" android:layout_width="21.3dp" android:layout_height="21.3dp" android:importantForAccessibility="no" android:layout_marginStart="81dp"/>
+    <TextView android:textSize="15.3sp" android:textColor="@color/mj_color_black_70_transparent" android:layout_gravity="center_vertical" android:id="@+id/step_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="14dp"/>
+</LinearLayout>

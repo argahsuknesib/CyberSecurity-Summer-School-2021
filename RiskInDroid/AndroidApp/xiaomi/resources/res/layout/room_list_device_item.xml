@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/root_item" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="60dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="20dp" android:layout_centerVertical="true" fresco:actualImageScaleType="2"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/icon">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="16"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="20"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

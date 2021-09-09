@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_bind_intro" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="24dp" android:layout_marginRight="40dp" android:layout_marginBottom="62dp" android:text="@string/uwb_bind_tv_intro" android:maxLines="1" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

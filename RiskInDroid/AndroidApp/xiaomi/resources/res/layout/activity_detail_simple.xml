@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.music.detail.DetailTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_white" app:tb_has_divider="true" app:tb_left_icon="@drawable/mj_common_title_bar_return" app:tb_title_color="@color/mj_color_black"/>
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/detail_empty" android:background="@drawable/radio_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_gray_heavier" android:layout_gravity="center" android:id="@+id/detail_empty_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_content_empty"/>
+    <include layout="@layout/view_linear_recycler_view"/>
+</LinearLayout>

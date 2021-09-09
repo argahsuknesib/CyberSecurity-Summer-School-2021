@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/common_button_rootview" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.mi.global.shop.widget.CustomTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/common_button_middletext" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

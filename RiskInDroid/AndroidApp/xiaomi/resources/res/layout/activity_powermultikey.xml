@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/mj_module_a_3_title_bar_return"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycle_view" android:paddingBottom="20dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_above="@+id/step" android:layout_below="@+id/device_img_wrapper" android:overScrollMode="never"/>
+        <TextView android:textSize="12sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@+id/step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2/3" android:layout_above="@+id/skip" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="15sp" android:textColor="#ff00bc9c" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/skip" android:background="@drawable/common_green_edge_bg" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="24dp" android:layout_marginTop="13dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/next_step" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</FrameLayout>

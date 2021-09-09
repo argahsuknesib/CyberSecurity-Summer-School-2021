@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.mi.global.shop.widget.CustomTextView android:textColor="@color/title_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:layout_marginRight="@dimen/confirm_payment_margin" android:layout_marginBottom="15dp" android:text="@string/buy_confirm_NetBank_tip"/>
+    <com.mi.global.shop.widget.CommonButton android:id="@+id/buy_confirm_netbank_payorder" android:paddingTop="@dimen/confirm_payment_paddingTop" android:layout_width="match_parent" android:layout_marginLeft="@dimen/confirm_payment_margin" android:layout_marginRight="@dimen/confirm_payment_margin" android:text="@string/buy_confirm_NetBank_pay" style="@style/ProductDetailGotoCartButton"/>
+</LinearLayout>

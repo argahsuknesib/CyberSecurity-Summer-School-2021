@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+    <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/menu_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/menu_arrorw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/module_a_3_return_more_new_btn" android:background="@drawable/dot_red" android:visibility="gone" android:layout_width="@dimen/red_dot_size" android:layout_height="@dimen/red_dot_size" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/menu_item" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/menu_item"/>
+</RelativeLayout>

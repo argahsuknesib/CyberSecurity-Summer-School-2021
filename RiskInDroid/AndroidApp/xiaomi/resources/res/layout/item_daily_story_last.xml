@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center" android:id="@+id/tv_empty_tip" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="20dp" android:hint="@string/daily_story_empty_content_tips2"/>
+</LinearLayout>

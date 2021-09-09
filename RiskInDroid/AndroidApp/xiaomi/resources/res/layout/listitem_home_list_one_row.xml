@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="141dp">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/listitem_home_listonerow_image" android:layout_width="130dp" android:layout_height="137dp" android:layout_marginRight="16dp" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding16" android:layout_marginBottom="@dimen/padding16" android:layout_toRightOf="@+id/listitem_home_listonerow_image" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t16" android:textColor="@color/t_grey_title" android:gravity="center_horizontal" android:id="@+id/listitem_home_listonerow_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:minHeight="14dp" android:maxLines="1" android:singleLine="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/listitem_home_listonerow_taglayout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t13" android:textColor="@color/t_grey_desc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/listitem_home_listonerow_desc" android:paddingTop="3dp" android:paddingRight="@dimen/padding16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minHeight="14dp" android:maxLines="2" android:shadowColor="@color/t_grey_buttonicon" android:lineSpacingExtra="2dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t14" android:textColor="@color/orange_deep" android:id="@+id/listitem_home_listonerow_price" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="14dp" android:maxLines="1" android:singleLine="true" android:shadowColor="@color/t_grey_buttonicon"/>
+                <com.xiaomi.shopviews.widget.view.EasyTextView android:textSize="@dimen/t14" android:textColor="@color/t_grey_desc" android:id="@+id/listitem_home_listonerow_marketprice" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:minHeight="14dp" android:maxLines="1" android:singleLine="true" android:shadowColor="@color/t_grey_buttonicon"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#fff5f5f5" android:layout_width="match_parent" android:layout_height="4dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</merge>

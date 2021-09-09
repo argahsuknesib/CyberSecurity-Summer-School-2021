@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/layout_promo" android:background="@drawable/mk_s_container" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+    <TextView android:layout_gravity="center" android:background="@drawable/textbox_blanck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:drawableLeft="@drawable/mk_ic_coupons"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:layout_gravity="bottom" android:id="@+id/editText_promo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="6dp" android:hint="Coupon Code" android:ems="10" android:layout_weight="1" android:inputType="textCapCharacters" style="@style/wallet_textbox"/>
+            <Button android:textStyle="normal" android:id="@+id/btn_apply_promo" android:paddingLeft="4dp" android:paddingTop="0dp" android:paddingRight="4dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_margin="0dp" android:text="Apply" style="@style/new_secondary_button"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_promo_result_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:textSize="16sp" android:layout_gravity="top" android:id="@+id/icon_promo_result_desc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:layout_gravity="bottom" android:id="@+id/txt_promo_result_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="313.2969dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/step_container" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/common_content_height"/>
+    <TextView android:textSize="13sp" android:textColor="@color/mj_color_text_blue_bg" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/connect_failed_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginRight="26dp" android:layout_marginBottom="26dp"/>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

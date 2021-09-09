@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="67.7dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/family_mem_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="13.3dp" android:layout_marginBottom="13.3dp" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_list_main_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+    <CheckBox android:textColor="@color/mj_color_white_40_transparent" android:gravity="center" android:id="@+id/check_box" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.3dp" android:button="@drawable/mj_checkbox_layout" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="23.3dp" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toStartOf="@+id/arrow" android:layout_toEndOf="@+id/family_mem_icon">
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/user_define_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:background="#d0d0d1" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

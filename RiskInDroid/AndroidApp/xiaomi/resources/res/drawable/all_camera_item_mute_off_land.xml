@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/all_camera_item_mute_off_pres_land"/>
+    <item android:state_enabled="false" android:drawable="@drawable/all_camera_item_mute_off_dis_land"/>
+    <item android:drawable="@drawable/all_camera_item_mute_off_nor_land"/>
+</selector>

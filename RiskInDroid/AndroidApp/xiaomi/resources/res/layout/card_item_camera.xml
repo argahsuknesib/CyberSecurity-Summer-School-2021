@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="274.5469dp" android:layout_height="155.85dp">
+    <FrameLayout android:id="@+id/video_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/video_view_cover" android:background="@drawable/default_bg_camera_nor" android:layout_width="274.5469dp" android:layout_height="155.85dp"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="-10dp" android:layout_marginTop="-10dp" android:layout_marginRight="-10dp" android:layout_marginBottom="-10dp" android:src="@drawable/card_mask_corner_camera" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/play_button" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/play_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_play_large" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/std_word_010" android:textColor="@color/mj_color_white" android:id="@+id/play_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_camera_sleep"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaomi.smarthome.newui.widget.PieProgressBar android:id="@+id/download_progress" android:background="@drawable/kuailian_progress_filled_not" android:layout_width="83.3dp" android:layout_height="83.3dp" android:src="@drawable/kuailian_progress_filled"/>
+        <TextView android:textSize="@dimen/font_size_0" android:textColor="@color/mj_color_text_blue_bg" android:layout_gravity="center" android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/camera_loading" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="false" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/miui12_loading" android:indeterminateBehavior="repeat"/>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_more"/>
+    <GridView android:gravity="center" android:id="@+id/ir_matching_device_grid" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/mj_color_black_00_transparent" android:stretchMode="columnWidth" android:numColumns="3" android:overScrollMode="never"/>
+</LinearLayout>

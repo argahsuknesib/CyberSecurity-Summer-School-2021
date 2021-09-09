@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_manager"/>
+    <LinearLayout android:id="@+id/layout_bottom" android:background="@color/mj_color_white" android:padding="24dp" android:layout_width="match_parent" android:layout_height="90dp" android:layout_alignParentBottom="true">
+        <Button android:textSize="13sp" android:textColor="@color/mj_color_white" android:id="@+id/btn_sure" android:background="@drawable/selector_ble_mesh_button" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/knows_already"/>
+    </LinearLayout>
+    <ScrollView android:background="@color/mj_color_background" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_bottom" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_title" android:background="@color/mj_color_white" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" android:text="@string/sure_account_in_developer_whitelist"/> //所属的企业组 
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_company_group" android:background="@color/mj_color_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <TextView android:textSize="11sp" android:textColor="#7f7f7f" android:gravity="center_vertical" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="32dp" android:text="@string/belong_to_company_group"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_company_parent" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/mj_item_divider" android:showDividers="none|beginning|middle"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout> //账号下拥有的白名单产品信息 
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_model_group" android:background="@color/mj_color_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <TextView android:textSize="11sp" android:textColor="#7f7f7f" android:gravity="center_vertical" android:paddingLeft="24dp" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="32dp" android:text="@string/models_has_whitelist"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_model_parent" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/mj_item_divider" android:showDividers="none|beginning|middle"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_bottom_guide" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <TextView android:textSize="13sp" android:textColor="#333333" android:gravity="center_vertical" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/how_open_developer_whitelist"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24dp"/>
+                <TextView android:textSize="12sp" android:textColor="#666666" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dp" android:text="@string/not_find_device_tips" android:lineSpacingExtra="13dp"/>
+                <ImageView android:id="@+id/img_guide" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/how_become_white_developer" android:importantForAccessibility="no"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

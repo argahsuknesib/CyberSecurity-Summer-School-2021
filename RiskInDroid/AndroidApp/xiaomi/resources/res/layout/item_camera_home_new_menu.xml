@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/camera_home_new_menu_item_click" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="32dp" android:paddingEnd="32dp">
+    <ImageView android:id="@+id/menu_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/camera_home_menu_icon_kanjia" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/size_20dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/menu_icon">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:id="@+id/menu_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_alarm_v4"/>
+        <TextView android:textColor="#7f7f7f" android:id="@+id/menu_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_new_menu_sub_text_kanjia"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/menu_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_anchor_normal" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

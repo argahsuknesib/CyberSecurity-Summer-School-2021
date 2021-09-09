@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_app_update" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_vertical" android:paddingLeft="27dp" android:layout_width="match_parent" android:layout_height="34dp" android:text="@string/app_update"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/iv_app_icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="29dp" android:layout_marginTop="17dp" android:scaleType="fitCenter" android:contentDescription="@null" app:roundedCornerRadius="3dp"/>
+            <com.xiaomi.smarthome.library.common.widget.RoundProgressButton android:textSize="13dp" android:textColor="@color/mj_color_btn_green_nor" android:gravity="center" android:id="@+id/btn_update" android:background="@drawable/mijia_wifi_update_bg" android:layout_width="80dp" android:layout_height="34dp" android:layout_marginTop="19dp" android:text="@string/update_immediately" android:layout_marginEnd="27dp" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:id="@+id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="16dp" android:text="@string/mj_app_name" android:layout_toRightOf="@+id/iv_app_icon"/>
+            <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tv_version_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_app_name" android:layout_alignLeft="@+id/tv_app_name"/>
+            <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tv_change_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="20dp" android:layout_below="@+id/tv_version_info" android:layout_alignLeft="@+id/tv_app_name" android:layout_marginEnd="62dp"/>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="27dp" android:layout_marginRight="27dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_auto_update" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_vertical" android:paddingLeft="27dp" android:layout_width="match_parent" android:layout_height="34dp" android:text="@string/fireware_auto_update"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:text="@string/fireware_auto_update"/>
+            <TextView android:textSize="13dp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_auto_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_opened" android:drawableRight="@drawable/um_arrow" android:layout_marginEnd="27dp"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tv_auto_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="10dp" android:layout_marginRight="27dp"/>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="27dp" android:layout_marginTop="38dp" android:layout_marginRight="27dp"/>
+    </LinearLayout>
+</LinearLayout>

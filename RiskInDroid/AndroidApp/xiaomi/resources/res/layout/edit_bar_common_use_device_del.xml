@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textColor="@color/mj_color_black" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="28dp" android:layout_marginRight="40dp" android:layout_marginBottom="28dp" android:text="@string/menu_edit_common_del_all"/>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginRight="27dp" android:layout_below="@+id/tv">
+        <TextView android:textSize="@dimen/font_size_16sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavy" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/normal_denied_button" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginRight="6dp" android:text="@string/cs_cancel" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/font_size_16sp" android:textStyle="bold" android:textColor="@color/mj_color_dialog_button1_bg_nor" android:gravity="center" android:id="@+id/btn_confirm" android:background="@drawable/normal_confirm_button_23_radius" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="6dp" android:text="@string/confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

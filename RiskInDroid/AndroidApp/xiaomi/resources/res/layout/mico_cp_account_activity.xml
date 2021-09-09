@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/common_title_bar_height">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/title_bar_left_icon" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_common_title_bar_return" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/size_18dp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/title_bar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mico_auth_account" android:singleLine="true"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/title_bar">
+        <RelativeLayout android:id="@+id/mico_account_qq_container" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:id="@+id/qq_icon_img" android:layout_width="@dimen/size_44dp" android:layout_height="@dimen/size_44dp" android:src="@drawable/qq_music_icon_big" android:layout_centerVertical="true" android:layout_marginStart="26dp"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/music_qq" android:layout_centerVertical="true" android:layout_toEndOf="@+id/qq_icon_img"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:src="@drawable/mico_icon_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/mico_account_dedao_container" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:id="@+id/dedao_icon_img" android:layout_width="@dimen/size_44dp" android:layout_height="@dimen/size_44dp" android:src="@drawable/mico_dedao_icon" android:layout_centerVertical="true" android:layout_marginStart="26dp"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/music_cp_dedao" android:layout_centerVertical="true" android:layout_toEndOf="@+id/dedao_icon_img"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:src="@drawable/mico_icon_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/mico_account_kkbox_container" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:id="@+id/kkbox_icon_img" android:layout_width="@dimen/size_44dp" android:layout_height="@dimen/size_44dp" android:src="@drawable/icon_setting_kkbox" android:layout_centerVertical="true" android:layout_marginStart="26dp"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/setting_music_kkbox" android:layout_centerVertical="true" android:layout_toEndOf="@+id/kkbox_icon_img"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:src="@drawable/mico_icon_more_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="60dp">
+    <FrameLayout android:gravity="center" android:id="@+id/pull_header" android:layout_width="wrap_content" android:layout_height="@dimen/pull_down_header_height">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/pull_header_container" android:layout_width="200dp" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="200dp" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <com.airbnb.lottie.LottieAnimationView android:id="@+id/pull_animation" android:layout_width="40dp" android:layout_height="40dp"/>
+                </FrameLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_black_60_transparent" android:id="@+id/pull_header_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mj_loading_hint" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_black_60_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".." android:layout_marginStart="1dp" android:layout_toEndOf="@+id/pull_header_txt"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

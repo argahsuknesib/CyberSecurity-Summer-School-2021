@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/shop_fragment_layout_selector">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_order" android:layout_width="66dp" android:layout_height="66dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:scaleType="fitXY" fresco:actualImageScaleType="0" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_title_color" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:text="Mi Band 2" android:layout_centerVertical="true"/>
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/orange_red" android:background="@drawable/shop_review_button_bg" android:paddingLeft="24dp" android:paddingTop="6dp" android:paddingRight="24dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/review_list_hint" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RatingBar android:id="@+id/item_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8dp" android:layout_marginTop="10dp" android:stepSize="1" style="@style/CustomRatingBar"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

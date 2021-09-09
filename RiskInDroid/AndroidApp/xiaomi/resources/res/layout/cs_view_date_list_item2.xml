@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlDateItem" android:background="@drawable/cs_icon_date_selected_bg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:layout_centerInParent="true">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/cs_color_selected_bg" android:id="@+id/tvWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/month_jan" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textStyle="bold" android:textColor="@color/cs_color_selected_bg" android:id="@+id/tvDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="00" android:layout_below="@+id/tvWeek" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

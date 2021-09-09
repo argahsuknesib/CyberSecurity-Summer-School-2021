@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_background" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <in.srain.cube.views.ptr.PtrFrameLayout android:id="@+id/pull_down_refresh" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="0.5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title_bar" app:ptr_duration_to_close="300" app:ptr_duration_to_close_header="500" app:ptr_keep_header_when_refresh="true" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.2" app:ptr_resistance="1.7">
+        <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

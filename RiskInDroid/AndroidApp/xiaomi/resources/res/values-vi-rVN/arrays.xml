@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ble_guide_content_description">
+        <item>Trang 1</item>
+        <item>Trang 2</item>
+        <item>Trang 3</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Thg 1</item>
+        <item>Thg 2</item>
+        <item>Thg 3</item>
+        <item>Thg 4</item>
+        <item>Thg 5</item>
+        <item>Thg 6</item>
+        <item>Thg 7</item>
+        <item>Thg 8</item>
+        <item>Thg 9</item>
+        <item>Thg 10</item>
+        <item>Thg 11</item>
+        <item>Thg 12</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Vợ/chồng</item>
+        <item>Bố</item>
+        <item>Mẹ</item>
+        <item>Con trai</item>
+        <item>Con gái</item>
+        <item>Bạn cùng phòng</item>
+        <item>Khác</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Nhiệt độ </item>
+        <item>Độ ẩm </item>
+        <item>Chất lượng không khí </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Nhiệt độ</item>
+        <item>Độ ẩm</item>
+        <item>Chất lượng không khí</item>
+    </array>
+    <array name="month">
+        <item>Tháng 1</item>
+        <item>Tháng 2</item>
+        <item>Tháng 3</item>
+        <item>Tháng 4</item>
+        <item>Tháng 5</item>
+        <item>Tháng 6</item>
+        <item>Tháng 7</item>
+        <item>Tháng 8</item>
+        <item>Tháng 9</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </array>
+    <array name="multikey_keyname_double">
+        <item>Công tắc bên trái</item>
+        <item>Công tắc bên phải</item>
+    </array>
+    <array name="multikey_keyname_three">
+        <item>Công tắc bên trái</item>
+        <item>Công tắc trung tâm</item>
+        <item>Công tắc bên phải</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>Phòng khách</item>
+        <item>Phòng ngủ</item>
+        <item>Phòng ngủ chính</item>
+        <item>Bếp</item>
+        <item>Phòng ăn</item>
+        <item>Phòng tắm</item>
+        <item>Phòng trẻ em</item>
+        <item>Văn phòng</item>
+        <item>Phòng sách</item>
+        <item>Ban công</item>
+        <item>Phòng làm việc</item>
+        <item>Phòng tắm</item>
+        <item>Sân sau</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Bắc Kinh</item>
+        <item>Seoul</item>
+        <item>Tokyo</item>
+        <item>NewYork</item>
+        <item>Denver</item>
+        <item>Costa Rica</item>
+        <item>Chicago</item>
+        <item>Thành phố Mexico</item>
+        <item>Regina</item>
+        <item>Los Angeles</item>
+        <item>Majuro</item>
+        <item> Midway </item>
+        <item>Honolulu</item>
+        <item>Anchorage</item>
+        <item>Tiwana</item>
+        <item>Thành phố Phoenix</item>
+        <item>Chihuahua</item>
+        <item>Bogota</item>
+        <item>Caracas</item>
+        <item>Barbados</item>
+        <item>Manaus</item>
+        <item>Saint John</item>
+        <item>San Diego</item>
+        <item>Buenos Aires</item>
+        <item>Got Hobb</item>
+        <item>Montevideo</item>
+        <item>Sao Paulo</item>
+        <item>Nam Georgia</item>
+        <item>Azores</item>
+        <item>Cape Verde</item>
+        <item>Casablanca</item>
+        <item>Luân Đôn</item>
+        <item>Amsterdam</item>
+        <item>Belgrade</item>
+        <item>Brussels</item>
+        <item>Sarajevo</item>
+        <item>Brazza</item>
+        <item>Winduck</item>
+        <item>Amman</item>
+        <item>Athens</item>
+        <item>Beirut</item>
+        <item>Cairo</item>
+        <item>Helsinki</item>
+        <item>Jerusalem</item>
+        <item>Harare</item>
+        <item>Minsk</item>
+        <item>Baghdad</item>
+        <item>Moscow</item>
+        <item>Kuwait</item>
+        <item>Nairobi</item>
+        <item>Tehran</item>
+        <item>Baku</item>
+        <item>Tbilisi</item>
+        <item>Eriewin</item>
+        <item>Dubai</item>
+        <item>Kabul</item>
+        <item>Karachi</item>
+        <item>Ural</item>
+        <item>Yekaterinburg</item>
+        <item>Kolkata</item>
+        <item>Colombo</item>
+        <item>Kathmandu</item>
+        <item>Almaty</item>
+        <item>Yangon</item>
+        <item>Krasnoyarsk</item>
+        <item>Bangkok</item>
+        <item>Irkutsk</item>
+        <item>Kuala Lumpur</item>
+        <item>Perthshire</item>
+        <item>Yakutsk</item>
+        <item>Darwin</item>
+        <item>Brisbane</item>
+        <item>Vladivostok</item>
+        <item>Guam</item>
+        <item>Adelaide</item>
+        <item>Hobart</item>
+        <item>Sydney</item>
+        <item>Magadan</item>
+        <item>Auckland</item>
+        <item>Fiji</item>
+        <item>Tongatapu </item>
+    </array>
+    <array name="weekday">
+        <item>Chủ Nhật</item>
+        <item>Thứ Hai</item>
+        <item>Thứ Ba</item>
+        <item>Thứ Tư</item>
+        <item>Thứ Năm</item>
+        <item>Thứ Sáu</item>
+        <item>Thứ Bảy</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>Thứ 2</item>
+        <item>Thứ 3</item>
+        <item>Thứ 4</item>
+        <item>Thứ 5</item>
+        <item>Thứ 6</item>
+        <item>Thứ 7</item>
+        <item>CN</item>
+    </array>
+    <array name="weekday_short">
+        <item>CN</item>
+        <item>Thứ 2</item>
+        <item>Thứ 3</item>
+        <item>Thứ 4</item>
+        <item>Thứ 5</item>
+        <item>Thứ 6</item>
+        <item>Thứ 7</item>
+    </array>
+</resources>

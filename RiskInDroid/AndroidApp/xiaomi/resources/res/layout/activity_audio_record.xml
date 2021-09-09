@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_3_title_bar_return_more"/>
+    <RelativeLayout android:id="@+id/bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+        <com.xiaomi.smarthome.audiorecord.RecordButton android:textSize="15dp" android:textColor="@color/mj_color_black" android:id="@+id/record_btn" android:background="@drawable/kuailian_progress_filled_not" android:layout_width="83dp" android:layout_height="83dp" android:text="press to record" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_container" android:layout_below="@+id/title_bar">
+        <TextView android:textSize="20dp" android:textColor="@color/mj_color_black" android:id="@+id/send_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="release to send" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="20dp" android:textColor="@color/mj_color_black" android:id="@+id/cancel_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="cancel sending" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/log_tv" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="40dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="99999" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_image" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_alignParentLeft="true" fresco:actualImageScaleType="0" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="20dp" android:layout_toRightOf="@+id/item_image">
+        <RelativeLayout android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_title_color" android:layout_gravity="left" android:id="@+id/item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/item_desc" android:layout_centerVertical="true"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/orange_red" android:id="@+id/item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/common_addtime_color" android:layout_gravity="left" android:id="@+id/item_dealer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/item_count" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/item_bundle" android:background="@drawable/shop_rectangle_grey_border" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginRight="40dp" android:layout_centerVertical="true">
+                <com.mi.global.shop.widget.CustomTextView android:textSize="12dp" android:textColor="@color/common_second_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/order_bundle" android:layout_weight="1"/>
+                <ImageView android:id="@+id/iv_arrow" android:layout_width="12dp" android:layout_height="7dp" android:layout_marginRight="15dp" android:src="@drawable/shop_bundle_arrow_down" android:scaleType="fitXY"/>
+            </LinearLayout>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/common_content_color" android:id="@+id/item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

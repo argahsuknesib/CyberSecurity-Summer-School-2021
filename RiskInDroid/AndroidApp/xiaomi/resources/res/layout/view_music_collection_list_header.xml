@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/view_music_qq_playlist_switch"/>
+    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:id="@+id/mi_channel_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/music_channel"/>
+    <RelativeLayout android:id="@+id/contain_build_new" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:id="@+id/music_collection_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/mj_color_gray_heavier" android:gravity="center_vertical" android:id="@+id/music_build_new_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_channel_new_build" android:drawableLeft="@drawable/mico_icon_my_song_add_song" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

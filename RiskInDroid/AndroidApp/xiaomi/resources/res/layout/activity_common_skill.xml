@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/skill_header"/>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.33dp"/>
+    <TextView android:textSize="@dimen/regular_text_size" android:textColor="#4b9eff" android:ellipsize="end" android:gravity="center" android:id="@+id/exp_hint" android:background="#e9f3ff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="33dp" android:text="@string/skill_state_exp" android:maxLines="1"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tablayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="0" style="@style/App.TabLayout"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

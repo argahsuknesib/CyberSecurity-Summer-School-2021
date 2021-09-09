@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/no_login_icon" android:layout_width="101dp" android:layout_height="101dp" android:src="@drawable/network_disconnected_icon_2" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_90_transparent" android:gravity="center" android:id="@+id/no_login_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_disable" android:includeFontPadding="false" android:layout_below="@+id/no_login_icon" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/event_list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#8c93b0" android:gravity="center_vertical" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="34dp" android:text="2020.12.19" android:layout_marginStart="24dp"/>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black_60_transparent" android:ellipsize="end" android:id="@+id/tv_empty_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/empty_daily_story_tips" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:layout_gravity="center" android:id="@+id/daily_story_image" android:background="@drawable/event_list_item_img_bg" android:layout_width="match_parent" android:layout_height="210dp" android:scaleType="centerCrop" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:riv_corner_radius="12dp"/>
+        <ImageView android:id="@+id/iv_daily_story_play" android:layout_width="66dp" android:layout_height="66dp" android:src="@drawable/icon_daily_story_play" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

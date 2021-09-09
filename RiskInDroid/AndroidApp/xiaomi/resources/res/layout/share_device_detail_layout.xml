@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_common"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:gravity="center" android:id="@+id/footer_container" android:background="@color/mj_color_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/std_operation_bar_bottom" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/font_size_6" android:textColor="@color/mj_color_black_60_transparent" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_add_scene" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="@string/scene2_custom_add_scene" android:drawableTop="@drawable/mj_webp_titlebar_add_nor" android:drawablePadding="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer_container">
+            <com.xiaomi.smarthome.library.common.widget.PullDownDragListView android:scrollbarStyle="insideOverlay" android:layout_gravity="center_horizontal" android:id="@+id/share_user_list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        </LinearLayout>
+        <include android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer_container" layout="@layout/common_white_empty_view"/>
+        <RelativeLayout android:id="@+id/bottom_delete_bar" android:background="@color/mj_color_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/std_operation_bar_bottom" android:layout_alignParentBottom="true">
+            <View android:background="#e3e3e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center" android:id="@+id/delete_msg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/delete" android:drawableTop="@drawable/delete_button" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

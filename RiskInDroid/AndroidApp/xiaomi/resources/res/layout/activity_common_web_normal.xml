@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" tb:tb_right_button_text="@string/common_close"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.xiaomi.mico.common.widget.CustomWebView android:id="@+id/common_web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/common_web_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp" android:progressDrawable="@drawable/progress_bar_web" style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+</LinearLayout>

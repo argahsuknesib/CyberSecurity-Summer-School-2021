@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/mj_module_a_3_title_bar_return"/>
+        <RadioGroup android:orientation="horizontal" android:background="@drawable/mj_common_title_bar_bg" android:layout_width="match_parent" android:layout_height="33dp">
+            <RadioButton android:textSize="@dimen/font_size_5" android:textColor="@color/ir_switch_text_color" android:gravity="center" android:id="@+id/irv2_controller_switch_traditional" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:button="@android:color/transparent" android:text="@string/irv2_controller_switch_traditional" android:layout_weight="1"/>
+            <View android:background="@color/mj_color_separator" android:layout_width="1px" android:layout_height="match_parent"/>
+            <RadioButton android:textSize="@dimen/font_size_5" android:textColor="@color/ir_switch_text_color" android:gravity="center" android:id="@+id/irv2_controller_switch_advance" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@android:color/transparent" android:text="@string/irv2_controller_switch_advance_u" android:layout_weight="1"/>
+        </RadioGroup>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/irv2_controller_traditional" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="22dp" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/irv2_controller_power" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_power_text" android:drawableTop="@drawable/irv2_controller_power"/>
+                    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33dp" layout="@layout/item_irv2_round_button"/>
+                    <View android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="1px"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_controller_home" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_home_text" android:drawableTop="@drawable/irv2_controller_home"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_controller_back" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_back_text" android:drawableTop="@drawable/irv2_controller_back"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_controller_menu" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_menu_text" android:drawableTop="@drawable/irv2_controller_menu"/>
+                </LinearLayout>
+                <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/item_irv2_controller_volume"/>
+                <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/irv2_controller_advance" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/irv2_controller_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_box_controller_power_adv" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_power_text" android:drawableTop="@drawable/irv2_controller_power"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_box_controller_home_adv" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_home_text" android:drawableTop="@drawable/irv2_controller_home"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_box_controller_menu_adv" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_menu_text" android:drawableTop="@drawable/irv2_controller_menu"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/irv2_box_controller_back_adv" android:paddingTop="@dimen/irv2_controller_button_up_down_padding" android:layout_width="@dimen/irv2_controller_button_width" android:layout_height="@dimen/irv2_controller_button_height" android:text="@string/irv2_controller_back_text" android:drawableTop="@drawable/irv2_controller_back"/>
+                </LinearLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/font_size_1" android:textColor="@color/mj_color_gray_lightest" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/irv2_controller_touch_hint"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+                        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <ImageView android:id="@+id/irv2_touch_direction_hint_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/irv2_touch_direction_hint"/>
+                            <android.gesture.GestureOverlayView android:id="@+id/irv2_touch_direction_view" android:layout_width="match_parent" android:layout_height="match_parent" android:gestureColor="@android:color/transparent" android:uncertainGestureColor="@android:color/transparent" android:gestureStrokeType="single" android:gestureStrokeAngleThreshold="30"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="70dp" android:layout_height="match_parent">
+                            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/irv2_touch_vol_bg"/>
+                            <ImageView android:id="@+id/irv2_touch_vol_hint_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/irv2_touch_vol_hint"/>
+                            <android.gesture.GestureOverlayView android:id="@+id/irv2_touch_vol_view" android:layout_width="match_parent" android:layout_height="match_parent" android:gestureColor="@android:color/transparent" android:uncertainGestureColor="@android:color/transparent" android:gestureStrokeType="single" android:gestureStrokeAngleThreshold="30"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:height="48dp" android:width="48dp" android:drawable="@drawable/bg_10_bgcolorf5f5f5"/>
+            <item android:drawable="@drawable/icon_my_loc"/>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:height="48dp" android:width="48dp" android:drawable="@drawable/bg_10_bgcolorwhite"/>
+            <item android:drawable="@drawable/icon_my_loc"/>
+        </layer-list>
+    </item>
+</selector>

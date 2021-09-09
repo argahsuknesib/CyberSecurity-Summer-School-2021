@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#66000000" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bottom_popup_bg" android:paddingLeft="39dp" android:paddingRight="39dp" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/mj_uwb_power_off_tv"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="@string/mj_uwb_power_off_info_top"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="158dp" android:layout_marginTop="30dp" android:src="@drawable/power_off_img" android:scaleType="fitCenter"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="@string/mj_uwb_power_off_info_bottom"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/know_it_btn" android:background="@drawable/know_btn_bg" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="28dp" android:text="@string/mj_uwb_know_it"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_countdown_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/height40">
+        <ImageView android:id="@+id/iv_countdown_title" android:layout_width="78dp" android:layout_height="40dp" android:layout_marginLeft="@dimen/padding4"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginLeft="@dimen/padding4">
+            <TextView android:id="@+id/tv_countdown_hour" android:layout_width="25dp" android:layout_height="23dp" style="@style/flashTimerStyle"/>
+            <TextView android:textColor="@color/trans_O_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text=":"/>
+            <TextView android:id="@+id/tv_countdown_minute" android:layout_width="25dp" android:layout_height="23dp" android:layout_marginLeft="2dp" style="@style/flashTimerStyle"/>
+            <TextView android:textColor="@color/trans_O_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text=":"/>
+            <TextView android:id="@+id/tv_countdown_second" android:layout_width="25dp" android:layout_height="23dp" android:layout_marginLeft="2dp" style="@style/flashTimerStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_result" android:layout_width="match_parent" android:layout_height="200dp" android:contentDescription="@null"/>
+        <TextView android:textSize="15sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_passport_result" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_alignParentBottom="true">
+        <Button android:textSize="13sp" android:textColor="@color/mj_color_white" android:id="@+id/btn_login" android:background="@drawable/sc_scan_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="26dp" android:layout_marginRight="26dp" android:text="@string/login_account_login" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="13sp" android:textColor="#36d57d" android:id="@+id/btn_cancal" android:background="@drawable/sc_cancel_btn_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="26dp" android:layout_marginTop="12dp" android:layout_marginRight="26dp" android:text="@string/sh_common_cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>

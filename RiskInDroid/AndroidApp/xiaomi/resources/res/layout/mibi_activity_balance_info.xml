@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/mibi_payment_dialog_min_height" android:layout_alignParentBottom="true" style="@style/Mibi.Dialog">
+        <FrameLayout style="@style/Mibi.DialogActionBar">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back_balance_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mibi_action_bar_back_dark"/>
+            <TextView android:layout_height="match_parent" android:text="@string/mibi_order_balance_title" style="@style/Mibi.WindowTitle"/>
+        </FrameLayout>
+        <View android:background="@color/mibi_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ViewStub android:id="@+id/vs_gift_card_balance_info" android:layout="@layout/mibi_balance_info_discount_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TableLayout android:paddingLeft="@dimen/mibi_counter_balance_info_padding_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0">
+            <TableRow android:id="@+id/partner_giftcard" style="@style/Mibi.Item">
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@+id/tv_market_giftcard_label_balance_info" android:maxLines="1" style="@style/Mibi.TextAppearance.General"/>
+                <TextView android:gravity="right" android:id="@+id/tv_market_giftcard_value_balance_info" style="@style/Mibi.TextAppearance.Gray"/>
+                <TextView android:gravity="right" android:text="@string/mibi_unit" style="@style/Mibi.TextAppearance.Gray"/>
+                <CheckBox android:id="@+id/cb_market_giftcard_balance_info" android:clickable="true" android:layout_marginLeft="@dimen/mibi_counter_balance_info_checkbox_margin_left" android:checked="true" android:button="@drawable/mibi_cb_bg" android:layout_marginEnd="@dimen/mibi_counter_balance_info_checkbox_margin_right"/>
+            </TableRow>
+            <TableRow android:id="@+id/tb_mibi_giftcard" style="@style/Mibi.Item">
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@+id/tv_giftcard_label_balance_info" android:text="@string/mibi_giftcard_payment" android:maxLines="1" style="@style/Mibi.TextAppearance.General"/>
+                <TextView android:gravity="right" android:id="@+id/tv_giftcard_value_balance_info" style="@style/Mibi.TextAppearance.Gray"/>
+                <TextView android:gravity="right" android:text="@string/mibi_unit" style="@style/Mibi.TextAppearance.Gray"/>
+                <CheckBox android:id="@+id/cb_giftcard_balance_info" android:clickable="true" android:layout_marginLeft="@dimen/mibi_counter_balance_info_checkbox_margin_left" android:checked="true" android:button="@drawable/mibi_cb_bg" android:layout_marginEnd="@dimen/mibi_counter_balance_info_checkbox_margin_right"/>
+            </TableRow>
+            <TableRow android:id="@+id/mibi_balance" style="@style/Mibi.Item">
+                <TextView android:ellipsize="end" android:gravity="left" android:text="@string/mibi_label_balance" android:maxLines="1" style="@style/Mibi.TextAppearance.General"/>
+                <TextView android:gravity="right" android:id="@+id/tv_balance_value_discount_item" style="@style/Mibi.TextAppearance.Gray"/>
+                <TextView android:gravity="right" android:text="@string/mibi_unit" style="@style/Mibi.TextAppearance.Gray"/>
+                <CheckBox android:id="@+id/cb_balance_balance_info" android:clickable="true" android:layout_marginLeft="@dimen/mibi_counter_balance_info_checkbox_margin_left" android:checked="true" android:button="@drawable/mibi_cb_bg" android:layout_marginEnd="@dimen/mibi_counter_balance_info_checkbox_margin_right"/>
+            </TableRow>
+        </TableLayout>
+        <Button android:id="@+id/btn_confirm_balance_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/mibi_order_pay_confirm" style="@style/Mibi.Button"/>
+    </LinearLayout>
+</RelativeLayout>

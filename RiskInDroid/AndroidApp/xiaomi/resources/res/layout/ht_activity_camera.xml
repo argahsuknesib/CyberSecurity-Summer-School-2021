@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/ht_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ht_common_title_bar_black"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <com.otaliastudios.cameraview.CameraView android:id="@+id/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:keepScreenOn="true" app:cameraFacing="0" app:cameraFlash="0" app:cameraGrid="0" app:cameraPictureSizeAspectRatio="3:4" app:cameraPictureSizeBiggest="true" app:cameraPlaySounds="true"/>
+        <com.hannto.print.widget.IdCardMaskView android:id="@+id/imv_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/ht_black" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_below="@+id/camera_view" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12sp" android:textColor="@color/ht_white" android:id="@+id/text_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="n" android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/picture" android:visibility="visible" android:layout_width="@dimen/ht_take_photo_button_size" android:layout_height="@dimen/ht_take_photo_button_size" android:layout_marginBottom="28dp" android:src="@drawable/ht_selector_take_photo" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/camera_id_background_color" android:background="@drawable/ht_selector_picture_header" android:padding="10dp" android:layout_width="@dimen/ht_flash_container_size" android:layout_height="@dimen/ht_flash_container_size" android:layout_marginLeft="@dimen/ht_camera_button_margin" android:layout_marginBottom="41dp" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/ht_selector_rollback" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/flashlight_id_background_color" android:background="@drawable/ht_selector_picture_header" android:padding="10dp" android:layout_width="@dimen/ht_camera_button_width" android:layout_height="@dimen/ht_camera_button_height" android:layout_marginRight="@dimen/ht_camera_button_margin" android:layout_marginBottom="41dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/flashlight_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_flash_off_normal"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

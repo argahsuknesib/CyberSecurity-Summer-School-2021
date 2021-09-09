@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaomi.smarthome.uwb.lib.securityCode.CursorTextView android:id="@+id/item_code_tv1" style="@style/security_code_editStyle"/>
+        <com.xiaomi.smarthome.uwb.lib.securityCode.CursorTextView android:id="@+id/item_code_tv2" android:layout_marginLeft="40dp" style="@style/security_code_editStyle"/>
+        <com.xiaomi.smarthome.uwb.lib.securityCode.CursorTextView android:id="@+id/item_code_tv3" android:layout_marginLeft="40dp" style="@style/security_code_editStyle"/>
+        <com.xiaomi.smarthome.uwb.lib.securityCode.CursorTextView android:id="@+id/item_code_tv4" android:layout_marginLeft="40dp" style="@style/security_code_editStyle"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.uwb.lib.securityCode.KeyBackEditText android:textColor="@android:color/white" android:id="@+id/code_et" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="37dp" android:layout_centerHorizontal="true" android:inputType="number" android:imeOptions="actionNone"/>
+</LinearLayout>

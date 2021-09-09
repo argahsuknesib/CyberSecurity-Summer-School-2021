@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/mico_icon_player_love_highlight"/>
+    <item android:state_enabled="false" android:drawable="@drawable/mico_icon_player_love_disabled"/>
+    <item android:drawable="@drawable/mico_icon_player_love_normal"/>
+</selector>

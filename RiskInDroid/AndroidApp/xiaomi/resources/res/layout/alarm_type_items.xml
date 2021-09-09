@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/alarm_empty_banners" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/music_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_4dp" android:layout_marginBottom="@dimen/size_4dp" android:src="@drawable/alarm_music_banner" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <ImageView android:id="@+id/video_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_4dp" android:layout_marginBottom="@dimen/size_4dp" android:src="@drawable/alarm_video_banner" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <ImageView android:id="@+id/nature_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_4dp" android:layout_marginBottom="@dimen/size_4dp" android:src="@drawable/alarm_nature_banner" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <ImageView android:id="@+id/fun_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_4dp" android:layout_marginBottom="@dimen/size_4dp" android:src="@drawable/alarm_fun_banner" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+</LinearLayout>

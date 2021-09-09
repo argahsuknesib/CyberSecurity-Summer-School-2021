@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.framework.plugin.rn.view.DraggingButton android:textStyle="bold" android:textColor="@color/white_text_color" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/drag_button_main_debug" android:background="@drawable/rn_drag_button_bg" android:layout_width="@dimen/dimen_80" android:layout_height="@dimen/dimen_80" android:text="Close\10 Debug" android:layout_marginEnd="@dimen/dimen_10"/>
+</FrameLayout>

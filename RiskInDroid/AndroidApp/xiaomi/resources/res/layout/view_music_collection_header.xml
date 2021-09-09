@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="@dimen/size_6dp" android:paddingTop="@dimen/size_11dp" android:paddingRight="@dimen/size_6dp" android:paddingBottom="@dimen/size_11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/music_personal_recent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:src="@drawable/my_recent_play" style="@style/image_style_personal_header"/>
+        <TextView android:text="@string/music_channel_recent_play" style="@style/text_style_personal_header"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/music_personal_love" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:src="@drawable/my_sound_book" style="@style/image_style_personal_header"/>
+        <TextView android:text="@string/music_my_collection" style="@style/text_style_personal_header"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/music_purchased" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:src="@drawable/my_buy_record" style="@style/image_style_personal_header"/>
+        <TextView android:text="@string/music_purchased" style="@style/text_style_personal_header"/>
+    </RelativeLayout>
+</LinearLayout>

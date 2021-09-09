@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="mj_color_black_00_transparent">#00ffffff</drawable>
+    <drawable name="mj_color_gray_lighter">#666666</drawable>
+    <drawable name="mj_color_green_50_percent">#8025a9af</drawable>
+    <drawable name="mj_color_green_normal">#25a9af</drawable>
+    <drawable name="mj_color_white">#000000</drawable>
+    <drawable name="mj_color_white_00_transparent">#00000000</drawable>
+</resources>

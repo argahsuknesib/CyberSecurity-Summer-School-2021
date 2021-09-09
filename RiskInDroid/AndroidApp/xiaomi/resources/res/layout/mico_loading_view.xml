@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/mico_loadingview_progress_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_17dp" android:layout_marginBottom="@dimen/size_17dp" android:layout_centerInParent="true" style="@style/App.Widget.MicoProgressBar"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/mico_loadingview_txtcontainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="70dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_horizontal" android:id="@+id/mico_loadingview_txterror" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="abc"/>
+            <Button android:textSize="@dimen/text_size_14" android:textColor="#585858" android:id="@+id/mico_loadingview_button" android:background="@drawable/common_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:text="刷新"/>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

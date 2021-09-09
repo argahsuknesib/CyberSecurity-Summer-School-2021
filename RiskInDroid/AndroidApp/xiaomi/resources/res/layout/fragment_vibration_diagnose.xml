@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_vibration" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_128">
+        <TextView android:textColor="@color/otexCardViewDarkBackground" android:id="@+id/diagnoseHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" style="@style/TextAppearance.RobotoRegular.SubTitle"/>
+        <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32">
+            <TextView android:id="@+id/button_vibration_count_0" android:text="@string/otex_text_number_0" style="@style/NumberTextView"/>
+            <TextView android:id="@+id/button_vibration_count_1" android:layout_marginLeft="@dimen/dimen_13" android:text="@string/otex_text_number_1" android:layout_marginStart="@dimen/dimen_13" style="@style/NumberTextView"/>
+            <TextView android:id="@+id/button_vibration_count_2" android:layout_marginLeft="@dimen/dimen_13" android:text="@string/otex_text_number_2" android:layout_marginStart="@dimen/dimen_13" style="@style/NumberTextView"/>
+            <TextView android:id="@+id/button_vibration_count_3" android:layout_marginLeft="@dimen/dimen_13" android:text="@string/otex_text_number_3" android:layout_marginStart="@dimen/dimen_13" style="@style/NumberTextView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_diagnose_bottom"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rlTitleBar" layout="@layout/cs_view_cloud_video_header"/>
+    <FrameLayout android:id="@+id/videoViewParent" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTitleBar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/videoViewParent">
+        <ImageView android:id="@+id/ivDataLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true"/>
+        <com.xiaomi.smarthome.miio.camera.cloudstorage.CloudVideoDateListView android:id="@+id/cvdlvDays" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tvDivider" android:background="@color/mj_color_black_06_transparent" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginTop="10dp" android:layout_below="@+id/cvdlvDays"/>
+        <com.xiaomi.smarthome.miio.camera.cloudstorage.views.RecyclerViewRefreshLayoutEx android:id="@+id/rvrlVideoList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginTop="11dp" android:layout_marginRight="6dp" android:layout_below="@+id/cvdlvDays">
+            <com.xiaomi.smarthome.miio.camera.cloudstorage.CloudVideoListView android:id="@+id/cvlvVideos" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.xiaomi.smarthome.miio.camera.cloudstorage.views.RecyclerViewRefreshLayoutEx>
+        <TextView android:textColor="@color/mj_color_black" android:id="@+id/tvBlankHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_no_video_today" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/tvDownloadHint" android:background="@color/mj_color_class_H" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cs_download_hint" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

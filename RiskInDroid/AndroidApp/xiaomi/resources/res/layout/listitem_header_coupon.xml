@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootview_header_coupon" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    <TextView android:textSize="@dimen/text_size_h2" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_couponInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding12" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding6" android:layout_marginRight="@dimen/padding8" android:layout_marginBottom="@dimen/padding20" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/text_size_h2" android:textColor="@color/white" android:id="@+id/tv_timeInfo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size_h2" android:textColor="@color/white" android:id="@+id/tv_timeCountDown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding4"/>
+    </LinearLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_bubble" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="92dp" android:layout_height="108dp" android:layout_marginLeft="@dimen/padding6" android:layout_marginBottom="@dimen/height56" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@null" android:layout_alignParentBottom="true" android:fastScrollEnabled="false"/>
+</RelativeLayout>

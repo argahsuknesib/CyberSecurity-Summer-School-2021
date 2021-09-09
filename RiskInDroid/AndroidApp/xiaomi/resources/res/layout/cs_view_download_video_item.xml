@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlDownloadItem" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="3dp" android:layout_marginRight="2dp" android:layout_marginBottom="3dp">
+    <RelativeLayout android:id="@+id/rlPicContainer" android:layout_width="100dp" android:layout_height="67dp" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/ivPic" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/set_bg_02_visual_nor" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/ivDownloadStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        <TextView android:textColor="@color/camera_white" android:id="@+id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="@color/mj_color_gray_heavy" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toRightOf="@+id/rlPicContainer"/>
+    <TextView android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toRightOf="@+id/rlPicContainer" android:layout_below="@+id/tvTime"/>
+    <SeekBar android:id="@+id/sbProgress" android:paddingTop="2dp" android:paddingBottom="2dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:maxHeight="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/gp_view_video_progress" android:minHeight="2dp" android:thumb="@null" android:thumbOffset="0dp" android:layout_toRightOf="@+id/rlPicContainer" android:layout_below="@+id/tvTitle"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/rlPicContainer" android:layout_below="@+id/tvTitle">
+        <TextView android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:id="@+id/tvProgress" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/cbDelete" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:button="@drawable/cs_icon_delete" android:layout_alignParentRight="true"/>
+    <View android:background="@color/mj_color_black_20_transparent" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_marginTop="10dp" android:layout_below="@+id/rlPicContainer"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left" android:drawable="@drawable/scan_progress_fg_timeout" android:clipOrientation="horizontal"/>

@@ -1,0 +1,113 @@
+package com.xiaomi.smarthome.framework.navigate;
+
+import _m_j.fvd;
+import _m_j.gty;
+import _m_j.gva;
+import _m_j.hsl;
+import _m_j.hsw;
+import java.util.HashMap;
+
+public class PageUrl$1 extends HashMap<String, fvd.O00000o0> {
+    public PageUrl$1() {
+        fvd.O00000o0 o00000o0 = new fvd.O00000o0();
+        o00000o0.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.SmartHomeMainActivity");
+        o00000o0.O00000Oo = false;
+        o00000o0.O00000o0 = false;
+        put("/main", o00000o0);
+        fvd.O00000o0 o00000o02 = new fvd.O00000o0();
+        o00000o02.f17250O000000o = gty.O000000o().getLoginTransitActivity();
+        o00000o02.O00000Oo = true;
+        o00000o02.O00000o0 = false;
+        put("/main/login", o00000o02);
+        fvd.O00000o0 o00000o03 = new fvd.O00000o0();
+        o00000o03.f17250O000000o = gty.O000000o().getLoginTransitActivity();
+        o00000o03.O00000Oo = true;
+        o00000o03.O00000o0 = false;
+        put("/main/login_phone_pwd", o00000o03);
+        fvd.O00000o0 o00000o04 = new fvd.O00000o0();
+        o00000o04.f17250O000000o = gty.O000000o().getLoginMiuiActivity();
+        o00000o04.O00000Oo = true;
+        o00000o04.O00000o0 = false;
+        put("/main/login_mi_system", o00000o04);
+        fvd.O00000o0 o00000o05 = new fvd.O00000o0();
+        o00000o05.f17250O000000o = hsw.O000000o().getShareDeviceActivity();
+        o00000o05.O00000Oo = false;
+        o00000o05.O00000o0 = true;
+        put("/main/device_share", o00000o05);
+        fvd.O00000o0 o00000o06 = new fvd.O00000o0();
+        o00000o06.f17250O000000o = hsw.O000000o().getShareDeviceInfoActivity();
+        o00000o06.O00000Oo = true;
+        o00000o06.O00000o0 = true;
+        put("/main/device_share_info", o00000o06);
+        fvd.O00000o0 o00000o07 = new fvd.O00000o0();
+        o00000o07.f17250O000000o = gva.O000000o().getMessageCenterActivity();
+        o00000o07.O00000Oo = true;
+        o00000o07.O00000o0 = false;
+        put("/main/msgcenter", o00000o07);
+        fvd.O00000o0 o00000o08 = new fvd.O00000o0();
+        o00000o08.f17250O000000o = gva.O000000o().getMessageCenterDeviceListActivityNew();
+        o00000o08.O00000Oo = true;
+        o00000o08.O00000o0 = true;
+        put("/main/message_center/message_device", o00000o08);
+        fvd.O00000o0 o00000o09 = new fvd.O00000o0();
+        o00000o09.f17250O000000o = gva.O000000o().getMessageCenterActivity();
+        o00000o09.O00000Oo = true;
+        o00000o09.O00000o0 = true;
+        put("/main/message_center/auth_request", o00000o09);
+        fvd.O00000o0 o00000o010 = new fvd.O00000o0();
+        o00000o010.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.SmartHomeMainActivity");
+        o00000o010.O00000Oo = false;
+        o00000o010.O00000o0 = false;
+        put("/main/select_smart_device", o00000o010);
+        fvd.O00000o0 o00000o011 = new fvd.O00000o0();
+        o00000o011.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.smartconfig.initdevice.InitDeviceRoomActivity");
+        o00000o011.O00000Oo = true;
+        o00000o011.O00000o0 = true;
+        put("/main/choose_room", o00000o011);
+        fvd.O00000o0 o00000o012 = new fvd.O00000o0();
+        o00000o012.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.device.ResetDevicePage");
+        o00000o012.O00000Oo = true;
+        o00000o012.O00000o0 = true;
+        put("/main/device_reset", o00000o012);
+        if (hsl.O00000Oo().getDeviceAuthSlaveListActivity() != null) {
+            fvd.O00000o0 o00000o013 = new fvd.O00000o0();
+            o00000o013.f17250O000000o = hsl.O00000Oo().getDeviceAuthSlaveListActivity();
+            o00000o013.O00000Oo = false;
+            o00000o013.O00000o0 = true;
+            put("/main/voice_ctrl_authorize", o00000o013);
+        }
+        if (hsl.O00000Oo().getThirdAuthMainActivity() != null) {
+            fvd.O00000o0 o00000o014 = new fvd.O00000o0();
+            o00000o014.f17250O000000o = hsl.O00000Oo().getThirdAuthMainActivity();
+            o00000o014.O00000o0 = true;
+            o00000o014.O00000Oo = false;
+            put("/main/third_auth", o00000o014);
+        }
+        fvd.O00000o0 o00000o015 = new fvd.O00000o0();
+        o00000o015.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.framework.webview.CommonWebViewActivity");
+        o00000o015.O00000o0 = false;
+        o00000o015.O00000o = new fvd.O00000Oo();
+        o00000o015.O00000Oo = true;
+        put("/main/web_page", o00000o015);
+        fvd.O00000o0 o00000o016 = new fvd.O00000o0();
+        o00000o016.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.SmartHomeMainActivity");
+        o00000o016.O00000o0 = true;
+        o00000o016.O00000Oo = true;
+        put("/main/ble_gateway", o00000o016);
+        fvd.O00000o0 o00000o017 = new fvd.O00000o0();
+        o00000o017.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.device.choosedevice.ChooseDeviceActivity");
+        o00000o017.O00000Oo = true;
+        o00000o017.O00000o0 = true;
+        put("/connect", o00000o017);
+        fvd.O00000o0 o00000o018 = new fvd.O00000o0();
+        o00000o018.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.SmartHomeMainActivity");
+        o00000o018.O00000o0 = true;
+        o00000o018.O00000Oo = true;
+        put("/main/p0_msg", o00000o018);
+        fvd.O00000o0 o00000o019 = new fvd.O00000o0();
+        o00000o019.f17250O000000o = fvd.O000000o("com.xiaomi.smarthome.framework.update.ui.UpdateRecordActivity");
+        o00000o019.O00000o0 = true;
+        o00000o019.O00000Oo = true;
+        put("/main/firmware_update_history", o00000o019);
+    }
+}

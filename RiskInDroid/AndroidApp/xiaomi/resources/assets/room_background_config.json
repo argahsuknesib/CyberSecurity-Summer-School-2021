@@ -1,0 +1,31 @@
+{
+  "home_background_style":{
+    "styles":[
+      "style_1",
+      "style_2",
+      "style_3"
+    ],
+    "backgroundNames":[
+      "favorites",
+      "livingroom",
+      "diningroom",
+      "bedroom",
+      "secondbedroom",
+      "kitchen",
+      "bathroom",
+      "babyroom",
+      "default"
+    ],
+    "homeStyleConfig":{
+      "style_1":{
+        "homeStylePreview":"favorites",
+        "items":[
+          {
+            "roomNameKey":"allroom",
+            "backgroundName":"favorites"
+          }
+        ]
+      }
+    }
+  }
+}

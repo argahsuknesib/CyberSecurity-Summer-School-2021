@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_shipping" android:layout_width="32dp" android:layout_height="27dp" android:layout_marginLeft="20dp" android:src="@drawable/shop_order_track_car" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/iv_shipping" android:layout_centerVertical="true">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:id="@+id/express_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:id="@+id/express_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="123"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:id="@+id/tv_express_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/express_hint"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <com.mi.global.shop.widget.NoScrollListView android:id="@+id/trackItemList" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@drawable/shop_track_divider" android:dividerHeight="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:id="@+id/loading" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

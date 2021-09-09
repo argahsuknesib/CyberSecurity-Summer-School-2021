@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shop_custom_dialog_bg" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:id="@+id/tv_title" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_centerHorizontal="true"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12dp" android:textColor="@color/common_content_color" android:id="@+id/tv_content" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_gray" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="20dp" android:layout_marginRight="5dp" android:layout_marginBottom="8dp">
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/orange_red" android:id="@+id/btn_no" android:background="@color/white" android:layout_width="100dp" android:layout_height="40dp" android:text="@string/no" android:layout_weight="1"/>
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="13dp" android:textColor="@color/orange_red" android:id="@+id/btn_yes" android:background="@color/white" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginLeft="0.5dp" android:text="@string/shop_yes" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

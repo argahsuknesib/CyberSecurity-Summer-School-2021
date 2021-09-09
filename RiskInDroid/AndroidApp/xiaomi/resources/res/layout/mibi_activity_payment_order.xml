@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_root_order_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layoutDirection="ltr" style="@style/Mibi.Dialog">
+        <TextView android:id="@+id/title" android:layout_height="@dimen/mibi_payment_action_bar_height" android:text="@string/mibi_order_title" style="@style/Mibi.WindowTitle"/>
+        <View android:id="@+id/action_bar_line" android:background="@color/mibi_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:paddingLeft="@dimen/mibi_payment_general_padding" android:paddingRight="@dimen/mibi_payment_general_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Mibi.Item">
+            <TextView android:textSize="@dimen/mibi_text_size_payment_general" android:textColor="@color/mibi_text_color_black" android:ellipsize="marquee" android:id="@+id/text_order_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mibi_label_balance" android:singleLine="true" android:layout_weight="1"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/mibi_text_size_order_value" android:textColor="@color/mibi_text_color_black" android:id="@+id/text_order_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/mibi_text_size_payment_item_small" android:textColor="@color/mibi_text_color_payment_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mibi_unit"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TableLayout android:paddingLeft="@dimen/mibi_payment_general_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0">
+            <TableRow android:id="@+id/balance" android:paddingRight="@dimen/mibi_payment_general_padding" style="@style/Mibi.Item">
+                <TextView android:gravity="left" android:id="@+id/text_balance_name" android:layout_width="0dp" android:text="@string/mibi_order_balance_label" android:layout_weight="1" style="@style/Mibi.TextAppearance.General"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/text_balance_value_with_unit" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/text_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mibi_label_balance" style="@style/Mibi.TextAppearance.Gray"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mibi_unit" style="@style/Mibi.TextAppearance.Gray"/>
+                    </LinearLayout>
+                    <TextView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/text_balance_no_use" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mibi_order_no_use_balance" style="@style/Mibi.TextAppearance.Gray"/>
+                </FrameLayout>
+                <ImageView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mibi_arrow_right"/>
+            </TableRow>
+            <TableRow android:id="@+id/pay_type" android:paddingRight="@dimen/mibi_payment_general_padding" style="@style/Mibi.Item">
+                <TextView android:gravity="left" android:layout_width="0dp" android:text="@string/mibi_order_pay_type" android:layout_weight="1" style="@style/Mibi.TextAppearance.General"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/icon_pay_type" android:layout_width="@dimen/mibi_pay_list_item_icon_width" android:layout_height="@dimen/mibi_pay_list_item_icon_height" android:layout_marginRight="6dp" android:src="@drawable/mibi_ic_recharge_item_default"/>
+                    <TextView android:id="@+id/text_pay_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Mibi.TextAppearance.Gray"/>
+                </LinearLayout>
+                <ImageView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mibi_arrow_right"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="@dimen/mibi_text_size_payment_small" android:textColor="@color/mibi_text_color_payment_green" android:id="@+id/discount" android:paddingLeft="@dimen/mibi_payment_general_padding" android:paddingRight="@dimen/mibi_payment_general_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mibi_payment_general_small_gap" android:layout_marginBottom="@dimen/mibi_payment_general_small_gap"/>
+        <TextView android:textSize="@dimen/mibi_text_size_payment_small" android:textColor="@color/mibi_text_color_payment_red" android:layout_gravity="center" android:id="@+id/errorDesc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mibi_payment_general_small_gap" android:layout_marginBottom="@dimen/mibi_payment_general_small_gap"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-1px">
+            <Button android:id="@+id/button_call" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mibi_button_call" style="@style/Mibi.Button"/>
+            <com.mibi.sdk.widget.ProgressButton android:id="@+id/button_pay" android:background="@drawable/mibi_check_password_btn_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:btnText="@string/mibi_button_pay" style="@style/Mibi.Button"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="#424242" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/tv_search_no_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44dp" android:layout_marginBottom="35dp" android:text="@string/search_no_result" android:drawableLeft="@drawable/feature_search_search_no_result" android:drawablePadding="7dp"/>
+            <RelativeLayout android:id="@+id/layout_search_record" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp">
+                <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/feature_search_item_title_disabled" android:id="@+id/tv_search_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/search_record"/>
+                <ImageButton android:id="@+id/btn_history_clear" android:background="@drawable/feature_search_search_clear_history" android:layout_width="12dp" android:layout_height="13dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+                <com.mi.global.shop.feature.search.widget.TagsLayout android:id="@+id/tags_history_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="16dp" android:layout_below="@+id/tv_search_record"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_search_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/feature_search_item_title_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/search_hot"/>
+                <com.mi.global.shop.feature.search.widget.TagsLayout android:id="@+id/tags_hot_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="16dp" android:layout_marginRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/rv_search_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:divider="#eeeeee" android:dividerHeight="1dp"/>
+        <View android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

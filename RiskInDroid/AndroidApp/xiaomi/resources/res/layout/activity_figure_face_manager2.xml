@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar_container" layout="@layout/include_face_select_title_bar"/>
+    <RelativeLayout android:gravity="center_vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/figure_cover_face" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/camera_face_manager_small_unknown" android:scaleType="centerCrop" android:layout_marginEnd="15dp" app:riv_corner_radius="100dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_60_transparent" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_edit_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/modify_notes" android:lines="1" android:drawablePadding="5dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/mj_webp_widget_second_arrow_pres" android:layout_alignParentEnd="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_edit_mark" android:layout_toEndOf="@+id/figure_cover_face">
+            <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/figure_name_tv" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="none"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_60_transparent" android:id="@+id/tv_statues" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_marginRight="24dp"/>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/recycle_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_select_bottom">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycle_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:layout_marginRight="14dp" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_select_bottom" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="10sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/select_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="17dp" android:layout_marginRight="10dp" android:layout_marginBottom="17dp" android:text="@string/local_file_delete" android:drawableTop="@drawable/mj_webp_list_delete_nor"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

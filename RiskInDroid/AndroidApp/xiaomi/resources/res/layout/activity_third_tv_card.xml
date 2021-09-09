@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.uwb.tv.widget.ThirdTvCardView android:layout_gravity="bottom" android:id="@+id/tvcard_v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/third_card_control_layout"/>
+    </com.xiaomi.smarthome.uwb.tv.widget.ThirdTvCardView>
+</merge>

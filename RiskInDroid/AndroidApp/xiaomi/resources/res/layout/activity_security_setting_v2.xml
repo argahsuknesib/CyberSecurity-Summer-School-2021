@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:background="@color/mj_color_white" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_title_big" android:layout_height="wrap_content" android:minHeight="@dimen/size_54dp" app:layout_scrollFlags="11" style="@style/ListItem.Group.Content">
+                <TextView android:textSize="@dimen/font_size_30sp" android:textColor="@color/mj_color_black" android:id="@+id/security_setting_title_big_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_more_security_title" android:layout_centerVertical="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <LinearLayout android:orientation="vertical" android:id="@+id/security_setting_main_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+                <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_open_pincode" style="@style/ListItem.Group.Content">
+                    <TextView android:textStyle="bold" android:text="@string/device_plugin_security_item_set_new_pincode" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+                    <ImageView android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" style="@style/ListItem.Title.ListItemSubTitle"/>
+                </com.xiaomi.smarthome.library.common.widget.ListItemView>
+                <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_close_pincode" style="@style/ListItem.Group.Content">
+                    <TextView android:textStyle="bold" android:text="@string/device_more_security_pw_close" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+                    <ImageView android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" style="@style/ListItem.Title.ListItemSubTitle"/>
+                </com.xiaomi.smarthome.library.common.widget.ListItemView>
+                <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_change_pincode" style="@style/ListItem.Group.Content">
+                    <TextView android:textStyle="bold" android:text="@string/device_more_security_pw_change" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+                    <ImageView android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" style="@style/ListItem.Title.ListItemSubTitle"/>
+                </com.xiaomi.smarthome.library.common.widget.ListItemView>
+                <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_fingerprint_item" style="@style/ListItem.Group.Content">
+                    <TextView android:textStyle="bold" android:text="@string/device_more_security_fingerprint_main" android:layout_centerVertical="true" style="@style/ListItem.Title.ListItemMainTitle"/>
+                    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/security_setting_fingerprint_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                </com.xiaomi.smarthome.library.common.widget.ListItemView>
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_plugin_security_set_pincode_tip" android:layout_marginStart="@dimen/std_list_content_margin_left_27" android:layout_marginEnd="@dimen/std_list_content_margin_right_27"/>
+                <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_divider" android:background="@color/mj_color_white" android:layout_height="40dp" style="@style/ListItem.Group.Content">
+                    <View android:layout_centerVertical="true" style="@style/ListItem.Divider"/>
+                </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/security_setting_apply_all_devices_item" android:layout_width="match_parent" android:layout_height="54dp">
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_more_security_apply_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="27dp" android:layout_alignParentStart="true"/>
+                <RelativeLayout android:id="@+id/security_layout_filter" android:background="@drawable/rounded_white_bg_nor_17dp" android:layout_width="67dp" android:layout_height="34dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="27dp" android:layout_alignParentEnd="true">
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/security_filter_title" android:layout_width="wrap_content" android:layout_height="18dp" android:text="@string/device_setting_filter" android:layout_centerVertical="true" android:layout_marginStart="13.89dp"/>
+                    <ImageView android:id="@+id/img_setting_filter_icon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/setting_filter_icon" android:layout_toRightOf="@+id/security_filter_title" android:layout_centerVertical="true" android:importantForAccessibility="no"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/security_setting_rv_apply_devices" android:background="@color/mj_color_white" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_filter_result_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="418dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/filter_result_empty"/>
+            <TextView android:textColor="#999999" android:id="@+id/tv_setting_filter_no_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_setting_filter_result_empty"/>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

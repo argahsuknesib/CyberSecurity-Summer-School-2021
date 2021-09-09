@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/deivce_control_container" android:paddingLeft="19dp" android:paddingRight="19dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="12dp" android:paddingStart="19dp" android:paddingEnd="19dp">
+        <FrameLayout android:id="@+id/device_info_container" android:layout_width="158dp" android:layout_height="44dp" android:layout_marginRight="6dp" android:layout_marginEnd="6dp">
+            <ImageView android:background="@drawable/defaule_button_mask_nor" android:layout_width="158dp" android:layout_height="44dp" android:importantForAccessibility="no"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="13dp" android:layout_width="158dp" android:layout_height="44dp" android:paddingStart="13dp">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_white" android:id="@+id/button_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/font_size_6" android:textColor="@color/mj_color_white_50_transparent" android:id="@+id/button_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</HorizontalScrollView>

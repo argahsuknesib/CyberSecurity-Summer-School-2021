@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" android:minWidth="@dimen/mijia_middle_widget_min_width" android:minHeight="@dimen/mijia_middle_widget_min_height" android:initialLayout="@layout/mijia_app_widget_normal_layout" android:previewImage="@drawable/mj_app_widget_icon_middle" android:resizeMode="none|horizontal|vertical"/>

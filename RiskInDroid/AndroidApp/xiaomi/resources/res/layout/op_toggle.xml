@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.StateLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/camera_btn_guid_bg" android:layout_width="76dp" android:layout_height="44dp" android:layout_marginRight="6dp">
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@drawable/camera_btn_text_color_white" android:id="@+id/button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaa"/>
+    <TextView android:textSize="@dimen/font_size_6" android:textColor="@color/mj_color_white_50_transparent" android:id="@+id/button_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaa"/>
+</com.xiaomi.smarthome.library.common.widget.StateLinearLayout>

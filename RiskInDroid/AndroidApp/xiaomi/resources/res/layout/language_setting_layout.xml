@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nested_scroll_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/shop_tip" android:background="@color/mj_color_text_blue_bg" android:layout_width="match_parent" android:layout_height="42dp">
+                <ImageView android:id="@+id/shop_tip_close" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/mijia_icon_delete_selector" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="10dp" android:text="@string/setting_lang_for_shop_new" android:singleLine="true" android:layout_toLeftOf="@+id/shop_tip_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

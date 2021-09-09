@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_green_normal" android:ellipsize="end" android:id="@+id/about_ble_gateway" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/miio_ble_gateway_guide" android:maxLines="3" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/about_ble_gateway" android:layout_below="@+id/title_bar">
+        <com.xiaomi.smarthome.library.common.widget.PullDownDragListView android:scrollbarStyle="insideOverlay" android:layout_gravity="center_horizontal" android:id="@+id/bluetooth_gateway_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/mj_color_black_00_transparent" android:cacheColorHint="@color/mj_color_black_00_transparent" android:divider="@null"/>
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/common_white_empty_view"/>
+    </RelativeLayout>
+</RelativeLayout>

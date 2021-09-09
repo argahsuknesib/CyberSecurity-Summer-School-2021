@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/custom_action_bar" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_back_light" android:layout_marginStart="6dp"/>
+        <TextView android:textSize="@dimen/action_bar_title_text_size" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_password"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="40dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="30dp" android:paddingEnd="30dp">
+        <com.xiaomi.passport.ui.settings.widget.PasswordView android:id="@+id/input_new_pwd_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:checkPasswordRule="true" app:passwordHint="@string/input_new_pwd"/>
+        <com.xiaomi.passport.ui.settings.widget.PasswordView android:id="@+id/confirm_pwd_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passport_title_content_margin_v" app:checkPasswordRule="true" app:passwordHint="@string/confirm_new_pwd"/>
+        <TextView android:id="@+id/password_rules" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="@dimen/passport_reg_content_bottom_margin" android:text="@string/passport_password_req_notice" style="@style/TextAppearance.AppCompat.Small"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/error_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/passport_buttons_margin_v" style="@style/ErrorNoticeAppearance"/>
+        <Button android:id="@+id/change_pwd_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@android:string/ok" style="@style/ButtonHighlight"/>
+    </LinearLayout>
+</LinearLayout>

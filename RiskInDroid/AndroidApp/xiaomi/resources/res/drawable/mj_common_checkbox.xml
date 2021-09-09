@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/mj_brand_icon_checkbox_unchecked_disable"/>
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/mj_brand_icon_checkbox_checked_disable"/>
+    <item android:state_checked="true" android:drawable="@drawable/mj_brand_icon_checkbox_checked"/>
+    <item android:drawable="@drawable/mj_brand_icon_checkbox_unchecked"/>
+</selector>

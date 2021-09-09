@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/menu" android:paddingLeft="12dp" android:paddingTop="18dp" android:paddingRight="12dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:text="@string/smarthome_share_wecaht" android:maxLines="2" android:drawableTop="@drawable/std_shop_details_share_icon_wxhy" style="@style/ShareItemNew"/>

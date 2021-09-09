@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include layout="@layout/common_list_space_empty"/>
+    <RelativeLayout android:id="@+id/other_wifi" android:layout_width="match_parent" android:layout_height="61dp">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/choose_other_wifi" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/into_icon_nor_3x" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="18dp" android:layout_alignParentEnd="true"/>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

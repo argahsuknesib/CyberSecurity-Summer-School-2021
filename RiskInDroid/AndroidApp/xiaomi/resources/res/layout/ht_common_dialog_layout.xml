@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lLayout_bg" android:background="@drawable/ht_common_dialog_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ht_black" android:gravity="center" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/ht_black" android:gravity="center" android:id="@+id/txt_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:lineSpacingMultiplier="1.2"/>
+    <ImageView android:background="@color/ht_color_e5e5e5" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="@color/ht_color_037BFF" android:gravity="center" android:id="@+id/btn_neg" android:background="@drawable/ht_dialog_cancel_selector" android:layout_width="wrap_content" android:layout_height="43dp" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        <ImageView android:id="@+id/img_line" android:background="@color/ht_color_e5e5e5" android:layout_width="0.5dp" android:layout_height="43dp"/>
+        <Button android:textSize="16sp" android:textColor="@color/ht_color_037BFF" android:gravity="center" android:id="@+id/btn_pos" android:background="@drawable/ht_dialog_confirm_selector" android:layout_width="wrap_content" android:layout_height="43dp" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

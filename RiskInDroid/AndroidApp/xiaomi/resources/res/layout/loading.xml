@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cb_linear_layout">
+    <View android:background="@color/cb_border" style="@style/cb_horizontal_line"/>
+    <RelativeLayout style="@style/cb_relative_layout">
+        <LinearLayout android:id="@+id/header" android:layout_height="30dp" android:layout_alignParentTop="true" style="@style/cb_linear_layout">
+            <TextView android:textSize="@dimen/cb_sixteenScaled" android:gravity="center" android:layout_width="match_parent" android:layout_marginTop="@dimen/cb_eight" android:layout_marginBottom="@dimen/cb_eight" android:drawableTop="@drawable/slider" style="@style/cb_text_view"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cb_sixteen" android:layout_centerInParent="true" style="@style/cb_linear_layout">
+            <include android:id="@+id/progress" layout="@layout/cb_progressdialog"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="18sp" android:textStyle="bold" android:id="@+id/waiting" android:layout_marginTop="@dimen/cb_twelve" android:layout_marginBottom="@dimen/cb_eight" android:text="@string/cb_bank_page_loading" style="@style/cb_text_view"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:background="@drawable/rectangle_box" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/cb_relative_layout">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@null" android:layout_width="match_parent" android:layout_height="30dp" android:layout_alignParentLeft="true" style="@style/cb_linear_layout">
+                <TextView android:textSize="@dimen/cb_twelveScaled" android:textStyle="bold" android:gravity="center_vertical" android:background="@null" android:layout_height="30dp" android:layout_marginLeft="5dp" android:drawableRight="@drawable/trusticon" android:drawablePadding="@dimen/cb_four" style="@style/cb_text_view"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:gravity="center_vertical" android:background="@null" android:layout_height="30dp" android:layout_marginLeft="@dimen/cb_four" android:text="@string/cb_powered_by" android:drawablePadding="@dimen/cb_four" style="@style/cb_text_view"/>
+                <TextView android:textSize="@dimen/cb_twelveScaled" android:textStyle="bold" android:gravity="center" android:background="@null" android:layout_height="20dp" android:layout_marginLeft="@dimen/cb_four" android:drawableLeft="@drawable/logo_payu" android:drawablePadding="@dimen/cb_four" style="@style/cb_text_view"/>
+            </LinearLayout>
+            <LinearLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_alignParentRight="true" style="@style/cb_linear_layout">
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/bank_logo" android:background="@null" android:paddingRight="5dp" android:contentDescription="@string/cb_bank_logo" style="@style/cb_image_view"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

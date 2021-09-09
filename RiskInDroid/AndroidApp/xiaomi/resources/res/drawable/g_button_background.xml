@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/g_default_base_primary"/>
+    <corners android:radius="@dimen/g_button_background_corners_radius"/>
+</shape>

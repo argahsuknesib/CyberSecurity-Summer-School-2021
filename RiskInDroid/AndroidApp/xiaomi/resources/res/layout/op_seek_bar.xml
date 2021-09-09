@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:layout_marginBottom="34dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="34dp" android:layout_marginRight="20dp" android:layout_marginBottom="34dp">
+        <LinearLayout android:gravity="center" android:id="@+id/min_btn" android:background="@drawable/slide_bar_btn_left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_op_minus"/>
+        </LinearLayout>
+        <SeekBar android:id="@+id/seek_bar" android:layout_width="230dp" android:layout_height="wrap_content" android:maxHeight="50dp" android:progressDrawable="@drawable/camera_bg_lighteness_nor" android:minWidth="44dp" android:minHeight="20dp" android:thumb="@drawable/camera_thumb" android:thumbOffset="0dp"/>
+        <LinearLayout android:gravity="center" android:id="@+id/add_btn" android:background="@drawable/slide_bar_btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_op_add"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

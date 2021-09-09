@@ -1,0 +1,3 @@
+com.github.scribejava.httpclient.okhttp.OkHttpProvider
+com.github.scribejava.core.httpclient.jdk.JDKHttpProvider
+

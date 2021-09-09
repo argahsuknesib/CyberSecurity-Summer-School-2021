@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/parentPanel" android:background="@drawable/dialog_main_connect_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="25dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/empty_view">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginRight="27dp" android:text="@string/law_infos"/>
+        <View android:background="@color/mj_color_black_00_transparent" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="25dp" android:layout_marginRight="10dp">
+            <TextView android:textSize="16sp" android:gravity="center_horizontal" android:id="@+id/user_license_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginRight="27dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="21dp" android:layout_marginTop="28dp" android:layout_marginRight="21dp" android:layout_marginBottom="27dp">
+            <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/cancel" android:background="@drawable/normal_denied_button" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="@string/sh_common_cancel" android:layout_weight="1" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+            <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_dialog_button1_bg_nor" android:id="@+id/agree" android:background="@drawable/normal_confirm_button_23_radius" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="@string/agree_go_on" android:layout_weight="1" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

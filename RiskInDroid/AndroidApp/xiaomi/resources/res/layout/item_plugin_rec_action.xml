@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plugin_rec_action_select" android:minWidth="6dp" android:minHeight="10dp" android:layout_marginStart="9dp"/>
+    <TextView android:textSize="15dp" android:textColor="@color/mj_color_black" android:layout_gravity="center_vertical" android:id="@+id/device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/listitem_2_padding_right" android:paddingEnd="@dimen/listitem_2_padding_right"/>
+    <View android:layout_gravity="bottom" android:id="@+id/divider_x" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="@dimen/listitem_2_padding_right"/>
+    <View android:layout_gravity="bottom" android:id="@+id/divider_last" android:background="@color/mj_color_separator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+</FrameLayout>

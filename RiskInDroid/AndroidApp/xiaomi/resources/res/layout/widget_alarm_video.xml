@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/video_root" android:layout_width="match_parent" android:layout_height="158dp" android:paddingStart="@dimen/size_10dp" android:paddingEnd="@dimen/size_10dp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" card_view:cardCornerRadius="8dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <VideoView android:id="@+id/video_view" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/video_preview_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            <ImageView android:background="@drawable/alarm_video_mask" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/play_state" android:background="@drawable/alarm_video_paly" android:visibility="gone" android:layout_width="47dp" android:layout_height="47dp" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/mj_color_white" android:id="@+id/video_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/size_14dp" android:text="" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/size_13dp" android:layout_alignParentEnd="true"/>
+            <CheckBox android:id="@+id/selected_state" android:layout_width="37dp" android:layout_height="37dp" android:layout_marginTop="@dimen/size_6dp" android:checked="false" android:button="@drawable/icon_alarm_video_checkbox" android:layout_marginStart="@dimen/size_9dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

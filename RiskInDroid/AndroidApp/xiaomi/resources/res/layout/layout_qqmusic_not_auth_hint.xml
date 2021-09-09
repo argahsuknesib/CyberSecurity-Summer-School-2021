@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/not_bind_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="102dp" android:layout_height="135dp" android:layout_marginTop="81dp" android:src="@drawable/qq_bind_icon"/>
+    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/qq_music_not_bind_hint"/>
+    <Button android:id="@+id/qq_bind" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@string/mico_cp_account_go_bind" style="@style/App.Widget.Button.Orange.Large"/>
+</LinearLayout>

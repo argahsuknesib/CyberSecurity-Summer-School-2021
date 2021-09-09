@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/bottom_bg" android:background="#cee9dd" android:layout_width="match_parent" android:layout_height="130dp" android:layout_alignParentBottom="true"/>
+        <View android:background="@drawable/ble_gateway_guide_background_gradient_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_bg"/>
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie_view_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="30sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="84dp" android:layout_marginRight="5dp" android:text="@string/miio_ble_gateway_guide_text_1" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="22dp" android:layout_marginRight="5dp" android:text="@string/miio_ble_gateway_guide_text_2" android:layout_below="@+id/text_1" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/text_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_marginRight="5dp" android:text="@string/miio_ble_gateway_guide_text_3" android:layout_below="@+id/text_2" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

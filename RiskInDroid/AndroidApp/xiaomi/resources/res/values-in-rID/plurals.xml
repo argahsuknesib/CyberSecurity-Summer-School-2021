@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="other">Tambahkan hingga %1d tindakan</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="other">Data rata-rata dari %s perangkat di area sekitar</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">%d j</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">%d mnt</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">%d dtk</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">%1$s perangkat berhasil ditambahkan</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">%1$d perangkat</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">%1$d perangkat</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">%d kamera pintar</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">%d menit</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="other">Penggunaan kumulatif: %d hari,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">Hapus %1$s pesan yang dipilih?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">Hapus %1$s rekaman yang dipilih?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">Ditemukan %d perangkat baru, ketuk untuk mengatur</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">%1$s perangkat belum ditetapkan ke ruangan tertentu</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">Hapus %1$s perangkat yang dipilih?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="other">Pindahkan %1$d adegan yang dipilih dari favorit?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">%1$s m</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">Pegang perangkat untuk mengatur ulang item, dan %d perangkat di atas ditampilkan pada kartu</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">%1$d dipilih</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">%1$s dipilih</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="other">Adegan yang dipilih: %1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s dll.</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">%d perangkat yang dibagikan</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">%s perangkat dibagikan</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">Info kontak bisa berisi hingga %1$d karakter</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">Umpan balik Anda bisa berisi hingga %1$d karakter</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">%1$s pembaruan firmware tersedia</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">%1$s pembaruan firmware selesai</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">Layanan penyimpanan cloud akan berakhir dalam %1$d hari. Ketuk untuk memperpanjang.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="one">%1$s rumah</item>
+        <item quantity="other">%1$s rumah</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">%1$s perangkat</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">%1$s kamar</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">%d remote</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">%d perangkat tersambung</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">Ditemukan %d perangkat cerdas, ketuk untuk menyelesaikan</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">Grup lampu dapat berisi maksimal %1$s lampu.</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="other">Pembaruan tersedia untuk plug-in %d</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">%d jam</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">%d menit</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">%1$d perangkat tersedia di area sekitar</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">Perangkat online: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="other">Menunggu plug-in perangkat %1$s:</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">Anda menerima %d pesan baru</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">Tombol%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">%1$d perangkat ditambahkan</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="other">Router AIoT menemukan %1$d perangkat</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="other">Router Mi menemukan %1$d perangkat</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">%1$s speaker AI Mi</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="other">Hapus %1$s adegan cerdas yang dipilih?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">Aktifkan dalam %d d</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">Aktifkan dalam %d j</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">%1$s dipilih</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">%1$d perangkat</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$s dan perangkat lain (%2$d perangkat)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">Dibagikan dengan %1$s dan lainnya (%2$d orang)</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">%d mnt kemudian</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">%d dtk kemudian</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">%d disertakan</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">%d dipilih</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">%d kamera</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="other">Mengunduh…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">Setiap perangkat dapat memiliki hingga %1$s julukan suara.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">%1$d %2$ss ditemukan, ketuk untuk menyambungkan</item>
+    </plurals>
+</resources>

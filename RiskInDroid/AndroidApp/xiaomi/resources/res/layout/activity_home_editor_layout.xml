@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/delhome" android:layout_below="@+id/title_bar">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_home_editor_layout_content"/>
+    </ScrollView>
+    <TextView android:textSize="16dp" android:textColor="@color/mj_color_red_normal" android:gravity="center" android:id="@+id/delhome" android:background="@drawable/rectangle_23_radius_btn" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="27dp" android:layout_marginTop="2dp" android:layout_marginRight="27dp" android:layout_marginBottom="27dp" android:text="@string/delete_home" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/addhome" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/home_room_add_room_icon_nor2" android:layout_alignParentBottom="true" android:contentDescription="@string/home_add_title" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

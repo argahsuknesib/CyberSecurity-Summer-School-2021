@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/mj_common_title_bar_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/title_cancel_selector" android:contentDescription="@string/sh_common_cancel"/>
+    <TextView android:textSize="@dimen/mj_title_bar_text_size" android:textColor="@color/mj_color_black_100_transparent" android:layout_gravity="center" android:id="@+id/text_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_select_all" android:tag="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/all_select_selector" android:contentDescription="@null"/>
+</FrameLayout>

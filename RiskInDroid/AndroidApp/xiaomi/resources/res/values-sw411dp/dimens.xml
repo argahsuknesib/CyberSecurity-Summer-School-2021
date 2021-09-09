@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mijia_widget_big_grid_wrapper_height">338dp</dimen>
+    <dimen name="mijia_widget_dimen_190px">71dp</dimen>
+    <dimen name="mijia_widget_dimen_215px">81dp</dimen>
+    <dimen name="mijia_widget_dimen_30px">11.4dp</dimen>
+    <dimen name="mijia_widget_dimen_35px">13.3dp</dimen>
+    <dimen name="mijia_widget_dimen_400px">148dp</dimen>
+    <dimen name="mijia_widget_dimen_40px">15.2dp</dimen>
+    <dimen name="mijia_widget_dimen_50px">19dp</dimen>
+    <dimen name="mijia_widget_dimen_70px">26.6dp</dimen>
+    <dimen name="mijia_widget_dimen_80px">35dp</dimen>
+    <dimen name="mijia_widget_dimen_90px">40dp</dimen>
+    <dimen name="mijia_widget_dimen_960px">365dp</dimen>
+    <dimen name="mijia_widget_dimen_corner_radius">50px</dimen>
+    <dimen name="mijia_widget_empty_device_height">45.7dp</dimen>
+    <dimen name="mijia_widget_item_rounded_bg">13.7dp</dimen>
+    <dimen name="mijia_widget_middle_grid_wrapper_height">152dp</dimen>
+    <dimen name="mijia_widget_out_min_height">167dp</dimen>
+    <dimen name="mijia_widget_rounded_bg">21.3dp</dimen>
+    <dimen name="mijia_widget_special_layout_height">137.1dp</dimen>
+    <dimen name="mijia_widget_width_20px">7.6dp</dimen>
+</resources>

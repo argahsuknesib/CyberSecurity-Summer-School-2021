@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/drawer_layout" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_layer1" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false">
+        <ImageView android:id="@+id/iv_room_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="matrix"/>
+        <com.xiaomi.smarthome.ui.LinearViewPager android:id="@+id/main_activity_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="65dp"/>
+        <com.xiaomi.smarthome.newui.buttomtab.TabPageIndicatorNew android:id="@+id/indicator" android:background="@color/mj_color_white" android:paddingLeft="@dimen/main_page_flex_padding" android:paddingRight="@dimen/main_page_flex_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_height" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignTop="@+id/indicator"/>
+        <ViewStub android:layout="@layout/lite_add_device_or_scene_ui" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/title_bar_choose_scene_stub" android:layout="@layout/title_bar_choose_scene" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true"/>
+        <ViewStub android:id="@+id/menu_choose_scene_stub" android:layout="@layout/edit_scene_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ViewStub android:id="@+id/blur_view_vs" android:layout="@layout/common_blur_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/card_to_animate_vs" android:layout="@layout/card_to_animate_layout" android:layout_width="@dimen/device_card_width" android:layout_height="@dimen/device_card_height"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/tv_card_page_vs" android:layout="@layout/tv_card_page_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="187dp"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/recycler_view_vs" android:layout="@layout/card_controller_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/ll_scroll_desc_vs" android:layout="@layout/card_controller_ll_scroll_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/layout_report_vs" android:layout="@layout/card_controller_layout_report" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/ir_hint" android:layout="@layout/ir_hint_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/guide" android:visibility="gone" android:layout="@layout/view_common_camera_first_guide" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

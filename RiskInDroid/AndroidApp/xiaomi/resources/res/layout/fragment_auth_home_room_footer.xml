@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/view_container" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/shared_device" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp">
+            <View android:background="@color/mj_auth_control_divider_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/std_list_content_margin_left_27" android:layout_marginRight="@dimen/std_list_content_margin_right_27"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.ListItemView android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="260dp" android:text="@string/shared_device_room_name" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/std_list_padding_left" android:layout_alignParentStart="true"/>
+            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/btn_shared_device" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_content_margin_right" android:layout_alignParentEnd="true"/>
+        </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/other_platform_device" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp">
+            <View android:background="@color/mj_auth_control_divider_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/std_list_content_margin_left_27" android:layout_marginRight="@dimen/std_list_content_margin_right_27"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.ListItemView android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="260dp" android:text="@string/other_platform_device" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/std_list_padding_left" android:layout_alignParentStart="true"/>
+            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/btn_other_platform_device" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_content_margin_right_27" android:layout_alignParentEnd="true"/>
+        </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    </LinearLayout>
+</LinearLayout>

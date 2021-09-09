@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="32dp">
+    <TextView android:textSize="11dp" android:textColor="@color/mj_color_gray_light" android:id="@+id/tv_room_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/divider_x" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="@dimen/listitem_2_padding_right" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/event_list_item_bg" android:layout_width="match_parent" android:layout_height="88dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_weight="1" android:layout_marginStart="20dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tv_event_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:19"/>
+                <View android:id="@+id/v_divider_line" android:background="@color/mj_color_separator" android:layout_width="0.5dp" android:layout_height="14dp" android:layout_marginStart="4dp"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_event_type_known_people" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/tv_event_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="识别到人脸！" android:lines="1" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/rl_right_function" android:padding="1.5dp" android:layout_width="wrap_content" android:layout_height="70dp" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:layout_weight="0">
+            <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/face_event_image" android:background="@drawable/event_list_item_img_bg" android:layout_width="120dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_marginEnd="20dp" app:riv_corner_radius="10dp"/>
+            <TextView android:textColor="@color/mj_color_black_60_transparent" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_report_error" android:background="@drawable/bg_round_corner_grey_17dp" android:padding="5dp" android:layout_width="52dp" android:layout_height="28dp" android:text="@string/error_report" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="0dp"/>
+</LinearLayout>

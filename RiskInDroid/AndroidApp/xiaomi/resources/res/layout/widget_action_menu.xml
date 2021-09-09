@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.common.editorbar.ActionMenu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/mj_color_white" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/common_bottom_bar_height"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_countdown_bg_big" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_countdown" android:paddingTop="6dp" android:paddingBottom="@dimen/padding6" android:layout_width="wrap_content" android:layout_height="42dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:id="@+id/tv_countdown_day" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" style="@style/countdownBigTimerStyle"/>
+        <TextView android:textSize="@dimen/t12" android:textColor="@color/white" android:id="@+id/tv_countdown_day_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:text="天"/>
+        <TextView android:id="@+id/tv_countdown_hour" android:layout_width="28dp" android:layout_height="28dp" style="@style/countdownBigTimerStyle"/>
+        <TextView android:textSize="@dimen/t12" android:textColor="@color/white" android:id="@+id/tv_countdown_hour_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="时"/>
+        <TextView android:id="@+id/tv_countdown_minute" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="3dp" style="@style/countdownBigTimerStyle"/>
+        <TextView android:textSize="@dimen/t12" android:textColor="@color/white" android:id="@+id/tv_countdown_minute_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="分"/>
+        <TextView android:id="@+id/tv_countdown_second" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="3dp" style="@style/countdownBigTimerStyle"/>
+        <TextView android:textSize="@dimen/t12" android:textColor="@color/white" android:id="@+id/tv_countdown_second_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="秒"/>
+        <TextView android:id="@+id/tv_countdown_mill_second" android:layout_width="14dp" android:layout_height="28dp" android:layout_marginLeft="3dp" style="@style/countdownBigTimerStyle"/>
+    </LinearLayout>
+</RelativeLayout>

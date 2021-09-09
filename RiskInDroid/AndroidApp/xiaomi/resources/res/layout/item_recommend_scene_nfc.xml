@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/recommend_sdv" android:layout_width="match_parent" android:layout_height="154dp" android:layout_marginTop="4dp" android:layout_centerHorizontal="true" fresco:actualImageResource="@drawable/nfc_rec_bg" fresco:actualImageScaleType="7" fresco:roundedCornerRadius="20px"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="140dp" android:layout_height="154dp" android:layout_marginTop="4dp" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true" fresco:actualImageResource="@drawable/nfc_rec_content" fresco:actualImageScaleType="3" fresco:roundedCornerRadius="20px"/>
+    <TextView android:textSize="17sp" android:textColor="@color/mj_color_white" android:id="@+id/recommend_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginTop="15dp" android:text="@string/recommend_nfc_trigger"/>
+</RelativeLayout>

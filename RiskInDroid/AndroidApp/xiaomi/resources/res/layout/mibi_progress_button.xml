@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textColor="@android:color/holo_blue_dark" android:layout_gravity="center" android:id="@+id/button" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/progress_circle" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/mibi_progressbar_circle_light"/>
+</FrameLayout>

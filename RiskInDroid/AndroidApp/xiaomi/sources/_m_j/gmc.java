@@ -1,0 +1,123 @@
+package _m_j;
+
+import com.google.android.play.core.splitinstall.model.SplitInstallErrorCode;
+
+public final class gmc {
+    public static String O000000o(int i) {
+        switch (i) {
+            case -55:
+                return "REQUEST_NOTIFY_TIMEDOUT";
+            case -54:
+                return "REQUEST_STANDARD_AUTH_TOKEN_IS_EMPTY";
+            case -53:
+                return "REQUEST_STANDARD_AUTH_ERR_RELOGIN";
+            case -52:
+                return "REQUEST_STANDARD_AUTH_LOGIN_FAILED";
+            case -51:
+                return "REQUEST_STANDARD_AUTH_REGISTER_FAILED";
+            case -50:
+                return "REQUEST_STANDARD_AUTH_GET_QR_OOB_FAILED";
+            case -49:
+                return "REQUEST_STANDARD_AUTH_OOB_FAILED";
+            case -48:
+                return "REQUEST_STANDARD_AUTH_GET_APP_CONFIRM_FAILED";
+            case -47:
+                return "REQUEST_STANDARD_AUTH_GET_DEVICE_INFO_FAILED";
+            case -46:
+                return "REQUEST_SC_REGISTER_GET_BIND_KEY_FAILED";
+            case -45:
+                return "REQUEST_MESH_SEND_SERVER_RESULT_FAILED";
+            case -44:
+                return "REQUEST_MESH_PROVISION_INFO_FAILED";
+            case -43:
+                return "REQUEST_MESH_REG_DEVICE_VERIFY_PUB_FAILED";
+            case -42:
+                return "REQUEST_MESH_REG_DEVICE_VERIFY_SIGN_FAILED";
+            case -41:
+                return "REQUEST_MESH_REG_DEVICE_VERIFY_CERT_FAILED";
+            case -40:
+                return "REQUEST_MESH_REG_SERVER_VERIFY_SIGN_FAILED";
+            case -39:
+                return "REQUEST_MESH_REG_SERVER_VERIFY_CERT_FAILED";
+            case -38:
+                return "REQUEST_PINCODE_IS_EMPTY";
+            case -37:
+                return "REQUEST_SC_REGISTER_UNSUPPORT_VERSION";
+            case -36:
+                return "REQUEST_SC_REGISTER_GET_VERSION_FAILED";
+            case -35:
+                return "REQUEST_SC_REGISTER_PAIR_CODE_EXPIRED";
+            case -34:
+                return "REQUEST_SC_REGISTER_PAIR_CODE_FAILED";
+            case -33:
+                return "REQUEST_SC_REGISTER_INPUT_PAIR_CODE";
+            case -32:
+                return "REQUEST_STATUS_DISCONNECTED";
+            case -31:
+                return "REQUEST_TOKEN_VERIFY_FAILED";
+            case -30:
+                return "REQUEST_BIND_DID_FAILED";
+            case -29:
+                return "REQUEST_GET_DID_FAILED";
+            case -28:
+                return "REQUEST_WRITE_FAILED";
+            case -27:
+                return "REQUEST_NOTIFY_FAILED";
+            case -26:
+                return "REQUEST_SC_BIND_LTMK_FAILED";
+            case -25:
+                return "REQUEST_SC_SHARED_LOGIN_KEY_ID_EMPTY";
+            case -24:
+                return "REQUEST_SC_SHARED_LOGIN_FAILED";
+            case -23:
+                return "REQUEST_SC_SHARED_LOGIN_ENCRYPT_DATA_FAILED";
+            case -22:
+                return "REQUEST_SC_LOGIN_FAILED";
+            case -21:
+                return "REQUEST_SC_LOGIN_ENCRYPT_DATA_FAILED";
+            case -20:
+                return "REQUEST_SC_REGISTER_FAILED";
+            case -19:
+                return "REQUEST_SC_SHARED_KEY_FAILED";
+            case -18:
+                return "REQUEST_SC_SHARED_KEY_EXPIRED";
+            case -17:
+                return "REQUEST_SC_REGISTERED";
+            case -16:
+                return "REQUEST_SC_NOT_REGISTERED";
+            case -15:
+                return "REQUEST_EXCEPTION";
+            case -14:
+                return "REQUEST_DENIED";
+            case -13:
+                return "REQUEST_ONGOING";
+            case -12:
+                return "CONFIG_UNREADY";
+            case -11:
+                return "REQUEST_OVERFLOW";
+            case -10:
+                return "TOKEN_NOT_MATCHED";
+            case SplitInstallErrorCode.SERVICE_DIED:
+            default:
+                return "unknown code: ".concat(String.valueOf(i));
+            case -8:
+                return "REQUEST_NOT_CONNECTED";
+            case -7:
+                return "REQUEST_TIMEDOUT";
+            case -6:
+                return "CONNECTION_NOT_READY";
+            case -5:
+                return "BLUETOOTH_DISABLED";
+            case -4:
+                return "BLE_NOT_SUPPORTED";
+            case -3:
+                return "ILLEGAL_ARGUMENT";
+            case -2:
+                return "REQUEST_CANCELED";
+            case -1:
+                return "REQUEST_FAILED";
+            case 0:
+                return "REQUEST_SUCCESS";
+        }
+    }
+}

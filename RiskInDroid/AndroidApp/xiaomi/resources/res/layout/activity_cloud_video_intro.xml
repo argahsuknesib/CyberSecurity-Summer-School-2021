@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_cv_title" android:layout_width="wrap_content" android:layout_height="72dp" android:src="@drawable/cloud_video_intro_title"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_table_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="10dp" android:layout_marginRight="26dp">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="#05906d" android:gravity="center" android:background="#e7f6f2" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/mi_cloud" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="#05906d" android:gravity="center" android:background="#e7f6f2" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/cloud_video_intro_title_sdcard" android:layout_weight="1"/>
+        </LinearLayout>
+        <TableLayout android:layout_gravity="center_horizontal" android:background="#d1efe5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginRight="26dp">
+            <TableRow android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/tv_cloud_video_tips1" android:layout_marginRight="1dp" android:text="@string/cloud_video_tips_1" style="@style/CloudVideoIntroTabTextView"/>
+                <TextView android:text="@string/sdcard_tips_1" style="@style/CloudVideoIntroTabTextView"/>
+            </TableRow>
+            <TableRow android:padding="1dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/tv_cloud_video_tips2" android:layout_marginRight="1dp" android:text="@string/cloud_video_tips_2" style="@style/CloudVideoIntroTabTextView"/>
+                <TextView android:text="@string/sdcard_tips_2" style="@style/CloudVideoIntroTabTextView"/>
+            </TableRow>
+            <TableRow android:paddingLeft="1dp" android:paddingRight="1dp" android:paddingBottom="1dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/tv_cloud_video_tips3" android:layout_marginRight="1dp" android:text="@string/cloud_video_tips_3" style="@style/CloudVideoIntroTabTextView"/>
+                <TextView android:text="@string/sdcard_tips_3" style="@style/CloudVideoIntroTabTextView"/>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginRight="26dp">
+            <ImageView android:id="@+id/iv_cv_intro_img_1" android:layout_width="0dp" android:layout_height="250dp" android:src="@drawable/cloud_video_intro_img_1" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_cv_intro_img_2" android:layout_width="0dp" android:layout_height="250dp" android:src="@drawable/cloud_video_intro_img_2" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_18sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_buy" android:background="@drawable/camera_btn_guid_bg" android:layout_width="150dp" android:layout_height="44dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:layout_marginBottom="30dp" android:text="@string/buy_now"/>
+    </LinearLayout>
+</ScrollView>

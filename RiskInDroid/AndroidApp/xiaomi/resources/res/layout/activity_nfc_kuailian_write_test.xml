@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/et_model" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="30dp"/>
+    <EditText android:id="@+id/et_did" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_below="@+id/et_model"/>
+    <EditText android:id="@+id/et_extra" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_below="@+id/et_did"/>
+    <Button android:id="@+id/btn_write" android:layout_width="match_parent" android:layout_height="50dp" android:text="写入" android:layout_alignParentBottom="true"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="第一行为model,第二行为did,第三行为extra\10每个参数必须写入值，不可为空，不然会写入异常。目前设备配网，extra为设备mac" android:layout_above="@+id/btn_write"/>
+</RelativeLayout>

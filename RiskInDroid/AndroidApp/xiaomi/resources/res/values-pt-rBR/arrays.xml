@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_user_gender_name">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </array>
+    <array name="ble_guide_content_description">
+        <item>Primeira página</item>
+        <item>Segunda página</item>
+        <item>Terceira página</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Esposa</item>
+        <item>Pai</item>
+        <item>Mãe</item>
+        <item>Filho</item>
+        <item>Filha</item>
+        <item>Colega</item>
+        <item>Outro</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Temperatura </item>
+        <item>Umidade </item>
+        <item>AQI </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Temperatura</item>
+        <item>Umidade</item>
+        <item>AQI (PM2.5)</item>
+    </array>
+    <array name="month">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>Sala de estar</item>
+        <item>quarto</item>
+        <item>Suíte</item>
+        <item>Cozinha</item>
+        <item>Sala de jantar</item>
+        <item>Banheiro</item>
+        <item>Quarto das crianças</item>
+        <item>Escritório</item>
+        <item>Estudo</item>
+        <item>Sacada</item>
+        <item>Estúdio</item>
+        <item>Banheiro</item>
+        <item>Fundos</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Pequim</item>
+        <item>Seul</item>
+        <item>Tóquio</item>
+        <item>Nova york</item>
+        <item>Denver</item>
+        <item>Costa Rica</item>
+        <item>Chicago</item>
+        <item>Cidade do México</item>
+        <item>Regina</item>
+        <item>Majuro</item>
+        <item>Midway</item>
+        <item>Honolulu</item>
+        <item>Anchorage</item>
+        <item>Los Angeles</item>
+        <item>Tijuana</item>
+        <item>Phoenix</item>
+        <item>Chihuahua</item>
+        <item>Bogotá</item>
+        <item>Nova York</item>
+        <item>Caracas</item>
+        <item>Barbados</item>
+        <item>Manaus</item>
+        <item>Santiago</item>
+        <item>St Johns</item>
+        <item>São Paulo</item>
+        <item>Buenos Aires</item>
+        <item>Nuuk</item>
+        <item>Montevidéu</item>
+        <item>Geórgia do Sul</item>
+        <item>Açores</item>
+        <item>Cabo Verde</item>
+        <item>Casablanca</item>
+        <item>Londres</item>
+        <item>Amsterdã</item>
+        <item>Belgrado</item>
+        <item>Bruxelas</item>
+        <item>Saraievo</item>
+        <item>Windhoek</item>
+        <item>Brazavile</item>
+        <item>Amã</item>
+        <item>Atenas</item>
+        <item>Beirute</item>
+        <item>Cairo</item>
+        <item>Helsinque</item>
+        <item>Jerusalém</item>
+        <item>Minsk</item>
+        <item>Harare</item>
+        <item>Bagdá</item>
+        <item>Moscou</item>
+        <item>Kuwait</item>
+        <item>Nairóbi</item>
+        <item>Teerã</item>
+        <item>Baku</item>
+        <item>Tbilisi</item>
+        <item>Erevan</item>
+        <item>Dubai</item>
+        <item>Cabul</item>
+        <item>Karachi</item>
+        <item>Oral</item>
+        <item>Yekaterinburg</item>
+        <item>Calcutá</item>
+        <item>Colombo</item>
+        <item>Catmandu</item>
+        <item>Almaty</item>
+        <item>Rangum</item>
+        <item>Krasnoyarsk</item>
+        <item>Bangkok</item>
+        <item>Irkutsk</item>
+        <item>Kuala Lumpur</item>
+        <item>Perth</item>
+        <item>Iakutsk</item>
+        <item>Adelaide</item>
+        <item>Darwin</item>
+        <item>Brisbane</item>
+        <item>Hobart</item>
+        <item>Sydney</item>
+        <item>Vladivostok</item>
+        <item>Guam</item>
+        <item>Magadan</item>
+        <item>Auckland</item>
+        <item>Fiji</item>
+        <item>Tongatapu</item>
+    </array>
+    <array name="weekday">
+        <item>Domingo</item>
+        <item>Segunda-feira</item>
+        <item>Terça-feira</item>
+        <item>Quarta-feira</item>
+        <item>Quinta-feira</item>
+        <item>Sexta-feira</item>
+        <item>Sábado</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>Seg</item>
+        <item>Ter</item>
+        <item>Qua</item>
+        <item>Qui</item>
+        <item>Sex</item>
+        <item>Sáb</item>
+        <item>Dom</item>
+    </array>
+    <array name="weekday_short">
+        <item>Dom</item>
+        <item>Seg</item>
+        <item>Ter</item>
+        <item>Qua</item>
+        <item>Qui</item>
+        <item>Sex</item>
+        <item>Sáb</item>
+    </array>
+</resources>

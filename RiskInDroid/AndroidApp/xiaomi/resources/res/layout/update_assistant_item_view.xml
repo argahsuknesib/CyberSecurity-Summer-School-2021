@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.module.update.UpdateItemView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/upgrade_item" android:paddingLeft="@dimen/common_horizontal_margin" android:paddingRight="@dimen/common_horizontal_margin" android:layout_width="match_parent" android:layout_height="70dp" android:minHeight="70dp">
+    <ImageView android:id="@+id/icon" android:layout_width="31dp" android:layout_height="31dp" android:src="@drawable/mico_icon_device_default"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp">
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/major_text_size" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:singleLine="true"/>
+            <TextView android:textSize="10dp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/has_update" android:background="@drawable/mico_update_list_icon_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="2dp" android:text="@string/update_has_update" android:layout_alignBottom="@+id/name" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/name"/>
+            <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_black" android:id="@+id/upgrade_status" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/name" android:layout_alignLeft="@+id/name" android:layout_alignStart="@+id/name"/>
+            <ProgressBar android:id="@+id/progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/upgrade_status" android:layout_alignLeft="@+id/upgrade_status" android:layout_alignStart="@+id/upgrade_status" style="?android:attr/progressBarStyleHorizontal"/>
+            <Button android:gravity="center" android:id="@+id/upgrade_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mico_update_upgrade" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/App.Widget.Button.Light"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <View style="@style/App.Divider.Horizontal"/>
+    </LinearLayout>
+</com.xiaomi.mico.module.update.UpdateItemView>

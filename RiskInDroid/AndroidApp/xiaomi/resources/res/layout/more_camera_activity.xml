@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_bar_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/tvReset" android:layout_below="@+id/title_bar_ll">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_light" item:item_title="@string/setttings_light_title" item:item_type="2" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/only_wifi" item:item_subtitle="@string/setttings_only_wifi_tip" item:item_title="@string/setttings_only_wifi" item:item_type="2" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_power" item:item_title="@string/setting_sleep_setting" item:item_type="1" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_gesture" android:visibility="gone" item:item_subtitle="@string/setttings_gesture_sub_title" item:item_title="@string/setttings_gesture_title" item:item_type="2" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_view" item:item_title="@string/setting_view" item:item_type="1" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_infrared" item:item_title="@string/setting_infared" item:item_type="1" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/alarm_move" android:visibility="gone" item:item_subtitle="@string/settings_alarm_move_title" item:item_title="@string/settings_alarm_move" item:item_type="2" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/ai_frame" android:visibility="gone" item:item_icon="@drawable/setting_ai_frame_icon" item:item_subtitle="@string/settings_ai_frame_title" item:item_title="@string/settings_ai_frame" item:item_type="2" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_device_calibration" item:item_title="@string/device_calibration" item:item_type="1" style="@style/setting_item"/>
+            <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_float_window" item:item_title="@string/item_pip_new" item:item_type="1" style="@style/setting_item"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_red_normal" android:gravity="center" android:id="@+id/tvReset" android:background="@color/mj_color_white" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/setting_restart" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

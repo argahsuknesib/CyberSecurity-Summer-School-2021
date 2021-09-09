@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_has_back="true" app:tb_title="@string/skill_privacy_auth"/>
+    <com.xiaomi.mico.common.widget.TitleDescAndSwitcher android:id="@+id/state_switch" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="57dp" android:paddingStart="17dp" android:paddingEnd="17dp" app:mc_title=" "/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+</LinearLayout>

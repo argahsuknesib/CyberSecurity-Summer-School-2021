@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/common_web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/common_web_loading" android:layout_width="match_parent" android:layout_height="4dp" android:indeterminate="false" style="@style/UpgradeProgressbar"/>
+    </FrameLayout>
+</LinearLayout>

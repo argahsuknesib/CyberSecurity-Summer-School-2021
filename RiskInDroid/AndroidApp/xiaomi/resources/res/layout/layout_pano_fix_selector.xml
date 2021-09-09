@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="5dp" android:paddingEnd="5dp">
+    <ImageButton android:id="@+id/btn_fix_type" android:background="@drawable/replay_btn_installationmode1_nor" android:layout_width="50dp" android:layout_height="50dp"/>
+    <ImageButton android:id="@+id/btn_pano_mode" android:background="@drawable/hs_selector_display_model_1" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="25dp"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar_container" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_activity_title_select"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/select_draw">
+            <TextView android:textSize="30sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:id="@+id/alarm_select_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_alarm_select_tip"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/select_draw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.xiaomi.smarthome.camera.view.widget.AlarmSelectView android:id="@+id/alarm_select_view" android:background="@drawable/camera_set_bg_01_nor" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin" android:text="@string/settings_alarm_select_live"/>
+                <View android:background="@color/mj_color_black" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="15dp" android:alpha="0.4"/>
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/settings_alarm_select_live_none"/>
+                <View android:background="@color/mj_color_alarm_select_low" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="15dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/settings_alarm_select_live_low"/>
+                <View android:background="@color/mj_color_alarm_select_normal" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="15dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/settings_alarm_select_live_normal"/>
+                <View android:background="@color/mj_color_red_heavy" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="15dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/settings_alarm_select_live_high" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

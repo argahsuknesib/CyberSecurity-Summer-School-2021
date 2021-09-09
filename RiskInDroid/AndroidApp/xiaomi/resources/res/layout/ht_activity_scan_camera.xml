@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/ht_color_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/ht_common_title_bar_black"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/layout_camera" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.hannto.print.widget.ScanCameraView android:id="@+id/camera" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:keepScreenOn="true" app:cameraFacing="0" app:cameraFlash="0" app:cameraGrid="0" app:cameraPictureSizeAspectRatio="3:4" app:cameraPictureSizeBiggest="true" app:cameraPlaySounds="false"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl_album" android:background="@drawable/ht_picture_header" android:layout_width="@dimen/ht_flash_container_size" android:layout_height="@dimen/ht_flash_container_size" android:layout_marginLeft="@dimen/ht_camera_button_margin" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ht_album"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/printer_take_picture" android:layout_width="@dimen/ht_take_photo_button_size" android:layout_height="@dimen/ht_take_photo_button_size" android:src="@drawable/ht_selector_take_photo" android:layout_centerInParent="true"/>
+        <FrameLayout android:id="@+id/fl_flash" android:background="@drawable/ht_picture_header" android:layout_width="@dimen/ht_flash_container_size" android:layout_height="@dimen/ht_flash_container_size" android:layout_marginRight="@dimen/ht_camera_button_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ht_camera_button_margin" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_flash_off_normal"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

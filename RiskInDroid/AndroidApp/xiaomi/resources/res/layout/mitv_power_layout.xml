@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/card_view_bg" android:layout_width="match_parent" android:layout_height="276dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/mitv_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:text="@string/mj_uwb_mitv_name"/>
+        <ImageView android:id="@+id/screen_on_iv" android:paddingRight="19dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/power_off" android:layout_alignTop="@+id/mitv_name_tv" android:layout_alignParentRight="true"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/mitv_poster_lotiew" android:layout_width="111dp" android:layout_height="111dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/mitv_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:text="@string/mj_uwb_mitv_control_power_off" android:layout_below="@+id/mitv_poster_lotiew" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

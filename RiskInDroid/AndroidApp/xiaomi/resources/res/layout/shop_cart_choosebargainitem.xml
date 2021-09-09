@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_all" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_bargainimage" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" fresco:actualImageScaleType="0" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_5" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_5" android:id="@+id/item_compatible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_5" android:textColor="@color/orange" android:id="@+id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/item_select" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/shop_radio_unselected"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

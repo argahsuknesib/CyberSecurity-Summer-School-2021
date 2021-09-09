@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="62dp">
+    <ImageView android:id="@+id/thumb" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="62dp" android:src="@drawable/image_loading" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/album_video" android:background="@drawable/camera_album_item_video_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:src="@drawable/alarm_video"/>
+        <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/camera_white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/title" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/camera_white" android:gravity="center" android:id="@+id/tv_downloading" android:background="@drawable/album_list_item_downloading_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="62dp" android:text="@string/cs_downloading"/>
+    <ProgressBar android:layout_gravity="bottom" android:id="@+id/sbProgress" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/mp4_download_view_video_progress" android:minHeight="2dp" android:thumb="@null" android:thumbOffset="0dp" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginBottom="3dp" android:src="@drawable/delete_unchecked"/>
+</FrameLayout>

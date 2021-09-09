@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_gray_heavy" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.ShadeImageView android:id="@+id/back_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_black_00_transparent" app:tb_has_back="true"/>
+        <ImageView android:id="@+id/img_cover" android:layout_width="170dp" android:layout_height="170dp" android:layout_marginTop="10dp"/>
+        <TextView android:textSize="19dp" android:textColor="@color/mj_color_white" android:id="@+id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp"/>
+        <ScrollView android:id="@+id/station_intro_contain" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="13dp" android:layout_marginBottom="30dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_white_60_transparent" android:id="@+id/station_intro" android:layout_width="match_parent" android:layout_height="match_parent" android:lineSpacingExtra="6dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

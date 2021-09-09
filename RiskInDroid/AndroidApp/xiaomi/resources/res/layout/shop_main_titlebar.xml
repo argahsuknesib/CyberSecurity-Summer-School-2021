@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/title_bar_LL" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_title_bg" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height" android:scaleType="fitXY"/>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/title_bar_RL" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:id="@+id/title_bar_back" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/shop_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/title_bar_home" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/shop_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_title_icon" android:layout_width="80dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="9dp" fresco:actualImageScaleType="0"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/title_mi_logo" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/title_mi_icon" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/shop_icon_logo"/>
+                <com.mi.global.shop.widget.CustomTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/title_mi_text" android:paddingLeft="3dp" android:paddingRight="7dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="1dp" style="@style/TextAppearance.Title.Bar"/>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:id="@+id/iv_store_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="?android:attr/actionBarSize" android:src="@drawable/ic_store_title" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/title_right_bar" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_order_list" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:duplicateParentState="true" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/shop_ic_order_list" android:scaleType="center"/>
+            <FrameLayout android:id="@+id/title_bar_cart_view" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/shopping_cart" android:paddingLeft="7dp" android:paddingRight="7dp" android:duplicateParentState="true" android:layout_width="40dp" android:layout_height="match_parent" fresco:actualImageScaleType="5" fresco:failureImage="@drawable/shop_icon_cart" fresco:placeholderImage="@drawable/shop_icon_cart"/>
+                <View android:layout_gravity="center" android:id="@+id/shopping_cart_center" android:visibility="invisible" android:layout_width="1dp" android:layout_height="1dp" android:layout_marginRight="3dp"/>
+            </FrameLayout>
+            <com.mi.global.shop.widget.CustomTextView android:textColor="@color/title_text_color_shadow" android:gravity="center_vertical" android:id="@+id/title_bar_text_right" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/forget_password_link"/>
+            <ImageView android:id="@+id/title_bar_close_btn" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/shop_titlebar_close"/>
+            <ImageView android:id="@+id/title_bar_refresh_btn" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/shop_title_bar_refresh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/custom_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/title_right_bar" android:layout_toRightOf="@+id/title_bar_home" android:layout_centerInParent="true">
+            <com.mi.global.shop.widget.CustomTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/title_bar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" style="@style/TextAppearance.Title.Bar"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_gravity="center" android:id="@+id/center_container" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

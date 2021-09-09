@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/ht_take_photo_button_size" android:width="@dimen/ht_take_photo_button_size">
+        <shape android:shape="oval">
+            <solid android:color="@color/ht_camera_bg_color"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/ht_take_photo_button_center_size" android:width="@dimen/ht_take_photo_button_center_size">
+        <shape android:shape="oval">
+            <solid android:color="#ffffffff"/>
+        </shape>
+    </item>
+</layer-list>

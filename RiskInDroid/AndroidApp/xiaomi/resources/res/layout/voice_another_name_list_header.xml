@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="32dp">
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/voice_another_name" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/std_titlebar_edit_mode_right_states_v3" android:id="@+id/edit" android:paddingRight="21dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_cardless_plan_container" android:padding="1dp" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#888888" android:gravity="center" android:id="@+id/tv_cardless_emi_scheme" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="₹ 123.33" android:layout_weight="1"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#888888" android:gravity="center" android:id="@+id/cardless_emi_down_payment" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="₹ 159.00" android:layout_weight="1"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#888888" android:gravity="center" android:id="@+id/cardless_emi_total_amount" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="₹ 899.00" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_cardless_plan_checked" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:src="@drawable/shop_multiple_choice_s"/>
+</FrameLayout>

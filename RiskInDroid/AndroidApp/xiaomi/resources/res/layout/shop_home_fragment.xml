@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.pulltorefresh.SimplePullToRefreshLayout android:id="@+id/home_fragment_ptr" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mi.global.shop.widget.BaseListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@null" android:divider="@null" android:fastScrollEnabled="false"/>
+    </com.mi.global.shop.widget.pulltorefresh.SimplePullToRefreshLayout>
+    <com.mi.global.shop.widget.EmptyLoadingViewPlus android:gravity="center" android:layout_gravity="bottom" android:id="@+id/loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/noticeboard" android:background="@drawable/shop_home_notice_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:alpha="0.9">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/notice_text" android:padding="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/notice_close" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/shop_notice_close"/>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/activity_entrance" android:visibility="gone" android:layout_width="70dp" android:layout_height="95dp" fresco:actualImageScaleType="0"/>
+</FrameLayout>

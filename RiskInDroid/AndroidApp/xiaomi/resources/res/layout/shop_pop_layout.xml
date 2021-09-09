@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="450px">
+    <ListView android:id="@+id/lv" android:background="@drawable/shop_bg_tv_unselector" android:paddingLeft="13dp" android:paddingTop="1dp" android:paddingRight="6dp" android:paddingBottom="1dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/shop_list_item_divider" android:dividerHeight="1dp" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/push_msg_view" android:background="@drawable/push_shadow" android:layout_width="match_parent" android:layout_height="72dp" android:alpha="0.99">
+    <RelativeLayout android:background="@drawable/push_view_bg" android:layout_width="match_parent" android:layout_height="66dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/user_avatar" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:layout_centerVertical="true" app:placeholderImage="@drawable/mj_icon_default_avatar" app:placeholderImageScaleType="5" app:roundAsCircle="true"/>
+        <RelativeLayout android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginRight="21dp" android:layout_toRightOf="@+id/user_avatar" android:layout_toEndOf="@+id/user_avatar">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textStyle="bold" android:textColor="#303133" android:ellipsize="end" android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="#303133" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="" android:singleLine="true" android:layout_below="@+id/tv_nickname"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

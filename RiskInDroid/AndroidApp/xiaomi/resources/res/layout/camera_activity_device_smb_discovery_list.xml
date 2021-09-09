@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_transparent_black"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.camera.view.CameraPullDownRefreshListView android:layout_gravity="center_horizontal" android:id="@+id/list" android:background="@color/mj_color_white" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:footerDividersEnabled="false"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/white_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_alarm_common_no_bg"/>
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_black_30_transparent" android:id="@+id/white_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/smb_no_share_directory" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/mj_color_gray_lighter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

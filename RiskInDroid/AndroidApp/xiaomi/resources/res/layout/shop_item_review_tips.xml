@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+        <ImageView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:src="@color/tips_icon_color"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_content_color" android:id="@+id/tv_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="20dp" android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+</FrameLayout>

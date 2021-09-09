@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.shop.widget.NoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/home_image_grid_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:numColumns="2"/>

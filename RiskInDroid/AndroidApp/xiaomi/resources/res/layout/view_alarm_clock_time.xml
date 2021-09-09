@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.common.widget.AlarmClockTimeView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/hour_tens" android:background="@drawable/clock_time_0" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/hour_units" android:background="@drawable/clock_time_0" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:background="@drawable/clock_time_dot" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/minute_tens" android:background="@drawable/clock_time_0" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/minute_units" android:background="@drawable/clock_time_0" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.xiaomi.mico.common.widget.AlarmClockTimeView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0.5dp" layout="@layout/common_white_empty_view_new"/>
+    <include layout="@layout/include_layout_empty_other_home"/>
+    <com.xiaomi.smarthome.library.common.widget.SM4LayerRecycleView android:id="@+id/scene_rv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.AlarmEditTitleBar android:id="@+id/alarm_setting_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+        <com.xiaomi.mico.common.widget.AlarmTimePicker android:id="@+id/time_picker" android:background="@drawable/bg_alert_white" android:layout_width="match_parent" android:layout_height="190dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_alert_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.xiaomi.mico.common.widget.AlarmSettingItem android:id="@+id/item_repeat" android:layout_width="match_parent" android:layout_height="wrap_content" app:al_showDivider="true" app:al_showMore="true" app:al_title="@string/time_setting_repeat"/>
+            <com.xiaomi.mico.common.widget.AlarmSettingItem android:id="@+id/item_ring" android:layout_width="match_parent" android:layout_height="wrap_content" app:al_showDivider="true" app:al_showMore="true" app:al_title="@string/alarm_ring"/>
+            <com.xiaomi.mico.common.widget.AlarmSettingItem android:id="@+id/item_comment" android:layout_width="match_parent" android:layout_height="wrap_content" app:al_description="@string/tool_timer_comment_hint" app:al_showDivider="false" app:al_showMore="true" app:al_title="@string/tool_timer_comment"/>
+        </LinearLayout>
+        <com.xiaomi.mico.common.widget.AlarmSettingItem android:id="@+id/item_volume" android:background="@drawable/bg_alert_white" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="10dp" app:al_showDivider="false" app:al_showMore="false" app:al_showProgress="true" app:al_title="@string/common_volume"/>
+    </LinearLayout>
+</RelativeLayout>

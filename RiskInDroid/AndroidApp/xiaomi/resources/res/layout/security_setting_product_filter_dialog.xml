@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/rounded_white_bg_nor_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_size_16sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="25dp" android:text="@string/device_setting_filter"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="27dp" android:layout_marginTop="17dp" android:layout_marginBottom="12dp" android:text="@string/home_name_short"/>
+            <com.xiaomi.smarthome.framework.page.verify.filter.SettingsFilterLayout android:id="@+id/home_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="27dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="@string/room_name"/>
+            <com.xiaomi.smarthome.framework.page.verify.filter.SettingsFilterLayout android:id="@+id/room_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="27dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="@string/device_product_category"/>
+            <com.xiaomi.smarthome.framework.page.verify.filter.SettingsFilterLayout android:id="@+id/product_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="18.5dp" android:layout_marginBottom="27dp">
+        <Button android:textSize="16sp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/btn_security_setting_reset" android:background="@drawable/security_setting_dialog_btn_selector" android:layout_width="147dp" android:layout_height="46dp" android:text="@string/device_setting_reset" style="?android:attr/borderlessButtonStyle"/>
+        <Button android:textSize="16sp" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/btn_security_setting_confirm" android:background="@drawable/security_setting_dialog_btn_selector" android:layout_width="147dp" android:layout_height="46dp" android:layout_marginLeft="22dp" android:text="@string/tag_roger" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

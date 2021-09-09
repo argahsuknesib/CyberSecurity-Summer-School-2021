@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android" android:delay="0.1" android:animation="@anim/mico_immersion_fade_out" android:animationOrder="normal"/>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_icon" android:background="@drawable/onetime_pwd_no_item_bg" android:layout_width="160dp" android:layout_height="160dp" android:layout_marginTop="170dp">
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_normal" android:gravity="center" android:layout_width="match_parent" android:layout_height="19dp" android:layout_marginTop="130dp" android:text="@string/one_time_password_no_record" android:height="19dp"/>
+    </LinearLayout>
+</LinearLayout>

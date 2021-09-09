@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:visibility="visible" android:layout_width="56dp" android:layout_height="56dp" android:layout_centerHorizontal="true" fresco:actualImageScaleType="2"/>
+    <ImageView android:id="@+id/icon_add" android:background="@drawable/mijia_icon_add_selector" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_white_90_transparent" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="61dp" android:minWidth="56dp" android:maxLines="2" android:lines="2" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

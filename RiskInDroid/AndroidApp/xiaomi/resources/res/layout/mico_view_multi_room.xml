@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.music.player.multiroom.MultiRoomView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mico_bg_playerlist_bg_white" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/content_text_size" android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/tv_player_shutdown_timer_hint" android:layout_width="match_parent" android:layout_height="62dp" android:text="@string/multi_room_title" android:singleLine="true"/>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/multi_room_device_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.xiasuhuei321.loadingdialog.view.LoadCircleView android:layout_gravity="center" android:id="@+id/multi_room_loading_iv" android:layout_width="50dp" android:layout_height="50dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="14dp" android:layout_marginBottom="27dp">
+        <Button android:textSize="@dimen/font_size_16sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavy" android:layout_gravity="center_horizontal" android:id="@+id/cancel_btn" android:background="@drawable/mico_playerlist_cancel_btn_bg_selecter" android:layout_width="0dp" android:layout_height="46dp" android:text="@string/common_cancel" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        <View android:layout_width="12dp" android:layout_height="0dp"/>
+        <Button android:textSize="@dimen/font_size_16sp" android:textStyle="bold" android:textColor="@drawable/mico_common_btn_selecter" android:layout_gravity="center_horizontal" android:id="@+id/ok_btn" android:background="@drawable/mico_common_btn_big_orange_fill" android:layout_width="0dp" android:layout_height="46dp" android:text="@string/common_confirm" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</com.xiaomi.mico.music.player.multiroom.MultiRoomView>

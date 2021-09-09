@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="one">Максимальное количество добавляемых действий: %1d</item>
+        <item quantity="few">Максимальное количество добавляемых действий: %1d</item>
+        <item quantity="many">Максимальное количество добавляемых действий: %1d</item>
+        <item quantity="other">Максимальное количество добавляемых действий: %1d</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="one">Среднее значение с %s устройства поблизости</item>
+        <item quantity="few">Среднее значение с %s устройств поблизости</item>
+        <item quantity="many">Среднее значение с %s устройств поблизости</item>
+        <item quantity="other">Среднее значение с %s устройств поблизости</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="one">%d д.</item>
+        <item quantity="few">%d дн.</item>
+        <item quantity="many">%d дн.</item>
+        <item quantity="other">%d дн.</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="one">%d ч</item>
+        <item quantity="few">%d ч</item>
+        <item quantity="many">%d ч</item>
+        <item quantity="other">%d ч</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="one">%d мин</item>
+        <item quantity="few">%d мин</item>
+        <item quantity="many">%d мин</item>
+        <item quantity="other">%d мин</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="one">%d с</item>
+        <item quantity="few">%d с</item>
+        <item quantity="many">%d с</item>
+        <item quantity="other">%d с</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="one">Устройство (%1$s) добавлено успешно</item>
+        <item quantity="few">Устройства (%1$s) добавлены успешно</item>
+        <item quantity="many">Устройства (%1$s) добавлены успешно</item>
+        <item quantity="other">Устройства (%1$s) добавлены успешно</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="one">%1$d устройство</item>
+        <item quantity="few">%1$d устройства</item>
+        <item quantity="many">%1$d устройств</item>
+        <item quantity="other">%1$d устройств</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="one">%1$d устройство</item>
+        <item quantity="few">%1$d устройства</item>
+        <item quantity="many">%1$d устройств</item>
+        <item quantity="other">%1$d устройств</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="one">%d смарт-камера</item>
+        <item quantity="few">смарт-камер: %d</item>
+        <item quantity="many">смарт-камер: %d</item>
+        <item quantity="other">смарт-камер: %d</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="one">%d мин</item>
+        <item quantity="few">%d мин</item>
+        <item quantity="many">%d мин</item>
+        <item quantity="other">%d мин</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="one">Общее использование: %d день,</item>
+        <item quantity="few">Общее использование: %d дня,</item>
+        <item quantity="many">Общее использование: %d дней,</item>
+        <item quantity="other">Общее использование: %d дней,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="one">Удалить %1$s выбранное сообщение?</item>
+        <item quantity="few">Удалить %1$s выбранных сообщения?</item>
+        <item quantity="many">Удалить %1$s выбранных сообщений?</item>
+        <item quantity="other">Удалить %1$s выбранных сообщений?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="one">Удалить выбранную запись (%1$s)?</item>
+        <item quantity="few">Удалить выбранные записи (%1$s)?</item>
+        <item quantity="many">Удалить выбранные записи (%1$s)?</item>
+        <item quantity="other">Удалить выбранные записи (%1$s)?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="one">Найдено %d новое устройство, нажмите для установки</item>
+        <item quantity="few">Найдено новых устройств: %d, нажмите для установки</item>
+        <item quantity="many">Найдено новых устройств: %d, нажмите для установки</item>
+        <item quantity="other">Найдено новых устройств: %d, нажмите для установки</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="one">%1$s устройство не было назначено в комнату</item>
+        <item quantity="few">%1$s Устройства не были назначены в комнату</item>
+        <item quantity="many">%1$s Устройства не были назначены в комнату</item>
+        <item quantity="other">%1$s Устройства не были назначены в комнату</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="one">Удалить %1$s выбранное устройство?</item>
+        <item quantity="few">Удалить %1$s выбранных устройства?</item>
+        <item quantity="many">Удалить %1$s выбранных устройств?</item>
+        <item quantity="other">Удалить %1$s выбранных устройств?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="one">Убрать выбранную сцену %1$d из избранного?</item>
+        <item quantity="few">Убрать выбранные сцены %1$d из избранного?</item>
+        <item quantity="many">Убрать выбранные сцены %1$d из избранного?</item>
+        <item quantity="other">Убрать выбранные сцены %1$d из избранного?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="one">%1$s м</item>
+        <item quantity="few">%1$s м</item>
+        <item quantity="many">%1$s м</item>
+        <item quantity="other">%1$s м</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="one">Перетащите устройства для сортировки элементов, вышеуказанное устройство %d отображается на карте</item>
+        <item quantity="few">Перетащите устройства для сортировки элементов, вышеуказанное устройство %d отображается на карте</item>
+        <item quantity="many">Перетащите устройства для сортировки элементов, вышеуказанное устройство %d отображается на карте</item>
+        <item quantity="other">Перетащите устройства для сортировки элементов, вышеуказанное устройство %d отображается на карте</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="one">Выбрано: %1$d</item>
+        <item quantity="few">Выбрано: %1$d</item>
+        <item quantity="many">Выбрано: %1$d</item>
+        <item quantity="other">Выбрано: %1$d</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="one">Выбрано: %1$s</item>
+        <item quantity="few">Выбрано: %1$s</item>
+        <item quantity="many">Выбрано: %1$s</item>
+        <item quantity="other">Выбрано: %1$s</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="one">Выбрано сцен: %1$d</item>
+        <item quantity="few">Выбрано сцен: %1$d</item>
+        <item quantity="many">Выбрано сцен: %1$d</item>
+        <item quantity="other">Выбрано сцен: %1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="one">%1$s%2$s</item>
+        <item quantity="few">%1$s%2$s и т.п..</item>
+        <item quantity="many">%1$s%2$s и т.п..</item>
+        <item quantity="other">%1$s%2$s и т.п..</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="one">%d общее устройство</item>
+        <item quantity="few">%d общих устройства</item>
+        <item quantity="many">%d общих устройств</item>
+        <item quantity="other">%d общих устройств</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="one">Общих устройств: %s</item>
+        <item quantity="few">Общих устройств: %s</item>
+        <item quantity="many">Общих устройств: %s</item>
+        <item quantity="other">Общих устройств: %s</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="one">Контактная информация может содержать до %1$d символа</item>
+        <item quantity="few">Контактная информация может содержать до %1$d символов</item>
+        <item quantity="many">Контактная информация может содержать до %1$d символов</item>
+        <item quantity="other">Контактная информация может содержать до %1$d символов</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="one">Ваш отзыв может содержать до %1$d символа</item>
+        <item quantity="few">Ваш отзыв может содержать до %1$d символов</item>
+        <item quantity="many">Ваш отзыв может содержать до %1$d символов</item>
+        <item quantity="other">Ваш отзыв может содержать до %1$d символов</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="one">Доступно обновление встроенного ПО (%1$s)</item>
+        <item quantity="few">Доступны обновления встроенного ПО (%1$s)</item>
+        <item quantity="many">Доступны обновления встроенного ПО (%1$s)</item>
+        <item quantity="other">Доступны обновления встроенного ПО (%1$s)</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="one">Обновление встроенного ПО (%1$s) завершено</item>
+        <item quantity="few">Обновления встроенного ПО (%1$s) завершены</item>
+        <item quantity="many">Обновления встроенного ПО (%1$s) завершены</item>
+        <item quantity="other">Обновления встроенного ПО (%1$s) завершены</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="one">Служба облачного хранилища истекает через %1$d день, нажмите « Обновить».</item>
+        <item quantity="few">Служба облачного хранилища истекает через %1$d дня, нажмите на обновление.</item>
+        <item quantity="many">Служба облачного хранилища истекает через %1$d дней, нажмите на обновление.</item>
+        <item quantity="other">Служба облачного хранилища истекает через %1$d дней, нажмите на обновление.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="one">%1$s дом</item>
+        <item quantity="few">%1$s дома</item>
+        <item quantity="many">%1$s дома</item>
+        <item quantity="other">%1$s дома</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="one">%1$s устройство</item>
+        <item quantity="few">%1$s устройства</item>
+        <item quantity="many">%1$s устройств</item>
+        <item quantity="other">%1$s устройств</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="one">%1$s комната</item>
+        <item quantity="few">%1$s комнаты</item>
+        <item quantity="many">%1$s комнаты</item>
+        <item quantity="other">%1$s комнаты</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="one">%d пульт</item>
+        <item quantity="few">%d пульта</item>
+        <item quantity="many">%d пультов</item>
+        <item quantity="other">%d пультов</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="one">%d подключенное устройство</item>
+        <item quantity="few">%d подключенных устройства</item>
+        <item quantity="many">%d подключенных устройств</item>
+        <item quantity="other">%d подключенных устройств</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="one">Найдено %d умное устройство, нажмите, чтобы завершить</item>
+        <item quantity="few">Найдено %d умных устройства, нажмите, чтобы завершить</item>
+        <item quantity="many">Найдено %d умных устройств, нажмите, чтобы завершить</item>
+        <item quantity="other">Найдено %d умных устройств, нажмите, чтобы завершить</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="one">Световая группа может состоять из %1$s лампы.</item>
+        <item quantity="few">Световая группа может состоять из стольких ламп: %1$s.</item>
+        <item quantity="many">Световая группа может состоять из стольких ламп: %1$s.</item>
+        <item quantity="other">Световая группа может состоять из стольких ламп: %1$s.</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="one">Доступно обновление для %d плагина</item>
+        <item quantity="few">Доступны обновления для %d плагинов</item>
+        <item quantity="many">Доступны обновления для %d плагинов</item>
+        <item quantity="other">Доступны обновления для %d плагинов</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="one">%dч</item>
+        <item quantity="few">%dч</item>
+        <item quantity="many">%dч</item>
+        <item quantity="other">%dч</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="one">%dмин</item>
+        <item quantity="few">%dмин</item>
+        <item quantity="many">%dмин</item>
+        <item quantity="other">%dмин</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="one">Поблизости доступно %1$d устройство</item>
+        <item quantity="few">Поблизости доступно %1$d устройства</item>
+        <item quantity="many">Поблизости доступно %1$d устройств</item>
+        <item quantity="other">Поблизости доступно %1$d устройств</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="one">Устройства в сети: %d</item>
+        <item quantity="few">Устройства в сети: %d</item>
+        <item quantity="many">Устройства в сети: %d</item>
+        <item quantity="other">Устройства в сети: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="one">Всего %1$s плагин</item>
+        <item quantity="few">Всего %1$s плагина</item>
+        <item quantity="many">Всего %1$s плагинов</item>
+        <item quantity="other">Всего %1$s плагинов</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="one">Вы получили %d новое сообщение</item>
+        <item quantity="few">Вы получили %d новых сообщения</item>
+        <item quantity="many">Вы получили %d новых сообщений</item>
+        <item quantity="other">Вы получили %d новых сообщений</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d новое уведомление</item>
+        <item quantity="few">%d новых уведомления</item>
+        <item quantity="many">%d новых уведомлений</item>
+        <item quantity="other">%d нового уведомления</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="one">Переключатель%d</item>
+        <item quantity="few">Переключатель%d</item>
+        <item quantity="many">Переключатель%d</item>
+        <item quantity="other">Переключатель%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="one">Добавлено %1$d устройство</item>
+        <item quantity="few">Добавлено %1$d устройства</item>
+        <item quantity="many">Добавлено %1$d устройств</item>
+        <item quantity="other">Добавлено %1$d устройств</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="one">Маршрутизатор AIoT обнаружил %1$d устройство</item>
+        <item quantity="few">Количество устройств, обнаруженных маршрутизатором AIoT: %1$d</item>
+        <item quantity="many">Количество устройств, обнаруженных маршрутизатором AIoT: %1$d</item>
+        <item quantity="other">Количество устройств, обнаруженных маршрутизатором AIoT: %1$d</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="one">Маршрутизатор Mi обнаружил %1$d устройство</item>
+        <item quantity="few">Количество устройств, обнаруженных маршрутизатором Mi: %1$d</item>
+        <item quantity="many">Количество устройств, обнаруженных маршрутизатором Mi: %1$d</item>
+        <item quantity="other">Количество устройств, обнаруженных маршрутизатором Mi: %1$d</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="one">%1$s колонка Mi AI</item>
+        <item quantity="few">Колонок Mi AI: %1$s</item>
+        <item quantity="many">Колонок Mi AI: %1$s</item>
+        <item quantity="other">Колонок Mi AI: %1$s</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="one">Удалить выбранный умный сценарий(%1$s)?</item>
+        <item quantity="few">Удалить выбранные умные сценарии (%1$s)?</item>
+        <item quantity="many">Удалить выбранные умные сценарии (%1$s)?</item>
+        <item quantity="other">Удалить выбранные умные сценарии (%1$s)?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="one">Включить через %dд</item>
+        <item quantity="few">Включить через %dдн</item>
+        <item quantity="many">Включить через %dдн</item>
+        <item quantity="other">Включить через %dдн</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="one">Включить через %dч</item>
+        <item quantity="few">Включить через %dч</item>
+        <item quantity="many">Включить через %dч</item>
+        <item quantity="other">Включить через %dч</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="one">Выбрано: %d</item>
+        <item quantity="few">Выбрано: %d</item>
+        <item quantity="many">Выбрано: %d</item>
+        <item quantity="other">Выбрано: %d</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="one">%1$d устройство</item>
+        <item quantity="few">%1$d устройства</item>
+        <item quantity="many">%1$d устройств</item>
+        <item quantity="other">%1$d устройств</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="one">%1$s (%2$d устройство)</item>
+        <item quantity="few">%1$s (%2$d устройства)</item>
+        <item quantity="many">%1$s (%2$d устройств)</item>
+        <item quantity="other">%1$s (%2$d устройств)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="one">Доступно для %1$s (%2$d человек)</item>
+        <item quantity="few">Доступно для %1$s (%2$d человека)</item>
+        <item quantity="many">Доступно для %1$s (%2$d человек)</item>
+        <item quantity="other">Доступно для %1$s (%2$d человек)</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="one">%d мин позже</item>
+        <item quantity="few">%d мин позже</item>
+        <item quantity="many">%d мин позже</item>
+        <item quantity="other">%d мин позже</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="one">%d с позже</item>
+        <item quantity="few">%d с позже</item>
+        <item quantity="many">%d с позже</item>
+        <item quantity="other">%d с позже</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="one">%d включен</item>
+        <item quantity="few">%d включены</item>
+        <item quantity="many">%d включены</item>
+        <item quantity="other">%d включены</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="one">%d выбран</item>
+        <item quantity="few">%d выбрано</item>
+        <item quantity="many">%d выбрано</item>
+        <item quantity="other">%d выбрано</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="one">%d камера</item>
+        <item quantity="few">%d камер(-ы)</item>
+        <item quantity="many">%d камер(-ы)</item>
+        <item quantity="other">%d камер(-ы)</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="one">Загрузка…%1$d</item>
+        <item quantity="few">Загрузка…%1$d</item>
+        <item quantity="many">Загрузка…%1$d</item>
+        <item quantity="other">Загрузка…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="one">Каждому устройству можно назначить не более %1$s голосового псевдонима.</item>
+        <item quantity="few">Каждому устройству можно назначить не более %1$s голосовых псевдонимов.</item>
+        <item quantity="many">Каждому устройству можно назначить не более %1$s голосовых псевдонимов.</item>
+        <item quantity="other">Каждому устройству можно назначить не более %1$s голосовых псевдонимов.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="one">%1$d %2$s обнаружено, нажмите для подключения</item>
+        <item quantity="few">%1$d %2$s обнаружено, нажмите для подключения</item>
+        <item quantity="many">%1$d %2$s обнаружено, нажмите для подключения</item>
+        <item quantity="other">%1$d %2$s обнаружено, нажмите для подключения</item>
+    </plurals>
+</resources>

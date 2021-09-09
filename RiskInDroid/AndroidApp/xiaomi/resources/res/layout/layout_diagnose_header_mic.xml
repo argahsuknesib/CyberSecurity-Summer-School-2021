@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_circle" android:layout_width="@dimen/dimen_100" android:layout_height="@dimen/dimen_100" android:layout_centerHorizontal="true">
+        <in.cashify.otex.widget.VisualizerView android:id="@+id/visualizer_view" android:background="@android:color/transparent" android:padding="@dimen/dimen_18" android:layout_width="match_parent" android:layout_height="match_parent" app:backColor="@android:color/white" app:numColumns="20" app:renderColor="@color/otexColorPrimary" app:renderRange="2" app:renderType="1"/>
+        <ImageView android:id="@+id/image_diagnose_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@string/app_name"/>
+        <ImageView android:id="@+id/image_shape" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shape_inner_circle" android:contentDescription="@string/app_name"/>
+        <in.cashify.otex.widget.CircleRoadProgress android:id="@+id/circleProgress" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" app:arcLoadingColor="@color/otexColorOrangeLight" app:arcLoadingStrokeWidth="@dimen/dimen_3" app:isDrawInnerCircle="true" app:roadColor="#29000000" app:roadInnerCircleColor="#29000000" app:roadOuterCircleColor="#ffffff" app:roadOuterCircleStrokeWidth="@dimen/dimen_8" app:roadStrokeWidth="@dimen/dimen_3"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_15sp" android:gravity="center" android:id="@+id/tv_test_name" android:layout_width="@dimen/dimen_128" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:layout_below="@+id/rl_circle"/>
+</RelativeLayout>

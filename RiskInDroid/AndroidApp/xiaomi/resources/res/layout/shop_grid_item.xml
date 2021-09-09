@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.shop.imageselector.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.imageselector.view.SquaredSimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" fresco:actualImageScaleType="6"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/checkmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.mi.global.shop.imageselector.view.SquareFrameLayout>

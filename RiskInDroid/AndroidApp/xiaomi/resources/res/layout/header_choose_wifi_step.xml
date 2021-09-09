@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/common_list_space_empty"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="32dp">
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_vertical" android:id="@+id/list_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:text="@string/kuailian_save_passwd" android:layout_marginStart="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

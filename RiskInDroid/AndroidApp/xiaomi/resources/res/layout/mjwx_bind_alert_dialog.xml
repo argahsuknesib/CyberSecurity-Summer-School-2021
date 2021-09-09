@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/parentPanel" android:background="@color/mj_color_background" android:layoutAnimation="@anim/v5_dialog_layout_anim" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="@dimen/mj_alertdialog_top_indent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/alertdialog_content_panel_margin_bottom" android:layout_weight="1">
+        <ScrollView android:id="@+id/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/alertdialog_message_text_size" android:textColor="@color/mj_color_black_50_transparent" android:gravity="center" android:id="@+id/message" android:paddingLeft="@dimen/alertdialog_content_panel_message_padding" android:paddingRight="@dimen/alertdialog_content_panel_message_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:paddingLeft="@dimen/alertdialog_button_panel_padding_horizontal" android:paddingRight="@dimen/alertdialog_button_panel_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/alertdialog_button_panel_padding_vertical">
+        <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_50_transparent" android:gravity="center" android:id="@+id/btnNegative" android:background="@drawable/common_btn_left" android:layout_width="0dp" android:layout_height="40.33dp" android:singleLine="true" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_50_transparent" android:gravity="center" android:id="@+id/btnPositive" android:background="@drawable/common_btn_right" android:layout_width="0dp" android:layout_height="40.33dp" android:singleLine="true" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fragment_main" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:id="@+id/scroll_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_top_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/passport_sign_in_title"/>
+                <TextView android:layout_gravity="start" android:id="@+id/phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已经发送验证吗到:+8612888888888" android:paddingStart="4dp" android:paddingEnd="0dp"/>
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/PassportForceDark" android:id="@+id/ticket_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <com.google.android.material.textfield.TextInputEditText android:ellipsize="end" android:id="@+id/ticket" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/ticket_hint" android:singleLine="true" android:layout_centerVertical="true" android:inputType="number" android:textDirection="locale" android:textAlignment="viewStart"/>
+                        <TextView android:textSize="@dimen/passport_text_size" android:textColor="@color/passport_color_send_ticket" android:id="@+id/action_get_ph_ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_ph_ticket" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/PassportButtonBorderless"/>
+                    </RelativeLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:layout_gravity="start" android:id="@+id/sign_in_user_id_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="@string/passport_set_password" android:paddingStart="4dp" android:paddingEnd="0dp"/>
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/PassportForceDark" android:id="@+id/password_wapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/passport_colorPrimaryDark">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="35dp" android:hint="@string/psw_hint" android:inputType="textPassword" android:imeOptions="actionUnspecified"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/ph_sign_in_btn" android:text="@string/passport_next_step" style="@style/Passport.HighlightRoundButton"/>
+                <TextView android:textSize="13sp" android:textColor="@color/passport_color_send_ticket" android:layout_gravity="end" android:id="@+id/can_not_receive_sms_verify_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/passport_can_not_receive_verification_code" android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

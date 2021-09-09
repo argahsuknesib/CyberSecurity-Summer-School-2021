@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="@dimen/listitem_7_height">
+    <ImageView android:id="@+id/room_icon" android:background="@drawable/shape_bg_room_icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="13dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="13dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/listitem_7_height" android:layout_marginLeft="9dp" android:layout_toRightOf="@+id/room_icon" android:layout_marginStart="9dp" android:layout_toEndOf="@+id/room_icon">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220dp" android:maxLines="1"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_item" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="13dp" android:layout_alignParentBottom="true" android:layout_marginStart="13dp"/>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/mibi_counter_balance_info_padding_left" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/mibi_text_size_payment_small" android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mibi_payment_general_small_gap" android:layout_marginBottom="@dimen/mibi_payment_general_small_gap" android:text="@string/mibi_giftcard_discount" style="@style/Mibi.TextAppearance.Gray"/>
+    <View android:background="@color/mibi_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/mibi_divider"/>
+    <com.mibi.sdk.pay.ui.widget.MibiScrollView android:scrollbarSize="4dp" android:scrollbarThumbVertical="@color/mibi_divider_color" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" app:maxHeight="@dimen/mibi_discount_container_max_height">
+        <TableLayout android:id="@+id/table_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0"/>
+    </com.mibi.sdk.pay.ui.widget.MibiScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar_container" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_alarm_sensivity_hight" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_alarm_sensivity_hight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_shoot_mode_arrow"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/tv_alarm_sensivity_hight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_sensivity_hight"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_alarm_sensivity_middle" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_alarm_sensivity_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_shoot_mode_arrow"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/tv_alarm_sensivity_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_sensivity_middle"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_alarm_sensivity_low" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_alarm_sensivity_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_shoot_mode_arrow"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/tv_alarm_sensivity_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_sensivity_low"/>
+        </LinearLayout>
+        <View android:background="@color/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

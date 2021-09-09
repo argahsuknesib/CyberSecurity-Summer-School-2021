@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ad_layer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ad_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/logo" android:background="@drawable/splash_logo" android:layout_width="match_parent" android:layout_height="73dp" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name2"/>
+    <View android:id="@+id/logo_jump" android:layout_width="93dp" android:layout_height="73dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/ad_label_fl" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginRight="17dp" android:layout_marginBottom="18dp" android:layout_alignParentRight="true" android:layout_marginEnd="17dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_white_80_transparent" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_label_tv" android:background="@drawable/splash_promotion_admark_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广告" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/jump_image" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:layout_marginBottom="17dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="17dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_white" android:gravity="center" android:layout_gravity="center" android:background="@drawable/splash_promotion_jump_bg" android:layout_width="60dp" android:layout_height="30dp" android:text="@string/splash_promotion_jump"/>
+    </FrameLayout>
+</RelativeLayout>

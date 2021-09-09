@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/infrared_auto" android:layout_marginTop="@dimen/title_margin_top" item:item_title="@string/infrared_auto" item:item_type="3" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/infrared_close" item:item_title="@string/infrared_close" item:item_type="3" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/infrared_open" item:item_title="@string/infrared_open" item:item_type="3" style="@style/setting_item"/>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="#999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin" android:layout_marginTop="@dimen/text_margin_top" android:layout_marginBottom="@dimen/text_margin_bottom" android:text="@string/infrared_tip" android:lineSpacingExtra="5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin" android:layout_marginRight="@dimen/item_margin" android:layout_marginBottom="@dimen/text_margin_bottom">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/camera_infrared_pic_normal" android:scaleType="fitXY"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_margin_top" android:text="@string/wdr_before"/>
+        </LinearLayout>
+        <View android:layout_width="16dp" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/camera_infrared_pic_infrared" android:scaleType="fitXY"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_margin_top" android:text="@string/infrared_after"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

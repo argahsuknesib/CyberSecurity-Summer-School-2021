@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_background" app:tb_has_back="true" app:tb_has_divider="false" app:tb_left_icon="@drawable/mj_common_title_bar_return" app:tb_title="@string/music_pause_timer" app:tb_title_color="@color/mj_color_black"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6dp" app:layoutManager="LinearLayoutManager"/>
+</LinearLayout>

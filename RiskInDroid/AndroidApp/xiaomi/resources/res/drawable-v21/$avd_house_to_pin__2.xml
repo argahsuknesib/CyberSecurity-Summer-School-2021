@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="900" android:valueFrom="12" android:valueTo="12" android:valueType="floatType" android:propertyName="pivotX"/>
+    <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="900" android:valueFrom="12" android:valueTo="12" android:valueType="floatType" android:propertyName="pivotY"/>
+    <objectAnimator android:interpolator="@android:anim/accelerate_interpolator" android:duration="300" android:valueFrom="1" android:valueTo="1.15" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@android:anim/accelerate_interpolator" android:duration="300" android:valueFrom="1" android:valueTo="1.15" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@android:anim/decelerate_interpolator" android:duration="500" android:startOffset="300" android:valueFrom="1.15" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@android:anim/decelerate_interpolator" android:duration="500" android:startOffset="300" android:valueFrom="1.15" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY"/>
+</set>

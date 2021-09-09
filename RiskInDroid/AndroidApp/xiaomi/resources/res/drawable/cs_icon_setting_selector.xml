@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/cs_icon_setting_selector_pres"/>
+    <item android:state_enabled="false" android:drawable="@drawable/cs_icon_setting_selector_dis"/>
+    <item android:drawable="@drawable/cs_icon_setting_selector_nor"/>
+</selector>

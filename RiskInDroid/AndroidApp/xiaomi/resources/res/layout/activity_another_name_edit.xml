@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lv_device" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="220dp" android:layout_below="@+id/title_bar">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/device_icon" android:layout_width="150dp" android:layout_height="150dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/lv_device"/>
+    <RelativeLayout android:id="@+id/lv_multi_button" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:layout_below="@+id/lv_device">
+        <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_multi_btn_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:maxWidth="260dp" android:singleLine="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="right" android:id="@+id/tv_multi_btn_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/tv_multi_btn_key" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="24dp"/>
+        <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/alias_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="21dp" android:layout_marginRight="24dp" android:layout_marginBottom="9dp" android:text="@string/voice_another_name_edit_introduction_v2" android:layout_below="@+id/lv_multi_button"/>
+    <ListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_above="@+id/delete_group" android:layout_below="@+id/alias_desc"/>
+    <FrameLayout android:id="@+id/delete_group" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="67dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="@dimen/font_size_10sp" android:textColor="@color/mj_color_black_80_transparent" android:gravity="center" android:layout_gravity="center" android:id="@+id/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:drawableTop="@drawable/mj_webp_list_delete_nor" android:drawablePadding="-5dp"/>
+    </FrameLayout>
+    <include layout="@layout/another_name_guide"/>
+</RelativeLayout>

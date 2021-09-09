@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/mj_color_white" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.xiaomi.smarthome.library.common.widget.PieProgressBar android:id="@+id/pg_download" android:background="@drawable/kuailian_progress_filled_not" android:layout_width="83.3dp" android:layout_height="83.3dp" android:src="@drawable/kuailian_progress_filled"/>
+        <TextView android:textSize="20sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/txt_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%"/>
+    </FrameLayout>
+</RelativeLayout>

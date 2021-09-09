@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_black"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/text_three_menu_next" android:background="@drawable/camera_alarm_guide_btn_selector" android:paddingTop="11dp" android:paddingBottom="11dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="20dp" android:layout_marginRight="50dp" android:layout_marginBottom="20dp" android:text="@string/set_house_keeping" android:layout_alignParentBottom="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/text_three_menu_next" android:layout_below="@+id/title_bar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_housekeeping_guide_head_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/camera_guide_housekeeping" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="17sp" android:textColor="#626262" android:gravity="center" android:id="@+id/text_set_house_keeping_hint" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/set_house_keeping_hint" android:layout_below="@+id/img_housekeeping_guide_head_img" android:layout_centerHorizontal="true"/>
+            <RelativeLayout android:id="@+id/layout_housekeeping_guide_msg1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38dp" android:layout_marginTop="30dp" android:layout_marginRight="40dp" android:layout_below="@+id/text_set_house_keeping_hint">
+                <ImageView android:id="@+id/icon_housekeeping_guide_msg1_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:src="@drawable/camera_alarm_guide_point" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                <TextView android:textSize="13sp" android:textColor="#939393" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_house_keeping_msg1" android:layout_toRightOf="@+id/icon_housekeeping_guide_msg1_dot"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38dp" android:layout_marginTop="22dp" android:layout_marginRight="40dp" android:layout_below="@+id/layout_housekeeping_guide_msg1">
+                <ImageView android:id="@+id/icon_housekeeping_guide_msg2_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:src="@drawable/camera_alarm_guide_point" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                <TextView android:textSize="13sp" android:textColor="#939393" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_house_keeping_msg2" android:layout_toRightOf="@+id/icon_housekeeping_guide_msg2_dot"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

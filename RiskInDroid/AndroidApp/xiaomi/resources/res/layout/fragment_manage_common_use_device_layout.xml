@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <FrameLayout android:id="@+id/title_bar" android:background="@drawable/mj_common_title_bar_bg" android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height">
+        <com.xiaomi.smarthome.scene.view.Indicator android:layout_gravity="center" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="@dimen/mj_titlebar_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:indicator_color="@color/mj_color_green_normal"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/add_btn" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_add_2" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/loading_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <ImageView android:id="@+id/mj_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.xiaomi.smarthome.scene.view.SceneTabViewPagerWithSwipeEnable android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+</RelativeLayout>

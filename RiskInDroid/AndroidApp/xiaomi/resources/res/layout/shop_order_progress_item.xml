@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="80dp" android:layout_height="80dp">
+    <com.mi.global.shop.widget.CustomTextView android:textSize="12dp" android:textColor="@color/common_addtime_color" android:gravity="center" android:id="@+id/tv_order_progress_title" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/order_status_placed" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/line_left" android:layout_width="wrap_content" android:layout_height="1dp" android:src="@drawable/shop_order_progress_grey_bg" android:scaleType="fitXY" android:layout_weight="1"/>
+        <ImageView android:id="@+id/center_circle" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:src="@drawable/shop_order_progress_circle_grey" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/line_right" android:layout_width="wrap_content" android:layout_height="1dp" android:src="@drawable/shop_order_progress_grey_bg" android:scaleType="fitXY" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="12dp" android:textColor="@color/common_addtime_color" android:gravity="center" android:id="@+id/tv_order_progress_time" android:layout_width="40dp" android:layout_height="wrap_content" android:text="11/09 16:36" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

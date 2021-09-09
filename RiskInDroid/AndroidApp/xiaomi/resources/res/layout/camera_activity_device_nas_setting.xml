@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_transparent_black"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sivChangeSetting" item:item_line_margin="@dimen/line_margin" item:item_title="@string/nas_change_setting" item:item_type="1" style="@style/setting_item"/>
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sivChangeStorageDir" item:item_line_margin="@dimen/line_margin" item:item_title="@string/nas_change_storage_dir" item:item_type="1" style="@style/setting_item"/>
+    </LinearLayout>
+</LinearLayout>

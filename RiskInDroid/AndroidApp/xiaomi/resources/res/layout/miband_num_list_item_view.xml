@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@null" android:layout_width="@dimen/sport_item_width" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/elec_bar_ll" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="36dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="11sp" android:gravity="center" android:id="@+id/date_tv" android:layout_width="match_parent" android:layout_height="35dp"/>
+        <View android:layout_gravity="bottom" android:background="@color/mj_color_gray_lighter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/elec_bar_ll" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/v_bar" android:background="@color/mj_color_sport_bar_bg_normal" android:layout_width="@dimen/sport_bar_width" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

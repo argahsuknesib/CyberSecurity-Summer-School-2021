@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_confirm"/>
+    <ImageView android:id="@+id/mj_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/view_name" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_two_line" android:layout_below="@+id/title_bar" android:paddingStart="24dp" android:paddingEnd="24dp">
+        <TextView android:textSize="15dp" android:textColor="@color/mj_color_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/long_time_name" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/tv_name_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/plug_timer_no_set" android:layout_below="@+id/tv_name" android:layout_alignParentStart="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignBottom="@+id/view_name" android:layout_marginStart="24dp"/>
+    <RelativeLayout android:id="@+id/view_repeat" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_two_line" android:layout_below="@+id/view_name" android:paddingStart="24dp" android:paddingEnd="24dp">
+        <TextView android:textSize="15dp" android:textColor="@color/mj_color_black" android:id="@+id/tv_repeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/plug_timer_repeat" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/tv_repeat_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/plug_timer_onetime" android:layout_below="@+id/tv_repeat" android:layout_alignParentStart="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignBottom="@+id/view_repeat" android:layout_marginStart="24dp"/>
+    <RelativeLayout android:id="@+id/view_timer_on" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_two_line" android:layout_below="@+id/view_repeat" android:paddingStart="24dp" android:paddingEnd="24dp">
+        <TextView android:textSize="15dp" android:textColor="@color/mj_color_black" android:id="@+id/tv_timer_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/plug_timer_on" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/tv_timer_on_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/plug_timer_no_set" android:layout_below="@+id/tv_timer_on" android:layout_alignStart="@+id/tv_timer_on"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/timer_on_divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignBottom="@+id/view_timer_on" android:layout_marginStart="24dp"/>
+    <RelativeLayout android:id="@+id/view_timer_off" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_two_line" android:layout_below="@+id/view_timer_on" android:paddingStart="24dp" android:paddingEnd="24dp">
+        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:id="@+id/tv_timer_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/plug_timer_off" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/tv_timer_off_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/plug_timer_no_set" android:layout_below="@+id/tv_timer_off" android:layout_alignLeft="@+id/tv_timer_off"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/timer_off_divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignBottom="@+id/view_timer_off"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/$avd_house_to_pin__0">
+    <target android:name="house" android:animation="@drawable/$avd_house_to_pin__1"/>
+    <target android:name="house_circle_group" android:animation="@drawable/$avd_house_to_pin__2"/>
+    <target android:name="arrow_group_bottom" android:animation="@drawable/$avd_house_to_pin__3"/>
+    <target android:name="door_copy" android:animation="@drawable/$avd_house_to_pin__4"/>
+    <target android:name="door" android:animation="@drawable/$avd_house_to_pin__5"/>
+    <target android:name="arrow_top_copy" android:animation="@drawable/$avd_house_to_pin__6"/>
+    <target android:name="arrow_group_top" android:animation="@drawable/$avd_house_to_pin__7"/>
+</animated-vector>

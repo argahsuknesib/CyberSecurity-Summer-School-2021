@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout_dev_setting_rn_debug" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <EditText android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:textColorHint="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/et_rn_debug_search_model" android:background="@drawable/list_icon_selector_rules" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="请输入搜索内容..." android:singleLine="true" android:drawablePadding="8dp" android:imeOptions="actionSearch" android:drawableStart="@drawable/sub_search_icon_selector" android:paddingStart="10dp" android:paddingEnd="35dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.xiaomi.smarthome.framework.page.rndebug.SlideRecyclerView android:id="@+id/srv_rn_debug_plugin_model_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaomi.smarthome.framework.page.rndebug.SlideRecyclerView android:id="@+id/srv_rn_debug_plugin_search_model_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="100dp">
+        <RelativeLayout android:id="@+id/layout_rn_setting_ip" android:background="@drawable/selector_dev_setting_rn_debug_item" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IP"/>
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_ip_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="xxx.xxx.xxx" android:layout_alignParentBottom="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_alignParentRight="true" android:importantForAccessibility="no"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_rn_other_setting" android:background="@drawable/selector_dev_setting_rn_debug_item" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他设置" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mj_webp_list_edit_nor" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_plugin_debug" android:background="@drawable/mj_webp_home_card_close" android:layout_width="80dp" android:layout_height="80dp" android:contentDescription="@null"/>
+        <TextView android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_plugin_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开发者模式已关闭"/>
+    </LinearLayout>
+</LinearLayout>

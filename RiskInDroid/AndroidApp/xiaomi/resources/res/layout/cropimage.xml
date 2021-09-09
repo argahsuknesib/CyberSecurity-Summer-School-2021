@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.xiaomi.smarthome.library.common.widget.crop.TextTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <view android:id="@+id/image" android:background="@color/mj_color_black_100_transparent" android:layout_width="match_parent" android:layout_height="match_parent" class="com.xiaomi.smarthome.library.common.widget.crop.CropImageView"/>
+</LinearLayout>

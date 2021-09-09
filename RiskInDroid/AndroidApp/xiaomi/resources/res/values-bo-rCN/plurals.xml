@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="air_desc_detail">
+        <item quantity="other">ཉེ་འཁོར་གྱི་སྒྲིག་ཆས་%sནས་ཐོན་པའི་ཆ་སྙོམ་གཞི་གྲངས།</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">ཉིན་%d</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">ཆུ་ཚོད་%d</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">སྐར་མ་%d</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">སྐར་ཆ་%d</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">སྒྲིག་ཆས་%1$sབསྣན་ཐུབ་སོང་།</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">སྒྲིག་ཆས་%1$d</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">སྒྲིག་ཆས་%1$d</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">རིག་ནུས་བརྙན་ལེན་ཡོ་ཆས་%d</item>
+    </plurals>
+    <plurals name="consumables_remain_days">
+        <item quantity="other">སྤྱོད་ཆོག་ཉིན་ལྷག་མ་%1$d</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">སྐར་མ་%d</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="other">ཁྱོན་བེད་སྤྱོད་ཉིན་%dབྱས་ཡོད།</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">བདམས་ཟིན་པའི་ཆ་འཕྲིན་%1$sསུབ་བམ།</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">བདམས་པའི་ཟིན་འགོད%1$sབསུབས་ཟིན།</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">རིག་ལྡན་སྒྲིག་ཆས་%d རེག་ནས་སྒྲིག་འགོད།</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">ཁྱེད་ཀྱི་སྒྲིག་ཆས་%1$dལ་ཁང་པ་བགོས་མེད།</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">འདེམ་པའི་སྒྲིག་ཆས་%1$sསུབ་བམ།</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">སྨིད་%1$s</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">སྒྲིག་ཆས་ཡོངས་འཐེན་ནས་ཨང་རིམ་སྙོམ་སྒྲིག སྟེང་གི་སྒྲིག་ཆས་%dབྱང་བུའི་ནང་མངོན་འཆར།</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">སྒྲིག་ཆས་%1$dབདམས་ཟིན།</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">ཚན་པ་%1$sབདམས་ཟིན།</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s སོགས།</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">རིག་ནུས་སྒྲིག་ཆས་%dམཉམ་སྤྱོད་བྱས་ཟིན།</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">སྒྲིག་ཆས་%sམཉམ་སྤྱོད་བྱས།</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">འབྲེལ་གཏུགས་བྱེད་སྟངས་ཡིག་འབྲུ་%1$dནང་ཚོད་འཛིན་གནང་རོགས།</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">ལྡོག་འདྲེན་ནང་དོན་ཡིག་འབྲུ་%1$dནང་ཚོད་འཛིན་གནང་རོགས།</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">གསར་སྒྱུར་བྱ་རྒྱུའི་བརྟན་ཆས་%1$s</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">བརྟན་ཆས་%1$sགསར་སྒྱུར་བྱས་ཟིན།</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">སྤྲིན་གསོག་ཉར་ཞབས་ཞུ་ཉིན་%1$dརྗེས་ནས་དུས་ཚོད་ཡོལ་བས། གནན་ནས་རིམ་པ་འཕྲོར་ཕུལ་རོགས།</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="other">ཁྱིམ་ཚང་%1$s</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">སྒྲིག་ཆས་%1$s</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">ཁང་པ་%1$s</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">ཚོད་འཛིན་ཆས་%d</item>
+    </plurals>
+    <plurals name="ir_device_count_2">
+        <item quantity="other">སྒྲིག་ཆས་ཁ་གྲངས།</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">སྒྲིག་ཆས་%dསྦྲེལ་ཟིན།</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">རིག་ནུས་སྒྲིག་ཆས་%dརྙེད་བྱུང་། ང་ལ་མནན་ན་ལེགས་འགྲུབ་ཐུབ</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">སྒྲོན་ཚོགས་སུ་མང་མཐར་ཡང་གློག་སྒྲོན་%1$sལས་མང་མི་ཉན།</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="other">བར་གཞུག་%dལ་གསར་སྒྱུར་འདུག</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">ཆུ་ཚོད་%d</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">སྐར་མ་%d</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">ཉེ་འཁོར་དུ་སྤྱོད་ཆོག་པའི་སྒྲིག་ཆས་%1$d</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">%dསྐུད་ཐོག་ཡོད་པ།</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="other">སོགས་སྒྲིག་ཆས་ལྷུ་ཆས་%1$s：</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">ཁྱེད་ལ་ཆ་འཕྲིན་གསར་པ་%dའདུག</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">མཐེབ་གནོན་%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">སྒྲིག་ཆས%1$dཁ་སྣོན་བྱས་ཟིན</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="other">AIoTལམ་སྟོན་ཆས་ཀྱིས་%1$dབསྒྲུབ་འཆར་སྒྲིག་ཆས་གཅིག་རྙེད་སོང་།</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">སློབ་གྲོགས་ཞའོ་ཨེ་%1$s</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">ཉིན་%dརྗེས་འགུལ་སློང་།</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">ཆུ་ཚོད་%dརྗེས་འགུལ་སློང་།</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">ཚན་པ་%1$sབདམས་ཟིན།</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">རིག་ནུས་སྒྲིག་ཆས་%1$dཡོད།</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$sསོགས་སྒྲིག་ཆས་%2$d</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">%1$sསོགས་མི་%2$dལ་མཉམ་སྤྱོད་བྱས་ཟིན།</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">སྐར་མ་%dརྗེས།</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">སྐར་ཆ་%dརྗེས།</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">སྒྲིག་ཆས་%dཚུད་ཡོད་པ།</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">སྒྲིག་ཆས་%dབདམས་ཟིན།</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">བརྙན་ལེན་ཆས་%d</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="other">ད་ལྟ་ཕབ་ལེན་བྱེད་བཞིན་ཡོད།…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">སྒྲིག་ཆས་རེ་རེར་མང་མཐར་ཡང་སྐད་བརྡའི་མིང་གཞན་%1$sཡོད།</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">%1$d %2$sརྙེད་བྱུང་། མགྱོགས་པོར་སྒྲིག་ཆས་གསར་པ་དང་འབྲེལ་མཐུད་བྱེད་པ་ཞེས་པར་རེག་པ།</item>
+    </plurals>
+</resources>

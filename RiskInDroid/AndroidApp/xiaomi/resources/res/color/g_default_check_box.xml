@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_checked="false" android:color="@color/g_default_base_background"/>
+    <item android:state_enabled="false" android:state_checked="false" android:color="@color/g_default_base_backgroundLight"/>
+    <item android:state_enabled="true" android:state_checked="true" android:color="@color/g_default_base_primary"/>
+    <item android:state_enabled="false" android:state_checked="true" android:color="@color/g_default_base_primaryLight"/>
+</selector>

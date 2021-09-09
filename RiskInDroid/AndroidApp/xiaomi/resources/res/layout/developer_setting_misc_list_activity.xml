@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/clear_common_use" android:background="@drawable/choose_device_list_item_last_position_bg" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除常用数据" android:layout_alignTop="@+id/imageView" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/dump_threads" android:background="@drawable/choose_device_list_item_last_position_bg" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导出主进程线程信息" android:layout_alignTop="@+id/imageView" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入插件是否展示rn时间" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/swb_rn_plugin_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

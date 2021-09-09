@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <RelativeLayout android:id="@+id/line1" android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <TextView android:textSize="13sp" android:textColor="#333333" android:id="@+id/firstLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.3dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_checkbox_list_radio" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/line2" android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <TextView android:textSize="13sp" android:textColor="#333333" android:id="@+id/secondline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.3dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_checkbox_list_radio" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/line3" android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <TextView android:textSize="13sp" android:textColor="#333333" android:id="@+id/thirdline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.3dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_checkbox_list_radio" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</LinearLayout>

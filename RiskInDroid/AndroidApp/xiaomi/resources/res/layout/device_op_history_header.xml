@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mj_color_op_history_header" android:paddingLeft="@dimen/txt_padding_3" android:paddingBottom="@dimen/txt_padding_10" android:layout_width="match_parent" android:layout_height="154dp" android:paddingStart="@dimen/txt_padding_3">
+    <TextView android:textSize="@dimen/mj_title_bar_text_size" android:textColor="@color/mj_color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/device_op_history" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginBottom="14dp" android:layout_alignParentBottom="true" android:layoutDirection="ltr" android:layout_marginStart="30dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/device_icon" android:layout_width="63dp" android:layout_height="63dp" android:layout_marginRight="11dp" android:layout_marginEnd="11dp"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_white" android:ellipsize="end" android:id="@+id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_white" android:ellipsize="end" android:id="@+id/device_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

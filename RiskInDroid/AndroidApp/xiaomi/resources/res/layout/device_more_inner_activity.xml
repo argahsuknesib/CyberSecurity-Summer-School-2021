@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/device_more_frame" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/security_setting" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/security_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_more_security_title" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/network_info" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_more_activity_network_info" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/timezone" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/device_more_activity_timezone" android:maxLines="2" android:layout_weight="1" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/setting_item_detail_text_size" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/text_timezone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="2" android:layout_weight="1"/>
+                <ImageView android:id="@+id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            <RelativeLayout android:id="@+id/feedback" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_problem" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/short_cut" android:background="@drawable/ripple_item_selector" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_device_launcher" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

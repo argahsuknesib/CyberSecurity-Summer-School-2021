@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="53dp">
+    <ImageView android:id="@+id/wifi_signal_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_toLeftOf="@+id/wifi_signal_level" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/wifi_name_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_3" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/miwif_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/mi_router_tag"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_5" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/security_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/wifi_name_container"/>
+    </LinearLayout>
+    <LinearLayout android:background="@color/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

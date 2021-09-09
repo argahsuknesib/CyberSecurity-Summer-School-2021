@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/sleep_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:background="@drawable/miband_sleep_circle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:background="@drawable/miband_main_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#afffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_time_text"/>
+            <TextView android:textSize="38sp" android:textColor="#ffffffff" android:id="@+id/tv_all_sleep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            <TextView android:textSize="14sp" android:textColor="#afffffff" android:id="@+id/tv_deep_sleep" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

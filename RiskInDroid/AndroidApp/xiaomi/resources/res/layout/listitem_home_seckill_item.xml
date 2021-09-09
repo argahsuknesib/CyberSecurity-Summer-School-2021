@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/recycler_img" android:layout_width="128dp" android:layout_height="128dp" android:src="@drawable/default_pic_small" android:adjustViewBounds="true"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/recycler_img" layout="@layout/viewhelper_smallpic_price"/>
+    <include layout="@layout/layout_listitem_home_producttag"/>
+</RelativeLayout>

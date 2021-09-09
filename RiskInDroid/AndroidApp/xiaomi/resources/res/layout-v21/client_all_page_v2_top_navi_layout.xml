@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionName="name4">
+    <include android:id="@+id/coordinator_layout_vs" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/client_all_page_v2_top_navi_layout_content"/>
+    <ViewStub android:id="@+id/change_home_loading_view_vs" android:layout="@layout/device_list_loading_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/debug_dragbutton" android:layout="@layout/smarthome_debug_dragbutton" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

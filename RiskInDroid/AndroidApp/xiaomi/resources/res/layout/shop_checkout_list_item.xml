@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/good_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/good_image" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="15dp" fresco:actualImageScaleType="0" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#2e2323" android:id="@+id/good_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/good_price" android:layout_toRightOf="@+id/good_image"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#dddddd" android:id="@+id/good_dealer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_toLeftOf="@+id/good_num" android:layout_toRightOf="@+id/good_image" android:layout_below="@+id/good_name"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#ff6700" android:id="@+id/good_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#888888" android:id="@+id/good_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="15dp" android:layout_below="@+id/good_price" android:layout_alignParentRight="true"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/good_type" android:background="@drawable/shop_cart_type_bg" android:paddingLeft="5dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="15dp"/>
+    </RelativeLayout>
+    <include layout="@layout/shop_checkout_insurance_layout"/>
+</LinearLayout>

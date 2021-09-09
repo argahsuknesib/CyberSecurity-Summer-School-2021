@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemViewMultiLine android:id="@+id/setting_everyday_story" android:paddingStart="8dp" android:paddingEnd="8dp" item:item_select="true" item:item_title="@string/daily_story" item:item_type="2" style="@style/setting_item"/>
+    <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/daily_story_tips" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/xiaomi_sm_pin_inputs_title_item" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/title_bar">
+        <TextView android:textSize="30sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/xiaomi_sm_pin_inputs_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证密码" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/xiaomi_sm_pin_inputs_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="subtitle"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginTop="250dp" android:layout_below="@+id/xiaomi_sm_pin_inputs_title" android:layout_centerHorizontal="true">
+        <com.xiaomi.smarthome.framework.page.verify.view.PinInputView android:id="@+id/xiaomi_sm_pin_inputs" android:layout_width="match_parent" android:layout_height="wrap_content" custom:spacing="28dp"/>
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_red_normal" android:id="@+id/xiaomi_sm_pin_input_incorrect_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/device_more_verify_pin_error"/>
+        <TextView android:textSize="14sp" android:textColor="@color/mj_color_red_normal" android:id="@+id/xiaomi_sm_pin_sub_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="#ff32bac0" android:id="@+id/xiaomi_sm_tv_forget_pincode" android:padding="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/find_psw" android:layout_above="@+id/xiaomi_sm_pin_softkeyboard" android:layout_centerHorizontal="true"/>
+    <com.xiaomi.smarthome.framework.page.verify.view.PinSoftKeyboard android:id="@+id/xiaomi_sm_pin_softkeyboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

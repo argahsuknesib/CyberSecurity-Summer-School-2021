@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mibi_counter_balance_info_checkbox_margin_left">7dp</dimen>
+    <dimen name="mibi_counter_balance_info_checkbox_margin_right">15dp</dimen>
+    <dimen name="mibi_counter_balance_info_padding_left">27dp</dimen>
+    <dimen name="mibi_pay_list_item_margin_vertical">13dp</dimen>
+    <dimen name="mibi_payment_dialog_min_height">217dp</dimen>
+    <dimen name="mibi_recharge_layout_group_gap">20dp</dimen>
+    <dimen name="mibi_text_size_payment_action_bar">15sp</dimen>
+    <dimen name="mibi_text_size_payment_general">14sp</dimen>
+    <dimen name="mibi_text_size_payment_small">12sp</dimen>
+    <dimen name="miui_pub_list_preferred_item_height">54.65dp</dimen>
+    <dimen name="miui_pub_list_preferred_item_height_large">62.32dp</dimen>
+    <dimen name="miui_pub_list_preferred_item_height_small">45dp</dimen>
+</resources>

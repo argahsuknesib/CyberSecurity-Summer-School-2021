@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/knows" android:background="@drawable/camera_refresh_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:layout_marginBottom="19dp" android:text="@string/knows_already" android:layout_alignParentBottom="true" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:layout_marginBottom="19dp" android:text="@string/camera_guide_tips" android:singleLine="false" android:layout_above="@+id/knows" android:layout_centerHorizontal="true" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/desc" android:layout_below="@+id/title_bar"/>
+</RelativeLayout>

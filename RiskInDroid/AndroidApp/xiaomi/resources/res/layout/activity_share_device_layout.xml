@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_common"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_indicator" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="45dp" android:weightSum="2" android:layout_below="@+id/title_bar">
+        <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="end" android:layout_gravity="center_vertical" android:id="@+id/module_a_3_return_title_left" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginEnd="18dp"/>
+        <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/module_a_3_return_title_right" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="18dp"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.library.common.widget.TabPageIndicator android:id="@+id/indicator" android:background="@drawable/menu_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_below="@+id/ll_indicator"/>
+    <com.xiaomi.smarthome.library.common.widget.ViewPagerWithSwipeEnable android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0dp" android:layout_below="@+id/indicator"/>
+</RelativeLayout>

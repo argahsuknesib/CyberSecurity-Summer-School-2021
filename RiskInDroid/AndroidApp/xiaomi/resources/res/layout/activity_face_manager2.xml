@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar_container" layout="@layout/include_face_select_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_txt_hint" android:gravity="center" android:id="@+id/tv_face_marked" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_marked"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_60_transparent" android:gravity="center" android:id="@+id/tv_face_management" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_face_manager" android:drawableRight="@drawable/camera_arrow_right" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:paddingLeft="14dp" android:layout_width="match_parent" android:layout_height="117dp">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recycle_view_marked" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never"/>
+        <View android:background="@color/mj_color_white" android:layout_width="20dp" android:layout_height="match_parent" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_margin="20dp"/>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_txt_hint" android:gravity="center" android:id="@+id/tv_face_showed" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_shown_recently" android:paddingStart="20dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xiaomi.smarthome.camera.view.recycle.RecyclerViewRefreshLayoutEx android:id="@+id/ptr" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recycle_view_face_shown" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        </com.xiaomi.smarthome.camera.view.recycle.RecyclerViewRefreshLayoutEx>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rl_empty_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_video"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_alarm_event"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

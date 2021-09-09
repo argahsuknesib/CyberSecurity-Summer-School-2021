@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_layout_top" android:paddingLeft="26.33dp" android:paddingTop="27.67dp" android:paddingRight="26.33dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout_topleft" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout_topright" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_layout_bottom" android:paddingLeft="26.33dp" android:paddingTop="10dp" android:paddingRight="26.33dp" android:paddingBottom="17.67dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout_bottomleft" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout_bottomright" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp"/>
+    </LinearLayout>
+</LinearLayout>

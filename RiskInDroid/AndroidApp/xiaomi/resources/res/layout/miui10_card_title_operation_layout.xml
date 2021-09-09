@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_title_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.newui.widget.StretchShrinkLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ssl" android:layout_width="match_parent" android:layout_height="@dimen/miui10_card_title_height" android:layout_marginLeft="19dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" shrink="0" stretch="1">
+        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black_90_transparent" android:ellipsize="end" android:id="@+id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/tv_offline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/device_offline_title" android:singleLine="true"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_title_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_toRightOf="@+id/divider"/>
+    </com.xiaomi.smarthome.newui.widget.StretchShrinkLayout>
+    <View android:id="@+id/enter_device_divider" android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignBottom="@+id/ssl"/>
+</RelativeLayout>

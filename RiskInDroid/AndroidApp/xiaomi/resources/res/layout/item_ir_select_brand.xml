@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/ir_select_brand_item_height" android:layout_marginLeft="@dimen/alertdialog_message_text_size" android:layout_marginRight="42dp">
+        <TextView android:textSize="@dimen/ir_font_size_normal" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/ir_select_tv_brand_text" android:layout_width="match_parent" android:layout_height="@dimen/ir_select_brand_index_item_height" android:layout_marginLeft="@dimen/alertdialog_message_text_size"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/ir_main_device_list_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/ir_divider_height" android:layout_marginLeft="@dimen/alertdialog_message_text_size" android:layout_marginRight="42dp"/>
+</LinearLayout>

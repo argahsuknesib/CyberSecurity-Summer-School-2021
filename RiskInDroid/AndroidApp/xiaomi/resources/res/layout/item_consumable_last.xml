@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/down_rounded_white_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="60dp">
+    <FrameLayout android:id="@+id/percentage_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="10sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/percentage" android:background="@null" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp" android:text="0%"/>
+        <ImageView android:id="@+id/icon_low_battery" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/icon_consum_low" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_layout" android:layout_toRightOf="@+id/percentage_parent" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/right_layout" android:layout_toEndOf="@+id/percentage_parent">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="middle" android:id="@+id/remain_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@+id/to_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12dp" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:importantForAccessibility="no" android:layout_marginStart="-12dp"/>
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/btn_reset" android:background="@drawable/bg_btn_green_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:minHeight="30dp" android:text="@string/setting_reset"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="76dp">
+    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="8dp" android:layout_marginStart="13dp"/>
+    <SeekBar android:id="@+id/slide_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="40dp" android:layout_marginRight="26dp" android:maxHeight="1dp" android:max="100" android:progressDrawable="@drawable/card_slide_bg" android:thumb="@drawable/card_slide_thumb"/>
+    <View android:id="@+id/card_item_divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

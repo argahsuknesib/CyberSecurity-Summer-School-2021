@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="@dimen/listitem_7_height">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/listitem_7_height" android:layout_marginLeft="13dp" android:layout_toLeftOf="@+id/check_box" android:layout_toRightOf="@+id/icon" android:layout_marginStart="13dp" android:layout_toStartOf="@+id/check_box" android:layout_toEndOf="@+id/icon">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180dp" android:maxLines="1"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="20"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_item" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="22dp" android:layout_alignParentBottom="true" android:layout_marginStart="22dp"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="22dp" android:layout_centerVertical="true" android:layout_marginStart="22dp"/>
+    <RelativeLayout android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true">
+        <ImageView android:id="@+id/iv_loading" android:background="@drawable/icon_light_group_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_status" android:background="@drawable/icon_light_group_checked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

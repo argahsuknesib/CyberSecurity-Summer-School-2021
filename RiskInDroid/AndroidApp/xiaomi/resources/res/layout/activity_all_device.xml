@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/view_container" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <com.xiaomi.smarthome.newui.DeviceRecycler android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+    <ViewStub android:id="@+id/title_bar_choose_device_stub" android:layout="@layout/title_bar_choose_device" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true"/>
+    <ViewStub android:id="@+id/edit_action_bar_stub_v2" android:layout="@layout/edit_action_bar_v3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/layout_layer1" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+    <ViewStub android:id="@+id/blur_view_vs" android:layout="@layout/common_blur_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

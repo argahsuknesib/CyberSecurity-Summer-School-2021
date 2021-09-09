@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#1782dd" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_white"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="28dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_camera_store_icon" android:layout_width="73dp" android:layout_height="112dp" android:src="@drawable/camera_store_icon_camera_nor" android:scaleType="center"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/status_icon_iv" android:layout_width="92dp" android:layout_height="10dp" android:src="@drawable/camera_anim_transfering"/>
+                <ImageView android:layout_width="73dp" android:layout_height="112dp" android:src="@drawable/camera_store_icon_store2_nor" android:scaleType="center"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_white" android:id="@+id/transfer_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_white" android:id="@+id/latest_log_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:maxLines="1" android:alpha="0.5"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sivVideoStorage" item:item_line_margin="@dimen/line_margin" item:item_subtitle="@string/nas_video_storage_subtitle" item:item_title="@string/nas_video_storage" item:item_type="2" style="@style/setting_item"/>
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/setting_smb_time" item:item_line_margin="@dimen/line_margin" item:item_title="@string/nas_setting_retention_time" item:item_type="1" style="@style/setting_item"/>
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/setting_nas_sync_interval" item:item_line_margin="@dimen/line_margin" item:item_title="@string/smb_setting_nas_sync_interval" item:item_type="1" style="@style/setting_item"/>
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/modify_setting_rl" item:item_line_margin="0dp" item:item_title="@string/nas_modify_setting" item:item_type="1" style="@style/setting_item"/>
+        <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/browser_uploaded_video_rl" android:visibility="gone" item:item_line_margin="0dp" item:item_title="@string/smb_browse_uploaded_video" item:item_type="1" style="@style/setting_item"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/text_margin_top"/>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#527acc" android:gravity="center_vertical" android:id="@+id/pause_storage_rl" android:paddingLeft="@dimen/item_margin" android:visibility="gone" android:text="@string/smb_pause_storage" style="@style/setting_item"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/line_margin" android:layout_marginRight="@dimen/line_margin"/>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#527acc" android:gravity="center_vertical" android:id="@+id/clear_uploaded_rl" android:paddingLeft="@dimen/item_margin" android:text="@string/smb_clear_history_video" style="@style/setting_item"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/line_margin" android:layout_marginRight="@dimen/line_margin"/>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#e94f4f" android:gravity="center_vertical" android:id="@+id/delete_storage_rl" android:paddingLeft="@dimen/item_margin" android:text="@string/smb_delete_storage" style="@style/setting_item"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

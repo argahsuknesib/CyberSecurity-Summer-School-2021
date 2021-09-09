@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/avatar_image" android:layout_width="@dimen/passport_head_icon_size" android:layout_height="@dimen/passport_head_icon_size" android:layout_marginTop="@dimen/bind_icon_logo_margin_h" android:layout_marginBottom="@dimen/bind_icon_logo_margin_h"/>
+</LinearLayout>

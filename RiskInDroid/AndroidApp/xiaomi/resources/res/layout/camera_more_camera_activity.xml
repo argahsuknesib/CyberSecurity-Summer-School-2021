@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_light" item:item_icon="@drawable/camera_setting_light_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setttings_light_title" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/only_wifi" item:item_icon="@drawable/camera_setting_wifi_safe_icon" item:item_line_margin="0dp" item:item_subtitle="@string/setttings_only_wifi_tip" item:item_title="@string/setttings_only_wifi" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/smart_picture_frame" item:item_icon="@drawable/setting_picture_frame_icon" item:item_line_margin="@dimen/line_margin" item:item_subtitle="@string/smart_picture_frame_info" item:item_title="@string/smart_picture_frame" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_power" item:item_icon="@drawable/camera_setting_sleep_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setting_sleep_setting" item:item_type="1" style="@style/setting_item"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_view" item:item_icon="@drawable/camera_setting_view_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setting_view" item:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_infrared" item:item_icon="@drawable/camera_setting_infrared_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setting_infared" item:item_type="1" style="@style/setting_item"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_float_window" android:visibility="gone" item:item_icon="@drawable/camera_icon_float_window" item:item_line_margin="@dimen/line_margin" item:item_title="@string/item_pip_new" item:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_timelapse" android:visibility="gone" item:item_icon="@drawable/camera_settings_timelapse" item:item_line_margin="@dimen/line_margin" item:item_title="@string/timelapse_photography" item:item_type="1" style="@style/setting_item"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_red_normal" android:gravity="center" android:id="@+id/tvReset" android:background="@color/mj_color_white" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/setting_restart"/>
+</LinearLayout>

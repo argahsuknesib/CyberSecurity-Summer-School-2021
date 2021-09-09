@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_white_bg_nor_6dp" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.newui.widget.FixHeightRecyclerView android:id="@+id/recycler_tag" android:layout_width="0dp" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="11dp" android:layout_marginEnd="11dp" app:layout_constraintBottom_toTopOf="@+id/layout_home_sec" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:maxLines="7"/>
+    <ViewStub android:id="@+id/vs_family" android:layout="@layout/scene_filter_dialog_family_seg" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

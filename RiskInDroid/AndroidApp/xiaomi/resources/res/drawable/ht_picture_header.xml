@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/ht_camera_button_height" android:width="@dimen/ht_camera_button_width">
+        <shape android:shape="oval">
+            <solid android:color="#30f2f8ff"/>
+        </shape>
+    </item>
+</layer-list>

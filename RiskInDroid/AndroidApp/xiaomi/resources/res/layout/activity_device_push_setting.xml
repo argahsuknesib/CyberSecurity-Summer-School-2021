@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_5_title_bar_drop_down"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/setting_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="86dp" android:src="@drawable/imageholder_msg_setting_device" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="#6dccd0" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="230dp" android:text="@string/message_push_no_device"/>
+    </FrameLayout>
+    <View android:id="@+id/mask" android:background="@color/mj_color_black_50_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+</RelativeLayout>

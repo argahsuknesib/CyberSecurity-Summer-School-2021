@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/notice_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/notice_content" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/notice_icon" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="3dp" android:layout_marginRight="10dp"/>
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/warning" android:id="@+id/notice_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/notice_shadow" android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/song_ring_layout" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="51dp">
+        <ImageView android:id="@+id/song_ring_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alarm_ring_selected" android:layout_centerVertical="true" android:layout_marginStart="12dp"/>
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/orange_selected_text_color" android:ellipsize="end" android:id="@+id/song_ring_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/song_ring_selected"/>
+        <View android:id="@+id/divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/select_music_layout" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="51dp">
+        <ImageView android:id="@+id/alarm_ring_selected_tag" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alarm_ring_selected" android:layout_centerVertical="true" android:layout_marginStart="12dp"/>
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/orange_selected_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_ring_select_music" android:layout_centerVertical="true" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/alarm_ring_selected_tag"/>
+        <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gray_right_arrow" android:layout_centerVertical="true" android:layout_marginEnd="13dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="7dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/system_ring_layout" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="51dp" android:layout_marginTop="7dp">
+        <ImageView android:id="@+id/system_ring_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alarm_ring_selected" android:layout_centerVertical="true" android:layout_marginStart="12dp"/>
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/orange_tab_text_color" android:id="@+id/system_ring_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_tone_system" android:layout_centerVertical="true" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/system_ring_selected"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:background="@color/mj_color_white" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="43dp">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/mj_color_gray_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_ring_music_carefully" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

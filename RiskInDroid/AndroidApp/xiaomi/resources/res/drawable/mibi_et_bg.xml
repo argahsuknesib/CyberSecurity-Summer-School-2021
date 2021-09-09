@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="10dp" android:paddingBottom="10dp" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <solid android:color="@color/mibi_text_color_white"/>
+            <stroke android:width="1px" android:color="@color/mibi_text_color_black_alpha_30"/>
+        </shape>
+    </item>
+</layer-list>

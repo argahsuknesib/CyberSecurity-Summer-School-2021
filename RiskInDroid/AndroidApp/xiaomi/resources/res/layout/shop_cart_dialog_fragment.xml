@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content" android:background="@drawable/shop_cart_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="270dp">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#424242" android:id="@+id/title" android:background="@drawable/shop_cart_dialog_title_bg" android:paddingLeft="28dp" android:paddingTop="20dp" android:paddingRight="28dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The following items are out of stock or have timed out, please remove from cart."/>
+        <com.mi.global.shop.widget.MaxHeightListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0dp"/>
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="50dp">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff6700" android:gravity="center" android:id="@+id/cancel_btn" android:layout_width="0dp" android:layout_height="match_parent" android:text="BACK" android:layout_weight="1"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="16sp" android:textColor="#ff6700" android:gravity="center" android:id="@+id/remove_btn" android:layout_width="0dp" android:layout_height="match_parent" android:text="REMOVE" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

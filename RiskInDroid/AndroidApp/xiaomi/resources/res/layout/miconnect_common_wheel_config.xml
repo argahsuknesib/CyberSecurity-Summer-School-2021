@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/common_content_big_height">
+    <include layout="@layout/miconnect_common_title"/>
+    <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.smarthome.connect.view.StringChooser android:id="@+id/string_chooser" android:layout_width="match_parent" android:layout_height="@dimen/common_content_height" android:layout_marginTop="@dimen/common_margin" android:layout_marginBottom="@dimen/common_margin" app:notSelectedColor="@color/mj_color_black_50_transparent" app:notSelectedSize="@dimen/wheel_not_select_text_size" app:selectedColor="@color/mj_color_highlight_blue_text_color" app:selectedSize="@dimen/wheel_select_text_size"/>
+    </FrameLayout>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

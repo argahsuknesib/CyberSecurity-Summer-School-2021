@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.operation.js_sdk.titlebar.WebTitleBarView android:id="@+id/web_title_bar" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.xiaomi.smarthome.operation.js_sdk.base.CommonWebView android:id="@+id/webview" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/web_title_bar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

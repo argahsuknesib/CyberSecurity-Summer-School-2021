@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshListView android:id="@+id/pull_listview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/mj_color_black_00_transparent"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/common_white_empty_view" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_other_home" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/font_size_3" android:textColor="@color/mj_color_black_30_transparent" android:id="@+id/common_white_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/common_white_empty_text_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

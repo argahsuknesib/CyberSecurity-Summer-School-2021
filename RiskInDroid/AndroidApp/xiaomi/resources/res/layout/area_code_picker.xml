@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/fast_indexer_list" android:paddingLeft="15dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xiaomi.passport.ui.internal.AlphabetFastIndexer android:textSize="10sp" android:layout_gravity="end" android:id="@+id/fast_indexer" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="  " android:paddingStart="8dp" android:paddingEnd="8dp" app:indexerTable="@array/alphabet_table" app:indexerTextActivatedColor="@color/black_20_percent" app:indexerTextColor="@color/black_20_percent" app:indexerTextHighlightColor="@color/passport_colorAccent" app:indexerTextHighligtBackground="@drawable/ic_list_az_focus" app:indexerTextSize="10sp"/>
+    <TextView android:textSize="84sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/fast_indexer_high_light" android:background="@drawable/ic_list_az_middle_focus_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="P"/>
+</FrameLayout>

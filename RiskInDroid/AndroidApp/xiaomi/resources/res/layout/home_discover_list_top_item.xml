@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_product_image" android:layout_width="match_parent" android:layout_height="170dp" android:scaleType="fitXY" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginTop="13dp" android:layout_below="@+id/iv_product_image" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="16dp" android:textColor="@color/pay_title_color" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="4"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="12dp" android:textColor="@color/three_image_old_price_text_color" android:gravity="right" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="12dp" android:textColor="@color/home_discover_item_like_number_color" android:id="@+id/tv_like_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_below="@+id/tv_time" android:layout_alignParentEnd="true"/>
+            <ImageView android:id="@+id/iv_like" android:layout_width="16dp" android:layout_height="10dp" android:layout_marginTop="11dp" android:src="@drawable/discover_article_look_num" android:scaleType="fitXY" android:layout_toLeftOf="@+id/tv_like_number" android:layout_below="@+id/tv_time" android:layout_marginEnd="5dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@color/topicview_productinside_edge" android:layout_width="match_parent" android:layout_height="0.75dp" android:layout_marginTop="21dp" android:layout_below="@+id/ll_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+</RelativeLayout>

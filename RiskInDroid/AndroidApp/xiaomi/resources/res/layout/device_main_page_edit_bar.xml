@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="match_parent" android:layout_height="100dp" layout="@layout/editbar_firstline_normal"/>
+        <include android:visibility="invisible" android:layout_width="match_parent" android:layout_height="100dp" layout="@layout/editbar_firstline_shared_device"/>
+        <include android:visibility="invisible" android:layout_width="match_parent" android:layout_height="100dp" layout="@layout/editbar_firstline_nearby_device"/>
+    </FrameLayout>
+    <com.xiaomi.smarthome.library.common.widget.AnimateLinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/second_line" android:background="@color/mj_color_white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="70dp">
+        <View android:layout_width="8dp" android:layout_height="0dp"/>
+        <Button android:textSize="@dimen/font_editbar" android:textColor="@color/ic_edit_text_color" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btn_edit_rename" android:background="@drawable/mj_color_white_00_transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="48dp" android:minHeight="0dp" android:text="@string/menu_edit_rename" android:lines="2" android:drawableTop="@drawable/edit_icon_rename" android:drawablePadding="4dp" android:layout_weight="1"/>
+        <View android:layout_width="8dp" android:layout_height="0dp"/>
+        <Button android:textSize="@dimen/font_editbar" android:textColor="@color/ic_edit_text_color" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btn_edit_shortcut" android:background="@drawable/mj_color_white_00_transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="48dp" android:minHeight="0dp" android:text="@string/menu_edit_shortcut" android:lines="2" android:drawableTop="@drawable/edit_icon_shortcut" android:drawablePadding="4dp" android:layout_weight="1"/>
+        <View android:layout_width="8dp" android:layout_height="0dp"/>
+        <Button android:textSize="@dimen/font_editbar" android:textColor="@color/ic_edit_text_color" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btn_edit_sort" android:background="@drawable/mj_color_white_00_transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="48dp" android:minHeight="0dp" android:text="@string/menu_edit_sort" android:lines="2" android:drawableTop="@drawable/edit_icon_sort" android:drawablePadding="4dp" android:layout_weight="1"/>
+        <View android:layout_width="8dp" android:layout_height="0dp"/>
+        <Button android:textSize="@dimen/font_editbar" android:textColor="@color/ic_edit_text_color" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btn_edit_delete" android:background="@drawable/mj_color_white_00_transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="48dp" android:minHeight="0dp" android:text="@string/menu_edit_delete" android:lines="2" android:drawableTop="@drawable/edit_icon_delete" android:drawablePadding="4dp" android:layout_weight="1"/>
+        <View android:layout_width="8dp" android:layout_height="0dp"/>
+    </com.xiaomi.smarthome.library.common.widget.AnimateLinearLayout>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

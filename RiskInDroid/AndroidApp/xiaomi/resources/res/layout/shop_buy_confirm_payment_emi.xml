@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/emi_pane" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/shop_buy_confirm_payment_emi_banklist"/>
+        <include layout="@layout/shop_buy_confirm_payment_emi_planlist"/>
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/title_text_color" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/confirm_payment_outermargin" android:layout_marginRight="@dimen/confirm_payment_outermargin" android:text="@string/buy_confirm_EMI_tip3"/>
+        <include android:id="@+id/emi_card_pane" layout="@layout/shop_buy_confirm_payment_credit_newdetail_add"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_emi_less_than_min" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="#ffff9e0d" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_info" android:background="@drawable/shop_sad_big" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="24dp" android:layout_marginStart="15dp"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_e" android:id="@+id/emi_less_than_min_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:layout_marginBottom="23dp" android:layout_marginStart="8dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+        <Button android:id="@+id/bt_back_pay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/pay_back" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+</FrameLayout>

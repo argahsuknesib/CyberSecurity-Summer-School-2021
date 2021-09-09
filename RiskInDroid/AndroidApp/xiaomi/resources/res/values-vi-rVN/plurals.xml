@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="other">Thêm tối đa %1d thao tác</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="other">Dữ liệu trung bình từ %1$s thiết bị lân cận</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">%d Ngày</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">%d Giờ</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">%d Phút</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">%d Giây</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">Đã thêm thành công %1$s thiết bị</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">%1$d thiết bị</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">%1$d thiết bị</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">%d camera thông minh</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="other">Mức sử dụng tích lũy: %d ngày,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">Xóa %1$s tin nhắn đã chọn?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">Xóa %1$s bản ghi đã chọn?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">%d Thiết bị thông minh mới, kích vào để cài đặt</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">Chưa chỉ định %1$s thiết bị vào một phòng</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">Xóa %1$s thiết bị đã chọn?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="other">Chuyển %1$d tình huống đã chọn ra khỏi mục yêu thích?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">%1$s m</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">Kéo và thả tất cả thiết bị để điều chỉnh thứ tự, %d thiết bị phía trên hiển thị trong thẻ</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">Đã chọn %1$d</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">Đã chọn %1$s</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="other">Tình huống đã chọn:%1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s v.v.</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">%d thiết bị được chia sẻ</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">Đã chia sẻ %s thiết bị</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">Thông tin liên hệ có thể chứa tối đa %1$d ký tự</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">Phản hồi của bạn có thể chứa tối đa %1$d ký tự</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">Sẵn có %1$s bản cập nhật chương trình cơ sở</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">Đã hoàn thành %1$s bản cập nhật chương trình cơ sở</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">Dịch vụ lưu trữ đám mây sẽ hết hạn sau %1$d ngày nữa, hãy nhấn để gia hạn.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="other">%1$s căn nhà khác</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">%1$s thiết bị</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">%1$s phòng</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">%d điều khiển từ xa</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">Đã kết nối %d thiết bị</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">Đã tìm thấy %d thiết bị thông minh, nhấn để hoàn tất</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">Nhóm đèn có thể chứa tối đa %1$s bóng đèn.</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="other">Đã có bản cập nhật cho %d plug-in</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">Có %1$d thiết bị ở gần</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">Thiết bị đang trực tuyến: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="other">Đang đợi plug-in thiết bị %1$s:</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">Bạn đã nhận được %d tin nhắn mới</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">Công tắc%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">Đã thêm %1$d thiết bị</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="other">Bộ định tuyến AIoT đã tìm thấy %1$d thiết bị</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="other">Bộ định tuyến Mi đã tìm các thấy %1$d thiết bị</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">%1$s loa Mi AI</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="other">Xóa %1$s tình huống sử dụng thông minh đã chọn?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">Bật sau %dd</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">Bật sau %dh</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">Đã chọn %1$s</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">%1$d thiết bị</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$s và các thiết bị khác (%2$d thiết bị)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">Được chia sẻ với %1$s và những người khác (%2$d người)</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">%dm sau đó</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">%ds sau đó</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">Đã bao gồm %d</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">Đã chọn %d</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">%d Máy ảnh</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="other">Đang tải xuống…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">Mỗi thiết bị có thể có tối đa %1$s biệt hiệu giọng nói.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">Đã tìm thấy %1$d %2$ss, nhấn để kết nối</item>
+    </plurals>
+</resources>

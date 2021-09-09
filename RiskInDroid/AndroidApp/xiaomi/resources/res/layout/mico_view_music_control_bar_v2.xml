@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.music.player.ControlBarV2 xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/player_margin" android:layout_marginEnd="@dimen/player_margin">
+        <ImageView android:id="@+id/player_control_bar_loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_player_list_loop" android:scaleType="fitXY"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/player_control_bar_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_player_clocking" android:scaleType="fitXY" android:layout_marginStart="14dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/player_control_bar_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_player_list" android:scaleType="fitXY" android:layout_marginStart="14dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/player_control_bar_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_player_volume" android:scaleType="fitXY" android:layout_marginStart="14dp"/>
+    </LinearLayout>
+    <include android:id="@+id/player_progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:layout_below="@+id/cv1" layout="@layout/mico_view_music_player_progress_bar"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_15dp">
+        <ImageView android:id="@+id/player_control_bar_prev" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/mico_icon_player_prev" android:scaleType="centerInside" android:layout_toLeftOf="@+id/player_control_bar_play" android:layout_centerVertical="true" android:layout_marginEnd="40dp"/>
+        <ImageView android:id="@+id/player_control_bar_play" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/mico_icon_player_paused" android:scaleType="centerInside" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/player_control_bar_next" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/mico_icon_player_next" android:scaleType="centerInside" android:layout_toRightOf="@+id/player_control_bar_play" android:layout_centerVertical="true" android:layout_marginStart="40dp"/>
+    </RelativeLayout>
+</com.xiaomi.mico.music.player.ControlBarV2>

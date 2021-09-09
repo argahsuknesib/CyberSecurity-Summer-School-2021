@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/feed_back_title_bar"/>
+    <ScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/std_list_head_line_height">
+                <TextView android:textSize="@dimen/std_list_font_size_group" android:textColor="@color/mj_color_gray_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_my_device" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:layout_marginStart="24dp"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.FixHeightGridView android:gravity="center" android:id="@+id/feed_back_my_device_grid_view" android:background="@color/mj_color_white" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingBottom="22dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="3" android:paddingStart="22dp" android:paddingEnd="22dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/std_list_head_line_height" android:layout_marginTop="8dp">
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+                <TextView android:textSize="@dimen/std_list_font_size_group" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_more" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:layout_marginStart="24dp"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <com.xiaomi.smarthome.library.common.widget.ExpandGridView android:gravity="center" android:id="@+id/feed_back_more_grid_view" android:background="@color/mj_color_white" android:paddingLeft="22dp" android:paddingRight="22dp" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="3" android:paddingStart="22dp" android:paddingEnd="22dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

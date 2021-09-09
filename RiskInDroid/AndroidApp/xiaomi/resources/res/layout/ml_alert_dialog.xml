@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/parentPanel" android:background="@drawable/std_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/std_dialog_common_margin">
+    <View android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="18.5dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/topPanel" android:paddingLeft="@dimen/mj_dialog_common_padding" android:paddingRight="@dimen/mj_dialog_common_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.5dp" android:paddingStart="@dimen/mj_dialog_common_padding" android:paddingEnd="@dimen/mj_dialog_common_padding">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/icon" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:importantForAccessibility="no" android:paddingEnd="8dp"/>
+            <TextView android:textSize="@dimen/std_dialog_title_font_size" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:gravity="center" android:id="@+id/alertTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/title_divider_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ScrollView android:layout_gravity="center_vertical" android:id="@+id/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/std_dialog_msg_font_size" android:textColor="@color/mj_color_gray_normal" android:gravity="center" android:id="@+id/message" android:paddingLeft="@dimen/mj_dialog_common_padding" android:paddingRight="@dimen/mj_dialog_common_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/mj_dialog_common_padding" android:paddingEnd="@dimen/mj_dialog_common_padding"/>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/customPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:id="@+id/custom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <View android:id="@+id/title_divider_line_bottom" android:background="@color/mj_color_separator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="@dimen/std_dialog_list_item_height" android:layout_marginTop="18.5dp" android:layoutDirection="ltr">
+        <Button android:textSize="@dimen/std_dialog_button_font_size" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/button2" android:background="@drawable/dialog_btn_left_selector" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+        <Button android:textSize="@dimen/std_dialog_button_font_size" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/button3" android:background="@drawable/dialog_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+        <Button android:textSize="@dimen/std_dialog_button_font_size" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/button1" android:background="@drawable/dialog_btn_right_selector" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

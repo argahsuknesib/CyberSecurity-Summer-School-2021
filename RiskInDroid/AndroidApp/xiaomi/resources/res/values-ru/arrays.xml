@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_user_gender_name">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </array>
+    <array name="ble_guide_content_description">
+        <item>Первая страница</item>
+        <item>Вторая страница</item>
+        <item>Третья страница</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Янв</item>
+        <item>Фев</item>
+        <item>Мар</item>
+        <item>Апр</item>
+        <item>Мая</item>
+        <item>Июн</item>
+        <item>Июл</item>
+        <item>Авг</item>
+        <item>Сен</item>
+        <item>Окт</item>
+        <item>Ноя</item>
+        <item>Дек</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Супруг(-а)</item>
+        <item>Отец</item>
+        <item>Мама</item>
+        <item>Сын</item>
+        <item>Дочь</item>
+        <item>Сосед(-и)</item>
+        <item>Прочее</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Температура </item>
+        <item>Влажность </item>
+        <item>Качество воздуха </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Температура</item>
+        <item>Влажность</item>
+        <item>Качество воздуха</item>
+    </array>
+    <array name="month">
+        <item>Янв</item>
+        <item>Фев</item>
+        <item>Мар</item>
+        <item>Апр</item>
+        <item>Май</item>
+        <item>Июн</item>
+        <item>Июл</item>
+        <item>Авг</item>
+        <item>Сен</item>
+        <item>Окт</item>
+        <item>Ноя</item>
+        <item>Дек</item>
+    </array>
+    <array name="multikey_keyname_double">
+        <item>Левый переключатель</item>
+        <item>Правый переключатель</item>
+    </array>
+    <array name="multikey_keyname_three">
+        <item>Левый переключатель</item>
+        <item>Главный переключатель</item>
+        <item>Правый переключатель</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>Гостиная</item>
+        <item>спальня</item>
+        <item>Главная спальня/спальня</item>
+        <item>Кухня</item>
+        <item>Столовая</item>
+        <item>Ванная комната</item>
+        <item>Детская</item>
+        <item>Офис</item>
+        <item>Кабинет</item>
+        <item>Балкон</item>
+        <item>Мастерская</item>
+        <item>Ванная</item>
+        <item>Задний двор</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Пекин</item>
+        <item>Сеул</item>
+        <item>Токио</item>
+        <item>Нью-Йорк</item>
+        <item>Денвер</item>
+        <item>Коста-Рика</item>
+        <item>Чикаго</item>
+        <item>Мехико</item>
+        <item>Реджайна</item>
+        <item>Маджуро</item>
+        <item>Мидуэй</item>
+        <item>Гонолулу</item>
+        <item>Анкоридж</item>
+        <item>Лос-Анджелес</item>
+        <item>Тихуана</item>
+        <item>Финикс</item>
+        <item>Чиуауа</item>
+        <item>Богота</item>
+        <item>Нью-Йорк</item>
+        <item>Каракас</item>
+        <item>Барбадос</item>
+        <item>Манаус</item>
+        <item>Сантьяго</item>
+        <item>Сент-Джонс</item>
+        <item>Сан-Паулу</item>
+        <item>Буэнос-Айрес</item>
+        <item>Готхоб</item>
+        <item>Монтевидео</item>
+        <item>Южная Георгия</item>
+        <item>Азорские о-ва</item>
+        <item>Кабо-Верде</item>
+        <item>Касабланка</item>
+        <item>Лондон</item>
+        <item>Амстердам</item>
+        <item>Белград</item>
+        <item>Брюссель</item>
+        <item>Сараево</item>
+        <item>Виндхук</item>
+        <item>Браззавиль</item>
+        <item>Амман</item>
+        <item>Афины</item>
+        <item>Бейрут</item>
+        <item>Каир</item>
+        <item>Хельсинки</item>
+        <item>Иерусалим</item>
+        <item>Минск</item>
+        <item>Хараре</item>
+        <item>Багдад</item>
+        <item>Москва</item>
+        <item>Кувейт</item>
+        <item>Найроби</item>
+        <item>Тегеран</item>
+        <item>Баку</item>
+        <item>Тбилиси</item>
+        <item>Ереван</item>
+        <item>Дубай</item>
+        <item>Кабул</item>
+        <item>Карачи</item>
+        <item>Уральск</item>
+        <item>Екатеринбург</item>
+        <item>Калькутта</item>
+        <item>Коломбо</item>
+        <item>Катманду</item>
+        <item>Алматы</item>
+        <item>Рангун</item>
+        <item>Красноярск</item>
+        <item>Бангкок</item>
+        <item>Иркутск</item>
+        <item>Куала-Лумпур</item>
+        <item>Перт</item>
+        <item>Якутск</item>
+        <item>Аделаида</item>
+        <item>Дарвин</item>
+        <item>Брисбен</item>
+        <item>Хобарт</item>
+        <item>Сидней</item>
+        <item>Владивосток</item>
+        <item>Гуам</item>
+        <item>Магадан</item>
+        <item>Окленд</item>
+        <item>Фиджи</item>
+        <item>Тонгатапу</item>
+    </array>
+    <array name="weekday">
+        <item>ВС</item>
+        <item>ПН</item>
+        <item>ВТ</item>
+        <item>СР</item>
+        <item>ЧТ</item>
+        <item>ПТ</item>
+        <item>СБ</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+        <item>Вс</item>
+    </array>
+    <array name="weekday_short">
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="23dp"/>
+            <solid android:color="@color/mj_color_btn_corner_grey_pressed"/>
+            <size android:height="46dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="23dp"/>
+            <solid android:color="@color/mj_color_btn_corner_grey_pressed"/>
+            <size android:height="46dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="23dp"/>
+            <solid android:color="@color/mj_color_wearable_list_item_frame_pressed"/>
+            <size android:height="46dp"/>
+        </shape>
+    </item>
+</selector>

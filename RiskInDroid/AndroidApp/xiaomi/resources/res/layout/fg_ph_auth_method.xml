@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fragment_main" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:id="@+id/scroll_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_top_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/passport_sign_in_title"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:theme="@style/PassportForceDark" android:id="@+id/phone_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false">
+                        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/passport_country_code_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layoutDirection="locale">
+                                <EditText android:gravity="center_vertical" android:id="@+id/passport_country_code_edit_text" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:freezesText="true" android:layout_centerVertical="true" android:textDirection="locale" android:layout_marginEnd="5dp"/>
+                                <ImageView android:id="@+id/passport_close_country_code" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/passport_delete_text" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                                <TextView android:gravity="center_vertical" android:id="@+id/passport_country_code_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+86" android:freezesText="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp_selector" android:textDirection="locale"/>
+                            </LinearLayout>
+                            <AutoCompleteTextView android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_hint" android:inputType="number" android:imeOptions="actionUnspecified|flagNoFullscreen|flagNoExtractUi" android:layout_toEndOf="@+id/passport_country_code_container" style="?attr/editTextStyle"/>
+                            <ImageView android:id="@+id/delete_phone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/passport_delete_text" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/PassportForceDark" android:id="@+id/user_agreement_error_tip" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/ph_sign_in_btn" android:text="@string/passport_next_step" style="@style/Passport.HighlightRoundButton"/>
+                <RelativeLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/action_goto_psw_signin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psw_sign_in" style="@style/PassportButtonBorderless"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="7dp"/>
+    <RelativeLayout android:id="@+id/category_item_parent" android:layout_width="@dimen/size_80dp" android:layout_height="wrap_content" android:layout_alignTop="@+id/category_item_grid" android:layout_alignBottom="@+id/category_item_grid">
+        <ImageView android:id="@+id/category_parent_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:background="@color/mj_color_white" android:layout_width="@dimen/common_divider_line_size" android:layout_height="match_parent" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="21sp" android:textColor="@color/mj_color_black" android:id="@+id/category_parent_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/category_item_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_7dp" android:layout_toEndOf="@+id/category_item_parent"/>
+</RelativeLayout>

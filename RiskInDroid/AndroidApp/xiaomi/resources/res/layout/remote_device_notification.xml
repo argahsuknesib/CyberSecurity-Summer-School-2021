@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/noti_0" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_on_status_0" android:padding="1dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_noti_defualt_on" android:importantForAccessibility="no"/>
+            <ProgressBar android:id="@+id/pb_is_loading_0" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateDrawable="@drawable/circle_progressbar_notification"/>
+        </FrameLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@+id/txt_device_name_0" android:fadingEdge="horizontal" android:fadingEdgeLength="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxWidth="68dp" android:singleLine="true" android:requiresFadingEdge="horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/noti_1" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_on_status_1" android:padding="1dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_noti_defualt_on" android:importantForAccessibility="no"/>
+            <ProgressBar android:id="@+id/pb_is_loading_1" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateDrawable="@drawable/circle_progressbar_notification"/>
+        </FrameLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@+id/txt_device_name_1" android:fadingEdge="horizontal" android:fadingEdgeLength="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxWidth="68dp" android:singleLine="true" android:requiresFadingEdge="horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/noti_2" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_on_status_2" android:padding="1dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_noti_defualt_on" android:importantForAccessibility="no"/>
+            <ProgressBar android:id="@+id/pb_is_loading_2" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateDrawable="@drawable/circle_progressbar_notification"/>
+        </FrameLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@+id/txt_device_name_2" android:fadingEdge="horizontal" android:fadingEdgeLength="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxWidth="68dp" android:singleLine="true" android:requiresFadingEdge="horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/noti_3" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_on_status_3" android:padding="1dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_noti_defualt_on" android:importantForAccessibility="no"/>
+            <ProgressBar android:id="@+id/pb_is_loading_3" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateDrawable="@drawable/circle_progressbar_notification"/>
+        </FrameLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@+id/txt_device_name_3" android:fadingEdge="horizontal" android:fadingEdgeLength="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxWidth="68dp" android:singleLine="true" android:requiresFadingEdge="horizontal"/>
+    </LinearLayout>
+</LinearLayout>

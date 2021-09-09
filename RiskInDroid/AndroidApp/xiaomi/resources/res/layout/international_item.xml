@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/ripple_item_selector" android:layout_width="match_parent" android:layout_height="50dp">
+    <ImageButton android:id="@+id/selected_mark" android:background="@null" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:layout_marginRight="7dp" android:src="@drawable/mj_lib_btn_icon_selected" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:importantForAccessibility="no"/>
+    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_normal" android:ellipsize="end" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="76dp" android:singleLine="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/divider" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_alignParentBottom="true" android:alpha="0.15"/>
+</RelativeLayout>

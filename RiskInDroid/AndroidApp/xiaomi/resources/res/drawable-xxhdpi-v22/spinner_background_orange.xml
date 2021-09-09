@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#fc5e4c"/>
+                    <corners android:radius="3dp"/>
+                </shape>
+            </item>
+            <item android:end="15dp">
+                <bitmap android:gravity="right|center_vertical|center_horizontal|center" android:src="@drawable/icon_dropdown_up"/>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#fc5e4c"/>
+                    <corners android:radius="3dp"/>
+                </shape>
+            </item>
+            <item android:end="15dp">
+                <bitmap android:gravity="right|center_vertical|center_horizontal|center" android:src="@drawable/icon_dropdown_down"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>

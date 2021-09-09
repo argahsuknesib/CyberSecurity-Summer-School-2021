@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="80dp">
+    <ImageView android:id="@+id/left_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding16" android:src="@drawable/progressbar_indeterminate_bg_light" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/left_image" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/home_text_size_h3" android:textColor="@color/home_text_color_black_a" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding16" android:layout_marginRight="@dimen/padding16" android:text="五彩城店面" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/home_text_color_black_c" android:id="@+id/sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding16" android:layout_marginTop="4dp" android:layout_marginRight="@dimen/padding16" android:maxLines="1" android:lineSpacingExtra="3dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_list_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:src="@drawable/icon_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/t_grey_desc" android:id="@+id/more_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他零售店" android:layout_toLeftOf="@+id/iv_list_right" android:layout_centerVertical="true"/>
+</RelativeLayout>

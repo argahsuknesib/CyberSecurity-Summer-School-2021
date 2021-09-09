@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="one">Bis zu %1d Aktionen hinzufügen</item>
+        <item quantity="other">Bis zu %1d Aktionen hinzufügen</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="one">Durchschnittsdaten von %s Gerät in der Nähe</item>
+        <item quantity="other">Durchschnittsdaten von %s Geräten in der Nähe</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="one">%d Tage</item>
+        <item quantity="other">%d Tage</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="one">%d Stu.</item>
+        <item quantity="other">%d Stu.</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="one">%d Min.</item>
+        <item quantity="other">%d Min.</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="one">%d Sek.</item>
+        <item quantity="other">%d Sek.</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="one">Gerät %1$s erfolgreich hinzugefügt</item>
+        <item quantity="other">Geräte %1$s erfolgreich hinzugefügt</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="one">%1$d Gerät</item>
+        <item quantity="other">%1$d Geräte</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="one">%1$d Gerät</item>
+        <item quantity="other">%1$d Geräte</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="one">%d intelligente Kamera</item>
+        <item quantity="other">%d intelligente Kameras</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minuten</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="one">Kumulative Verwendung: %d Tage,</item>
+        <item quantity="other">Kumulative Verwendung: %d Tagen,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="one">Ausgewählte %1$s Nachricht löschen?</item>
+        <item quantity="other">Ausgewählte %1$s Nachrichten löschen?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="one">Ausgewählten Eintrag löschen?</item>
+        <item quantity="other">Die %1$s ausgewählten Einträge löschen?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="one">Neues %d Gerät gefunden, tippen Sie, um es einzurichten</item>
+        <item quantity="other">Neue %d Geräte gefunden, tippen Sie, um sie einzurichten</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="one">%1$s Gerät wurde keinem Raum zugewiesen</item>
+        <item quantity="other">%1$s Geräte wurden keinem Raum zugewiesen</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="one">%1$s ausgewähltes Gerät löschen?</item>
+        <item quantity="other">%1$s ausgewählte Geräte löschen?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="one">Die ausgewählte Szene aus den Favoriten entfernen?</item>
+        <item quantity="other">Die %1$d ausgewählten Szenen aus den Favoriten entfernen?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="one">%1$s m</item>
+        <item quantity="other">%1$s m</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="one">Halten Sie Geräte, um Sie neu anzuordnen und das %d Gerät oben erscheint auf der Karte</item>
+        <item quantity="other">Halten Sie Geräte, um Sie neu anzuordnen und die %d Geräte oben erscheinen auf der Karte</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="one">%1$d ausgewählt</item>
+        <item quantity="other">%1$d ausgewählt</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="one">%1$s ausgewählt</item>
+        <item quantity="other">%1$s ausgewählt</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="one">Ausgewählte Szenen:%1$d</item>
+        <item quantity="other">Ausgewählte Szenen:%1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="one">%1$s%2$s</item>
+        <item quantity="other">%1$s%2$s etc.</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="one">%d geteiltes Gerät</item>
+        <item quantity="other">%d geteilte Geräte</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="one">%s Geräte geteilt</item>
+        <item quantity="other">%s Geräte geteilt</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="one">Kontaktinfo darf bis zu %1$d Zeichen enthalten</item>
+        <item quantity="other">Kontaktinfo darf bis zu %1$d Zeichen enthalten</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="one">Ihr Feedback darf bis zu %1$d Zeichen enthalten</item>
+        <item quantity="other">Ihr Feedback darf bis zu %1$d Zeichen enthalten</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="one">Firmware-Update %1$s verfügbar</item>
+        <item quantity="other">Firmware-Updates %1$s verfügbar</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="one">Firmware-Update %1$s abgeschlossen</item>
+        <item quantity="other">Firmware-Updates %1$s abgeschlossen</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="one">Der Cloud-Speicherdienst läuft nach %1$d Tag ab, klicken Sie auf Erneuerung.</item>
+        <item quantity="other">Der Cloud-Speicherdienst läuft nach %1$d Tagen ab. Bitte klicken Sie auf Erneuerung.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="one">%1$s Zuhause</item>
+        <item quantity="other">%1$s Zuhause</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="one">%1$s Gerät</item>
+        <item quantity="other">%1$s Geräte</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="one">%1$s Raum</item>
+        <item quantity="other">%1$s Raum</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="one">%d Fernbedienung</item>
+        <item quantity="other">%d Fernbedienungen</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="one">%d Gerät verbunden</item>
+        <item quantity="other">%d Geräte verbunden</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="one">%d intelligentes Gerät gefunden, zum Beenden tippen</item>
+        <item quantity="other">%d intelligente Geräte gefunden, zum Beenden tippen</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="one">Die Lichtgruppe kann aus %1$s Glühlampe bestehen.</item>
+        <item quantity="other">Die Lichtgruppe kann aus bis zu %1$s Glühlampen bestehen.</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="one">Aktualisierungen verfügbar für %d Plug-in</item>
+        <item quantity="other">Aktualisierungen verfügbar für %d Plug-ins</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="one">%d Stunden</item>
+        <item quantity="other">%d Stunden</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="one">%d Minuten</item>
+        <item quantity="other">%d Minuten</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="one">%1$d Gerät ist in der Nähe verfügbar</item>
+        <item quantity="other">%1$d Geräte sind in der Nähe verfügbar</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="one">Geräte online: %d</item>
+        <item quantity="other">Geräte online: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="one">Warten auf %1$s Geräte-Plug-ins:</item>
+        <item quantity="other">Warten auf %1$s Geräte-Plug-ins:</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="one">Sie haben %d neue Nachricht erhalten</item>
+        <item quantity="other">Sie haben %d neue Nachrichten erhalten</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d neue Benachrichtigung</item>
+        <item quantity="other">%d neue Benachrichtigungen</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="one">Schalter%d</item>
+        <item quantity="other">Schalter%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="one">%1$d Gerät hinzugefügt</item>
+        <item quantity="other">%1$d Geräte hinzugefügt</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="one">AIoT Router hat %1$d Gerät gefunden</item>
+        <item quantity="other">AIoT Router hat %1$d Geräte gefunden</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="one">Mi Router hat %1$d Gerät gefunden</item>
+        <item quantity="other">Mi Router hat %1$d Geräte gefunden</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="one">%1$s Mi AI-Lautsprecher</item>
+        <item quantity="other">%1$s Mi AI-Lautsprecher</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="one">Ausgewählte Smart Scene löschen?</item>
+        <item quantity="other">Die %1$s ausgewählten Smart Scenes löschen?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="one">Einschalten in %d d</item>
+        <item quantity="other">Einschalten in %d d</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="one">Einschalten in %d Std.</item>
+        <item quantity="other">Einschalten in %d Std.</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="one">%1$s ausgewählt</item>
+        <item quantity="other">%1$s ausgewählt</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="one">%1$d Gerät</item>
+        <item quantity="other">%1$d Geräte</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="one">%1$s (%2$d Gerät)</item>
+        <item quantity="other">%1$s und weitere Geräte (%2$d Geräte)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="one">Mit %1$s (%2$d Person) geteilt</item>
+        <item quantity="other">Mit %1$s und anderen (%2$d Personen) geteilt</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="one">%d Min. später</item>
+        <item quantity="other">%d Min. später</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="one">%d s später</item>
+        <item quantity="other">%d s später</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="one">%d eingeschlossen</item>
+        <item quantity="other">%d eingeschlossen</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="one">%d ausgewählt</item>
+        <item quantity="other">%d ausgewählt</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="one">%d Kamera</item>
+        <item quantity="other">%d Kameras</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="one">Download wird ausgeführt…%1$d</item>
+        <item quantity="other">Download wird ausgeführt…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="one">Jedem Gerät können bis zu %1$s Sprachkurznamen zugeordnet werden.</item>
+        <item quantity="other">Jedem Gerät können bis zu %1$s Sprachkurznamen zugeordnet werden.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="one">Es wurden %1$d %2$s gefunden. Tippen Sie, um eine Verbindung aufzubauen.</item>
+        <item quantity="other">Es wurden %1$d %2$ss gefunden. Tippen Sie, um eine Verbindung aufzubauen.</item>
+    </plurals>
+</resources>

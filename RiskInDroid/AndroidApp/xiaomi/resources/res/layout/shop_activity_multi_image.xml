@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <GridView android:id="@+id/grid" android:paddingBottom="?android:attr/actionBarSize" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:numColumns="4"/>
+        <View android:id="@+id/grid_mark" android:background="#222222" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/footer" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+        <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/commit" android:layout_alignParentLeft="true">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="16sp" android:textColor="#424242" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/category_btn" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawableRight="@drawable/shop_indicator_icon" android:drawablePadding="5dp"/>
+        </FrameLayout>
+        <com.mi.global.shop.widget.CustomButtonView android:textSize="15sp" android:textColor="@drawable/shop_image_confirm_text_color" android:id="@+id/commit" android:background="@null" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:minWidth="1dp" android:minHeight="1dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

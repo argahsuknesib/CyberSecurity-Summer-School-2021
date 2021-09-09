@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_white" app:tb_has_back="true" app:tb_left_icon="@drawable/mj_common_title_bar_return" app:tb_title="@string/setting_traffic" app:tb_title_color="@color/mj_color_black"/>
+    <include layout="@layout/traffic_view"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:gravity="center" android:id="@+id/save_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="40dp" android:minWidth="200dp" android:text="@string/common_save" style="@style/Passport.ButtonNormal"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="58dp" android:layout_height="58dp" android:layout_margin="5dp">
+        <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/figure_face" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" app:riv_corner_radius="200dp"/>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/face_selected_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:src="@drawable/icon_selected" android:importantForAccessibility="no" android:layout_marginEnd="3dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="10dp">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:gravity="left" android:id="@+id/figure_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="left" android:id="@+id/figure_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:layout_gravity="center_vertical" android:id="@+id/tv_operation" android:paddingLeft="14dp" android:paddingTop="5dp" android:paddingRight="14dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0" android:drawableTint="@color/mj_color_black"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_arrow" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/camera_arrow_right" android:tint="@color/mj_color_black"/>
+</LinearLayout>

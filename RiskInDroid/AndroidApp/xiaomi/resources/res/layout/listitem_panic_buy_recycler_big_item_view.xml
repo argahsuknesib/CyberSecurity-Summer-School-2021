@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:background="#fffafafa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/recycler_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/white" android:id="@+id/text_favor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="" android:layout_alignRight="@+id/recycler_img" android:layout_alignBottom="@+id/recycler_img"/>
+            <include layout="@layout/layout_listitem_home_producttag"/>
+            <ImageView android:id="@+id/img_sell_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding8" android:layout_marginBottom="@dimen/padding8" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignRight="@+id/recycler_img" android:layout_alignBottom="@+id/recycler_img"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_h2" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_action" android:background="@drawable/bg_btn_orange" android:layout_width="95dp" android:layout_height="28dp" android:layout_marginRight="@dimen/padding16" android:text="提醒我" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:id="@+id/price_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding12" android:layout_toLeftOf="@+id/btn_action" android:layout_centerVertical="true">
+                <include layout="@layout/layout_price_view"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/home_text_size_h4" android:textColor="@color/home_text_color_black_a" android:ellipsize="end" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding16" android:layout_marginRight="@dimen/padding8" android:text="" android:maxLines="1" android:layout_toLeftOf="@+id/price_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

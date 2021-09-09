@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="40dp">
+    <com.xiaomi.shopviews.widget.smarttab.SmartTabLayout android:id="@+id/listitem_category_slidetab_smarttablayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:mi_stl_defaultTabTextColor="@color/color_category_slidetab_text" app:mi_stl_indicatorColor="@color/orange" app:mi_stl_indicatorCornerRadius="1.5dp" app:mi_stl_indicatorThickness="1.5dp" app:mi_stl_titleOffset="-1" app:mi_stl_underlineColor="@android:color/transparent"/>
+    <View android:background="#ffdedede" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

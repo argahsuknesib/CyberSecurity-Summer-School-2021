@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_text" android:background="@drawable/bg_10_bgcolorwhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="14dp" android:layout_marginRight="16dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:id="@+id/tv_device_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true" android:layout_weight="1" android:layout_below="@+id/tv_name" android:alpha="0.6"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_30_transparent" android:id="@+id/tv_room" android:background="@drawable/printer_room_bkg" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:singleLine="true"/>
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ivImage" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true"/>
+    </LinearLayout>
+</RelativeLayout>

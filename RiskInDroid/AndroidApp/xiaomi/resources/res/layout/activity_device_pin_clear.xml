@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/pin_clear_device_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:paddingStart="27dp" android:paddingEnd="27dp">
+        <TextView android:textSize="25sp" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/more_than_3_devices_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..."/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/pin_clear_device_container">
+        <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/divide_line_item" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="35dp">
+            <View android:layout_centerVertical="true" android:layout_marginStart="@dimen/std_list_content_margin_left_27" android:layout_marginEnd="@dimen/std_list_content_margin_right_27" style="@style/ListItem.Divider"/>
+        </com.xiaomi.smarthome.library.common.widget.ListItemView>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="300dp" android:layout_height="wrap_content">
+            <com.xiaomi.smarthome.framework.page.verify.view.PinInputView android:layout_gravity="center_horizontal" android:id="@+id/pin_clear_pin_inputs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:spacing="28dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_red_normal" android:id="@+id/pin_clear_incorrect_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/device_more_verify_pin_error"/>
+        </LinearLayout>
+        <TextView android:id="@+id/pincode_clear_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/device_more_security_verify_old_hint" android:paddingStart="27dp" android:paddingEnd="27dp"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.framework.page.verify.view.PinSoftKeyboard android:id="@+id/pin_clear_soft_keyboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

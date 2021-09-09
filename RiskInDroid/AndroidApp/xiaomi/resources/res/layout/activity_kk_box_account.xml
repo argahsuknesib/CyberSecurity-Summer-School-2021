@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/account_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:background="@drawable/account_qq_oauth_up_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_black_00_transparent" app:tb_has_back="true" app:tb_right_icon="@drawable/icon_more_normal"/>
+        <RelativeLayout android:background="@drawable/account_qq_oauth_up_bg" android:layout_width="match_parent" android:layout_height="@dimen/size_100dp" android:layout_below="@+id/title_bar">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/avatar" android:layout_width="@dimen/size_60dp" android:layout_height="@dimen/size_60dp" android:src="@drawable/passport_default_avatar" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_13dp"/>
+            <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_10dp" android:layout_toEndOf="@+id/avatar">
+                <TextView android:textSize="@dimen/major_text_size" android:textStyle="bold" android:textColor="@color/mj_color_white" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/minimal_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/left_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6dp"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/account_qq_oauth_up" android:scaleType="centerCrop" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:background="@color/mj_color_gray_heavier" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/account_info">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon_music_intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    </ScrollView>
+</RelativeLayout>

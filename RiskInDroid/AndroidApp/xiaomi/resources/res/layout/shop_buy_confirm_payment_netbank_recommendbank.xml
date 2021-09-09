@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@drawable/shop_border_confirm_payment_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <ImageView android:gravity="center" android:id="@+id/bank_logo_border" android:background="@drawable/shop_border_confirm_payment_wred" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:id="@+id/bank_logo" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" android:layout_margin="1dp" android:src="@drawable/shop_netbank_citi" android:scaleType="fitCenter" fresco:actualImageScaleType="2"/>
+    <ImageView android:id="@+id/bank_logo_corner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shop_multiple_choice_s"/>
+</FrameLayout>

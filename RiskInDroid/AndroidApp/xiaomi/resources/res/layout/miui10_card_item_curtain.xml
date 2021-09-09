@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.CardFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" radius="0.05" ratio="0.68">
+    <com.xiaomi.smarthome.newui.widget.CurtainControlView android:id="@+id/ccv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.xiaomi.smarthome.library.common.widget.CardFrameLayout>

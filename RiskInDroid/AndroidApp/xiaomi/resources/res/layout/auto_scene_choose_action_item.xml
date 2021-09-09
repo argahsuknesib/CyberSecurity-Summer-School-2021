@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:background="@drawable/mj_rs_common_white_list_padding_no_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/scene_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@+id/right_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_right_arrow" android:importantForAccessibility="no"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="29dp" android:layout_toLeftOf="@+id/scene_right_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginEnd="29dp" android:layout_toStartOf="@+id/scene_right_container" android:layout_alignParentStart="true">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/tv_scene_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scene2_gohome" android:singleLine="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:weightSum="1">
+                <RelativeLayout android:layout_width="@dimen/scene_all_activity_width_and_height" android:layout_height="@dimen/scene_all_activity_width_and_height">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon_condition" android:layout_width="@dimen/scene_all_activity_width_and_height" android:layout_height="@dimen/scene_all_activity_width_and_height"/>
+                    <ImageView android:id="@+id/icon_condition_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_all_more_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/scene_all_link_icon" android:importantForAccessibility="no"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/action_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <include layout="@layout/scene_action_icon_item"/>
+                    <include layout="@layout/scene_action_icon_item"/>
+                    <include layout="@layout/scene_action_icon_item"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/scene_new_more_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_new_more_icon" android:importantForAccessibility="no"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <View android:background="@color/mj_color_black_06_transparent" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+</LinearLayout>

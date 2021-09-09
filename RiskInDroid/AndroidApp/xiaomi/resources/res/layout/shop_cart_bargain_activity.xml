@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+            <com.mi.global.shop.widget.CustomTextView android:textColor="@color/light_grey" android:id="@+id/bargain_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+            <com.mi.global.shop.widget.NoScrollListView android:id="@+id/bargain_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/base_background" android:dividerHeight="1dp"/>
+            <com.mi.global.shop.widget.CustomTextView android:background="@color/base_background" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/line_spacing"/>
+            <com.mi.global.shop.widget.CommonButton android:id="@+id/bargain_add" android:layout_width="match_parent" android:layout_marginTop="10dp" android:text="@string/cart_bargain_add" style="@style/ProductDetailGotoCartButton"/>
+            <com.mi.global.shop.widget.CommonButton android:id="@+id/bargain_back" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="@string/cart_bargain_back" style="@style/ProductDetailGotoCartButton"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:id="@+id/cart_loadingLL" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

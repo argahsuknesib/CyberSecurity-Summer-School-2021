@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_black_05_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/launch_content" android:background="@drawable/miconnect_common_title_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="357dp">
+        <include layout="@layout/miconnect_common_title"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_icon" android:layout_width="213.33dp" android:layout_height="213.33dp" android:scaleType="centerCrop" app:failureImage="@drawable/miconnect_launcher_src" app:placeholderImage="@drawable/miconnect_launcher_src"/>
+        <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="#b2000000" android:gravity="center" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/miconnect_loading"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@string/miui_earphone_scanning"/>
+    </LinearLayout>
+</FrameLayout>

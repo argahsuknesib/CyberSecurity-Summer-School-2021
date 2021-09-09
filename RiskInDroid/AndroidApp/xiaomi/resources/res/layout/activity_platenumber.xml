@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_has_back="true" app:tb_title="@string/setting_traffic_plate_number"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/platenumber_banner" android:scaleType="fitXY"/>
+        <ListView android:id="@+id/listview" android:focusable="false" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/list_divider" android:dividerHeight="0dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:src="@drawable/icon_platenumber"/>
+        <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_black" android:gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@string/traffic_plate_number_empty"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/add_platenumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:minWidth="200dp" android:text="@string/setting_traffic_add_plate_number" style="@style/App.Widget.Button.Orange.Large"/>
+</LinearLayout>

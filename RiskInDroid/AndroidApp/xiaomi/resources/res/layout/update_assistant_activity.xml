@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_green_normal" app:tb_title="@string/setting_update"/>
+    <FrameLayout android:orientation="vertical" android:background="@color/mj_color_green_normal" android:layout_width="match_parent" android:layout_height="210dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/upgrade_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@drawable/update_tips_icon_update"/>
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_white_50_transparent" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/upgrade_hint" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+    </FrameLayout>
+    <ListView android:id="@+id/upgrade_listview" android:background="@color/mj_color_white" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:minHeight="60dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/common_bottom_bar_height">
+        <TextView android:gravity="center" android:id="@+id/update_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:minWidth="200dp" android:text="@string/update_batch_upgrade" style="@style/Passport.ButtonNormal"/>
+        <TextView android:gravity="center" android:id="@+id/check_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:minWidth="200dp" android:text="@string/update_check_update" style="@style/Passport.ButtonNormal"/>
+    </LinearLayout>
+</LinearLayout>

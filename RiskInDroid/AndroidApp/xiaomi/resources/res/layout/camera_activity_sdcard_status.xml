@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_transparent_white"/>
+    <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/sdcard_info" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="73dp" android:layout_height="112dp" android:layout_marginTop="9dp" android:src="@drawable/camera_sd_card_icon_nor" android:scaleType="fitXY"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_white" android:id="@+id/sdcard_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/sdcard_status"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_white" android:id="@+id/sdcard_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="28dp" android:alpha="0.5"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/sdcard_status_layout" android:background="@color/mj_color_sd_card_free" android:layout_width="match_parent" android:layout_height="31dp">
+                    <View android:id="@+id/sdcard_video" android:background="@color/mj_color_red_normal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <View android:id="@+id/sdcard_other" android:background="@color/mj_color_text_blue_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <View android:id="@+id/sdcard_free" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/sd_card_setting_item">
+                        <com.xiaomi.smarthome.camera.view.widget.SdCardStatusView android:background="@color/mj_color_red_normal" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="7dp" android:layout_marginRight="23dp"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_video"/>
+                        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_light" android:id="@+id/sdcard_video_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+                    <include layout="@layout/camera_list_line_padding"/>
+                    <LinearLayout style="@style/sd_card_setting_item">
+                        <com.xiaomi.smarthome.camera.view.widget.SdCardStatusView android:background="@color/mj_color_text_blue_bg" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="7dp" android:layout_marginRight="23dp"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_other"/>
+                        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_light" android:id="@+id/sdcard_other_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+                    <include layout="@layout/camera_list_line_padding"/>
+                    <LinearLayout style="@style/sd_card_setting_item">
+                        <com.xiaomi.smarthome.camera.view.widget.SdCardStatusView android:background="@color/mj_color_sd_card_free" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="7dp" android:layout_marginRight="23dp"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdcard_free"/>
+                        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_light" android:id="@+id/sdcard_free_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+                    <include layout="@layout/camera_list_line"/>
+                    <View android:background="@color/mj_color_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/text_margin_top"/>
+                    <include layout="@layout/camera_list_line"/>
+                    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sdcard_format" item:item_line_margin="@dimen/line_margin" item:item_title="@string/sdcard_format" item:item_title_color="#e94f4f" item:item_type="0" style="@style/setting_item"/>
+                    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sdcard_out" item:item_line_margin="0dp" item:item_title="@string/sdcard_out" item:item_title_color="#527acc" item:item_type="0" style="@style/setting_item"/>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@color/mj_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin" android:layout_marginTop="12dp" android:text="@string/sdcard_out_tip"/>
+                <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="26dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <include android:visibility="gone" layout="@layout/camera_list_load_view"/>
+    </FrameLayout>
+</LinearLayout>

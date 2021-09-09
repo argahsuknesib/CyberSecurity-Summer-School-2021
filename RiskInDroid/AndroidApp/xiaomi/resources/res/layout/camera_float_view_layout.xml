@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/floating_window_root_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/video_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.mijia.widget.RoundCornerImageView android:id="@+id/video_view_cover" android:background="@drawable/floating_window_root_view_bg" android:layout_width="219dp" android:layout_height="123dp" android:scaleType="center"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/btn_bottom_view" android:background="@drawable/floating_window_control_bg" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/mute_button" android:layout_width="0dp" android:layout_height="44dp" android:src="@drawable/camera_float_btn_mute" android:scaleType="center" android:layout_weight="1"/>
+        <ImageView android:id="@+id/pause_button" android:layout_width="0dp" android:layout_height="44dp" android:src="@drawable/camera_float_btn_play" android:scaleType="center" android:layout_weight="2"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/goto_plugin_button" android:layout_width="0dp" android:layout_height="44dp" android:src="@drawable/camera_float_to_plugin" android:scaleType="center" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/delete_button_right" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="6dp" android:src="@drawable/camera_float_btn_close" android:scaleType="center" android:layout_marginEnd="6dp"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/camera_loading" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="false" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/miui12_loading" android:indeterminateBehavior="repeat"/>
+</FrameLayout>

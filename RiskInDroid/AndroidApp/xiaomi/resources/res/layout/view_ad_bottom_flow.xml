@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/ad_bottom_flow_bg" android:layout_width="match_parent" android:layout_height="70dp" android:layout_margin="17dp" android:alpha="0.5">
+        <ImageView android:id="@+id/image" android:layout_width="56dp" android:layout_height="56dp" android:layout_margin="7dp" android:scaleType="centerCrop" android:contentDescription="@null"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/image" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/image">
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_white" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/close_image" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="21dp" android:src="@drawable/ad_bottom_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/mj_close" android:layout_marginEnd="21dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</FrameLayout>

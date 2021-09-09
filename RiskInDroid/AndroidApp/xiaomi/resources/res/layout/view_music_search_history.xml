@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/size_27dp" android:paddingRight="@dimen/size_27dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="19dp" android:layout_marginBottom="19dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="34dp">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/mico_color_8C93B0" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_search_history" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/history_clear" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="1dp" android:src="@drawable/mico_icon_search_history_delete" android:scaleType="center" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.xiaomi.mico.common.widget.FluidLayout android:id="@+id/search_history" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/custom_action_bar" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/profile_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_back_light" android:layout_marginStart="6dp"/>
+        <TextView android:textSize="@dimen/action_bar_title_text_size" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_details"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/help_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="24dp" app:srcCompat="@drawable/account_help"/>
+    </FrameLayout>
+    <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/preference_category_title_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/preference_title_vertical_margin" android:layout_marginBottom="@dimen/preference_title_vertical_margin" android:text="@string/account_user_base_info" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_avatar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/account_user_avatar"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_user_name" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/account_user_name"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_user_id" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/account_user_id"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_user_gender" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/account_user_gender"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceCategoryDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_category_divider_height"/>
+            <TextView android:textSize="@dimen/preference_category_title_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/preference_title_vertical_margin" android:layout_marginBottom="@dimen/preference_title_vertical_margin" android:text="@string/account_secure_info_pref_title" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_user_phone" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/account_user_phone"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_user_email" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/account_user_email"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceCategoryDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_category_divider_height"/>
+            <TextView android:textSize="@dimen/preference_category_title_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/preference_title_vertical_margin" android:layout_marginBottom="@dimen/preference_title_vertical_margin" android:text="@string/account_security_info_pref_title" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceView android:id="@+id/pref_account_password" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/change_password"/>
+            <com.xiaomi.passport.ui.settings.AccountPreferenceDivider android:layout_width="match_parent" android:layout_height="@dimen/preference_divider_height" android:layout_marginStart="@dimen/preference_left_margin"/>
+            <include layout="@layout/account_settings_footer_layout"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

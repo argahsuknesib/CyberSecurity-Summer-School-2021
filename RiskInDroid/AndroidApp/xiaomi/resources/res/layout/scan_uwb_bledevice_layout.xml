@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/common_content_big_height">
+    <FrameLayout android:background="@drawable/miconnect_common_title_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/common_title_height">
+        <TextView android:textSize="@dimen/common_title_text_size" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.7dp" android:text="@string/scan_device"/>
+    </FrameLayout>
+    <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="320dp">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:id="@+id/scan_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:text="@string/scanning_device_please_wait" android:layout_marginStart="46dp"/>
+        <com.xiaomi.smarthome.device.choosedevice.ScanDeviceProgressBar android:id="@+id/progress_bar" android:layout_width="match_parent" android:layout_height="3.3dp" android:layout_marginLeft="46dp" android:layout_marginTop="150dp" android:layout_marginRight="46dp"/>
+    </FrameLayout>
+</LinearLayout>

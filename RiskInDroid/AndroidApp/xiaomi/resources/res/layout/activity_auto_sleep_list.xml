@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sleep_list" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sleep_auto_list_title"/>
+        <RelativeLayout android:id="@+id/sleep1" android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="66dp">
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/tv_on1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginTop="16dp" android:text="@string/sleep_auto_item_title"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/tv_on_time1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true" android:layout_toRightOf="@+id/tv_on1" android:layout_alignBottom="@+id/tv_on1"/>
+            <TextView android:textSize="@dimen/font_size_9sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/tv_repeat1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/sleep_auto_times_onetime" android:singleLine="true" android:layout_below="@+id/tv_on1" android:layout_alignLeft="@+id/tv_on1"/>
+            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_timer1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <View android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sleep2" android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="66dp">
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/tv_on2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginTop="16dp" android:text="@string/sleep_auto_item_title"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/tv_on_time2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true" android:layout_toRightOf="@+id/tv_on2" android:layout_alignBottom="@+id/tv_on2"/>
+            <TextView android:textSize="@dimen/font_size_9sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/tv_repeat2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/sleep_auto_times_onetime" android:singleLine="true" android:layout_below="@+id/tv_on2" android:layout_alignLeft="@+id/tv_on2"/>
+            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_timer2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <View android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sleep3" android:background="@drawable/mj_common_white_list" android:layout_width="match_parent" android:layout_height="66dp">
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/tv_on3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginTop="16dp" android:text="@string/sleep_auto_item_title"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/tv_on_time3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true" android:layout_toRightOf="@+id/tv_on3" android:layout_alignBottom="@+id/tv_on3"/>
+            <TextView android:textSize="@dimen/font_size_9sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/tv_repeat3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/sleep_auto_times_onetime" android:singleLine="true" android:layout_below="@+id/tv_on3" android:layout_alignLeft="@+id/tv_on3"/>
+            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/sb_timer3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <View android:background="@color/mj_color_gray_lightest" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <TextView android:textColor="#606060" android:gravity="center" android:id="@+id/add_timer_id" android:background="@drawable/common_button" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="30dp" android:text="@string/sleep_auto_add" android:layout_marginStart="25dp" android:layout_marginEnd="25dp"/>
+</LinearLayout>

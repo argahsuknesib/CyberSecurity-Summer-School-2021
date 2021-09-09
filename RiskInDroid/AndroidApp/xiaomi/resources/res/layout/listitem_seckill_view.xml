@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/layout_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/height40">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_countdown_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_countdown" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginLeft="@dimen/padding4" android:layout_marginRight="@dimen/padding16" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:id="@+id/tv_countdown_hour" android:layout_width="16dp" android:layout_height="14dp" style="@style/seckillStyle"/>
+            <TextView android:textSize="@dimen/home_text_size_h1" android:textColor="#ff5b5b5b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text=":"/>
+            <TextView android:id="@+id/tv_countdown_minute" android:layout_width="16dp" android:layout_height="14dp" android:layout_marginLeft="2dp" style="@style/seckillStyle"/>
+            <TextView android:textSize="@dimen/home_text_size_h1" android:textColor="#ff5b5b5b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text=":"/>
+            <TextView android:id="@+id/tv_countdown_second" android:layout_width="16dp" android:layout_height="14dp" android:layout_marginLeft="2dp" style="@style/seckillStyle"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/home_text_size_h3" android:textStyle="bold" android:textColor="@color/home_text_color_black_a" android:id="@+id/tv_countdownDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_toLeftOf="@+id/layout_countdown" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.xiaomi.shopviews.widget.hdhorizontalrecyclergoods.CustRecylerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

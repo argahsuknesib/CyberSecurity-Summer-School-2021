@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/home_text_size_h3" android:textColor="@color/home_text_color_black_a" android:ellipsize="end" android:id="@+id/bottom_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding16" android:layout_marginTop="@dimen/home_padding_8x" android:layout_marginRight="@dimen/padding16" android:text="" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/home_text_color_black_c" android:ellipsize="end" android:id="@+id/bottom_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding16" android:layout_marginTop="2dp" android:layout_marginRight="@dimen/padding16" android:maxLines="3" android:lineSpacingExtra="3dp"/>
+        <include android:id="@+id/layout_viewhelper_price" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding16" android:layout_marginTop="@dimen/padding4" layout="@layout/layout_price_view"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/top_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/progressbar_indeterminate_bg_light" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <include layout="@layout/layout_listitem_home_producttag"/>
+    </RelativeLayout>
+</LinearLayout>

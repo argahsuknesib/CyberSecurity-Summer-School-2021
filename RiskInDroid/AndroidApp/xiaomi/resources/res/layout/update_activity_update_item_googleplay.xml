@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/category_divider" android:background="#0000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:alpha="0.15"/>
+    <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_black_40_transparent" android:gravity="center" android:id="@+id/category" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginLeft="24dp" android:textAlignment="center" android:layout_marginStart="24dp"/>
+    <View android:background="#000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_marginBottom="5dp" android:alpha="0.15"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="74dp">
+        <FrameLayout android:id="@+id/icon_container" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="24dp" android:layout_centerVertical="true" android:layout_marginStart="24dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitCenter" android:contentDescription="@null" app:roundedCornerRadius="3dp"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/right_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="18dp" android:layout_alignParentRight="true" android:layout_marginEnd="18dp" android:layout_alignParentEnd="true">
+            <Button android:textSize="@dimen/font_size_11sp" android:textColor="#fff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/update_btn" android:background="@drawable/std_btn_update_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="28dp" android:maxWidth="80dp" android:minWidth="65dp" android:minHeight="0dp" android:text="@string/update_immediately" android:singleLine="true" android:layout_centerInParent="true"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.xiaomi.smarthome.library.common.widget.PieProgressBar android:layout_gravity="center" android:id="@+id/update_progress" android:background="@drawable/kuailian_progress_filled_not" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/kuailian_progress_filled"/>
+                <TextView android:textColor="#378ed3" android:layout_gravity="center" android:id="@+id/update_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/installing_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/page_circle_loading_progress_2"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="#32bac0" android:gravity="center" android:layout_gravity="center" android:id="@+id/installing_progress_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_installing_short"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/right_container" android:layout_toRightOf="@+id/icon_container" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toStartOf="@+id/right_container" android:layout_toEndOf="@+id/icon_container">
+            <TextView android:textSize="@dimen/font_size_16sp" android:textColor="@color/mj_color_black_80_transparent" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="13"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_50_transparent" android:ellipsize="end" android:id="@+id/sub_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_50_transparent" android:ellipsize="end" android:id="@+id/sub_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/change_log" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+        <ImageView android:id="@+id/fold" android:background="@drawable/score_tip_icon" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="27dp" android:layout_marginRight="27dp"/>
+</LinearLayout>

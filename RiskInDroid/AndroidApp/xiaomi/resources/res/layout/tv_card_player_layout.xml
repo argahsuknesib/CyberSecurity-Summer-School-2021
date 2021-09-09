@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/card_view_bg" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="172dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/info_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/player_poster_iv" android:background="#20000000" android:layout_width="67dp" android:layout_height="67dp"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/player_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="16sp" android:textColor="#66000000" android:id="@+id/player_ci_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <SeekBar android:id="@+id/player_progress_seek" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:maxHeight="4dp" android:progressDrawable="@drawable/player_progress_seek_bg" android:minHeight="4dp" android:thumb="@drawable/player_progress_seek_thumb" android:thumbOffset="0dp" android:layout_below="@+id/info_layout" android:paddingStart="0dp" android:paddingEnd="0dp"/>
+    <TextView android:textSize="14sp" android:textColor="#66000000" android:id="@+id/player_cursor_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/player_progress_seek"/>
+    <TextView android:textSize="14sp" android:textColor="#66000000" android:id="@+id/player_duration_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/player_progress_seek" android:layout_alignParentRight="true"/>
+</RelativeLayout>

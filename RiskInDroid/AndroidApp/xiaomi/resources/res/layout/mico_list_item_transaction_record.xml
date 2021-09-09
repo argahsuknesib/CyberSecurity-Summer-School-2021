@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/stock_subscribe_item" android:layout_width="match_parent" android:layout_height="@dimen/size_78dp" android:paddingStart="@dimen/size_17dp" android:paddingEnd="@dimen/size_17dp">
+    <ImageView android:id="@+id/cover" android:layout_width="@dimen/size_50dp" android:layout_height="@dimen/size_50dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/size_13dp" android:paddingEnd="@dimen/size_13dp" android:layout_toStartOf="@+id/tvTransactionPrice" android:layout_toEndOf="@+id/cover">
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/pay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_7dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_17sp" android:gravity="center" android:id="@+id/tvTransactionPrice" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/size_0dp" android:paddingEnd="@dimen/size_17dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="48dp">
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp"/>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_alias" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="76dp" android:singleLine="true" android:layout_centerVertical="true"/>
+    <CheckBox android:id="@+id/ckb_edit_selected" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:button="@drawable/list_icon_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="95dp" android:paddingStart="24dp" android:paddingEnd="24dp">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/smart_group_header_root" android:background="@drawable/common_white_list_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14sp" android:textColor="#77000000" android:id="@+id/txt_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <ImageView android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_list_main_next" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:paddingStart="20dp" android:paddingEnd="20dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@drawable/std_list_background_line_bottom_white_press" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/smart_group_header_root"/>
+</RelativeLayout>

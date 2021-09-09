@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_black_00_transparent" app:tb_left_icon="@drawable/mj_common_title_bar_return"/>
+    <TextView android:textSize="@dimen/font_size_24sp" android:textColor="@color/mj_color_black" android:paddingLeft="@dimen/size_17dp" android:paddingTop="@dimen/size_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_stereo"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/stereo_group_config_iv" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_40dp" android:src="@drawable/mico_image_group_stereo_a" android:scaleType="fitXY"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/size_50dp">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.xiaomi.mico.setting.SettingItem android:id="@+id/stereo_group_setting_item" android:layout_width="match_parent" android:layout_height="wrap_content" app:mc_title="@string/setting_stereo_group_name"/>
+                <com.xiaomi.mico.setting.SettingItem android:id="@+id/stereo_channel_setting_item" android:layout_width="match_parent" android:layout_height="wrap_content" app:mc_title="@string/setting_stereo_channel_setting"/>
+                <com.xiaomi.mico.setting.SettingItem android:id="@+id/stereo_effect_audition_item" android:layout_width="match_parent" android:layout_height="wrap_content" app:mc_more_iv="@drawable/icon_stereo_play" app:mc_title="@string/setting_stereo_sound_effect_play"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:id="@+id/stereo_delete_group_btn" android:layout_width="match_parent" android:layout_height="@dimen/size_50dp" android:layout_marginBottom="@dimen/size_30dp" android:text="@string/setting_stereo_delete_group" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

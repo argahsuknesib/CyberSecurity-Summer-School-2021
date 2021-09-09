@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_3_title_bar_return_black"/>
+</RelativeLayout>

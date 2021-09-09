@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/multi_select_item_ll" android:layout_width="match_parent" android:layout_height="64dp" android:paddingStart="17dp" android:paddingEnd="20dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/settings_icon" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="8dp" android:layout_marginEnd="20dp"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black_80_transparent" android:ellipsize="end" android:id="@+id/multi_select_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_all_day" android:maxLines="2"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_70_transparent" android:ellipsize="end" android:id="@+id/multi_select_item_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_direction_all_day_title" android:maxLines="1"/>
+    </LinearLayout>
+    <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/multi_select_item_state_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/mj_checkbox_layout" android:text="@null"/>
+</LinearLayout>

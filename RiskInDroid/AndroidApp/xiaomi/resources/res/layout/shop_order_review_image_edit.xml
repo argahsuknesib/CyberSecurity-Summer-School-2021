@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer"/>
+        <RelativeLayout android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+            <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <RelativeLayout android:id="@+id/rl_edit_crop" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_edit_crop" android:background="@drawable/shop_edit_crop" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="fitXY"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_edit_delete" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75dp" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_edit_delete" android:background="@drawable/shop_edit_delete" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="fitXY"/>
+            </RelativeLayout>
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/white" android:id="@+id/btn_done" android:background="@color/orange_red" android:layout_width="80dp" android:layout_height="40dp" android:layout_marginRight="16dp" android:text="@string/order_edit_done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

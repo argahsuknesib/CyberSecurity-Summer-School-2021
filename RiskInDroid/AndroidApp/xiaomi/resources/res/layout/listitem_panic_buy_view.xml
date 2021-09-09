@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/panic_buy_tab_view_container" android:layout_width="match_parent" android:layout_height="45dp">
+        <com.xiaomi.shopviews.widget.homepanicbuyview.HomePanicBuyTabView android:id="@+id/panic_buy_tab_view" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="45dp"/>
+        <RelativeLayout android:gravity="top" android:layout_gravity="top" android:id="@+id/single_tab_container" android:layout_width="match_parent" android:layout_height="40dp">
+            <ImageView android:id="@+id/single_title_img" android:layout_width="wrap_content" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+            <com.xiaomi.shopviews.widget.homepanicbuyview.FlashTimerView android:id="@+id/single_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/single_title_img" android:layout_centerVertical="true"/>
+            <View android:background="@color/bg_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/time_or_remind_wrap" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginTop="-4dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/time_or_remind_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.xiaomi.shopviews.widget.homepanicbuyview.FlashTimerView android:id="@+id/count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/home_text_color_black_c" android:id="@+id/current_active_remind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热卖中 先到先得"/>
+        </LinearLayout>
+        <View android:background="@color/bg_line" android:layout_width="22dp" android:layout_height="1px" android:layout_marginRight="22dp" android:layout_toLeftOf="@+id/time_or_remind_container" android:layout_centerVertical="true"/>
+        <View android:background="@color/bg_line" android:layout_width="22dp" android:layout_height="1px" android:layout_marginLeft="22dp" android:layout_toRightOf="@+id/time_or_remind_container" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.xiaomi.shopviews.widget.hdhorizontalrecyclergoods.CustRecylerView android:id="@+id/recycler_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

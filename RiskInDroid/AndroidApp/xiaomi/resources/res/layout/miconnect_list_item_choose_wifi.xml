@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/wifi_item" android:background="@drawable/choose_device_list_item_bg" android:layout_width="match_parent" android:layout_height="53dp">
+    <ImageView android:id="@+id/wifi_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="22dp"/>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:id="@+id/wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_toRightOf="@+id/wifi_signal" android:layout_centerVertical="true"/>
+    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/miconnect_choose_wifi_arrow_right" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="25dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

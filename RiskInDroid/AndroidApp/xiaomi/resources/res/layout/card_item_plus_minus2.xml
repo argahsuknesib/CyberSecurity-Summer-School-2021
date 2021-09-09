@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/button_left" android:layout_width="43.33dp" android:layout_height="43.33dp" android:layout_marginRight="6.67dp" android:scaleType="fitCenter" android:layout_alignParentLeft="true"/>
+    <com.xiaomi.smarthome.newui.widget.RoundedHorizontalSeekBar android:id="@+id/button_center" android:layout_width="match_parent" android:layout_height="43.33dp" android:layout_toLeftOf="@+id/button_right" android:layout_toRightOf="@+id/button_left" android:layout_centerInParent="true" app:bg_color_my="@color/mj_color_btn_gray_nor" app:progress_color_my="@color/mj_color_highlight_blue_text_color" app:text_color_my="@color/mj_color_separator" app:text_padding_left_my="16.33dp" app:text_size_my="10.67sp"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/button_right" android:layout_width="43.33dp" android:layout_height="43.33dp" android:layout_marginLeft="6.67dp" android:scaleType="fitCenter" android:layout_alignParentRight="true"/>
+</RelativeLayout>

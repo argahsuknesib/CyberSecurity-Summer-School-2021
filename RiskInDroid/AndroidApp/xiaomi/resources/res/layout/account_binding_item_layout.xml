@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/head_container" android:background="@drawable/ripple_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/binding_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/binding_switch" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layoutDirection="ltr" android:layout_toStartOf="@+id/binding_switch" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:text="@string/label_name"/>
+        <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="0dp" android:text="@string/label_name"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

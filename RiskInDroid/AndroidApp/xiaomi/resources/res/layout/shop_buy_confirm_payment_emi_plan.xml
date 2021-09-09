@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/base_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:gravity="center" android:id="@+id/plan_border" android:background="@drawable/shop_border_confirm_payment_red" android:padding="@dimen/confirm_payment_innerpadding" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="45dp" android:layout_margin="@dimen/confirm_payment_innerpadding" android:layout_marginLeft="@dimen/confirm_payment_outermargin" android:layout_marginRight="@dimen/confirm_payment_outermargin">
+        <com.mi.global.shop.widget.CustomTextView android:gravity="center" android:id="@+id/emi_tenure" android:layout_width="0dp" android:layout_height="wrap_content" android:text="3 months" android:layout_weight="1"/>
+        <com.mi.global.shop.widget.CustomTextView android:gravity="center" android:id="@+id/emi_monthly_installment" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Rs.3080" android:layout_weight="1"/>
+        <com.mi.global.shop.widget.CustomTextView android:gravity="center" android:id="@+id/emi_interest" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Rs.121(12.1%)" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/plan_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shop_multiple_choice_s"/>
+</FrameLayout>

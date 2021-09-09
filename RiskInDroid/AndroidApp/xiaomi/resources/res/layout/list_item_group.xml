@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_root" android:background="@drawable/mj_rs_common_white_list_padding" android:layout_width="match_parent" android:layout_height="74dp">
+    <FrameLayout android:id="@+id/image_button" android:paddingLeft="12.5dp" android:paddingTop="12.5dp" android:paddingRight="12.5dp" android:paddingBottom="12.5dp" android:layout_width="74dp" android:layout_height="74dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/device_list_phone_no" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_device_common_device" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/name_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/closed" android:singleLine="true" android:layout_below="@+id/name"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/ckb_group" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22dp" android:button="@drawable/mj_checkbox_layout"/>
+</LinearLayout>

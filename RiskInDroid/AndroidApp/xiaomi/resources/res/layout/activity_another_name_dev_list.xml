@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_txt_hint" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180dp" android:text="@string/no_voice_controllable_device" android:drawableTop="@drawable/home_env_empty" android:drawablePadding="-10dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/id_introduction" android:paddingLeft="24dp" android:paddingTop="11dp" android:paddingRight="24dp" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/voice_another_name_introduction" android:singleLine="true" android:layout_below="@+id/title_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:paddingBottom="20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/id_introduction" android:overScrollMode="never"/>
+    <include layout="@layout/another_name_guide"/>
+</RelativeLayout>

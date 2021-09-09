@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+    <com.xiaomi.shopviews.widget.view.BGABanner android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="355dp" app:banner_indicatorGravity="3" app:banner_pageChangeDuration="5000" app:banner_pointAutoPlayAble="true" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointContainerLeftRightPadding="20dp" app:banner_pointDrawable="@drawable/bga_banner_selector_point" app:banner_pointLeftRightMargin="2.5dp" app:banner_pointTopBottomMargin="75dp" app:banner_transitionEffect="1"/>
+    <FrameLayout android:id="@+id/layout_quick_enter_container" android:background="@drawable/border_shadow_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="95dp" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="95dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_one" android:background="@drawable/item_spot_touch_rectanle_whitebg" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <ImageView android:id="@+id/product_image_one" android:layout_width="50dp" android:layout_height="50dp"/>
+                <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/three_image_title_text_color" android:gravity="center_horizontal" android:id="@+id/product_name_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_two" android:background="@drawable/item_spot_touch_rectanle_whitebg" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <ImageView android:id="@+id/product_image_two" android:layout_width="50dp" android:layout_height="50dp"/>
+                <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/three_image_title_text_color" android:gravity="center_horizontal" android:id="@+id/product_name_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_three" android:background="@drawable/item_spot_touch_rectanle_whitebg" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <ImageView android:id="@+id/product_image_three" android:layout_width="50dp" android:layout_height="50dp"/>
+                <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/three_image_title_text_color" android:gravity="center_horizontal" android:id="@+id/product_name_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_four" android:background="@drawable/item_spot_touch_rectanle_whitebg" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <ImageView android:id="@+id/product_image_four" android:layout_width="50dp" android:layout_height="50dp"/>
+                <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/three_image_title_text_color" android:gravity="center_horizontal" android:id="@+id/product_name_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

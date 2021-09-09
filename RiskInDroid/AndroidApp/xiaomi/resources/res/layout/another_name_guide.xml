@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/guide" android:background="#e6000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="29"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aliasguide" android:contentDescription="@null"/>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#ccffffff" android:gravity="center" android:paddingLeft="72dp" android:paddingRight="72dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/voice_another_name_guide_desc"/>
+    <View android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="19"/>
+    <ImageView android:id="@+id/guide_cancel" android:background="@drawable/selector_alias_guide_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/content_description_close"/>
+    <View android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="8"/>
+</LinearLayout>

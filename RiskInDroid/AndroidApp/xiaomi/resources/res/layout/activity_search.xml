@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/widget_search_bar_v2"/>
+    <com.xiaomi.mico.music.search.SearchContainer android:id="@+id/search_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/view_linear_recycler_view"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/search_content" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/search_content_tab_layout" android:background="@color/mj_color_white" android:layout_width="214dp" android:layout_height="45dp" app:tabGravity="0" app:tabIndicatorHeight="0dp" app:tabSelectedTextColor="@color/mj_color_green_normal" style="@style/App.TabLayout"/>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/search_content_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.xiaomi.mico.music.search.SearchContainer>
+</LinearLayout>

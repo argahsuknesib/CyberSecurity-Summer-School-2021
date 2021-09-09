@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/tvcard_l" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <FrameLayout android:id="@+id/scan_again_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/tv_card_history_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tv_card_history_layout"/>
+            <include android:id="@+id/tv_card_history_error_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tv_card_history_error_layout"/>
+            <include android:id="@+id/tv_card_player_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tv_card_player_layout"/>
+        </FrameLayout>
+        <com.xiaomi.smarthome.uwb.lib.mitv.widget.MitvCardView android:id="@+id/tvcard_v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mitv_card_control_layout"/>
+        </com.xiaomi.smarthome.uwb.lib.mitv.widget.MitvCardView>
+    </LinearLayout>
+    <include android:id="@+id/tag_upgrade_pop_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/tag_upgrade_pop_layout"/>
+    <include android:id="@+id/power_off_pop_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/power_off_pop_layout"/>
+    <include android:layout_gravity="bottom" android:id="@+id/mitv_power_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" layout="@layout/mitv_power_layout"/>
+</merge>

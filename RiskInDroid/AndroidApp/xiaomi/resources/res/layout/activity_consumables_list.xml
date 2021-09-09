@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_5_title_bar_drop_down"/>
+    <com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout android:orientation="vertical" android:id="@+id/pull_down_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+        <com.xiaomi.smarthome.library.common.widget.SM1LayerRecycleView android:id="@+id/consumables_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:listSelector="@color/mj_color_black_00_transparent" android:cacheColorHint="@color/mj_color_black_00_transparent" android:divider="@null"/>
+    </com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="66dp" layout="@layout/common_white_empty_view"/>
+    <View android:id="@+id/mask" android:background="@color/mj_color_black_50_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+</RelativeLayout>

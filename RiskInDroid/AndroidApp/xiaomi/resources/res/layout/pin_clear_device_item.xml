@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="85dp" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/device_icon" android:padding="10dp" android:layout_width="match_parent" android:layout_height="85dp" android:src="@drawable/device_list_phone_no"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textStyle="bold" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@+id/device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="很长很长很长的名字名字aaa" android:maxLines="2"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:gravity="center_horizontal" android:id="@+id/device_room_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="卧室"/>
+    </LinearLayout>
+</LinearLayout>

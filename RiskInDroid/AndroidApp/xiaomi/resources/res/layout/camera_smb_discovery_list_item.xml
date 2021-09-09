@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@drawable/mj_rs_common_white_list_padding" android:layout_width="match_parent" android:layout_height="@dimen/setting_height_item">
+    <ImageView android:gravity="center" android:id="@+id/device_icon" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_margin" android:layout_marginRight="12dp" android:src="@drawable/camera_store_icon_store_nor" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="13dp" android:src="@drawable/camera_um_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black_80_transparent" android:ellipsize="end" android:id="@+id/smb_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/arrow" android:layout_toRightOf="@+id/device_icon" android:layout_centerVertical="true"/>
+</RelativeLayout>

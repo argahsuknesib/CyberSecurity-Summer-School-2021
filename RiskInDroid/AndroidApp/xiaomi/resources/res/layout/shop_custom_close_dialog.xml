@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shop_custom_dialog_bg" android:layout_width="300dp" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end" android:id="@+id/btn_close" android:paddingTop="18dp" android:paddingRight="18dp" android:paddingBottom="11dp" android:layout_width="40dp" android:layout_height="41dp" android:src="@drawable/shop_dialog_close" android:scaleType="fitCenter"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="17dp" android:textColor="@color/common_title_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="6dp"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:layout_gravity="center_horizontal" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="12dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:lineSpacingExtra="2dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bootom" android:background="#eeeeee" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="8dp">
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="13dp" android:textColor="@color/orange_red" android:id="@+id/btn_got_it" android:background="@color/white" android:layout_width="100dp" android:layout_height="40dp" android:text="@string/product_pin_code_dialog_got_it" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

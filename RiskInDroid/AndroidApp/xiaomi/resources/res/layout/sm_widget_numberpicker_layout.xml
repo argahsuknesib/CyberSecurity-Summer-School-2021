@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:gravity="center" android:id="@+id/numberpicker_input" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" class="com.xiaomi.smarthome.library.common.widget.NumberPicker$CustomEditText"/>
+</merge>

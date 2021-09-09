@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/root" android:background="@drawable/shape_camera_offline_dialog" android:padding="@dimen/size_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/close_img" android:layout_width="15dp" android:layout_height="15dp" android:layout_margin="@dimen/size_10dp" android:src="@drawable/dialog_camera_helper_close" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="13sp" android:textColor="#666666" android:id="@+id/help_tip_content" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:lineSpacingMultiplier="1.3"/>
+    <TextView android:textSize="14sp" android:textColor="#4c4c4c" android:gravity="center" android:id="@+id/offline_ok" android:background="@drawable/shape_camera_offline_ok_btn" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/offline_divice_ok" android:layout_marginStart="25dp" android:layout_marginEnd="25dp"/>
+</LinearLayout>

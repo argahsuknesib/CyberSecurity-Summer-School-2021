@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.camera.view.widget.LoadMoreView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50dp">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/indeterminate_progress" android:layout_width="20dp" android:layout_height="20dp" style="@style/circle_progressbar_large"/>
+        <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/loading_more"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.camera.view.widget.LoadMoreView>

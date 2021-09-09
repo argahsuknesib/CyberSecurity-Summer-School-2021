@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="218.3dp">
+    <include layout="@layout/miconnect_common_title"/>
+    <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black_70_transparent" android:gravity="bottom" android:background="@color/mj_color_white" android:paddingBottom="36.3dp" android:layout_width="match_parent" android:layout_height="84.6dp" android:text="@string/miconnect_exit_confirm_content" android:paddingStart="40dp" android:paddingEnd="40dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/common_bottom_height_entire" android:weightSum="2">
+        <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black_70_transparent" android:gravity="center" android:id="@+id/cancel_exit" android:background="@drawable/miconnect_common_bottom_bg" android:layout_width="0dp" android:layout_height="@dimen/common_bottom_height" android:text="@string/miconnect_exit_confirm_cancel" android:layout_weight="1" android:layout_marginStart="26.7dp" android:layout_marginEnd="6.65dp"/>
+        <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_highlight_blue_text_color" android:gravity="center" android:id="@+id/confirm_exit" android:background="@drawable/miconnect_common_bottom_bg" android:layout_width="0dp" android:layout_height="@dimen/common_bottom_height" android:text="@string/miconnect_exit_confirm_ok" android:layout_weight="1" android:layout_marginStart="6.65dp" android:layout_marginEnd="26.7dp"/>
+    </LinearLayout>
+</LinearLayout>

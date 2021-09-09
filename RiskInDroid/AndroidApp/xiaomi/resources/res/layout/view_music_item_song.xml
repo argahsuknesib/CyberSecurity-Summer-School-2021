@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/size_72dp" style="@style/App.Widget.ListView.Item">
+    <RelativeLayout android:layout_width="44dp" android:layout_height="match_parent">
+        <ImageView android:id="@+id/music_item_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:src="@drawable/icon_playing" android:layout_marginStart="2dp"/>
+        <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:maxLines="1" android:maxLength="4" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textStyle="bold" android:id="@+id/music_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/App.Widget.ListView.Item.Title"/>
+        <TextView android:id="@+id/music_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:drawablePadding="@dimen/common_icon_margin_3" style="@style/App.Widget.ListView.Item.Description"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <include layout="@layout/view_music_item_love_more"/>
+        <include layout="@layout/view_editable_item_checkbox"/>
+    </FrameLayout>
+</LinearLayout>

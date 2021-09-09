@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/basedialog_parent_layout" android:background="@android:color/white" android:paddingLeft="20dp" android:paddingTop="25dp" android:paddingRight="20dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Title.Dialog"/>
+            <ImageView android:id="@+id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/title"/>
+        </RelativeLayout>
+        <ScrollView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="15dp" android:layout_weight="1">
+            <TextView android:gravity="center" android:id="@+id/message" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Normal.Gray"/>
+        </ScrollView>
+        <LinearLayout android:id="@+id/bottomBar" android:background="@drawable/bg_basedialog_button_parentlayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.widget.CommonButton android:id="@+id/negative" android:visibility="gone" android:layout_width="0dp" android:layout_weight="1" style="@style/V6CommonButtonComfirmDialog.Cancel"/>
+            <View android:id="@+id/button_padding" android:background="#ffdddddd" android:layout_width="2px" android:layout_height="match_parent"/>
+            <com.mi.widget.CommonButton android:id="@+id/positive" android:visibility="gone" android:layout_width="0dp" android:layout_weight="1" style="@style/V6CommonButtonComfirmDialog.Ok"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/bottomBar1" android:background="@drawable/bg_basedialog_button_parentlayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.widget.CommonButton android:id="@+id/neutral" android:visibility="visible" android:layout_width="match_parent" style="@style/V6CommonButtonComfirmDialog.Normal"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

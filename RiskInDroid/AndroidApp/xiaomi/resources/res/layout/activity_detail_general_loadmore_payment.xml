@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/headerContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_detail_header"/>
+    </FrameLayout>
+    <RelativeLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/view_linear_recycler_view"/>
+            </LinearLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <WebView android:id="@+id/station_intro_web" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ScrollView android:id="@+id/station_intro_contain" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_black" android:id="@+id/station_intro" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="match_parent" android:lineSpacingExtra="6dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        </ScrollView>
+        <ImageView android:id="@+id/payment_tab_shadow" android:background="@drawable/shadow_mask_station_payment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="11dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <com.xiaomi.mico.music.detail.DetailPaymentTab android:id="@+id/payment_tab" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</LinearLayout>

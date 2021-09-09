@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/list_item_container_style">
+    <ImageView android:id="@+id/iv_device_icon" android:src="@drawable/device_list_phone_no" style="@style/list_item_two_line_icon_style"/>
+    <TextView android:id="@+id/tv_device_title" android:layout_toRightOf="@+id/iv_device_icon" style="@style/list_item_title_style"/>
+    <TextView android:id="@+id/tv_device_detail" android:visibility="gone" android:layout_toRightOf="@+id/iv_device_icon" android:layout_below="@+id/tv_device_title" style="@style/list_item_detail_style"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+        <com.xiaomi.smarthome.library.common.widget.PieProgressBar android:layout_gravity="center" android:id="@+id/update_progress" android:background="@drawable/kuailian_progress_filled_not" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/kuailian_progress_filled"/>
+        <TextView android:textSize="@dimen/font_size_6" android:textColor="#378ed3" android:layout_gravity="center" android:id="@+id/update_percent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%"/>
+    </FrameLayout>
+    <View android:layout_alignParentBottom="true" style="@style/list_item_divider"/>
+</RelativeLayout>

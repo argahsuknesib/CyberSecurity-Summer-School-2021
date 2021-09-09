@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sns_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <View android:layout_gravity="center_vertical" android:background="@color/passport_colorPrimaryDark" android:layout_width="0dp" android:layout_height="0.6dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/passport_text_small_size" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_sign_in"/>
+        <View android:layout_gravity="center_vertical" android:background="@color/passport_colorPrimaryDark" android:layout_width="0dp" android:layout_height="0.6dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/sns_list_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="2dp"/>
+</LinearLayout>

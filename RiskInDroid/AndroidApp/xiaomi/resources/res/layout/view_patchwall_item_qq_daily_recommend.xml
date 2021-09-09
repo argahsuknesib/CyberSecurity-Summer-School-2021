@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/patchwall_item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ImageView android:background="@drawable/bg_patchwall_qq_item_recommend" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/border_patchwall_qq_item_recommend" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/mj_text_size_9" android:textColor="@color/mj_color_white" android:id="@+id/patchwall_item_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:drawableLeft="@drawable/icon_dot_qq_daily_recommend" android:drawableRight="@drawable/icon_dot_qq_daily_recommend" android:drawablePadding="6dp" android:layout_centerHorizontal="true"/>
+            <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="0.4dp" android:layout_marginTop="2dp"/>
+            <TextView android:textSize="@dimen/max_text_size" android:textColor="@color/mj_color_white" android:id="@+id/patchwall_item_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/play_button" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/icon_player_pause" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/patchwall_item_text" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginTop="8dp" android:maxLines="2"/>
+</LinearLayout>

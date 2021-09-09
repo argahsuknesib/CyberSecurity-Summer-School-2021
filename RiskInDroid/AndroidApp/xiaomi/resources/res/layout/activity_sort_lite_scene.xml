@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_4_title_bar_device_auth_stave"/>
+    <include layout="@layout/common_list_space_empty"/>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_vertical" android:id="@+id/hand_tv" android:background="@color/mj_color_white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/smarthome_new_scene_by_hand" android:drawableLeft="@drawable/lite_scene_hand_icon" android:drawablePadding="5dp"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.33dp" android:layout_alignParentBottom="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/scene_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/hand_tv"/>
+</LinearLayout>

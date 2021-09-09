@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@+id/fl_inner" android:layout_width="match_parent" android:layout_height="250dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/pull_bg" android:layout_width="match_parent" android:layout_height="250dp" fresco:actualImageScaleType="0"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom" android:id="@+id/gif_bg" android:layout_width="match_parent" android:layout_height="100dp" fresco:actualImageScaleType="0"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/PullToRefreshProgressBar"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                <com.mi.global.shop.widget.CustomTextView android:textAppearance="?android:attr/textAppearanceSmallInverse" android:textColor="#a7a8aa" android:id="@+id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <com.mi.global.shop.widget.CustomTextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/pull_to_refresh_dancing_ellipsis" android:background="@drawable/shop_dancing_ellipsis" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_sleep_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/miband_detail_title_bar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/mj_color_sleep_background_color" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout style="@style/sport_liner_container_style">
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/all_sleep_time_id" android:text="@string/all_sleep_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_below="@+id/all_sleep_time_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/all_sleep_hour_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_hour" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/all_sleep_minute_id" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_minute" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/deep_sleep_time_id" android:text="@string/deep_sleep_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_below="@+id/deep_sleep_time_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/deep_sleep_hour_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_hour" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/deep_sleep_minute_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_minute" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/shallow_sleep_time_id" android:text="@string/shallow_sleep_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_below="@+id/shallow_sleep_time_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/shallow_sleep_hour_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_hour" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/shallow_sleep_minute_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_minute" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout style="@style/sport_liner_container_style">
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/start_sleep_time_id" android:text="@string/start_sleep_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_below="@+id/start_sleep_time_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/start_sleep_hour_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_colon" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/start_sleep_minute_id" android:text="0" style="@style/sport_detail_number_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/end_sleep_time_id" android:text="@string/end_sleep_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_below="@+id/end_sleep_time_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/end_sleep_hour_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_colon" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/end_sleep_minute_id" android:text="0" style="@style/sport_detail_number_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout style="@style/sport_relative_container_style">
+            <TextView android:id="@+id/wake_time_id" android:text="@string/wake_time_text" style="@style/sport_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_below="@+id/wake_time_id" style="@style/sport_item_relative_container_style">
+                <TextView android:id="@+id/wake_time_hour_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_hour" style="@style/sport_detail_symbol_style"/>
+                <TextView android:id="@+id/wake_time_minute_id" android:text="0" style="@style/sport_detail_number_style"/>
+                <TextView android:text="@string/symbol_minute" style="@style/sport_detail_symbol_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

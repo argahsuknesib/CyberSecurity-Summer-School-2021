@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_title_bg" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height" android:scaleType="fitXY"/>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/title_bar_RL" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height">
+        <FrameLayout android:id="@+id/search_btn_container" android:paddingLeft="15dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_btn" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/feature_search_search_grey_search"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_right_bar" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="14dp" android:textColor="#424242" android:gravity="center" android:id="@+id/tv_search_cancel" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/search_edit_cancel"/>
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="14dp" android:textColor="#424242" android:gravity="center" android:id="@+id/tv_search" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/search_edit_search"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_search_container" android:background="@drawable/feature_search_search_bar_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/title_right_bar" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/feature_search_search_grey_search"/>
+            <com.mi.global.shop.base.widget.CustomEditTextView android:textSize="14dp" android:textColor="#424242" android:textColorHint="#c9c9c9" android:id="@+id/etv_search_input" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/search_edit_hint" android:singleLine="true" android:imeOptions="actionSearch"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

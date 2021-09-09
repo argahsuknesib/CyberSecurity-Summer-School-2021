@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:id="@+id/iv_sdcard_video" android:layout_width="102dp" android:layout_height="60dp" android:src="@drawable/camera_remind_load_fail" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:riv_corner_radius="5dp"/>
+    <ImageView android:id="@+id/checkbox" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:src="@drawable/camera_delete_checked" android:layout_alignBottom="@+id/iv_sdcard_video" android:layout_marginEnd="5dp" android:layout_alignEnd="@+id/iv_sdcard_video"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/iv_sdcard_video" android:layout_alignStart="@+id/iv_sdcard_video">
+        <TextView android:textSize="14sp" android:textColor="@color/mj_color_black_70_transparent" android:id="@+id/tv_hour_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/people_move_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_event_type_people_run" android:layout_marginStart="5dp"/>
+        <ImageView android:id="@+id/baby_cry_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_event_type_baby_cry" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/noti_root_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+    <FrameLayout android:id="@+id/power_btn_fl" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="@dimen/std_list_icon_padding_right_single_line" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/power_btn" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/power_btn_white" android:scaleType="center"/>
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@+id/right_btn" android:background="@drawable/notification_op_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/right_btn" android:layout_toRightOf="@+id/power_btn_fl" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.StatusBar.EventContent.Title"/>
+        <TextView android:ellipsize="end" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.StatusBar.EventContent"/>
+    </LinearLayout>
+</RelativeLayout>

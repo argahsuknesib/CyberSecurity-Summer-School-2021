@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/pager_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_51" android:layout_marginBottom="@dimen/dimen_16">
+        <in.cashify.otex.widget.pager.DiagnoseViewPager android:layout_gravity="center" android:id="@+id/pager_header" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/dimen_128" android:layout_height="@dimen/dimen_142" android:overScrollMode="never"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/diagnose_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_16" android:layout_above="@+id/ll_sit_back" android:layout_below="@+id/pager_container" android:overScrollMode="never"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_sit_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_22" android:layout_marginTop="@dimen/dimen_22" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_22" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dimen_22" android:layout_marginEnd="@dimen/dimen_22">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="@dimen/dimen_3" android:layout_marginRight="11dp" android:layout_weight="0.8">
+            <ProgressBar android:id="@+id/progress_bar_test_status" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="11sp" android:textColor="@color/otex_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/sit_back_and_relax"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_progress_counter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

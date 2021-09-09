@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/main_grid_card_bg_normal_5_9" android:layout_width="match_parent" android:layout_height="219dp">
+    <include layout="@layout/card_patch_visible_rect"/>
+    <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:src="@drawable/common_add_placeholder" android:layout_centerHorizontal="true" app:layout_constraintLeft_toLeftOf="@+id/visible_rect" app:layout_constraintRight_toRightOf="@+id/visible_rect" app:layout_constraintTop_toTopOf="@+id/visible_rect"/>
+    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="9dp" android:layout_marginRight="10dp" android:singleLine="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/image" app:layout_goneMarginTop="9dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

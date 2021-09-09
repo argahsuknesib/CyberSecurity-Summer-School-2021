@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="81dp" android:paddingBottom="19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/account_settings_button_margin_h" android:paddingEnd="@dimen/account_settings_button_margin_h">
+        <ImageView android:id="@+id/icon_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_phone"/>
+        <TextView android:textSize="@dimen/phone_num_text_size" android:textColor="@android:color/black" android:id="@+id/phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp"/>
+        <TextView android:textSize="@dimen/secondary_text_size" android:textColor="@color/secondary_text_color" android:id="@+id/update_phone_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/update_phone_notice"/>
+        <Button android:id="@+id/action_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="68dp" android:text="@string/action_update_phone" style="@style/ButtonHighlight"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" style="@style/HorizontalDivider"/>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingBottom="46dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.7dp">
+        <View android:layout_width="match_parent" style="@style/HorizontalDivider"/>
+        <TextView android:textSize="@dimen/secondary_text_size" android:textColor="@color/miui_preference_primary_text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.7dp" android:text="@string/phone_num_use_for" android:paddingStart="@dimen/account_settings_button_margin_h" android:paddingEnd="@dimen/account_settings_button_margin_h"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="42dp">
+            <include android:id="@+id/use_sign_in" layout="@layout/icon_text_vertical"/>
+            <include android:id="@+id/use_get_back_pwd" layout="@layout/icon_text_vertical"/>
+            <include android:id="@+id/use_identity" layout="@layout/icon_text_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

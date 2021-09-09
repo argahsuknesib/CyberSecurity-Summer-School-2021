@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/common_white_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/std_main_icon_empty" android:importantForAccessibility="no"/>
+            <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/mj_color_black_80_transparent" android:layout_gravity="center_horizontal" android:id="@+id/common_white_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        </LinearLayout>
+    </ScrollView>
+</com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout>

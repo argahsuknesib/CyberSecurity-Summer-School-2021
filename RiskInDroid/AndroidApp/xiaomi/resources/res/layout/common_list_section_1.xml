@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/std_list_head_line_height" android:layout_marginTop="8dp">
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/std_list_font_size_group" android:textColor="@color/mj_color_gray_light" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:layout_marginStart="24dp"/>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

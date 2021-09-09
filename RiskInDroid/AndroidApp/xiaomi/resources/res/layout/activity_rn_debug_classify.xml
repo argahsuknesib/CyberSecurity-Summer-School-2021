@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/mj_module_a_3_title_bar_return"/>
+        <RelativeLayout android:id="@+id/layout_rn_debug" android:background="@drawable/selector_setting_main_page_item" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开发者模式" android:drawablePadding="16dp" android:layout_centerVertical="true" android:drawableStart="@drawable/std_person_center_icon_rn_debug" android:layout_marginStart="20dp" android:layout_marginEnd="@dimen/size_52dp"/>
+            <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="55dp" android:layout_alignParentEnd="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="24dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+        <RelativeLayout android:id="@+id/layout_rn_plugin_demo" android:background="@drawable/selector_setting_main_page_item" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="插件示例" android:drawablePadding="16dp" android:layout_centerVertical="true" android:drawableStart="@drawable/std_person_center_icon_share" android:layout_marginStart="20dp" android:layout_marginEnd="@dimen/size_52dp"/>
+            <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="55dp" android:layout_alignParentEnd="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="24dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+        <RelativeLayout android:id="@+id/layout_rn_plugin_feedback" android:background="@drawable/selector_setting_main_page_item" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="意见反馈" android:drawablePadding="16dp" android:layout_centerVertical="true" android:drawableStart="@drawable/std_person_center_icon_feedback_v2" android:layout_marginStart="20dp" android:layout_marginEnd="@dimen/size_52dp"/>
+            <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="55dp" android:layout_alignParentEnd="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_second_arrow_nor" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="24dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+    </LinearLayout>
+    <TextView android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@+id/txt_app_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/size_12dp"/>
+</FrameLayout>

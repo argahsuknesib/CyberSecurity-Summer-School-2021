@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.music.player.PlayerIndicator xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/music_player_indicator" android:layout_width="@dimen/music_player_icon_size" android:layout_height="@dimen/music_player_icon_size" android:layout_marginEnd="14dp"/>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/edit_device_page" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_more"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/mj_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:text="@string/irv_controller_study_hint_text"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ivDevice" android:layout_width="125dp" android:layout_height="125dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15dp" android:src="@drawable/ir_controller_copy_hint"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

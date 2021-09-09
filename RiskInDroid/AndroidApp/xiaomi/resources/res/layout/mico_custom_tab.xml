@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="13dp" android:textColor="@color/mico_pathwall_tab_text_color" android:gravity="center" android:id="@+id/custom_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1"/>

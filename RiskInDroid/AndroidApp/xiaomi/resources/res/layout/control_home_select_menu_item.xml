@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="50dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_select_home" android:background="@drawable/item_ripple_no_radius" android:paddingLeft="@dimen/std_list_content_margin_left_27" android:paddingRight="@dimen/std_list_content_margin_right_27" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/tv_home_selected" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:text="@string/home_manager" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_home_checked" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/mj_home_select_checked"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

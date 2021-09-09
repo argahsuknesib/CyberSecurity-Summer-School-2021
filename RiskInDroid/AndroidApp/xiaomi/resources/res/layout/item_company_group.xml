@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/choose_device_list_item_last_position_bg" android:layout_width="match_parent" android:layout_height="50dp">
+    <ImageView android:id="@+id/img_arrow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:src="@drawable/cannot_find_device_arrow" android:layout_alignParentRight="true" android:importantForAccessibility="no"/>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_company_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="hello" android:layout_toLeftOf="@+id/img_arrow"/>
+</RelativeLayout>

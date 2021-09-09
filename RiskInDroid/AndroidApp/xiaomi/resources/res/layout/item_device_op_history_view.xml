@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="21dp" android:paddingRight="21dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/group_view" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layoutDirection="ltr">
+        <TextView android:textSize="@dimen/font_size_27sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/month" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_40_transparent" android:gravity="right" android:id="@+id/weekday" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/child_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginLeft="26dp" android:layout_marginRight="26dp">
+            <View android:layout_gravity="center" android:background="@color/mj_color_separator" android:layout_width="2px" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/device_history_dot_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/device_op_history_dot_1" android:importantForAccessibility="no"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/hourminute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/hourminute"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_40_transparent" android:id="@+id/result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:layout_below="@+id/hourminute"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_40_transparent" android:ellipsize="end" android:id="@+id/source" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" android:layout_toRightOf="@+id/result" android:layout_below="@+id/hourminute" android:layout_alignBottom="@+id/result"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

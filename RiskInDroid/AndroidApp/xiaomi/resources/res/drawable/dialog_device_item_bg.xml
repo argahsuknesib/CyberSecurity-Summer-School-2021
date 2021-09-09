@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/std_list_item_bg_press"/>
+    <item>
+        <shape>
+            <solid android:color="@color/mj_color_dialog_bg_nor"/>
+        </shape>
+    </item>
+</selector>

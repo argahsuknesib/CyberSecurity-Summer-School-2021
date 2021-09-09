@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+    <cn.bingoogolapple.bgabanner.BGABanner android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="100dp" app:banner_pageChangeDuration="5000" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="4000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/bga_banner_selector_point" app:banner_pointTopBottomMargin="10dp" app:banner_transitionEffect="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/wifi_name_container" android:background="@drawable/mj_rs_common_white_list_padding" android:layout_width="match_parent" android:layout_height="50dp">
+    <View android:background="@color/mj_color_black_10_transparent" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49.6dp" android:layout_marginRight="@dimen/std_list_content_margin_right" android:layout_marginEnd="@dimen/std_list_content_margin_right">
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_80_transparent" android:layout_gravity="center_vertical" android:id="@+id/wifi_text" android:background="@drawable/mj_color_white_00_transparent" android:paddingRight="@dimen/edit_text_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/edit_text_padding_horizontal"/>
+        <CheckBox android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ratio_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:checked="false" android:button="@drawable/ratio_btn" android:lines="1" android:layout_marginStart="14dp"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/select_flag_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_check_normal"/>
+    </FrameLayout>
+</LinearLayout>

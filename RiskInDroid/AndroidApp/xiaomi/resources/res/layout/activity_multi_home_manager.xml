@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+    <ViewStub android:layout_gravity="top" android:id="@+id/title_bar_choose_device_stub" android:layout="@layout/title_bar_choose_device" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+    <ImageView android:id="@+id/addhome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/home_room_add_room_icon_nor2" android:layout_alignParentBottom="true" android:contentDescription="@string/family_create" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+    <ViewStub android:id="@+id/edit_action_bar_stub" android:layout="@layout/edit_action_bar_room" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

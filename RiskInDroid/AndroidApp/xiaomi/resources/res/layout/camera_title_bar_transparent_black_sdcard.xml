@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/title_bar_return" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/mj_tittlebar_main_device_back" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/camera_sdcard_cloud_lab_color" android:gravity="end" android:id="@+id/lab_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_cloud_video" android:paddingEnd="7dp"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/camera_sdcard_cloud_lab_color" android:gravity="start" android:id="@+id/lab_sdcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_sd_card_title" android:paddingStart="7dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/title_bar_more" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/camera_tittlebar_main_more" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/title_bar_redpoint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/std_titlebar_redpoint_margin_top" android:src="@drawable/camera_tittlebar_massage_point" android:scaleType="center" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/std_titlebar_redpoint_margin_right" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</FrameLayout>

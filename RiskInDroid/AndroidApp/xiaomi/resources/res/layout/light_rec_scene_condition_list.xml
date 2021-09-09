@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/mj_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true" android:contentDescription="@string/common_device_loading"/>
+    <TextView android:textSize="13dp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_horizontal" android:id="@+id/tv_not_connect_ble" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:text="@string/light_rec_condition_no_ble" android:maxLines="3" android:layout_alignParentBottom="true" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="90dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/mj_color_black_00_transparent" android:layout_above="@+id/tv_not_connect_ble"/>
+</RelativeLayout>

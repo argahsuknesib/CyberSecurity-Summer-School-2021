@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:id="@+id/list_driver" android:background="@color/home_empty_title_view" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <RelativeLayout android:id="@+id/game_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/game_bg" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="0" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+        <ImageView android:id="@+id/game_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/shop_game_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <com.mi.global.shop.widget.EasyTextView android:textSize="13sp" android:textColor="#f9f9fa" android:id="@+id/game_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/game_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

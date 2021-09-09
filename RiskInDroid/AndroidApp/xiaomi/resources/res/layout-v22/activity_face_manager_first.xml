@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/title_bar" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:id="@+id/title_bar_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_tittlebar_main_device_back" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/action_back" android:layout_marginStart="10dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/title_bar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/face_info" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView android:background="@color/mj_color_white" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_above="@+id/privacy_container" android:layout_below="@+id/title_bar" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mj_color_white_98_transparent" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_face_manager_first_larg" android:importantForAccessibility="no"/>
+                <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_75_transparent" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_face_tips_info" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/face_manager_first_tips" android:paddingStart="50dp" android:paddingEnd="50dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout>
+            <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="24dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_manager_first_tips1" android:drawablePadding="10dp" android:drawableStart="@drawable/icon_face_manager_first" android:drawableTint="@color/mj_color_black"/>
+            </FrameLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24dp"/>
+            <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="24dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_manager_first_tips2" android:drawablePadding="10dp" android:drawableStart="@drawable/icon_face_manager_first_mark" android:drawableTint="@color/mj_color_black"/>
+            </FrameLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24dp"/>
+            <FrameLayout android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="24dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_manager_first_tips3" android:drawablePadding="10dp" android:drawableStart="@drawable/icon_face_manager_first_share" android:drawableTint="@color/mj_color_black"/>
+            </FrameLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="24dp"/>
+            <TextView android:textSize="11sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/low_power_privacy_agreement" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp" android:text="@string/low_power_agreement" android:lineSpacingExtra="5dp"/>
+            <View android:layout_width="match_parent" android:layout_height="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/fl_bottom_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_to_use" android:background="@drawable/bg_wide_button_normal_shape" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="@string/face_manager_to_user"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_need_buy_cloud" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_need_open_cloud"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="#32bac0" android:id="@+id/tv_to_buy_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_to_open_cloud" android:layout_marginStart="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:id="@+id/try_vip_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp">
+            <TextView android:textSize="13dp" android:textColor="#ff666666" android:id="@+id/face_free_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_free_tips"/>
+            <TextView android:textSize="13dp" android:textColor="#ff32bac0" android:id="@+id/face_free_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_manager_to_user"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:id="@+id/privacy_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_above="@+id/fl_bottom_btn" android:layout_centerHorizontal="true">
+        <LinearLayout android:id="@+id/camera_privacy_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/cb_privacy_agreement" android:layout_width="20dp" android:layout_height="20dp" android:checked="true" android:button="@drawable/face_tick_selector"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_privacy_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/privacy_agreement"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

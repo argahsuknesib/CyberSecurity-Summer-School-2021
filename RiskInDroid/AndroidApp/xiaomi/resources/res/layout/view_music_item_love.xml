@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/music_item_love" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_love" android:paddingStart="@dimen/common_icon_margin" android:paddingEnd="@dimen/common_icon_margin_2"/>

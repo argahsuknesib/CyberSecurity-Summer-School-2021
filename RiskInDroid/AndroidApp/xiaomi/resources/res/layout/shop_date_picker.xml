@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <DatePicker android:id="@+id/datePicker" android:paddingLeft="@dimen/date_picker_padding" android:paddingRight="@dimen/date_picker_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnersShown="true" android:calendarViewShown="false"/>
+    <View android:background="#cbcbcb" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <com.mi.global.shop.widget.CustomButtonView android:layout_gravity="right" android:id="@+id/datePickerOkButton" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ok"/>
+</LinearLayout>

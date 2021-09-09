@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <TextView android:textSize="14sp" android:textColor="@drawable/scene_filter_tv_color_selector" android:gravity="center_vertical" android:id="@+id/open_item" android:background="@drawable/mj_rs_std_list_background_line" android:layout_width="match_parent" android:layout_height="70dp" android:text="@string/scene_open"/>
+    <TextView android:textSize="14sp" android:textColor="@drawable/scene_filter_tv_color_selector" android:gravity="center_vertical" android:id="@+id/close_item" android:background="@drawable/mj_rs_std_list_background_line" android:layout_width="match_parent" android:layout_height="70dp" android:text="@string/scene_close"/>
+</LinearLayout>

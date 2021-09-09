@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/click_sound" android:background="@drawable/ripple_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+    <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:text="" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/switcher" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="27dp" android:layout_alignParentEnd="true"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

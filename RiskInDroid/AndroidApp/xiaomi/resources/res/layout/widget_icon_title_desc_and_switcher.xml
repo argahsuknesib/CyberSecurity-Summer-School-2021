@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="@dimen/size_96dp" android:minHeight="60dp">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginStart="4dp">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_6dp" android:src="@drawable/alarm_icon_music" android:scaleType="centerInside"/>
+        <TextView android:textSize="@dimen/font_size_30sp" android:textColor="@color/mj_color_black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toEndOf="@+id/icon"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_normal" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_13dp" android:text="" android:layout_marginStart="@dimen/size_10dp" android:layout_toEndOf="@+id/title"/>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_below="@+id/title" android:layout_marginEnd="15dp" android:layout_alignStart="@+id/title"/>
+    </RelativeLayout>
+    <com.xiaomi.mico.common.widget.SlidingButton android:id="@+id/switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_marginEnd="11dp"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

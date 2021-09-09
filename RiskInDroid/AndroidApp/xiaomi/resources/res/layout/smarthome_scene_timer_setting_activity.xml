@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_4_title_bar_return_finish"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/smarthome_scene_day_settting" android:background="@drawable/setting_bg_single" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="60.5dp" android:layout_margin="15dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1" android:layout_marginStart="10dp">
+            <TextView android:textSize="14dp" android:textColor="@color/class_b_to_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_scene_timer_repeat"/>
+            <TextView android:textSize="12dp" android:textColor="@color/class_d_to_white_color" android:id="@+id/smarthome_scene_timer_day_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_scene_timer_once"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_list_item_anchor" android:contentDescription="@null"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:gravity="center" android:id="@+id/smarthome_scene_time_hint" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/smarthome_scene_time_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>

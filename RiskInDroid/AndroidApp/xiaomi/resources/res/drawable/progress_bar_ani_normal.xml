@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mj_color_white_00_transparent"/>
+    <item>
+        <rotate android:interpolator="@android:anim/linear_interpolator" android:fromDegrees="0" android:toDegrees="360" android:pivotX="50%" android:pivotY="50%">
+            <bitmap android:src="@drawable/mj_webp_widget_loading" android:antialias="true" android:filter="true"/>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mijia_widget_big_grid_wrapper_height">285dp</dimen>
+    <dimen name="mijia_widget_dimen_190px">63dp</dimen>
+    <dimen name="mijia_widget_dimen_215px">69dp</dimen>
+    <dimen name="mijia_widget_dimen_960px">310dp</dimen>
+</resources>

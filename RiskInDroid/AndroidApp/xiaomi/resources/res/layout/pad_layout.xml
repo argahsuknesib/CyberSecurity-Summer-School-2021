@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.uwb.lib.mitv.widget.TvPadView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/ok_btn" android:layout_width="80dp" android:layout_height="80dp" android:layout_centerInParent="true"/>
+    <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/down_btn" android:layout_width="85dp" android:layout_height="55dp" android:layout_below="@+id/ok_btn" android:layout_centerHorizontal="true"/>
+    <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/up_btn" android:layout_width="85dp" android:layout_height="55dp" android:layout_above="@+id/ok_btn" android:layout_centerHorizontal="true"/>
+    <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/left_btn" android:layout_width="55dp" android:layout_height="85dp" android:layout_toLeftOf="@+id/ok_btn" android:layout_centerVertical="true"/>
+    <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/right_btn" android:layout_width="55dp" android:layout_height="85dp" android:layout_toRightOf="@+id/ok_btn" android:layout_centerVertical="true"/>
+</com.xiaomi.smarthome.uwb.lib.mitv.widget.TvPadView>

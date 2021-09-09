@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar_container" layout="@layout/include_face_select_title_bar"/>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.camera.view.recycle.RecyclerViewRefreshLayoutEx android:id="@+id/recycle_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_select_bottom" android:layout_below="@+id/view_week_view">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycle_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never"/>
+        </com.xiaomi.smarthome.camera.view.recycle.RecyclerViewRefreshLayoutEx>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_select_bottom" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="67dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="10sp" android:textColor="#000000" android:gravity="center_horizontal" android:id="@+id/select_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/local_file_delete" android:drawableTop="@drawable/mj_webp_list_delete_nor"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

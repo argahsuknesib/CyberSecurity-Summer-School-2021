@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <TextView android:textSize="@dimen/major_text_size" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90dp" android:text="@string/bind_device_set_alarm_clock"/>
+    <RelativeLayout android:id="@+id/clock_time_layout" android:layout_width="match_parent" android:layout_height="120dp">
+        <ImageView android:id="@+id/iv_alarm_clock_picker" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaomi.mico.common.widget.CircleSeekBarTimePicker android:id="@+id/seekbar" android:padding="40dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:wheel_max_process="1440" app:wheel_pointer_radius="3dp" app:wheel_reached_width="6dp" app:wheel_unreached_width="6dp"/>
+        <include android:id="@+id/alarm_clock_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/view_alarm_clock_time"/>
+    </RelativeLayout>
+    <include android:layout_gravity="center_horizontal" android:id="@+id/alarm_clock_repeat_time" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_alarm_clock_repeat_time"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:id="@+id/step_select_room_continue_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/bind_device_alarm_clock_confirm" style="@style/App.Widget.Button.Orange.Large"/>
+    <TextView android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:id="@+id/skip_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="34dp" android:text="@string/mico_common_skip"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.shop.base.widget.BaseLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.base.widget.CustomInsetsFrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mi.global.shop.base.widget.CustomInsetsFrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/title_bar_height"/>
+        <ImageView android:id="@+id/iv_divider" android:background="@drawable/feature_base_shadow_bottom" android:layout_width="match_parent" android:layout_height="3dp"/>
+    </com.mi.global.shop.base.widget.CustomInsetsFrameLayout>
+    <include android:id="@+id/title_bar_container" layout="@layout/feature_base_main_titlebar"/>
+</com.mi.global.shop.base.widget.BaseLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:name="vector" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <group android:name="circle_to_house_group" android:pivotX="12" android:pivotY="12">
+        <path android:name="house" android:fillColor="#7b7b7b" android:pathData="M 12 2.832 C 11.786 2.832 11.571 2.9 11.392 3.038 C 8.712 5.09 6.033 7.141 3.353 9.193 C 3.106 9.382 2.961 9.676 2.961 9.987 C 2.961 13.377 2.961 16.768 2.961 20.158 C 2.961 20.434 3.073 20.684 3.254 20.865 C 3.435 21.046 3.685 21.158 3.961 21.158 C 9.32 21.158 14.68 21.158 20.039 21.158 C 20.315 21.158 20.565 21.046 20.746 20.865 C 20.927 20.684 21.039 20.434 21.039 20.158 C 21.039 16.768 21.039 13.377 21.039 9.987 C 21.039 9.676 20.894 9.382 20.647 9.193 C 17.967 7.141 15.288 5.09 12.608 3.038 C 12.608 3.038 12.608 3.038 12.608 3.038 C 12.429 2.9 12.214 2.832 12 2.832" android:strokeColor="#7b7b7b" android:strokeWidth="2"/>
+    </group>
+    <group android:name="arrow_group_bottom">
+        <path android:name="door_long" android:fillColor="#000" android:pathData="M 12 7.639 C 12.265 7.639 12.52 7.744 12.707 7.932 C 12.895 8.119 13 8.374 13 8.639 L 13 16.639 C 13 16.904 12.895 17.158 12.707 17.346 C 12.52 17.533 12.265 17.639 12 17.639 C 11.735 17.639 11.48 17.533 11.293 17.346 C 11.105 17.158 11 16.904 11 16.639 L 11 8.639 C 11 8.374 11.105 8.119 11.293 7.932 C 11.48 7.744 11.735 7.639 12 7.639"/>
+        <path android:name="arrow" android:pathData="M 8.464 10.879 L 12 7.343 L 15.536 10.879" android:strokeColor="#000" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    </group>
+    <group android:name="dismiss_door">
+        <path android:name="door" android:fillColor="#000" android:pathData="M 12 11.919 C 12.265 11.919 12.52 12.025 12.707 12.212 C 12.895 12.4 13 12.654 13 12.919 L 13 16.919 C 13 17.184 12.895 17.439 12.707 17.626 C 12.52 17.814 12.265 17.919 12 17.919 C 11.735 17.919 11.48 17.814 11.293 17.626 C 11.105 17.439 11 17.184 11 16.919 L 11 12.919 C 11 12.654 11.105 12.4 11.293 12.212 C 11.48 12.025 11.735 11.919 12 11.919" android:strokeWidth="1" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    </group>
+</vector>

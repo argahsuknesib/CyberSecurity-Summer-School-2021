@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/camera_title_bar_transparent_black"/>
+        <include layout="@layout/camera_list_line"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.camera.view.BabySleepAreaView android:id="@+id/baby_area_view" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/account_help" android:scaleType="fitXY"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/switch_baby_sleep" android:layout_marginTop="0dp" item:item_subtitle="@string/settings_alarm_baby_sleep_sub" item:item_title="@string/settings_alarm_baby_sleep" item:item_type="2" style="@style/setting_item"/>
+    <TextView android:textSize="13sp" android:textColor="@color/mj_color_black_49_transparent" android:ellipsize="end" android:id="@+id/baby_sleep_set_tips" android:background="@color/mj_color_white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_alarm_baby_sleep_tip" android:maxLines="2" android:paddingStart="17dp" android:paddingEnd="17dp"/>
+</LinearLayout>

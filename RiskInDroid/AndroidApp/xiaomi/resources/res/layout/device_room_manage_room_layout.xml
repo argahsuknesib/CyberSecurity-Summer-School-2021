@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/main_grid_card_bg_normal_v2" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:layout_gravity="center" android:id="@+id/tips" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/home_manager"/>
+</FrameLayout>

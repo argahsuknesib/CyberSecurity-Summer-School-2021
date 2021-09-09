@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_container" android:background="@drawable/bg_round" android:layout_width="160dp" android:layout_height="160dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/item_image" android:layout_width="130dp" android:layout_height="130dp" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <FrameLayout android:layout_width="65dp" android:layout_height="20dp">
+            <ImageView android:id="@+id/corner_mark_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/corner_mark_txt" android:background="@drawable/bg_corner_mark" android:layout_width="match_parent" android:layout_height="match_parent" android:text="50% OFF"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="14dp" android:textColor="@color/pay_title_color" android:ellipsize="end" android:layout_gravity="left" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:maxLines="2" android:paddingStart="8dp"/>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:paddingStart="8dp">
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="14dp" android:textColor="@color/orange_red" android:id="@+id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="14dp" android:id="@+id/item_price_origin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+</LinearLayout>

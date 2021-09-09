@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/view_container" android:background="@color/mj_color_step_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/module_a_3_title_bar_return_transparent_white"/>
+    <androidx.viewpager.widget.ViewPager android:layout_gravity="center" android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="280dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_indicator_container" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="5dp" android:layout_below="@+id/pager" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_steps_indicator" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/dot_indicator_selected"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_sleep_indicator" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/dot_indicator_unselected"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#909090" android:gravity="center" android:background="#f8f8f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/no_interactive_device" android:layout_below="@+id/ll_indicator_container" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/interactive_device_container" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_below="@+id/ll_indicator_container" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/device_list_title" android:text="@string/device_with_band" style="@style/list_title"/>
+        <View style="@style/list_item_divider"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/rl_device_list_empty" android:visibility="gone" layout="@layout/miband_device_list_empty"/>
+            <ListView android:id="@+id/lv_band_devices" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

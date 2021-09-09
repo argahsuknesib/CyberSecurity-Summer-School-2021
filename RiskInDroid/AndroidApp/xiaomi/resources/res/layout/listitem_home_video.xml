@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rootview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.shopviews.gsvvideo.video.SampleVideo android:id="@+id/media_player" android:layout_width="match_parent" android:layout_height="200dp"/>
+    <TextView android:textSize="@dimen/home_text_size_h3" android:textColor="@color/home_text_color_black_a" android:gravity="center_vertical" android:id="@+id/txt_title" android:background="@color/white" android:paddingLeft="@dimen/padding16" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/home_text_color_black_c" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_desc" android:background="@color/white" android:paddingLeft="@dimen/padding16" android:paddingTop="6dp" android:paddingBottom="@dimen/padding16" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+</LinearLayout>

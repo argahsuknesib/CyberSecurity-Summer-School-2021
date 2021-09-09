@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/title_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textSize="@dimen/home_text_size_h2" android:textColor="@color/home_text_color_black_a" android:gravity="center" android:id="@+id/tab_active_start_time" android:layout_width="match_parent" android:layout_height="match_parent" android:text="10:00"/>
+        <com.xiaomi.shopviews.widget.homepanicbuyview.FlashTimerView android:layout_gravity="center" android:id="@+id/count_down_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:id="@+id/horizontal_line" android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/title_container"/>
+    <ImageView android:id="@+id/arrow_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panic_icon_down_arrow" android:layout_alignTop="@+id/horizontal_line" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

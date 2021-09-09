@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ViewStub android:id="@+id/vs_buy_guide" android:layout="@layout/view_plugin_rec_buy" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/vs_condition_list" android:layout="@layout/light_rec_scene_condition_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/ble_list_view" android:layout="@layout/view_plugin_rec_action_connect_ble" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.ui.MaxHeightRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:recycler_max_height="490dp" style="@style/common_recycler_vertical_scroll_bar"/>

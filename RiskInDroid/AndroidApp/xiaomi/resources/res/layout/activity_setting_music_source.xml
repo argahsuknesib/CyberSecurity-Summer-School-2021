@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/setting_music_source"/>
+    <com.xiaomi.mico.common.widget.RadioItemLinearView android:id="@+id/qq_music_source" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" app:mc_icon="@drawable/icon_qq_music_source" app:mc_title="@string/music_qq"/>
+    <com.xiaomi.mico.common.widget.RadioItemLinearView android:id="@+id/mi_music_source" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" app:mc_has_divider="false" app:mc_icon="@drawable/icon_mi_music_source" app:mc_title="@string/music_cp_mi"/>
+</LinearLayout>

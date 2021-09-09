@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <FrameLayout android:id="@+id/divide_line" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/mj_auth_control_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.xiaomi.smarthome.newui.widget.DownloadProgressbarNew android:id="@+id/dpb_enter_device" android:layout_width="match_parent" android:layout_height="1dp" android:progressDrawable="@drawable/progress_bar_card_download_clip" style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:id="@+id/progress_enter_device" android:layout_width="match_parent" android:layout_height="47dp" android:layout_below="@+id/divide_line">
+        <TextView android:textSize="12.67sp" android:textColor="@color/mj_color_black_80_transparent" android:layout_gravity="center" android:id="@+id/bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_more_operation"/>
+        <include layout="@layout/three_point_loading"/>
+    </FrameLayout>
+</RelativeLayout>

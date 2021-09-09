@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.newui.card.profile.YeelightControlView android:id="@+id/controlView" android:layout_width="271dp" android:layout_height="271dp"/>
+    <View android:background="@drawable/pallet_corner" android:layout_width="271dp" android:layout_height="271dp"/>
+</FrameLayout>

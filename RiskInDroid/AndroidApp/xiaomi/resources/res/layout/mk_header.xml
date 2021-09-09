@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@+id/mk_header_flipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/mk_uic_header_bg" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageViewMenu" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mk_ic_navigation" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold" android:textColor="#fff" android:id="@+id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="Payment Gateway" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/imageViewAddCard" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mk_ic_addcard" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </ViewFlipper>
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:id="@+id/rl_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_particle_top" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/rl_partical_parent"/>
+    <RelativeLayout android:id="@+id/rl_partical_parent" android:layout_width="150dp" android:layout_height="70.33dp" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/view_particle_bottom" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_partical_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="46.67sp" android:textColor="@color/mj_color_black_80_transparent" android:layout_gravity="center_horizontal" android:id="@+id/value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black_60_transparent" android:layout_gravity="center_horizontal" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <TextView android:textSize="16.67sp" android:textColor="@color/mj_color_black_30_transparent" android:id="@+id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dp" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/content_wrapper"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background" android:drawable="@drawable/shop_icon_star_big_more"/>
+    <item android:id="@+id/progress" android:drawable="@drawable/shop_icon_star_big_more_hl"/>
+</layer-list>

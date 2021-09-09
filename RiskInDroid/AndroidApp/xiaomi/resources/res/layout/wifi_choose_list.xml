@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/footer_bar" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.smarthome.library.common.widget.ExpandListView android:id="@+id/wifi_list" android:paddingLeft="@dimen/page_margin_left" android:paddingRight="@dimen/page_margin_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:divider="@null" android:paddingStart="@dimen/page_margin_left" android:paddingEnd="@dimen/page_margin_left"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/footer_bar" android:background="@drawable/mj_common_title_bar_bg" android:layout_width="match_parent" android:layout_height="65dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/wifi_choose_end_button" android:background="@drawable/common_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/page_margin_left" android:layout_marginStart="@dimen/page_margin_left" android:layout_marginEnd="@dimen/page_margin_left">
+            <TextView android:textSize="@dimen/font_size_5" android:textColor="@color/common_button" android:gravity="center" android:id="@+id/wifi_login_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_finish" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

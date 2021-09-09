@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="54dp">
+    <TextView android:textSize="16dp" android:textColor="@color/selector_add_condition" android:gravity="center_vertical" android:id="@+id/txt_add_alias" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="54dp" android:text="@string/add_more_scene_voice_alias" android:paddingStart="27dp" android:paddingEnd="27dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="72dp">
+    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:layout_gravity="center" android:id="@+id/ratio_btn" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_content_margin_right_27" android:layout_centerVertical="true" android:layout_marginStart="14dp" android:layout_alignParentEnd="true"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/device_icon" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="@dimen/std_list_content_margin_right" android:src="@drawable/device_list_phone_no" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/ratio_btn" android:layout_toEndOf="@+id/device_icon">
+        <TextView android:textSize="@dimen/font_size_16sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/home_room_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

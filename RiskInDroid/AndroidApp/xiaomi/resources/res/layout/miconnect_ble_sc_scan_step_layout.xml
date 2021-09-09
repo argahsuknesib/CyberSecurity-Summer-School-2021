@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/title_bar" android:background="@drawable/miconnect_common_title_bg" android:layout_width="match_parent" android:layout_height="63dp">
+        <ImageView android:id="@+id/btn_back" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_common_title_bar_return" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/action_back"/>
+        <TextView android:textSize="16.6sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_by_scan_barcode" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="223dp" android:layout_below="@+id/title_bar">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/miconnect_common_bind_sc_login" android:importantForAccessibility="no"/>
+        <TextView android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sc_scan_help"/>
+    </LinearLayout>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingTop="35dp" android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@+id/progress" android:layout_width="20dp" android:layout_height="match_parent" android:indeterminate="false" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/mj_webp_widget_loading" android:indeterminateBehavior="repeat"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:layout_gravity="center_vertical" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="14dp"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_black" android:id="@+id/debug_view" android:background="@drawable/gray_border_radius_2" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp" android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+</FrameLayout>

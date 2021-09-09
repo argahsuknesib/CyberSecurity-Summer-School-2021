@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ScrollView android:id="@+id/user_license" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="17dp" android:layout_marginRight="17dp">
+            <TextView android:textColor="@color/mj_color_black_75_transparent" android:id="@+id/user_license_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.xiaomi.smarthome.framework.webview.SmartHomeWebView android:id="@+id/user_license_info_web" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

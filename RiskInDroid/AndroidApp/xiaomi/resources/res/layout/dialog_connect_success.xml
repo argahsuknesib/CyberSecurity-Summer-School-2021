@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="70dp">
+                <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:id="@+id/disclaim_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connect_success_dialog_title" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="#8c000000" android:id="@+id/disclaim_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:text="@string/connect_success_dialog_message" android:lineSpacingExtra="4dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/tips_gif" android:layout_width="165dp" android:layout_height="135dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <RelativeLayout android:id="@+id/remember_container" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="24dp" android:layout_marginBottom="20dp" android:layout_marginStart="24dp">
+                <CheckBox android:id="@+id/remember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/camera_check_icon" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="#8c000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/connect_success_dialog_not_tips" android:layout_toRightOf="@+id/remember" android:layout_centerVertical="true" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/remember"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:background="@color/mj_color_black_00_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_text_blue_bg" android:gravity="center" android:id="@+id/ok" android:background="@drawable/dialog_connect_success_btn_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/connect_success_dialog_button_name" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

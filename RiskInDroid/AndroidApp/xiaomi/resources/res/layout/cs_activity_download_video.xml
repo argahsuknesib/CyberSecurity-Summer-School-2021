@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rlTitleBar" layout="@layout/cs_view_cloud_video_header"/>
+    <TextView android:textColor="@color/mj_color_black" android:id="@+id/tvBlank" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_no_data" android:layout_centerInParent="true"/>
+    <TextView android:textColor="@color/mj_color_black_50_transparent" android:gravity="center" android:id="@+id/tvDelete" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete" android:drawableTop="@drawable/ic_edit_delete_selector" android:drawablePadding="5dp" android:layout_alignParentBottom="true"/>
+    <com.xiaomi.smarthome.miio.camera.cloudstorage.CloudVideoDownloadListView android:id="@+id/cvdlvDownloadVideo" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tvDelete" android:layout_below="@+id/rlTitleBar"/>
+</RelativeLayout>

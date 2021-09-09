@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingTop="80dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="115dp" android:layout_height="115dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/account_profile" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_icon_user240_nor" android:scaleType="fitXY" android:importantForAccessibility="no" app:roundAsCircle="true"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:layout_gravity="center_horizontal" android:id="@+id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+            <FrameLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/layout_login" android:layout_width="match_parent" android:layout_height="83dp" android:layout_marginTop="91dp">
+                <TextView android:textSize="13sp" android:textStyle="bold" android:gravity="center" android:id="@+id/login_button" android:text="@string/login_account_login" style="@style/ConfirmNormalBtn"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_gravity="center" android:id="@+id/change_account" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/mj_login_change_account"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

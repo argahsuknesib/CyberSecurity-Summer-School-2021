@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlParent" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_bar_transparent_white"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llBottomTools">
+        <FrameLayout android:id="@+id/video_frame" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/time_container_center" android:background="@drawable/time_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:minWidth="50dp"/>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/pause_view" android:background="@drawable/camera_icon_pause_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/zhanwei_direction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ptz_fullscreen_bg" android:layout_marginEnd="30dp"/>
+                <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/llFuncPopup" android:background="@drawable/shape_popup_pic_bg" android:padding="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp">
+                    <ImageView android:id="@+id/ivShotPic" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/land_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/flTopCtrlLandscape" android:background="@drawable/camera_title_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_tittlebar_white_normal" android:layout_marginStart="20dp"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llRightCtrlLandscape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/flTopCtrlLandscape" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+                    <TextView android:layout_gravity="center_horizontal" android:id="@+id/tvExitFullScreen" android:paddingLeft="13dp" android:paddingRight="13dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableEnd="@drawable/home_icon_mixscreen2"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="10">
+                        <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/cbShortLandscape" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/home_icon_toggle_short3"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="10">
+                        <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/cbRecordLandscape" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/home_icon_toggle_record3"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="10">
+                        <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/cbMuteLandscape" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/home_icon_toggle_audio3"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="10">
+                        <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/cbVoiceLandscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" style="@style/cb_style_1"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/time_line_land" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+                <FrameLayout android:id="@+id/dcvDirectionCtrlLandscapeContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_above="@+id/time_line_land" android:layout_marginStart="15dp"/>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_tittlebar_white_normal" android:layout_marginStart="20dp"/>
+                <TextView android:textColor="@color/mj_color_red_normal" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvRecordTimerLand" android:background="@drawable/time_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minWidth="50dp" android:text="00:00" android:drawablePadding="5dp" android:drawableStart="@drawable/widget_red_dot"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/llVideoViewBottomCtrl" android:background="@drawable/camera_title_background_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.xiaomi.smarthome.camera.view.widget.MultiStateView android:layout_gravity="center" android:id="@+id/cdcToggleSleep" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.xiaomi.smarthome.camera.view.widget.CenterDrawableCheckBox android:layout_gravity="center" android:id="@+id/cdcToggleAudio" android:background="@drawable/home_icon_toggle_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/ivCameraShot" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_shot_v4"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.xiaomi.smarthome.camera.view.widget.CenterDrawableCheckBox android:layout_gravity="center" android:id="@+id/cdcCameraRecord" android:background="@drawable/home_icon_camera_record_v4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="11sp" android:textColor="@color/mj_color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvsResolution" android:background="@drawable/shape_quality" android:paddingLeft="5dp" android:paddingTop="3dp" android:paddingRight="5dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/quality_auto"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/ivFullScreen" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_fullscreen_big"/>
+                </FrameLayout>
+            </LinearLayout>
+            <com.xiaomi.smarthome.camera.v4.view.AngleView android:layout_gravity="bottom" android:id="@+id/avCamera" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:layout_marginStart="10dp"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/mj_color_white" android:gravity="center" android:layout_gravity="end" android:id="@+id/video_scale_tv" android:background="@drawable/bg_video_scale_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp" android:text="3.0x" android:layout_marginEnd="20dp"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/rlDirectionCtl" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/time_line_portrait" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.smarthome.camera.v4.view.TimeLineWithDatePickView android:orientation="vertical" android:id="@+id/time_line_date_pick" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/time_line_with_date_height">
+                    <HorizontalScrollView android:id="@+id/date_pick_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="30dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/date_pick" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    </HorizontalScrollView>
+                    <com.xiaomi.smarthome.camera.v4.view.TimeLineControlView android:id="@+id/time_line_control" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                </com.xiaomi.smarthome.camera.v4.view.TimeLineWithDatePickView>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/fl_direction_ctrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_centerInParent="true">
+                <FrameLayout android:id="@+id/dcvDirectionCtrl_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RelativeLayout android:id="@+id/rl_panoramic" android:background="@drawable/shape_camera_offline_dialog" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+                    <ImageView android:id="@+id/iv_panoramic_close" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/panoramic_close" android:layout_alignParentEnd="true"/>
+                    <ImageView android:id="@+id/iv_panoramic_edit" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/panoramic_edit" android:layout_toStartOf="@+id/iv_panoramic_close"/>
+                    <RelativeLayout android:id="@+id/rl_panoramic_middle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/iv_panoramic_close">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_panoramic_doing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_loading_panoramic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_panoramic" android:layout_marginEnd="10dp"/>
+                                <TextView android:textSize="@dimen/font_size_16sp" android:textColor="#aa000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/panoramic_doing"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/ll_panoramic_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <TextView android:textSize="@dimen/font_size_16sp" android:textColor="#bb000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/panoramic_tips_start"/>
+                                <TextView android:textSize="@dimen/font_size_16sp" android:textColor="#32bac0" android:layout_gravity="center_horizontal" android:id="@+id/tv_panoramic_start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/panoramic_start"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:layout_gravity="center" android:id="@+id/iv_panoramic" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+                            <com.mijia.widget.PanoramicMaskView android:layout_gravity="center" android:id="@+id/iv_panoramic_mask" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </FrameLayout>
+                    </RelativeLayout>
+                    <View android:layout_width="match_parent" android:layout_height="48dp" android:layout_below="@+id/rl_panoramic_middle"/>
+                </RelativeLayout>
+            </FrameLayout>
+            <CheckBox android:id="@+id/cbPlayBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignBottom="@+id/fl_direction_ctrl" android:drawableStart="@drawable/home_icon_playback_check" android:layout_marginEnd="25dp" android:layout_alignParentEnd="true"/>
+            <com.xiaomi.smarthome.camera.view.widget.WaveView android:id="@+id/call_wave" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true"/>
+            <RelativeLayout android:id="@+id/rlCloudEndTip" android:background="#32bac0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34dp">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_white" android:id="@+id/tvCloudEndTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginStart="24dp" android:layout_alignParentStart="true"/>
+                <ImageView android:id="@+id/ivCloudEndTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_close" android:layout_centerVertical="true" android:layout_marginEnd="11dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/mj_color_red_normal" android:gravity="center" android:id="@+id/tvRecordTimer" android:background="@drawable/time_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:text="00:00" android:drawablePadding="5dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" android:drawableStart="@drawable/widget_red_dot"/>
+    <RelativeLayout android:id="@+id/llBottomTools" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="75dp" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/bg_camera_player_bottom_tab" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/view_center_ph" android:layout_width="70dp" android:layout_height="1dp" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:id="@+id/fl_cloud_video_tips" android:visibility="gone" android:layout_width="133dp" android:layout_height="35dp" android:layout_toEndOf="@+id/view_center_ph">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/camera_cloud_video_tips_bg"/>
+            <TextView android:textSize="@dimen/font_size_10sp" android:textColor="@color/mj_color_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_cloud_video_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+            <TextView android:id="@+id/tvAlarm" android:text="@string/item_alarm_v4" android:lines="1" android:drawableTop="@drawable/home_icon_alarm" style="@style/camera_v4_item_group"/>
+            <TextView android:id="@+id/tvStorage" android:text="@string/item_history_video" android:lines="1" android:drawableTop="@drawable/home_icon_storage" style="@style/camera_v4_item_group"/>
+            <com.xiaomi.smarthome.camera.view.MultiStateImageView android:id="@+id/mstvVoice" android:layout_marginBottom="2dp" android:src="@drawable/call_start_bg" style="@style/camera_v4_item_group"/>
+            <TextView android:id="@+id/tvCloudVideo" android:visibility="gone" android:text="@string/item_cloud_video" android:lines="1" android:drawableTop="@drawable/home_icon_cloud_video" style="@style/camera_v4_item_group"/>
+            <TextView android:id="@+id/tvAlbum" android:text="@string/album" android:lines="1" android:drawableTop="@drawable/home_icon_album" style="@style/camera_v4_item_group"/>
+            <TextView android:layout_gravity="bottom" android:id="@+id/tvMore" android:text="@string/face_info" android:lines="1" android:drawableTop="@drawable/home_icon_face" style="@style/camera_v4_item_group"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

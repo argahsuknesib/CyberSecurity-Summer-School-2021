@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_user_gender_name">
+        <item>Homme</item>
+        <item>Femme</item>
+    </array>
+    <array name="ble_guide_content_description">
+        <item>Première page</item>
+        <item>Deuxième page</item>
+        <item>Troisième page</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Janv.</item>
+        <item>Févr.</item>
+        <item>Mars</item>
+        <item>Avr.</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juil.</item>
+        <item>Août</item>
+        <item>Sept.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Déc.</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Conjoint</item>
+        <item>Papa</item>
+        <item>Maman</item>
+        <item>Fils</item>
+        <item>Fille</item>
+        <item>Colocataire</item>
+        <item>Autre</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Température </item>
+        <item>Humidité </item>
+        <item>QAI </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Température</item>
+        <item>Humidité</item>
+        <item>Qualité de l&apos;air</item>
+    </array>
+    <array name="month">
+        <item>Janv.</item>
+        <item>Févr.</item>
+        <item>Mars</item>
+        <item>Avr.</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juill.</item>
+        <item>Août</item>
+        <item>Sept.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Déc.</item>
+    </array>
+    <array name="multikey_keyname_double">
+        <item>Interrupteur de gauche</item>
+        <item>Interrupteur central</item>
+    </array>
+    <array name="multikey_keyname_three">
+        <item>Interrupteur de gauche</item>
+        <item>Interrupteur de droite</item>
+        <item>Interrupteur central</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>Salle de séjour</item>
+        <item>Chambre à coucher</item>
+        <item>Chambre principale</item>
+        <item>Cuisine</item>
+        <item>Salle à manger</item>
+        <item>Salle de bain</item>
+        <item>Chambre des enfants</item>
+        <item>Étude</item>
+        <item>Bibliothèque</item>
+        <item>Balcon</item>
+        <item>Atelier</item>
+        <item>Salle de bain</item>
+        <item>Cour</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Pékin</item>
+        <item>Séoul</item>
+        <item>Tokyo</item>
+        <item>New York</item>
+        <item>Denver</item>
+        <item>Costa Rica</item>
+        <item>Chicago</item>
+        <item>Mexico</item>
+        <item>Regina</item>
+        <item>Majuro</item>
+        <item>Midway</item>
+        <item>Honolulu</item>
+        <item>Anchorage</item>
+        <item>Los Angeles</item>
+        <item>Tijuana</item>
+        <item>Phoenix</item>
+        <item>Chihuahua</item>
+        <item>Bogota</item>
+        <item>New York</item>
+        <item>Caracas</item>
+        <item>Barbade</item>
+        <item>Manaus</item>
+        <item>Santiago</item>
+        <item>St Johns</item>
+        <item>Sao Paulo</item>
+        <item>Buenos Aires</item>
+        <item>Godthab</item>
+        <item>Montevideo</item>
+        <item>Géorgie du Sud</item>
+        <item>Açores</item>
+        <item>Cap Vert</item>
+        <item>Casablanca</item>
+        <item>Londres</item>
+        <item>Amsterdam</item>
+        <item>Belgrade</item>
+        <item>Bruxelles</item>
+        <item>Sarajevo</item>
+        <item>Windhoek</item>
+        <item>Brazzaville</item>
+        <item>Amman</item>
+        <item>Athènes</item>
+        <item>Beyrouth</item>
+        <item>Le Caire</item>
+        <item>Helsinki</item>
+        <item>Jérusalem</item>
+        <item>Minsk</item>
+        <item>Harare</item>
+        <item>Bagdad</item>
+        <item>Moscou</item>
+        <item>Koweït</item>
+        <item>Nairobi</item>
+        <item>Téhéran</item>
+        <item>Bakou</item>
+        <item>Tbilissi</item>
+        <item>Erevan</item>
+        <item>Dubaï</item>
+        <item>Kaboul</item>
+        <item>Karachi</item>
+        <item>Oral</item>
+        <item>Ekaterinbourg</item>
+        <item>Calcutta</item>
+        <item>Colombo</item>
+        <item>Katmandou</item>
+        <item>Almaty</item>
+        <item>Rangoun</item>
+        <item>Krasnoyarsk</item>
+        <item>Bangkok</item>
+        <item>Irkutsk</item>
+        <item>Kuala Lumpur</item>
+        <item>Perth</item>
+        <item>Yakutsk</item>
+        <item>Adélaïde</item>
+        <item>Darwin</item>
+        <item>Brisbane</item>
+        <item>Hobart</item>
+        <item>Sydney</item>
+        <item>Vladivostok</item>
+        <item>Guam</item>
+        <item>Magadan</item>
+        <item>Auckland</item>
+        <item>Fidji</item>
+        <item>Tongatapu</item>
+    </array>
+    <array name="weekday">
+        <item>Dimanche</item>
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+        <item>Dim</item>
+    </array>
+    <array name="weekday_short">
+        <item>Dim</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+    </array>
+</resources>

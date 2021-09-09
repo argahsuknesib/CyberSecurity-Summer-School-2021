@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <FrameLayout android:background="@color/mj_color_white_100_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_scanning" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="150dp">
+            <View android:id="@+id/view_scan_ing" android:background="@drawable/ic_wearables_scan_ing" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerInParent="true"/>
+            <View android:id="@+id/view_nfc_lock" android:background="@drawable/ic_wearables_default_nfc_lock" android:layout_width="60dp" android:layout_height="70dp" android:layout_centerInParent="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/tv_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/rn_wearables_scanning" android:layout_below="@+id/view_scan_ing" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_show_scan_devices" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="20sp" android:textColor="@color/mj_color_black_100_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="@string/rn_wearables_please_select_lock_device"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_scan_device_info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

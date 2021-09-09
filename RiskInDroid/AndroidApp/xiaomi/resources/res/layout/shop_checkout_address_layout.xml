@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/address_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/location_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:src="@drawable/shop_location"/>
+        <com.mi.global.shop.widget.MaxWidthTextView android:textSize="15sp" android:textColor="#424242" android:id="@+id/consignee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:singleLine="true" android:layout_toRightOf="@+id/location_image"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="15sp" android:textColor="#424242" android:id="@+id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="13dp" android:singleLine="true" android:layout_toLeftOf="@+id/right_image" android:layout_toRightOf="@+id/consignee"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#b0b0b0" android:id="@+id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="15dp" android:layout_toLeftOf="@+id/right_image" android:layout_toRightOf="@+id/location_image" android:layout_below="@+id/consignee"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shop_checkout_address_line" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/address_mask" android:background="@color/invalid_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/right_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@drawable/shop_arrow_right_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/add_address" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="95dp" android:layout_below="@+id/address_content">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#ff6700" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_address_add" android:drawableLeft="@drawable/shop_checkout_add_address" android:drawablePadding="10dp"/>
+        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shop_checkout_address_line" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/address_tip_layout" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/add_address">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="@color/warning" android:id="@+id/COD_not_available" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_COD_address"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="@color/warning" android:id="@+id/address_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/invalid_address"/>
+    </LinearLayout>
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+    <ViewStub android:layout_gravity="top" android:id="@+id/title_bar_choose_device_stub" android:layout="@layout/title_bar_choose_device" android:layout_width="match_parent" android:layout_height="54dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/menu_bar_choose_device" android:layout_below="@+id/title_bar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp" layout="@layout/item_main_list_empty"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/add_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/home_room_add_room_icon_nor2" android:layout_alignParentBottom="true" android:contentDescription="@string/tag_add_title" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

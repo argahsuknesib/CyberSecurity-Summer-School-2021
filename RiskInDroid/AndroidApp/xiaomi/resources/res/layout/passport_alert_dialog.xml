@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parentPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:layout_gravity="center" android:id="@+id/alertTitle" android:paddingTop="@dimen/passport_dialog_title_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Passport.DialogTitleStyle"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:paddingTop="@dimen/passport_dialog_message_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+            <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Passport.DialogMessageStyle"/>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/customPanel" android:paddingTop="@dimen/passport_dialog_custom_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Passport.DialogCustomPaddingH">
+        <FrameLayout android:id="@android:id/custom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+            <Button android:gravity="center" android:id="@android:id/button2" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:gravity="center" android:id="@android:id/button3" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:gravity="center" android:id="@android:id/button1" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" style="@style/Passport.Widget.Button.Dialog.Default"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

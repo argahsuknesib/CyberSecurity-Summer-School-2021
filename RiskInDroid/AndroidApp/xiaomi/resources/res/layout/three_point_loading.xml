@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/three_point_loading" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/first" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/loading_first_point"/>
+    <ImageView android:id="@+id/second" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/loading_second_point"/>
+    <ImageView android:id="@+id/third" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/loading_third_point"/>
+</LinearLayout>

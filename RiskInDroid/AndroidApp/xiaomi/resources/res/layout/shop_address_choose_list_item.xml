@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_weight="1">
+            <ImageView android:id="@+id/address_select_icon" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="15dp" android:src="@drawable/shop_address_select_icon" android:layout_centerVertical="true"/>
+            <com.mi.global.shop.widget.MaxWidthTextView android:textSize="14sp" android:textColor="#424242" android:id="@+id/address_consignee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:maxLines="1" android:layout_toRightOf="@+id/address_select_icon"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="14sp" android:textColor="#424242" android:id="@+id/address_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="15dp" android:maxLines="1" android:layout_toRightOf="@+id/address_consignee"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#b0b0b0" android:id="@+id/address_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_toRightOf="@+id/address_select_icon" android:layout_below="@+id/address_consignee"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#b0b0b0" android:id="@+id/address_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_toRightOf="@+id/address_select_icon" android:layout_below="@+id/address_line1"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+        <FrameLayout android:id="@+id/edit_address" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#888888" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_address_item_edit" android:drawableTop="@drawable/shop_edit_icon" android:drawablePadding="4dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/address_tip_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <com.mi.global.shop.widget.CustomTextView android:textColor="@color/warning" android:id="@+id/address_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="15dp"/>
+</LinearLayout>

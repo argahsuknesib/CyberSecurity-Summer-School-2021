@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/confirm_payment_margin" android:layout_marginRight="@dimen/confirm_payment_margin">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@+id/bank_logo_border" android:background="@drawable/shop_border_confirm_payment_wred" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/confirm_payment_spinnerheight"/>
+        <Spinner android:id="@+id/buy_confirm_payment_netbank_droplist" android:background="@drawable/shop_border_confirm_payment_black" android:padding="@dimen/confirm_payment_innerpadding" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/confirm_payment_innermargin" android:prompt="@string/buy_confirm_NetBank_other"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/shop_arrow_down"/>
+        <ImageView android:id="@+id/bank_logo_corner" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shop_multiple_choice_s"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="@dimen/size_15dp" android:paddingRight="@dimen/size_15dp" android:paddingBottom="@dimen/size_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/music_personal_recent" android:background="@drawable/mico_mine_item_play_record_bg" android:layout_width="0dp" android:layout_height="94dp" android:layout_weight="1">
+        <ImageView android:id="@+id/icon" android:visibility="gone" android:src="@drawable/my_recent_play" style="@style/image_style_personal_header"/>
+        <TextView android:id="@+id/title" android:layout_marginBottom="30dp" android:text="@string/music_channel_recent_play" style="@style/text_style_personal_header"/>
+    </RelativeLayout>
+</LinearLayout>

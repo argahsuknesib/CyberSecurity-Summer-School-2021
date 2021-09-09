@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.newui.widget.GridItemAnimView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/grid_anim_view" android:layout_width="match_parent" android:layout_height="match_parent" app:AnimColor="#ff20b1b8" app:radius="10dp"/>

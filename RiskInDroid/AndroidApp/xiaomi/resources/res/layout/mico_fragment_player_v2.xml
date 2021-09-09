@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/sv_player_cover" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.smarthome.library.DarkImageViewCompat android:id="@+id/player_cover" android:layout_width="@dimen/player_cover_width" android:layout_height="@dimen/player_cover_width" android:src="@drawable/img_cover_player" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="26dp" android:textStyle="bold" android:textColor="@color/mj_color_black" android:ellipsize="marquee" android:id="@+id/player_audio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_12dp" android:singleLine="true" android:layout_toLeftOf="@+id/player_control_bar_love" android:layout_below="@+id/player_cover" android:layout_alignLeft="@+id/player_cover"/>
+            <TextView android:textSize="14dp" android:textColor="@color/mj_color_gray_light" android:id="@+id/player_artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_1dp" android:singleLine="true" android:layout_toLeftOf="@+id/player_control_bar_love" android:layout_below="@+id/player_audio_name" android:layout_alignLeft="@+id/player_cover"/>
+            <ImageView android:id="@+id/player_control_bar_love" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_19dp" android:src="@drawable/mico_icon_player_love_state" android:scaleType="fitXY" android:layout_below="@+id/player_cover" android:layout_alignRight="@+id/player_cover" android:layout_marginStart="14dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

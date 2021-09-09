@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_bg="@color/mj_color_black_00_transparent" app:tb_left_icon="@drawable/mj_common_title_bar_return"/>
+    <TextView android:textSize="@dimen/font_size_24sp" android:paddingLeft="@dimen/size_17dp" android:paddingTop="@dimen/size_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_stereo_channel_setting"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/channel_device_layout_left" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_30dp" android:layout_alignParentLeft="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/channel_device_icon_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_stereo_lx06" android:scaleType="fitXY"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_left" android:scaleType="center"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/channel_device_name_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_16dp" android:maxLines="1"/>
+            <Button android:textColor="@color/mj_color_black" android:layout_gravity="center" android:id="@+id/channel_play_btn_left" android:background="@drawable/bg_white_black_border" android:layout_width="60dp" android:layout_height="32dp" android:layout_marginTop="@dimen/size_16dp" android:text="@string/setting_stereo_channel_audition"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/channel_lr_switch_btn" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="@dimen/size_20dp" android:src="@drawable/mico_icon_switch" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/channel_device_layout_right" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/size_30dp" android:layout_alignParentRight="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/channel_device_icon_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_stereo_lx06" android:scaleType="fitXY"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_right" android:scaleType="center"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/channel_device_name_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_16dp" android:maxLines="1"/>
+            <Button android:textColor="@color/mj_color_black" android:layout_gravity="center" android:id="@+id/channel_play_btn_right" android:background="@drawable/bg_white_black_border" android:layout_width="60dp" android:layout_height="32dp" android:layout_marginTop="@dimen/size_16dp" android:text="@string/setting_stereo_channel_audition"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/size_30dp" android:text="@string/setting_stereo_channel_tips"/>
+            <Button android:id="@+id/finish_btn" android:background="@drawable/normal_confirm_button" android:layout_marginBottom="@dimen/size_30dp" android:text="@string/mico_common_finish" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" style="@style/App.Widget.Button.Orange.Large"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

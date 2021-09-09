@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_gray_light" android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@+id/list_space" android:paddingLeft="@dimen/tag_margin_left" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line" android:text="@string/shortcut_switch"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="12dp"/>
+</LinearLayout>

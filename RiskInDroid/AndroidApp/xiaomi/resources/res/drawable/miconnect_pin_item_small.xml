@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/mj_color_black_05_transparent"/>
+                    <corners android:radius="12dp"/>
+                    <size android:height="40dp" android:width="40dp"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:left="16.5dp" android:top="16.5dp" android:right="16.5dp" android:bottom="16.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="#191919"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false" android:state_selected="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mj_color_black_05_transparent"/>
+            <corners android:radius="12dp"/>
+            <size android:height="40dp" android:width="40dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/mj_color_black_05_transparent"/>
+                    <corners android:radius="12dp"/>
+                    <size android:height="40dp" android:width="40dp"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:left="18.5dp" android:top="3.5dp" android:right="18.5dp" android:bottom="3.5dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/mj_color_highlight_blue_text_color"/>
+                    <size android:height="20dp" android:width="2dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false" android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mj_color_black_05_transparent"/>
+            <corners android:radius="12dp"/>
+            <size android:height="40dp" android:width="40dp"/>
+        </shape>
+    </item>
+</selector>

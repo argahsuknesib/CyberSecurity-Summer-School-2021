@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout1" android:background="@drawable/common_menu_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_height_item">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/select_icon1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/mj_lib_btn_icon_selected"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/class_b_to_white_color" android:ellipsize="end" android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/setting_record_model_always" android:lines="1"/>
+            <TextView android:textSize="@dimen/settings_item_subtitle_text_size" android:textColor="@color/class_b_to_white_color_title" android:ellipsize="end" android:id="@+id/title1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/setting_record_model_always_title" android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/line_margin" android:layout_marginRight="@dimen/line_margin"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout2" android:background="@drawable/common_menu_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_height_item">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/select_icon2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/mj_lib_btn_icon_selected"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/class_b_to_white_color" android:ellipsize="end" android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/setting_record_model_move" android:lines="1"/>
+            <TextView android:textSize="@dimen/settings_item_subtitle_text_size" android:textColor="@color/class_b_to_white_color_title" android:ellipsize="end" android:id="@+id/title2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/setting_record_model_move_title" android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/line_margin" android:layout_marginRight="@dimen/line_margin"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout3" android:background="@drawable/common_menu_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_height_item">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/select_icon3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/mj_lib_btn_icon_selected"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/class_b_to_white_color" android:ellipsize="end" android:id="@+id/text3" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/setting_record_model_close" android:lines="1"/>
+            <TextView android:textSize="@dimen/settings_item_subtitle_text_size" android:textColor="@color/class_b_to_white_color_title" android:ellipsize="end" android:id="@+id/title3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/setting_record_model_close_title" android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/list_item_line3" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="20dp"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/camera_faq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <include android:id="@+id/list_space" android:layout_width="match_parent" android:layout_height="@dimen/common_list_space_empty_height" android:layout_below="@+id/title_bar" layout="@layout/common_list_space_empty"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_bar" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/retry" android:background="@drawable/camera_refresh_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="17dp" android:layout_marginTop="15dp" android:layout_marginRight="17dp" android:layout_marginBottom="17dp" android:text="@string/mj_retry" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+        <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/use_other" android:background="@drawable/camera_useother_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="17dp" android:layout_marginTop="15dp" android:layout_marginRight="17dp" android:layout_marginBottom="17dp" android:text="@string/camera_use_other_ways" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.framework.webview.SmartHomeWebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_bar" android:layout_below="@+id/list_space"/>
+</RelativeLayout>

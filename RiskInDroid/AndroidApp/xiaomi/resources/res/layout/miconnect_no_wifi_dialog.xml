@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="218.3dp">
+    <include layout="@layout/miconnect_common_title"/>
+    <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black_70_transparent" android:gravity="bottom" android:id="@+id/content" android:background="@color/mj_color_white" android:paddingBottom="34.3dp" android:layout_width="match_parent" android:layout_height="84.6dp" android:text="@string/miconnect_wifi_not_connected_tips" android:paddingStart="40dp" android:paddingEnd="40dp"/>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

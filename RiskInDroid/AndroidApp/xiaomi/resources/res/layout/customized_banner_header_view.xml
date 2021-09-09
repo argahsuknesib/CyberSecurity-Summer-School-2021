@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/size_20dp" android:paddingRight="24dp" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="match_parent" android:layout_height="92dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_alignParentBottom="true" android:paddingStart="17dp" android:paddingEnd="24dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/banner_content_container" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="47dp">
+        <com.xiaomi.smarthome.newui.widget.FlowLayoutCopy android:id="@+id/env_info_flow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp">
+            <TextView android:textSize="14dp" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/env_info_temp_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text=""/>
+            <TextView android:textSize="14dp" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/env_info_hum_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text=""/>
+            <TextView android:textSize="14dp" android:textColor="@color/mj_color_black_100_transparent" android:id="@+id/env_info_aqi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text=""/>
+        </com.xiaomi.smarthome.newui.widget.FlowLayoutCopy>
+    </LinearLayout>
+    <include android:id="@+id/header_view_offline" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="54dp" android:layout_centerVertical="true" layout="@layout/header_view_offline"/>
+</RelativeLayout>

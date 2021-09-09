@@ -1,0 +1,227 @@
+(function(global){
+    global.babelHelpers = {};
+    babelHelpers._extends = babelHelpers.extends = Object.assign || function (target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    };
+    babelHelpers.slicedToArray = function () {
+      function sliceIterator(arr, i) {
+        var _arr = [];
+        var _n = true;
+        var _d = false;
+        var _e = undefined;
+        try {
+          for (var _i = arr[typeof Symbol === "function" ? Symbol.iterator : "@@iterator"](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+            _arr.push(_s.value);
+
+            if (i && _arr.length === i) break;
+          }
+        } catch (err) {
+          _d = true;
+          _e = err;
+        } finally {
+          try {
+            if (!_n && _i["return"]) _i["return"]();
+          } finally {
+            if (_d) throw _e;
+          }
+        }
+
+        return _arr;
+      }
+      return function (arr, i) {
+        if (Array.isArray(arr)) {
+          return arr;
+        } else if ((typeof Symbol === "function" ? Symbol.iterator : "@@iterator") in Object(arr)) {
+          return sliceIterator(arr, i);
+        } else {
+          throw new TypeError("Invalid attempt to destructure non-iterable instance");
+        }
+      };
+    }();
+
+    babelHelpers.toConsumableArray = function (arr) {
+      if (Array.isArray(arr)) {
+        for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+          arr2[i] = arr[i];
+        }
+        return arr2;
+      } else {
+        return Array.from(arr);
+      }
+    };
+})(this);
+
+(function(global){
+
+    var MODULE_IDS = 0;
+    var METHOD_IDS = 1;
+    var PARAMS = 2;
+    var _callID = 0;
+    var _successCallbacks = {};
+    var _failureCallbacks = {};
+    var _queue = [[], [], [], _callID];
+
+    function __callFunction(module, method, args){
+        var obj = global.Export[module] || {}
+        var func = obj[method]
+        return func?func.apply(obj, args):null;
+    }
+    var Bridge = {
+        enqueueNativeCall:function(moduleID, methodID, params, onFail, onSucc) {
+            if (onFail || onSucc) {
+              onFail && params.push(_callID << 1);
+              onSucc && params.push(_callID << 1 | 1);
+              _successCallbacks[_callID] = onSucc;
+              _failureCallbacks[_callID] = onFail;
+            }
+            _callID++;
+            _queue[MODULE_IDS].push(moduleID);
+            _queue[METHOD_IDS].push(methodID);
+            _queue[PARAMS].push(params);
+
+            if (global.nativeFlushQueueImmediate) {
+              var queue = _queue;
+              _queue = [[], [], [], _callID];
+              global.nativeFlushQueueImmediate(queue);
+            }
+        },
+        callFunctionReturnFlushedQueue:function(module, method, args) {
+            __callFunction(module, method, args);
+            return Bridge.flushedQueue();
+        },
+        callFunctionReturnResultAndFlushedQueue:function(module, method, args) {
+            return [__callFunction(module, method, args), BatchedBridge.flushedQueue()];
+        },
+        invokeCallbackAndReturnFlushedQueue:function(cbID, args) {
+            var callID = cbID >>> 1;
+            var isSuccess = cbID & 1;
+            var callback = isSuccess ?_successCallbacks[callID] : _failureCallbacks[callID];
+            if (!callback) {
+              return;
+            }
+            _successCallbacks[callID] = _failureCallbacks[callID] = null;
+            callback.apply(undefined, babelHelpers.toConsumableArray(args));
+            return BatchedBridge.flushedQueue();
+        },
+        flushedQueue :function() {
+            var queue = _queue;
+            _queue = [[], [], [], _callID];
+            return queue[0].length ? queue : null;
+        }
+    };
+
+    global.__fbBatchedBridge = Bridge;
+    function arrayContains(array, value) {
+        return array.indexOf(value) !== -1;
+    }
+
+    if(typeof global.initialProps == "string"){
+        try{
+            global.initialProps = JSON.parse(global.initialProps);
+        }catch(e){}
+    }
+
+  function genMethod(moduleID, methodID, type) {
+    var fn = null;
+    function toArgs(argus){
+        var args = [];
+        for(var i=0; i < argus.length; i ++){
+            args[i] = argus[i];
+        }
+        return args;
+    }
+    if (type === 'sync') {
+      fn = function fn() {
+        return global.nativeCallSyncHook(moduleID, methodID, toArgs(arguments));
+      };
+    } else {
+      fn = function fn() {
+        var args = toArgs(arguments);
+        var lastArg = args.length > 0 ? args[args.length - 1] : null;
+        var secondLastArg = args.length > 1 ? args[args.length - 2] : null;
+        var hasSuccessCallback = typeof lastArg === 'function';
+        var hasErrorCallback = typeof secondLastArg === 'function';
+        var onSuccess = hasSuccessCallback ? lastArg : null;
+        var onFail = hasErrorCallback ? secondLastArg : null;
+        var callbackCount = hasSuccessCallback + hasErrorCallback;
+        args = args.slice(0, args.length - callbackCount);
+
+        Bridge.enqueueNativeCall(moduleID, methodID, args, onFail, onSuccess);
+      };
+    }
+
+    fn.type = type;
+    return fn;
+  }
+    function genModule(config, moduleID) {
+        if (!config) {
+          return null;
+        }
+        var _config = babelHelpers.slicedToArray(config, 5),
+            moduleName = _config[0],
+            constants = _config[1],
+            methods = _config[2],
+            promiseMethods = _config[3],
+            syncMethods = _config[4];
+        if (!constants && !methods) {
+          return {
+            name: moduleName
+          };
+        }
+        var module = {};
+        methods && methods.forEach(function (methodName, methodID) {
+          var isSync = syncMethods && arrayContains(syncMethods, methodID);
+          var methodType = isSync ? 'sync' : 'async';
+          module[methodName] = genMethod(moduleID, methodID, methodType);
+        });
+        babelHelpers.extends(module, constants);
+        return {
+          name: moduleName,
+          module: module
+        };
+    }
+
+
+
+    global.__fbGenNativeModule = genModule;
+    global.Native = global.nativeModuleProxy;
+
+    global.Export = {
+        JSCaller:{
+            invoke:function(callID, target, params){
+                var obj = global, last = null;
+                var props = target?target.split("."):[];
+                for(var i=0; i < props.length; i ++){
+                    var prop = props[i].replace(/\s/g, "");
+                    if(prop == ""){
+                        obj = null;
+                        break;
+                    }
+                    last = obj;
+                    obj = last[prop];
+                }
+
+                var func = (obj && typeof(obj) == "function")?obj:null;
+                obj = (last == global)?null:last;
+                var ret = null;
+                var err = func?null:"invalid calling";
+                if(!err)try{
+                    ret = func.apply(obj, JSON.parse(params));
+                }catch(ex){
+                    err = "error:" + ex.message;
+                }
+                Native.JSCallee.receiveResult(callID, err||"", JSON.stringify(ret));
+            }
+        }
+    };
+})(this);
+

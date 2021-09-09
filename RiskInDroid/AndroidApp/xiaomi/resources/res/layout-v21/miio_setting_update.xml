@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ViewSwitcher android:id="@+id/vs_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/update_loading_view"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:id="@+id/list_space" android:layout_width="match_parent" android:layout_height="@dimen/std_list_space_margin_top" layout="@layout/common_list_space_empty"/>
+                    <View android:layout_width="0dp" android:layout_height="99dp" android:layout_weight="1"/>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.xiaomi.smarthome.library.common.widget.PieProgressBar android:layout_gravity="center" android:id="@+id/pb_progress" android:background="@drawable/update_img_update" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/kuailian_progress_filled" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="30sp" android:textColor="#0195f3" android:gravity="center" android:id="@+id/txt_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1%" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/installing_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:indeterminate="true" android:layout_centerInParent="true" style="@style/page_circle_loading_progress_1"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/mj_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/txt_update_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="12dp" android:layout_marginRight="30dp" android:text="@string/update_to_version"/>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/txt_update_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="27dp" android:layout_marginRight="30dp" android:text="@string/about_faq_content"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_class_text_7" android:gravity="center" android:id="@+id/txt_updating_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:text="@string/miio_update_tips" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                </LinearLayout>
+            </ScrollView>
+            <Button android:textAppearance="@null" android:textSize="13sp" android:textStyle="bold" android:id="@+id/btn_bottom" android:layout_width="match_parent" android:layout_height="46dp" android:layout_margin="27dp" android:text="@string/camera_settings_camera_update" android:stateListAnimator="@null" style="@style/ConfirmNormalGreenBtn"/>
+        </LinearLayout>
+    </ViewSwitcher>
+</LinearLayout>

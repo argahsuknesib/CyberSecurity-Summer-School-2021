@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:id="@+id/music_item_comment" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/music_item_header_height" android:paddingStart="@dimen/music_item_padding_start" android:paddingEnd="0dp"/>

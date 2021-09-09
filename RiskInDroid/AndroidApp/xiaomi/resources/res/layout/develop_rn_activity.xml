@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_5_title_bar_return_finish"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启rn调试" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/remote_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/rn_plugin_name" android:layout_width="100dp" android:layout_height="wrap_content" android:text="package:"/>
+                <EditText android:textSize="13sp" android:textColor="@color/mj_color_black" android:textColorHint="@color/mj_color_gray_heavier" android:id="@+id/package_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入包名(必填)" android:textCursorDrawable="@null"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:id="@+id/rn_device_model" android:layout_width="100dp" android:layout_height="wrap_content" android:text="model: "/>
+                <EditText android:textSize="13sp" android:textColor="@color/mj_color_black" android:textColorHint="@color/mj_color_gray_heavier" android:id="@+id/model_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入model(必填)" android:textCursorDrawable="@null"/>
+            </LinearLayout>
+            <RelativeLayout android:background="@drawable/mj_common_white_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="70dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="70dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展示rn时间" android:lines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/rn_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:id="@+id/rn_self_scene_id" android:layout_width="100dp" android:layout_height="wrap_content" android:text="自定义场景id "/>
+                <EditText android:textSize="13sp" android:textColor="@color/mj_color_black" android:textColorHint="@color/mj_color_gray_heavier" android:id="@+id/et_self_scene_id" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入场景id(调试自动化，可选)" android:textCursorDrawable="@null"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <CheckBox android:id="@+id/cb_debug_plugin_scene_check" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:button="@drawable/checkbox_selector" android:text="@null"/>
+                <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选中-调试触发条件/取消-调试动作(调试自动化，可选)"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="other">最多新增 %1d 個動作</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="other">來自周圍%s台裝置的平均資料</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">%d天</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">%d小時</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">%d秒</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">%1$s個裝置新增成功</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">%1$d個裝置</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">%1$d個裝置</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">%d部智能攝錄機</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">%d分鐘</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="other">累計使用%d天，</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">刪除選中的%1$s條訊息嗎?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">刪除所選的 %1$s 則記錄嗎？</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">%d個新智能裝置，點選設定</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">你有%1$s個裝置未分配房間</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">刪除所選的%1$s個裝置嗎？</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="other">要將所選的%1$d 個場景從常用中移出嗎？</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">%1$s米</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">拖曳所有裝置調整順序，上方%d個裝置顯示在卡片內</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">已選擇%1$d個裝置</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">已選擇%1$s項</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="other">已選擇%1$d個場景</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s 等</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">已共用%d個智能裝置</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">共用了%s個裝置</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">請將連絡方式限制在%1$d字以內</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">請將反饋意見內容限制在%1$d字以內</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">%1$s個待更新韌體</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">%1$s個韌體更新完成</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">雲端儲存服務將在%1$d天後到期，點擊續購</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="other">%1$s 個家庭</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">%1$s 個裝置</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">%1$s个房間</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">%d個遙控器</item>
+    </plurals>
+    <plurals name="ir_device_count_2">
+        <item quantity="other">裝置數</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">已連接%d個裝置</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">已找到%d個智能裝置,點選完成</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">燈組最多可由%1$s個燈泡組成。</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="other">%d個外掛程式有更新</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">%d小時</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">附近%1$d個可用裝置</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">​%d台線上</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="other">等%1$s個裝置外掛程式：</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">您有%d條新訊息</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 個新通知</item>
+        <item quantity="other">%d 個新通知</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">按鍵%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">已增加%1$d個裝置</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="other">AIoT 路由器發現 %1$d 個待綁定裝置</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="other">小米路由器發現 %1$d 個新裝置</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">%1$s個小愛同學</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="other">刪除所選的 %1$s 個智能場景？</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">%d天後啟動</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">%d小時後啟動</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">已選擇%1$s項</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">%1$d個智能裝置</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$s等%2$d個裝置</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">已共用至%1$s等%2$d個人</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">%d分後</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">%d秒後</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">包含%d個裝置</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">已選中%d個裝置</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">%d 個攝影機</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="other">正在下載…%1$d</item>
+    </plurals>
+    <plurals name="uwb_bind_info_remove_success">
+        <item quantity="other">成功刪除%1$d個一指連設備</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">每個裝置最多可有%1$s個語音別名</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">發現%1$d台%2$s,點選快速連接新裝置</item>
+    </plurals>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.AlarmEditTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_150dp" android:layout_marginStart="@dimen/size_16dp" android:layout_marginEnd="@dimen/size_16dp">
+        <com.xiaomi.mico.common.widget.AlarmTimePicker android:id="@+id/time_picker" android:background="@drawable/bg_alert_white" android:layout_width="match_parent" android:layout_height="@dimen/size_190dp"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/lvContents" android:background="@drawable/bg_alert_white" android:paddingBottom="@dimen/margin_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_16dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/tvTime" app:layout_constraintTop_toBottomOf="@+id/tvTime"/>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_alert_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_16dp">
+                    <com.xiaomi.mico.common.widget.AlarmSettingItem android:id="@+id/item_repeat" android:layout_width="match_parent" android:layout_height="wrap_content" app:al_showDivider="true" app:al_showMore="true" app:al_title="@string/time_setting_repeat"/>
+                    <com.xiaomi.mico.common.widget.AlarmSettingItem android:id="@+id/timedOff" android:layout_width="match_parent" android:layout_height="wrap_content" app:al_showDivider="true" app:al_showMore="true" app:al_title="@string/music_pause_timer"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tips" android:background="@drawable/common_dialog_style_8radius" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/tv_tips_title" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp"/>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/ll_mode_choose" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_shoot_1" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_shoot_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_shoot_mode_arrow"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/tv_shoot_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timelapse_shoot_one_hour_dialog"/>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_shoot_3" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_shoot_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_shoot_mode_arrow"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/tv_shoot_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timelapse_shoot_three_hour_dialog"/>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_shoot_5" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_shoot_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_shoot_mode_arrow"/>
+                <TextView android:textSize="15sp" android:textColor="@color/mj_color_green_normal" android:layout_gravity="center" android:id="@+id/tv_shoot_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timelapse_shoot_fives_hour_dialog"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon_arrow" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="10dp" android:src="@drawable/mj_lib_btn_icon_selected" android:importantForAccessibility="no"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_icon_channel" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp"/>
+    <TextView android:textSize="@dimen/mj_settings_item_title_text_size" android:textColor="@color/class_b_to_white_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_deduct_name" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="10dp" android:lines="1"/>
+</LinearLayout>

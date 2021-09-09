@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/include_face_select_title_bar"/>
+    <FrameLayout android:orientation="horizontal" android:id="@+id/video_container" android:background="@color/camera_black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="230dp" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/toast_icon" android:layout_width="30dp" android:layout_height="30dp"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_tools_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="68.8dp">
+            <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/tv_share" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/local_file_share" android:drawableTop="@drawable/daily_story_icon_share" android:drawablePadding="5dp" android:drawableTint="@color/mj_color_black"/>
+            <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/tv_download" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/cs_download" android:drawableTop="@drawable/daily_story_icon_download" android:drawablePadding="5dp" android:drawableTint="@color/mj_color_black"/>
+            <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/tv_delete" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/local_file_delete" android:drawableTop="@drawable/daily_story_icon_delete" android:drawablePadding="5dp" android:drawableTint="@color/mj_color_black"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

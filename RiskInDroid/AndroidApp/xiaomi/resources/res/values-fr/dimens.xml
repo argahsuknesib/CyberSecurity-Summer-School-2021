@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_edit_room_btn">12dp</dimen>
+    <dimen name="font_edit_room_title">13dp</dimen>
+    <dimen name="font_editbar">8dp</dimen>
+</resources>

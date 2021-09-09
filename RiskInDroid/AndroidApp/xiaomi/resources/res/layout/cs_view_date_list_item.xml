@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlDateItem" android:background="@drawable/cs_icon_date_selected_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="10dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:layout_centerInParent="true">
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/cs_color_selected_bg" android:id="@+id/tvDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="00" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/cs_color_selected_bg" android:id="@+id/tvMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/month_jan" android:layout_below="@+id/tvDay" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

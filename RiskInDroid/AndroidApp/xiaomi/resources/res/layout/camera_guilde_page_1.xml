@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlDialogGuidePage1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+    <TextView android:textSize="16sp" android:textColor="@color/mj_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:text="@string/page_guide_1_scale" android:drawableTop="@drawable/camera_guide_zoom_icon" android:drawablePadding="15dp" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

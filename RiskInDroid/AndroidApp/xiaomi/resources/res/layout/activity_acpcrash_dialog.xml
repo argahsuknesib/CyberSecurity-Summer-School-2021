@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_acpcrash_dialog" android:background="@color/mj_color_black_00_transparent" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="0dp" android:paddingEnd="0dp"/>

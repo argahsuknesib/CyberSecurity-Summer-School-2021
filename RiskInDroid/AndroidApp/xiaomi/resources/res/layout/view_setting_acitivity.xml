@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/watermark" android:layout_marginTop="@dimen/title_margin_top" item:item_icon="@drawable/camera_setting_watermark_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setttings_watermark_title" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/correct_lens_distort" item:item_icon="@drawable/camera_setting_distort_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setttings_correct_lens_distort_title" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_wdr" android:layout_marginTop="@dimen/title_margin_top" item:item_icon="@drawable/camera_setting_wdr_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setting_wdr" item:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_rote" item:item_icon="@drawable/camera_setting_rote_icon" item:item_line_margin="@dimen/line_margin" item:item_title="@string/setting_rote" item:item_type="1" style="@style/setting_item"/>
+</LinearLayout>

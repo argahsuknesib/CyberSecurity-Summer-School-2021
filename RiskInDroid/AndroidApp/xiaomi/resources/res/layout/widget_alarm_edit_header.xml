@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="250dp">
+    <com.xiaomi.mico.common.widget.ShadeImageView android:id="@+id/edit_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/alarm_edit_bg_fun" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <RelativeLayout android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/bluetooth_option_cancel" android:paddingStart="21dp" android:paddingEnd="21dp"/>
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/save_btn" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/common_save" android:layout_alignParentRight="true" android:paddingStart="21dp" android:paddingEnd="21dp"/>
+        <TextView android:textSize="@dimen/text_size_24" android:textColor="@color/mj_color_black" android:id="@+id/edit_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="" android:layout_below="@+id/cancel" android:layout_marginStart="21dp"/>
+    </RelativeLayout>
+</RelativeLayout>

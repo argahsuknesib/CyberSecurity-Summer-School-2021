@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/load_more_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <ProgressBar android:id="@+id/load_more_progressBar" android:layout_width="30dp" android:layout_height="30dp"/>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="14sp" android:id="@+id/load_more_text" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/shop_loading"/>
+</LinearLayout>

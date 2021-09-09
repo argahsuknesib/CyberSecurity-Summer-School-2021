@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/patchwall_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/patchwall_item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/tag_rich" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/img_block_tag_rich" android:scaleType="center" android:layout_marginStart="3dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="1dp">
+        <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/patchwall_item_text" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="1.5dp"/>
+        <TextView android:textSize="@dimen/minimal_text_size" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:id="@+id/patchwall_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="@dimen/pay_vertical_padding_height" android:paddingRight="@dimen/common_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_title_color" android:gravity="left" android:id="@+id/orderdetail_confirm_itemname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="item"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_content_color" android:id="@+id/orderdetail_confirm_itemamount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X1" android:layout_toRightOf="@+id/orderdetail_confirm_itemname"/>
+    </RelativeLayout>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_content_color" android:gravity="center" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/buy_confirm_order_currency" android:layout_weight="0.5"/>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_title_color" android:gravity="right" android:id="@+id/orderdetail_confirm_itemsubtotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123"/>
+</LinearLayout>

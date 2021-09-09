@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.mico.common.widget.NumberPicker android:id="@+id/hour" android:background="@drawable/mico_bg_picker_last" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mico_picker_hour" android:layout_weight="1"/>
+    <com.xiaomi.mico.common.widget.NumberPicker android:id="@+id/minute" android:background="@drawable/mico_bg_picker_last" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picker_minute" android:layout_weight="1"/>
+    <com.xiaomi.mico.common.widget.NumberPicker android:id="@+id/amPm" android:background="@drawable/mico_bg_picker_last" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

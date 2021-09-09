@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mk_uic_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/container_pg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" style="@style/full_layout">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_pg1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/white_container">
+            <TextView android:id="@+id/amount" android:text="" style="@style/textBlueHeading"/>
+            <View android:background="@color/mk_uic_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="17sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="We Accept"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/card_types" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <ImageView android:id="@+id/imageView_visa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visa"/>
+                <ImageView android:id="@+id/imageView_master" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/mk_master"/>
+                <ImageView android:id="@+id/imageView_diners" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/mk_diners"/>
+                <ImageView android:id="@+id/imageView_discover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/mk_discover"/>
+                <ImageView android:id="@+id/imageView_maestro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/mk_maestro"/>
+                <ImageView android:id="@+id/imageView_rupay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/mk_rupay"/>
+                <ImageView android:id="@+id/imageView_amex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/mk_amex"/>
+            </LinearLayout>
+            <View android:background="@color/mk_uic_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/card_number" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:hint="Card number" android:ems="10" android:maxLength="19" android:drawableLeft="@drawable/mk_ic_card" android:inputType="number" style="@style/wallet_textbox"/>
+            <TextView android:id="@+id/text_maestro_note" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Card expiry and CVV are optional for Meastro Card"/>
+            <LinearLayout android:gravity="bottom" android:id="@+id/layout_expiry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/layout_expiry1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+                    <TextView android:background="@drawable/textbox_blanck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/mk_ic_date"/>
+                    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <Spinner android:id="@+id/spinner_month" android:background="@drawable/mk_spinner_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <EditText android:id="@+id/errorVMonth" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:editable="false" android:layout_alignRight="@+id/spinner_month" android:layout_centerVertical="true" android:inputType="none"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <Spinner android:id="@+id/spinner_year" android:background="@drawable/mk_spinner_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <EditText android:id="@+id/errorVYear" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:editable="false" android:layout_alignRight="@+id/spinner_year" android:layout_centerVertical="true" android:inputType="none"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:visibility="gone" android:layout_width="0dp" android:layout_height="2dp" android:layout_weight="0.2"/>
+                <ImageButton android:id="@+id/cvvHelp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@android:drawable/ic_menu_help"/>
+            </LinearLayout>
+            <EditText android:id="@+id/editText_cvv" android:layout_width="match_parent" android:hint="CVV" android:password="true" android:maxLength="3" android:drawableLeft="@drawable/mk_ic_cvv" style="@style/wallet_textbox_cvv"/>
+            <EditText android:id="@+id/name_on_card" android:visibility="gone" android:layout_marginTop="12dp" android:hint="Name on card" android:ems="10" style="@style/wallet_textbox"/>
+            <CheckBox android:id="@+id/cbSaveCardDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Save My Card Details"/>
+        </LinearLayout>
+        <Button android:textSize="18sp" android:id="@+id/cardPay" android:text="Pay Now" style="@style/new_button"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fields_margin_top">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="powered by"/>
+            <ImageView android:id="@+id/imageView1" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="normal|bold|italic" android:textColor="#999" android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="zaakpay"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

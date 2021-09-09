@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/item_layout" android:background="@drawable/wearables_list_item_frame" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_view_device_icon" android:layout_width="42dp" android:layout_height="42dp"/>
+    <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_heavy" android:ellipsize="end" android:id="@+id/item_tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="大门门锁" android:singleLine="true" android:layout_below="@+id/item_view_device_icon"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/item_tv_device_name">
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="middle" android:id="@+id/item_tv_home" android:layout_width="0dp" android:layout_height="wrap_content" android:text="张三的家" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="|"/>
+        <TextView android:textSize="11sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="middle" android:id="@+id/item_tv_room" android:layout_width="0dp" android:layout_height="wrap_content" android:text="客厅" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="one">En fazla %1d işlem ekleyin</item>
+        <item quantity="other">En fazla %1d işlem ekleyin</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="one">Yakındaki %s cihazın ortalama verileri</item>
+        <item quantity="other">Yakındaki %s cihazın ortalama verileri</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="one">%d dakika</item>
+        <item quantity="other">%d dakika</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="one">%1$s cihaz başarıyla eklendi</item>
+        <item quantity="other">%1$s cihaz başarıyla eklendi</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="one">%1$d cihaz</item>
+        <item quantity="other">%1$d cihaz</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="one">%1$d cihaz</item>
+        <item quantity="other">%1$d cihaz</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="one">%d akıllı kamera</item>
+        <item quantity="other">%d akıllı kamera</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="one">%d dakika</item>
+        <item quantity="other">%d dakika</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="one">Birikimli kullanım: %d gün,</item>
+        <item quantity="other">Birikimli kullanım: %d gün,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="one">Seçilen %1$s mesaj silinsin mi?</item>
+        <item quantity="other">Seçilen %1$s mesaj silinsin mi?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="one">Seçilen %1$s kayıt silinsin mi?</item>
+        <item quantity="other">Seçilen %1$s kayıt silinsin mi?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="one">%d yeni akıllı cihaz, ayarlamak için dokunun</item>
+        <item quantity="other">%d yeni akıllı cihaz, ayarlamak için dokunun</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="one">%1$s cihaz bir odaya atanmadı</item>
+        <item quantity="other">%1$s cihaz bir odaya atanmadı</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="one">Seçilen %1$s cihaz silinsin mi?</item>
+        <item quantity="other">Seçilen %1$s cihaz silinsin mi?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="one">Seçilen ortam favorilerden kaldırılsın mı?</item>
+        <item quantity="other">Seçilen %1$d ortam favorilerden kaldırılsın mı?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="one">%1$s d</item>
+        <item quantity="other">%1$s d</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="one">Öğeleri yeniden düzenlemek için cihazları tuttuğunuzda yukarıdaki %d cihaz kartta görüntülenir</item>
+        <item quantity="other">Öğeleri yeniden düzenlemek için cihazları tuttuğunuzda yukarıdaki %d cihaz kartta görüntülenir</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="one">%1$d cihaz seçildi</item>
+        <item quantity="other">%d cihaz seçildi</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="one">%1$s öğe seçildi</item>
+        <item quantity="other">%1$s öğe seçildi</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="one">Seçilen ortamlar: %1$d</item>
+        <item quantity="other">Seçilen ortamlar: %1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="one">%1$s%2$s</item>
+        <item quantity="other">%1$s%2$svb.</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="one">%d paylaşılan akıllı cihaz</item>
+        <item quantity="other">%d paylaşılan akıllı cihaz</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="one">%s paylaşılan cihaz</item>
+        <item quantity="other">%s paylaşılan cihaz</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="one">Kişi bilgileri en fazla %1$d karakter içerebilir</item>
+        <item quantity="other">Kişi bilgileri en fazla %1$d karakter içerebilir</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="one">Geri bildirim tanımı en fazla %1$d karakter içerebilir</item>
+        <item quantity="other">Geri bildirim tanımı en fazla %1$d karakter içerebilir</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="one">%1$s bekleyen üretici yazılımı güncelleştirmesi var</item>
+        <item quantity="other">%1$s bekleyen üretici yazılımı güncelleştirmesi var</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="one">%1$s üretici yazılımı güncelleştirmesi tamamlandı</item>
+        <item quantity="other">%1$s üretici yazılımı güncelleştirmesi tamamlandı</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="one">Bulut depolama hizmeti %1$d gün sonra sona erecek ve Yenile&apos;ye tıklayın.</item>
+        <item quantity="other">Bulut depolama hizmeti %1$d gün içinde sona erecek ve Yenile&apos;ye tıklayın.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="one">%1$s ev</item>
+        <item quantity="other">%1$s ev</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="one">%1$s cihaz</item>
+        <item quantity="other">%1$s cihaz</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="one">%1$s oda</item>
+        <item quantity="other">%1$s oda</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="one">%d uzaktan kumanda</item>
+        <item quantity="other">%d uzaktan kumanda</item>
+    </plurals>
+    <plurals name="ir_device_count_2">
+        <item quantity="one">Cihaz</item>
+        <item quantity="other">Cihaz</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="one">%d cihaz bağlı</item>
+        <item quantity="other">%d cihaz bağlı</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="one">%d akıllı cihaz bulundu, tamamlamak için dokunun</item>
+        <item quantity="other">%d akıllı cihaz bulundu, tamamlamak için dokunun</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="one">Bir ışık grubu %1$s ampulden oluşabilir.</item>
+        <item quantity="other">Bir ışık grubu en fazla %1$s ampulden oluşabilir.</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="one">%d eklenti güncelleştirmesi mevcut</item>
+        <item quantity="other">%d eklenti güncelleştirmesi mevcut</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="one">%d dakika</item>
+        <item quantity="other">%d dakika</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="one">Yakında kullanılabilen %1$d cihaz var</item>
+        <item quantity="other">Yakında kullanılabilen %1$d cihaz var</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="one">%d cihaz çevrimiçi</item>
+        <item quantity="other">%d cihaz çevrimiçi</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="one">Toplamda %1$s cihaz eklentisi</item>
+        <item quantity="other">Toplamda %1$s cihaz eklentisi</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="one">%d yeni bir mesajınız var</item>
+        <item quantity="other">%d yeni mesajınız var</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="one">%d düğmesi</item>
+        <item quantity="other">%d düğmesi</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="one">%1$d cihaz eklendi</item>
+        <item quantity="other">%1$d cihaz eklendi</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="one">AIoT yönlendiricisi %1$d cihaz buldu</item>
+        <item quantity="other">AIoT yönlendiricisi %1$d cihaz buldu</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="one">Mi yönlendiricisi %1$d cihaz buldu</item>
+        <item quantity="other">Mi yönlendiricisi %1$d cihaz buldu</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="one">%1$s Mi AI hoparlör</item>
+        <item quantity="other">%1$s Mi AI hoparlör</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="one">Seçili akıllı ortam silinsin mi?</item>
+        <item quantity="other">Seçili %1$s akıllı ortam silinsin mi?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="one">%d gün içinde açılacak</item>
+        <item quantity="other">%d gün içinde açılacak</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="one">%d saat içinde başlatılacak</item>
+        <item quantity="other">%d saat içinde başlatılacak</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="one">%1$s öğe seçildi</item>
+        <item quantity="other">%1$s öğe seçildi</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="one">%1$d akıllı cihaz</item>
+        <item quantity="other">%1$d akıllı cihaz</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="one">%1$s (%2$d cihaz)</item>
+        <item quantity="other">%1$s ve diğer cihazlar (%2$d cihaz)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="one">%1$s ve %2$d diğer kişiyle paylaşıldı</item>
+        <item quantity="other">%1$s ve %2$d diğer kişiyle paylaşıldı</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="one">%d dakika içinde</item>
+        <item quantity="other">%d dakika içinde</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="one">%d saniye sonra</item>
+        <item quantity="other">%d saniye sonra</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="one">%d cihaz dahil edildi</item>
+        <item quantity="other">%d cihaz dahil edildi</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="one">%d cihaz seçildi</item>
+        <item quantity="other">%d cihaz seçildi</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="one">%d kamera</item>
+        <item quantity="other">%d kamera</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="one">İndiriliyor…%1$d</item>
+        <item quantity="other">İndiriliyor…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="one">Her bir cihazın en fazla %1$s sesli takma adı bulunabilir.</item>
+        <item quantity="other">Her bir cihazın en fazla %1$s sesli takma adı bulunabilir.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="one">%1$d %2$s bulundu, hızlıca bağlanmak için dokunun</item>
+        <item quantity="other">%1$d %2$s bulundu, hızlıca bağlanmak için dokunun</item>
+    </plurals>
+</resources>

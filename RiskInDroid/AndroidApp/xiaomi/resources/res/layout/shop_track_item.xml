@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="12dp" android:layout_height="match_parent" android:layout_marginLeft="30dp">
+        <ImageView android:id="@+id/line_top" android:background="@drawable/shop_order_progress_grey_bg" android:layout_width="1dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@+id/track_status_image_normal" android:background="@drawable/shop_order_progress_circle_grey" android:visibility="visible" android:layout_width="8dp" android:layout_height="8dp"/>
+        <ImageView android:id="@+id/track_status_image_selected" android:background="@drawable/shop_order_progress_circle_green" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp"/>
+        <ImageView android:id="@+id/line_bottom" android:background="@drawable/shop_order_progress_grey_bg" android:layout_width="1dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="16dp" android:textColor="@color/common_second_title_color" android:id="@+id/track_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_addtime_color" android:id="@+id/track_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp"/>
+    </LinearLayout>
+</LinearLayout>

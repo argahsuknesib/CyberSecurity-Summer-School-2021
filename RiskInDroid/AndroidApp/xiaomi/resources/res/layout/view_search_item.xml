@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/bg_list_item" android:layout_width="match_parent" android:layout_height="@dimen/music_search_item_height">
+    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_item_text" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/common_icon_margin" android:layout_weight="1" android:drawableStart="@drawable/icon_history"/>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/search_item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mico_icon_history_delete" android:layout_marginStart="@dimen/common_icon_margin"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+    <ImageView android:enabled="true" android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/module_a_4_return_more_btn" android:background="@drawable/mj_webp_titlebar_cancel_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp"/>
+    <TextView android:textSize="@dimen/mj_title_bar_text_size" android:textColor="@color/mj_color_black_100_transparent" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/module_a_4_return_more_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1"/>
+    <ImageView android:enabled="false" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/module_a_4_return_finish_btn" android:background="@drawable/mj_webp_titlebar_confirm_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp"/>
+</FrameLayout>

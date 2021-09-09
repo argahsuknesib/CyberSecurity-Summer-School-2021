@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/card_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="middle" android:id="@+id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxWidth="256dp" android:text="" android:singleLine="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/power_iv" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/power_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#b2000000" android:id="@+id/tag_power_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="2dp" android:text="@string/mj_uwb_tag_power_not_connect"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <include android:layout_gravity="center_horizontal" android:id="@+id/pad_l" android:layout_width="190dp" android:layout_height="190dp" layout="@layout/pad_layout"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llVoiceAnim" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="190dp">
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/tvlAnim" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerInParent="true"/>
+            <TextView android:textSize="19.8sp" android:textColor="@color/mj_color_uwb_miui_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@string/mj_uwb_tvcard_voicecontrol"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="62dp">
+        <ImageView android:id="@+id/hdmi_iv" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/select_hdmi_btn" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/volume_reduce" android:background="@drawable/select_volume_reduce_bg" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/select_volume_reduce" android:scaleType="center" android:layout_weight="1"/>
+            <com.xiaomi.smarthome.uwb.lib.mitv.widget.LPImageView android:id="@+id/volume_add" android:background="@drawable/select_volume_add_bg" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/select_volume_add" android:scaleType="center" android:layout_weight="1"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ai_iv" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ai_btn_disable" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="23dp" android:layout_width="match_parent" android:layout_height="77dp" android:layout_marginTop="20dp">
+        <ImageView android:id="@+id/miracast_iv" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/miracast_btn_disable" android:layout_weight="1"/>
+        <ImageView android:id="@+id/home_iv" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/select_home_btn" android:layout_weight="1"/>
+        <ImageView android:id="@+id/back_iv" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/select_back_btn" android:layout_weight="1"/>
+        <ImageView android:id="@+id/menu_iv" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/select_menu_btn" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/more_l" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:id="@+id/more_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp"/>
+    </LinearLayout>
+</LinearLayout>

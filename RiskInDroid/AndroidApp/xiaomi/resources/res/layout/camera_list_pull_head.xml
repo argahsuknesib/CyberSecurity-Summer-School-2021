@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="60dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <FrameLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="@dimen/pull_down_header_height">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/pull_header" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/camera_circle_progressbar_rawable" android:indeterminateDuration="5000" android:indeterminateBehavior="repeat"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_view" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/camera_refresh_arrow" android:scaleType="fitXY"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:id="@+id/text_view" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_refresh_down"/>
+    </LinearLayout>
+</RelativeLayout>

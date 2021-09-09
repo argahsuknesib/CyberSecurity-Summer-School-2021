@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/dialog_container" android:background="@color/mj_color_black_50_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/std_dialog_big_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/std_dialog_common_margin">
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/tips"/>
+        <TextView android:textSize="14.67sp" android:textColor="@color/mj_color_black_80_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="39dp" android:layout_marginTop="21.33dp" android:layout_marginRight="39dp" android:text="@string/find_device_tips"/>
+        <TextView android:id="@+id/goto_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="39dp" android:layout_marginTop="21.33dp" android:layout_marginRight="39dp" android:text="@string/goto_setting"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18.5dp" android:layoutDirection="ltr">
+            <Button android:textSize="@dimen/std_dialog_button_font_size" android:textColor="@color/mj_color_black_70_transparent" android:gravity="center" android:id="@+id/button" android:background="@drawable/dialog_btn_selector_big_corner" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/mj_i_know" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

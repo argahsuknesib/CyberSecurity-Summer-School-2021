@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="36dp">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/icon_bubble" android:paddingLeft="@dimen/padding8" android:paddingTop="@dimen/padding4" android:paddingBottom="@dimen/padding4" android:layout_width="match_parent" android:layout_height="36dp">
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_bubbleTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:id="@+id/tv_bubbleContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="74dp" android:maxLines="1" android:layout_below="@+id/tv_bubbleTitle"/>
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:id="@+id/tv_bubbleContentRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;" android:layout_toRightOf="@+id/tv_bubbleContent" android:layout_alignTop="@+id/tv_bubbleContent"/>
+    </RelativeLayout>
+</FrameLayout>

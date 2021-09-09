@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.slidinglayer.SlidingLayer xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/sliding_layer" android:layout_width="match_parent" android:layout_height="400dp" android:layout_marginLeft="40dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+    <RelativeLayout android:background="#789456" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/tv1" android:background="#55999999" android:layout_width="100dp" android:layout_height="30dp" android:text="asjfoa"/>
+    </RelativeLayout>
+</com.xiaomi.smarthome.library.common.widget.slidinglayer.SlidingLayer>

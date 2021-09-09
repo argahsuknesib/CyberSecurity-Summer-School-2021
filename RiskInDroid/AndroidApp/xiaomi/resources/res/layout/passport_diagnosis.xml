@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/switch_container" android:paddingLeft="15dp" android:paddingTop="0dp" android:paddingRight="15dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="16sp" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collect_diagnosis_log"/>
+        <androidx.appcompat.widget.SwitchCompat android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/switch_diagnosis" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <Button android:id="@+id/upload_diagnosis" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_diagnosis_log" android:layout_below="@+id/switch_container"/>
+    <ScrollView android:id="@+id/log_scroller" android:background="#eeeeee" android:padding="3dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:layout_below="@+id/upload_diagnosis">
+        <TextView android:textSize="7sp" android:id="@+id/tv_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true"/>
+    </ScrollView>
+    <TextView android:id="@+id/footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/for_diagnosis_usage_only" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

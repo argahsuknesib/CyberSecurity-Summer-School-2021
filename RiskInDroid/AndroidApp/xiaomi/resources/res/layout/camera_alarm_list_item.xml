@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/normal_item_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="79dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="32dp">
+            <View android:id="@+id/top_line" android:background="#ff692e" android:layout_width="1dp" android:layout_height="20dp"/>
+            <ImageView android:id="@+id/media_list_item_type_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_time_line_dot"/>
+            <View android:id="@+id/bottom_line" android:background="#ff692e" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/alarm_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_weight="1">
+            <TextView android:textSize="18dp" android:textColor="#ff692e" android:id="@+id/media_list_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14dp" android:textColor="@color/mj_color_black" android:id="@+id/tvMotionHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/alarm_change_string"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/media_list_items_picture" android:layout_width="93dp" android:layout_height="53dp" android:layout_marginRight="24dp" android:src="@drawable/camera_remind_load_fail" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</RelativeLayout>

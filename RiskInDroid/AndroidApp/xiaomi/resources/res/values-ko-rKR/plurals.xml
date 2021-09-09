@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="other">최대 %1d개의 모션 추가</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="other">근처 %s개 기기로부터의 평균 데이터</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">%d일</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">%d초</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">%1$s개의 기기 추가 성공</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">%1$d개 기기</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">%1$d개 기기</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">웹캠 %d개</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="other">누적 사용 일수 %d,</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">선택된 %1$s개 메시지를 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">선택한 %1$s개의 기록을 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">%d대의 새로운 스마트 기기, 클릭하여 설정하기</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">룸에 배치하지 않은 %1$s개의 기기가 있음</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">선택된 %1$s개 기기를 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="other">선택한 %1$d개의 장면을 자주 사용하는 목록에서 제거하시겠습니까?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">%1$s미터</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">모든 기기를 드래그하여 순서를 조정하고 카드의 상단에 %d대 기기가 표시됩니다</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">%1$d개 선택됨</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">%1$s 선택됨</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="other">%1$d개 장면을 선택했습니다.</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s 등</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">%d개 기기 공유됨</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">%s개 기기 공유됨</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">연락처 정보는 최대 %1$d자리까지 포함하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">피드백은 최대 %1$d자를 포함하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">%1$s개의 펌웨어 업데이트 대기 중</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">%1$s개의 펌웨어 업데이트 완료</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">클라우드 스토리지 서비스가%1$d일 후 만료됩니다. 클릭하여 연장하세요.</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="other">%1$s개의 가정</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">%1$s개의 기기</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">룸 %1$s개</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">%d개 리모컨</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">%d개 기기 연결됨</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">%d 스마트 기기 찾음, 탭하여 완료</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">램프 그룹은 최대 %1$s개의 램프로 구성할 수 있습니다.</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="other">%d개 플러그인 업데이트 가능능</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">근처에 %1$d개 기기 사용 가능</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">​기기 온라인: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="other">총 %1$s개 기기 플러그인</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">%d개 새 메시지가 수신되었습니다.</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">버튼%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">%1$d개 기기 추가됨</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="other">AloT 공유기가 %1$d개의 연동 가능한 기기를 찾았습니다.</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="other">샤오 공유기가 %1$d개의 새로운 기기를 찾았습니다.</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">AI 스피커 %1$s개</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="other">%1$s의 선택한 스마트 씬을 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">%d일 후 켜기</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">%d시간 후 켜기</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">%1$s 선택됨</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">%1$d개 기기</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$s 및 기타 기기 (%2$d개 기기)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">%1$s 및 기타 (%2$d명) 과 공유됨</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">%d분 후</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">%d초 후</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">%d 포함됨</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">%d 선택됨</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">%d대의 카메라</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="other">다운로드 중…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">각 기기는 최대 %1$s개의 음성 별명을 설정할 수 있습니다.</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">%1$d개의 %2$s 발견됨, 탭하여 연결</item>
+    </plurals>
+</resources>

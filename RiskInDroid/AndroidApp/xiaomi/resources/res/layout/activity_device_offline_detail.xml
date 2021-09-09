@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/device_offline_title_bar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.xiaomi.smarthome.framework.webview.SmartHomeWebView android:id="@+id/wv_common_problem" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="1px" android:alpha="0.15"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/feedback_btn" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/feedback_problem" android:singleLine="true" style="@style/ConfirmNormalBtn"/>
+    </LinearLayout>
+</LinearLayout>

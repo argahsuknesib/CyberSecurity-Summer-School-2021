@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="54dp">
+        <ImageView android:layout_gravity="start" android:id="@+id/module_a_3_return_btn" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/mj_common_title_bar_return" android:scaleType="center" android:contentDescription="@string/action_back"/>
+        <TextView android:textSize="18dp" android:textColor="@color/mj_color_black_100_transparent" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/module_a_3_return_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_return_area_size" android:layout_marginRight="@dimen/titlebar_return_area_size" android:maxLines="1"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/btn_confirm" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/mj_selector_rec_confirm" android:scaleType="center" android:contentDescription="@string/confirm" android:layout_marginEnd="9dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amap.api.maps2d.MapView android:id="@+id/mapView" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/loc_pin" android:layout_width="54dp" android:layout_height="86dp" android:src="@drawable/add_home_loc_pin" android:importantForAccessibility="no"/>
+        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/my_location_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:src="@drawable/selector_my_location" android:contentDescription="@string/my_location"/>
+        <RelativeLayout android:layout_gravity="top" android:id="@+id/search_places" android:background="@drawable/bg_10_bgcolorwhite" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="24dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp">
+            <ImageView android:id="@+id/search_places_image_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_input_search" android:layout_centerVertical="true" android:contentDescription="@string/timezone_activity_search" android:layout_marginStart="10dp"/>
+            <TextView android:textSize="16dp" android:textColor="@color/mj_color_black" android:ellipsize="middle" android:id="@+id/search_places_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:paddingStart="38dp" android:paddingEnd="10dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

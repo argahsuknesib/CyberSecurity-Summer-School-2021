@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/widget_search_bar_v2"/>
+    <com.xiaomi.mico.music.search.SearchContainer android:id="@+id/search_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.mico.common.widget.SearchTagsView android:id="@+id/search_tag_view" android:layout_width="match_parent" android:layout_height="match_parent" app:hot_title="@string/alarm_ring_music_carefully"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/song_recycle" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+    </com.xiaomi.mico.music.search.SearchContainer>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_subtitle_bar_return"/>
+    <RelativeLayout android:id="@+id/saved_wifi_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="43dp" android:layout_above="@+id/check_box_root" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_current_wifi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_vertical" android:id="@+id/tv_current_wifi_label" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="32dp" android:text="@string/current_phone_wifi" android:paddingStart="24dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_marginStart="24dp"/>
+                    <RelativeLayout android:id="@+id/tv_current_wifi_item" android:background="@drawable/choose_device_list_item_bg" android:layout_width="match_parent" android:layout_height="61dp">
+                        <ImageView android:id="@+id/tv_current_wifi_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/selected_icon_nor_3x" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="3dp" android:layout_alignParentStart="true"/>
+                        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black" android:id="@+id/tv_current_wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="80dp" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+                        <ImageView android:id="@+id/iv_img_wifi_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="53dp" android:src="@drawable/edit_wifi_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ListView android:id="@+id/saved_wifi_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+            <TextView android:textSize="13sp" android:textColor="@color/mj_color_red_normal" android:id="@+id/txt_choose_5g_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="14dp" android:text="@string/choose_5g_wifi_tips" android:layout_marginStart="24dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_highlight_blue_text_color" android:id="@+id/can_not_find_wifi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="14dp" android:text="@string/choose_wifi_tips" android:layout_marginStart="24dp"/>
+        </LinearLayout>
+        <Button android:textSize="12.67sp" android:textColor="@color/mj_color_white" android:id="@+id/next_btn" android:background="@drawable/blue_btn_bg" android:layout_width="match_parent" android:layout_height="42.7dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:layout_marginBottom="17dp" android:text="@string/next_button" android:layout_alignParentBottom="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/check_box_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:layout_marginBottom="43dp" android:minHeight="20dp" android:layout_above="@+id/next_btn" android:layout_centerHorizontal="true">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@+id/check_box_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/camera_check_icon"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/agree_license" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="2" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/edit_wifi_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <include layout="@layout/common_list_space_empty"/>
+        <RelativeLayout android:id="@+id/change_password" android:background="@drawable/choose_device_list_item_bg" android:layout_width="match_parent" android:layout_height="52dp">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_alignParentBottom="true" android:layout_marginStart="24dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:text="@string/choose_wifi_change_password" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="24dp" android:layout_alignParentStart="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/into_icon_nor_3x" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="18dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/delete_wifi" android:background="@drawable/choose_device_list_item_bg" android:layout_width="match_parent" android:layout_height="52dp">
+            <TextView android:textSize="15sp" android:textColor="#f41c1c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/choose_wifi_delete_password" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/into_icon_nor_3x" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="18dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout android:orientation="vertical" android:id="@+id/wifi_refresh_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <ScrollView android:id="@+id/wifi_list_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.smarthome.library.common.widget.ExpandListView android:id="@+id/other_wifi_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/empty_mask" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="112dp" android:layout_height="112dp" android:layout_marginTop="190dp" android:src="@drawable/empty_wifi" android:importantForAccessibility="no"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/empty_wifi_near"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/smart_config_top_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/smart_config_base_ui_main_icon"/>
+    <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_button" android:gravity="center" android:id="@+id/btn_1" android:background="@drawable/common_button" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="20dp" android:text="@string/confirm_button" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+</RelativeLayout>

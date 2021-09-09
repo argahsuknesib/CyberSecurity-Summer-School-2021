@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/bringt_add" android:layout_width="@dimen/bright_indicate_icon_size_h" android:layout_height="@dimen/bright_indicate_icon_size_w" android:src="@drawable/bright_indicate_add_black" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaomi.smarthome.newui.card.yeelight.VerticalSeekBar android:id="@+id/bringt_seek_bar" android:layout_width="1dp" android:layout_height="@dimen/bright_indicate_length" android:layout_marginLeft="@dimen/bright_indicate_margin_left" android:layout_marginTop="@dimen/bright_indicate_margin_top" android:layout_marginBottom="@dimen/bright_indicate_margin_bottom" android:max="100" android:progressDrawable="@drawable/seekbar_drawable_white" android:thumb="@null"/>
+        <ImageView android:id="@+id/bringt_seek_indicate" android:layout_width="@dimen/bright_indicate_triangle_size_width" android:layout_height="@dimen/bright_indicate_triangle_size_height" android:layout_marginLeft="@dimen/bright_indicate_triangle_left" android:src="@drawable/bright_indicate_triangle_black" android:scaleType="fitXY"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/bringt_dec" android:layout_width="@dimen/bright_indicate_icon_size_h" android:layout_height="@dimen/bright_indicate_icon_size_w" android:src="@drawable/bright_indicate_dec_black" android:scaleType="fitXY"/>
+</LinearLayout>

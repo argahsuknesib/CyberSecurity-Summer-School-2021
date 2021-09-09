@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/shop_fragment_layout_selector">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="@drawable/shop_home_theme_listitem_bg_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mi.global.shop.widget.AdaptiveHeightImageView android:id="@+id/home_ad_item_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    </LinearLayout>
+</FrameLayout>

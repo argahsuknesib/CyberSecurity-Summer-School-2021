@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_one" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/product_image_one" android:layout_width="50dp" android:layout_height="57dp"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="11sp" android:textColor="#2e2323" android:gravity="center_horizontal" android:id="@+id/product_name_one" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="10dp" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_two" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/product_image_two" android:layout_width="50dp" android:layout_height="57dp"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="11sp" android:textColor="#2e2323" android:gravity="center_horizontal" android:id="@+id/product_name_two" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="10dp" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_three" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/product_image_three" android:layout_width="50dp" android:layout_height="57dp"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="11sp" android:textColor="#2e2323" android:gravity="center_horizontal" android:id="@+id/product_name_three" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="10dp" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_contain_four" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/product_image_four" android:layout_width="50dp" android:layout_height="57dp"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="11sp" android:textColor="#2e2323" android:gravity="center_horizontal" android:id="@+id/product_name_four" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="10dp" android:maxLines="2"/>
+    </LinearLayout>
+</LinearLayout>

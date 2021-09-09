@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <TextView android:textSize="@dimen/font_size_30sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="39dp" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" android:text="@string/fireware_auto_update" android:layout_below="@+id/title_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title" android:overScrollMode="never"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llNodata" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="450dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_auto_update_nodata"/>
+        <TextView android:textSize="@dimen/text_size_15sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mj_fireware_auto_update_nodevice"/>
+    </LinearLayout>
+</RelativeLayout>

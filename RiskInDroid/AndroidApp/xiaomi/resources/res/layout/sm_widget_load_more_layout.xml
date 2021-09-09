@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="44dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/load_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textSize="16sp" android:textColor="#7d8184" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/mj_loading" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#7d8184" android:gravity="center" android:id="@+id/load_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/load_done"/>
+    <TextView android:textSize="16sp" android:textColor="#7d8184" android:gravity="center" android:id="@+id/click_load_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="click load more"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:textSize="@dimen/preference_title_text_size" android:textColor="@color/preference_sign_out_text_color" android:id="@+id/logout_btn" android:background="@drawable/account_preference_category_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="36dp" android:text="@string/logout_account" style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

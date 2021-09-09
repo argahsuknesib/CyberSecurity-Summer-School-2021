@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <TextView android:textSize="@dimen/font_size_30sp" android:textColor="@color/mj_color_gray_heavier" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" android:minHeight="39dp" android:text="@string/update_record" android:layout_below="@+id/title_bar"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title" android:overScrollMode="never"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_no_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/mj_auto_update_record_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_lighter" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="80dp" android:text="@string/no_update_record"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

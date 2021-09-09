@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center_horizontal" android:id="@android:id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/passport_quick_login_title" style="?android:attr/windowTitleStyle"/>
+    <RelativeLayout android:id="@+id/inner_content" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Passport.QuickLoginLayoutHMargin">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/account_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/passport_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Passport.QuickLoginAccountNameStyle"/>
+            <TextView android:id="@+id/tv_forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_forget_password" android:singleLine="true" style="@style/Passport.ForgotPwdStyle"/>
+        </RelativeLayout>
+        <include android:id="@+id/password_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/account_info" layout="@layout/passport_ui_password"/>
+        <com.xiaomi.passport.ui.internal.CaptchaView android:id="@+id/captcha_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/password_layout"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/inner_content_step2" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Passport.QuickLoginLayoutHMargin">
+        <TextView android:id="@+id/vcode_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_vcode_prompt_long" style="?android:attr/textAppearanceMedium"/>
+        <EditText android:id="@+id/passport_vcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="@dimen/passport_editor_height" android:hint="@string/passport_vcode_prompt_long" android:singleLine="true" style="?android:attr/textAppearance"/>
+        <CheckBox android:id="@+id/passport_trust_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/passport_trust_device"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@+id/cancel" android:background="@drawable/passport_btn_bg_dialog_first_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:id="@+id/passport_confirm" android:background="@drawable/passport_btn_bg_dialog_last_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/view_container" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/rl_new_device_auto_auth" android:background="@color/mj_color_white" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_two_line" android:layout_marginTop="8dp">
+        <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="260dp" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginStart="@dimen/std_list_padding_left">
+            <TextView android:textSize="15sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_control_device_auto_auth" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_control_device_auto_auth_subtitle" android:singleLine="true"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/btn_auto_auth" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_content_margin_right" android:layout_alignParentEnd="true"/>
+        <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+</LinearLayout>

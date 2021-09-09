@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/up_btn" android:background="@drawable/miio_sec_device_up" android:layout_width="250dp" android:layout_height="125dp"/>
+    <View android:id="@+id/down_btn" android:background="@drawable/miio_sec_device_down" android:layout_width="250dp" android:layout_height="125dp" android:layout_marginTop="125dp"/>
+    <View android:id="@+id/left_btn" android:background="@drawable/miio_sec_device_left" android:layout_width="125dp" android:layout_height="250dp"/>
+    <View android:id="@+id/right_btn" android:background="@drawable/miio_sec_device_right" android:layout_width="125dp" android:layout_height="250dp" android:layout_marginLeft="125dp"/>
+    <View android:id="@+id/ok_btn" android:background="@drawable/miio_sec_device_ok" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="75dp" android:layout_marginTop="75dp"/>
+</merge>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#eaeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/sm_widget_module_a_3_title_bar_return_transparent"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+            <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:background="@drawable/mitv_remote_control_button_on_off" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:background="@drawable/mitv_remote_control_button_home" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:background="@drawable/mitv_remote_control_button_menu" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="@drawable/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.xiaomi.smarthome.library.common.widget.MitvGestureTouchView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="#ffbabdbf" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/mitv_touch_info"/>
+            <ImageView android:id="@+id/circle_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.xiaomi.smarthome.library.common.widget.MitvGestureTouchView>
+        <View android:background="@drawable/mj_color_gray_lighter" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/mitv_remote_control_button_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.xiaomi.smarthome.library.common.widget.MitvVolumeView android:background="#80000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/mitv_volume" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/mitv_volume_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mitv_volume_add"/>
+            <com.xiaomi.smarthome.library.common.widget.MitvCircleView android:id="@+id/mitv_volume_circle" android:layout_width="160dp" android:layout_height="160dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            <ImageView android:id="@+id/mitv_volume_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mitv_volume_sub"/>
+        </LinearLayout>
+    </com.xiaomi.smarthome.library.common.widget.MitvVolumeView>
+</FrameLayout>

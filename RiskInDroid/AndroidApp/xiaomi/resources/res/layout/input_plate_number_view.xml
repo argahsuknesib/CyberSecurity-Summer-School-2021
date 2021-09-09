@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.setting.InputPlateNumberView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="43dp">
+        <ToggleButton android:textSize="@dimen/major_text_size" android:textColor="@color/mj_color_white" android:id="@+id/toggle" android:background="@drawable/spinner_background_orange" android:focusable="true" android:layout_width="77dp" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:paddingEnd="30dp"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_editor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginStart="3dp">
+            <EditText android:textSize="@dimen/prompt_text_size" android:textColor="@color/mj_color_black" android:textColorHint="@color/mj_color_gray_lighter" android:id="@+id/input_view_editor" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="7" android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_weight="1" android:inputType="text" android:textCursorDrawable="@drawable/cursor_editor" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+            <ImageView android:id="@+id/input_view_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_input_delete" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <GridView android:id="@+id/gridview" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:horizontalSpacing="4dp" android:verticalSpacing="10dp" android:stretchMode="spacingWidth" android:columnWidth="34dp" android:numColumns="7"/>
+</com.xiaomi.mico.setting.InputPlateNumberView>

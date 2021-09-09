@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.newui.widget.topnavi.widgets.CardConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="266dp" android:layout_height="wrap_content" app:max_radius="16dp" app:radius_bg="@color/mj_color_dialog_bg_nor">
+    <LinearLayout android:orientation="vertical" android:layout_width="266dp" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <com.xiaomi.smarthome.ui.MaxHeightRecyclerView android:id="@+id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:recycler_max_height="430dp" style="@style/common_recycler_vertical_scroll_bar"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.newui.widget.topnavi.widgets.CardConstraintLayout>

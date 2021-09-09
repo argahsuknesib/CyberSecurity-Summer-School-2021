@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/mjcamera_face_mark_edittext_bg"/>
+    <stroke android:width="0.3dp" android:color="@color/mj_color_separator"/>
+    <corners android:radius="6dp"/>
+</shape>

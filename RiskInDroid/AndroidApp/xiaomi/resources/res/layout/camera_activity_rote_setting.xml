@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_activity_title_select"/>
+    <ImageView android:id="@+id/rote_bg" android:layout_width="match_parent" android:layout_height="320dp" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="67dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="10sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:id="@+id/rote_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_bottom_item_margin" android:layout_marginRight="@dimen/camera_bottom_item_margin" android:text="@string/rote_button" android:drawableTop="@drawable/camera_icon_rote"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

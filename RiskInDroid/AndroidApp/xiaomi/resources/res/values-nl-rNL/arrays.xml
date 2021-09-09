@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ble_guide_content_description">
+        <item>Eerste pagina</item>
+        <item>Tweede pagina</item>
+        <item>Derde pagina</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mrt</item>
+        <item>Apr</item>
+        <item>Mei</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Partner</item>
+        <item>Vader</item>
+        <item>Moeder</item>
+        <item>Zoon</item>
+        <item>Dochter</item>
+        <item>Huisgenoot</item>
+        <item>Overig</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Temperatuur </item>
+        <item>Vochtigheid </item>
+        <item>AQI </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Temperatuur</item>
+        <item>Vochtigheid</item>
+        <item>AQI (PM2,5)</item>
+    </array>
+    <array name="month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mrt</item>
+        <item>Apr</item>
+        <item>Mei</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>Woonkamer</item>
+        <item>slaapkamer</item>
+        <item>Ouderslaapkamer</item>
+        <item>Keuken</item>
+        <item>Eetkamer</item>
+        <item>Badkamer</item>
+        <item>Kinderkamer</item>
+        <item>Kantoor</item>
+        <item>Studeerkamer</item>
+        <item>Balkon</item>
+        <item>Studio</item>
+        <item>Badkamer</item>
+        <item>Achtertuin</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Peking</item>
+        <item>Seoel</item>
+        <item>Tokio</item>
+        <item>New York</item>
+        <item>Denver</item>
+        <item>Costa Rica</item>
+        <item>Chicago</item>
+        <item>Mexico-Stad</item>
+        <item>Regina</item>
+        <item>Majuro</item>
+        <item>Midway</item>
+        <item>Honolulu</item>
+        <item>Anchorage</item>
+        <item>Los Angeles</item>
+        <item>Tijuana</item>
+        <item>Phoenix</item>
+        <item>Chihuahua</item>
+        <item>Bogota</item>
+        <item>New York</item>
+        <item>Caracas</item>
+        <item>Barbados</item>
+        <item>Manaus</item>
+        <item>Santiago</item>
+        <item>St Johns</item>
+        <item>Sao Paulo</item>
+        <item>Buenos Aires</item>
+        <item>Nuuk</item>
+        <item>Montevideo</item>
+        <item>South Georgia</item>
+        <item>Azoren</item>
+        <item>Kaapverdië</item>
+        <item>Casablanca</item>
+        <item>Londen</item>
+        <item>Amsterdam</item>
+        <item>Belgrado</item>
+        <item>Brussel</item>
+        <item>Sarajevo</item>
+        <item>Windhoek</item>
+        <item>Brazzaville</item>
+        <item>Amman</item>
+        <item>Athene</item>
+        <item>Beiroet</item>
+        <item>Caïro</item>
+        <item>Helsinki</item>
+        <item>Jeruzalem</item>
+        <item>Minsk</item>
+        <item>Harare</item>
+        <item>Bagdad</item>
+        <item>Moskou</item>
+        <item>Koeweit</item>
+        <item>Nairobi</item>
+        <item>Teheran</item>
+        <item>Bakoe</item>
+        <item>Tbilisi</item>
+        <item>Jerevan</item>
+        <item>Dubai</item>
+        <item>Kaboel</item>
+        <item>Karachi</item>
+        <item>Oral</item>
+        <item>Jekaterinenburg</item>
+        <item>Calcutta</item>
+        <item>Colombo</item>
+        <item>Kathmandu</item>
+        <item>Almaty</item>
+        <item>Rangoon</item>
+        <item>Krasnojarsk</item>
+        <item>Bangkok</item>
+        <item>Irkoetsk</item>
+        <item>Kuala Lumpur</item>
+        <item>Perth</item>
+        <item>Jakoetsk</item>
+        <item>Adelaide</item>
+        <item>Darwin</item>
+        <item>Brisbane</item>
+        <item>Hobart</item>
+        <item>Sydney</item>
+        <item>Vladivostok</item>
+        <item>Guam</item>
+        <item>Magadan</item>
+        <item>Auckland</item>
+        <item>Fiji</item>
+        <item>Tongatapu</item>
+    </array>
+    <array name="weekday">
+        <item>Zondag</item>
+        <item>Maandag</item>
+        <item>Dinsdag</item>
+        <item>Woensdag</item>
+        <item>Donderdag</item>
+        <item>Vrijdag</item>
+        <item>Zaterdag</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>Ma</item>
+        <item>Di</item>
+        <item>Wo</item>
+        <item>Do</item>
+        <item>Vr</item>
+        <item>Za</item>
+        <item>Zo</item>
+    </array>
+    <array name="weekday_short">
+        <item>Zo</item>
+        <item>Ma</item>
+        <item>Di</item>
+        <item>Wo</item>
+        <item>Do</item>
+        <item>Vr</item>
+        <item>Za</item>
+    </array>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlHomeCloudTip" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black_80_transparent" android:gravity="center" android:background="@drawable/home_cloud_tip_bg" android:layout_width="200dp" android:layout_height="62dp" android:layout_marginRight="17dp" android:layout_marginBottom="65dp" android:text="@string/home_cloud_tip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/miconnect_common_title_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/common_bottom_text_size" android:textColor="@color/mj_color_black_70_transparent" android:gravity="center" android:layout_gravity="center" android:background="@color/mj_color_white" android:paddingTop="22dp" android:layout_width="280dp" android:layout_height="wrap_content" android:minHeight="106.3dp" android:text="@string/main_connect_login_tip"/>
+    </FrameLayout>
+    <include layout="@layout/miconnect_common_bottom"/>
+</LinearLayout>

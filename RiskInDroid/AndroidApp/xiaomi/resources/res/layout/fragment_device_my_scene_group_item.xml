@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/divide_line" android:background="@color/mj_color_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="11dp"/>
+    <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:gravity="center_vertical" android:id="@+id/group_tv" android:background="@color/mj_color_white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/smarthome_new_scene_by_hand" android:drawableLeft="@drawable/lite_scene_hand_icon" android:drawablePadding="5dp"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

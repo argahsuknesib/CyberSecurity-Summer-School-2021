@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/top_review" android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_order" android:layout_width="66dp" android:layout_height="66dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" fresco:actualImageScaleType="0" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_title_color" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mi Band 2"/>
+                    <RatingBar android:id="@+id/item_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8dp" android:layout_marginTop="10dp" android:stepSize="1" style="@style/CustomRatingBar"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.mi.global.shop.widget.CustomEditTextView android:textSize="@dimen/text_size_dp_14" android:textColorHint="@color/common_addtime_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/et_title" android:background="@drawable/shop_bg_edittext_normal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:hint="@string/order_submit_title_hint" android:singleLine="true" android:maxLength="100" android:layout_below="@+id/top_review"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shop_bg_edittext_normal" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_below="@+id/et_title">
+                <com.mi.global.shop.widget.CustomEditTextView android:textSize="@dimen/text_size_dp_14" android:textColorHint="@color/common_addtime_color" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/et_review_content" android:background="@null" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="130dp" android:hint="@string/order_submit_content_hint" android:maxLength="2000"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="27.5dp" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.NoScrollGridView android:id="@+id/grid_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="6.5dp" android:verticalSpacing="7dp" android:numColumns="4"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="#b0b0b0" android:layout_gravity="center" android:id="@+id/image_count_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mis_image_count_tip"/>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.mi.global.shop.widget.CustomButtonView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/btn_submit" android:background="@color/orange_red" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="@string/shop_submit"/>
+    <LinearLayout android:gravity="center" android:id="@+id/loading" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.3">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

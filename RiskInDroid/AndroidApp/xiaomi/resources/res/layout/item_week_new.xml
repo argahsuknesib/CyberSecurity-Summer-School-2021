@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.camera.view.calendar.ContentDescriptionCalendarView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/container" android:background="@color/mj_color_white" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+    <View android:id="@+id/btn" android:background="@color/mj_color_white" android:layout_width="35dp" android:layout_height="35dp" android:layout_centerInParent="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/tv_way" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/view_locate" android:background="@drawable/drawable_circle_border" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_below="@+id/tv_way" android:layout_centerInParent="true"/>
+    <View android:id="@+id/view_choose" android:background="@drawable/drawable_circle_alpha" android:layout_width="35dp" android:layout_height="35dp" android:layout_below="@+id/tv_way" android:layout_centerInParent="true"/>
+    <TextView android:textSize="14dp" android:textColor="#444444" android:gravity="center" android:id="@+id/tv_date" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:layout_below="@+id/tv_way" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/tv_date" android:layout_centerHorizontal="true">
+        <View android:id="@+id/view_flag_1" android:background="@drawable/drawable_circle_green" android:layout_width="4dp" android:layout_height="4dp"/>
+        <View android:id="@+id/view_between" android:layout_width="4dp" android:layout_height="0dp"/>
+        <View android:id="@+id/view_flag_2" android:background="@drawable/drawable_circle_red" android:layout_width="4dp" android:layout_height="4dp"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.camera.view.calendar.ContentDescriptionCalendarView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/add_stock"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/nothing_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <ImageView android:background="@drawable/img_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp"/>
+        <TextView android:textSize="@dimen/major_text_size" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/stock_subscribtion_nothing_tip"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/add_stock" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="30dp" android:minWidth="200dp" android:text="@string/stock_add_concern" android:layout_alignParentBottom="true" style="@style/App.Widget.Button.Orange.Large"/>
+</RelativeLayout>

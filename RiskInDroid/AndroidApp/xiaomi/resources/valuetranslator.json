@@ -1,0 +1,7 @@
+{
+  "donothing": "com.xiaomi.miot.localtranslatesrv.ruleEngines.yaccEngine.translateAdapter.valuetranslator.DoNothing",
+  "expression": "com.xiaomi.miot.localtranslatesrv.ruleEngines.yaccEngine.translateAdapter.valuetranslator.Expression",
+  "rangemap": "com.xiaomi.miot.localtranslatesrv.ruleEngines.yaccEngine.translateAdapter.valuetranslator.RangeMap",
+  "valuemap": "com.xiaomi.miot.localtranslatesrv.ruleEngines.yaccEngine.translateAdapter.valuetranslator.ValueMap",
+  "typeparse": "com.xiaomi.miot.localtranslatesrv.ruleEngines.yaccEngine.translateAdapter.valuetranslator.TypeParse"
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/font_size_12sp" android:gravity="center" android:paddingTop="@dimen/margin_25dp" android:paddingBottom="@dimen/margin_21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/qq_music_vip_title_tip"/>

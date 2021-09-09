@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:orientation="vertical" android:id="@+id/orderview_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/orderview_bglayout" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_notice" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="14dp" android:layout_height="13dp" android:layout_marginLeft="15dp" android:src="@drawable/shop_orderview_speaker" android:scaleType="fitXY"/>
+                <com.mi.global.shop.widget.CustomTextView android:textSize="12dp" android:textColor="@color/tips_icon_color" android:id="@+id/show_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="15dp" android:text="This is a test.This is a test.This is ast.This is a testst.This is a testst.This is a test test.This is a te is a test."/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/tips_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:layout_width="match_parent" style="@style/Divide_shadow_bottom"/>
+                <View android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="@dimen/divide_space_height"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_orderid"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_title_color" android:id="@+id/orderview_orderid" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textColor="@color/orange_red" android:gravity="right" android:id="@+id/orderview_status" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/show_tag" android:background="@drawable/shop_orange_bg_rectangle" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/common_content_color" android:id="@+id/orderview_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/orderview_payorderLL" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/orderview_ll_payment_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_small" android:id="@+id/orderview_paywarningSpan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_paywarning_span"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_small" android:textColor="@color/mishop_god_color" android:id="@+id/orderview_paywarning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing" android:text="@string/orderview_paywarning_span"/>
+                </LinearLayout>
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_small" android:id="@+id/orderview_paymenttip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing" android:text="@string/orderview_pay_cod_tip"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/orderview_traceorderLL" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="@dimen/line_spacing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginTop="@dimen/line_spacing" android:layout_marginBottom="@dimen/line_spacing"/>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing">
+                    <com.mi.global.shop.widget.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_transportnum"/>
+                    <com.mi.global.shop.widget.CustomTextView android:id="@+id/orderview_transportnum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing">
+                    <com.mi.global.shop.widget.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_deliveryid"/>
+                    <com.mi.global.shop.widget.CustomTextView android:id="@+id/orderview_deliveryid" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing">
+                    <com.mi.global.shop.widget.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_transportcompany"/>
+                    <com.mi.global.shop.widget.CustomTextView android:id="@+id/orderview_transportcompany" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/line_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="21dp" android:layout_height="21dp" android:src="@drawable/shop_location"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+                        <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_title_color" android:id="@+id/orderview_addline1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/common_content_color" android:id="@+id/orderview_addline2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/common_content_color" android:id="@+id/orderview_addline3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="21dp" android:layout_height="21dp" android:src="@drawable/shop_email"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/common_title_color" android:id="@+id/orderview_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/shop_top_shadow_divider"/>
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/order_progress_recyclerview" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:id="@+id/tv_deliver_time" android:background="@color/white" android:paddingLeft="25dp" android:paddingTop="2dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/orderview_suborderLL" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mi.global.shop.widget.NoScrollListView android:id="@+id/orderview_suborderlist" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/divider_color" android:dividerHeight="15dp"/>
+            </LinearLayout>
+            <include layout="@layout/shop_top_shadow_divider"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/orderview_itemlistrLL" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_12" android:textColor="@color/common_content_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/orderview_prodes"/>
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+                <com.mi.global.shop.widget.NoScrollListView android:id="@+id/orderview_itemlist" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/divider_color" android:dividerHeight="0.5dp"/>
+            </LinearLayout>
+            <include android:visibility="gone" layout="@layout/shop_top_shadow_divider"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_cardless_emi_container" android:background="@color/white" android:paddingLeft="@dimen/confirm_payment_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_cardless_emi_agreement" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="45dp">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_12" android:textColor="@color/common_content_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardless_emi_detail" android:layout_centerVertical="true"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="12sp" android:textColor="#ff6700" android:id="@+id/coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/cardless_emi_view_agreement" android:drawableRight="@drawable/shop_list_right_icon" android:drawablePadding="9dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/confirm_payment_padding" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/text_size_dp_8" android:paddingRight="@dimen/confirm_payment_padding" android:paddingBottom="@dimen/text_size_dp_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_content_color" android:gravity="left" android:id="@+id/tv_emi_loan_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_title_color" android:gravity="left" android:id="@+id/customTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardless_emi_loan_amount" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/text_size_dp_8" android:paddingRight="@dimen/confirm_payment_padding" android:paddingBottom="@dimen/text_size_dp_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_title_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardless_emi_emi_plan_selected"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_content_color" android:gravity="left" android:id="@+id/tv_emi_plan_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/text_size_dp_8" android:paddingRight="@dimen/confirm_payment_padding" android:paddingBottom="@dimen/text_size_dp_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_title_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardless_emi_repayment_amount"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_content_color" android:gravity="left" android:id="@+id/tv_emi_repayment_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/text_size_dp_8" android:paddingRight="@dimen/confirm_payment_padding" android:paddingBottom="@dimen/text_size_dp_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_title_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardless_emi_emi_first_emi"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_12" android:textColor="@color/pay_content_color" android:gravity="left" android:id="@+id/tv_emi_first_emi_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/shop_top_shadow_divider"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/orderview_subtotalLL" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/line_spacing" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_subtotal"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_content_color" android:gravity="right" android:id="@+id/orderview_subtotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+                </LinearLayout>
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/orderview_promoteLL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/line_spacing" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_promote"/>
+                    <com.mi.global.shop.widget.CustomTextView android:id="@+id/orderview_promote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/orderview_shippingLL" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/line_spacing" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_shipping"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_content_color" android:gravity="right" android:id="@+id/orderview_shipping" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+                </LinearLayout>
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/orderview_discountLL" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/line_spacing" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_discount"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_content_color" android:gravity="right" android:id="@+id/orderview_discount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+                </LinearLayout>
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/orderview_exchange_couponLL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/line_spacing" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_confirm_order_exchange_coupon"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_content_color" android:gravity="right" android:id="@+id/orderview_exchange_coupon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+                </LinearLayout>
+                <com.mi.global.shop.widget.CustomTextView android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_line_height"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/orderview_totalLL" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="@dimen/line_spacing" android:layout_marginRight="15dp">
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_total"/>
+                    <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/orange_red" android:gravity="right" android:id="@+id/orderview_total" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginBottom="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_gravity="bottom" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="60dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderview_total"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="13sp" android:textColor="@color/common_title_color" android:gravity="right" android:id="@+id/orderview_total_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/line_spacing"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="@dimen/order_button_text_size" android:textColor="@color/orange_red" android:id="@+id/orderview_cancelBtn" android:background="@drawable/shop_order_detail_button_orangeborder" android:visibility="gone" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:text="@string/orderdetail_cancel"/>
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="@dimen/order_button_text_size" android:textColor="@color/white" android:id="@+id/orderview_payBtn" android:background="@drawable/shop_orange_bg" android:visibility="gone" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:text="@string/orderdetail_pay"/>
+            <com.mi.global.shop.widget.CustomButtonView android:textSize="@dimen/order_button_text_size" android:textColor="@color/orange_red" android:id="@+id/orderview_tracebtn" android:background="@drawable/shop_order_detail_button_orangeborder" android:visibility="gone" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:text="@string/orderdetail_track"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

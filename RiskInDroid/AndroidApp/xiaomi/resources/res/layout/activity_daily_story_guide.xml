@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/title_bar_black"/>
+    <FrameLayout android:orientation="horizontal" android:id="@+id/video_container" android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <ImageView android:layout_gravity="center" android:id="@+id/toast_icon" android:layout_width="30dp" android:layout_height="30dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_play" android:visibility="gone" android:layout_width="66dp" android:layout_height="66dp" android:src="@drawable/icon_daily_story_play"/>
+    </FrameLayout>
+    <TextView android:textSize="15sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/daily_story_tips" android:layout_above="@+id/tv_turn_on_daily_story" android:layout_below="@+id/video_container" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_turn_on_daily_story" android:background="@drawable/round_corner_ff32bac0_bg" android:paddingTop="11dp" android:paddingBottom="11dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/auto_discovery_setting_now" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_purchase_vip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_need_open_cloud"/>
+        <TextView android:textSize="14sp" android:textColor="#5edbfa" android:id="@+id/tv_purchase" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_to_open_cloud" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

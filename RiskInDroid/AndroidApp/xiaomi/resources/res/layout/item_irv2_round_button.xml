@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/irv2_controller_round_board" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/irv2_round_button_up" android:background="@android:color/transparent" android:layout_width="@dimen/irv2_controller_button_up_width" android:layout_height="@dimen/irv2_controller_button_up_height" android:src="@drawable/irv2_controller_round_up"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/irv2_round_button_left" android:background="@android:color/transparent" android:layout_width="@dimen/irv2_controller_button_up_height" android:layout_height="@dimen/irv2_controller_button_up_width" android:src="@drawable/irv2_controller_round_left"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/irv2_round_button_ok" android:background="@android:color/transparent" android:layout_width="@dimen/irv2_controller_button_up_width" android:layout_height="@dimen/irv2_controller_button_up_width" android:src="@drawable/irv2_controller_round_center"/>
+                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_light" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/irv2_controller_ok_text"/>
+            </FrameLayout>
+            <ImageButton android:id="@+id/irv2_round_button_right" android:background="@android:color/transparent" android:layout_width="@dimen/irv2_controller_button_up_height" android:layout_height="@dimen/irv2_controller_button_up_width" android:src="@drawable/irv2_controller_round_right"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/irv2_round_button_down" android:background="@android:color/transparent" android:layout_width="@dimen/irv2_controller_button_up_width" android:layout_height="@dimen/irv2_controller_button_up_height" android:src="@drawable/irv2_controller_round_down"/>
+    </LinearLayout>
+</FrameLayout>

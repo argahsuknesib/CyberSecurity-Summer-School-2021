@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rootView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="254dp">
+        <ImageView android:id="@+id/recycler_img" android:layout_width="match_parent" android:layout_height="140dp" android:src="@drawable/default_pic_small" android:scaleType="fitXY"/>
+        <include android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignRight="@+id/recycler_img" android:layout_alignBottom="@+id/recycler_img" layout="@layout/viewhelper_product_tag_array"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/recycler_img" layout="@layout/viewhelper_vertical_content"/>
+    </RelativeLayout>
+    <include layout="@layout/layout_listitem_home_producttag"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:layout_height="wrap_content" android:minHeight="54dp" app:layout_scrollFlags="11" style="@style/ListItem.Group.Content">
+        <TextView android:textSize="@dimen/font_size_30sp" android:textColor="@color/mj_color_black" android:id="@+id/security_setting_rn_title_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_more_security_title" android:layout_centerVertical="true"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/security_setting_rn_pincode_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="54dp" style="@style/ListItem.Group.Content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_content_margin_right_27" android:layout_toStartOf="@+id/security_setting_rn_pincode_switch">
+            <TextView android:text="@string/device_plugin_security_item_open_pincode" style="@style/ListItem.Title.ListItemMainTitle"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:id="@+id/security_setting_rn_pincode_status_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_plugin_security_open_pincode_tip"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/security_setting_rn_pincode_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/security_setting_rn_pincode_arrow" android:visibility="gone" android:src="@drawable/um_arrow" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" style="@style/ListItem.Title.ListItemSubTitle"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+</LinearLayout>

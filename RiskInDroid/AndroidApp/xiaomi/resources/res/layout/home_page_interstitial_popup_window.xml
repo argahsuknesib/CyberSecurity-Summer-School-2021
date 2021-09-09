@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#a0000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/business_container" android:background="@drawable/business_popup_window_corner" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="267dp" android:layout_height="360dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:id="@+id/business_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+                <View android:id="@+id/click_more" android:layout_width="match_parent" android:layout_height="120dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/popup_window_close" android:layout_below="@+id/business_container" android:layout_centerHorizontal="true" android:contentDescription="@string/mj_close"/>
+    </RelativeLayout>
+</RelativeLayout>

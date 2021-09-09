@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_5dp" android:layout_marginBottom="@dimen/size_5dp">
+    <TextView android:textSize="@dimen/font_size_24sp" android:textColor="@color/mj_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_clock" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/alarm_add" android:background="@drawable/alarm_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

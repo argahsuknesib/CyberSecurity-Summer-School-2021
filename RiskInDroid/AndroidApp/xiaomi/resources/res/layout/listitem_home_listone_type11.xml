@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="153dp">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/listitem_home_listone_type11_image_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/listitem_home_listone_type11_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+            <include layout="@layout/layout_listitem_home_producttag"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/viewhelper_small_tcp_rootview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding16" android:layout_marginBottom="@dimen/padding16" android:layout_toRightOf="@+id/listitem_home_listone_type11_image_parent">
+            <TextView android:ellipsize="end" android:id="@+id/viewhelper_small_tcp_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/home_title_style"/>
+            <TextView android:ellipsize="end" android:id="@+id/viewhelper_small_tcp_breif" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="20dp" android:maxLines="2" android:layout_below="@+id/viewhelper_small_tcp_title" android:lineSpacingExtra="2dp" style="@style/home_brief_style"/>
+            <include android:id="@+id/layout_viewhelper_price" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/viewhelper_small_tcp_breif" layout="@layout/layout_price_view"/>
+        </RelativeLayout>
+        <View android:background="#fffcfcfc" android:layout_width="match_parent" android:layout_height="2.33dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</merge>

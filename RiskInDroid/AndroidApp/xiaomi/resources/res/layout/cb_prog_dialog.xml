@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_progress" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/imageView" android:background="@android:color/white" android:paddingTop="10dp" android:src="@drawable/l_icon1" android:scaleType="centerInside" android:contentDescription="@string/cb_payu_icon" style="@style/cb_image_view"/>
+        <TextView android:textSize="20sp" android:textStyle="normal" android:layout_gravity="center_horizontal" android:id="@+id/dialog_title" android:background="@android:color/white" android:paddingTop="30dp" android:text="@string/cb_process_request" style="@style/cb_text_view"/>
+        <TextView android:textSize="15sp" android:textStyle="italic" android:ellipsize="marquee" android:layout_gravity="center_horizontal" android:id="@+id/dialog_desc" android:background="@android:color/white" android:paddingTop="10dp" android:focusable="true" android:focusableInTouchMode="true" android:text="@string/cb_please_wait" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/cb_text_view"/>
+    </LinearLayout>
+</RelativeLayout>

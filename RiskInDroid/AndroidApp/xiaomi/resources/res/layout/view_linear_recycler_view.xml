@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/linear_recycle_view" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/size_4dp" android:layout_marginRight="@dimen/size_4dp" app:layoutManager="LinearLayoutManager"/>

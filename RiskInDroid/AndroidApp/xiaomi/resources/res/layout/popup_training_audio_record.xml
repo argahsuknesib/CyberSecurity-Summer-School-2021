@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:background="@color/mj_color_black_40_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_btn_record_bg" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="225dp">
+        <TableRow android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tr_left_anim" android:visibility="gone" android:layout_width="45dp" android:layout_height="13dp" android:layout_marginRight="20dp" android:divider="@color/mj_color_gray_lighter" android:showDividers="middle"/>
+            <Chronometer android:textSize="19sp" android:textColor="#666666" android:id="@+id/chronometer_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="00:00"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tr_right_anim" android:visibility="gone" android:layout_width="45dp" android:layout_height="13dp" android:layout_marginLeft="20dp" android:divider="@color/mj_color_gray_lighter" android:showDividers="middle"/>
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <TextView android:textSize="13sp" android:textColor="@color/mj_color_black_50_transparent" android:id="@+id/audio_op_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_to_start_record_audio"/>
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp">
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/mj_color_black_50_transparent" android:layout_gravity="center" android:id="@+id/img_dismiss_pop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sh_common_cancel"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/img_audio_state" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/training_skill_start"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/mj_color_black_50_transparent" android:layout_gravity="center" android:id="@+id/img_upload_audio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_finish"/>
+            </FrameLayout>
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

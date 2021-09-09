@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_transparent_black"/>
+    <include layout="@layout/camera_list_line"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settting_item_face" item:item_select="true" item:item_title="@string/face_info" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settting_item_face_manager" android:visibility="gone" item:item_select="true" item:item_title="@string/lowpower_face_manager" item:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settting_item_baby_cry" item:item_select="true" item:item_title="@string/event_type_baby_cry" item:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/setting_item_pet" item:item_select="true" item:item_title="@string/pet_detection" item:item_type="2" style="@style/setting_item"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/view_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentScrim="@color/mj_color_black_00_transparent" app:layout_scrollFlags="3" app:statusBarScrim="@color/mj_color_black_00_transparent" app:titleEnabled="false">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:id="@+id/cl_usr" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/usr_icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="16dp" android:layout_marginBottom="49dp" android:scaleType="fitCenter" android:importantForAccessibility="no" android:layout_marginStart="19dp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:roundAsCircle="true" app:roundingBorderColor="@color/mj_color_white_05_transparent" app:roundingBorderWidth="2px"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginTop="15dp" android:layout_marginStart="10dp" android:layout_marginEnd="24dp" app:layout_constrainedWidth="true" app:layout_constraintHorizontal_bias="0" app:layout_constraintLeft_toRightOf="@+id/usr_icon" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="18dp" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/usr_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                        <TextView android:textSize="14dp" android:textColor="@color/mj_color_gray_light" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/usr_dev_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:id="@+id/iv_qrcode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_qrcode" android:layout_centerVertical="true" android:contentDescription="@string/qrcode_scan" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true" app:layout_constraintRight_toRightOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/title_bar" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="54dp" app:contentInsetStart="0dp" app:layout_collapseMode="1">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/font_size_18sp" android:textStyle="bold" android:textColor="@color/mj_color_gray_heavier" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_marginStart="52dp" android:layout_marginEnd="52dp"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" layout="@layout/setting_main_page_operation"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" layout="@layout/setting_main_page_group_1"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" layout="@layout/setting_main_page_group_2"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" layout="@layout/setting_main_page_group_3"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" layout="@layout/setting_main_page_group_rn_debug"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

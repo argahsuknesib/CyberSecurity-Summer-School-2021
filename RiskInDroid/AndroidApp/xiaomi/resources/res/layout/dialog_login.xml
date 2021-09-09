@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_login_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="#5d5d5f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/autologin_title"/>
+    <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+    <TextView android:textSize="13sp" android:textColor="#5d5d5f" android:id="@+id/tv_login_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="20dp" android:layout_marginRight="25dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_marginBottom="23dp">
+        <TextView android:textSize="13sp" android:textColor="#ff6700" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_login_local" android:background="@drawable/shape_login_dialog_left_btn" android:layout_width="150dp" android:layout_height="35dp" android:layout_marginRight="10dp" android:text="@string/autologin_ask_cancel" android:lines="1"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_system_login" android:background="@drawable/shape_login_dialog_right_btn" android:layout_width="150dp" android:layout_height="35dp" android:text="@string/autologin_ask_ok"/>
+    </LinearLayout>
+</LinearLayout>

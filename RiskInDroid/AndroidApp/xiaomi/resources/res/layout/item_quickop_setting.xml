@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/item_view" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="58dp" android:layout_height="58dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/img_device" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_noti_defualt_on" android:layout_centerInParent="true"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/choose_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/std_word_003" android:textColor="@color/mj_color_white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txt_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
+    <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="17dp" android:textColor="#ff222222" android:gravity="center_vertical" android:id="@+id/titleText" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/border_shadow_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/item_image" android:layout_width="match_parent" android:layout_height="220dp" android:scaleType="fitXY"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="16dp" android:textColor="#ff2e2323" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="11dp"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="14dp" android:textColor="#ffb0b0b0" android:ellipsize="end" android:id="@+id/item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="4dp" android:maxLines="2"/>
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="14dp">
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="15dp" android:textColor="@color/orange_red" android:id="@+id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="15dp" android:textColor="#ffdddddd" android:id="@+id/item_price_origin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_toRightOf="@+id/item_price"/>
+            <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13dp" android:textColor="@color/orange_red" android:gravity="center" android:id="@+id/buy_btn" android:background="@drawable/bg_btn_orange_stroke" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/flash_sale_buy_now" android:layout_alignParentRight="true" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

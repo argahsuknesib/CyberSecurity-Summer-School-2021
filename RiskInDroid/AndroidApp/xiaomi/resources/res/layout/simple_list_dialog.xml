@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/std_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="64dp" android:text="我的世界"/>
+    <View android:id="@+id/divider" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <ListView android:id="@+id/listview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/mj_color_separator" android:dividerHeight="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:paddingLeft="@dimen/alertdialog_button_panel_padding_horizontal" android:paddingTop="15dp" android:paddingRight="@dimen/alertdialog_button_panel_padding_horizontal" android:paddingBottom="@dimen/alertdialog_button_panel_padding_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/alertdialog_button_panel_padding_horizontal" android:paddingEnd="@dimen/alertdialog_button_panel_padding_horizontal">
+        <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_button" android:gravity="center" android:id="@+id/button2" android:background="@drawable/common_btn_left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sh_common_cancel" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_button" android:gravity="center" android:id="@+id/button1" android:background="@drawable/common_btn_right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ok_button" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/ht_common_title_height" android:layout_alignParentTop="true">
+    <FrameLayout android:id="@+id/title_bar_return" android:layout_width="@dimen/ht_common_title_bar_button_width" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_return" android:layout_width="@dimen/ht_common_title_bar_image_width" android:layout_height="@dimen/ht_common_title_bar_image_height" android:layout_marginLeft="@dimen/ht_common_title_bar_margin" android:src="@mipmap/ht_ic_return"/>
+    </FrameLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/ht_black" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/title_bar_title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+    <FrameLayout android:id="@+id/title_bar_next" android:visibility="invisible" android:layout_width="@dimen/ht_common_title_bar_button_width" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/iv_next" android:layout_width="@dimen/ht_common_title_bar_image_width" android:layout_height="@dimen/ht_common_title_bar_image_height" android:layout_marginRight="@dimen/ht_common_title_bar_margin" android:src="@mipmap/ht_ic_confirm" android:scaleType="center"/>
+    </FrameLayout>
+</LinearLayout>

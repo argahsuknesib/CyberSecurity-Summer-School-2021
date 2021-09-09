@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/feed_back_title_bar"/>
+        <FrameLayout android:id="@+id/batch_select_bar" android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/batch_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/batch_action_bar">
+            <TextView android:textSize="13sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="150dp" android:text="@string/feedback_no_history" android:drawableTop="@drawable/empty_page"/>
+            <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshListView android:scrollbarStyle="insideOverlay" android:id="@+id/pull_down_lv_feedback_history" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+            <ProgressBar android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" style="@style/Widget.ProgressBar"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

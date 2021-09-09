@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_has_back="true" app:tb_title="@string/city_select_title"/>
+    <TextView android:gravity="center_vertical" android:id="@+id/current_city" android:background="@color/mj_color_white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/city_select_current_city"/>
+    <ListView android:id="@+id/listview" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@drawable/bg_list_selector" android:divider="@drawable/list_divider_15dp" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <RelativeLayout android:id="@+id/checking_update_layer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/update_circle_loading_progress" style="@style/mj_page_circle_loading_progress"/>
+            <TextView android:textSize="@dimen/font_size_4" android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="30dp" android:text="@string/update_checking"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/has_update_layer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <ListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:layout_above="@+id/footer"/>
+        <RelativeLayout android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13sp" android:textStyle="bold" android:gravity="center" android:id="@+id/update_all" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/update_all" android:layout_centerInParent="true" style="@style/ConfirmNormalBtn"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/none_update_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/mj_update_firmware_auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_lighter" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="80dp" android:text="@string/update_all_latest"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp">
+    <View android:id="@+id/left_view" android:visibility="gone" android:layout_width="15dp" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="90dp" android:layout_height="match_parent">
+        <ImageView android:id="@+id/product_image" android:layout_width="85dp" android:layout_height="85dp" android:scaleType="fitXY"/>
+        <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="13sp" android:textColor="#ff2e2323" android:gravity="center_horizontal" android:id="@+id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:maxLines="2"/>
+    </LinearLayout>
+    <com.xiaomi.shopviews.widget.customfont.CustomTextView android:textSize="16dp" android:gravity="center" android:id="@+id/tv_more" android:visibility="gone" android:layout_width="80dp" android:layout_height="match_parent" android:text="More &gt;"/>
+</LinearLayout>

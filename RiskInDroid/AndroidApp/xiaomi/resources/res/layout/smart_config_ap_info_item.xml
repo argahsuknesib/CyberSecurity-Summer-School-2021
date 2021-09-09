@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/moxiang_button_not_choose_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="70dp" android:layout_margin="10dp" android:minHeight="70dp">
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@+id/tv_camera_ap_info" android:layout_width="270dp" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="@dimen/size_12dp"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_camera_ap_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/nfc_write_success" android:scaleType="center" android:scaleX="0.5" android:scaleY="0.5"/>
+</LinearLayout>

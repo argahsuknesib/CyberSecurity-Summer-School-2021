@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="62dp" style="@style/App.Widget.ListView.Item">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp">
+        <TextView android:id="@+id/music_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/App.Widget.ListView.Item.Title"/>
+        <TextView android:id="@+id/music_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" style="@style/App.Widget.ListView.Item.Description"/>
+    </LinearLayout>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_alignParentBottom="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+</RelativeLayout>

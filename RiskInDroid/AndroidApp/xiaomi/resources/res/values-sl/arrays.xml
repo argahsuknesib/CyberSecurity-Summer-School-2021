@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_user_gender_name">
+        <item>Moški</item>
+        <item>Ženska</item>
+    </array>
+</resources>

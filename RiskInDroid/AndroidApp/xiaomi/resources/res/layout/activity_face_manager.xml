@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar_container" layout="@layout/include_face_select_title_bar"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/recycle_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_select_bottom">
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/tv_face_unmarked" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_unmarked" android:paddingStart="20dp"/>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="22dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_black_40_transparent" android:gravity="center" android:id="@+id/tv_no_unmarked_face" android:paddingTop="25dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/face_no_unmarked"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_unmarked_faces" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="18dp">
+                <FrameLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:layout_gravity="center" android:id="@+id/iv_unmarked_face1" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/icon_face_manager_unknown" android:scaleType="centerCrop" app:riv_corner_radius="200dp"/>
+                </FrameLayout>
+                <FrameLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:layout_gravity="center" android:id="@+id/iv_unmarked_face2" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/icon_face_manager_unknown" android:scaleType="centerCrop" app:riv_corner_radius="200dp"/>
+                </FrameLayout>
+                <FrameLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.xiaomi.smarthome.library.common.widget.RoundedImageView android:layout_gravity="center" android:id="@+id/iv_unmarked_face3" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/icon_face_manager_unknown" android:scaleType="centerCrop" app:riv_corner_radius="200dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/mj_color_gray_heavy" android:layout_gravity="center_horizontal" android:id="@+id/tv_to_more" android:padding="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_unmarked_to_more"/>
+            <View android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_black_80_transparent" android:id="@+id/tv_face_marked" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_marked" android:paddingStart="20dp"/>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="22dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycle_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_select_bottom" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="10sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/select_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="17dp" android:layout_marginRight="10dp" android:layout_marginBottom="17dp" android:text="@string/local_file_delete" android:drawableTop="@drawable/camera_icon_delete"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

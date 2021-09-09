@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_13" android:gravity="center" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/cardless_emi_agreement_title"/>
+    <View android:layout_width="match_parent" style="@style/Divide_shadow_bottom"/>
+    <ScrollView android:id="@+id/sv_group" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.mi.global.shop.widget.CustomTextView android:textSize="16dp" android:textColor="@color/common_second_title_color" android:layout_gravity="center_horizontal" android:id="@+id/tv_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:layout_centerHorizontal="true" android:lineSpacingExtra="4dp"/>
+            <View android:layout_width="match_parent" style="@style/Divide_shadow_bottom"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="95dp">
+                <TextView android:textSize="12sp" android:textColor="#c9c9c9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/cardless_emi_powered_by" android:drawableRight="@drawable/shop_zestmoney" android:drawablePadding="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_width="match_parent" style="@style/Divide_shadow_bottom"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="70dp">
+        <com.mi.global.shop.widget.CustomButtonView android:textSize="12sp" android:textColor="@color/orange_red" android:gravity="center" android:id="@+id/btn_change_plan" android:background="@drawable/shop_cardless_plan_select_item_bg" android:layout_width="160dp" android:layout_height="40dp" android:text="@string/cardless_emi_otp_cancel"/>
+        <com.mi.global.shop.widget.CustomButtonView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_agree_continue" android:background="@color/orange_red" android:layout_width="160dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:text="@string/cardless_emi_agree_continue"/>
+    </LinearLayout>
+</LinearLayout>

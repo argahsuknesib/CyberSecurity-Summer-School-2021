@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/parentPanel" android:background="@drawable/dialog_main_connect_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="25dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/topPanel" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="27dp" android:paddingEnd="27dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/icon" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:importantForAccessibility="no" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center" android:id="@+id/alertTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/title_divider_line_bottom" android:background="@color/mj_color_black_00_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="21dp" android:layout_marginTop="32dp" android:layout_marginRight="21dp" android:layout_marginBottom="27dp" android:layoutDirection="ltr">
+        <TextView android:textSize="16sp" android:textColor="@color/mj_color_gray_heavy" android:gravity="center" android:id="@+id/button2" android:background="@drawable/mj_bg_23_f5f5f5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+        <TextView android:textSize="@dimen/std_dialog_button_font_size" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/button3" android:background="@drawable/mj_bg_23_f5f5f5" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+        <TextView android:textSize="@dimen/std_dialog_button_font_size" android:textColor="@color/mj_color_green_normal" android:gravity="center" android:id="@+id/button1" android:background="@drawable/mj_bg_23_f5f5f5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

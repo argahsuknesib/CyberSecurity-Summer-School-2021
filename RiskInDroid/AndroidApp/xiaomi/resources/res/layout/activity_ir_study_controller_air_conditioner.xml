@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_more"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ir_font_size_huge" android:textColor="@color/mj_color_gray_heavy" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ir_controller_study_air_conditioner_hint"/>
+            <TextView android:textSize="@dimen/ir_font_size_normal" android:textColor="@color/mj_color_gray_light" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ir_controller_bottom_padding" android:text="@string/ir_controller_study_air_conditioner_hint_details"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ir_common_padding" android:paddingRight="@dimen/ir_common_padding" android:paddingBottom="@dimen/ir_common_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/ir_font_size_normal" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/ir_report" android:background="@drawable/common_btn_left" android:layout_width="0dp" android:layout_height="@dimen/ir_controller_common_button_height" android:text="@string/ir_report" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        <Button android:textSize="@dimen/ir_font_size_normal" android:textColor="@color/mj_color_gray_heavy" android:id="@+id/ir_go_matching" android:background="@drawable/common_btn_right" android:layout_width="0dp" android:layout_height="@dimen/ir_controller_common_button_height" android:text="@string/ir_go_matching" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

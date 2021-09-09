@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/camera_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_timelapse_title_bar_transparent_black"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_bottom" android:layout_below="@+id/title_bar">
+        <FrameLayout android:id="@+id/video_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/pause_view" android:background="@drawable/camera_icon_pause_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/rl_bottom" android:background="@color/camera_black_1b1b1b" android:layout_width="match_parent" android:layout_height="170dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15sp" android:textColor="@color/camera_white" android:id="@+id/tv_timelapse_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/timelapse_start" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_mode" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.xiaomi.smarthome.camera.view.MultiStateTextView android:textSize="12sp" android:textColor="@color/camera_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_shooting_mode" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/timelapse_shoot_one_hour" android:drawableTop="@drawable/icon_timelapse_shoot_interval" android:drawablePadding="5dp" android:layout_weight="1"/>
+                <ImageView android:id="@+id/iv_shoot_start" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_timelapse_shoot_start" android:layout_weight="1"/>
+                <com.xiaomi.smarthome.camera.view.MultiStateTextView android:textSize="12sp" android:textColor="@color/camera_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_scheduled_shoot" android:layout_width="0dp" android:layout_height="wrap_content" android:maxWidth="45dp" android:text="@string/timelapse_scheduled_shooting" android:drawableTop="@drawable/icon_timelapse_scheduled_shoot" android:drawablePadding="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/mj_color_white" android:id="@+id/tv_mode_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42dp" android:text="@string/timelapse_shoot_one_hour_desc" android:layout_below="@+id/ll_mode"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_timelaps_demo" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_bottom" android:layout_below="@+id/title_bar">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_timelaps_demo" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_timelap_demo_loading"/>
+        <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/llFuncPopup" android:background="@drawable/shape_popup_pic_bg" android:padding="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp">
+            <ImageView android:id="@+id/ivShotPic" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

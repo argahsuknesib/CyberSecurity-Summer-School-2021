@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="57dp">
+    <ImageView android:id="@+id/icon_image" android:background="@drawable/icon_qq_music_source" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="13dp"/>
+    <ImageView android:id="@+id/ckecked_state" android:padding="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mj_webp_widget_checkbox_pres" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="13dp" android:layout_alignParentEnd="true"/>
+    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_qq" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="13dp" android:layout_toEndOf="@+id/icon_image"/>
+    <View android:id="@+id/divider_line" android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentBottom="true" android:layout_marginStart="13dp"/>
+</RelativeLayout>

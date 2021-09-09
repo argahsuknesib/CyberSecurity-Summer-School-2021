@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="33.67dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_marginBottom="16dp" android:text="本机号码一键登录" style="@style/Passport.HighlightRoundButton"/>
+        <Button android:enabled="false" android:layout_marginBottom="16dp" android:text="本机号码一键登录" style="@style/Passport.HighlightRoundButton"/>
+        <Button android:layout_marginBottom="16dp" android:text="登录其他小米帐号" style="@style/Passport.CommonRoundButton"/>
+        <Button android:enabled="false" android:layout_marginBottom="16dp" android:text="登录其他小米帐号" style="@style/Passport.CommonRoundButton"/>
+        <Button android:layout_marginBottom="16dp" android:text="注册" style="@style/Passport.TinyHighlightRoundButton"/>
+        <Button android:enabled="false" android:layout_marginBottom="16dp" android:text="登录" style="@style/Passport.TinyHighlightRoundButton"/>
+        <TextView android:layout_marginBottom="16dp" android:text="中国大陆" style="@style/Passport.HighlightText"/>
+        <TextView android:layout_marginBottom="16dp" android:text="本机号码一键登录注册" style="@style/Passport.ContentTitleText"/>
+        <TextView android:layout_marginBottom="16dp" android:text="150****6135" style="@style/Passport.PhoneNumberCardBigMainText"/>
+        <include layout="@layout/passport_layout_phone_account_card_small"/>
+        <include layout="@layout/passport_layout_account_login_page_header"/>
+        <include layout="@layout/passport_fragment_phone_account"/>
+        <include layout="@layout/passport_layout_account_login_page_footer"/>
+    </LinearLayout>
+</ScrollView>

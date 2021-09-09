@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44dp">
+    <RelativeLayout android:id="@+id/header_view_offline_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/room_no_device_icon" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center" android:id="@+id/no_login_tv" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/room_no_device_tips" android:includeFontPadding="false" android:drawablePadding="10dp" android:layout_below="@+id/iv_empty_image" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>

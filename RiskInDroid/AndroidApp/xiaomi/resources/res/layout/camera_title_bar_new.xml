@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="52dp">
+    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title_bar_return" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mj_tittlebar_main_device_back_normal" android:scaleType="center"/>
+    <TextView android:textSize="16dp" android:textColor="@color/mj_color_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:maxLines="1" style="@style/std_word_001"/>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/title_bar_share" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="56dp" android:src="@drawable/camera_tittlebar_share" android:scaleType="center"/>
+</FrameLayout>

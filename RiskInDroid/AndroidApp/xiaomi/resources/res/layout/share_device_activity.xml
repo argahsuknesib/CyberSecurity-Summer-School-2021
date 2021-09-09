@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_common"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_delete_bar" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_wx" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="60dp" android:layoutDirection="ltr">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:src="@drawable/share_icon_weixin" android:importantForAccessibility="no" android:layout_marginStart="24dp"/>
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="67dp" android:text="@string/share_to_wx_friend" android:maxLines="1" android:layout_marginStart="14dp" android:layout_marginEnd="67dp"/>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_marginStart="24dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_friend" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="60dp" android:layoutDirection="ltr">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:src="@drawable/share_icon_xiaomi" android:importantForAccessibility="no" android:layout_marginStart="24dp"/>
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="67dp" android:text="@string/share_to_mi_account" android:maxLines="1" android:layout_marginStart="14dp" android:layout_marginEnd="67dp"/>
+            </LinearLayout>
+            <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_family" android:background="@drawable/selector_list_item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layoutDirection="ltr">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:src="@drawable/share_icon_family" android:importantForAccessibility="no" android:layout_marginStart="24dp"/>
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_gray_heavier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="67dp" android:text="@string/share_to_family" android:maxLines="1" android:layout_marginStart="14dp" android:layout_marginEnd="67dp"/>
+            </LinearLayout>
+            <View android:background="@color/mj_color_background" android:layout_width="wrap_content" android:layout_height="8dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/last_title" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="32dp">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_lighter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/share_last" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="24dp"/>
+                <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_alignParentBottom="true"/>
+            </com.xiaomi.smarthome.library.common.widget.ListItemView>
+            <LinearLayout android:orientation="vertical" android:id="@+id/last_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/fragment_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar"/>
+    <RelativeLayout android:id="@+id/bottom_delete_bar" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="93dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black" android:gravity="center" android:id="@+id/delete_msg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/delete" android:drawableTop="@drawable/delete_button" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/mj_module_a_3_title_bar_return"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_common"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <RelativeLayout android:id="@+id/rl_timer_list_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout android:layout_gravity="center" android:id="@+id/pull_down_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" app:ptr_duration_to_close="300" app:ptr_duration_to_close_header="500" app:ptr_keep_header_when_refresh="true" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.2" app:ptr_resistance="1.7">
+                <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+                <com.xiaomi.smarthome.library.common.widget.SM1LayerRecycleView android:scrollbarThumbVertical="@drawable/list_view_scroll_bar" android:scrollbarStyle="insideOverlay" android:id="@+id/device_grid_view" android:paddingBottom="90dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:fastScrollEnabled="false"/>
+            </com.xiaomi.smarthome.library.common.widget.DevicePtrFrameLayout>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/add_timer_id" android:layout_width="66dp" android:layout_height="66dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:src="@drawable/mj_webp_widget_add_nor" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/plug_timer_add" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/bottom_delete_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/mj_color_black_60_transparent" android:gravity="center" android:id="@+id/delete_msg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/plug_timer_delete" android:drawableTop="@drawable/delete_button" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

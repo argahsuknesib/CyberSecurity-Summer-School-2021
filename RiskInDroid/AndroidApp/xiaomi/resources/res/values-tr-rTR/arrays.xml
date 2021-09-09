@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ble_guide_content_description">
+        <item>İlk sayfa</item>
+        <item>İkinci sayfa</item>
+        <item>Üçüncü sayfa</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Oca</item>
+        <item>Şub</item>
+        <item>Mar</item>
+        <item>Nis</item>
+        <item>May</item>
+        <item>Haz</item>
+        <item>Tem</item>
+        <item>Ağu</item>
+        <item>Eyl</item>
+        <item>Eki</item>
+        <item>Kas</item>
+        <item>Ara</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Eş</item>
+        <item>Baba</item>
+        <item>Anne</item>
+        <item>Erkek çocuk</item>
+        <item>Kız çocuk</item>
+        <item>Oda arkadaşı</item>
+        <item>Diğer</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Sıcaklık </item>
+        <item>Nemlilik </item>
+        <item>HKİ </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Sıcaklık</item>
+        <item>Nemlilik</item>
+        <item>HKİ (PM2.5)</item>
+    </array>
+    <array name="month">
+        <item>Oca</item>
+        <item>Şub</item>
+        <item>Mar</item>
+        <item>Nis</item>
+        <item>May</item>
+        <item>Haz</item>
+        <item>Tem</item>
+        <item>Ağu</item>
+        <item>Eyl</item>
+        <item>Eki</item>
+        <item>Kas</item>
+        <item>Ara</item>
+    </array>
+    <array name="recommend_room_name">
+        <item>Oturma odası</item>
+        <item>Yatak odası</item>
+        <item>Ebeveyn yatak odası</item>
+        <item>Mutfak</item>
+        <item>Yemek odası</item>
+        <item>Banyo</item>
+        <item>Çocuk odası</item>
+        <item>Ofis</item>
+        <item>Çalışma odası</item>
+        <item>Balkon</item>
+        <item>Stüdyo</item>
+        <item>Banyo</item>
+        <item>Arka bahçe</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Pekin</item>
+        <item>Seul</item>
+        <item>Tokyo</item>
+        <item>New York</item>
+        <item>Denver</item>
+        <item>Kosta Rika</item>
+        <item>Şikago</item>
+        <item>Mexico City</item>
+        <item>Regina</item>
+        <item>Majuro</item>
+        <item>Midway</item>
+        <item>Honolulu</item>
+        <item>Anchorage</item>
+        <item>Los Angeles</item>
+        <item>Tijuana</item>
+        <item>Phoenix</item>
+        <item>Chihuahua</item>
+        <item>Bogota</item>
+        <item>New York</item>
+        <item>Caracas</item>
+        <item>Barbados</item>
+        <item>Manaus</item>
+        <item>Santiago</item>
+        <item>St. John&apos;s</item>
+        <item>Sao Paulo</item>
+        <item>Buenos Aires</item>
+        <item>Nuuk</item>
+        <item>Montevideo</item>
+        <item>Güney Georgia</item>
+        <item>Azorlar</item>
+        <item>Cape Verde</item>
+        <item>Kazablanka</item>
+        <item>Londra</item>
+        <item>Amsterdam</item>
+        <item>Belgrad</item>
+        <item>Brüksel</item>
+        <item>Saraybosna</item>
+        <item>Windhoek</item>
+        <item>Brazzaville</item>
+        <item>Amman</item>
+        <item>Atina</item>
+        <item>Beyrut</item>
+        <item>Kahire</item>
+        <item>Helsinki</item>
+        <item>Kudüs</item>
+        <item>Minsk</item>
+        <item>Harare</item>
+        <item>Bağdat</item>
+        <item>Moskova</item>
+        <item>Kuveyt</item>
+        <item>Nairobi</item>
+        <item>Tahran</item>
+        <item>Bakü</item>
+        <item>Tiflis</item>
+        <item>Erivan</item>
+        <item>Dubai</item>
+        <item>Kabil</item>
+        <item>Karaçi</item>
+        <item>Oral</item>
+        <item>Yekaterinburg</item>
+        <item>Kalküta</item>
+        <item>Kolombo</item>
+        <item>Katmandu</item>
+        <item>Almatı</item>
+        <item>Rangoon</item>
+        <item>Krasnoyarsk</item>
+        <item>Bangkok</item>
+        <item>İrkutsk</item>
+        <item>Kuala Lumpur</item>
+        <item>Perth</item>
+        <item>Yakutsk</item>
+        <item>Adelaide</item>
+        <item>Darwin</item>
+        <item>Brisbane</item>
+        <item>Hobart</item>
+        <item>Sidney</item>
+        <item>Vladivostok</item>
+        <item>Guam</item>
+        <item>Magadan</item>
+        <item>Auckland</item>
+        <item>Fiji</item>
+        <item>Tongatapu</item>
+    </array>
+    <array name="weekday">
+        <item>Pazar</item>
+        <item>Pazartesi</item>
+        <item>Salı</item>
+        <item>çarşamba</item>
+        <item>Perşembe</item>
+        <item>Cuma</item>
+        <item>Cumartesi</item>
+    </array>
+    <array name="weekday_long_time">
+        <item>Pzt</item>
+        <item>Sal</item>
+        <item>Çar</item>
+        <item>Per</item>
+        <item>Cum</item>
+        <item>Cmt</item>
+        <item>Paz</item>
+    </array>
+    <array name="weekday_short">
+        <item>Paz</item>
+        <item>Pzt</item>
+        <item>Sal</item>
+        <item>Çar</item>
+        <item>Per</item>
+        <item>Cum</item>
+        <item>Cmt</item>
+    </array>
+</resources>

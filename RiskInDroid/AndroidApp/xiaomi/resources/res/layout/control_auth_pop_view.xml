@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.newui.widget.topnavi.widgets.CardConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="270dp" android:layout_height="wrap_content" app:max_radius="16dp" app:radius_bg="@color/mj_color_dialog_bg_nor">
+    <LinearLayout android:orientation="vertical" android:layout_width="270dp" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_choose_device" android:paddingLeft="@dimen/std_list_content_margin_left_27" android:paddingRight="@dimen/std_list_content_margin_right_27" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_choose_device" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/voice_control_device_auth_choose_dev_subtitle" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_choose_device_checked" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/mj_home_select_checked"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_choose_home_room" android:paddingLeft="@dimen/std_list_content_margin_left_27" android:paddingRight="@dimen/std_list_content_margin_right_27" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_choose_home_room" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/voice_control_device_auth_choose_home_room_subtitle" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_choose_home_room_checked" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/mj_home_select_checked"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.xiaomi.smarthome.newui.widget.topnavi.widgets.CardConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/device_more_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/device_more" android:background="#f8f8f8" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/wx_share" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weixin" android:contentDescription="@string/smarthome_share_wecaht"/>
+        <ImageView android:id="@+id/friends_share" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pyq" android:contentDescription="@string/smarthome_share_wxcircle"/>
+        <ImageView android:id="@+id/weibo_share" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weibo" android:contentDescription="@string/smarthome_share_sinaweibo"/>
+        <ImageView android:id="@+id/qzone_share" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qzone" android:contentDescription="@string/smarthome_share_qzone"/>
+        <ImageView android:id="@+id/qq_share" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qq" android:contentDescription="@string/smarthome_share_qq"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

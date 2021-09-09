@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/mj_titlebar_height">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/module_a_3_return_btn" android:paddingLeft="@dimen/mj_titlebar_margin_left_right" android:paddingRight="@dimen/mj_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/return_icon_nor_3x" android:scaleType="center" android:contentDescription="@string/action_back"/>
+        <TextView android:textSize="@dimen/mj_title_bar_text_size" android:textColor="@color/mj_color_black_80_transparent" android:layout_gravity="center" android:id="@+id/nothing_heard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_50dp" android:layout_marginRight="@dimen/size_50dp" android:text="@string/mx_jizhan_connect_way"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_size_15sp" android:id="@+id/txt_tips" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/mx_next_step_after_choose_jizhan" android:layout_below="@+id/title_bar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rbtn_wire_connection" android:background="@drawable/moxiang_button_not_choose_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/txt_tips">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="#ff000000" android:id="@+id/tv_wire_title" android:layout_width="match_parent" android:layout_height="22dp" android:text="@string/mx_wire_way"/>
+            <TextView android:textSize="13dp" android:textColor="#ff999999" android:id="@+id/tv_wire_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mx_wire_way_hint"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/image_wire_choose" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="50dp" android:src="@drawable/nfc_write_success" android:scaleType="center" android:scaleX="0.5" android:scaleY="0.5"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rbtn_wireless_connection" android:background="@drawable/moxiang_button_not_choose_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/rbtn_wire_connection">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="#ff000000" android:id="@+id/tv_wireless_title" android:layout_width="match_parent" android:layout_height="22dp" android:text="@string/mx_wifi_way"/>
+            <TextView android:textSize="13dp" android:textColor="#ff999999" android:id="@+id/tv_wireless_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mx_wifi_way_hint"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/image_wireless_choose" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="50dp" android:src="@drawable/nfc_write_success" android:scaleType="center" android:scaleX="0.5" android:scaleY="0.5"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_size_12sp" android:textColor="@color/btn_blue_color" android:gravity="center" android:id="@+id/heard_qr_scaned" android:background="@drawable/blue_btn_bg" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/next_step" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

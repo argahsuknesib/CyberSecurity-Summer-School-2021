@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.AutoScrollViewPager android:id="@+id/home_gallery_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.mi.global.shop.widget.vpi.LinePageIndicator android:layout_gravity="bottom" android:id="@+id/home_gallery_indicator" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" app:centered="true" app:gapWidth="5dp" app:lineHeight="2dp" app:lineWidth="15dp" app:selectedColor="@color/white" app:unselectedColor="#33ffffff"/>
+</FrameLayout>

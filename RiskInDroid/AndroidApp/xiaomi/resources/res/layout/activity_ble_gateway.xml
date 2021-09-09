@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" layout="@layout/module_a_3_title_bar_return_black"/>
+    <com.xiaomi.smarthome.device.BleGatewayNestedScrollingParent android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/mesh_gateway_guide" android:layout_below="@+id/layout_title_bar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/head" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.smarthome.device.HeightChangeableView android:id="@+id/refresh_wrapper" android:layout_width="match_parent" android:layout_height="0dp"/>
+            <FrameLayout android:id="@+id/head_frame" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/head_view_extend" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/head_image_extend" android:layout_width="92dp" android:layout_height="92dp" android:layout_marginTop="28dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/head_anim_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/ble_gateway_head" android:scaleType="fitXY" android:adjustViewBounds="true" android:importantForAccessibility="no"/>
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_gray_light" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/desc" android:paddingLeft="25dp" android:paddingRight="25dp" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/new_ble_gateway_desc" android:layout_below="@+id/head_anim_image"/>
+                </RelativeLayout>
+                <FrameLayout android:layout_gravity="top" android:id="@+id/head_view_shrink" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/head_image_shrink" android:layout_width="56dp" android:layout_height="56dp" android:scaleType="fitCenter"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild android:orientation="vertical" android:id="@+id/ble_switch_scroll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/ble_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" app:cardBackgroundColor="@color/mj_color_white" app:cardCornerRadius="10dp" app:cardElevation="0dp" app:contentPaddingBottom="12dp" app:contentPaddingLeft="24dp" app:contentPaddingRight="24dp" app:contentPaddingTop="12dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/mj_color_black" android:id="@+id/tv_ble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/ble_mesh_switch_text"/>
+                        <FrameLayout android:id="@+id/view_ble_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/btn_ble_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+                        </FrameLayout>
+                        <TextView android:textColor="@color/mj_color_gray_light" android:id="@+id/tv_ble_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="@string/ble_mesh_switch_content" android:layout_below="@+id/view_ble_switch"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/list_card_view" android:background="@color/mj_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" app:cardCornerRadius="10dp" app:cardElevation="0dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/mj_color_black_00_transparent" android:cacheColorHint="@color/mj_color_black_00_transparent" android:divider="@null" android:layout_below="@+id/ble_switch"/>
+            </androidx.cardview.widget.CardView>
+            <com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild android:orientation="vertical" android:id="@+id/empty_view_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" app:cardCornerRadius="10dp" app:cardElevation="0dp">
+                    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ble_gateway_white_empty_view"/>
+                </androidx.cardview.widget.CardView>
+            </com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild>
+            <com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild>
+        </LinearLayout>
+    </com.xiaomi.smarthome.device.BleGatewayNestedScrollingParent>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_green_normal" android:id="@+id/mesh_gateway_guide" android:paddingTop="23dp" android:paddingBottom="24dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mesh_gateway_guide" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

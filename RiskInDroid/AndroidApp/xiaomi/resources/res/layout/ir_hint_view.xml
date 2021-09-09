@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_black_00_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.library.common.widget.IRHintBgView android:id="@+id/ir_hint_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_view_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ir_hint_arrow"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ir_container" android:background="@drawable/rounded_pure_white_bg" android:layout_width="match_parent" android:layout_height="396dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <TextView android:textSize="27sp" android:textColor="@color/mj_color_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.2dp" android:text="@string/ir_hint_main_title"/>
+            <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_lighter" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/ir_hint_sub_title"/>
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btn_air_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ir_hint_air_condition"/>
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ir_device_type_air_conditioner_text"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ir_hint_tv"/>
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ir_device_type_tv_text"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btn_tv_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ir_hint_top_box"/>
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/mj_color_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ir_device_type_set_top_box_text"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/bind_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:layout_marginRight="45dp" android:layout_marginBottom="24dp" android:text="@string/ir_hint_btn_text" style="@style/LoginNormalBtn.Dark"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

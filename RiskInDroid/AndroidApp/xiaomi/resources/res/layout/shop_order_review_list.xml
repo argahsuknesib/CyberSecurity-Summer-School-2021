@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_tips" android:background="@drawable/shop_review_banner" android:layout_width="match_parent" android:layout_height="66dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/review_recycleView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_none_review" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70dp">
+        <ImageView android:layout_gravity="center" android:layout_width="80dp" android:layout_height="116dp" android:src="@drawable/shop_mitu" android:scaleType="fitXY"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_dp_14" android:textColor="@color/common_content_color" android:gravity="center" android:id="@+id/tv_none_review" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/order_review_none"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/loading" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.mi.global.shop.widget.EmptyLoadingViewPlus android:gravity="center" android:layout_gravity="bottom" android:id="@+id/empty_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

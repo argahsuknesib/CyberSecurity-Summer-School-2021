@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.library.common.widget.SettingsItemView android:id="@+id/ir_device_item" android:background="@drawable/common_menu_list_bg" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/setting_height_item" item:item_type="1"/>
+</LinearLayout>

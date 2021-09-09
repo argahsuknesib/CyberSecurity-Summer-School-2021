@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.mico.music.player.lrc.EdgeTransparentView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="45dp" android:paddingBottom="49dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.music.player.lrc.LrcViewImpl1 android:id="@+id/player_lrc_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <me.wcy.lrcview.LrcView android:id="@+id/lrc_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:lrcAnimationDuration="600" app:lrcCurrentTextColor="@color/mj_color_green_normal" app:lrcDividerHeight="24dp" app:lrcLabel="找不到歌词(@_@)" app:lrcNormalTextColor="@color/mj_color_gray_lighter" app:lrcPadding="40dp" app:lrcTextSize="16sp" app:lrcTimeTextColor="#bdbdbd" app:lrcTimelineColor="#80bdbdbd" app:lrcTimelineTextColor="@color/mj_color_gray_lighter"/>
+</com.xiaomi.mico.music.player.lrc.EdgeTransparentView>

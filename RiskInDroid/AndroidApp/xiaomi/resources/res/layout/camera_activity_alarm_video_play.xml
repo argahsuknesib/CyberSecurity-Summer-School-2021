@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_transparent_white"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/bottom_tools_container" android:layout_width="match_parent" android:layout_height="@dimen/camera_bottom_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="11sp" android:textColor="#9a9a9a" android:gravity="center" android:id="@+id/local_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_bottom_item_margin" android:layout_marginRight="@dimen/camera_bottom_item_margin" android:text="@string/save" android:drawableTop="@drawable/camera_icon_save_3" android:drawablePadding="5dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="11sp" android:textColor="#9a9a9a" android:gravity="center" android:id="@+id/local_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_bottom_item_margin" android:layout_marginRight="@dimen/camera_bottom_item_margin" android:text="@string/local_file_share" android:drawableTop="@drawable/camera_video_share" android:drawablePadding="5dp" android:layout_toLeftOf="@+id/local_save"/>
+        <TextView android:textSize="11sp" android:textColor="#9a9a9a" android:gravity="center" android:id="@+id/local_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_bottom_item_margin" android:layout_marginRight="@dimen/camera_bottom_item_margin" android:text="@string/local_file_delete" android:drawableTop="@drawable/camera_icon_delete3" android:drawablePadding="5dp" android:layout_toRightOf="@+id/local_save"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/video_frame" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_tools_container" android:layout_below="@+id/title_bar">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/toast_container_center" android:background="@drawable/camera_speak_shape" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp">
+            <ImageView android:id="@+id/toast_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/toast_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/top_tools_container" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <ImageView android:id="@+id/flip" android:layout_width="@dimen/top_tools_item_width" android:layout_height="wrap_content" android:src="@drawable/camera_icon_flip"/>
+                <ImageView android:id="@+id/full_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_fullscreen2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/progress_bar_container" android:background="@color/mj_color_black_80_transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/time_line_height">
+            <CheckBox android:id="@+id/cbTogglePlay" android:background="@null" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/camera_icon_pause02"/>
+            <TextView android:textSize="12dp" android:textColor="#8d8b8c" android:gravity="center" android:id="@+id/progress_playtime" android:layout_width="32dp" android:layout_height="wrap_content" android:maxLines="1"/>
+            <SeekBar android:id="@+id/progress_bar" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/camera_local_video_progress" android:thumb="@drawable/camera_seekbar_button_nor" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="#8d8b8c" android:gravity="center" android:id="@+id/progress_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <ImageView android:id="@+id/video_mute" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_alarm_icon_unmute"/>
+            <ImageView android:id="@+id/ivFullScreen" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_fullscreen2"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/mj_color_btn_green_text_nor" android:gravity="center" android:id="@+id/create_button" android:layout_width="match_parent" android:layout_margin="27dp" android:text="@string/device_light_group_create" android:layout_alignParentBottom="true" style="@style/ConfirmNormalGreenBtn"/>
+    <include android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/create_button" android:layout_below="@+id/title_bar" layout="@layout/activity_light_group_setting_v2_content"/>
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+</RelativeLayout>

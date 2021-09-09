@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@android:color/white" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/cover" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="15dp" android:layout_centerVertical="true" fresco:actualImageScaleType="5" fresco:failureImage="@drawable/shop_default_pic_small_inverse" fresco:placeholderImage="@drawable/shop_default_pic_small_inverse"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/indicator" android:layout_toRightOf="@+id/cover" android:layout_centerVertical="true">
+        <com.mi.global.shop.widget.CustomTextView android:textSize="16sp" android:textColor="#424242" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="16sp" android:textColor="#424242" android:ellipsize="end" android:id="@+id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/name"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:src="@drawable/shop_default_check" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

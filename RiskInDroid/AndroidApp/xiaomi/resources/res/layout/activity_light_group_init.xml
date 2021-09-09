@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/tv_all_retry" android:background="@drawable/dialog_btn_left_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/all_retry" android:layout_weight="1"/>
+        <TextView android:textColor="@color/mj_color_gray_heavier" android:gravity="center" android:id="@+id/tv_jump_over" android:background="@drawable/dialog_btn_right_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/jump_over" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

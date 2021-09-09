@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="0dp" app:cardCornerRadius="16dp" app:cardElevation="0dp" app:layout_constraintDimensionRatio="h,3:1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.smarthome.operation.view.OperationImageView android:id="@+id/banner_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/close" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="7dp" android:src="@drawable/mj_webp_widget_cancel_nor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <com.xiaomi.smarthome.newui.mainpage.EditMaskView android:id="@+id/edit_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:max_radius="16dp" app:prefer_sketch_style_radius="false"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

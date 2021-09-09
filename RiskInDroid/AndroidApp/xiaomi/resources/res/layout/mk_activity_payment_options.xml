@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mk_header"/>
+    <ScrollView android:background="@color/mk_uic_bg" android:scrollbars="none" android:fillViewport="true" android:layout_weight="1" style="@style/body_new">
+        <LinearLayout android:orientation="vertical" android:id="@+id/new_po_container" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

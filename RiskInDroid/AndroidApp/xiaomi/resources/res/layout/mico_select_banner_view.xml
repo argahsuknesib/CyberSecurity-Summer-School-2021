@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.RatioBanner android:id="@+id/mico_select_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_marginStart="11dp" android:layout_marginEnd="11dp" app:delay_time="3000" app:image_scale_type="6" app:indicator_drawable_selected="@drawable/icon_rectangle_highlight" app:indicator_drawable_unselected="@drawable/icon_rectangle_normal" app:indicator_height="2dp" app:indicator_margin="2dp" app:indicator_width="12dp" app:is_auto_play="true" app:mc_ratio="1.833" app:scroll_time="1000"/>
+</RelativeLayout>

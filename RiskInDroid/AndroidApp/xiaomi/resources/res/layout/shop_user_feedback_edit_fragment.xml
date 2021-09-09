@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mi.global.shop.widget.CustomEditTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:textColorHint="@color/common_content_color" android:gravity="top" android:id="@+id/feedback_content" android:background="@color/white" android:padding="15dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="200dp" android:hint="@string/feedback_content_hint" android:lineSpacingExtra="4dp"/>
+    <include layout="@layout/shop_top_shadow_divider"/>
+    <com.mi.global.shop.widget.CustomEditTextView android:textSize="14dp" android:textColor="@color/common_second_title_color" android:textColorHint="@color/common_content_color" android:gravity="center_vertical" android:id="@+id/feedback_info" android:background="@color/white" android:padding="15dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/feedback_contact_hint"/>
+    <include layout="@layout/shop_top_shadow_divider"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mi.global.shop.widget.CommonButton android:id="@+id/btn_submit" android:layout_width="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="@string/user_feedback_submit" style="@style/ProductDetailGotoCartButton"/>
+    </LinearLayout>
+</LinearLayout>

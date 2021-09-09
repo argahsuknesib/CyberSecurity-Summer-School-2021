@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/passport_account_login_padding_vertical" android:paddingBottom="77dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/passport_account_login_padding_horizontal" android:paddingEnd="@dimen/passport_account_login_padding_horizontal">
+    <TextView android:textColor="@color/passport_link_text" android:gravity="center" android:id="@+id/query_skip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/skip_query_account" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/query_skip">
+        <TextView android:gravity="center" android:id="@+id/tv_loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passport_account_login_margin_normal" android:text="@string/doing_query_account" android:layout_centerInParent="true"/>
+        <ProgressBar android:id="@+id/pb_loading" android:layout_above="@+id/tv_loading" android:layout_centerHorizontal="true" style="@style/Passport.ProgressBar"/>
+    </RelativeLayout>
+</RelativeLayout>

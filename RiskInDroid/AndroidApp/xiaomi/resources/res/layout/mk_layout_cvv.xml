@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_cvv_block" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+    <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter secure code"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="bottom" android:background="@drawable/textbox_blanck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:drawableLeft="@drawable/mk_ic_cvv"/>
+        <EditText android:id="@+id/editText_cvv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="0dp" android:layout_marginLeft="4dp" android:hint="CVV" android:ems="10" android:maxLength="4" android:layout_weight="1" android:inputType="numberPassword" style="@style/wallet_textbox"/>
+    </LinearLayout>
+    <Button android:id="@+id/button_savedcard_pay" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="Pay Now" style="@style/new_button"/>
+</LinearLayout>

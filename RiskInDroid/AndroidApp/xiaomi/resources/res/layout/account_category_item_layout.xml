@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/head_container" android:layout_width="match_parent" android:layout_height="34dp">
+    <TextView android:textSize="@dimen/std_list_font_size_group" android:textColor="@color/mj_color_gray_normal" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:paddingLeft="27dp" android:layout_width="match_parent" android:layout_height="34dp" android:text="@string/label_name"/>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

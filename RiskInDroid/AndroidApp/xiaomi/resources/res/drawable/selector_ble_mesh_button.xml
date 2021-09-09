@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/ble_mesh_update_button_press_shape"/>
+    <item android:state_enabled="false" android:drawable="@drawable/ble_mesh_update_button_disable_shape"/>
+    <item android:drawable="@drawable/ble_mesh_update_button_normal_shape"/>
+</selector>

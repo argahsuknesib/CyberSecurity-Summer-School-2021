@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/skill_card_bg" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="61dp">
+    <TextView android:textSize="19sp" android:textColor="@color/mj_color_black" android:id="@+id/plate_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="京 GD0818"/>
+    <TextView android:textSize="@dimen/regular_text_size" android:textColor="@color/mj_color_gray_lighter" android:id="@+id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="小王的二老婆"/>
+</LinearLayout>

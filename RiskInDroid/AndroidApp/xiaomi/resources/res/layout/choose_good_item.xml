@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/good_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="13dp" android:layout_centerVertical="true" android:layout_marginStart="13dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/mj_color_white" android:gravity="center" android:id="@+id/buy_tv" android:background="@drawable/choose_good_buy_bg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="去购买" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="9dp" android:paddingTop="26dp" android:paddingRight="9dp" android:paddingBottom="26dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/buy_tv" android:layout_toRightOf="@+id/good_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_gray_normal" android:ellipsize="end" android:id="@+id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="米家人体传感器" android:maxLines="1"/>
+        <TextView android:textSize="15sp" android:textColor="@color/mj_color_red_normal" android:ellipsize="end" android:id="@+id/device_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="￥79" android:maxLines="1"/>
+    </LinearLayout>
+    <ImageView android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="13dp" android:layout_alignParentBottom="true" android:importantForAccessibility="no" android:layout_marginStart="13dp"/>
+</RelativeLayout>

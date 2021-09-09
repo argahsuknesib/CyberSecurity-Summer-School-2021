@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/confirm_payment_outermargin" android:paddingTop="10dp" android:paddingRight="@dimen/confirm_payment_outermargin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_card_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mi.global.shop.widget.NoScrollListView android:id="@+id/cardListView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="70dp" android:cacheColorHint="#00000000" android:divider="@color/divider_color" android:dividerHeight="2dp"/>
+        <com.mi.global.shop.widget.CustomTextView android:textSize="14dp" android:textColor="@color/common_content_color" android:id="@+id/tv_no_card_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:layout_marginBottom="120dp" android:text="@string/add_new_card_hint" android:layout_centerHorizontal="true"/>
+        <com.mi.global.shop.widget.CustomButtonView android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/btn_add" android:background="@color/orange_red" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="15dp" android:text="@string/add_new_card" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_card" android:background="@color/white" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/shop_buy_confirm_payment_credit_newdetail_add"/>
+        <com.mi.global.shop.widget.CustomButtonView android:textColor="@color/orange_red" android:layout_gravity="bottom" android:id="@+id/btn_back" android:background="@drawable/shop_order_detail_button_orangeborder" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="@dimen/confirm_payment_outermargin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/confirm_payment_outermargin" android:text="@string/back_card_list"/>
+    </LinearLayout>
+</LinearLayout>

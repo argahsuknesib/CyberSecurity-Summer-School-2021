@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.mico.common.widget.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_has_back="true" app:tb_right_button_text="@string/common_save" app:tb_title="@string/traffic_plate_number_edit"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp">
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/mj_color_black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/traffic_plate_number_ev" android:layout_weight="1"/>
+        <com.xiaomi.mico.common.widget.SlidingButton android:id="@+id/switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <View android:layout_marginStart="@dimen/common_item_padding" android:layout_marginEnd="@dimen/common_item_padding" style="@style/App.Divider.Horizontal"/>
+    <com.xiaomi.mico.common.widget.TitleDesAndMore android:id="@+id/number" android:background="@drawable/bg_list_item" android:layout_width="match_parent" android:layout_height="54dp" app:mc_description="@string/setting_not_set" app:mc_showMore="true" app:mc_title="@string/traffic_plate_number_number"/>
+    <View android:layout_marginStart="@dimen/common_item_padding" android:layout_marginEnd="@dimen/common_item_padding" style="@style/App.Divider.Horizontal"/>
+    <com.xiaomi.mico.common.widget.TitleDesAndMore android:id="@+id/name" android:background="@drawable/bg_list_item" android:layout_width="match_parent" android:layout_height="54dp" app:mc_description="@string/setting_not_set" app:mc_showMore="true" app:mc_title="@string/traffic_plate_number_comment"/>
+    <View android:layout_marginStart="@dimen/common_item_padding" android:layout_marginEnd="@dimen/common_item_padding" style="@style/App.Divider.Horizontal"/>
+</LinearLayout>

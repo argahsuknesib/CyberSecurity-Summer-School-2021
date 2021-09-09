@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_rightimage"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/et_container" android:layout_width="match_parent" android:layout_height="@dimen/listitem_6_height">
+        <TextView android:textSize="@dimen/std_list_font_size_title" android:textStyle="bold" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center_vertical" android:id="@+id/room_name_tag" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/std_list_content_margin_left_27" android:text="@string/input_tag_name" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/mj_color_gray_lighter" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/input_tag" android:background="@null" android:paddingLeft="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/input_tag_name_hint" android:singleLine="true" android:layout_weight="1" android:textCursorDrawable="@null" android:paddingStart="15dp"/>
+        <ImageView android:id="@+id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_content_margin_right_27" android:src="@drawable/um_arrow" android:importantForAccessibility="no"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/bg_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/fl_room_bg" android:layout_width="match_parent" android:layout_height="@dimen/listitem_6_height">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textStyle="bold" android:textColor="@color/mj_color_black_100_transparent" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/room_bg_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/std_list_content_margin_left_27" android:text="@string/input_tag_name_bg" android:maxLines="1"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_content_margin_right_27" android:src="@drawable/um_arrow" android:importantForAccessibility="no"/>
+        </FrameLayout>
+        <include layout="@layout/home_room_wallpaper_preview_view"/>
+    </RelativeLayout>
+</LinearLayout>

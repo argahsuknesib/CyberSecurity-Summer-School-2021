@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:paddingTop="@dimen/padding8" android:paddingBottom="@dimen/padding8" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp">
+    <TextView android:textColor="@color/orange_deep" android:id="@+id/tv_viewhelper_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/home_price_style"/>
+    <TextView android:id="@+id/tv_viewhelper_price_qi" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="起" android:maxLines="1" android:layout_toRightOf="@+id/tv_viewhelper_price" android:layout_alignBaseline="@+id/tv_viewhelper_price" style="@style/home_price_qi_style"/>
+    <TextView android:id="@+id/tv_viewhelper_marketprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding4" android:maxLines="1" android:layout_toRightOf="@+id/tv_viewhelper_price_qi" android:layout_alignBaseline="@+id/tv_viewhelper_price" style="@style/home_market_price_style"/>
+</RelativeLayout>

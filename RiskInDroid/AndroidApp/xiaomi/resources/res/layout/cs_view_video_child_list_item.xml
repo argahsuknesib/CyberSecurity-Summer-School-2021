@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlItemContainer" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp">
+    <ImageView android:id="@+id/ivImage" android:background="@color/mj_color_gray_heavier" android:layout_width="match_parent" android:layout_height="64dp" android:layout_margin="2dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/ivPlaying" android:background="@drawable/cs_view_video_selected_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64dp" android:layout_margin="2dp"/>
+    <TextView android:textColor="@color/camera_white" android:gravity="right" android:id="@+id/tvDuration" android:background="@drawable/cs_view_video_item_gradient_bg" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_above="@+id/tvStartTime" android:layout_alignBottom="@+id/ivImage"/>
+    <TextView android:textColor="@color/mj_color_gray_light" android:id="@+id/tvStartTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_below="@+id/ivImage"/>
+    <CheckBox android:id="@+id/cbEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:button="@drawable/cs_icon_delete" android:layout_alignParentRight="true"/>
+</RelativeLayout>

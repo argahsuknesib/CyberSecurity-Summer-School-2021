@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <ImageView android:id="@+id/mj_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading" android:layout_centerInParent="true" android:contentDescription="@string/common_device_loading"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" app:tabBackground="@color/mj_color_white" app:tabGravity="0" app:tabIndicatorColor="@color/mj_color_green_normal" app:tabIndicatorHeight="2dp" app:tabMode="1" app:tabSelectedTextColor="@color/mj_color_green_normal" app:tabTextAppearance="@style/TextAppearanceTabLayout"/>
+    <com.xiaomi.smarthome.scene.view.SceneTabViewPagerWithSwipeEnable android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tab_layout"/>
+    <ViewStub android:id="@+id/title_bar_choose_scene_stub" android:layout="@layout/title_bar_choose_scene" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true"/>
+    <ViewStub android:id="@+id/menu_choose_scene_stub" android:layout="@layout/edit_scene_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

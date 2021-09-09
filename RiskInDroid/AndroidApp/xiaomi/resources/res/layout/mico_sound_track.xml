@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mico_bg_sound_bar" android:paddingLeft="10dp" android:paddingRight="10dp" android:layoutAnimation="@anim/mico_layout_fade_in_out" android:layout_width="match_parent" android:layout_height="70dp" android:animateLayoutChanges="true">
+    <ToggleButton android:id="@+id/mico_sound_indicator" android:background="@drawable/mico_sound_indicator" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:textOn="" android:textOff=""/>
+    <SeekBar android:id="@+id/mico_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1" style="@style/App.Widget.SeekBar.Light"/>
+</LinearLayout>

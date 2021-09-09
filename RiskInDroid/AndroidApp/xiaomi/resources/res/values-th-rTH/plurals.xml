@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="add_action_error">
+        <item quantity="other">เพิ่มการดำเนินการได้สูงสุด %1d รายการ</item>
+    </plurals>
+    <plurals name="air_desc_detail">
+        <item quantity="other">ข้อมูลเฉลี่ยจากอุปกรณ์ใกล้เคียง %s เครื่อง</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">%d วัน</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">%d ชั่วโมง</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">%d นาที</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">%d วินาที</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">เพิ่มอุปกรณ %1$s เครื่องเสร็จเรียบร้อย</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">อุปกรณ์ %1$d เครื่อง</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">อุปกรณ์ %1$d เครื่อง</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">%d กล้องอัจฉริยะ</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">%d นาที</item>
+    </plurals>
+    <plurals name="cs_service_time">
+        <item quantity="other">การใช้งานสะสม: %d วัน</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">ลบข้อความ %1$s ที่เลือกหรือไม่</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">ลบบันทึกที่เลือก %1$s รายการใช่หรือไม่</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">%dอุปกรณ์สมาร์ทใหม่ คลิกการตั้งค่า</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">ยังไม่ได้กำหนดอุปกรณ์ %1$s รายการให้ใช้กับห้อง</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">ลบอุปกรณ์ %1$s ที่เลือกหรือไม่</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_scene">
+        <item quantity="other">นำ%1$d ฉากที่เลือกออกจากรายการโปรดหรือไม่</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">%1$s หมี่</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">ลาก และวางระดับอุปกรณ์ทั้งหมด ยอดนิยม%dอุปกรณ์ที่แสดงในบัตร</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">เลือก %1$d แล้ว</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">เลือก %1$s แล้ว</item>
+    </plurals>
+    <plurals name="edit_choosed_scene">
+        <item quantity="other">ฉากที่เลือก:%1$d</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s ไปยัง</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">อุปกรณ์ที่แชร์ %d เครื่อง</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">แชร์อุปกรณ์แล้ว %d เครื่อง</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">ข้อมูลการติดต่อมีอักขระได้สูงสุด %1$d ตัว</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">คำติชมของคุณมีอักขระได้สูงสุด %1$d ตัว</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">มีอัปเดตเฟิร์มแวร์ %1$s รายการพร้อมใช้งาน</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">อัปเดตเฟิร์มแวร์ %1$s รายการเสร็จสมบูรณ์</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">บริการพื้นที่เก็บข้อมูลแบบคลาวด์จะหมดอายุใน %1$d วัน แตะเพื่อต่ออายุ</item>
+    </plurals>
+    <plurals name="home_count">
+        <item quantity="other">บ้าน %1$s หลัง</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">%1$s อุปกรณ์</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">%1$s ห้องพัก</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">%d รีโมท</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">เชื่อมต่ออุปกรณ์แล้ว %d เครื่อง</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">พบอุปกรณ์อัจฉริยะ %d เครื่อง แตะเพื่อดำเนินการให้เสร็จสิ้น</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">ไฟกลุ่มประกอบด้วยหลอดไฟ %1$s ดวง</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="other">มีอัปเดตพร้อมใช้งานสำหรับปลั๊กอิน %d รายการ</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">%d ชั่วโมง</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">%d นาที</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">มีอุปกรณ์ในบริเวณใกล้เคียง %1$d เครื่องที่สามารถใช้งานได้</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">อุปกรณ์ที่ออนไลน์: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="other">กำลังรอปลั๊กอินอุปกรณ์ %1$s:</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">คุณได้รับข้อความใหม่ %d ข้อความ</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">สวิตช์%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">เพิ่มอุปกรณ์แล้ว %1$d เครื่อง</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_devices_title">
+        <item quantity="one">เราเตอร์ AIoT พบอุปกรณ์ %1$d</item>
+        <item quantity="other">เราเตอร์ AIoT พบอุปกรณ์ %1$d</item>
+    </plurals>
+    <plurals name="push_confirmbind_find_hide_devices_title">
+        <item quantity="one">เราเตอร์ Mi พบอุปกรณ์ %1$d</item>
+        <item quantity="other">เราเตอร์ Mi พบอุปกรณ์ %1$d</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">%1$s ลำโพง Mi Ai</item>
+    </plurals>
+    <plurals name="scene_confirm_delete_plurals">
+        <item quantity="other">ลบ %1$s ฉากอัจฉริยะที่เลือกหรือไม่</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">เปิดภายใน %d d</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">เปิดภายใน %d ชม.</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">เลือก %1$s แล้ว</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">อุปกรณ์ %1$d เครื่อง</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$s และอุปกรณ์อื่นๆ (%2$d เครื่อง)</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">แชร์กับ %1$s และคนอื่นๆ (%2$d คน)</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">%d น. หลังจากนั้น</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">%d ว. หลังจากนั้น</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">ประกอบด้วย %d</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">เลือกแล้ว%d</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">%dกล้อง</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="other">กำลังดาวน์โหลด…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">แต่ละอุปกรณ์มีชื่อเล่นเสียงได้ไม่เกิน %1$s ชื่อ</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">พบ %1$d %2$ss เครื่อง แตะเพื่อเชื่อมต่อ</item>
+    </plurals>
+</resources>

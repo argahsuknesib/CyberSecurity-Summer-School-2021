@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#66000000" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bottom_popup_bg" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="193dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tag_upgrade_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/tag_upgrade_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="@string/mj_uwb_tag_has_upgrade_version"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="28dp">
+            <TextView android:textSize="16sp" android:textColor="#4c4c4c" android:gravity="center" android:id="@+id/upgrade_ignore_btn" android:background="@drawable/popup_btn_bg" android:layout_width="0dp" android:layout_height="46dp" android:text="@string/mj_uwb_ignore" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/upgrade_tag_btn" android:gravity="center" android:id="@+id/upgrade_accept_btn" android:background="@drawable/popup_btn_bg" android:layout_width="0dp" android:layout_height="46dp" android:layout_marginLeft="12dp" android:text="@string/mj_uwb_upgrade_tag_now" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

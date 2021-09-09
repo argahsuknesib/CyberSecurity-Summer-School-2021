@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/recommend_sdv" android:layout_width="match_parent" android:layout_height="140dp" android:layout_marginTop="10dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/mj_color_white" android:id="@+id/recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginTop="17dp" android:maxLines="2"/>
+    <TextView android:textSize="12dp" android:textColor="@color/mj_color_white" android:id="@+id/recommend_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginTop="5dp" android:maxLines="3" android:layout_below="@+id/recommend_title"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_top_light_group_setting_root" android:background="@color/mj_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/bg_light" android:background="@drawable/light_group_icon" android:layout_width="128dp" android:layout_height="128dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/mj_color_gray_heavy" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_light_group_top_1" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/light_group_desc_v2"/>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_light_group_top_2" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="22dp" android:text="@string/light_group_tips"/>
+    <include layout="@layout/layout_light_group_func"/>
+</LinearLayout>

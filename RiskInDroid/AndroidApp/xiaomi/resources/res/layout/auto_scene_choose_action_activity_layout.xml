@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mj_color_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/mj_module_a_3_title_bar_return"/>
+    <in.srain.cube.views.ptr.PtrFrameLayout android:id="@+id/pull_down_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar" cube_ptr:ptr_duration_to_close="300" cube_ptr:ptr_duration_to_close_header="500" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance="1.7">
+        <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/list_view_scroll_bar" android:scrollbarStyle="insideOverlay" android:id="@+id/scene_item_view" android:background="@color/mj_color_white" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@+id/title_bar" android:fastScrollEnabled="false"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+    <RelativeLayout android:id="@+id/no_scene_item_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <ImageView android:id="@+id/main_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:src="@drawable/std_main_icon_empty" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/mj_color_black_80_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="@string/no_scene_tips" android:layout_below="@+id/main_icon" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

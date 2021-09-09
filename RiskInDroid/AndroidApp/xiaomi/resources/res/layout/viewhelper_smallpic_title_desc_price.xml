@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewhelper_small_tcp_rootview" android:paddingLeft="@dimen/padding12" android:paddingTop="@dimen/padding8" android:paddingBottom="@dimen/padding8" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <TextView android:ellipsize="end" android:id="@+id/viewhelper_small_tcp_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/home_title_style"/>
+    <TextView android:ellipsize="end" android:id="@+id/viewhelper_small_tcp_breif" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/viewhelper_small_tcp_title" style="@style/home_brief_style"/>
+    <include android:id="@+id/layout_viewhelper_price" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2dp" android:layout_below="@+id/viewhelper_small_tcp_breif" layout="@layout/layout_price_view"/>
+</RelativeLayout>

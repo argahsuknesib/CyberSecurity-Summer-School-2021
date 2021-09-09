@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:id="@+id/empty_view" android:background="@color/home_empty_title_view" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/phone_list_bg" android:layout_width="match_parent" android:layout_height="110dp" android:scaleType="fitXY"/>
+        <com.mi.global.shop.widget.CustomRecyclerView android:layout_gravity="center_vertical" android:id="@+id/phone_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

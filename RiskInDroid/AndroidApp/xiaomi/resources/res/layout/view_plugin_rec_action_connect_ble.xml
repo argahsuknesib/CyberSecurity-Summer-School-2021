@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12dp" android:textColor="@color/mj_color_gray_lighter" android:gravity="center_vertical" android:id="@+id/connect_tip" android:paddingLeft="@dimen/listitem_2_padding_right" android:paddingTop="10dp" android:paddingRight="@dimen/listitem_2_padding_right" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:text="@string/rec_scene_lock_connect_ble_top"/>
+    <View android:background="@color/mj_color_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+</LinearLayout>

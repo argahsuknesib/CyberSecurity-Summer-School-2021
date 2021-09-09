@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/didi_toolbar" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:gravity="center" android:id="@+id/didi_toolbar_back" android:layout_width="48dp" android:layout_height="48dp" android:text="返回"/>
+        <TextView android:gravity="center" android:id="@+id/didi_toolbar_close" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:text="关闭"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/didi_webview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140dp" android:singleLine="true" android:layout_alignTop="@+id/didi_toolbar" android:layout_alignBottom="@+id/didi_toolbar" android:layout_centerHorizontal="true"/>
+    <WebView android:id="@+id/didi_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/didi_toolbar"/>
+</RelativeLayout>
