@@ -19,32 +19,17 @@ public class dhm extends dhg {
         this.O00000o = new HashMap<>();
     }
 
-    /* JADX DEBUG: Failed to find minimal casts for resolve overloaded methods, cast all args instead
-     method: _m_j.dhr.O000000o(java.lang.Object, int):void
-     arg types: [T, int]
-     candidates:
-      _m_j.dhr.O000000o(byte, int):void
-      _m_j.dhr.O000000o(int, int):void
-      _m_j.dhr.O000000o(long, int):void
-      _m_j.dhr.O000000o(com.tencent.bugly.proguard.k, int):void
-      _m_j.dhr.O000000o(java.lang.String, int):void
-      _m_j.dhr.O000000o(java.util.Collection, int):void
-      _m_j.dhr.O000000o(java.util.Map, int):void
-      _m_j.dhr.O000000o(short, int):void
-      _m_j.dhr.O000000o(boolean, int):void
-      _m_j.dhr.O000000o(byte[], int):void
-      _m_j.dhr.O000000o(java.lang.Object, int):void */
-    public <T> void O000000o(String str, T t) {
+    public <T> void O000000o(String str, Object obj) {
         if (this.O00000o == null) {
-            super.O000000o(str, t);
+            super.O000000o(str, obj);
         } else if (str == null) {
             throw new IllegalArgumentException("put key can not is null");
-        } else if (t == null) {
+        } else if (obj == null) {
             throw new IllegalArgumentException("put value can not is null");
-        } else if (!(t instanceof Set)) {
+        } else if (!(obj instanceof Set)) {
             dhr dhr = new dhr();
             dhr.O00000Oo = this.O00000Oo;
-            dhr.O000000o((Object) t, 0);
+            dhr.O000000o(obj, 0);
             this.O00000o.put(str, dhs.O000000o(dhr.f14645O000000o));
         } else {
             throw new IllegalArgumentException("can not support Set");

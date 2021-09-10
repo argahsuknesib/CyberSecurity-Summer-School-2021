@@ -37,12 +37,12 @@ public abstract class EndpointPair<N> implements Iterable<N> {
         return new Unordered(n2, n);
     }
 
-    static <N> EndpointPair<N> of(Graph<?> graph, N n, N n2) {
-        return graph.isDirected() ? ordered(n, n2) : unordered(n, n2);
+    static <N> EndpointPair<N> of(Graph<?> graph, Object obj, Object obj2) {
+        return graph.isDirected() ? ordered(obj, obj2) : unordered(obj, obj2);
     }
 
-    static <N> EndpointPair<N> of(Network<?, ?> network, N n, N n2) {
-        return network.isDirected() ? ordered(n, n2) : unordered(n, n2);
+    static <N> EndpointPair<N> of(Network<?, ?> network, Object obj, Object obj2) {
+        return network.isDirected() ? ordered(obj, obj2) : unordered(obj, obj2);
     }
 
     public final N nodeU() {

@@ -14,6 +14,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Objects;
 
+/*  JADX ERROR: NullPointerException in pass: ExtractFieldInit
+    java.lang.NullPointerException
+    	at jadx.core.utils.BlockUtils.isAllBlocksEmpty(BlockUtils.java:608)
+    	at jadx.core.dex.visitors.ExtractFieldInit.getConstructorsList(ExtractFieldInit.java:241)
+    	at jadx.core.dex.visitors.ExtractFieldInit.moveCommonFieldsInit(ExtractFieldInit.java:122)
+    	at jadx.core.dex.visitors.ExtractFieldInit.visit(ExtractFieldInit.java:43)
+    */
 public final class Control implements Parcelable {
     public static final Parcelable.Creator<Control> CREATOR = new Parcelable.Creator<Control>() {
         /* class android.service.controls.Control.AnonymousClass1 */
@@ -43,39 +50,77 @@ public final class Control implements Parcelable {
     public @interface Status {
     }
 
-    public final int describeContents() {
-        return 0;
+    /*  JADX ERROR: Method load error
+        jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: java.util.Objects.requireNonNull(java.lang.Object):java.lang.Object in method: android.service.controls.Control.<init>(java.lang.String, int, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, android.app.PendingIntent, android.graphics.drawable.Icon, android.content.res.ColorStateList, int, android.service.controls.templates.ControlTemplate, java.lang.CharSequence):void, dex: classes.dex
+        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
+        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:36)
+        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
+        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
+        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
+        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: java.util.Objects.requireNonNull(java.lang.Object):java.lang.Object
+        	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
+        	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
+        	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
+        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:528)
+        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
+        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
+        	... 5 more
+        */
+    Control(java.lang.String r1, int r2, java.lang.CharSequence r3, java.lang.CharSequence r4, java.lang.CharSequence r5, java.lang.CharSequence r6, android.app.PendingIntent r7, android.graphics.drawable.Icon r8, android.content.res.ColorStateList r9, int r10, android.service.controls.templates.ControlTemplate r11, java.lang.CharSequence r12) {
+        /*
+            r2 = this;
+            r2.<init>()
+            java.util.Objects.requireNonNull(r3)
+            java.util.Objects.requireNonNull(r5)
+            java.util.Objects.requireNonNull(r6)
+            java.util.Objects.requireNonNull(r9)
+            java.util.Objects.requireNonNull(r13)
+            java.util.Objects.requireNonNull(r14)
+            r2.mControlId = r3
+            boolean r3 = android.service.controls.DeviceTypes.validDeviceType(r4)
+            r0 = 0
+            java.lang.String r1 = "Control"
+            if (r3 != 0) goto L_0x0030
+            java.lang.String r3 = java.lang.String.valueOf(r4)
+            java.lang.String r4 = "Invalid device type:"
+            java.lang.String r3 = r4.concat(r3)
+            android.util.Log.e(r1, r3)
+            r2.mDeviceType = r0
+            goto L_0x0032
+        L_0x0030:
+            r2.mDeviceType = r4
+        L_0x0032:
+            r2.mTitle = r5
+            r2.mSubtitle = r6
+            r2.mStructure = r7
+            r2.mZone = r8
+            r2.mAppIntent = r9
+            r2.mCustomColor = r11
+            r2.mCustomIcon = r10
+            if (r12 < 0) goto L_0x0049
+            r3 = 5
+            if (r12 < r3) goto L_0x0046
+            goto L_0x0049
+        L_0x0046:
+            r2.mStatus = r12
+            goto L_0x0058
+        L_0x0049:
+            r2.mStatus = r0
+            java.lang.String r3 = java.lang.String.valueOf(r12)
+            java.lang.String r4 = "Status unknown:"
+            java.lang.String r3 = r4.concat(r3)
+            android.util.Log.e(r1, r3)
+        L_0x0058:
+            r2.mControlTemplate = r13
+            r2.mStatusText = r14
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: android.service.controls.Control.<init>(java.lang.String, int, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, android.app.PendingIntent, android.graphics.drawable.Icon, android.content.res.ColorStateList, int, android.service.controls.templates.ControlTemplate, java.lang.CharSequence):void");
     }
 
-    Control(String str, int i, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, CharSequence charSequence4, PendingIntent pendingIntent, Icon icon, ColorStateList colorStateList, int i2, ControlTemplate controlTemplate, CharSequence charSequence5) {
-        Objects.requireNonNull(str);
-        Objects.requireNonNull(charSequence);
-        Objects.requireNonNull(charSequence2);
-        Objects.requireNonNull(pendingIntent);
-        Objects.requireNonNull(controlTemplate);
-        Objects.requireNonNull(charSequence5);
-        this.mControlId = str;
-        if (!DeviceTypes.validDeviceType(i)) {
-            Log.e("Control", "Invalid device type:".concat(String.valueOf(i)));
-            this.mDeviceType = 0;
-        } else {
-            this.mDeviceType = i;
-        }
-        this.mTitle = charSequence;
-        this.mSubtitle = charSequence2;
-        this.mStructure = charSequence3;
-        this.mZone = charSequence4;
-        this.mAppIntent = pendingIntent;
-        this.mCustomColor = colorStateList;
-        this.mCustomIcon = icon;
-        if (i2 < 0 || i2 >= 5) {
-            this.mStatus = 0;
-            Log.e("Control", "Status unknown:".concat(String.valueOf(i2)));
-        } else {
-            this.mStatus = i2;
-        }
-        this.mControlTemplate = controlTemplate;
-        this.mStatusText = charSequence5;
+    public final int describeContents() {
+        return 0;
     }
 
     Control(Parcel parcel) {

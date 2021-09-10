@@ -149,7 +149,7 @@ public final class dev implements EventDispatcherListener {
         return O0000o;
     }
 
-    public final <T extends dfk> T O000000o(int i, Class<T> cls) {
+    public final <T extends dfk> T O000000o(int i, Class cls) {
         T t = (dfk) this.f14562O000000o.get(i);
         if (t == null) {
             if (cls == dfk.class || cls == dfs.class) {

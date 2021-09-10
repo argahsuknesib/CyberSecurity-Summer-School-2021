@@ -403,143 +403,51 @@ public abstract class fgm {
                     o000000o.f6799O000000o = "POST";
                     o000000o.O00000Oo = "/v2/device/latest_ver";
                     o000000o.O00000o0 = arrayList;
-                    fec.O00000o0().O000000o(o000000o.O000000o(), 
-                    /*  JADX ERROR: Method code generation error
-                        jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x004c: INVOKE  
-                          (wrap: _m_j.fej : 0x0043: INVOKE  (r1v1 _m_j.fej) =  type: STATIC call: _m_j.fec.O00000o0():_m_j.fej)
-                          (wrap: com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest : 0x003a: INVOKE  (r0v2 com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest) = (r3v2 'o000000o' com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest$O000000o) type: VIRTUAL call: com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest.O000000o.O000000o():com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest)
-                          (wrap: _m_j.fgo$26 : 0x0049: CONSTRUCTOR  (r4v4 _m_j.fgo$26) = 
-                          (wrap: _m_j.fgo$25 : 0x0040: CONSTRUCTOR  (r3v3 _m_j.fgo$25) = (r1v0 'str2' java.lang.String) call: _m_j.fgo.25.<init>(java.lang.String):void type: CONSTRUCTOR)
-                          (r2v0 'r2' _m_j.fgm$8$1)
-                         call: _m_j.fgo.26.<init>(_m_j.feq, _m_j.feo):void type: CONSTRUCTOR)
-                         type: INTERFACE call: _m_j.fej.O000000o(com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest, _m_j.fer):void in method: _m_j.fgm.8.run():void, dex: classes7.dex
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
-                        	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
-                        	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
-                        	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-                        	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-                        	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
-                        	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
-                        	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
-                        	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
-                        	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
-                        	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-                        	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-                        	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
-                        	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
-                        	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-                        	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-                        	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-                        	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-                        	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-                        	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-                        	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
-                        	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
-                        	at jadx.core.codegen.InsnGen.inlineAnonymousConstructor(InsnGen.java:678)
-                        	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:608)
-                        	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
-                        	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
-                        	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
-                        	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:790)
-                        	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
-                        	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
-                        	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
-                        	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
-                        	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-                        	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-                        	at jadx.core.codegen.RegionGen.makeRegionIndent(RegionGen.java:99)
-                        	at jadx.core.codegen.RegionGen.makeIf(RegionGen.java:157)
-                        	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:63)
-                        	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-                        	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-                        	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
-                        	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
-                        	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
-                        	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
-                        	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
-                        	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-                        	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-                        	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
-                        	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
-                        	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-                        	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-                        	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-                        	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-                        	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-                        	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-                        	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
-                        	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
-                        	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
-                        	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
-                        	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:81)
-                        	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
-                        	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
-                        	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
-                        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
-                        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-                        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-                        Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0049: CONSTRUCTOR  (r4v4 _m_j.fgo$26) = 
-                          (wrap: _m_j.fgo$25 : 0x0040: CONSTRUCTOR  (r3v3 _m_j.fgo$25) = (r1v0 'str2' java.lang.String) call: _m_j.fgo.25.<init>(java.lang.String):void type: CONSTRUCTOR)
-                          (r2v0 'r2' _m_j.fgm$8$1)
-                         call: _m_j.fgo.26.<init>(_m_j.feq, _m_j.feo):void type: CONSTRUCTOR in method: _m_j.fgm.8.run():void, dex: classes7.dex
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
-                        	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
-                        	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
-                        	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:790)
-                        	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
-                        	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
-                        	... 68 more
-                        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Expected class to be processed at this point, class: _m_j.fgo, state: NOT_LOADED
-                        	at jadx.core.dex.nodes.ClassNode.ensureProcessed(ClassNode.java:270)
-                        	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:607)
-                        	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
-                        	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
-                        	... 74 more
-                        */
-                    /*
-                        this = this;
-                        java.lang.String r0 = r3
-                        java.lang.String r1 = r2
-                        _m_j.fgm$8$1 r2 = new _m_j.fgm$8$1
-                        r2.<init>()
-                        org.json.JSONObject r3 = new org.json.JSONObject
-                        r3.<init>()
-                        java.lang.String r4 = "did"
-                        r3.put(r4, r0)     // Catch:{ JSONException -> 0x0014 }
-                        goto L_0x0018
-                    L_0x0014:
-                        r0 = move-exception
-                        r0.printStackTrace()
-                    L_0x0018:
-                        java.util.ArrayList r0 = new java.util.ArrayList
-                        r0.<init>()
-                        com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleKeyValuePair r4 = new com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleKeyValuePair
-                        java.lang.String r3 = r3.toString()
-                        java.lang.String r5 = "data"
-                        r4.<init>(r5, r3)
-                        r0.add(r4)
-                        com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest$O000000o r3 = new com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest$O000000o
-                        r3.<init>()
-                        java.lang.String r4 = "POST"
-                        r3.f6799O000000o = r4
-                        java.lang.String r4 = "/v2/device/latest_ver"
-                        r3.O00000Oo = r4
-                        r3.O00000o0 = r0
-                        com.xiaomi.smarthome.core.server.internal.bluetooth.blecore.BleNetRequest r0 = r3.O000000o()
-                        _m_j.fgo$25 r3 = new _m_j.fgo$25
-                        r3.<init>(r1)
-                        _m_j.fej r1 = _m_j.fec.O00000o0()
-                        _m_j.fgo$26 r4 = new _m_j.fgo$26
-                        r4.<init>(r3, r2)
-                        r1.O000000o(r0, r4)
-                        return
-                    */
-                    throw new UnsupportedOperationException("Method not decompiled: _m_j.fgm.AnonymousClass8.run():void");
+                    fec.O00000o0().O000000o(o000000o.O000000o(), new fer(new feq<String>(str2) {
+                        /* class _m_j.fgo.AnonymousClass25 */
+
+                        /* renamed from: O000000o */
+                        final /* synthetic */ String f16287O000000o;
+
+                        {
+                            this.f16287O000000o = r1;
+                        }
+
+                        public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
+                            gnk.O00000o0(String.format("Http Response: [%S]", jSONObject));
+                            String jSONObject2 = jSONObject.toString();
+                            if (!TextUtils.isEmpty(jSONObject2) && jSONObject2.contains("version")) {
+                                ffr.O0000o(this.f16287O000000o, jSONObject2);
+                            }
+                            String optString = jSONObject.optString("version");
+                            if (!TextUtils.isEmpty(optString)) {
+                                fap.O000000o.f16027O000000o.O000000o(this.f16287O000000o).O000000o(optString);
+                            }
+                            return optString;
+                        }
+                    }, r2) {
+                        /* class _m_j.fgo.AnonymousClass26 */
+
+                        /* renamed from: O000000o */
+                        final /* synthetic */ feq f16288O000000o;
+                        final /* synthetic */ feo O00000Oo;
+
+                        {
+                            this.f16288O000000o = r1;
+                            this.O00000Oo = r2;
+                        }
+
+                        public final void O000000o(String str) {
+                            fet.O000000o().O000000o(str, this.f16288O000000o, this.O00000Oo);
+                        }
+
+                        public final void O000000o(int i, String str) {
+                            feo feo = this.O00000Oo;
+                            if (feo != null) {
+                                feo.O000000o(new fes(i, str));
+                            }
+                        }
+                    });
                 }
             });
         }

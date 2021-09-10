@@ -83,14 +83,18 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
-
-\author{John Smith} % Your name
-\institute[UCLA] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\title[ARQUS 2021]{Talk on ARQUS : Cyber-Security Summmer School 2021} % The short title appears at the bottom of every slide, the full title is only on the title page
+\titlegraphic{
+    \includegraphics[width=3cm]{images/UJM-logo.png}
+    \hspace{2cm}
+    \includegraphics[width=3cm]{images/Arqus-EU-tris.png}
+}
+\author{Kushagra Singh BISEN} % Your name
+\institute[Universit\'e de Lyon] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-University of California \\ % Your institution for the title page
+Universit\'e de Lyon          \\ % Your institution for the title page
 \medskip
-\textit{john@smith.com} % Your email address
+\textit{kushagra.bisen@etu.univ-st-etienne.fr} % Your email address
 }
 \date{\today} % Date, can be changed to a custom date
 
@@ -110,148 +114,118 @@ University of California \\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
-
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\section{Introduction}
 
 \begin{frame}
-\frametitle{Paragraphs of Text}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
+    \frametitle{Introduction}
+    I am Kushagra Singh BISEN, a MSc student in Cyber-Physical Social Systems student at 
+    Universit\'e de Lyon. I present you my work during the days 6-9 September in the Cyber-Security Summmer
+    School organized by Arqus European University Alliance \cite{p1}.  \newline
+    During the course of 4 days, we were taught different aspects to cyber-security from researchers of different partner universites 
+    and were given quizzes and challenges to assess our understanding of the concepts.
 \end{frame}
 
-%------------------------------------------------
+\section{Challenges}
+\subsection{Security and Privacy in Android}
+\begin{frame}
+    \frametitle{Security and Privacy in Android}
+    Security and Privacy is analyzed using two different softwares,
+    \begin{itemize}
+        \item RiskInDroid
+        \item SPECK
+    \end{itemize}
+The application to be analyzed was 'xiaomi home app'. Xiaomi home apps are famous for asking for too many permissions, evenif they don't need those.
+An example of such could be, the home light application asking permissions to access the contacts, and camera. Such extra permissions can be used to spy/sell the data
+for data mining purposes. This makes us to use softwares to analyze the \textbf{APK} file before 
+installing it to our system.
+\end{frame}
 
 \begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
-\end{frame}
+    \frametitle{RiskInDroid}
+    Dockerfile is used to run the analysis application. The apk file is selected to result in a score out of 100
+    based upon different classifiers. The resulting score value is \textbf{30.34 / 100}.
+    Regarding the permissions, 
+    \begin{itemize}
+        \item Declared Permissions - 58
+        \item Required and Used Permissions - 21
+        \item Required and not Used Permissions - 37
+        \item Not required but used permissions - 4
+    \end{itemize}
 
-%------------------------------------------------
+    Developers can analyze each and every permission, and make decisions or modify the apk for our use.
+\end{frame}
 
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
+    \frametitle{RiskInDroid}
+    \includegraphics[width=\textwidth]{images/xiaomi-riskinDroid.png}
 \end{frame}
-
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
+    \frametitle{SPECK}
+    The application is downloaded from Github and built using gradle. The python script analyzes the code written in the application, to display the quality of code written with respect to 
+    the security of the application. 1719 files were analyzed and code was displayed in 3 classifiers, \textit{INFO, WARNING and CRITICAL}. There are 32 rules which are employed
+    for the analysis, and when you execute they analyze files which depend on the rule. An example of the rule can be, "Store private data within internal storage". Manifest files and main java file are given 
+    % recommendations to change the application's features to improve the security. An example of the recommendation is, "* Don't use SharedPreferences objects to share data
+    % - at line 244  'return context.getSharedPreferences("multidex.version", Build.VERSION.SDK_INT < 11 ? 0 : 4);"
 \end{frame}
 
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
+\subsection{Cyber-Security Challenges}
+\begin{frame}
+    \frametitle{Cyber-Security Challenge}
+    The challenge consists the exploitation of a buffer overflow. Unfortunately, I was not able to solve the challenge. 
+\end{frame}
+
+\subsection{Introduction to UNIX \& Quizzes}
+\begin{frame}
+    \frametitle{UNIX Quizzes}
+    There were various quizzes given related to file management, networking, file editors, I/O management. 
+    I solved the quizzes from section 1 to section 7.
+    Unfortunately, I could not solve the 'init.d' quiz completely, I did solve only 3 of those questions.
+    I could not find the catalog files in my workstation.
+\end{frame}
+
+\subsection{Side Channel Analyis with Deep Learning}
+\begin{frame}
+    \frametitle{Side Channel Analyis with Deep Learning}
+In this section, I was able to understand and learn Simple Power Analyis. I could not understand Differential Power Analyis and further modules to an extent where I could solve questions related to them.
+\end{frame}
+\section{Conclusion}
+\subsection{What I learnt?}
+\begin{frame}
+    \frametitle{What I learnt?}
+At the end of the summer school, I discovered that Cyber Security is much more than hacking a webpage or getting access to a server. Including Physics, Quantum computing to solve cyber Security
+problems as well as employing deep learning for cyber-security was a great insight. I wish to rewatch the recordings which will be shared after the school to better understand the concepts
+to employ later.
+\end{frame}
+\begin{frame}
+    \frametitle{References}
+    \footnotesize{
+    \begin{thebibliography}{99}
+
+    % "Home: Arqus." Arqus European Alliance. Accessed September 09, 2021. https://www.arqus-alliance.eu/
+
+    \bibitem[Home : Arqus]{p1} ARQUS (2021)
+    \newblock \emph{Arqus European Alliance}. Accessed September 09, 2021. https://www.arqus-alliance.eu/
+    
+%    \bibitem[B. R. Barricelli, E. Casiraghi and D. Fogli, 2019]{p2} Barricelli et al. (2019)
+%    \newblock A Survey on Digital Twin: Definitions, Characteristics, Applications, and Design Implications
+%    \newblock \emph{IEEE Access}, vol. 7, pp. 167653-167671, 2019, doi: 10.1109/ACCESS.2019.2953499
+
+%     \bibitem[Koenig, N. and Howard, A.]{p3} Koenig et al. (2004)
+%     \newblock Design and use paradigms for Gazebo, an open-source multi-robot simulator
+%     \newblock \emph{2004 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (IEEE Cat. No.04CH37566)}
+
+    \end{thebibliography}
+    }
+\end{frame}
+
+
 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\Huge{\centerline{The End}}
+{\centerline{Thank you for your attention. Any questions?}}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{images/questions.png}
+\end{center}
 \end{frame}
 
 %----------------------------------------------------------------------------------------

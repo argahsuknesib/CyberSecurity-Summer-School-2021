@@ -1,5 +1,6 @@
 package _m_j;
 
+import android.graphics.Path;
 import android.graphics.PointF;
 import android.graphics.RectF;
 
@@ -22,572 +23,6 @@ public final class izd {
         return (d * 3.141592653589793d) / 4.0d;
     }
 
-    /*  JADX ERROR: Method load error
-        jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: android.graphics.Path.addRect(android.graphics.RectF, android.graphics.Path$Direction):void in method: _m_j.izd.O000000o(android.graphics.Path):android.graphics.Path, dex: classes.dex
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
-        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
-        	at jadx.core.ProcessClass.process(ProcessClass.java:36)
-        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: android.graphics.Path.addRect(android.graphics.RectF, android.graphics.Path$Direction):void
-        	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
-        	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
-        	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
-        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:540)
-        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
-        	... 5 more
-        */
-    public final android.graphics.Path O000000o(android.graphics.Path r1) {
-        /*
-            r14 = this;
-            if (r15 != 0) goto L_0x0007
-            android.graphics.Path r15 = new android.graphics.Path
-            r15.<init>()
-        L_0x0007:
-            r15.reset()
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            r7 = 0
-            r8 = 1
-            if (r0 == 0) goto L_0x0027
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            if (r0 == 0) goto L_0x0027
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            if (r0 == 0) goto L_0x0027
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            if (r0 != 0) goto L_0x0025
-            goto L_0x0027
-        L_0x0025:
-            r0 = 0
-            goto L_0x0028
-        L_0x0027:
-            r0 = 1
-        L_0x0028:
-            r9 = 0
-            if (r0 == 0) goto L_0x003e
-            android.graphics.RectF r0 = new android.graphics.RectF
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            float r1 = r1.f1663O000000o
-            _m_j.izd$O00000Oo r2 = r14.f1661O000000o
-            float r2 = r2.O00000Oo
-            r0.<init>(r9, r9, r1, r2)
-            android.graphics.Path$Direction r1 = android.graphics.Path.Direction.CCW
-            r15.addRect(r0, r1)
-            return r15
-        L_0x003e:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            float r0 = r0.O0000O0o
-            int r0 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
-            if (r0 == 0) goto L_0x0069
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.RectF r0 = r0.f1662O000000o
-            r1 = 4614256656552045848(0x400921fb54442d18, double:3.141592653589793)
-            _m_j.izd$O00000Oo r3 = r14.f1661O000000o
-            _m_j.izd$O000000o r3 = r3.O00000oO
-            double r3 = r3.O00000oo
-            double r3 = r3 + r1
-            double r1 = O000000o(r3)
-            float r1 = (float) r1
-            _m_j.izd$O00000Oo r2 = r14.f1661O000000o
-            _m_j.izd$O000000o r2 = r2.O00000oO
-            float r2 = r2.O0000O0o
-            r15.arcTo(r0, r1, r2)
-            goto L_0x0080
-        L_0x0069:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r7]
-            float r0 = r0.x
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            _m_j.izd$O000000o r1 = r1.O00000oO
-            android.graphics.PointF[] r1 = r1.O0000OOo
-            r1 = r1[r7]
-            float r1 = r1.y
-            r15.moveTo(r0, r1)
-        L_0x0080:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            double r0 = r0.O00000o0
-            r10 = 0
-            r12 = 3
-            r13 = 2
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x00ce
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x00ce:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r1 = r0.f1663O000000o
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            float r2 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            float r3 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            double r4 = r0.O00000o0
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r6 = r0.O00000o
-            boolean r0 = O000000o(r1, r2, r3, r4, r6)
-            if (r0 != 0) goto L_0x0103
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r7]
-            float r0 = r0.x
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            _m_j.izd$O000000o r1 = r1.O00000oo
-            android.graphics.PointF[] r1 = r1.O0000OOo
-            r1 = r1[r7]
-            float r1 = r1.y
-            r15.lineTo(r0, r1)
-        L_0x0103:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            double r0 = r0.O00000o0
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x014d
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x014d:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            float r0 = r0.O0000O0o
-            int r0 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
-            if (r0 == 0) goto L_0x0177
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.RectF r0 = r0.f1662O000000o
-            r1 = 4616991696741409234(0x4012d97c7f3321d2, double:4.71238898038469)
-            _m_j.izd$O00000Oo r3 = r14.f1661O000000o
-            _m_j.izd$O000000o r3 = r3.O00000oo
-            double r3 = r3.O00000oO
-            double r3 = r3 + r1
-            double r1 = O000000o(r3)
-            float r1 = (float) r1
-            _m_j.izd$O00000Oo r2 = r14.f1661O000000o
-            _m_j.izd$O000000o r2 = r2.O00000oo
-            float r2 = r2.O0000O0o
-            r15.arcTo(r0, r1, r2)
-        L_0x0177:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            double r0 = r0.O00000o
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x01c1
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x01c1:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r1 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oo
-            float r2 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            float r3 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            double r4 = r0.O00000o0
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r6 = r0.O00000o
-            boolean r0 = O00000Oo(r1, r2, r3, r4, r6)
-            if (r0 != 0) goto L_0x01f6
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r7]
-            float r0 = r0.x
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            _m_j.izd$O000000o r1 = r1.O0000O0o
-            android.graphics.PointF[] r1 = r1.O0000Oo0
-            r1 = r1[r7]
-            float r1 = r1.y
-            r15.lineTo(r0, r1)
-        L_0x01f6:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            double r0 = r0.O00000o
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x0240
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x0240:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            float r0 = r0.O0000O0o
-            int r0 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
-            if (r0 == 0) goto L_0x0264
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.RectF r0 = r0.f1662O000000o
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            _m_j.izd$O000000o r1 = r1.O0000O0o
-            double r1 = r1.O00000oo
-            double r1 = O000000o(r1)
-            float r1 = (float) r1
-            _m_j.izd$O00000Oo r2 = r14.f1661O000000o
-            _m_j.izd$O000000o r2 = r2.O0000O0o
-            float r2 = r2.O0000O0o
-            r15.arcTo(r0, r1, r2)
-        L_0x0264:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            double r0 = r0.O00000o0
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x02ae
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x02ae:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r1 = r0.f1663O000000o
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000O0o
-            float r2 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            float r3 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            double r4 = r0.O00000o0
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r6 = r0.O00000o
-            boolean r0 = O000000o(r1, r2, r3, r4, r6)
-            if (r0 != 0) goto L_0x02e3
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r7]
-            float r0 = r0.x
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            _m_j.izd$O000000o r1 = r1.O0000OOo
-            android.graphics.PointF[] r1 = r1.O0000OOo
-            r1 = r1[r7]
-            float r1 = r1.y
-            r15.lineTo(r0, r1)
-        L_0x02e3:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            double r0 = r0.O00000o0
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x032d
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000OOo
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x032d:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            float r0 = r0.O0000O0o
-            int r0 = (r0 > r9 ? 1 : (r0 == r9 ? 0 : -1))
-            if (r0 == 0) goto L_0x0357
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.RectF r0 = r0.f1662O000000o
-            r1 = 4609753056924675352(0x3ff921fb54442d18, double:1.5707963267948966)
-            _m_j.izd$O00000Oo r3 = r14.f1661O000000o
-            _m_j.izd$O000000o r3 = r3.O0000OOo
-            double r3 = r3.O00000oO
-            double r3 = r3 + r1
-            double r1 = O000000o(r3)
-            float r1 = (float) r1
-            _m_j.izd$O00000Oo r2 = r14.f1661O000000o
-            _m_j.izd$O000000o r2 = r2.O0000OOo
-            float r2 = r2.O0000O0o
-            r15.arcTo(r0, r1, r2)
-        L_0x0357:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            double r0 = r0.O00000o
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x03a1
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x03a1:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r1 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O0000OOo
-            float r2 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            float r3 = r0.O00000Oo
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            double r4 = r0.O00000o0
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            float r6 = r0.O00000o
-            boolean r0 = O00000Oo(r1, r2, r3, r4, r6)
-            if (r0 != 0) goto L_0x03d6
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r7]
-            float r0 = r0.x
-            _m_j.izd$O00000Oo r1 = r14.f1661O000000o
-            _m_j.izd$O000000o r1 = r1.O00000oO
-            android.graphics.PointF[] r1 = r1.O0000Oo0
-            r1 = r1[r7]
-            float r1 = r1.y
-            r15.lineTo(r0, r1)
-        L_0x03d6:
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            double r0 = r0.O00000o
-            int r2 = (r0 > r10 ? 1 : (r0 == r10 ? 0 : -1))
-            if (r2 == 0) goto L_0x0420
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r1 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r8]
-            float r2 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r3 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r13]
-            float r4 = r0.y
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r5 = r0.x
-            _m_j.izd$O00000Oo r0 = r14.f1661O000000o
-            _m_j.izd$O000000o r0 = r0.O00000oO
-            android.graphics.PointF[] r0 = r0.O0000Oo0
-            r0 = r0[r12]
-            float r6 = r0.y
-            r0 = r15
-            r0.cubicTo(r1, r2, r3, r4, r5, r6)
-        L_0x0420:
-            r15.close()
-            return r15
-        */
-        throw new UnsupportedOperationException("Method not decompiled: _m_j.izd.O000000o(android.graphics.Path):android.graphics.Path");
-    }
-
     public final void O000000o(RectF rectF, float f, float f2, float f3) {
         O000000o(rectF, new float[]{f, f, f, f, f, f, f, f}, f2, f3);
     }
@@ -605,6 +40,69 @@ public final class izd {
         if (this.f1661O000000o.O0000OOo == null) {
             this.f1661O000000o.O0000OOo = new O000000o();
         }
+    }
+
+    public final Path O000000o(Path path) {
+        if (path == null) {
+            path = new Path();
+        }
+        path.reset();
+        if (this.f1661O000000o.O00000oO == null || this.f1661O000000o.O00000oo == null || this.f1661O000000o.O0000O0o == null || this.f1661O000000o.O0000OOo == null) {
+            path.addRect(new RectF(0.0f, 0.0f, this.f1661O000000o.f1663O000000o, this.f1661O000000o.O00000Oo), Path.Direction.CCW);
+            return path;
+        }
+        if (this.f1661O000000o.O00000oO.O0000O0o != 0.0f) {
+            path.arcTo(this.f1661O000000o.O00000oO.f1662O000000o, (float) O000000o(this.f1661O000000o.O00000oO.O00000oo + 3.141592653589793d), this.f1661O000000o.O00000oO.O0000O0o);
+        } else {
+            path.moveTo(this.f1661O000000o.O00000oO.O0000OOo[0].x, this.f1661O000000o.O00000oO.O0000OOo[0].y);
+        }
+        if (this.f1661O000000o.O00000oO.O00000o0 != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O00000oO.O0000OOo[1].x, this.f1661O000000o.O00000oO.O0000OOo[1].y, this.f1661O000000o.O00000oO.O0000OOo[2].x, this.f1661O000000o.O00000oO.O0000OOo[2].y, this.f1661O000000o.O00000oO.O0000OOo[3].x, this.f1661O000000o.O00000oO.O0000OOo[3].y);
+        }
+        if (!O000000o(this.f1661O000000o.f1663O000000o, this.f1661O000000o.O00000oO.O00000Oo, this.f1661O000000o.O00000oo.O00000Oo, this.f1661O000000o.O00000o0, this.f1661O000000o.O00000o)) {
+            path.lineTo(this.f1661O000000o.O00000oo.O0000OOo[0].x, this.f1661O000000o.O00000oo.O0000OOo[0].y);
+        }
+        if (this.f1661O000000o.O00000oo.O00000o0 != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O00000oo.O0000OOo[1].x, this.f1661O000000o.O00000oo.O0000OOo[1].y, this.f1661O000000o.O00000oo.O0000OOo[2].x, this.f1661O000000o.O00000oo.O0000OOo[2].y, this.f1661O000000o.O00000oo.O0000OOo[3].x, this.f1661O000000o.O00000oo.O0000OOo[3].y);
+        }
+        if (this.f1661O000000o.O00000oo.O0000O0o != 0.0f) {
+            path.arcTo(this.f1661O000000o.O00000oo.f1662O000000o, (float) O000000o(this.f1661O000000o.O00000oo.O00000oO + 4.71238898038469d), this.f1661O000000o.O00000oo.O0000O0o);
+        }
+        if (this.f1661O000000o.O00000oo.O00000o != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O00000oo.O0000Oo0[1].x, this.f1661O000000o.O00000oo.O0000Oo0[1].y, this.f1661O000000o.O00000oo.O0000Oo0[2].x, this.f1661O000000o.O00000oo.O0000Oo0[2].y, this.f1661O000000o.O00000oo.O0000Oo0[3].x, this.f1661O000000o.O00000oo.O0000Oo0[3].y);
+        }
+        if (!O00000Oo(this.f1661O000000o.O00000Oo, this.f1661O000000o.O00000oo.O00000Oo, this.f1661O000000o.O0000O0o.O00000Oo, this.f1661O000000o.O00000o0, this.f1661O000000o.O00000o)) {
+            path.lineTo(this.f1661O000000o.O0000O0o.O0000Oo0[0].x, this.f1661O000000o.O0000O0o.O0000Oo0[0].y);
+        }
+        if (this.f1661O000000o.O0000O0o.O00000o != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O0000O0o.O0000Oo0[1].x, this.f1661O000000o.O0000O0o.O0000Oo0[1].y, this.f1661O000000o.O0000O0o.O0000Oo0[2].x, this.f1661O000000o.O0000O0o.O0000Oo0[2].y, this.f1661O000000o.O0000O0o.O0000Oo0[3].x, this.f1661O000000o.O0000O0o.O0000Oo0[3].y);
+        }
+        if (this.f1661O000000o.O0000O0o.O0000O0o != 0.0f) {
+            path.arcTo(this.f1661O000000o.O0000O0o.f1662O000000o, (float) O000000o(this.f1661O000000o.O0000O0o.O00000oo), this.f1661O000000o.O0000O0o.O0000O0o);
+        }
+        if (this.f1661O000000o.O0000O0o.O00000o0 != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O0000O0o.O0000OOo[1].x, this.f1661O000000o.O0000O0o.O0000OOo[1].y, this.f1661O000000o.O0000O0o.O0000OOo[2].x, this.f1661O000000o.O0000O0o.O0000OOo[2].y, this.f1661O000000o.O0000O0o.O0000OOo[3].x, this.f1661O000000o.O0000O0o.O0000OOo[3].y);
+        }
+        if (!O000000o(this.f1661O000000o.f1663O000000o, this.f1661O000000o.O0000O0o.O00000Oo, this.f1661O000000o.O0000OOo.O00000Oo, this.f1661O000000o.O00000o0, this.f1661O000000o.O00000o)) {
+            path.lineTo(this.f1661O000000o.O0000OOo.O0000OOo[0].x, this.f1661O000000o.O0000OOo.O0000OOo[0].y);
+        }
+        if (this.f1661O000000o.O0000OOo.O00000o0 != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O0000OOo.O0000OOo[1].x, this.f1661O000000o.O0000OOo.O0000OOo[1].y, this.f1661O000000o.O0000OOo.O0000OOo[2].x, this.f1661O000000o.O0000OOo.O0000OOo[2].y, this.f1661O000000o.O0000OOo.O0000OOo[3].x, this.f1661O000000o.O0000OOo.O0000OOo[3].y);
+        }
+        if (this.f1661O000000o.O0000OOo.O0000O0o != 0.0f) {
+            path.arcTo(this.f1661O000000o.O0000OOo.f1662O000000o, (float) O000000o(this.f1661O000000o.O0000OOo.O00000oO + 1.5707963267948966d), this.f1661O000000o.O0000OOo.O0000O0o);
+        }
+        if (this.f1661O000000o.O0000OOo.O00000o != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O0000OOo.O0000Oo0[1].x, this.f1661O000000o.O0000OOo.O0000Oo0[1].y, this.f1661O000000o.O0000OOo.O0000Oo0[2].x, this.f1661O000000o.O0000OOo.O0000Oo0[2].y, this.f1661O000000o.O0000OOo.O0000Oo0[3].x, this.f1661O000000o.O0000OOo.O0000Oo0[3].y);
+        }
+        if (!O00000Oo(this.f1661O000000o.O00000Oo, this.f1661O000000o.O0000OOo.O00000Oo, this.f1661O000000o.O00000oO.O00000Oo, this.f1661O000000o.O00000o0, this.f1661O000000o.O00000o)) {
+            path.lineTo(this.f1661O000000o.O00000oO.O0000Oo0[0].x, this.f1661O000000o.O00000oO.O0000Oo0[0].y);
+        }
+        if (this.f1661O000000o.O00000oO.O00000o != 0.0d) {
+            path.cubicTo(this.f1661O000000o.O00000oO.O0000Oo0[1].x, this.f1661O000000o.O00000oO.O0000Oo0[1].y, this.f1661O000000o.O00000oO.O0000Oo0[2].x, this.f1661O000000o.O00000oO.O0000Oo0[2].y, this.f1661O000000o.O00000oO.O0000Oo0[3].x, this.f1661O000000o.O00000oO.O0000Oo0[3].y);
+        }
+        path.close();
+        return path;
     }
 
     private static boolean O000000o(float f, float f2, float f3, double d, float f4) {

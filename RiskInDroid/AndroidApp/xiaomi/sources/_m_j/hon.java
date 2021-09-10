@@ -393,78 +393,32 @@ public class hon implements hol {
     }
 
     public void updatePluginRecommendScenes(String str, IXmPluginHostActivity.AsyncCallback<String> asyncCallback) {
-        hob.O000000o().O000000o(ServiceApplication.getAppContext(), 
-        /*  JADX ERROR: Method code generation error
-            jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0011: INVOKE  
-              (wrap: _m_j.hob : 0x0004: INVOKE  (r0v0 _m_j.hob) =  type: STATIC call: _m_j.hob.O000000o():_m_j.hob)
-              (wrap: android.content.Context : 0x0008: INVOKE  (r1v0 android.content.Context) =  type: STATIC call: com.xiaomi.smarthome.application.ServiceApplication.getAppContext():android.content.Context)
-              (wrap: _m_j.hpu$4 : 0x000e: CONSTRUCTOR  (r2v0 _m_j.hpu$4) = 
-              (wrap: _m_j.hpu : 0x0000: INVOKE  (r4v1 _m_j.hpu) =  type: STATIC call: _m_j.hpu.O000000o():_m_j.hpu)
-              (r5v0 'asyncCallback' com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback<java.lang.String>)
-             call: _m_j.hpu.4.<init>(_m_j.hpu, com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback):void type: CONSTRUCTOR)
-             type: VIRTUAL call: _m_j.hob.O000000o(android.content.Context, _m_j.fsm):_m_j.fsn in method: _m_j.hon.updatePluginRecommendScenes(java.lang.String, com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback<java.lang.String>):void, dex: classes.dex
-            	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
-            	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
-            	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
-            	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
-            	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-            	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-            	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
-            	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
-            	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
-            	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
-            	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
-            	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-            	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-            	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
-            	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
-            	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-            	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-            	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-            	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-            	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-            	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-            	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
-            	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
-            	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
-            	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
-            	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:81)
-            	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
-            	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
-            	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
-            	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
-            	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-            	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-            Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x000e: CONSTRUCTOR  (r2v0 _m_j.hpu$4) = 
-              (wrap: _m_j.hpu : 0x0000: INVOKE  (r4v1 _m_j.hpu) =  type: STATIC call: _m_j.hpu.O000000o():_m_j.hpu)
-              (r5v0 'asyncCallback' com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback<java.lang.String>)
-             call: _m_j.hpu.4.<init>(_m_j.hpu, com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback):void type: CONSTRUCTOR in method: _m_j.hon.updatePluginRecommendScenes(java.lang.String, com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback<java.lang.String>):void, dex: classes.dex
-            	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
-            	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
-            	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
-            	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:790)
-            	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
-            	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
-            	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
-            	... 31 more
-            Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Expected class to be processed at this point, class: _m_j.hpu, state: NOT_LOADED
-            	at jadx.core.dex.nodes.ClassNode.ensureProcessed(ClassNode.java:270)
-            	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:607)
-            	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
-            	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
-            	... 37 more
-            */
-        /*
-            this = this;
-            _m_j.hpu r4 = _m_j.hpu.O000000o()
-            _m_j.hob r0 = _m_j.hob.O000000o()
-            android.content.Context r1 = com.xiaomi.smarthome.application.ServiceApplication.getAppContext()
-            _m_j.hpu$4 r2 = new _m_j.hpu$4
-            r2.<init>(r5)
-            r0.O000000o(r1, r2)
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: _m_j.hon.updatePluginRecommendScenes(java.lang.String, com.xiaomi.smarthome.device.api.IXmPluginHostActivity$AsyncCallback):void");
+        hob.O000000o().O000000o(ServiceApplication.getAppContext(), new fsm<JSONObject, fso>(asyncCallback) {
+            /* class _m_j.hpu.AnonymousClass4 */
+
+            /* renamed from: O000000o */
+            final /* synthetic */ IXmPluginHostActivity.AsyncCallback f506O000000o;
+
+            {
+                this.f506O000000o = r2;
+            }
+
+            public final /* synthetic */ void onSuccess(Object obj) {
+                JSONObject jSONObject = (JSONObject) obj;
+                try {
+                    hpu.this.O00000Oo = hqa.O000000o(jSONObject);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            public final void onFailure(fso fso) {
+                hpu.this.O0000O0o = false;
+                for (int i = 0; i < hpu.this.O00000oO.size(); i++) {
+                    hpu.this.O00000oO.get(i).O000000o();
+                }
+            }
+        });
     }
 
     public void createAndSaveSceneFrom(PluginRecommendSceneInfo.RecommendSceneItem recommendSceneItem, String str, hqy hqy) {

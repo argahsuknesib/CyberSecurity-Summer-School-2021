@@ -173,7 +173,7 @@ public final class gtj {
                 }) {
                     /* class _m_j.gti.AnonymousClass4 */
 
-                    /* renamed from: O000000o  reason: collision with root package name */
+                    /* renamed from: O000000o */
                     final /* synthetic */ fsm f18247O000000o;
 
                     {

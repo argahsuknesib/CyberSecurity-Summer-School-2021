@@ -17,10 +17,12 @@ import com.xiaomi.smarthome.library.common.dialog.MLAlertDialog;
 import com.xiaomi.smarthome.library.common.dialog.XQProgressDialog;
 import com.xiaomi.smarthome.miio.camera.face.FaceManager;
 import com.xiaomi.smarthome.miio.camera.face.adapter.FigureFaceAdapter;
+import com.xiaomi.smarthome.miio.camera.face.model.FaceIdMetaResult;
 import com.xiaomi.smarthome.miio.camera.face.model.FaceInfoEx;
 import com.xiaomi.smarthome.miio.camera.face.util.FaceUtils;
 import com.xiaomi.smarthome.miio.camera.face.widget.FaceRenameDialog;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class FigureFacesManager2Activity extends FaceSelectActivityNew implements View.OnClickListener, FigureFaceAdapter.ClickCallBack {
     public static final String TAG = "FigureFacesManager2Activity";
@@ -71,59 +73,13 @@ public class FigureFacesManager2Activity extends FaceSelectActivityNew implement
         mFaceManager.getFigureFaces(new FaceManager.IFaceCallback() {
             /* class com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.AnonymousClass1 */
 
-            /*  JADX ERROR: Method load error
-                jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: com.xiaomi.smarthome.miio.camera.face.adapter.FigureFaceAdapter.notifyDataSetChanged():void in method: com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.1.onSuccess(java.lang.Object, java.lang.Object):void, dex: classes5.dex
-                	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
-                	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
-                	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:312)
-                	at jadx.core.ProcessClass.process(ProcessClass.java:36)
-                	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
-                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-                Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: com.xiaomi.smarthome.miio.camera.face.adapter.FigureFaceAdapter.notifyDataSetChanged():void
-                	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
-                	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
-                	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
-                	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:540)
-                	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
-                	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
-                	... 6 more
-                */
-            public void onSuccess(java.lang.Object r1, java.lang.Object r2) {
-                /*
-                    r3 = this;
-                    com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity r4 = com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.this
-                    r4.hideLoadDlg()
-                    com.xiaomi.smarthome.miio.camera.face.model.FaceIdMetaResult r5 = (com.xiaomi.smarthome.miio.camera.face.model.FaceIdMetaResult) r5
-                    com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity r4 = com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.this
-                    com.xiaomi.smarthome.miio.camera.face.adapter.FigureFaceAdapter r4 = r4.mAdapter
-                    java.util.ArrayList r0 = new java.util.ArrayList
-                    com.xiaomi.smarthome.miio.camera.face.model.FaceInfo[] r1 = r5.faceInfoMetas
-                    java.util.List r1 = java.util.Arrays.asList(r1)
-                    r0.<init>(r1)
-                    r4.setData(r0)
-                    com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity r4 = com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.this
-                    android.widget.TextView r4 = r4.tv_statues
-                    com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity r0 = com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.this
-                    r1 = 2132674633(0x7f1e0849, float:2.1006104E38)
-                    java.lang.String r0 = r0.getString(r1)
-                    r1 = 1
-                    java.lang.Object[] r1 = new java.lang.Object[r1]
-                    com.xiaomi.smarthome.miio.camera.face.model.FaceInfo[] r5 = r5.faceInfoMetas
-                    int r5 = r5.length
-                    java.lang.Integer r5 = java.lang.Integer.valueOf(r5)
-                    r2 = 0
-                    r1[r2] = r5
-                    java.lang.String r5 = java.lang.String.format(r0, r1)
-                    r4.setText(r5)
-                    com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity r4 = com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.this
-                    com.xiaomi.smarthome.miio.camera.face.adapter.FigureFaceAdapter r4 = r4.mAdapter
-                    r4.notifyDataSetChanged()
-                    com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity r4 = com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.this
-                    r4.refreshSelectTitle()
-                    return
-                */
-                throw new UnsupportedOperationException("Method not decompiled: com.xiaomi.smarthome.miio.camera.face.activity.FigureFacesManager2Activity.AnonymousClass1.onSuccess(java.lang.Object, java.lang.Object):void");
+            public void onSuccess(Object obj, Object obj2) {
+                FigureFacesManager2Activity.this.hideLoadDlg();
+                FaceIdMetaResult faceIdMetaResult = (FaceIdMetaResult) obj2;
+                FigureFacesManager2Activity.this.mAdapter.setData(new ArrayList(Arrays.asList(faceIdMetaResult.faceInfoMetas)));
+                FigureFacesManager2Activity.this.tv_statues.setText(String.format(FigureFacesManager2Activity.this.getString(R.string.figure_face_count_tips), Integer.valueOf(faceIdMetaResult.faceInfoMetas.length)));
+                FigureFacesManager2Activity.this.mAdapter.notifyDataSetChanged();
+                FigureFacesManager2Activity.this.refreshSelectTitle();
             }
 
             public void onFailure(int i, String str) {

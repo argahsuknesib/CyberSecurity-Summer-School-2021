@@ -217,9 +217,9 @@ public abstract class BaseDaoImpl<T, ID> implements Dao<T, ID> {
         }
     }
 
-    public int create(final Collection<?> collection) throws SQLException {
+    public int create(final Collection<T> collection) throws SQLException {
         checkForInitialized();
-        for (Object next : collection) {
+        for (T next : collection) {
             if (next instanceof BaseDaoEnabled) {
                 ((BaseDaoEnabled) next).setDao(this);
             }

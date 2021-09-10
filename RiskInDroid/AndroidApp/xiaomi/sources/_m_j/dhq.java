@@ -747,9 +747,9 @@ public final class dhq {
         }
     }
 
-    private <T> T[] O000000o(T[] tArr, int i, boolean z) {
-        if (tArr != null && tArr.length != 0) {
-            return O00000Oo(tArr[0], i, z);
+    private <T> T[] O000000o(Object[] objArr, int i, boolean z) {
+        if (objArr != null && objArr.length != 0) {
+            return O00000Oo(objArr[0], i, z);
         }
         throw new g("unable to get type of key and value.");
     }
@@ -885,38 +885,38 @@ public final class dhq {
       _m_j.dhq.O000000o(double, int, boolean):double */
     /* JADX WARNING: Multi-variable type inference failed */
     /* JADX WARNING: Unknown variable types count: 1 */
-    public final <T> Object O000000o(T t, int i, boolean z) {
+    public final <T> Object O000000o(Object obj, int i, boolean z) {
         ? r1 = 0;
-        if (t instanceof Byte) {
+        if (obj instanceof Byte) {
             return Byte.valueOf(O000000o((byte) 0, i, z));
         }
-        if (t instanceof Boolean) {
+        if (obj instanceof Boolean) {
             if (O000000o((byte) 0, i, z) != 0) {
                 r1 = 1;
             }
             return Boolean.valueOf((boolean) r1);
-        } else if (t instanceof Short) {
+        } else if (obj instanceof Short) {
             return Short.valueOf(O000000o((short) 0, i, z));
         } else {
-            if (t instanceof Integer) {
+            if (obj instanceof Integer) {
                 return Integer.valueOf(O000000o(0, i, z));
             }
-            if (t instanceof Long) {
+            if (obj instanceof Long) {
                 return Long.valueOf(O000000o(0L, i, z));
             }
-            if (t instanceof Float) {
+            if (obj instanceof Float) {
                 return Float.valueOf(O000000o(0.0f, i, z));
             }
-            if (t instanceof Double) {
+            if (obj instanceof Double) {
                 return Double.valueOf(O000000o(0.0d, i, z));
             }
-            if (t instanceof String) {
+            if (obj instanceof String) {
                 return String.valueOf(O00000Oo(i, z));
             }
-            if (t instanceof Map) {
-                return (HashMap) O000000o(new HashMap(), (Map) t, i, z);
-            } else if (t instanceof List) {
-                List list = (List) t;
+            if (obj instanceof Map) {
+                return (HashMap) O000000o(new HashMap(), (Map) obj, i, z);
+            } else if (obj instanceof List) {
+                List list = (List) obj;
                 if (list == null || list.isEmpty()) {
                     return new ArrayList();
                 }
@@ -930,33 +930,33 @@ public final class dhq {
                     r1++;
                 }
                 return arrayList;
-            } else if (t instanceof k) {
-                return O000000o((k) t, i, z);
+            } else if (obj instanceof k) {
+                return O000000o((k) obj, i, z);
             } else {
-                if (!t.getClass().isArray()) {
+                if (!obj.getClass().isArray()) {
                     throw new g("read object error: unsupport type.");
-                } else if ((t instanceof byte[]) || (t instanceof Byte[])) {
+                } else if ((obj instanceof byte[]) || (obj instanceof Byte[])) {
                     return O00000o0(i, z);
                 } else {
-                    if (t instanceof boolean[]) {
+                    if (obj instanceof boolean[]) {
                         return O00000o(i, z);
                     }
-                    if (t instanceof short[]) {
+                    if (obj instanceof short[]) {
                         return O00000oO(i, z);
                     }
-                    if (t instanceof int[]) {
+                    if (obj instanceof int[]) {
                         return O00000oo(i, z);
                     }
-                    if (t instanceof long[]) {
+                    if (obj instanceof long[]) {
                         return O0000O0o(i, z);
                     }
-                    if (t instanceof float[]) {
+                    if (obj instanceof float[]) {
                         return O0000OOo(i, z);
                     }
-                    if (t instanceof double[]) {
+                    if (obj instanceof double[]) {
                         return O0000Oo0(i, z);
                     }
-                    return O000000o((Object[]) t, i, z);
+                    return O000000o((Object[]) obj, i, z);
                 }
             }
         }

@@ -5,6 +5,11 @@ import _m_j.bof;
 import android.content.Context;
 import android.os.Environment;
 import android.text.TextUtils;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public final class bod implements boe.O000000o, bof.O000000o {
 
@@ -103,158 +108,96 @@ public final class bod implements boe.O000000o, bof.O000000o {
         if (2 == boe2.O00000oo) {
             boe2.O00000oo = 1;
             boe2.f13156O000000o.O000000o();
-            boe2.O00000oO = 
-            /*  JADX ERROR: Method code generation error
-                jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0077: IPUT  
-                  (wrap: _m_j.boe$2 : 0x0074: CONSTRUCTOR  (r1v2 _m_j.boe$2) = (r0v8 'boe2' _m_j.boe) call: _m_j.boe.2.<init>(_m_j.boe):void type: CONSTRUCTOR)
-                  (r0v8 'boe2' _m_j.boe)
-                 _m_j.boe.O00000oO java.lang.Thread in method: _m_j.bod.O00000Oo():void, dex: classes6.dex
-                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
-                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
-                	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
-                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
-                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-                	at jadx.core.codegen.RegionGen.makeRegionIndent(RegionGen.java:99)
-                	at jadx.core.codegen.RegionGen.makeIf(RegionGen.java:143)
-                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:63)
-                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
-                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
-                	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
-                	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
-                	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
-                	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
-                	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
-                	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-                	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-                	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
-                	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
-                	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-                	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-                	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-                	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-                	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-                	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-                	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
-                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
-                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
-                	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
-                	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:81)
-                	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
-                	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
-                	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
-                	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
-                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0074: CONSTRUCTOR  (r1v2 _m_j.boe$2) = (r0v8 'boe2' _m_j.boe) call: _m_j.boe.2.<init>(_m_j.boe):void type: CONSTRUCTOR in method: _m_j.bod.O00000Oo():void, dex: classes6.dex
-                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
-                	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
-                	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
-                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:428)
-                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
-                	... 38 more
-                Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Expected class to be processed at this point, class: _m_j.boe, state: NOT_LOADED
-                	at jadx.core.dex.nodes.ClassNode.ensureProcessed(ClassNode.java:270)
-                	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:607)
-                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
-                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
-                	... 42 more
-                */
-            /*
-                this = this;
-                _m_j.bof r0 = r5.f13155O000000o
-                r0.O00000o()
-                _m_j.bof r0 = r5.f13155O000000o
-                _m_j.bnx r0 = r0.f13160O000000o
-                r1 = 1
-                r0.O00000oo = r1
-                com.libra.sinvoice.VoiceEncoder r0 = r0.O00000o
-                r0.setEffect(r1)
-                _m_j.boe r0 = r5.O00000Oo
-                int r2 = r0.O00000oo
-                r3 = 2
-                if (r1 != r2) goto L_0x005c
-                r0.O00000oo = r3
-                _m_j.bob r2 = r0.O00000Oo
-                int r4 = r2.f13153O000000o
-                if (r1 != r4) goto L_0x0022
-                r2.f13153O000000o = r3
-            L_0x0022:
-                _m_j.bog r2 = r0.O00000o0
-                int r4 = r2.f13164O000000o
-                if (r1 != r4) goto L_0x002a
-                r2.f13164O000000o = r3
-            L_0x002a:
-                _m_j.bnw r2 = r0.f13156O000000o
-                r2.O00000Oo()
-                java.lang.Thread r2 = r0.O00000o
-                r4 = 0
-                if (r2 == 0) goto L_0x0046
-                java.lang.Thread r2 = r0.O00000o     // Catch:{ InterruptedException -> 0x003e }
-                r2.join()     // Catch:{ InterruptedException -> 0x003e }
-            L_0x0039:
-                r0.O00000o = r4
-                goto L_0x0046
-            L_0x003c:
-                r1 = move-exception
-                goto L_0x0043
-            L_0x003e:
-                r2 = move-exception
-                r2.printStackTrace()     // Catch:{ all -> 0x003c }
-                goto L_0x0039
-            L_0x0043:
-                r0.O00000o = r4
-                throw r1
-            L_0x0046:
-                java.lang.Thread r2 = r0.O00000oO
-                if (r2 == 0) goto L_0x005c
-                java.lang.Thread r2 = r0.O00000oO     // Catch:{ InterruptedException -> 0x0054 }
-                r2.join()     // Catch:{ InterruptedException -> 0x0054 }
-            L_0x004f:
-                r0.O00000oO = r4
-                goto L_0x005c
-            L_0x0052:
-                r1 = move-exception
-                goto L_0x0059
-            L_0x0054:
-                r2 = move-exception
-                r2.printStackTrace()     // Catch:{ all -> 0x0052 }
-                goto L_0x004f
-            L_0x0059:
-                r0.O00000oO = r4
-                throw r1
-            L_0x005c:
-                _m_j.boe r0 = r5.O00000Oo
-                _m_j.bog r0 = r0.O00000o0
-                com.libra.sinvoice.VoiceDecoder r0 = r0.O00000oO
-                r0.setEffect(r1)
-                _m_j.boe r0 = r5.O00000Oo
-                int r2 = r0.O00000oo
-                if (r3 != r2) goto L_0x0093
-                r0.O00000oo = r1
-                _m_j.bnw r1 = r0.f13156O000000o
-                r1.O000000o()
-                _m_j.boe$2 r1 = new _m_j.boe$2
-                r1.<init>()
-                r0.O00000oO = r1
-                java.lang.Thread r1 = r0.O00000oO
-                if (r1 == 0) goto L_0x0082
-                java.lang.Thread r1 = r0.O00000oO
-                r1.start()
-            L_0x0082:
-                _m_j.boe$3 r1 = new _m_j.boe$3
-                r2 = 0
-                r1.<init>(r2)
-                r0.O00000o = r1
-                java.lang.Thread r1 = r0.O00000o
-                if (r1 == 0) goto L_0x0093
-                java.lang.Thread r0 = r0.O00000o
-                r0.start()
-            L_0x0093:
-                return
-            */
-            throw new UnsupportedOperationException("Method not decompiled: _m_j.bod.O00000Oo():void");
+            boe2.O00000oO = new Thread() {
+                /* class _m_j.boe.AnonymousClass2 */
+
+                public final void run() {
+                    bnv O00000Oo;
+                    bog bog = boe.this.O00000o0;
+                    if (2 == bog.f13164O000000o && bog.O00000o0 != null) {
+                        bog.f13164O000000o = 1;
+                        if (bog.O00000Oo != null) {
+                            bog.O00000Oo.O00000o0();
+                        }
+                        if (bog.O0000O0o) {
+                            try {
+                                String path = Environment.getExternalStorageDirectory().getPath();
+                                if (!TextUtils.isEmpty(path)) {
+                                    bog.O00000o = new FileOutputStream(String.format("%s/record.pcm", path));
+                                }
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        bog.O00000oO.start();
+                        while (1 == bog.f13164O000000o && (O00000Oo = bog.O00000o0.O00000Oo()) != null && O00000Oo.f13149O000000o != null) {
+                            bog.O00000oO.putData(O00000Oo.f13149O000000o, O00000Oo.O00000Oo);
+                            bog.O00000o0.O00000Oo(O00000Oo);
+                            if (bog.O0000O0o && bog.O00000o != null) {
+                                try {
+                                    bog.O00000o.write(O00000Oo.f13149O000000o);
+                                } catch (IOException e2) {
+                                    e2.printStackTrace();
+                                }
+                            }
+                        }
+                        bog.O00000oO.stop();
+                        if (bog.O0000O0o && bog.O00000o != null) {
+                            try {
+                                bog.O00000o.close();
+                                bog.O00000o = null;
+                            } catch (IOException e3) {
+                                e3.printStackTrace();
+                            }
+                        }
+                        bog.f13164O000000o = 2;
+                        if (bog.O00000Oo != null) {
+                            bog.O00000Oo.O00000o();
+                        }
+                    }
+                }
+            };
+            if (boe2.O00000oO != null) {
+                boe2.O00000oO.start();
+            }
+            boe2.O00000o = new Thread(false) {
+                /* class _m_j.boe.AnonymousClass3 */
+
+                /* renamed from: O000000o  reason: collision with root package name */
+                final /* synthetic */ boolean f13159O000000o = false;
+
+                public final void run() {
+                    bnv O000000o2;
+                    int read;
+                    bob bob = boe.this.O00000Oo;
+                    boolean z = this.f13159O000000o;
+                    if (2 != bob.f13153O000000o) {
+                        return;
+                    }
+                    if (z) {
+                        bob.f13153O000000o = 1;
+                        if (bob.O00000o0 != null) {
+                            try {
+                                FileInputStream fileInputStream = new FileInputStream(new File("/sdcard/sinvoice.pcm"));
+                                while (1 == bob.f13153O000000o && (O000000o2 = bob.O00000o0.O000000o()) != null && O000000o2.f13149O000000o != null && (read = fileInputStream.read(O000000o2.f13149O000000o)) >= 0) {
+                                    O000000o2.O00000Oo = read;
+                                    bob.O00000o0.O000000o(O000000o2);
+                                }
+                                fileInputStream.close();
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                            } catch (IOException e2) {
+                                e2.printStackTrace();
+                            }
+                        }
+                    } else {
+                        bob.O000000o();
+                    }
+                }
+            };
+            if (boe2.O00000o != null) {
+                boe2.O00000o.start();
+            }
         }
     }
+}

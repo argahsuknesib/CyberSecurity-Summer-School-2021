@@ -501,20 +501,20 @@ public abstract class ImmutableList<E> extends ImmutableCollection<E> implements
         }
 
         @CanIgnoreReturnValue
-        public final Builder<E> add(Object obj) {
-            Preconditions.checkNotNull(obj);
+        public final Builder<E> add(E e) {
+            Preconditions.checkNotNull(e);
             getReadyToExpandTo(this.size + 1);
             Object[] objArr = this.contents;
             int i = this.size;
             this.size = i + 1;
-            objArr[i] = obj;
+            objArr[i] = e;
             return this;
         }
 
         @CanIgnoreReturnValue
-        public final Builder<E> add(Object... objArr) {
-            ObjectArrays.checkElementsNotNull(objArr);
-            add(objArr, objArr.length);
+        public final Builder<E> add(E... eArr) {
+            ObjectArrays.checkElementsNotNull(eArr);
+            add(eArr, eArr.length);
             return this;
         }
 
@@ -525,7 +525,7 @@ public abstract class ImmutableList<E> extends ImmutableCollection<E> implements
         }
 
         @CanIgnoreReturnValue
-        public final Builder<E> addAll(Iterable iterable) {
+        public final Builder<E> addAll(Iterable<? extends E> iterable) {
             Preconditions.checkNotNull(iterable);
             if (iterable instanceof Collection) {
                 Collection collection = (Collection) iterable;
@@ -535,13 +535,13 @@ public abstract class ImmutableList<E> extends ImmutableCollection<E> implements
                     return this;
                 }
             }
-            super.addAll(iterable);
+            super.addAll((Iterable) iterable);
             return this;
         }
 
         @CanIgnoreReturnValue
-        public final Builder<E> addAll(Iterator it) {
-            super.addAll(it);
+        public final Builder<E> addAll(Iterator<? extends E> it) {
+            super.addAll((Iterator) it);
             return this;
         }
 

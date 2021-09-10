@@ -26,14 +26,14 @@ public abstract class aqy<T> extends apy<T> {
         this.O00000o0 = ajr;
     }
 
-    public final void O000000o(T t, JsonGenerator jsonGenerator, akf akf) throws IOException, JsonGenerationException {
-        if (!akf.O000000o(SerializationFeature.WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED) || !O00000Oo((Object) t)) {
+    public final void O000000o(Object obj, JsonGenerator jsonGenerator, akf akf) throws IOException, JsonGenerationException {
+        if (!akf.O000000o(SerializationFeature.WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED) || !O00000Oo(obj)) {
             jsonGenerator.O00000Oo();
-            O00000Oo(t, jsonGenerator, akf);
+            O00000Oo(obj, jsonGenerator, akf);
             jsonGenerator.O00000o0();
             return;
         }
-        O00000Oo(t, jsonGenerator, akf);
+        O00000Oo(obj, jsonGenerator, akf);
     }
 
     public final void O000000o(T t, JsonGenerator jsonGenerator, akf akf, aoi aoi) throws IOException, JsonGenerationException {

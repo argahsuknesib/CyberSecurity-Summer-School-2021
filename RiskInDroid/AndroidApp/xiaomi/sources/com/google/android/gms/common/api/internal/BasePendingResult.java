@@ -297,10 +297,10 @@ public abstract class BasePendingResult<R extends Result> extends PendingResult<
     }
 
     @KeepForSdk
-    public final void setResult(Result result) {
+    public final void setResult(R r) {
         synchronized (this.zzfa) {
             if (this.zzfj || this.zzfi) {
-                zzb(result);
+                zzb((Result) r);
                 return;
             }
             isReady();
@@ -310,7 +310,7 @@ public abstract class BasePendingResult<R extends Result> extends PendingResult<
                 z = false;
             }
             Preconditions.checkState(z, "Result has already been consumed");
-            zza(result);
+            zza((Result) r);
         }
     }
 

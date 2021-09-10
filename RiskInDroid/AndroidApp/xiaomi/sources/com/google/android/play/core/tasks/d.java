@@ -16,7 +16,7 @@ final class d<ResultT> implements g<ResultT> {
         this.c = onFailureListener;
     }
 
-    public final void a(Task<ResultT> task) {
+    public final void a(Task task) {
         if (!task.isSuccessful()) {
             synchronized (this.b) {
                 if (this.c != null) {

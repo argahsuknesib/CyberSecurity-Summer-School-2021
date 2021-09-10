@@ -6,7 +6,7 @@ public abstract class apy<T> extends asb<T> {
 
     public abstract boolean O00000Oo(T t);
 
-    protected apy(Class<T> cls) {
+    protected apy(Class cls) {
         super(cls);
     }
 

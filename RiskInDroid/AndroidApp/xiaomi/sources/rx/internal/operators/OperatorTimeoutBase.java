@@ -31,7 +31,7 @@ class OperatorTimeoutBase<T> implements Observable.Operator<T, T> {
         this.scheduler = scheduler2;
     }
 
-    public Subscriber<? super T> call(Subscriber subscriber) {
+    public Subscriber<? super T> call(Subscriber<? super T> subscriber) {
         Scheduler.Worker createWorker = this.scheduler.createWorker();
         subscriber.add(createWorker);
         SerializedSubscriber serializedSubscriber = new SerializedSubscriber(subscriber);

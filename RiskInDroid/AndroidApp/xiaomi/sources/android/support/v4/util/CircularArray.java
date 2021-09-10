@@ -1,68 +1,10 @@
 package android.support.v4.util;
 
-/*  JADX ERROR: NullPointerException in pass: ExtractFieldInit
-    java.lang.NullPointerException
-    	at jadx.core.utils.BlockUtils.isAllBlocksEmpty(BlockUtils.java:608)
-    	at jadx.core.dex.visitors.ExtractFieldInit.getConstructorsList(ExtractFieldInit.java:241)
-    	at jadx.core.dex.visitors.ExtractFieldInit.moveCommonFieldsInit(ExtractFieldInit.java:122)
-    	at jadx.core.dex.visitors.ExtractFieldInit.visit(ExtractFieldInit.java:43)
-    */
 public final class CircularArray<E> {
     private int mCapacityBitmask;
     private E[] mElements;
     private int mHead;
     private int mTail;
-
-    /*  JADX ERROR: Method load error
-        jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: java.lang.Integer.highestOneBit(int):int in method: android.support.v4.util.CircularArray.<init>(int):void, dex: classes.dex
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
-        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
-        	at jadx.core.ProcessClass.process(ProcessClass.java:36)
-        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: java.lang.Integer.highestOneBit(int):int
-        	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
-        	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
-        	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
-        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:528)
-        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
-        	... 5 more
-        */
-    public CircularArray(int r1) {
-        /*
-            r2 = this;
-            r2.<init>()
-            if (r3 <= 0) goto L_0x002a
-            r0 = 1073741824(0x40000000, float:2.0)
-            if (r3 > r0) goto L_0x0022
-            int r0 = java.lang.Integer.bitCount(r3)
-            r1 = 1
-            if (r0 == r1) goto L_0x0017
-            int r3 = r3 + -1
-            int r3 = java.lang.Integer.highestOneBit(r3)
-            int r3 = r3 << r1
-        L_0x0017:
-            int r0 = r3 + -1
-            r2.mCapacityBitmask = r0
-            java.lang.Object[] r3 = new java.lang.Object[r3]
-            java.lang.Object[] r3 = (java.lang.Object[]) r3
-            r2.mElements = r3
-            return
-        L_0x0022:
-            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
-            java.lang.String r0 = "capacity must be <= 2^30"
-            r3.<init>(r0)
-            throw r3
-        L_0x002a:
-            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
-            java.lang.String r0 = "capacity must be >= 1"
-            r3.<init>(r0)
-            throw r3
-        */
-        throw new UnsupportedOperationException("Method not decompiled: android.support.v4.util.CircularArray.<init>(int):void");
-    }
 
     private void doubleCapacity() {
         E[] eArr = this.mElements;
@@ -85,6 +27,18 @@ public final class CircularArray<E> {
 
     public CircularArray() {
         this(8);
+    }
+
+    public CircularArray(int i) {
+        if (i <= 0) {
+            throw new IllegalArgumentException("capacity must be >= 1");
+        } else if (i <= 1073741824) {
+            i = Integer.bitCount(i) != 1 ? Integer.highestOneBit(i - 1) << 1 : i;
+            this.mCapacityBitmask = i - 1;
+            this.mElements = (Object[]) new Object[i];
+        } else {
+            throw new IllegalArgumentException("capacity must be <= 2^30");
+        }
     }
 
     public final void addFirst(E e) {

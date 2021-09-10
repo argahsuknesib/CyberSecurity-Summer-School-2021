@@ -33,48 +33,48 @@ final /* synthetic */ class zzzn {
     /* JADX WARNING: Missing exception handler attribute for start block: B:71:0x0133 */
     static {
         try {
-            zzbrw[zzabp.DOUBLE.ordinal()] = 1;
+            zzbrw[zzabp.zzbvj.ordinal()] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            zzbrw[zzabp.FLOAT.ordinal()] = 2;
+            zzbrw[zzabp.zzbvk.ordinal()] = 2;
         } catch (NoSuchFieldError unused2) {
         }
         try {
-            zzbrw[zzabp.INT64.ordinal()] = 3;
+            zzbrw[zzabp.zzbvl.ordinal()] = 3;
         } catch (NoSuchFieldError unused3) {
         }
         try {
-            zzbrw[zzabp.UINT64.ordinal()] = 4;
+            zzbrw[zzabp.zzbvm.ordinal()] = 4;
         } catch (NoSuchFieldError unused4) {
         }
         try {
-            zzbrw[zzabp.INT32.ordinal()] = 5;
+            zzbrw[zzabp.zzbvn.ordinal()] = 5;
         } catch (NoSuchFieldError unused5) {
         }
         try {
-            zzbrw[zzabp.FIXED64.ordinal()] = 6;
+            zzbrw[zzabp.zzbvo.ordinal()] = 6;
         } catch (NoSuchFieldError unused6) {
         }
         try {
-            zzbrw[zzabp.FIXED32.ordinal()] = 7;
+            zzbrw[zzabp.zzbvp.ordinal()] = 7;
         } catch (NoSuchFieldError unused7) {
         }
         try {
-            zzbrw[zzabp.BOOL.ordinal()] = 8;
+            zzbrw[zzabp.zzbvq.ordinal()] = 8;
         } catch (NoSuchFieldError unused8) {
         }
-        zzbrw[zzabp.GROUP.ordinal()] = 9;
-        zzbrw[zzabp.MESSAGE.ordinal()] = 10;
-        zzbrw[zzabp.STRING.ordinal()] = 11;
-        zzbrw[zzabp.BYTES.ordinal()] = 12;
-        zzbrw[zzabp.UINT32.ordinal()] = 13;
-        zzbrw[zzabp.SFIXED32.ordinal()] = 14;
-        zzbrw[zzabp.SFIXED64.ordinal()] = 15;
-        zzbrw[zzabp.SINT32.ordinal()] = 16;
-        zzbrw[zzabp.SINT64.ordinal()] = 17;
+        zzbrw[zzabp.zzbvs.ordinal()] = 9;
+        zzbrw[zzabp.zzbvt.ordinal()] = 10;
+        zzbrw[zzabp.zzbvr.ordinal()] = 11;
+        zzbrw[zzabp.zzbvu.ordinal()] = 12;
+        zzbrw[zzabp.zzbvv.ordinal()] = 13;
+        zzbrw[zzabp.zzbvx.ordinal()] = 14;
+        zzbrw[zzabp.zzbvy.ordinal()] = 15;
+        zzbrw[zzabp.zzbvz.ordinal()] = 16;
+        zzbrw[zzabp.zzbwa.ordinal()] = 17;
         try {
-            zzbrw[zzabp.ENUM.ordinal()] = 18;
+            zzbrw[zzabp.zzbvw.ordinal()] = 18;
         } catch (NoSuchFieldError unused9) {
         }
         zzbrv[zzabu.INT.ordinal()] = 1;

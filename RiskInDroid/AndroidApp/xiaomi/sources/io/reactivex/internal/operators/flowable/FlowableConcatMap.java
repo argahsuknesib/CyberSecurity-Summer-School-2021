@@ -55,7 +55,7 @@ public final class FlowableConcatMap<T, R> extends AbstractFlowableWithUpstream<
         }
     }
 
-    public static <T, R> Subscriber<T> subscribe(Subscriber<? super R> subscriber, Function<? super T, ? extends Publisher<? extends R>> function, int i, ErrorMode errorMode2) {
+    public static <T, R> Subscriber<T> subscribe(Subscriber subscriber, Function function, int i, ErrorMode errorMode2) {
         int i2 = AnonymousClass1.$SwitchMap$io$reactivex$internal$util$ErrorMode[errorMode2.ordinal()];
         if (i2 == 1) {
             return new ConcatMapDelayed(subscriber, function, i, false);
