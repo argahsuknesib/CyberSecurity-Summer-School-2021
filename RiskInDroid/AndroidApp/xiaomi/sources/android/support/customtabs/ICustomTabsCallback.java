@@ -24,6 +24,131 @@ public interface ICustomTabsCallback extends IInterface {
             return this;
         }
 
+        /*  JADX ERROR: Method load error
+            jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: android.os.Parcel.writeNoException():void in method: android.support.customtabs.ICustomTabsCallback.Stub.onTransact(int, android.os.Parcel, android.os.Parcel, int):boolean, dex: classes.dex
+            	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
+            	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
+            	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:312)
+            	at jadx.core.ProcessClass.process(ProcessClass.java:36)
+            	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
+            	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
+            	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
+            Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: android.os.Parcel.writeNoException():void
+            	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
+            	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
+            	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
+            	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:540)
+            	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
+            	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
+            	... 6 more
+            */
+        public boolean onTransact(int r1, android.os.Parcel r2, android.os.Parcel r3, int r4) {
+            /*
+                r4 = this;
+                r0 = 2
+                r1 = 0
+                java.lang.String r2 = "android.support.customtabs.ICustomTabsCallback"
+                r3 = 1
+                if (r5 == r0) goto L_0x00aa
+                r0 = 3
+                if (r5 == r0) goto L_0x008d
+                r0 = 4
+                if (r5 == r0) goto L_0x0074
+                r0 = 5
+                if (r5 == r0) goto L_0x0057
+                r0 = 6
+                if (r5 == r0) goto L_0x0021
+                r0 = 1598968902(0x5f4e5446, float:1.4867585E19)
+                if (r5 == r0) goto L_0x001d
+                boolean r5 = super.onTransact(r5, r6, r7, r8)
+                return r5
+            L_0x001d:
+                r7.writeString(r2)
+                return r3
+            L_0x0021:
+                r6.enforceInterface(r2)
+                int r5 = r6.readInt()
+                int r8 = r6.readInt()
+                if (r8 == 0) goto L_0x0037
+                android.os.Parcelable$Creator r8 = android.net.Uri.CREATOR
+                java.lang.Object r8 = r8.createFromParcel(r6)
+                android.net.Uri r8 = (android.net.Uri) r8
+                goto L_0x0038
+            L_0x0037:
+                r8 = r1
+            L_0x0038:
+                int r0 = r6.readInt()
+                if (r0 == 0) goto L_0x0040
+                r0 = 1
+                goto L_0x0041
+            L_0x0040:
+                r0 = 0
+            L_0x0041:
+                int r2 = r6.readInt()
+                if (r2 == 0) goto L_0x0050
+                android.os.Parcelable$Creator r1 = android.os.Bundle.CREATOR
+                java.lang.Object r6 = r1.createFromParcel(r6)
+                r1 = r6
+                android.os.Bundle r1 = (android.os.Bundle) r1
+            L_0x0050:
+                r4.onRelationshipValidationResult(r5, r8, r0, r1)
+                r7.writeNoException()
+                return r3
+            L_0x0057:
+                r6.enforceInterface(r2)
+                java.lang.String r5 = r6.readString()
+                int r8 = r6.readInt()
+                if (r8 == 0) goto L_0x006d
+                android.os.Parcelable$Creator r8 = android.os.Bundle.CREATOR
+                java.lang.Object r6 = r8.createFromParcel(r6)
+                r1 = r6
+                android.os.Bundle r1 = (android.os.Bundle) r1
+            L_0x006d:
+                r4.onPostMessage(r5, r1)
+                r7.writeNoException()
+                return r3
+            L_0x0074:
+                r6.enforceInterface(r2)
+                int r5 = r6.readInt()
+                if (r5 == 0) goto L_0x0086
+                android.os.Parcelable$Creator r5 = android.os.Bundle.CREATOR
+                java.lang.Object r5 = r5.createFromParcel(r6)
+                r1 = r5
+                android.os.Bundle r1 = (android.os.Bundle) r1
+            L_0x0086:
+                r4.onMessageChannelReady(r1)
+                r7.writeNoException()
+                return r3
+            L_0x008d:
+                r6.enforceInterface(r2)
+                java.lang.String r5 = r6.readString()
+                int r8 = r6.readInt()
+                if (r8 == 0) goto L_0x00a3
+                android.os.Parcelable$Creator r8 = android.os.Bundle.CREATOR
+                java.lang.Object r6 = r8.createFromParcel(r6)
+                r1 = r6
+                android.os.Bundle r1 = (android.os.Bundle) r1
+            L_0x00a3:
+                r4.extraCallback(r5, r1)
+                r7.writeNoException()
+                return r3
+            L_0x00aa:
+                r6.enforceInterface(r2)
+                int r5 = r6.readInt()
+                int r8 = r6.readInt()
+                if (r8 == 0) goto L_0x00c0
+                android.os.Parcelable$Creator r8 = android.os.Bundle.CREATOR
+                java.lang.Object r6 = r8.createFromParcel(r6)
+                r1 = r6
+                android.os.Bundle r1 = (android.os.Bundle) r1
+            L_0x00c0:
+                r4.onNavigationEvent(r5, r1)
+                r7.writeNoException()
+                return r3
+            */
+            throw new UnsupportedOperationException("Method not decompiled: android.support.customtabs.ICustomTabsCallback.Stub.onTransact(int, android.os.Parcel, android.os.Parcel, int):boolean");
+        }
+
         public Stub() {
             attachInterface(this, "android.support.customtabs.ICustomTabsCallback");
         }
@@ -37,73 +162,6 @@ public interface ICustomTabsCallback extends IInterface {
                 return new Proxy(iBinder);
             }
             return (ICustomTabsCallback) queryLocalInterface;
-        }
-
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r6v1, resolved type: java.lang.Object} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v2, resolved type: android.os.Bundle} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r6v2, resolved type: java.lang.Object} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v5, resolved type: android.os.Bundle} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r5v5, resolved type: java.lang.Object} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v8, resolved type: android.os.Bundle} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r6v3, resolved type: java.lang.Object} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v11, resolved type: android.os.Bundle} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r6v4, resolved type: java.lang.Object} */
-        /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v15, resolved type: android.os.Bundle} */
-        /* JADX WARNING: Multi-variable type inference failed */
-        public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
-            Bundle bundle = null;
-            if (i == 2) {
-                parcel.enforceInterface("android.support.customtabs.ICustomTabsCallback");
-                int readInt = parcel.readInt();
-                if (parcel.readInt() != 0) {
-                    bundle = Bundle.CREATOR.createFromParcel(parcel);
-                }
-                onNavigationEvent(readInt, bundle);
-                parcel2.writeNoException();
-                return true;
-            } else if (i == 3) {
-                parcel.enforceInterface("android.support.customtabs.ICustomTabsCallback");
-                String readString = parcel.readString();
-                if (parcel.readInt() != 0) {
-                    bundle = Bundle.CREATOR.createFromParcel(parcel);
-                }
-                extraCallback(readString, bundle);
-                parcel2.writeNoException();
-                return true;
-            } else if (i == 4) {
-                parcel.enforceInterface("android.support.customtabs.ICustomTabsCallback");
-                if (parcel.readInt() != 0) {
-                    bundle = Bundle.CREATOR.createFromParcel(parcel);
-                }
-                onMessageChannelReady(bundle);
-                parcel2.writeNoException();
-                return true;
-            } else if (i == 5) {
-                parcel.enforceInterface("android.support.customtabs.ICustomTabsCallback");
-                String readString2 = parcel.readString();
-                if (parcel.readInt() != 0) {
-                    bundle = Bundle.CREATOR.createFromParcel(parcel);
-                }
-                onPostMessage(readString2, bundle);
-                parcel2.writeNoException();
-                return true;
-            } else if (i == 6) {
-                parcel.enforceInterface("android.support.customtabs.ICustomTabsCallback");
-                int readInt2 = parcel.readInt();
-                Uri uri = parcel.readInt() != 0 ? (Uri) Uri.CREATOR.createFromParcel(parcel) : null;
-                boolean z = parcel.readInt() != 0;
-                if (parcel.readInt() != 0) {
-                    bundle = Bundle.CREATOR.createFromParcel(parcel);
-                }
-                onRelationshipValidationResult(readInt2, uri, z, bundle);
-                parcel2.writeNoException();
-                return true;
-            } else if (i != 1598968902) {
-                return super.onTransact(i, parcel, parcel2, i2);
-            } else {
-                parcel2.writeString("android.support.customtabs.ICustomTabsCallback");
-                return true;
-            }
         }
 
         static class Proxy implements ICustomTabsCallback {

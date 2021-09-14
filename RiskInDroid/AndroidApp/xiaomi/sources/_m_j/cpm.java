@@ -6,7 +6,6 @@ import android.graphics.PointF;
 import android.location.Location;
 import android.media.CamcorderProfile;
 import android.media.MediaRecorder;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import com.otaliastudios.cameraview.Audio;
@@ -22,8 +21,6 @@ import com.otaliastudios.cameraview.VideoQuality;
 import com.otaliastudios.cameraview.WhiteBalance;
 import java.io.File;
 import java.lang.Thread;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public abstract class cpm implements cpq.O000000o, cpv.O000000o, Thread.UncaughtExceptionHandler {
@@ -399,90 +396,460 @@ public abstract class cpm implements cpq.O000000o, cpv.O000000o, Thread.Uncaught
         CamcorderProfile camcorderProfile;
         boolean O000O0oO2 = O000O0oO();
         if (this.O0000o0O == SessionType.PICTURE) {
-            cqa = cqb.O00000Oo(this.O00oOooo, new cqa() {
-                /* class _m_j.cqb.AnonymousClass6 */
-
-                public final List<cpz> O000000o(List<cpz> list) {
-                    Collections.sort(list);
-                    Collections.reverse(list);
-                    return list;
+            cqa = cqb.O00000Oo(this.O00oOooo, 
+            /*  JADX ERROR: Method code generation error
+                jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x001d: INVOKE  (r1v42 'cqa' _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r1v41 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0012: IGET  (r2v8 _m_j.cqa) = (r11v0 'this' _m_j.cpm A[THIS]) _m_j.cpm.O00oOooo _m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x0018: CONSTRUCTOR  (r2v9 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O00000Oo(_m_j.cqa[]):_m_j.cqa in method: _m_j.cpm.O000OO0o():_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
+                	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
+                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
+                	at jadx.core.codegen.RegionGen.makeRegionIndent(RegionGen.java:99)
+                	at jadx.core.codegen.RegionGen.makeIf(RegionGen.java:143)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:63)
+                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
+                	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
+                	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
+                	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
+                	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
+                	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
+                	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+                	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+                	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+                	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+                	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+                	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+                	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+                	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+                	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+                	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
+                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
+                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
+                	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
+                	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:81)
+                	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
+                	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
+                	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
+                	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
+                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
+                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
+                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0018: CONSTRUCTOR  (r2v9 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR in method: _m_j.cpm.O000OO0o():_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
+                	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
+                	at jadx.core.codegen.InsnGen.processVarArg(InsnGen.java:814)
+                	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:787)
+                	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
+                	... 36 more
+                Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Expected class to be processed at this point, class: _m_j.cqb, state: NOT_LOADED
+                	at jadx.core.dex.nodes.ClassNode.ensureProcessed(ClassNode.java:270)
+                	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:607)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
+                	... 43 more
+                */
+            /*
+                this = this;
+                boolean r0 = r11.O000O0oO()
+                com.otaliastudios.cameraview.SessionType r1 = r11.O0000o0O
+                com.otaliastudios.cameraview.SessionType r2 = com.otaliastudios.cameraview.SessionType.PICTURE
+                r3 = 3
+                r4 = 4
+                r5 = 5
+                r6 = 2
+                r7 = 1
+                r8 = 0
+                if (r1 != r2) goto L_0x0023
+                _m_j.cqa[] r1 = new _m_j.cqa[r6]
+                _m_j.cqa r2 = r11.O00oOooo
+                r1[r8] = r2
+                _m_j.cqb$6 r2 = new _m_j.cqb$6
+                r2.<init>()
+                r1[r7] = r2
+                _m_j.cqa r1 = _m_j.cqb.O00000Oo(r1)
+                goto L_0x00e6
+            L_0x0023:
+                int[] r1 = _m_j.cpm.AnonymousClass6.f14211O000000o
+                com.otaliastudios.cameraview.VideoQuality r2 = r11.O0000o00
+                int r2 = r2.ordinal()
+                r1 = r1[r2]
+                r2 = 6
+                switch(r1) {
+                    case 1: goto L_0x0084;
+                    case 2: goto L_0x0032;
+                    case 3: goto L_0x0047;
+                    case 4: goto L_0x0056;
+                    case 5: goto L_0x0065;
+                    case 6: goto L_0x0074;
+                    default: goto L_0x0031;
                 }
-            });
-        } else {
-            switch (this.O0000o00) {
-                case VideoQuality.HIGHEST:
-                    camcorderProfile = CamcorderProfile.get(this.O0000oo0, 1);
-                    break;
-                case VideoQuality.MAX_2160P:
-                    if (Build.VERSION.SDK_INT >= 21 && CamcorderProfile.hasProfile(8)) {
-                        camcorderProfile = CamcorderProfile.get(this.O0000oo0, 8);
-                        break;
-                    }
-                case VideoQuality.MAX_1080P:
-                    if (CamcorderProfile.hasProfile(this.O0000oo0, 6)) {
-                        camcorderProfile = CamcorderProfile.get(this.O0000oo0, 6);
-                        break;
-                    }
-                case VideoQuality.MAX_720P:
-                    if (CamcorderProfile.hasProfile(this.O0000oo0, 5)) {
-                        camcorderProfile = CamcorderProfile.get(this.O0000oo0, 5);
-                        break;
-                    }
-                case VideoQuality.MAX_480P:
-                    if (CamcorderProfile.hasProfile(this.O0000oo0, 4)) {
-                        camcorderProfile = CamcorderProfile.get(this.O0000oo0, 4);
-                        break;
-                    }
-                case VideoQuality.MAX_QVGA:
-                    if (CamcorderProfile.hasProfile(this.O0000oo0, 7)) {
-                        camcorderProfile = CamcorderProfile.get(this.O0000oo0, 7);
-                        break;
-                    }
-                default:
-                    camcorderProfile = CamcorderProfile.get(this.O0000oo0, 0);
-                    break;
-            }
-            cpk O000000o2 = cpk.O000000o(camcorderProfile.videoFrameWidth, camcorderProfile.videoFrameHeight);
+            L_0x0031:
+                goto L_0x008b
+            L_0x0032:
+                int r1 = android.os.Build.VERSION.SDK_INT
+                r9 = 21
+                if (r1 < r9) goto L_0x0047
+                r1 = 8
+                boolean r9 = android.media.CamcorderProfile.hasProfile(r1)
+                if (r9 == 0) goto L_0x0047
+                int r9 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r9, r1)
+                goto L_0x0091
+            L_0x0047:
+                int r1 = r11.O0000oo0
+                boolean r1 = android.media.CamcorderProfile.hasProfile(r1, r2)
+                if (r1 == 0) goto L_0x0056
+                int r1 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r1, r2)
+                goto L_0x0091
+            L_0x0056:
+                int r1 = r11.O0000oo0
+                boolean r1 = android.media.CamcorderProfile.hasProfile(r1, r5)
+                if (r1 == 0) goto L_0x0065
+                int r1 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r1, r5)
+                goto L_0x0091
+            L_0x0065:
+                int r1 = r11.O0000oo0
+                boolean r1 = android.media.CamcorderProfile.hasProfile(r1, r4)
+                if (r1 == 0) goto L_0x0074
+                int r1 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r1, r4)
+                goto L_0x0091
+            L_0x0074:
+                int r1 = r11.O0000oo0
+                r9 = 7
+                boolean r1 = android.media.CamcorderProfile.hasProfile(r1, r9)
+                if (r1 == 0) goto L_0x008b
+                int r1 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r1, r9)
+                goto L_0x0091
+            L_0x0084:
+                int r1 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r1, r7)
+                goto L_0x0091
+            L_0x008b:
+                int r1 = r11.O0000oo0
+                android.media.CamcorderProfile r1 = android.media.CamcorderProfile.get(r1, r8)
+            L_0x0091:
+                int r9 = r1.videoFrameWidth
+                int r1 = r1.videoFrameHeight
+                _m_j.cpk r1 = _m_j.cpk.O000000o(r9, r1)
+                if (r0 == 0) goto L_0x00a3
+                int r9 = r1.O00000o0
+                int r1 = r1.O00000Oo
+                _m_j.cpk r1 = _m_j.cpk.O000000o(r9, r1)
+            L_0x00a3:
+                _m_j.cpo r9 = _m_j.cpm.O00000oO
+                java.lang.Object[] r2 = new java.lang.Object[r2]
+                java.lang.String r10 = "size:"
+                r2[r8] = r10
+                java.lang.String r10 = "computeCaptureSize:"
+                r2[r7] = r10
+                java.lang.String r10 = "videoQuality:"
+                r2[r6] = r10
+                com.otaliastudios.cameraview.VideoQuality r10 = r11.O0000o00
+                r2[r3] = r10
+                java.lang.String r10 = "targetRatio:"
+                r2[r4] = r10
+                r2[r5] = r1
+                r9.O000000o(r7, r2)
+                _m_j.cqa r1 = _m_j.cqb.O000000o(r1)
+                _m_j.cqa[] r2 = new _m_j.cqa[r3]
+                _m_j.cqa[] r9 = new _m_j.cqa[r6]
+                r9[r8] = r1
+                _m_j.cqa r10 = r11.O00oOooo
+                r9[r7] = r10
+                _m_j.cqa r9 = _m_j.cqb.O000000o(r9)
+                r2[r8] = r9
+                _m_j.cqa[] r9 = new _m_j.cqa[r7]
+                r9[r8] = r1
+                _m_j.cqa r1 = _m_j.cqb.O000000o(r9)
+                r2[r7] = r1
+                _m_j.cqa r1 = r11.O00oOooo
+                r2[r6] = r1
+                _m_j.cqa r1 = _m_j.cqb.O00000Oo(r2)
+            L_0x00e6:
+                java.util.ArrayList r2 = new java.util.ArrayList
+                _m_j.cpp r9 = r11.O0000ooO
+                java.util.Set<_m_j.cpz> r9 = r9.f14213O000000o
+                java.util.Set r9 = java.util.Collections.unmodifiableSet(r9)
+                r2.<init>(r9)
+                java.util.List r1 = r1.O000000o(r2)
+                java.lang.Object r1 = r1.get(r8)
+                _m_j.cpz r1 = (_m_j.cpz) r1
+                _m_j.cpo r2 = _m_j.cpm.O00000oO
+                java.lang.Object[] r5 = new java.lang.Object[r5]
+                java.lang.String r9 = "computePictureSize:"
+                r5[r8] = r9
+                java.lang.String r8 = "result:"
+                r5[r7] = r8
+                r5[r6] = r1
+                java.lang.String r6 = "flip:"
+                r5[r3] = r6
+                java.lang.Boolean r3 = java.lang.Boolean.valueOf(r0)
+                r5[r4] = r3
+                r2.O000000o(r5)
+                if (r0 == 0) goto L_0x011e
+                _m_j.cpz r1 = r1.O000000o()
+            L_0x011e:
+                return r1
+            */
+            throw new UnsupportedOperationException("Method not decompiled: _m_j.cpm.O000OO0o():_m_j.cpz");
+        }
+
+        /* access modifiers changed from: protected */
+        public final cpz O00000Oo(List<cpz> list) {
+            boolean O000O0oO2 = O000O0oO();
+            cpk O000000o2 = cpk.O000000o(this.O000O0o0.f14222O000000o, this.O000O0o0.O00000Oo);
+            cpz O00000o0 = this.O0000O0o.O00000o0();
             if (O000O0oO2) {
-                O000000o2 = cpk.O000000o(O000000o2.O00000o0, O000000o2.O00000Oo);
+                O00000o0 = O00000o0.O000000o();
             }
-            O00000oO.O000000o(1, "size:", "computeCaptureSize:", "videoQuality:", this.O0000o00, "targetRatio:", O000000o2);
+            O00000oO.O000000o(1, "size:", "computePreviewSize:", "targetRatio:", O000000o2, "targetMinSize:", O00000o0);
             cqa O000000o3 = cqb.O000000o(O000000o2);
-            cqa = cqb.O00000Oo(cqb.O000000o(O000000o3, this.O00oOooo), cqb.O000000o(O000000o3), this.O00oOooo);
+            cpz cpz = cqb.O00000Oo(cqb.O000000o(O000000o3, cqb.O000000o(cqb.O00000o(O00000o0.O00000Oo), cqb.O00000Oo(O00000o0.f14222O000000o))), cqb.O000000o(O000000o3, 
+            /*  JADX ERROR: Method code generation error
+                jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x008a: INVOKE  (r13v3 'cpz' _m_j.cpz) = 
+                  (wrap: java.util.List<_m_j.cpz> : 0x0082: INVOKE  (r13v1 java.util.List<_m_j.cpz>) = 
+                  (wrap: _m_j.cqa : 0x007e: INVOKE  (r1v7 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r3v2 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0060: INVOKE  (r2v8 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r4v4 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqa : 0x0054: INVOKE  (r2v7 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r3v1 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0046: INVOKE  (r4v3 _m_j.cqa) = (wrap: int : 0x0044: IGET  (r4v2 int) = (r2v4 'O00000o0' _m_j.cpz) _m_j.cpz.O00000Oo int) type: STATIC call: _m_j.cqb.O00000o(int):_m_j.cqa)
+                  (wrap: _m_j.cqa : 0x004e: INVOKE  (r2v6 _m_j.cqa) = (wrap: int : 0x004c: IGET  (r2v5 int) = (r2v4 'O00000o0' _m_j.cpz) _m_j.cpz.O000000o int) type: STATIC call: _m_j.cqb.O00000Oo(int):_m_j.cqa)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                  (wrap: _m_j.cqa : 0x0071: INVOKE  (r1v5 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r2v9 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x006c: CONSTRUCTOR  (r1v4 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x0079: CONSTRUCTOR  (r1v6 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O00000Oo(_m_j.cqa[]):_m_j.cqa)
+                  (r13v0 'list' java.util.List<_m_j.cpz>)
+                 type: INTERFACE call: _m_j.cqa.O000000o(java.util.List):java.util.List)
+                  (0 int)
+                 type: INTERFACE call: java.util.List.get(int):java.lang.Object in method: _m_j.cpm.O00000Oo(java.util.List<_m_j.cpz>):_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
+                	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
+                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
+                	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
+                	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
+                	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
+                	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
+                	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
+                	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+                	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+                	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+                	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+                	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+                	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+                	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+                	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+                	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+                	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
+                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
+                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
+                	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
+                	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:81)
+                	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
+                	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
+                	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
+                	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
+                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
+                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
+                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0082: INVOKE  (r13v1 java.util.List<_m_j.cpz>) = 
+                  (wrap: _m_j.cqa : 0x007e: INVOKE  (r1v7 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r3v2 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0060: INVOKE  (r2v8 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r4v4 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqa : 0x0054: INVOKE  (r2v7 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r3v1 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0046: INVOKE  (r4v3 _m_j.cqa) = (wrap: int : 0x0044: IGET  (r4v2 int) = (r2v4 'O00000o0' _m_j.cpz) _m_j.cpz.O00000Oo int) type: STATIC call: _m_j.cqb.O00000o(int):_m_j.cqa)
+                  (wrap: _m_j.cqa : 0x004e: INVOKE  (r2v6 _m_j.cqa) = (wrap: int : 0x004c: IGET  (r2v5 int) = (r2v4 'O00000o0' _m_j.cpz) _m_j.cpz.O000000o int) type: STATIC call: _m_j.cqb.O00000Oo(int):_m_j.cqa)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                  (wrap: _m_j.cqa : 0x0071: INVOKE  (r1v5 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r2v9 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x006c: CONSTRUCTOR  (r1v4 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x0079: CONSTRUCTOR  (r1v6 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O00000Oo(_m_j.cqa[]):_m_j.cqa)
+                  (r13v0 'list' java.util.List<_m_j.cpz>)
+                 type: INTERFACE call: _m_j.cqa.O000000o(java.util.List):java.util.List in method: _m_j.cpm.O00000Oo(java.util.List<_m_j.cpz>):_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
+                	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
+                	at jadx.core.codegen.InsnGen.addArgDot(InsnGen.java:90)
+                	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:699)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
+                	... 31 more
+                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x007e: INVOKE  (r1v7 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r3v2 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0060: INVOKE  (r2v8 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r4v4 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqa : 0x0054: INVOKE  (r2v7 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r3v1 _m_j.cqa[]) = 
+                  (wrap: _m_j.cqa : 0x0046: INVOKE  (r4v3 _m_j.cqa) = (wrap: int : 0x0044: IGET  (r4v2 int) = (r2v4 'O00000o0' _m_j.cpz) _m_j.cpz.O00000Oo int) type: STATIC call: _m_j.cqb.O00000o(int):_m_j.cqa)
+                  (wrap: _m_j.cqa : 0x004e: INVOKE  (r2v6 _m_j.cqa) = (wrap: int : 0x004c: IGET  (r2v5 int) = (r2v4 'O00000o0' _m_j.cpz) _m_j.cpz.O000000o int) type: STATIC call: _m_j.cqb.O00000Oo(int):_m_j.cqa)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                  (wrap: _m_j.cqa : 0x0071: INVOKE  (r1v5 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r2v9 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x006c: CONSTRUCTOR  (r1v4 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x0079: CONSTRUCTOR  (r1v6 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O00000Oo(_m_j.cqa[]):_m_j.cqa in method: _m_j.cpm.O00000Oo(java.util.List<_m_j.cpz>):_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
+                	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
+                	at jadx.core.codegen.InsnGen.addArgDot(InsnGen.java:90)
+                	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:699)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
+                	... 37 more
+                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0071: INVOKE  (r1v5 _m_j.cqa) = 
+                  (wrap: _m_j.cqa[] : ?: FILLED_NEW_ARRAY  (r2v9 _m_j.cqa[]) = 
+                  (r1v3 'O000000o3' _m_j.cqa)
+                  (wrap: _m_j.cqb$6 : 0x006c: CONSTRUCTOR  (r1v4 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR)
+                 elemType: _m_j.cqa)
+                 type: STATIC call: _m_j.cqb.O000000o(_m_j.cqa[]):_m_j.cqa in method: _m_j.cpm.O00000Oo(java.util.List<_m_j.cpz>):_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
+                	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
+                	at jadx.core.codegen.InsnGen.processVarArg(InsnGen.java:814)
+                	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:787)
+                	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
+                	... 43 more
+                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x006c: CONSTRUCTOR  (r1v4 _m_j.cqb$6) =  call: _m_j.cqb.6.<init>():void type: CONSTRUCTOR in method: _m_j.cpm.O00000Oo(java.util.List<_m_j.cpz>):_m_j.cpz, dex: classes6.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
+                	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
+                	at jadx.core.codegen.InsnGen.processVarArg(InsnGen.java:814)
+                	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:787)
+                	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
+                	... 50 more
+                Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Expected class to be processed at this point, class: _m_j.cqb, state: NOT_LOADED
+                	at jadx.core.dex.nodes.ClassNode.ensureProcessed(ClassNode.java:270)
+                	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:607)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
+                	... 57 more
+                */
+            /*
+                this = this;
+                boolean r0 = r12.O000O0oO()
+                _m_j.cpz r1 = r12.O000O0o0
+                int r1 = r1.f14222O000000o
+                _m_j.cpz r2 = r12.O000O0o0
+                int r2 = r2.O00000Oo
+                _m_j.cpk r1 = _m_j.cpk.O000000o(r1, r2)
+                _m_j.cpq r2 = r12.O0000O0o
+                _m_j.cpz r2 = r2.O00000o0()
+                if (r0 == 0) goto L_0x001c
+                _m_j.cpz r2 = r2.O000000o()
+            L_0x001c:
+                _m_j.cpo r3 = _m_j.cpm.O00000oO
+                r4 = 6
+                java.lang.Object[] r4 = new java.lang.Object[r4]
+                r5 = 0
+                java.lang.String r6 = "size:"
+                r4[r5] = r6
+                java.lang.String r6 = "computePreviewSize:"
+                r7 = 1
+                r4[r7] = r6
+                r8 = 2
+                java.lang.String r9 = "targetRatio:"
+                r4[r8] = r9
+                r9 = 3
+                r4[r9] = r1
+                r10 = 4
+                java.lang.String r11 = "targetMinSize:"
+                r4[r10] = r11
+                r11 = 5
+                r4[r11] = r2
+                r3.O000000o(r7, r4)
+                _m_j.cqa r1 = _m_j.cqb.O000000o(r1)
+                _m_j.cqa[] r3 = new _m_j.cqa[r8]
+                int r4 = r2.O00000Oo
+                _m_j.cqa r4 = _m_j.cqb.O00000o(r4)
+                r3[r5] = r4
+                int r2 = r2.f14222O000000o
+                _m_j.cqa r2 = _m_j.cqb.O00000Oo(r2)
+                r3[r7] = r2
+                _m_j.cqa r2 = _m_j.cqb.O000000o(r3)
+                _m_j.cqa[] r3 = new _m_j.cqa[r9]
+                _m_j.cqa[] r4 = new _m_j.cqa[r8]
+                r4[r5] = r1
+                r4[r7] = r2
+                _m_j.cqa r2 = _m_j.cqb.O000000o(r4)
+                r3[r5] = r2
+                _m_j.cqa[] r2 = new _m_j.cqa[r8]
+                r2[r5] = r1
+                _m_j.cqb$6 r1 = new _m_j.cqb$6
+                r1.<init>()
+                r2[r7] = r1
+                _m_j.cqa r1 = _m_j.cqb.O000000o(r2)
+                r3[r7] = r1
+                _m_j.cqb$6 r1 = new _m_j.cqb$6
+                r1.<init>()
+                r3[r8] = r1
+                _m_j.cqa r1 = _m_j.cqb.O00000Oo(r3)
+                java.util.List r13 = r1.O000000o(r13)
+                java.lang.Object r13 = r13.get(r5)
+                _m_j.cpz r13 = (_m_j.cpz) r13
+                _m_j.cpo r1 = _m_j.cpm.O00000oO
+                java.lang.Object[] r2 = new java.lang.Object[r11]
+                r2[r5] = r6
+                java.lang.String r3 = "result:"
+                r2[r7] = r3
+                r2[r8] = r13
+                java.lang.String r3 = "flip:"
+                r2[r9] = r3
+                java.lang.Boolean r0 = java.lang.Boolean.valueOf(r0)
+                r2[r10] = r0
+                r1.O000000o(r7, r2)
+                return r13
+            */
+            throw new UnsupportedOperationException("Method not decompiled: _m_j.cpm.O00000Oo(java.util.List):_m_j.cpz");
         }
-        cpz cpz = cqa.O000000o(new ArrayList(Collections.unmodifiableSet(this.O0000ooO.f14213O000000o))).get(0);
-        O00000oO.O000000o("computePictureSize:", "result:", cpz, "flip:", Boolean.valueOf(O000O0oO2));
-        return O000O0oO2 ? cpz.O000000o() : cpz;
     }
-
-    /* access modifiers changed from: protected */
-    public final cpz O00000Oo(List<cpz> list) {
-        boolean O000O0oO2 = O000O0oO();
-        cpk O000000o2 = cpk.O000000o(this.O000O0o0.f14222O000000o, this.O000O0o0.O00000Oo);
-        cpz O00000o0 = this.O0000O0o.O00000o0();
-        if (O000O0oO2) {
-            O00000o0 = O00000o0.O000000o();
-        }
-        O00000oO.O000000o(1, "size:", "computePreviewSize:", "targetRatio:", O000000o2, "targetMinSize:", O00000o0);
-        cqa O000000o3 = cqb.O000000o(O000000o2);
-        cpz cpz = cqb.O00000Oo(cqb.O000000o(O000000o3, cqb.O000000o(cqb.O00000o(O00000o0.O00000Oo), cqb.O00000Oo(O00000o0.f14222O000000o))), cqb.O000000o(O000000o3, new cqa() {
-            /* class _m_j.cqb.AnonymousClass6 */
-
-            public final List<cpz> O000000o(List<cpz> list) {
-                Collections.sort(list);
-                Collections.reverse(list);
-                return list;
-            }
-        }), new cqa() {
-            /* class _m_j.cqb.AnonymousClass6 */
-
-            public final List<cpz> O000000o(List<cpz> list) {
-                Collections.sort(list);
-                Collections.reverse(list);
-                return list;
-            }
-        }).O000000o(list).get(0);
-        O00000oO.O000000o(1, "computePreviewSize:", "result:", cpz, "flip:", Boolean.valueOf(O000O0oO2));
-        return cpz;
-    }
-}

@@ -125,7 +125,7 @@ public final class fhc extends fhd {
                 fec.O00000o0().O000000o(o000000o.O000000o(), new fer(new feq<Boolean>() {
                     /* class _m_j.fgo.AnonymousClass16 */
 
-                    public final /* synthetic */ Object O000000o(JSONObject jSONObject) throws JSONException {
+                    public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
                         boolean z = true;
                         gnk.O00000o0(String.format("sendBleMeshProvisionResult Http Response: [%S]", jSONObject));
                         if (jSONObject.optInt("code", -1) != 0) {
@@ -136,7 +136,7 @@ public final class fhc extends fhd {
                 }, r2) {
                     /* class _m_j.fgo.AnonymousClass17 */
 
-                    /* renamed from: O000000o  reason: collision with root package name */
+                    /* renamed from: O000000o */
                     final /* synthetic */ feq f16281O000000o;
                     final /* synthetic */ feo O00000Oo;
 
@@ -341,14 +341,14 @@ public final class fhc extends fhd {
             fec.O00000o0().O000000o(o000000o.O000000o(), new fer(new feq<String>() {
                 /* class _m_j.fgo.AnonymousClass7 */
 
-                public final /* synthetic */ Object O000000o(JSONObject jSONObject) throws JSONException {
+                public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
                     gnk.O00000o0(String.format("authBleMesh Http Response: [%S]", jSONObject));
                     return jSONObject.toString();
                 }
             }, r9) {
                 /* class _m_j.fgo.AnonymousClass8 */
 
-                /* renamed from: O000000o  reason: collision with root package name */
+                /* renamed from: O000000o */
                 final /* synthetic */ feq f16297O000000o;
                 final /* synthetic */ feo O00000Oo;
 
@@ -439,14 +439,14 @@ public final class fhc extends fhd {
             fec.O00000o0().O000000o(o000000o2.O000000o(), new fer(new feq<String>() {
                 /* class _m_j.fgo.AnonymousClass9 */
 
-                public final /* synthetic */ Object O000000o(JSONObject jSONObject) throws JSONException {
+                public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
                     gnk.O00000o0(String.format("bindBleMesh Http Response: [%S]", jSONObject));
                     return jSONObject.toString();
                 }
             }, r5) {
                 /* class _m_j.fgo.AnonymousClass10 */
 
-                /* renamed from: O000000o  reason: collision with root package name */
+                /* renamed from: O000000o */
                 final /* synthetic */ feq f16277O000000o;
                 final /* synthetic */ feo O00000Oo;
 
@@ -650,14 +650,14 @@ public final class fhc extends fhd {
                                 fec.O00000o0().O000000o(o000000o.O000000o(), new fer(new feq<String>() {
                                     /* class _m_j.fgo.AnonymousClass14 */
 
-                                    public final /* synthetic */ Object O000000o(JSONObject jSONObject) throws JSONException {
+                                    public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
                                         gnk.O00000o0(String.format("queryBleMeshModelInfo Http Response: [%S]", jSONObject));
                                         return jSONObject.toString();
                                     }
                                 }, r1) {
                                     /* class _m_j.fgo.AnonymousClass15 */
 
-                                    /* renamed from: O000000o  reason: collision with root package name */
+                                    /* renamed from: O000000o */
                                     final /* synthetic */ feq f16280O000000o;
                                     final /* synthetic */ feo O00000Oo;
 
@@ -700,14 +700,14 @@ public final class fhc extends fhd {
                     fec.O00000o0().O000000o(o000000o.O000000o(), new fer(new feq<String>() {
                         /* class _m_j.fgo.AnonymousClass11 */
 
-                        public final /* synthetic */ Object O000000o(JSONObject jSONObject) throws JSONException {
+                        public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
                             gnk.O00000o0(String.format("queryBleMeshCtlInfo Http Response: [%S]", jSONObject));
                             return jSONObject.toString();
                         }
                     }, r5) {
                         /* class _m_j.fgo.AnonymousClass13 */
 
-                        /* renamed from: O000000o  reason: collision with root package name */
+                        /* renamed from: O000000o */
                         final /* synthetic */ feq f16279O000000o;
                         final /* synthetic */ feo O00000Oo;
 

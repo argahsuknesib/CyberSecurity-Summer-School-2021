@@ -14,9 +14,9 @@ import com.facebook.yoga.YogaValue;
 import com.facebook.yoga.YogaWrap;
 
 public interface ReactShadowNode<T extends ReactShadowNode> {
-    void addChildAt(ReactShadowNode reactShadowNode, int i);
+    void addChildAt(T t, int i);
 
-    void addNativeChildAt(ReactShadowNode reactShadowNode, int i);
+    void addNativeChildAt(T t, int i);
 
     void calculateLayout();
 
@@ -54,7 +54,7 @@ public interface ReactShadowNode<T extends ReactShadowNode> {
 
     NativeKind getNativeKind();
 
-    int getNativeOffsetForChild(ReactShadowNode reactShadowNode);
+    int getNativeOffsetForChild(T t);
 
     T getNativeParent();
 
@@ -96,11 +96,11 @@ public interface ReactShadowNode<T extends ReactShadowNode> {
 
     boolean hoistNativeChildren();
 
-    int indexOf(ReactShadowNode reactShadowNode);
+    int indexOf(T t);
 
-    int indexOfNativeChild(ReactShadowNode reactShadowNode);
+    int indexOfNativeChild(T t);
 
-    boolean isDescendantOf(ReactShadowNode reactShadowNode);
+    boolean isDescendantOf(T t);
 
     boolean isDirty();
 
@@ -170,7 +170,7 @@ public interface ReactShadowNode<T extends ReactShadowNode> {
 
     void setLayoutDirection(YogaDirection yogaDirection);
 
-    void setLayoutParent(ReactShadowNode reactShadowNode);
+    void setLayoutParent(T t);
 
     void setLocalData(Object obj);
 

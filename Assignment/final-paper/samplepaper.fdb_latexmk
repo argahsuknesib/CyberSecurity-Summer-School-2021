@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1631498812 "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.tex" "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.pdf" "samplepaper" 1631498812
+["pdflatex"] 1631654201 "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.tex" "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.pdf" "samplepaper" 1631654836
   "/etc/texmf/web2c/texmf.cnf" 1617340823 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.aux" 1631498812 1442 3dc690c3584672a70191c50f8a64701d ""
-  "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.tex" 1631498812 5169 87b224f522c7623ae8cd8845dd3f2cf0 ""
+  "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.aux" 1631654202 3296 57deb27f97474d5d3072e8e55bc35f00 ""
+  "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.tex" 1631654836 12930 930cf6887a92b08c3c61f938e7ee5243 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -51,12 +51,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1617340860 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1617340877 8256146 77b6704dd51aa70900dc315c187b3f33 ""
   "fig1.eps" 1507105274 357553 784a1d3035e9550a463f314c33bb157f ""
+  "images/SPECK.png" 1631653968 189980 9003a394fa79a8df8cb9d4f199391c0c ""
+  "images/architecture.jpg" 1631644158 37912 0be596ce451bea80f70524fb6a408bf6 ""
+  "images/xiaomi-1.png" 1631649037 51655 874bdd990e1f8b7760910f64fa626955 ""
+  "images/xiaomi-riskinDroid.png" 1631651620 35398 3865577de450806fb42dfb0c6e4c40c4 ""
   "llncs.cls" 1521111700 43467 a21466011e5ed5d4c3f1d5a9af897395 ""
-  "samplepaper.aux" 1631498812 1442 3dc690c3584672a70191c50f8a64701d "pdflatex"
-  "samplepaper.tex" 1631498812 5169 87b224f522c7623ae8cd8845dd3f2cf0 ""
+  "samplepaper.aux" 1631654202 3296 57deb27f97474d5d3072e8e55bc35f00 "pdflatex"
+  "samplepaper.tex" 1631654836 12930 930cf6887a92b08c3c61f938e7ee5243 ""
   (generated)
+  "samplepaper.log"
+  "samplepaper.aux"
   "samplepaper.pdf"
   "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.log"
-  "samplepaper.aux"
-  "samplepaper.log"
   "/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.pdf"

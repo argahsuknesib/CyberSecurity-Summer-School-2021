@@ -158,114 +158,171 @@ public final class gtj {
                 }
                 gtj.this.O0000Oo0.sendMessage(gtj.this.O0000Oo0.obtainMessage(1));
                 gsy.O000000o(6, "device_rpc", "Refresh Cache complete");
-                fuj.O000000o().O000000o(gkv.f17949O000000o, new String[]{"20"}, new fsm<ArrayList<fui>, fso>(new fsm<Void, fso>() {
-                    /* class _m_j.gtj.O00000Oo.AnonymousClass1 */
+                fuj.O000000o().O000000o(gkv.f17949O000000o, new String[]{"20"}, 
+                /*  JADX ERROR: Method code generation error
+                    jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x007d: INVOKE  
+                      (wrap: _m_j.fuj : 0x006c: INVOKE  (r1v1 _m_j.fuj) =  type: STATIC call: _m_j.fuj.O000000o():_m_j.fuj)
+                      (wrap: android.content.Context : 0x0070: SGET  (r2v4 android.content.Context) =  _m_j.gkv.O000000o android.content.Context)
+                      (wrap: java.lang.String[] : 0x0074: FILLED_NEW_ARRAY  (r3v4 java.lang.String[]) = ("20") elemType: java.lang.String)
+                      (wrap: _m_j.gti$4 : 0x007a: CONSTRUCTOR  (r4v2 _m_j.gti$4) = 
+                      (wrap: _m_j.gti : 0x0063: INVOKE  (r7v6 _m_j.gti) =  type: STATIC call: _m_j.gti.O000000o():_m_j.gti)
+                      (wrap: _m_j.gtj$O00000Oo$1 : 0x0069: CONSTRUCTOR  (r0v1 _m_j.gtj$O00000Oo$1) = (r6v0 'this' _m_j.gtj$O00000Oo A[THIS]) call: _m_j.gtj.O00000Oo.1.<init>(_m_j.gtj$O00000Oo):void type: CONSTRUCTOR)
+                     call: _m_j.gti.4.<init>(_m_j.gti, _m_j.fsm):void type: CONSTRUCTOR)
+                     type: VIRTUAL call: _m_j.fuj.O000000o(android.content.Context, java.lang.String[], _m_j.fsm):_m_j.fsn in method: _m_j.gtj.O00000Oo.handleMessage(android.os.Message):void, dex: classes7.dex
+                    	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                    	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
+                    	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:110)
+                    	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:56)
+                    	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
+                    	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
+                    	at jadx.core.codegen.RegionGen.makeRegionIndent(RegionGen.java:99)
+                    	at jadx.core.codegen.RegionGen.makeIf(RegionGen.java:143)
+                    	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:63)
+                    	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:93)
+                    	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:59)
+                    	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:215)
+                    	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:208)
+                    	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:337)
+                    	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:290)
+                    	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:259)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+                    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+                    	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+                    	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+                    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+                    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+                    	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                    	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+                    	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
+                    	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
+                    	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
+                    	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
+                    	at jadx.core.codegen.ClassGen.addInnerClass(ClassGen.java:268)
+                    	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:257)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+                    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+                    	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+                    	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+                    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+                    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+                    	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                    	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+                    	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:255)
+                    	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:246)
+                    	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:226)
+                    	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:115)
+                    	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:81)
+                    	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
+                    	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
+                    	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
+                    	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
+                    	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
+                    	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
+                    Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x007a: CONSTRUCTOR  (r4v2 _m_j.gti$4) = 
+                      (wrap: _m_j.gti : 0x0063: INVOKE  (r7v6 _m_j.gti) =  type: STATIC call: _m_j.gti.O000000o():_m_j.gti)
+                      (wrap: _m_j.gtj$O00000Oo$1 : 0x0069: CONSTRUCTOR  (r0v1 _m_j.gtj$O00000Oo$1) = (r6v0 'this' _m_j.gtj$O00000Oo A[THIS]) call: _m_j.gtj.O00000Oo.1.<init>(_m_j.gtj$O00000Oo):void type: CONSTRUCTOR)
+                     call: _m_j.gti.4.<init>(_m_j.gti, _m_j.fsm):void type: CONSTRUCTOR in method: _m_j.gtj.O00000Oo.handleMessage(android.os.Message):void, dex: classes7.dex
+                    	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
+                    	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
+                    	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)
+                    	at jadx.core.codegen.InsnGen.generateMethodArguments(InsnGen.java:790)
+                    	at jadx.core.codegen.InsnGen.makeInvoke(InsnGen.java:730)
+                    	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:367)
+                    	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:249)
+                    	... 52 more
+                    Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Expected class to be processed at this point, class: _m_j.gti, state: NOT_LOADED
+                    	at jadx.core.dex.nodes.ClassNode.ensureProcessed(ClassNode.java:270)
+                    	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:607)
+                    	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:363)
+                    	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:230)
+                    	... 58 more
+                    */
+                /*
+                    this = this;
+                    int r7 = r7.what
+                    r0 = 6
+                    java.lang.String r1 = "device_rpc"
+                    r2 = 3
+                    if (r7 == 0) goto L_0x0029
+                    if (r7 == r2) goto L_0x000b
+                    goto L_0x0028
+                L_0x000b:
+                    java.lang.String r7 = "Start Refresh PROP"
+                    _m_j.gsy.O000000o(r0, r1, r7)
+                    com.xiaomi.smarthome.camera.api.ICameraManagerApi r7 = com.xiaomi.smarthome.camera.api.CameraRouterFactory.getCameraManagerApi()
+                    _m_j.gtj$O00000Oo$2 r0 = new _m_j.gtj$O00000Oo$2
+                    r0.<init>()
+                    r7.loadAllCameraCloudStorageInfoFromServer(r0)
+                    com.xiaomi.smarthome.camera.api.ICameraManagerApi r7 = com.xiaomi.smarthome.camera.api.CameraRouterFactory.getCameraManagerApi()
+                    _m_j.gtj$O00000Oo$3 r0 = new _m_j.gtj$O00000Oo$3
+                    r0.<init>()
+                    r7.updateDevicePropsCameraDeviceOpManager(r0)
+                L_0x0028:
+                    return
+                L_0x0029:
+                    _m_j.gti r7 = _m_j.gti.O000000o()
+                    android.content.SharedPreferences r3 = r7.f18243O000000o
+                    java.lang.String r4 = _m_j.gti.O00000Oo()
+                    java.lang.String r5 = ""
+                    java.lang.String r3 = r3.getString(r4, r5)
+                    boolean r4 = android.text.TextUtils.isEmpty(r3)
+                    if (r4 != 0) goto L_0x004e
+                    java.util.List r3 = r7.O000000o(r3)
+                    android.os.Handler r4 = r7.O00000oo
+                    android.os.Handler r7 = r7.O00000oo
+                    android.os.Message r7 = r7.obtainMessage(r2, r3)
+                    r4.sendMessage(r7)
+                L_0x004e:
+                    _m_j.gtj r7 = _m_j.gtj.this
+                    android.os.Handler r7 = r7.O0000Oo0
+                    _m_j.gtj r2 = _m_j.gtj.this
+                    android.os.Handler r2 = r2.O0000Oo0
+                    r3 = 1
+                    android.os.Message r2 = r2.obtainMessage(r3)
+                    r7.sendMessage(r2)
+                    java.lang.String r7 = "Refresh Cache complete"
+                    _m_j.gsy.O000000o(r0, r1, r7)
+                    _m_j.gti r7 = _m_j.gti.O000000o()
+                    _m_j.gtj$O00000Oo$1 r0 = new _m_j.gtj$O00000Oo$1
+                    r0.<init>()
+                    _m_j.fuj r1 = _m_j.fuj.O000000o()
+                    android.content.Context r2 = _m_j.gkv.f17949O000000o
+                    java.lang.String r3 = "20"
+                    java.lang.String[] r3 = new java.lang.String[]{r3}
+                    _m_j.gti$4 r4 = new _m_j.gti$4
+                    r4.<init>(r0)
+                    r1.O000000o(r2, r3, r4)
+                    return
+                */
+                throw new UnsupportedOperationException("Method not decompiled: _m_j.gtj.O00000Oo.handleMessage(android.os.Message):void");
+            }
+        }
 
-                    public final void onFailure(fso fso) {
-                        gtj.this.O00000oo = false;
-                        gtj.this.O0000Oo0.sendMessage(gtj.this.O0000Oo0.obtainMessage(2, gti.class));
-                    }
+        gtj() {
+            this.O0000Ooo.start();
+            this.O0000Oo = new O00000Oo(this.O0000Ooo.getLooper());
+        }
 
-                    public final /* synthetic */ void onSuccess(Object obj) {
-                        gtj.this.O00000oo = true;
-                        gtj.this.O0000Oo0.sendMessage(gtj.this.O0000Oo0.obtainMessage(2, gti.class));
-                    }
-                }) {
-                    /* class _m_j.gti.AnonymousClass4 */
+        public final void O00000Oo() {
+            if (!this.f18250O000000o) {
+                this.f18250O000000o = true;
+                this.O00000oO = true;
+                this.O0000O0o = false;
+                this.O00000oo = false;
+                this.O00000Oo = false;
+                this.O0000Oo.sendEmptyMessage(0);
+            }
+        }
 
-                    /* renamed from: O000000o */
-                    final /* synthetic */ fsm f18247O000000o;
-
-                    {
-                        this.f18247O000000o = r2;
-                    }
-
-                    public final /* synthetic */ void onSuccess(Object obj) {
-                        fui fui;
-                        ArrayList arrayList = (ArrayList) obj;
-                        if (arrayList != null && arrayList.size() > 0 && (fui = (fui) arrayList.get(0)) != null && fui.O00000o0 != null && fui.O00000o0.size() > 0 && TextUtils.equals(gti.O00000Oo(), fui.O00000o0.get(0).f17182O000000o)) {
-                            String str = fui.O00000o0.get(0).O00000Oo;
-                            List<O000000o> O000000o2 = gti.this.O000000o(str);
-                            gti.this.O00000Oo(str);
-                            gti.this.O00000oo.sendMessage(gti.this.O00000oo.obtainMessage(3, O000000o2));
-                        }
-                        this.f18247O000000o.onSuccess(null);
-                    }
-
-                    public final void onFailure(fso fso) {
-                        this.f18247O000000o.onFailure(fso);
-                    }
-                });
-            } else if (i == 3) {
-                gsy.O000000o(6, "device_rpc", "Start Refresh PROP");
-                CameraRouterFactory.getCameraManagerApi().loadAllCameraCloudStorageInfoFromServer(new fsm<Void, fso>() {
-                    /* class _m_j.gtj.O00000Oo.AnonymousClass2 */
-
-                    public final void onFailure(fso fso) {
-                        gsy.O00000Oo("refresh", "loadAllCameraCloudStorageInfoFromServer onFailure:" + fso.f17063O000000o);
-                    }
-
-                    public final /* synthetic */ void onSuccess(Object obj) {
-                        gsy.O00000Oo("refresh", "loadAllCameraCloudStorageInfoFromServer onSuccess");
-                    }
-                });
-                CameraRouterFactory.getCameraManagerApi().updateDevicePropsCameraDeviceOpManager(new fsm<Void, fso>() {
-                    /* class _m_j.gtj.O00000Oo.AnonymousClass3 */
-
-                    public final void onFailure(fso fso) {
-                        gtj.this.O0000Oo0.post(new Runnable() {
-                            /* class _m_j.gtj.O00000Oo.AnonymousClass3.AnonymousClass2 */
-
-                            public final void run() {
-                                for (O000000o O000000o2 : gtj.this.O0000OOo) {
-                                    O000000o2.O000000o();
-                                }
-                            }
-                        });
-                        gtj.this.f18250O000000o = false;
-                        gtj.this.O00000o = false;
-                    }
-
-                    public final /* synthetic */ void onSuccess(Object obj) {
-                        gtj.this.O0000Oo0.post(new Runnable() {
-                            /* class _m_j.gtj.O00000Oo.AnonymousClass3.AnonymousClass1 */
-
-                            public final void run() {
-                                for (O000000o O000000o2 : gtj.this.O0000OOo) {
-                                    O000000o2.O000000o();
-                                }
-                            }
-                        });
-                        gtj.this.f18250O000000o = false;
-                        gtj.this.O0000O0o = true;
-                        gtj.this.O00000o = true;
-                    }
-                });
+        public final void O00000o0() {
+            this.O00000o0.set(true);
+            if (!this.f18250O000000o) {
+                this.f18250O000000o = true;
+                this.O0000Oo0.sendEmptyMessage(4);
             }
         }
     }
-
-    gtj() {
-        this.O0000Ooo.start();
-        this.O0000Oo = new O00000Oo(this.O0000Ooo.getLooper());
-    }
-
-    public final void O00000Oo() {
-        if (!this.f18250O000000o) {
-            this.f18250O000000o = true;
-            this.O00000oO = true;
-            this.O0000O0o = false;
-            this.O00000oo = false;
-            this.O00000Oo = false;
-            this.O0000Oo.sendEmptyMessage(0);
-        }
-    }
-
-    public final void O00000o0() {
-        this.O00000o0.set(true);
-        if (!this.f18250O000000o) {
-            this.f18250O000000o = true;
-            this.O0000Oo0.sendEmptyMessage(4);
-        }
-    }
-}

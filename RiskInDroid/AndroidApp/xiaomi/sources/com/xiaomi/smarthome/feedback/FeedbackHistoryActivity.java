@@ -15,7 +15,6 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -191,51 +190,14 @@ public class FeedbackHistoryActivity extends BaseActivity implements BatchBar.O0
                         if (batchBar.O00000oO == null) {
                             batchBar.O00000o0 = true;
                             batchBar.O00000oO = LayoutInflater.from(batchBar.O00000Oo).inflate((int) R.layout.batch_select_bar, (ViewGroup) null);
-                            batchBar.O00000oO.findViewById(R.id.btn_cancel).setOnClickListener(new View.OnClickListener() {
-                                /* class com.xiaomi.smarthome.feedback.view.BatchBar.AnonymousClass1 */
-
-                                public final void onClick(View view) {
-                                    BatchBar.this.O000000o(0);
-                                }
-                            });
-                            batchBar.O0000O0o = (ImageView) batchBar.O00000oO.findViewById(R.id.btn_select_all);
-                            batchBar.O0000O0o.setOnClickListener(new View.OnClickListener() {
-                                /* class com.xiaomi.smarthome.feedback.view.BatchBar.AnonymousClass2 */
-
-                                public final void onClick(View view) {
-                                    if (((Boolean) BatchBar.this.O0000O0o.getTag()).booleanValue()) {
-                                        for (int i = 0; i < BatchBar.this.O0000Ooo.getCount(); i++) {
-                                            BatchBar.this.O0000o00.add(Integer.valueOf(i));
-                                        }
-                                        BatchBar.this.O0000O0o.setImageResource(R.drawable.un_select_selector);
-                                        BatchBar.this.O0000O0o.setContentDescription(BatchBar.this.O00000Oo.getString(R.string.unselect_all));
-                                        BatchBar.this.O0000O0o.setTag(Boolean.FALSE);
-                                    } else {
-                                        BatchBar.this.O0000o00.clear();
-                                        BatchBar.this.O0000O0o.setImageResource(R.drawable.all_select_selector);
-                                        BatchBar.this.O0000O0o.setContentDescription(BatchBar.this.O00000Oo.getString(R.string.select_all));
-                                        BatchBar.this.O0000O0o.setTag(Boolean.TRUE);
-                                    }
-                                    BatchBar.this.O000000o();
-                                    BatchBar.this.O0000Ooo.notifyDataSetChanged();
-                                }
-                            });
-                            batchBar.O0000OOo = (TextView) batchBar.O00000oO.findViewById(R.id.text_prompt);
-                        }
-                    }
-                    if (batchBar.O00000oo == null) {
-                        if (batchBar.O0000Oo != null) {
-                            batchBar.O00000oo = batchBar.O0000Oo.getContentViewOfBatchActionBar();
-                        }
-                        if (batchBar.O00000oo == null) {
-                            batchBar.O00000o = true;
-                            batchBar.O00000oo = LayoutInflater.from(batchBar.O00000Oo).inflate((int) R.layout.batch_action_bar, (ViewGroup) null);
-                            batchBar.O0000Oo0 = batchBar.O00000oo.findViewById(R.id.btn_ok);
-                            batchBar.O0000Oo0.setOnClickListener(
+                            batchBar.O00000oO.findViewById(R.id.btn_cancel).setOnClickListener(
                             /*  JADX ERROR: Method code generation error
-                                jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x00c8: INVOKE  
-                                  (wrap: android.view.View : 0x00c1: IGET  (r9v23 android.view.View) = (r5v18 'batchBar' com.xiaomi.smarthome.feedback.view.BatchBar) com.xiaomi.smarthome.feedback.view.BatchBar.O0000Oo0 android.view.View)
-                                  (wrap: com.xiaomi.smarthome.feedback.view.BatchBar$3 : 0x00c5: CONSTRUCTOR  (r0v10 com.xiaomi.smarthome.feedback.view.BatchBar$3) = (r5v18 'batchBar' com.xiaomi.smarthome.feedback.view.BatchBar) call: com.xiaomi.smarthome.feedback.view.BatchBar.3.<init>(com.xiaomi.smarthome.feedback.view.BatchBar):void type: CONSTRUCTOR)
+                                jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x006a: INVOKE  
+                                  (wrap: android.view.View : 0x0061: INVOKE  (r9v32 android.view.View) = 
+                                  (wrap: android.view.View : 0x005c: IGET  (r9v31 android.view.View) = (r5v18 'batchBar' com.xiaomi.smarthome.feedback.view.BatchBar) com.xiaomi.smarthome.feedback.view.BatchBar.O00000oO android.view.View)
+                                  (wrap: ? : ?: SGET   com.xiaomi.smarthome.R.id.btn_cancel int)
+                                 type: VIRTUAL call: android.view.View.findViewById(int):android.view.View)
+                                  (wrap: com.xiaomi.smarthome.feedback.view.BatchBar$1 : 0x0067: CONSTRUCTOR  (r1v4 com.xiaomi.smarthome.feedback.view.BatchBar$1) = (r5v18 'batchBar' com.xiaomi.smarthome.feedback.view.BatchBar) call: com.xiaomi.smarthome.feedback.view.BatchBar.1.<init>(com.xiaomi.smarthome.feedback.view.BatchBar):void type: CONSTRUCTOR)
                                  type: VIRTUAL call: android.view.View.setOnClickListener(android.view.View$OnClickListener):void in method: com.xiaomi.smarthome.feedback.FeedbackHistoryActivity.3.onItemLongClick(android.widget.AdapterView<?>, android.view.View, int, long):boolean, dex: classes5.dex
                                 	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
                                 	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:220)
@@ -320,7 +282,7 @@ public class FeedbackHistoryActivity extends BaseActivity implements BatchBar.O0
                                 	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
                                 	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
                                 	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-                                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x00c5: CONSTRUCTOR  (r0v10 com.xiaomi.smarthome.feedback.view.BatchBar$3) = (r5v18 'batchBar' com.xiaomi.smarthome.feedback.view.BatchBar) call: com.xiaomi.smarthome.feedback.view.BatchBar.3.<init>(com.xiaomi.smarthome.feedback.view.BatchBar):void type: CONSTRUCTOR in method: com.xiaomi.smarthome.feedback.FeedbackHistoryActivity.3.onItemLongClick(android.widget.AdapterView<?>, android.view.View, int, long):boolean, dex: classes5.dex
+                                Caused by: jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0067: CONSTRUCTOR  (r1v4 com.xiaomi.smarthome.feedback.view.BatchBar$1) = (r5v18 'batchBar' com.xiaomi.smarthome.feedback.view.BatchBar) call: com.xiaomi.smarthome.feedback.view.BatchBar.1.<init>(com.xiaomi.smarthome.feedback.view.BatchBar):void type: CONSTRUCTOR in method: com.xiaomi.smarthome.feedback.FeedbackHistoryActivity.3.onItemLongClick(android.widget.AdapterView<?>, android.view.View, int, long):boolean, dex: classes5.dex
                                 	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:255)
                                 	at jadx.core.codegen.InsnGen.addWrappedArg(InsnGen.java:122)
                                 	at jadx.core.codegen.InsnGen.addArg(InsnGen.java:106)

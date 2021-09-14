@@ -747,9 +747,9 @@ public final class dhq {
         }
     }
 
-    private <T> T[] O000000o(Object[] objArr, int i, boolean z) {
-        if (objArr != null && objArr.length != 0) {
-            return O00000Oo(objArr[0], i, z);
+    private <T> T[] O000000o(T[] tArr, int i, boolean z) {
+        if (tArr != null && tArr.length != 0) {
+            return O00000Oo(tArr[0], i, z);
         }
         throw new g("unable to get type of key and value.");
     }

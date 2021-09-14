@@ -406,14 +406,14 @@ public abstract class fgm {
                     fec.O00000o0().O000000o(o000000o.O000000o(), new fer(new feq<String>(str2) {
                         /* class _m_j.fgo.AnonymousClass25 */
 
-                        /* renamed from: O000000o */
+                        /* renamed from: O000000o  reason: collision with root package name */
                         final /* synthetic */ String f16287O000000o;
 
                         {
                             this.f16287O000000o = r1;
                         }
 
-                        public final /* synthetic */ Object O000000o(JSONObject jSONObject) {
+                        public final /* synthetic */ Object O000000o(JSONObject jSONObject) throws JSONException {
                             gnk.O00000o0(String.format("Http Response: [%S]", jSONObject));
                             String jSONObject2 = jSONObject.toString();
                             if (!TextUtils.isEmpty(jSONObject2) && jSONObject2.contains("version")) {
@@ -428,7 +428,7 @@ public abstract class fgm {
                     }, r2) {
                         /* class _m_j.fgo.AnonymousClass26 */
 
-                        /* renamed from: O000000o */
+                        /* renamed from: O000000o  reason: collision with root package name */
                         final /* synthetic */ feq f16288O000000o;
                         final /* synthetic */ feo O00000Oo;
 

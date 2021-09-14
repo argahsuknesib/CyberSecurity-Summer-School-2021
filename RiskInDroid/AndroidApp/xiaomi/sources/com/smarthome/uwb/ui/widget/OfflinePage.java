@@ -65,13 +65,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/*  JADX ERROR: NullPointerException in pass: ExtractFieldInit
-    java.lang.NullPointerException
-    	at jadx.core.utils.BlockUtils.isAllBlocksEmpty(BlockUtils.java:608)
-    	at jadx.core.dex.visitors.ExtractFieldInit.getConstructorsList(ExtractFieldInit.java:241)
-    	at jadx.core.dex.visitors.ExtractFieldInit.moveCommonFieldsInit(ExtractFieldInit.java:122)
-    	at jadx.core.dex.visitors.ExtractFieldInit.visit(ExtractFieldInit.java:43)
-    */
 @Metadata(d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u0000 &2\u00020\u0001:\u0001&B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J<\u0010\u0007\u001a\u00020\b2\"\u0010\t\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\r\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000e0\n2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\fH\u0002J\b\u0010\u0012\u001a\u00020\bH\u0016J\u0012\u0010\u0013\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0014\u001a\u00020\u0010H\u0002J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\fH\u0002J\u0010\u0010\u0018\u001a\u00020\b2\u0006\u0010\u0019\u001a\u00020\u001aH\u0002J\u0010\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u001c\u001a\u00020\u001dH\u0014J\"\u0010\u001e\u001a\u00020\b2\u0006\u0010\u0014\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010!\u001a\u00020\fH\u0003J\u0010\u0010\"\u001a\u00020\b2\u0006\u0010#\u001a\u00020$H\u0002J\b\u0010%\u001a\u00020\bH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0004¢\u0006\u0002\n\u0000¨\u0006'"}, d2 = {"Lcom/smarthome/uwb/ui/widget/OfflinePage;", "Lcom/xiaomi/smarthome/newui/page/IPage;", "activity", "Landroidx/fragment/app/FragmentActivity;", "device", "Lcom/xiaomi/smarthome/device/Device;", "(Landroidx/fragment/app/FragmentActivity;Lcom/xiaomi/smarthome/device/Device;)V", "checkDeviceRssi", "", "callback", "Lcom/xiaomi/smarthome/frame/AsyncCallback;", "Lkotlin/Pair;", "", "Lorg/json/JSONObject;", "Lcom/xiaomi/smarthome/frame/Error;", "did", "", "type", "dismiss", "getPluginIcon", "model", "getResoursUri", "Landroid/net/Uri;", "resource", "initView", "root", "Landroid/view/View;", "onCreateView", "container", "Landroid/view/ViewGroup;", "setIconByUrl", "imageView", "Lcom/facebook/drawee/view/SimpleDraweeView;", "placeHolder", "setOfflineReasonByDeviceType", "offlineDescTv", "Landroid/widget/TextView;", "show", "Companion", "uwb-mijia_release"}, k = 1, mv = {1, 5, 1}, xi = 48)
 public final class OfflinePage extends IPage {
 
@@ -88,41 +81,17 @@ public final class OfflinePage extends IPage {
     public final FragmentActivity O00000Oo;
     public final Device O00000o0;
 
-    /*  JADX ERROR: Method load error
-        jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: com.xiaomi.smarthome.newui.page.IPage.<init>(androidx.fragment.app.FragmentActivity):void in method: com.smarthome.uwb.ui.widget.OfflinePage.<init>(androidx.fragment.app.FragmentActivity, com.xiaomi.smarthome.device.Device):void, dex: classes4.dex
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
-        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
-        	at jadx.core.ProcessClass.process(ProcessClass.java:36)
-        	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:59)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: com.xiaomi.smarthome.newui.page.IPage.<init>(androidx.fragment.app.FragmentActivity):void
-        	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
-        	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
-        	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
-        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:534)
-        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
-        	... 6 more
-        */
-    public OfflinePage(androidx.fragment.app.FragmentActivity r1, com.xiaomi.smarthome.device.Device r2) {
-        /*
-            r1 = this;
-            java.lang.String r0 = "activity"
-            _m_j.ixe.O00000o(r2, r0)
-            java.lang.String r0 = "device"
-            _m_j.ixe.O00000o(r3, r0)
-            r1.<init>(r2)
-            r1.O00000Oo = r2
-            r1.O00000o0 = r3
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.smarthome.uwb.ui.widget.OfflinePage.<init>(androidx.fragment.app.FragmentActivity, com.xiaomi.smarthome.device.Device):void");
-    }
-
     /* access modifiers changed from: private */
     public static final void O000000o(View view) {
+    }
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public OfflinePage(FragmentActivity fragmentActivity, Device device) {
+        super(fragmentActivity);
+        ixe.O00000o(fragmentActivity, "activity");
+        ixe.O00000o(device, "device");
+        this.O00000Oo = fragmentActivity;
+        this.O00000o0 = device;
     }
 
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\b\b\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006XT¢\u0006\u0002\n\u0000R \u0010\u0007\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\n\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\u000b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\f\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\r\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\u000e\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\u000f\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000R \u0010\u0010\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\bX\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/smarthome/uwb/ui/widget/OfflinePage$Companion;", "", "()V", "INVALID_RES_ID", "", "TAG", "", "bleOfflineDesc", "", "Lkotlin/Pair;", "elseOfflineDesc", "elseOfflineDescForBluetooh", "iRfflineDesc", "nBIotOfflineDesc", "tvOfflineDesc", "wifiOfflineDesc", "zigbeeOfflineDesc", "uwb-mijia_release"}, k = 1, mv = {1, 5, 1}, xi = 48)

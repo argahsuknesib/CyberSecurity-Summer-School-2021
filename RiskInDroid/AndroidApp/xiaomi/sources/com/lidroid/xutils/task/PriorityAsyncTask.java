@@ -50,10 +50,10 @@ public abstract class PriorityAsyncTask<Params, Progress, Result> {
     private volatile boolean O0000OOo = false;
 
     /* access modifiers changed from: protected */
-    public abstract Result O000000o(Object... objArr);
+    public abstract Result O000000o(Params... paramsArr);
 
     /* access modifiers changed from: protected */
-    public void O000000o(Object obj) {
+    public void O000000o(Result result) {
     }
 
     /* access modifiers changed from: protected */
@@ -129,15 +129,15 @@ public abstract class PriorityAsyncTask<Params, Progress, Result> {
     }
 
     /* access modifiers changed from: protected */
-    public final void O00000o(Object... objArr) {
+    public final void O00000o(Progress... progressArr) {
         if (!this.O00000o.get()) {
-            f4512O000000o.obtainMessage(2, new O000000o(this, objArr)).sendToTarget();
+            f4512O000000o.obtainMessage(2, new O000000o(this, progressArr)).sendToTarget();
         }
     }
 
-    public final void O00000o(Object obj) {
+    public final void O00000o(Result result) {
         if (!this.O00000o.get()) {
-            O000000o(obj);
+            O000000o(result);
         }
     }
 }

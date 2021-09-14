@@ -16,7 +16,7 @@ final class b<ResultT> implements g<ResultT> {
         this.c = onCompleteListener;
     }
 
-    public final void a(Task task) {
+    public final void a(Task<ResultT> task) {
         synchronized (this.b) {
             if (this.c != null) {
                 this.f3845a.execute(new a(this, task));

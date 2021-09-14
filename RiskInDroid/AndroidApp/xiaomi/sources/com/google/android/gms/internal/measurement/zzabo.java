@@ -24,25 +24,25 @@ final /* synthetic */ class zzabo {
     /* JADX WARNING: Missing exception handler attribute for start block: B:7:0x002a */
     /* JADX WARNING: Missing exception handler attribute for start block: B:9:0x0035 */
     static {
-        zzbrw[zzabp.zzbvj.ordinal()] = 1;
-        zzbrw[zzabp.zzbvk.ordinal()] = 2;
-        zzbrw[zzabp.zzbvl.ordinal()] = 3;
-        zzbrw[zzabp.zzbvm.ordinal()] = 4;
-        zzbrw[zzabp.zzbvn.ordinal()] = 5;
-        zzbrw[zzabp.zzbvo.ordinal()] = 6;
-        zzbrw[zzabp.zzbvp.ordinal()] = 7;
-        zzbrw[zzabp.zzbvq.ordinal()] = 8;
-        zzbrw[zzabp.zzbvu.ordinal()] = 9;
-        zzbrw[zzabp.zzbvv.ordinal()] = 10;
-        zzbrw[zzabp.zzbvx.ordinal()] = 11;
-        zzbrw[zzabp.zzbvy.ordinal()] = 12;
-        zzbrw[zzabp.zzbvz.ordinal()] = 13;
-        zzbrw[zzabp.zzbwa.ordinal()] = 14;
-        zzbrw[zzabp.zzbvr.ordinal()] = 15;
-        zzbrw[zzabp.zzbvs.ordinal()] = 16;
-        zzbrw[zzabp.zzbvt.ordinal()] = 17;
+        zzbrw[zzabp.DOUBLE.ordinal()] = 1;
+        zzbrw[zzabp.FLOAT.ordinal()] = 2;
+        zzbrw[zzabp.INT64.ordinal()] = 3;
+        zzbrw[zzabp.UINT64.ordinal()] = 4;
+        zzbrw[zzabp.INT32.ordinal()] = 5;
+        zzbrw[zzabp.FIXED64.ordinal()] = 6;
+        zzbrw[zzabp.FIXED32.ordinal()] = 7;
+        zzbrw[zzabp.BOOL.ordinal()] = 8;
+        zzbrw[zzabp.BYTES.ordinal()] = 9;
+        zzbrw[zzabp.UINT32.ordinal()] = 10;
+        zzbrw[zzabp.SFIXED32.ordinal()] = 11;
+        zzbrw[zzabp.SFIXED64.ordinal()] = 12;
+        zzbrw[zzabp.SINT32.ordinal()] = 13;
+        zzbrw[zzabp.SINT64.ordinal()] = 14;
+        zzbrw[zzabp.STRING.ordinal()] = 15;
+        zzbrw[zzabp.GROUP.ordinal()] = 16;
+        zzbrw[zzabp.MESSAGE.ordinal()] = 17;
         try {
-            zzbrw[zzabp.zzbvw.ordinal()] = 18;
+            zzbrw[zzabp.ENUM.ordinal()] = 18;
         } catch (NoSuchFieldError unused) {
         }
     }

@@ -71,33 +71,6 @@ public class MainTabActivity extends BaseActivity {
     private cap O00000o0;
     public NewUserInfoData userInfoData;
 
-    /*  JADX ERROR: Method load error
-        jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: _m_j.ccx.O0000Oo0():void in method: com.mi.global.shop.activity.MainTabActivity.finish():void, dex: classes3.dex
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
-        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
-        	at jadx.core.ProcessClass.process(ProcessClass.java:36)
-        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
-        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
-        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: _m_j.ccx.O0000Oo0():void
-        	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
-        	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
-        	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
-        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:528)
-        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
-        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
-        	... 5 more
-        */
-    public void finish() {
-        /*
-            r0 = this;
-            super.finish()
-            _m_j.ccx.O0000Oo0()
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.mi.global.shop.activity.MainTabActivity.finish():void");
-    }
-
     public void installHotfix(String str) {
     }
 
@@ -488,6 +461,11 @@ public class MainTabActivity extends BaseActivity {
             stringRequest.setTag(TAG);
             ced.f13683O000000o.add(stringRequest);
         }
+    }
+
+    public void finish() {
+        super.finish();
+        ccx.O0000Oo0();
     }
 
     public void onDestroy() {

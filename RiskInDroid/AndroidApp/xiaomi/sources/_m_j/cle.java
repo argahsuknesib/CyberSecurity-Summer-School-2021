@@ -53,7 +53,7 @@ public final class cle {
         XmPluginHostApi.instance().getCloudVideoFile(str2, str3, clf.O000000o(str, str2, str3), new ICloudDataCallback(str4, str, o000000o) {
             /* class _m_j.clf.AnonymousClass8 */
 
-            /* renamed from: O000000o */
+            /* renamed from: O000000o  reason: collision with root package name */
             final /* synthetic */ String f14052O000000o;
             final /* synthetic */ String O00000Oo;
             final /* synthetic */ O000000o O00000o0;
@@ -69,10 +69,12 @@ public final class cle {
                 new AsyncTask<Void, Void, Integer>() {
                     /* class _m_j.clf.AnonymousClass8.AnonymousClass1 */
 
+                    /* access modifiers changed from: protected */
                     public final /* synthetic */ Object doInBackground(Object[] objArr) {
                         return O000000o();
                     }
 
+                    /* access modifiers changed from: protected */
                     public final /* synthetic */ void onPostExecute(Object obj) {
                         Integer num = (Integer) obj;
                         super.onPostExecute(num);

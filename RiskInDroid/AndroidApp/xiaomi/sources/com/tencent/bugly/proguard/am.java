@@ -1,7 +1,6 @@
 package com.tencent.bugly.proguard;
 
 import _m_j.dhq;
-import _m_j.dhr;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,91 +36,131 @@ public final class am extends k {
     public String w = "";
     private String x = "";
 
-    /* JADX DEBUG: Failed to find minimal casts for resolve overloaded methods, cast all args instead
-     method: _m_j.dhr.O000000o(java.util.Map, int):void
-     arg types: [java.util.Map<java.lang.String, java.lang.String>, int]
-     candidates:
-      _m_j.dhr.O000000o(byte, int):void
-      _m_j.dhr.O000000o(int, int):void
-      _m_j.dhr.O000000o(long, int):void
-      _m_j.dhr.O000000o(com.tencent.bugly.proguard.k, int):void
-      _m_j.dhr.O000000o(java.lang.Object, int):void
-      _m_j.dhr.O000000o(java.lang.String, int):void
-      _m_j.dhr.O000000o(java.util.Collection, int):void
-      _m_j.dhr.O000000o(short, int):void
-      _m_j.dhr.O000000o(boolean, int):void
-      _m_j.dhr.O000000o(byte[], int):void
-      _m_j.dhr.O000000o(java.util.Map, int):void */
-    public final void O000000o(dhr dhr) {
-        dhr.O000000o(this.f5828a, 0);
-        dhr.O000000o(this.b, 1);
-        dhr.O000000o(this.c, 2);
-        dhr.O000000o(this.d, 3);
-        String str = this.e;
-        if (str != null) {
-            dhr.O000000o(str, 4);
-        }
-        dhr.O000000o(this.f, 5);
-        dhr.O000000o(this.g, 6);
-        dhr.O000000o(this.h, 7);
-        String str2 = this.i;
-        if (str2 != null) {
-            dhr.O000000o(str2, 8);
-        }
-        String str3 = this.j;
-        if (str3 != null) {
-            dhr.O000000o(str3, 9);
-        }
-        Map<String, String> map = this.k;
-        if (map != null) {
-            dhr.O000000o((Map) map, 10);
-        }
-        String str4 = this.l;
-        if (str4 != null) {
-            dhr.O000000o(str4, 11);
-        }
-        dhr.O000000o(this.m, 12);
-        String str5 = this.n;
-        if (str5 != null) {
-            dhr.O000000o(str5, 13);
-        }
-        String str6 = this.o;
-        if (str6 != null) {
-            dhr.O000000o(str6, 14);
-        }
-        String str7 = this.p;
-        if (str7 != null) {
-            dhr.O000000o(str7, 15);
-        }
-        dhr.O000000o(this.q, 16);
-        String str8 = this.r;
-        if (str8 != null) {
-            dhr.O000000o(str8, 17);
-        }
-        String str9 = this.s;
-        if (str9 != null) {
-            dhr.O000000o(str9, 18);
-        }
-        String str10 = this.t;
-        if (str10 != null) {
-            dhr.O000000o(str10, 19);
-        }
-        String str11 = this.u;
-        if (str11 != null) {
-            dhr.O000000o(str11, 20);
-        }
-        String str12 = this.v;
-        if (str12 != null) {
-            dhr.O000000o(str12, 21);
-        }
-        String str13 = this.w;
-        if (str13 != null) {
-            dhr.O000000o(str13, 22);
-        }
-        String str14 = this.x;
-        if (str14 != null) {
-            dhr.O000000o(str14, 23);
-        }
+    /*  JADX ERROR: Method load error
+        jadx.core.utils.exceptions.DecodeException: Load method exception: Method info already added: _m_j.dhr.O000000o(int, int):void in method: com.tencent.bugly.proguard.am.O000000o(_m_j.dhr):void, dex: classes4.dex
+        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:154)
+        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:306)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:36)
+        	at jadx.core.ProcessClass.generateCode(ProcessClass.java:58)
+        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:297)
+        	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:276)
+        Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Method info already added: _m_j.dhr.O000000o(int, int):void
+        	at jadx.core.dex.info.InfoStorage.putMethod(InfoStorage.java:42)
+        	at jadx.core.dex.info.MethodInfo.fromDex(MethodInfo.java:50)
+        	at jadx.core.dex.instructions.InsnDecoder.invoke(InsnDecoder.java:678)
+        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:540)
+        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:78)
+        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:139)
+        	... 5 more
+        */
+    public final void O000000o(_m_j.dhr r1) {
+        /*
+            r3 = this;
+            int r0 = r3.f5828a
+            r1 = 0
+            r4.O000000o(r0, r1)
+            java.lang.String r0 = r3.b
+            r1 = 1
+            r4.O000000o(r0, r1)
+            java.lang.String r0 = r3.c
+            r1 = 2
+            r4.O000000o(r0, r1)
+            java.lang.String r0 = r3.d
+            r1 = 3
+            r4.O000000o(r0, r1)
+            java.lang.String r0 = r3.e
+            if (r0 == 0) goto L_0x0020
+            r1 = 4
+            r4.O000000o(r0, r1)
+        L_0x0020:
+            java.lang.String r0 = r3.f
+            r1 = 5
+            r4.O000000o(r0, r1)
+            int r0 = r3.g
+            r1 = 6
+            r4.O000000o(r0, r1)
+            byte[] r0 = r3.h
+            r1 = 7
+            r4.O000000o(r0, r1)
+            java.lang.String r0 = r3.i
+            if (r0 == 0) goto L_0x003b
+            r1 = 8
+            r4.O000000o(r0, r1)
+        L_0x003b:
+            java.lang.String r0 = r3.j
+            if (r0 == 0) goto L_0x0044
+            r1 = 9
+            r4.O000000o(r0, r1)
+        L_0x0044:
+            java.util.Map<java.lang.String, java.lang.String> r0 = r3.k
+            if (r0 == 0) goto L_0x004d
+            r1 = 10
+            r4.O000000o(r0, r1)
+        L_0x004d:
+            java.lang.String r0 = r3.l
+            if (r0 == 0) goto L_0x0056
+            r1 = 11
+            r4.O000000o(r0, r1)
+        L_0x0056:
+            long r0 = r3.m
+            r2 = 12
+            r4.O000000o(r0, r2)
+            java.lang.String r0 = r3.n
+            if (r0 == 0) goto L_0x0066
+            r1 = 13
+            r4.O000000o(r0, r1)
+        L_0x0066:
+            java.lang.String r0 = r3.o
+            if (r0 == 0) goto L_0x006f
+            r1 = 14
+            r4.O000000o(r0, r1)
+        L_0x006f:
+            java.lang.String r0 = r3.p
+            if (r0 == 0) goto L_0x0078
+            r1 = 15
+            r4.O000000o(r0, r1)
+        L_0x0078:
+            long r0 = r3.q
+            r2 = 16
+            r4.O000000o(r0, r2)
+            java.lang.String r0 = r3.r
+            if (r0 == 0) goto L_0x0088
+            r1 = 17
+            r4.O000000o(r0, r1)
+        L_0x0088:
+            java.lang.String r0 = r3.s
+            if (r0 == 0) goto L_0x0091
+            r1 = 18
+            r4.O000000o(r0, r1)
+        L_0x0091:
+            java.lang.String r0 = r3.t
+            if (r0 == 0) goto L_0x009a
+            r1 = 19
+            r4.O000000o(r0, r1)
+        L_0x009a:
+            java.lang.String r0 = r3.u
+            if (r0 == 0) goto L_0x00a3
+            r1 = 20
+            r4.O000000o(r0, r1)
+        L_0x00a3:
+            java.lang.String r0 = r3.v
+            if (r0 == 0) goto L_0x00ac
+            r1 = 21
+            r4.O000000o(r0, r1)
+        L_0x00ac:
+            java.lang.String r0 = r3.w
+            if (r0 == 0) goto L_0x00b5
+            r1 = 22
+            r4.O000000o(r0, r1)
+        L_0x00b5:
+            java.lang.String r0 = r3.x
+            if (r0 == 0) goto L_0x00be
+            r1 = 23
+            r4.O000000o(r0, r1)
+        L_0x00be:
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.tencent.bugly.proguard.am.O000000o(_m_j.dhr):void");
     }
 
     static {
