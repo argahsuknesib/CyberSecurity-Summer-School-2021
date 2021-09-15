@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.2)  14 SEP 2021 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.2)  15 SEP 2021 03:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -169,11 +169,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count271
 \l__pdf_internal_box=\box93
-) (/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.aux
-
-LaTeX Warning: Label `fig1' multiply defined.
-
-)
+) (/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.aux)
 \openout1 = `samplepaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -220,60 +216,66 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <images/architecture.jpg, id=1, 602.25pt x 420.57124pt>
 File: images/architecture.jpg Graphic file (type jpg)
 <use images/architecture.jpg>
-Package pdftex.def Info: images/architecture.jpg  used on input line 68.
+Package pdftex.def Info: images/architecture.jpg  used on input line 61.
 (pdftex.def)             Requested size: 347.12354pt x 242.41699pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/architecture.jpg>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/architecture.jpg>]
 <images/xiaomi-1.png, id=21, 819.06pt x 597.23125pt>
 File: images/xiaomi-1.png Graphic file (type png)
 <use images/xiaomi-1.png>
-Package pdftex.def Info: images/xiaomi-1.png  used on input line 114.
+Package pdftex.def Info: images/xiaomi-1.png  used on input line 106.
 (pdftex.def)             Requested size: 347.12354pt x 253.11366pt.
 <images/xiaomi-riskinDroid.png, id=23, 1103.12125pt x 351.3125pt>
 File: images/xiaomi-riskinDroid.png Graphic file (type png)
 <use images/xiaomi-riskinDroid.png>
-Package pdftex.def Info: images/xiaomi-riskinDroid.png  used on input line 131.
+Package pdftex.def Info: images/xiaomi-riskinDroid.png  used on input line 123.
 (pdftex.def)             Requested size: 347.12354pt x 110.54608pt.
  [3] [4 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/xiaomi-1.png> </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/xiaomi-riskinDroid.png>]
 <images/SPECK.png, id=32, 1808.7575pt x 970.62625pt>
 File: images/SPECK.png Graphic file (type png)
 <use images/SPECK.png>
-Package pdftex.def Info: images/SPECK.png  used on input line 164.
+Package pdftex.def Info: images/SPECK.png  used on input line 154.
 (pdftex.def)             Requested size: 347.12354pt x 186.27222pt.
- [5]
-Package epstopdf Info: Source file: <fig1.eps>
-(epstopdf)                    date: 2017-10-04 10:21:14
-(epstopdf)                    size: 357553 bytes
-(epstopdf)             Output file: <fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-09-13 04:03:11
-(epstopdf)                    size: 26507 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig1-eps-converted-to.pdf fig1.eps>
-(epstopdf)             \includegraphics on input line 252.
-Package epstopdf Info: Output file is already uptodate.
-<fig1-eps-converted-to.pdf, id=36, 345.29pt x 142.5325pt>
-File: fig1-eps-converted-to.pdf Graphic file (type pdf)
-<use fig1-eps-converted-to.pdf>
-Package pdftex.def Info: fig1-eps-converted-to.pdf  used on input line 252.
-(pdftex.def)             Requested size: 347.12354pt x 143.29115pt.
- [6 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/SPECK.png>] [7 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/fig1-eps-converted-to.pdf>] (/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ [5] [6 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/SPECK.png>] [7]
+<images/SCA.png, id=44, 418.56375pt x 231.11343pt>
+File: images/SCA.png Graphic file (type png)
+<use images/SCA.png>
+Package pdftex.def Info: images/SCA.png  used on input line 266.
+(pdftex.def)             Requested size: 347.12354pt x 191.6654pt.
+<images/Side-channel-analysis-materials.png, id=45, 386.44376pt x 282.05376pt>
+File: images/Side-channel-analysis-materials.png Graphic file (type png)
+<use images/Side-channel-analysis-materials.png>
+Package pdftex.def Info: images/Side-channel-analysis-materials.png  used on input line 270.
+(pdftex.def)             Requested size: 277.69987pt x 202.68689pt.
+ [8] [9 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/SCA.png> </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/Side-channel-analysis-materials.png>]
+<images/SPA.png, id=54, 1230.5975pt x 504.88625pt>
+File: images/SPA.png Graphic file (type png)
+<use images/SPA.png>
+Package pdftex.def Info: images/SPA.png  used on input line 285.
+(pdftex.def)             Requested size: 347.12354pt x 142.41492pt.
+<images/DPA.png, id=55, 1209.01688pt x 1078.0275pt>
+File: images/DPA.png Graphic file (type png)
+<use images/DPA.png>
+Package pdftex.def Info: images/DPA.png  used on input line 294.
+(pdftex.def)             Requested size: 347.12354pt x 309.51103pt.
+ [10 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/SPA.png>] [11 </home/whiskygrandee/Code/Summer-School/Assignment/final-paper/images/DPA.png>] [12] (/home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.aux) ) 
 Here is how much of TeX's memory you used:
- 1633 strings out of 481239
- 23521 string characters out of 5920378
- 267060 words of memory out of 5000000
- 16914 multiletter control sequences out of 15000+600000
- 537182 words of font info for 40 fonts, out of 8000000 for 9000
+ 1647 strings out of 481239
+ 23858 string characters out of 5920378
+ 268040 words of memory out of 5000000
+ 16927 multiletter control sequences out of 15000+600000
+ 536837 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,8n,25p,371b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb>
-Output written on /home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.pdf (7 pages, 424514 bytes).
+ 32i,7n,25p,1208b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb>
+Output written on /home/whiskygrandee/Code/Summer-School/Assignment/final-paper/samplepaper.pdf (12 pages, 1010914 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
